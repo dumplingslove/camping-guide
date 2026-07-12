@@ -357,6 +357,132 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   // 24. Pacific Shores (not recommended for TC)
   24: {
     map: "/manus-storage/map_pacific_shores_30bffc14.jpg",
-    photos: [],
+    photos: ["/manus-storage/pacific_shores_resort_97b8255b.jpg"],
+    captions: ["度假村海景全景"],
+  },
+  // 25. Fort Worden
+  25: {
+    photos: ["/manus-storage/fort-worden_18de7e21.jpg"],
+    captions: ["沃登堡历史海防堡垒"],
+  },
+  // 26. Grayland Beach
+  26: {
+    photos: ["/manus-storage/grayland-beach_e162883c.jpg"],
+    captions: ["格雷兰海滩沙丘"],
+  },
+  // 27. Wenatchee Confluence
+  27: {
+    photos: ["/manus-storage/wenatchee-confluence_a36ce9ab.jpg"],
+    captions: ["两河交汇处"],
+  },
+  // 28. Fort Flagler
+  28: {
+    photos: ["/manus-storage/fort-flagler_f50ffadb.webp"],
+    captions: ["弗拉格勒堡海岸"],
+  },
+  // 29. Hoh Rain Forest
+  29: {
+    photos: ["/manus-storage/hoh-rainforest_0bba0dcc.webp"],
+    captions: ["霍雨林苔藓巨树"],
+  },
+  // 30. Moran State Park
+  30: {
+    photos: ["/manus-storage/moran-state-park_9f5fe54f.jpg"],
+    captions: ["Mt. Constitution观景"],
+  },
+  // 31. South Beach OR
+  31: {
+    photos: ["/manus-storage/south-beach-or_9de9877e.jpg"],
+    captions: ["南海滩海岸线"],
+  },
+  // 32. Nehalem Bay
+  32: {
+    photos: ["/manus-storage/nehalem-bay_256cfc1c.jpg"],
+    captions: ["尼哈勒姆湾沙滩"],
+  },
+  // 33. Honeyman
+  33: {
+    photos: ["/manus-storage/honeyman_feef5391.jpg"],
+    captions: ["沙丘与湖泊"],
+  },
+  // 34. Silver Falls
+  34: {
+    photos: ["/manus-storage/silver-falls_3932b390.jpg"],
+    captions: ["South Falls瀑布"],
+  },
+  // 35. Wallowa Lake
+  35: {
+    photos: ["/manus-storage/wallowa-lake_f6d304c2.jpg"],
+    captions: ["瓦洛厄湖与群山"],
+  },
+  // 36. Detroit Lake
+  36: {
+    photos: ["/manus-storage/detroit-lake_c1467c2b.jpg"],
+    captions: ["底特律湖全景"],
+  },
+  // 37. Sol Duc
+  37: {
+    photos: ["/manus-storage/sol_duc_a6d30d29.jpg"],
+    captions: ["索尔达克温泉"],
+  },
+  // 38. Harris Beach
+  38: {
+    photos: ["/manus-storage/harris_beach_8df381a3.jpg"],
+    captions: ["哈里斯海滩海蚀柱"],
+  },
+  // 39. Colonial Creek
+  39: {
+    photos: ["/manus-storage/colonial_creek_bcd4d3a3.webp"],
+    captions: ["Diablo Lake绿松石湖水"],
+  },
+  // 40. Lincoln Rock
+  40: {
+    photos: ["/manus-storage/lincoln_rock_c41605f0.jpg"],
+    captions: ["哥伦比亚河畔"],
+  },
+  // 41. Fort Casey
+  41: {
+    photos: ["/manus-storage/fort_casey_fd3ad483.jpg"],
+    captions: ["凯西堡历史炮台"],
+  },
+  // 42. Fort Ebey
+  42: {
+    photos: ["/manus-storage/fort_ebey_4cc204b5.jpg"],
+    captions: ["伊贝堡海岸悬崖"],
+  },
+  // 43. Larrabee
+  43: {
+    photos: ["/manus-storage/larrabee_fa6480ad.jpg"],
+    captions: ["拉腊比海湾"],
+  },
+  // 44. Steamboat Rock
+  44: {
+    photos: ["/manus-storage/steamboat_rock_52bb0aba.jpg"],
+    captions: ["汽船岩与Banks Lake"],
+  },
+  // 45. Bullards Beach
+  45: {
+    photos: ["/manus-storage/bullards_beach_6f40c834.jpg"],
+    captions: ["Coquille River灯塔"],
+  },
+  // 46. Champoeg
+  46: {
+    photos: ["/manus-storage/champoeg_scenic_68c7341b.jpg"],
+    captions: ["Willamette River河畔"],
+  },
+  // 47. Sunset Bay
+  47: {
+    photos: ["/manus-storage/sunset_bay_63e00786.jpg"],
+    captions: ["日落湾半月形海湾"],
+  },
+  // 48. Cove Palisades
+  48: {
+    photos: ["/manus-storage/cove_palisades_53e100ca.jpg"],
+    captions: ["峡谷与Lake Billy Chinook"],
+  },
+  // 49. La Pine
+  49: {
+    photos: ["/manus-storage/la_pine_114112fe.jpg"],
+    captions: ["Ponderosa Pine松林"],
   },
 };

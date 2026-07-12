@@ -397,15 +397,14 @@ export default function Home() {
       {/* Campground Grid */}
       <section className="container pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence>
             {filtered.map((camp, index) => (
               <motion.div
                 key={camp.id}
-                layout
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.3, delay: index * 0.03, ease: [0.23, 1, 0.32, 1] }}
+                transition={{ duration: 0.25, delay: Math.min(index * 0.02, 0.3), ease: [0.23, 1, 0.32, 1] }}
               >
                 <Link href={`/campground/${camp.id}`}>
                   <article className="group bg-white rounded-xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200">

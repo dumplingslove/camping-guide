@@ -10,7 +10,7 @@ export interface SeasonData {
 }
 
 export const seasonData: SeasonData[] = [
-  { campgroundId: 1, months: [1, 1, 1, 2, 2, 3, 3, 3, 3, 2, 1, 1], peakMonths: "6月-9月", notes: "全年开放，夏季最佳。冬季可能有积雪" },
+  { campgroundId: 1, months: [1, 1, 1, 2, 2, 3, 3, 3, 3, 2, 1, 1], peakMonths: "6月-9月", notes: "全年开放，夏季最佳。冬季Quarry Pond仍开放，其他区域可能关闭" },
   { campgroundId: 2, months: [1, 1, 2, 2, 3, 3, 3, 3, 3, 2, 1, 1], peakMonths: "5月-9月", notes: "全年开放，春秋也不错。Deep Lake夏季最适合游泳" },
   { campgroundId: 3, months: [0, 0, 0, 0, 2, 3, 3, 3, 2, 0, 0, 0], peakMonths: "6月-8月", notes: "5月-9月开放。湖水7-8月最暖适合游泳" },
   { campgroundId: 4, months: [0, 0, 0, 0, 1, 2, 3, 3, 3, 2, 0, 0], peakMonths: "7月-9月", notes: "5月底-10月。7-8月野花盛开，Paradise最美" },

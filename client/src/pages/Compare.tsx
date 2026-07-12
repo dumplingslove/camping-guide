@@ -164,7 +164,7 @@ export default function Compare() {
                         <X size={12} />
                       </button>
                       <Link href={`/campground/${camp.id}`} className="hover:text-pine transition-colors">
-                        <img src={camp.image} alt={camp.name} className="w-full h-24 object-cover rounded-lg mb-2" />
+                        <img src={camp.image} alt={camp.name} className="w-full h-36 object-cover object-center rounded-lg mb-2" />
                         <div className="font-display font-bold text-sm">{camp.nameCn}</div>
                         <div className="text-xs text-muted-foreground font-mono">{camp.name}</div>
                       </Link>
