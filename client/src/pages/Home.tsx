@@ -3,7 +3,7 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -143,6 +143,11 @@ export default function Home() {
                   {compareList.length}
                 </span>
               )}
+            </Link>
+            {/* Map link */}
+            <Link href="/map" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+              <Map size={16} />
+              <span className="hidden sm:inline">地图</span>
             </Link>
             {/* Itinerary link */}
             <Link href="/itinerary" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
@@ -405,21 +410,36 @@ export default function Home() {
                         <Clock size={12} className="text-pine" />
                         <span className="text-xs font-mono font-semibold text-pine">{camp.driveTimeLabel}</span>
                       </div>
-                      {/* Warning badge */}
-                      {camp.warning && (
+                      {/* Warning / Closure badge */}
+                      {camp.closureInfo ? (
+                        <div className="absolute top-3 left-3 bg-red-600/90 backdrop-blur-sm rounded-lg px-2.5 py-1 flex items-center gap-1">
+                          <Ban size={12} className="text-white" />
+                          <span className="text-xs font-semibold text-white">暂时关闭</span>
+                        </div>
+                      ) : camp.warning ? (
                         <div className="absolute top-3 left-3 bg-sunset/90 backdrop-blur-sm rounded-full px-2.5 py-1 flex items-center gap-1">
                           <AlertTriangle size={12} className="text-white" />
                           <span className="text-xs font-semibold text-white">注意</span>
                         </div>
+                      ) : null}
+                      {/* Closure reopen info overlay */}
+                      {camp.closureInfo && (
+                        <div className="absolute bottom-0 left-0 right-0 bg-red-900/80 backdrop-blur-sm px-3 py-2">
+                          <p className="text-[11px] text-white font-medium leading-tight">
+                            ⏳ 预计重开: {camp.closureInfo.expectedReopen}
+                          </p>
+                        </div>
                       )}
-                      {/* State badge */}
-                      <div className="absolute bottom-3 left-3">
-                        <span className="bg-pine/80 backdrop-blur-sm text-white text-xs font-mono px-2 py-0.5 rounded">
-                          {camp.state}
-                        </span>
-                      </div>
-                      {/* Visited badge */}
-                      {visitedMap[camp.id] && (
+                      {/* State badge - hidden when closure overlay is shown */}
+                      {!camp.closureInfo && (
+                        <div className="absolute bottom-3 left-3">
+                          <span className="bg-pine/80 backdrop-blur-sm text-white text-xs font-mono px-2 py-0.5 rounded">
+                            {camp.state}
+                          </span>
+                        </div>
+                      )}
+                      {/* Visited badge - hidden when closure overlay is shown */}
+                      {!camp.closureInfo && visitedMap[camp.id] && (
                         <div className="absolute bottom-3 right-3 bg-emerald-500/90 backdrop-blur-sm rounded-full px-2.5 py-1 flex items-center gap-1">
                           <CheckCircle2 size={12} className="text-white" />
                           <span className="text-xs font-semibold text-white">

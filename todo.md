@@ -31,6 +31,6 @@
 - [x] Create review data files for 12 new campgrounds
 - [x] Add tier filter to homepage
 - [x] Add ~13 second-priority campgrounds (Sol Duc, Harris Beach, Colonial Creek, Lincoln Rock, Fort Casey, Fort Ebey, Larrabee, Steamboat Rock, Bullards Beach, Champoeg, Sunset Bay, The Cove Palisades, La Pine)
-- [ ] Add 2026-restricted campground reopening date reminders (display expected reopen dates on cards/detail pages)
+- [x] Add 2026-restricted campground reopening date reminders (display expected reopen dates on cards/detail pages)
 - [ ] Add status checking for restricted campgrounds in scheduled updates
-- [ ] Implement interactive map view page for browsing campgrounds by region
+- [x] Implement interactive map view page for browsing campgrounds by region

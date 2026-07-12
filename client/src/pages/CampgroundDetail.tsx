@@ -12,7 +12,7 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 import { InsightsPanel } from "@/components/InsightsPanel";
 import { SiteMapSection } from "@/components/SiteMapSection";
 import { ReviewTrendChart } from "@/components/ReviewTrendChart";
-import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle } from "lucide-react";
+import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle, Ban } from "lucide-react";
 import { motion } from "framer-motion";
 
 function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: number; size?: number }) {
@@ -558,6 +558,44 @@ export default function CampgroundDetail() {
             <div className="text-sm font-medium">{campground.region}</div>
           </div>
         </motion.div>
+
+        {/* === CLOSURE ALERT BANNER === */}
+        {campground.closureInfo && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
+            className="bg-red-50 border-2 border-red-300 rounded-xl p-5 mb-6"
+          >
+            <div className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                <Ban size={20} className="text-red-600" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display text-lg font-bold text-red-800 flex items-center gap-2">
+                  ⚠️ 营地当前关闭中
+                </h3>
+                <div className="mt-2 space-y-1.5">
+                  <p className="text-sm text-red-700">
+                    <span className="font-semibold">关闭原因:</span> {campground.closureInfo.reason}
+                  </p>
+                  <p className="text-sm text-red-700">
+                    <span className="font-semibold">关闭时间:</span> {campground.closureInfo.closedSince} 起
+                  </p>
+                  <p className="text-sm text-red-700">
+                    <span className="font-semibold">预计重开:</span> {campground.closureInfo.expectedReopen}
+                  </p>
+                  <p className="text-xs text-red-600/70 mt-2">
+                    信息来源: {campground.closureInfo.source} · 最后检查: {campground.closureInfo.lastChecked}
+                  </p>
+                </div>
+                <div className="mt-3 p-2 bg-red-100/50 rounded-lg">
+                  <p className="text-xs text-red-800">
+                    💡 建议关注官方网站获取最新施工进度。如营地已重新开放，本站将在下次定期更新时自动反映。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
 
         {/* === IMPORTANT INFO FIRST === */}
         <div className="space-y-6">

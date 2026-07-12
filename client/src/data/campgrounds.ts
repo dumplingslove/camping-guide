@@ -36,6 +36,14 @@ export interface BookingWindow {
 
 export type CampgroundTier = "顶级热门" | "明显热门" | "区域家庭优选" | "商业度假型" | "2026受限" | "不适配";
 
+export interface ClosureInfo {
+  reason: string;
+  closedSince: string;
+  expectedReopen: string;
+  source: string;
+  lastChecked: string;
+}
+
 export interface Campground {
   id: number;
   name: string;
@@ -43,6 +51,7 @@ export interface Campground {
   tagline: string;
   description?: string;
   tier?: CampgroundTier;
+  closureInfo?: ClosureInfo;
   popularityLevel?: string;
   reviewCount?: string;
   driveTime: number; // in minutes
@@ -341,6 +350,13 @@ export const campgrounds: Campground[] = [
     tagline: "温带雨林中的古木溪流秘境",
     description: "Ohanapecosh 营地位于雷尼尔山国家公园东南侧，四周是一片由道格拉斯杉、西部红雪松和西部铁杉组成的原始林地，融雪汇成的 Ohanapecosh 河穿境而过。营地提供188个适合房车或帐篷露营的独立营位，因靠近银瀑布和族长林等热门徒步路线而闻名。营地海拔1,914英尺，较公园西侧气候更干燥、日照更充足。(Source: recreation.gov, nps.gov)",
     tier: "2026受限",
+    closureInfo: {
+      reason: "污水系统更换+营地全面整修（因长期过度使用）",
+      closedSince: "2025-04",
+      expectedReopen: "2026-11月后（施工预计持续至 2026年11月）",
+      source: "NPS Mount Rainier Park Construction Page",
+      lastChecked: "2026-07-12"
+    },
     popularityLevel: "极高（公园内最受欢迎的露营地：recreation.gov 有 638 条评价，评分 4.5 星；TheDyrt 有 42 条评价。因古老林地与河畔位置备受青睐，但因使用过度正进行大规模整修，关闭至 2027 年。）",
     reviewCount: "recreation.gov: 4.5★ (638 条评价), TheDyrt: 4.5★ (42 条评价)",
     driveTime: 150,
@@ -844,6 +860,13 @@ export const campgrounds: Campground[] = [
     tagline: "两座灯塔与哥伦比亚河入海口",
     description: "Cape Disappointment State Park 是一个占地2,023英亩的露营公园，位于长滩半岛，面向太平洋并俯瞰哥伦比亚河河口。营地设有137个标准营位、60个全接驳营位（含水、电及污水接驳）、18个部分接驳营位、5个简易徒步/骑行者营位、14个蒙古包和3间小木屋，可容纳最长45英尺的房车。公园拥有原始林、淡水湖、盐沼和潮间带，以其两座灯塔和刘易斯与克拉克解说中心而著称。 (Source: parks.wa.gov)",
     tier: "2026受限",
+    closureInfo: {
+      reason: "营地全面翻新施工（步道、设施、排水系统升级）",
+      closedSince: "2025-09-16",
+      expectedReopen: "2026年夏季（预计晚春或初夏重新开放）",
+      source: "WA State Parks 官网项目页 + Chinook Observer 2026年2月报道",
+      lastChecked: "2026-07-12"
+    },
     popularityLevel: "高（非常受欢迎，假日周末和旺季常常客满，强烈建议提前预约。TheDyrt 上有92条评价，平均4.5星。）",
     reviewCount: "TheDyrt: 4.5★ (92 条评价)",
     driveTime: 270,
@@ -1092,6 +1115,13 @@ export const campgrounds: Campground[] = [
     tagline: "俄勒冈海岸最美沙滩营地",
     description: "Cape Lookout State Park 是一个受欢迎的露营和日间游玩区，位于 Netarts 湾与太平洋之间的沙嘴上，拥有以铁杉和西加云杉为主的郁郁葱葱的古老原始森林。露营区提供38个全套服务营位（含水、电和污水接入）、170个帐篷营位、13个蒙古包和6间豪华小木屋，可方便到达数英里未开发的沙滩以及多条徒步小径，其中包括长约5英里的岬角步道。 (Source: Oregon State Parks official website & ReserveAmerica)",
     tier: "2026受限",
+    closureInfo: {
+      reason: "营地施工整修（排水、步道、日用区域升级）",
+      closedSince: "2025-10",
+      expectedReopen: "2026年秋季（施工从夏季推迟至秋季，预计8月后开始关闭）",
+      source: "Oregon State Parks 特别通知 + Tillamook Headlight Herald 2025年2月报道",
+      lastChecked: "2026-07-12"
+    },
     popularityLevel: "高（营地非常受欢迎，房车位有限建议预约。像 Cape Lookout 的海岸营地在俄勒冈最难订，尤其夏季，6个月预订窗口一开就很快被订满。）",
     reviewCount: "Google Maps: 4.7★ (2,619 条公园评价, 1,011 条营地评价), TheDyrt: 4.5★ (113 条评价), TripAdvisor: 4.5★ (134 条评价), Yelp: 4.2★ (131 条评价), Campendium: 4.2★ (31 条评价)",
     driveTime: 330,
