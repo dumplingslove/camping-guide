@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
@@ -20,6 +21,10 @@ function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
 }
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [search, setSearch] = useState("");
   const [selectedDriveTime, setSelectedDriveTime] = useState<string | null>(null);
   const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);

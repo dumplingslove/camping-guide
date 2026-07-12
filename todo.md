@@ -1,0 +1,20 @@
+# Project TODO
+
+- [x] Basic campground listing with filtering
+- [x] Campground detail pages with reviews
+- [x] Translation feature (English reviews to Chinese)
+- [x] Review keyword highlighting (search "noise" or "shower" highlights matching text)
+- [x] Campsite map annotations (mark recommended/avoid sites on map)
+- [x] Favorites and comparison features
+- [x] Itinerary planner
+- [ ] Fix translation feature (broken after upgrade - needs server route verification)
+- [x] Research non-Recreation.gov review sources
+- [x] Implement Google Maps Places API review fetcher (primary source for all 24 campgrounds)
+- [x] Implement Recreation.gov API review fetcher (secondary source for 10 federal campgrounds)
+- [x] Implement KOA website review scraper (secondary source for 1 KOA campground)
+- [x] Implement LLM-based review distillation pipeline (gpt-5-mini with structured JSON output)
+- [x] Create scheduled Heartbeat handler (POST /api/scheduled/update-reviews)
+- [x] Move translate/places APIs from vite plugins to Express routes
+- [x] Register review management tRPC router
+- [ ] Create Heartbeat cron job (weekly Monday 3AM UTC)
+- [ ] Verify area summaries and activities are based on actual reviews

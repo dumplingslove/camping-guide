@@ -10,8 +10,8 @@ import CampgroundDetail from "./pages/CampgroundDetail";
 import Compare from "./pages/Compare";
 import Favorites from "./pages/Favorites";
 import Itinerary from "./pages/Itinerary";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />

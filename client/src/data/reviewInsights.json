@@ -1560,10 +1560,6 @@
       "潮池探索（Bowman Bay）"
     ],
     "cellCoverage": "评论未明确提及手机信号，但公园靠近Hwy 20和城镇，信号一般可用",
-    "wildlife": "Harbor seals（港海豹）在Bowman Bay岸边常见，野兔出没于岛屿区域，鸟类丰富（Quarry Pond观鸟）",
-    "facilities": "厕所干净，冬季有暖气；Cranberry Lake有游泳区；Quarry Pond有全接驳(W+E)；冬季水龙头关闭",
-    "noise": "Cranberry Lake: 靠近Hwy 20有一定公路噪音，海军喷气机白天偶尔很吵；Quarry Pond: 多数评论说'尽管靠近公路但很安静'；Bowman Bay: 远离公路，非常安静",
-    "bestSeason": "全年开放。夏季最佳（游泳/划船/徒步），冬季也可（厕所有暖气，但水龙头关闭）",
     "recommendedSites": [
       {
         "site": "Cranberry Lake 内侧营位",
@@ -1591,41 +1587,54 @@
     "activitiesFromReviews": [
       {
         "name": "Cranberry Lake 游泳/划船",
-        "mentions": 4,
-        "sentiment": "非常正面"
+        "description": "非常正面 (提及4次)"
       },
       {
         "name": "桥景徒步（Deception Pass Bridge）",
-        "mentions": 3,
-        "sentiment": "震撼"
+        "description": "震撼 (提及3次)"
       },
       {
         "name": "Bowman Bay 潮池探索",
-        "mentions": 2,
-        "sentiment": "适合带娃"
+        "description": "适合带娃 (提及2次)"
       },
       {
         "name": "Rosario Head 步道",
-        "mentions": 2,
-        "sentiment": "风景壮观"
+        "description": "风景壮观 (提及2次)"
       },
       {
         "name": "Quarry Pond 观鸟",
-        "mentions": 2,
-        "sentiment": "安静惬意"
+        "description": "安静惬意 (提及2次)"
       },
       {
         "name": "Harbor Seals 观赏",
-        "mentions": 3,
-        "sentiment": "惊喜"
+        "description": "惊喜 (提及3次)"
       }
     ],
-    "areaInsights": {
-      "Cranberry Lake": "4.6★ (181条评价) — 最受欢迎的区域，营位私密性好（树木灌木多），靠近湖泊游泳区和步道。缺点：靠近Hwy 20有噪音，海军喷气机白天偶尔很吵。拖挂进出弯道多且窄。",
-      "Quarry Pond": "4.4★ (40条评价) — 全接驳营地，比Cranberry Lake更容易停拖挂。多数评论说尽管靠近公路但实际很安静。冬季厕所有暖气。部分营位坡度大需注意。附近有便利店。",
-      "Bowman Bay": "4.8★ (325条评价) — 最安静最美的区域，海岸线壮观，可观赏港海豹和潮池。营地小但精致，有水和干净厕所。适合想远离人群的家庭。",
-      "Forest Loop": "评论较少，位于密林中，靠近步道和桥景观景点，有水电接驳。",
-      "Lower Loop A": "评论较少，林间海岸地带，无水电，适合帐篷露营。"
-    }
+    "areaInsights": [
+      {
+        "area": "Cranberry Lake",
+        "insight": "4.6★ (181条评价) — 最受欢迎的区域，营位私密性好（树木灌木多），靠近湖泊游泳区和步道。缺点：靠近Hwy 20有噪音，海军喷气机白天偶尔很吵。拖挂进出弯道多且窄。"
+      },
+      {
+        "area": "Quarry Pond",
+        "insight": "4.4★ (40条评价) — 全接驳营地，比Cranberry Lake更容易停拖挂。多数评论说尽管靠近公路但实际很安静。冬季厕所有暖气。部分营位坡度大需注意。附近有便利店。"
+      },
+      {
+        "area": "Bowman Bay",
+        "insight": "4.8★ (325条评价) — 最安静最美的区域，海岸线壮观，可观赏港海豹和潮池。营地小但精致，有水和干净厕所。适合想远离人群的家庭。"
+      },
+      {
+        "area": "Forest Loop",
+        "insight": "评论较少，位于密林中，靠近步道和桥景观景点，有水电接驳。"
+      },
+      {
+        "area": "Lower Loop A",
+        "insight": "评论较少，林间海岸地带，无水电，适合帐篷露营。"
+      }
+    ],
+    "wildlifeWarnings": "Harbor seals（港海豹）在Bowman Bay岸边常见，野兔出没于岛屿区域，鸟类丰富（Quarry Pond观鸟）",
+    "facilitiesQuality": "厕所干净，冬季有暖气；Cranberry Lake有游泳区；Quarry Pond有全接驳(W+E)；冬季水龙头关闭",
+    "noiseIssues": "Cranberry Lake: 靠近Hwy 20有一定公路噪音，海军喷气机白天偶尔很吵；Quarry Pond: 多数评论说'尽管靠近公路但很安静'；Bowman Bay: 远离公路，非常安静",
+    "bestSeasonTips": "全年开放。夏季最佳（游泳/划船/徒步），冬季也可（厕所有暖气，但水龙头关闭）"
   }
 }

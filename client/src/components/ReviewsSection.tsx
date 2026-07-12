@@ -1,5 +1,5 @@
-import { useState, useMemo, useEffect } from "react";
-import { Star, ThumbsUp, MapPin, Calendar, Filter, ChevronDown, ChevronUp, ExternalLink, Search, Loader2, Languages } from "lucide-react";
+import { useState, useMemo, useEffect, useCallback } from "react";
+import { Star, ThumbsUp, MapPin, Calendar, Filter, ChevronDown, ChevronUp, ExternalLink, Search, Loader2, Languages, Highlighter } from "lucide-react";
 import { getReviewsForCampground, type Review, type CampgroundReviews } from "@/data/reviewsData";
 
 interface ReviewsSectionProps {
@@ -23,10 +23,32 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
+// Highlight matching keyword in text
+function HighlightedText({ text, keyword }: { text: string; keyword: string }) {
+  if (!keyword.trim()) return <>{text}</>;
+  
+  const regex = new RegExp(`(${keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+  const parts = text.split(regex);
+  
+  return (
+    <>
+      {parts.map((part, i) =>
+        regex.test(part) ? (
+          <mark key={i} className="bg-yellow-200 text-yellow-900 px-0.5 rounded">
+            {part}
+          </mark>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 // Translation cache to avoid re-translating the same text
 const translationCache: Record<string, string> = {};
 
-function ReviewCard({ review }: { review: Review }) {
+function ReviewCard({ review, keyword }: { review: Review; keyword: string }) {
   const [expanded, setExpanded] = useState(false);
   const [translatedText, setTranslatedText] = useState<string | null>(null);
   const [translating, setTranslating] = useState(false);
@@ -122,8 +144,10 @@ function ReviewCard({ review }: { review: Review }) {
         </div>
       )}
 
-      {/* Review text */}
-      <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">{displayText}</p>
+      {/* Review text with keyword highlighting */}
+      <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
+        <HighlightedText text={displayText} keyword={keyword} />
+      </p>
       {isLong && (
         <button
           onClick={() => setExpanded(!expanded)}
@@ -182,6 +206,7 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
   const [filterRating, setFilterRating] = useState<number | null>(null);
   const [filterLoop, setFilterLoop] = useState<string>("");
   const [filterSite, setFilterSite] = useState<string>("");
+  const [filterKeyword, setFilterKeyword] = useState<string>("");
   const [sortBy, setSortBy] = useState<"recent" | "helpful" | "rating">("helpful");
   const [showCount, setShowCount] = useState(10);
 
@@ -226,6 +251,9 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
     if (filterSite) {
       reviews = reviews.filter((r) => r.siteNumber?.toLowerCase().includes(filterSite.toLowerCase()));
     }
+    if (filterKeyword.trim()) {
+      reviews = reviews.filter((r) => r.text.toLowerCase().includes(filterKeyword.toLowerCase()));
+    }
 
     switch (sortBy) {
       case "recent":
@@ -254,6 +282,9 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
     campReviews.reviews.reduce((acc, r) => acc + r.rating, 0) /
     campReviews.reviews.length
   ).toFixed(1);
+
+  // Common keyword suggestions based on review content
+  const keywordSuggestions = ["noise", "shower", "clean", "quiet", "view", "shade", "privacy", "kids", "trail", "river", "lake"];
 
   return (
     <section className="mt-8">
@@ -300,7 +331,7 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
       </div>
 
       {/* Filters */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-2">
         <div className="flex items-center gap-1 text-xs text-gray-600">
           <Filter className="w-3 h-3" />
           筛选:
@@ -338,12 +369,23 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
             className="text-xs border border-gray-200 rounded pl-6 pr-2 py-1 bg-white w-28 focus:outline-none focus:ring-1 focus:ring-emerald-300"
           />
         </div>
-        {(filterRating || filterLoop || filterSite) && (
+        <div className="relative">
+          <Highlighter className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 text-amber-500" />
+          <input
+            type="text"
+            value={filterKeyword}
+            onChange={(e) => setFilterKeyword(e.target.value)}
+            placeholder="关键词搜索..."
+            className="text-xs border border-gray-200 rounded pl-6 pr-2 py-1 bg-white w-32 focus:outline-none focus:ring-1 focus:ring-amber-300"
+          />
+        </div>
+        {(filterRating || filterLoop || filterSite || filterKeyword) && (
           <button
             onClick={() => {
               setFilterRating(null);
               setFilterLoop("");
               setFilterSite("");
+              setFilterKeyword("");
             }}
             className="text-xs text-red-500 hover:text-red-700"
           >
@@ -352,15 +394,38 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
         )}
       </div>
 
+      {/* Keyword quick suggestions */}
+      <div className="flex flex-wrap gap-1 mb-4">
+        <span className="text-xs text-gray-400">快捷:</span>
+        {keywordSuggestions.map((kw) => (
+          <button
+            key={kw}
+            onClick={() => setFilterKeyword(kw)}
+            className={`text-xs px-2 py-0.5 rounded-full transition-colors ${
+              filterKeyword === kw
+                ? "bg-amber-200 text-amber-800"
+                : "bg-gray-100 text-gray-500 hover:bg-amber-50 hover:text-amber-700"
+            }`}
+          >
+            {kw}
+          </button>
+        ))}
+      </div>
+
       {/* Results count */}
       <p className="text-xs text-gray-500 mb-3">
         显示 {Math.min(showCount, filteredReviews.length)} / {filteredReviews.length} 条评价
+        {filterKeyword && (
+          <span className="ml-1 text-amber-600">
+            (含 "{filterKeyword}" 的评论)
+          </span>
+        )}
       </p>
 
       {/* Review list */}
       <div className="space-y-3">
         {filteredReviews.slice(0, showCount).map((review, idx) => (
-          <ReviewCard key={`${review.author}-${review.date}-${idx}`} review={review} />
+          <ReviewCard key={`${review.author}-${review.date}-${idx}`} review={review} keyword={filterKeyword} />
         ))}
       </div>
 
