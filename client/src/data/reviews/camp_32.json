@@ -1,0 +1,44 @@
+{
+  "campgroundId": 32,
+  "source": "google_maps",
+  "fetchedAt": "2026-07-12T19:32:23.134Z",
+  "placeRating": 4.7,
+  "totalRatings": 2085,
+  "reviews": [
+    {
+      "author": "sam",
+      "rating": 3,
+      "text": "straight up a gorgeous place to stay right off the beach.  Whats frustrating is other campers and poor etiquettes like letting their kids stand in the road as your pulling your trailer by had one reach out and tried to grab the side.  No parents moved from their lounge chair to get there kids. Also if your an out of state veteran don't expect any discount and you have to pay extra for being out of state also it cost 10 bucks to use the dump station lol it all adds up and not cheap.  Dont mind paying a little extra but come on",
+      "date": "3 weeks ago",
+      "time": 1781905660
+    },
+    {
+      "author": "Bob ROBERTS",
+      "rating": 5,
+      "text": "It seems like all Oregon state parks are very well maintained, situated in really nice places, have good facilities, and are reasonably priced.\nThere is speech access though it is a fairly good hike across the dunes to get there.\nThere are no sewer hookups at the RV camping area sites. The park has a dump station as you first come in so you can empty as needed.",
+      "date": "2 months ago",
+      "time": 1776877120
+    },
+    {
+      "author": "Kristine Hartman",
+      "rating": 5,
+      "text": "Horse camping May 2026 site H10\n\nNice!\n\nPipe stalls. Potable water at each site.\n\nManure pit nearby. Wheelbarrows too.\n\nClean full flush toilet bathrooms. Showers one camp group over.\n\nDogs on leash allowed in camp.\n\nEasy access to the beach.",
+      "date": "a month ago",
+      "time": 1779206833
+    },
+    {
+      "author": "John Mitchell",
+      "rating": 4,
+      "text": "The campground was very nice overall. Easy to find amenities, access to the beach was convenient, clean, organized campsites. Partially covered picnic table on our deck made making meals better. Our only issue (and the one reason we left a day early) was the mattress pads on the bed and fold down couch. They were too hard, my hips would start to ache (I’m a side sleeper). Not everyone will have the same issue, but when it comes to sleep and camping that’s a deal breaker for us.",
+      "date": "9 months ago",
+      "time": 1759275554
+    },
+    {
+      "author": "Isa Dean",
+      "rating": 5,
+      "text": "I'm camping with a popup trailer at the comfortable, and beautiful Nahalem State Park Campground. Spacious campsites with loads of green level space for tents or for hanging out. Dogs allowed on leash and off-leash at the beach. Thoughtfully set up with places to deposit dog bags and get additional ones as you're walking through. There's a brand new and especially nice bathroom building near my site (D43). Some sites are shaded (which also protects you from the wind on windy days). Both bathroom and shower buildings were clean and well kept. It feels really nice here, and while you have to climb over what amounts to a large sand dune to get to the beach - what a lovely beach it is. This park is far enough from 101 to be very quiet. Prices are much more reasonable than private RV parks. I enjoyed the new looking water and electric hookups (50A, 20A, 110V). There are warm lights that come on by the hookups at dark and add a bit of charm.",
+      "date": "12 months ago",
+      "time": 1752503974
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "campgroundId": 31,
+  "source": "google_maps",
+  "fetchedAt": "2026-07-12T19:32:22.119Z",
+  "placeRating": 4.5,
+  "totalRatings": 8,
+  "reviews": [
+    {
+      "author": "Vee K",
+      "rating": 4,
+      "text": "I recently stayed at South Beach State Park Campground, and it’s a great option if you’re looking for a convenient, well-equipped base along the Oregon coast. The campground is massive, with hundreds of sites spread across multiple loops, so it feels more like a small village than a secluded retreat. Despite its size, it’s clean, organized, and fairly quiet overall, with easy access to bathrooms, hot showers, and paved trails. The beach isn’t right next to most campsites, but it’s an easy and scenic walk through dunes and coastal forest, which adds to the experience.\n\nThat said, it definitely leans more developed than rustic. Sites can feel a bit close together, especially when it’s busy, so privacy is somewhat limited. If you’re camping near the playground, it can get pretty loud during the day. When I visited at the end of April, the mosquitoes were surprisingly intense, there were a lot of them, especially around dusk, so definitely bring bug spray. On the plus side, the location near Newport is super convenient for food and nearby attractions. Overall, South Beach is a solid, family-friendly campground that prioritizes comfort and location over seclusion, just be prepared for noise and bugs depending on where you’re camped and the time of year.",
+      "date": "2 months ago",
+      "time": 1778012064
+    },
+    {
+      "author": "T Tirey",
+      "rating": 5,
+      "text": "Cleanest campground we went to on our road trip. The walking trail to the beach was nice, they had a disc golf course, and the showers were free and also clean. Everything was well maintained. The temperature was perfect for cold weather type people like my husband and I. You could hear the crowds of sea lions in the distance, which we thought was funny, though it wasn't disturbingly loud. Slept great with the windows open on the rv. 10/10 would recommend.",
+      "date": "3 months ago",
+      "time": 1775785908
+    },
+    {
+      "author": "Xbox User",
+      "rating": 5,
+      "text": "Camping and day use picnic area and beach access. Lots of parking available for visitors. I guesstimate about 100+ spots. Paved trail to a nearby jetty (1 mile).",
+      "date": "11 months ago",
+      "time": 1753498075
+    },
+    {
+      "author": "Linfang He",
+      "rating": 5,
+      "text": "Great campsite. Good privacy and nice amenities. Even better than some private campsites",
+      "date": "10 months ago",
+      "time": 1757574577
+    },
+    {
+      "author": "London L. (snake)",
+      "rating": 4,
+      "text": "went here with family and we got a spot right next to the playground which wasn't really our plan but it was one of the only spots avaliable. the kids at the playground were active until late at night so it was quite annoying but one night the rangers got them. bathrooms are clean, so are showers, no long lines.",
+      "date": "11 months ago",
+      "time": 1753840820
+    }
+  ]
+}

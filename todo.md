@@ -21,3 +21,12 @@
 - [x] Adjust review fetcher priority: Recreation.gov and KOA as PRIMARY sources, Google Maps as fallback only
 - [x] Implement admin panel page (manual trigger, update logs, review count per campground)
 - [x] Add review trend visualization (rating over time, review count growth) to campground detail pages
+- [x] Add 12 first-priority campgrounds per checklist (Fort Worden, Grayland Beach, Wenatchee Confluence, Fort Flagler, Hoh Rain Forest, Moran, South Beach OR, Nehalem Bay, Honeyman, Silver Falls, Wallowa Lake, Detroit Lake)
+- [x] Add tier/category system: 顶级热门, 明显热门, 区域家庭优选, 商业度假型, 2026受限
+- [x] Demote Pacific Shores Motorcoach Resort (不适配目标车型)
+- [x] Demote Little Crater Lake and Farewell Bend to 区域家庭优选
+- [x] Mark Ohanapecosh as 2026受限 (全年关闭)
+- [x] Mark Cape Disappointment and Cape Lookout as 2026受限 (施工)
+- [x] Update site title/subtitle to reflect WA-OR scope (36个精选营地, 1.5-8小时)
+- [x] Create review data files for 12 new campgrounds
+- [x] Add tier filter to homepage

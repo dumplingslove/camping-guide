@@ -1,0 +1,44 @@
+{
+  "campgroundId": 25,
+  "source": "google_maps",
+  "fetchedAt": "2026-07-12T19:32:15.985Z",
+  "placeRating": 4.7,
+  "totalRatings": 107,
+  "reviews": [
+    {
+      "author": "Laura Ruthemeyer",
+      "rating": 5,
+      "text": "This was our first time camping at Fort Warden, and will not be the last! We were there for 4 nights, with our trailer.\nThe campsites are spacious, and open. The campground has access to .. everything! Trails galore, and strolls to the sandy beaches. The battery's - there are a few! - are interesting to explore. And offer some unique views from the top.",
+      "date": "a year ago",
+      "time": 1750994854
+    },
+    {
+      "author": "Vee K",
+      "rating": 5,
+      "text": "The beachside campground offers a fantastic location just a stone's throw from the shore, providing stunning sunsets as a backdrop. Port Townsend boasts a plethora of activities and attractions, with Fort Worden State Park offering its own array of things to see and do. While ideal for RVs, tent camping may pose challenges on windy days, as we experienced firsthand. Fortunately, relocating to the forest campsite proved to be a wonderful choice. This area was clean, peaceful, and provided multiple beach access points, as well as various trails and paths for leisurely walks or bike rides.",
+      "date": "2 years ago",
+      "time": 1719028732
+    },
+    {
+      "author": "Benson Adams",
+      "rating": 4,
+      "text": "The beach campground is great, about a hundred feet from the beach.  The sunsets are beautiful.  There are all kinds of activities and tourist attractions in Port Townsend and more than enough to do in fort worden state park itself.  The grass at the campground is overran by evil thistles that stick to anything they touch.  There are deer everywhere all over the park , even the bucks come out during the day time.  Lots of different areas to access the beach and all kinds of trails and paths to walk or ride on.",
+      "date": "3 years ago",
+      "time": 1660796741
+    },
+    {
+      "author": "James Christie",
+      "rating": 5,
+      "text": "This is an awesome camping spot. If you’re into RV camping, this is it. Each site has water, power and dump.  Lots of room.  Right on the beach. Great people!  Must try!  Dog friendly!!",
+      "date": "3 years ago",
+      "time": 1674731281
+    },
+    {
+      "author": "Michael Boyle",
+      "rating": 5,
+      "text": "Fort Worden Stated Park's Beach campground must be in the top 5 state park's. If not #2, especially during good weather. Awesome beaches, historical buildings, & embattlements both upper & lower. Dog-friendly, human friendly too.",
+      "date": "3 years ago",
+      "time": 1682793007
+    }
+  ]
+}

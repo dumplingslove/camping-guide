@@ -1,5 +1,5 @@
 // Auto-generated from Recreation.gov and Google Maps reviews
-// Total: 4674 reviews across 24 campgrounds
+// Total: 4674+ reviews across 36 campgrounds
 // Reviews are lazy-loaded per campground to avoid loading 2.2MB upfront
 
 export interface Review {

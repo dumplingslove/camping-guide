@@ -1,0 +1,44 @@
+{
+  "campgroundId": 29,
+  "source": "google_maps",
+  "fetchedAt": "2026-07-12T19:32:20.077Z",
+  "placeRating": 4.7,
+  "totalRatings": 302,
+  "reviews": [
+    {
+      "author": "Sani",
+      "rating": 4,
+      "text": "We spent a night at this campground inside the national park and had a solid experience overall. Facilities are basic — vault toilets and cold-water sinks — which is totally expected for a national park. One nice surprise was the dedicated dishwashing station, which made things a bit easier.\n\nThe campsites themselves are all located quite close to the internal campground road. There’s no through traffic, but the layout isn’t super cozy: our vehicle was half on the road, and the setup felt a bit cramped. That said, the real highlight is the proximity to the river — absolutely stunning. Being able to sit by the water and fall asleep to the sound of the river was truly special.\n\nA great spot if you value nature and river access over comfort or privacy.",
+      "date": "11 months ago",
+      "time": 1752954729
+    },
+    {
+      "author": "Ryan Alvis",
+      "rating": 5,
+      "text": "My first time to Olympic National Park even though I grew up south of Seattle. It was beautiful. My daughter and I did some short hikes. I would have liked to do some longer hikes but didn't have the time. The Hoh campground was great. Good facilities. Visitor center. Ranger talks. Access to the river. A couple short hikes and one long hike start from the ranger station.\n\nPlan for rain.\n\nOverall outstanding.",
+      "date": "2 years ago",
+      "time": 1695223979
+    },
+    {
+      "author": "Kim Kim",
+      "rating": 5,
+      "text": "One of the nicest campground. Great beautiful views, great for a hike, very clean, close to the river. We saw a couple of deers around our campsite and it’s very cool. There many great parking spots very close by if your group has more than two cars. Very clean washrooms. Recommend!",
+      "date": "4 years ago",
+      "time": 1656990011
+    },
+    {
+      "author": "John Seaborn",
+      "rating": 5,
+      "text": "Beautiful campground with lots space and  privacy. The drive in to Hoh is beautiful as well. Walk the Hall of Mosses which is a short loop trail starting near the Visitors Center. Consider the river trail for at least a few miles out and back, The Hoh River is a beautiful blue Glacier color. In all this is a very spectacular place, get there early to avoid waiting and crowds.",
+      "date": "a year ago",
+      "time": 1725536441
+    },
+    {
+      "author": "Amanda",
+      "rating": 5,
+      "text": "Bathrooms are pretty decent here but no soap so bring that and no showers. The area to wash your dishes is really good with a big sink and faucets and potable water.  Make sure to not leave any food out because of local bears and other wildlife. The campsites were decently distanced apart so felt we had some privacy. Also the fire pits were legit with 4 different levels you can put the grill.  We didn't have any cell service out there so that part is great to disconnect. I would definitely recommend and seems to be popular with families and couples. There's great short hikes walkable from the campsites as well.",
+      "date": "2 years ago",
+      "time": 1691440541
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "campgroundId": 30,
+  "source": "google_maps",
+  "fetchedAt": "2026-07-12T19:32:21.084Z",
+  "placeRating": 4.8,
+  "totalRatings": 1796,
+  "reviews": [
+    {
+      "author": "Anthony Reyes",
+      "rating": 5,
+      "text": "Great state park for families with little ones or  folks that are just easing into hiking. Most of the great sights you can get to by vehicle or hike.",
+      "date": "2 weeks ago",
+      "time": 1782151464
+    },
+    {
+      "author": "Misha Smith",
+      "rating": 4,
+      "text": "We recently drove through Moran State Park to check it out for future visits, and it’s absolutely beautiful! The park sits right along the water and is incredibly lush and scenic. While there are no electrical hookups (which means we wouldn’t bring our RV), it’s perfect for tent camping or bringing our truck. We like to scope out parks ahead of time, and this one offers plenty of great sites to choose from, with four different camping areas.\n\nThe park also has an awesome spot where you can rent kayaks and canoes, plus a designated swimming area with a beach. There are lots of amenities, and the restrooms were clean and well-kept throughout the park.\n\nA couple of tips: definitely book your campsite well in advance since this is a popular state park, and don’t forget to reserve your ferry tickets to Orcas Island both ways—especially on weekends, as the waits can be long.\n\nWe’ll definitely be coming back here for camping and exploring more of what this amazing park has to offer!",
+      "date": "10 months ago",
+      "time": 1757519782
+    },
+    {
+      "author": "Selina Young",
+      "rating": 4,
+      "text": "The view from the summit is great.  The trail to hike up is a little bit steep. We hiked the cascade falls. It’s easy.",
+      "date": "2 months ago",
+      "time": 1778195208
+    },
+    {
+      "author": "Judy S",
+      "rating": 5,
+      "text": "Beautiful! Easy access to trails, amenities and a park. Just did the Cascade Lake trail, which is a lovely relatively easy less than 3 mile hike. The views are incredible and terrain varied from forest right down to the lake. There’s a snack shack there, bathrooms and picnic area. Definitely worth the $10 Parking/registration fee.",
+      "date": "a year ago",
+      "time": 1748365332
+    },
+    {
+      "author": "Carl Berg",
+      "rating": 5,
+      "text": "Loved this park so many views! So many trails! Yes please! Sunrise or sunset can't go wrong!!! Just during the day it's amazing!",
+      "date": "5 months ago",
+      "time": 1769064122
+    }
+  ]
+}

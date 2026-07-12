@@ -1,0 +1,44 @@
+{
+  "campgroundId": 36,
+  "source": "google_maps",
+  "fetchedAt": "2026-07-12T19:32:27.223Z",
+  "placeRating": 4.5,
+  "totalRatings": 1175,
+  "reviews": [
+    {
+      "author": "Allen Miller",
+      "rating": 4,
+      "text": "Affordable prices and full hook-ups. 5-Stars would require better signage so if you arrive in the dark you could find the turns in the RV park without getting out with a flashlight.",
+      "date": "6 months ago",
+      "time": 1766882734
+    },
+    {
+      "author": "Angilo Fletcher",
+      "rating": 5,
+      "text": "Great location for a family camping trip. We took our family of 5 here with another family of 4. Lots of trails, beach access and more. We brought our boat and Kayaks and the water was amazing!",
+      "date": "11 months ago",
+      "time": 1755020825
+    },
+    {
+      "author": "Steve McCollough",
+      "rating": 3,
+      "text": "A good place for families. Lots of activities. However, my personal tastes are to camp in places with more space between campsights, and less people in general. Looks popular, though.",
+      "date": "10 months ago",
+      "time": 1755505698
+    },
+    {
+      "author": "Don Lowe",
+      "rating": 5,
+      "text": "Spent a week in mid May and had great weather and great trout fishing. We stayed in the G loop and had wonderful views of the lake. The dogwoods were in bloom at this time of year.\nThe campground was full on the weekend but emptied out during the week.\nThe park hosts sell firewood and ice and there is a small store for snacks.",
+      "date": "2 years ago",
+      "time": 1718665187
+    },
+    {
+      "author": "Christina Morgan",
+      "rating": 4,
+      "text": "Mongold Dsy use was a great place to cool off. I dont have a boat or jet ski, but this place looks to be the hot spot. Get there early, whether for boating or sitting on the shore. The area is very rocky. I would suggest water shoes. Bring cover like an easy up or umbrella. It was only 75 but felt much hotter in the sun. The water was decent temp, and we could just hop in. It was a bit windy at times so hard to navigate in a tube alone (bring a paddle). There are a lot of areas along the water so people are spread out. There are only a few picnic tables. Personally, I like a river in which water is a bit clearer and the rocks are tumbled.",
+      "date": "11 months ago",
+      "time": 1752974852
+    }
+  ]
+}

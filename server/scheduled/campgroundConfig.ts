@@ -63,4 +63,23 @@ export const campgroundReviewConfigs: CampgroundReviewConfig[] = [
   { id: 3, name: "Alder Lake Park", googlePlacesQuery: "Alder Lake Park Campground Eatonville Washington" },
   { id: 10, name: "Salt Creek Recreation Area", googlePlacesQuery: "Salt Creek Recreation Area Campground Port Angeles Washington" },
   { id: 24, name: "Pacific Shores Motorcoach Resort", googlePlacesQuery: "Pacific Shores Motorcoach Resort Newport Oregon" },
+
+  // ============================================================================
+  // GROUP 4: NEW CAMPGROUNDS (12) - Added from popularity checklist
+  // ============================================================================
+  // WA State Parks - New (5)
+  { id: 25, name: "Fort Worden Historical State Park", googlePlacesQuery: "Fort Worden State Park Campground Port Townsend Washington" },
+  { id: 26, name: "Grayland Beach State Park", googlePlacesQuery: "Grayland Beach State Park Campground Washington" },
+  { id: 27, name: "Wenatchee Confluence State Park", googlePlacesQuery: "Wenatchee Confluence State Park Campground Washington" },
+  { id: 28, name: "Fort Flagler Historical State Park", googlePlacesQuery: "Fort Flagler State Park Campground Washington" },
+  { id: 30, name: "Moran State Park", googlePlacesQuery: "Moran State Park Campground Orcas Island Washington" },
+  // NPS - New (1) - Recreation.gov PRIMARY
+  { id: 29, name: "Hoh Rain Forest Campground", googlePlacesQuery: "Hoh Rain Forest Campground Olympic National Park", recGovCampgroundId: "247592" },
+  // Oregon State Parks - New (5)
+  { id: 31, name: "South Beach State Park (OR)", googlePlacesQuery: "South Beach State Park Campground Newport Oregon" },
+  { id: 32, name: "Nehalem Bay State Park", googlePlacesQuery: "Nehalem Bay State Park Campground Oregon" },
+  { id: 33, name: "Jessie M. Honeyman Memorial State Park", googlePlacesQuery: "Honeyman State Park Campground Florence Oregon" },
+  { id: 34, name: "Silver Falls State Park", googlePlacesQuery: "Silver Falls State Park Campground Oregon" },
+  { id: 35, name: "Wallowa Lake State Park", googlePlacesQuery: "Wallowa Lake State Park Campground Oregon" },
+  { id: 36, name: "Detroit Lake State Recreation Area", googlePlacesQuery: "Detroit Lake State Recreation Area Campground Oregon" },
 ];

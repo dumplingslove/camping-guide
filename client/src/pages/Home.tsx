@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Link } from "wouter";
-import { campgrounds, driveTimeRanges, featureOptions } from "@/data/campgrounds";
+import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,6 +32,7 @@ export default function Home() {
   const [minKid, setMinKid] = useState(0);
   const [minTc, setMinTc] = useState(0);
   const [showFilters, setShowFilters] = useState(false);
+  const [selectedTier, setSelectedTier] = useState<CampgroundTier | "all">("all");
   const { favorites, compareList } = useFavorites();
 
   // Visited state from localStorage
@@ -74,9 +75,10 @@ export default function Home() {
       if (c.sceneryRating < minScenery) return false;
       if (c.kidRating < minKid) return false;
       if (c.tcRating < minTc) return false;
+      if (selectedTier !== "all" && c.tier !== selectedTier) return false;
       return true;
     });
-  }, [search, selectedDriveTime, selectedFeatures, minScenery, minKid, minTc]);
+  }, [search, selectedDriveTime, selectedFeatures, minScenery, minKid, minTc, selectedTier]);
 
   const toggleFeature = (f: string) => {
     setSelectedFeatures((prev) =>
@@ -91,9 +93,20 @@ export default function Home() {
     setMinScenery(0);
     setMinKid(0);
     setMinTc(0);
+    setSelectedTier("all");
   };
 
-  const hasActiveFilters = search || selectedDriveTime || selectedFeatures.length > 0 || minScenery > 0 || minKid > 0 || minTc > 0;
+  const hasActiveFilters = search || selectedDriveTime || selectedFeatures.length > 0 || minScenery > 0 || minKid > 0 || minTc > 0 || selectedTier !== "all";
+
+  const tierOptions: { value: CampgroundTier | "all"; label: string; color: string }[] = [
+    { value: "all", label: "全部", color: "bg-white border-border" },
+    { value: "顶级热门", label: "顶级热门", color: "bg-red-50 border-red-200 text-red-700" },
+    { value: "明显热门", label: "明显热门", color: "bg-orange-50 border-orange-200 text-orange-700" },
+    { value: "区域家庭优选", label: "区域优选", color: "bg-emerald-50 border-emerald-200 text-emerald-700" },
+    { value: "商业度假型", label: "商业度假", color: "bg-purple-50 border-purple-200 text-purple-700" },
+    { value: "2026受限", label: "2026受限", color: "bg-amber-50 border-amber-200 text-amber-700" },
+    { value: "不适配", label: "不适配", color: "bg-gray-50 border-gray-200 text-gray-500" },
+  ];
 
   return (
     <div className="min-h-screen topo-bg">
@@ -169,7 +182,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1, ease: [0.23, 1, 0.32, 1] }}
             className="mt-4 text-lg md:text-xl text-white/90 max-w-2xl font-body"
           >
-            24个精选营地 · 专为带娃家庭与Truck Camper打造 · 从Redmond出发1.5-7小时
+            华盛顿—俄勒冈 36个精选营地 · 专为带娃家庭与Truck Camper打造 · 从Redmond出发1.5-8小时
           </motion.p>
           {/* Search Bar */}
           <motion.div
@@ -206,6 +219,22 @@ export default function Home() {
                 <span className="w-2 h-2 rounded-full bg-sunset" />
               )}
             </button>
+            {/* Tier quick filters */}
+            <div className="hidden lg:flex items-center gap-1.5">
+              {tierOptions.map((opt) => (
+                <button
+                  key={opt.value}
+                  onClick={() => setSelectedTier(selectedTier === opt.value ? "all" : opt.value)}
+                  className={`px-2.5 py-1 rounded-full text-[11px] font-medium transition-all border ${
+                    selectedTier === opt.value
+                      ? opt.value === "all" ? "bg-pine text-white border-pine" : opt.color + " ring-1 ring-current"
+                      : "bg-white/80 border-border/50 text-muted-foreground hover:border-border"
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
             {/* Drive time quick filters */}
             <div className="hidden md:flex items-center gap-2">
               {driveTimeRanges.map((range) => (
@@ -410,20 +439,34 @@ export default function Home() {
                       <p className="text-sm text-foreground/80 mt-2 line-clamp-1">
                         {camp.tagline}
                       </p>
-                      {/* Popularity badge */}
-                      {camp.popularityLevel && (
-                        <div className="mt-2 inline-flex items-center gap-1">
-                          <Flame size={12} className={camp.popularityLevel.startsWith("极高") ? "text-red-500" : camp.popularityLevel.startsWith("高") ? "text-orange-500" : camp.popularityLevel.startsWith("中等") ? "text-amber-500" : "text-emerald-500"} />
+                      {/* Tier & Popularity badges */}
+                      <div className="mt-2 flex flex-wrap items-center gap-1.5">
+                        {camp.tier && (
                           <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${
-                            camp.popularityLevel.startsWith("极高") ? "bg-red-50 text-red-700" :
-                            camp.popularityLevel.startsWith("高") ? "bg-orange-50 text-orange-700" :
-                            camp.popularityLevel.startsWith("中等") ? "bg-amber-50 text-amber-700" :
-                            "bg-emerald-50 text-emerald-700"
+                            camp.tier === "顶级热门" ? "bg-red-50 text-red-700 border border-red-200" :
+                            camp.tier === "明显热门" ? "bg-orange-50 text-orange-700 border border-orange-200" :
+                            camp.tier === "区域家庭优选" ? "bg-emerald-50 text-emerald-700 border border-emerald-200" :
+                            camp.tier === "商业度假型" ? "bg-purple-50 text-purple-700 border border-purple-200" :
+                            camp.tier === "2026受限" ? "bg-amber-50 text-amber-700 border border-amber-200" :
+                            "bg-gray-50 text-gray-500 border border-gray-200"
                           }`}>
-                            {camp.popularityLevel.split(" (")[0]}
+                            {camp.tier}
                           </span>
-                        </div>
-                      )}
+                        )}
+                        {camp.popularityLevel && (
+                          <span className="inline-flex items-center gap-0.5">
+                            <Flame size={10} className={camp.popularityLevel.startsWith("极高") ? "text-red-500" : camp.popularityLevel.startsWith("高") ? "text-orange-500" : camp.popularityLevel.startsWith("中等") ? "text-amber-500" : "text-emerald-500"} />
+                            <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded-full ${
+                              camp.popularityLevel.startsWith("极高") ? "bg-red-50 text-red-700" :
+                              camp.popularityLevel.startsWith("高") ? "bg-orange-50 text-orange-700" :
+                              camp.popularityLevel.startsWith("中等") ? "bg-amber-50 text-amber-700" :
+                              "bg-emerald-50 text-emerald-700"
+                            }`}>
+                              {camp.popularityLevel.split(" (")[0]}
+                            </span>
+                          </span>
+                        )}
+                      </div>
                       {/* Ratings */}
                       <div className="mt-3 grid grid-cols-3 gap-2">
                         <div className="flex flex-col items-center">

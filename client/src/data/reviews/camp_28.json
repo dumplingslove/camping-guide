@@ -1,0 +1,44 @@
+{
+  "campgroundId": 28,
+  "source": "google_maps",
+  "fetchedAt": "2026-07-12T19:32:19.094Z",
+  "placeRating": 4.8,
+  "totalRatings": 1770,
+  "reviews": [
+    {
+      "author": "m c",
+      "rating": 5,
+      "text": "This place exemplifies so many amazing state parks that Washington state has to offer! It's on the water so you can drive in or boat in with a boat dock to tie up and mooring balls. No power or water but Port Townsend's just a hop away. Some great world war II history and wonderful landscape.",
+      "date": "a month ago",
+      "time": 1781206049
+    },
+    {
+      "author": "Jeremy Botkin",
+      "rating": 5,
+      "text": "This is a premier State Park. Beautiful views, adventurous hiking trails and historical sites. Plenty of beaches and a boat ramp and dock. Excellent kayaking waters and tons of nature to enjoy. In the summer season the snack shack has yummy soft serve ice cream and other delights.",
+      "date": "2 months ago",
+      "time": 1778000916
+    },
+    {
+      "author": "Rhodes family",
+      "rating": 5,
+      "text": "Beautiful trails along the coast and through the woods. Plus you get to explore some historical bunkers, artillery rooms etc. Super windy the closer you get to the coastal trail. Make sure to pack a windbreaker and/or something warm. If you want to explore all the military bunkers, highly recommend to bring a flashlight. Your cellphone flashlight just won’t cut it.",
+      "date": "3 months ago",
+      "time": 1774147316
+    },
+    {
+      "author": "K Seale",
+      "rating": 5,
+      "text": "This Washington State Park campground was a 5-star stay! The trails connecting the campground to the historical batteries and Fort are well-maintained; I didn't even need my hiking poles (even though it was muddy). They would be helpful, however, for seniors like myself hiking some of the smaller trails traversing over tree roots - like the narrow one that's parallel to the road that goes from Fort to the campground.\nAt the broadest expanse of batteries, I watched at least 6 eagles in the skies overhead while 2 perched on their lookout. What an experience for this nature lover! Also enjoyed the daffodils, harbor seals (over 20), the \"seashell ornament\" trees, Port Townsend lit up at night across the bay, and Olympic Mountain views.\nWe arrived with an engine problem in our diesel truck and a CG employee recommended a mobile mechanic. We were able to extend our reservation by 2 days and it got fixed!\nThis is a repeat visit; we'll be back!",
+      "date": "3 months ago",
+      "time": 1774715042
+    },
+    {
+      "author": "Tammy French",
+      "rating": 5,
+      "text": "Amazing historical park overlooking the sea across from Whidbey Island. It is a military installated from the 1850s pretty much. Many generations and iterations of the fort. Beautiful natural surroundings. Well maintained historical areas and lodging.",
+      "date": "4 months ago",
+      "time": 1772915233
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-// GPS coordinates for all 24 campgrounds
+// GPS coordinates for all 36 campgrounds
 // Used for Google Maps integration
 
 export interface CampgroundCoords {
@@ -31,6 +31,18 @@ export const campgroundCoords: Record<number, CampgroundCoords> = {
   22: { lat: 42.6550, lng: -122.6780 }, // Farewell Bend
   23: { lat: 42.8660, lng: -122.1680 }, // Crater Lake Mazama
   24: { lat: 44.7530, lng: -124.0620 }, // Pacific Shores
+  25: { lat: 48.1340, lng: -122.7640 }, // Fort Worden
+  26: { lat: 46.7950, lng: -124.0890 }, // Grayland Beach
+  27: { lat: 47.4550, lng: -120.4380 }, // Wenatchee Confluence
+  28: { lat: 48.0870, lng: -122.7010 }, // Fort Flagler
+  29: { lat: 47.8600, lng: -123.9340 }, // Hoh Rain Forest
+  30: { lat: 48.6530, lng: -122.8310 }, // Moran State Park
+  31: { lat: 44.5960, lng: -124.0640 }, // South Beach OR
+  32: { lat: 45.6950, lng: -123.9380 }, // Nehalem Bay
+  33: { lat: 43.8770, lng: -124.1170 }, // Honeyman
+  34: { lat: 44.8770, lng: -122.6540 }, // Silver Falls
+  35: { lat: 45.3260, lng: -117.2120 }, // Wallowa Lake
+  36: { lat: 44.7190, lng: -122.1530 }, // Detroit Lake
 };
 
 // Redmond, WA (starting point for directions)
