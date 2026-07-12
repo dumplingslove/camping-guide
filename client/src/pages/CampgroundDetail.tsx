@@ -3,9 +3,10 @@ import { useParams, Link } from "wouter";
 import { campgrounds } from "@/data/campgrounds";
 import { campgroundPhotos } from "@/data/photos";
 import { campgroundCoords, REDMOND_COORDS } from "@/data/coordinates";
+import { seasonData, monthLabels } from "@/data/seasons";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { MapView } from "@/components/Map";
-import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, Bookmark, ChevronLeft, ChevronRight, Map as MapIcon, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation } from "lucide-react";
+import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, Bookmark, ChevronLeft, ChevronRight, Map as MapIcon, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: number; size?: number }) {
@@ -388,6 +389,173 @@ function WeatherWidget({ campId }: { campId: number }) {
   );
 }
 
+function SeasonCalendar({ campId }: { campId: number }) {
+  const season = seasonData.find((s) => s.campgroundId === campId);
+  if (!season) return null;
+
+  const ratingColors = [
+    "bg-muted text-muted-foreground",     // 0 = closed
+    "bg-amber-100 text-amber-800",         // 1 = open but not ideal
+    "bg-emerald-100 text-emerald-800",     // 2 = good
+    "bg-pine/20 text-pine",                // 3 = peak/best
+  ];
+  const ratingLabels = ["关闭", "可去", "推荐", "最佳"];
+
+  return (
+    <div className="bg-white rounded-xl border border-border p-5">
+      <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-2">
+        <CalendarDays size={18} className="text-pine" />
+        最佳季节日历
+      </h2>
+      <p className="text-sm text-muted-foreground mb-4">
+        最佳月份: <span className="font-medium text-pine">{season.peakMonths}</span>
+        {season.notes && <span className="ml-2">· {season.notes}</span>}
+      </p>
+      <div className="grid grid-cols-6 sm:grid-cols-12 gap-1.5">
+        {season.months.map((rating, i) => (
+          <div
+            key={i}
+            className={`rounded-lg p-2 text-center ${ratingColors[rating]} transition-all hover:scale-105`}
+          >
+            <div className="text-[10px] font-medium opacity-70">{monthLabels[i]}</div>
+            <div className="text-xs font-bold mt-0.5">{ratingLabels[rating]}</div>
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center gap-4 mt-3 text-[10px] text-muted-foreground">
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-muted"></span>关闭</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-amber-100"></span>可去</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-emerald-100"></span>推荐</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-pine/20"></span>最佳</span>
+      </div>
+    </div>
+  );
+}
+
+interface NoteEntry {
+  id: string;
+  text: string;
+  date: string;
+}
+
+function UserNotes({ campId, campName }: { campId: number; campName: string }) {
+  const storageKey = `camp_notes_${campId}`;
+  const [notes, setNotes] = useState<NoteEntry[]>([]);
+  const [newNote, setNewNote] = useState("");
+  const [editing, setEditing] = useState<string | null>(null);
+  const [editText, setEditText] = useState("");
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(storageKey);
+      if (stored) setNotes(JSON.parse(stored));
+    } catch {}
+  }, [storageKey]);
+
+  const saveNotes = (updated: NoteEntry[]) => {
+    setNotes(updated);
+    localStorage.setItem(storageKey, JSON.stringify(updated));
+  };
+
+  const addNote = () => {
+    if (!newNote.trim()) return;
+    const entry: NoteEntry = {
+      id: Date.now().toString(),
+      text: newNote.trim(),
+      date: new Date().toLocaleDateString("zh-CN"),
+    };
+    saveNotes([entry, ...notes]);
+    setNewNote("");
+  };
+
+  const deleteNote = (id: string) => {
+    saveNotes(notes.filter((n) => n.id !== id));
+  };
+
+  const startEdit = (note: NoteEntry) => {
+    setEditing(note.id);
+    setEditText(note.text);
+  };
+
+  const saveEdit = (id: string) => {
+    if (!editText.trim()) return;
+    saveNotes(notes.map((n) => n.id === id ? { ...n, text: editText.trim() } : n));
+    setEditing(null);
+  };
+
+  return (
+    <div className="bg-white rounded-xl border border-border p-5">
+      <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
+        <StickyNote size={18} className="text-sand" />
+        家庭笔记
+        <span className="text-sm font-normal text-muted-foreground">({notes.length}条)</span>
+      </h2>
+      
+      {/* Add new note */}
+      <div className="flex gap-2 mb-4">
+        <input
+          type="text"
+          value={newNote}
+          onChange={(e) => setNewNote(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && addNote()}
+          placeholder={`记录关于${campName}的笔记...`}
+          className="flex-1 px-3 py-2 rounded-lg border border-border bg-paper text-sm focus:outline-none focus:ring-2 focus:ring-pine/30"
+        />
+        <button
+          onClick={addNote}
+          disabled={!newNote.trim()}
+          className="px-3 py-2 bg-pine text-white rounded-lg text-sm font-medium hover:bg-pine-light transition-colors disabled:opacity-40"
+        >
+          <Save size={14} />
+        </button>
+      </div>
+
+      {/* Notes list */}
+      {notes.length === 0 ? (
+        <p className="text-sm text-muted-foreground text-center py-4">
+          还没有笔记。记录你对这个营地的想法、经验或计划吧！
+        </p>
+      ) : (
+        <div className="space-y-2">
+          {notes.map((note) => (
+            <div key={note.id} className="flex items-start gap-2 p-3 rounded-lg bg-paper border border-border/50 group">
+              {editing === note.id ? (
+                <div className="flex-1 flex gap-2">
+                  <input
+                    type="text"
+                    value={editText}
+                    onChange={(e) => setEditText(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && saveEdit(note.id)}
+                    className="flex-1 px-2 py-1 rounded border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30"
+                    autoFocus
+                  />
+                  <button onClick={() => saveEdit(note.id)} className="text-pine text-xs hover:underline">保存</button>
+                  <button onClick={() => setEditing(null)} className="text-muted-foreground text-xs hover:underline">取消</button>
+                </div>
+              ) : (
+                <>
+                  <div className="flex-1">
+                    <p className="text-sm text-foreground">{note.text}</p>
+                    <p className="text-[10px] text-muted-foreground mt-1">{note.date}</p>
+                  </div>
+                  <div className="flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <button onClick={() => startEdit(note)} className="p-1 text-muted-foreground hover:text-foreground rounded">
+                      <StickyNote size={12} />
+                    </button>
+                    <button onClick={() => deleteNote(note.id)} className="p-1 text-muted-foreground hover:text-destructive rounded">
+                      <Trash2 size={12} />
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function CampgroundDetail() {
   const params = useParams<{ id: string }>();
   const campground = campgrounds.find((c) => c.id === Number(params.id));
@@ -554,6 +722,24 @@ export default function CampgroundDetail() {
             transition={{ duration: 0.4, delay: 0.18 }}
           >
             <WeatherWidget campId={campground.id} />
+          </motion.div>
+
+          {/* Season Calendar */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.19 }}
+          >
+            <SeasonCalendar campId={campground.id} />
+          </motion.div>
+
+          {/* User Notes */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.195 }}
+          >
+            <UserNotes campId={campground.id} campName={campground.nameCn} />
           </motion.div>
 
           {/* Booking Info */}

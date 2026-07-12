@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import CampgroundDetail from "./pages/CampgroundDetail";
 import Compare from "./pages/Compare";
 import Favorites from "./pages/Favorites";
+import Itinerary from "./pages/Itinerary";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/campground/:id" component={CampgroundDetail} />
       <Route path="/compare" component={Compare} />
       <Route path="/favorites" component={Favorites} />
+      <Route path="/itinerary" component={Itinerary} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

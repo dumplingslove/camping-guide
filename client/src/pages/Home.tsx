@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -107,6 +107,11 @@ export default function Home() {
                   {compareList.length}
                 </span>
               )}
+            </Link>
+            {/* Itinerary link */}
+            <Link href="/itinerary" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+              <FileText size={16} />
+              <span className="hidden sm:inline">行程</span>
             </Link>
             <div className="hidden md:flex items-center gap-2 text-sm text-muted-foreground font-mono ml-2">
               <MapPin size={14} />
