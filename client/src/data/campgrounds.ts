@@ -252,7 +252,7 @@ export const campgrounds: Campground[] = [
       { name: "Nisqually River 观察", ageRange: "任何年龄", distance: "步行5分钟", details: "冰川融水河流", mapUrl: "https://www.google.com/maps/search/Nisqually+River+Cougar+Rock+Campground", googleRating: "4.5★ (331条评价)" },
       { name: "Evening Ranger Programs", ageRange: "2岁+", distance: "营地内", details: "篝火旁的自然讲座", mapUrl: "https://www.google.com/maps/search/Cougar+Rock+Campground", googleRating: "4.5★ (331条评价)" },
       { name: "天堂徒步", ageRange: "任何年龄", distance: "附近", details: "距营地约8至20分钟车程，多个营地邻近天堂山区步道(来源: multiple reviewers)" },
-      { name: "Carter Falls徒步", ageRange: "任何年龄", distance: "附近", details: "营地C028步行可达(来源: Katie M." },
+      { name: "Carter Falls徒步", ageRange: "任何年龄", distance: "附近", details: "营地C028步行可达(来源: Katie M.)" },
       { name: "Comet Falls徒步", ageRange: "任何年龄", distance: "附近", details: "从Lapart Ridge通往瀑布，适合D028营地游客(来源: Chad R.)" },
       { name: "反射湖景点", ageRange: "任何年龄", distance: "附近", details: "适合早晨摄影，观赏雷尼尔山倒影(来源: Brian S.)" },
       { name: "Bench湖游泳", ageRange: "任何年龄", distance: "附近", details: "夏季消暑好去处(来源: Gillian V.)" },
@@ -996,7 +996,7 @@ export const campgrounds: Campground[] = [
       { name: "Pacific Crest Trail", ageRange: "3岁+", distance: "营地旁", details: "PCT经过营地，可走短段", mapUrl: "https://www.google.com/maps/search/Pacific+Crest+Trail+Little+Crater+Lake+Campground+OR", googleRating: "4.7★" },
       { name: "Timothy Lake 游泳", ageRange: "2岁+", distance: "开车15分钟", details: "大型水库有沙滩", mapUrl: "https://www.google.com/maps/search/Timothy+Lake+Oregon", googleRating: "4.8★" },
       { name: "Pacific Crest Trail (PCT)", ageRange: "任何年龄", distance: "附近", details: "紧邻营地，可徒步 (来源: Susan M., Sue K., Angel G., Elizabeth S., Isabella R., Karen K.)" },
-      { name: "徒步前往Mt. Hood方向 (来源", ageRange: "任何年龄", distance: "附近", details: "Susan M.)" },
+      { name: "徒步前往Mt. Hood方向", ageRange: "任何年龄", distance: "附近", details: "可从PCT步道向南徒步前往Mt. Hood方向 (来源: Susan M.)" },
     ],
     areas: [
       { area: "全营地 (16 sites)", overall: 4, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "适合探险家庭", areaSummary: "小火山口湖营地共有约16个营位，围绕一处清澈湛蓝的火山口湖，景观独特、以林地与岩石地形为主。营地无水电设施、设施简朴，适合带孩子的探险家庭以及喜欢短途徒步、摄影和安静自然体验的露营者。" },

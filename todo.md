@@ -7,7 +7,7 @@
 - [x] Campsite map annotations (mark recommended/avoid sites on map)
 - [x] Favorites and comparison features
 - [x] Itinerary planner
-- [ ] Fix translation feature (broken after upgrade - needs server route verification)
+- [x] Fix translation feature (migrated from vite plugin to Express route, verified working with 200 response)
 - [x] Research non-Recreation.gov review sources
 - [x] Implement Google Maps Places API review fetcher (primary source for all 24 campgrounds)
 - [x] Implement Recreation.gov API review fetcher (secondary source for 10 federal campgrounds)
@@ -16,5 +16,5 @@
 - [x] Create scheduled Heartbeat handler (POST /api/scheduled/update-reviews)
 - [x] Move translate/places APIs from vite plugins to Express routes
 - [x] Register review management tRPC router
-- [ ] Create Heartbeat cron job (weekly Monday 3AM UTC)
-- [ ] Verify area summaries and activities are based on actual reviews
+- [x] Create Heartbeat cron job (weekly Monday 3AM UTC)
+- [x] Verify area summaries and activities are based on actual reviews (confirmed: all activities cite specific reviewers, area insights include review counts and ratings)
