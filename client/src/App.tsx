@@ -4,14 +4,19 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { FavoritesProvider } from "./contexts/FavoritesContext";
 import Home from "./pages/Home";
 import CampgroundDetail from "./pages/CampgroundDetail";
+import Compare from "./pages/Compare";
+import Favorites from "./pages/Favorites";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/campground/:id" component={CampgroundDetail} />
+      <Route path="/compare" component={Compare} />
+      <Route path="/favorites" component={Favorites} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
@@ -22,10 +27,12 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
+        <FavoritesProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Router />
+          </TooltipProvider>
+        </FavoritesProvider>
       </ThemeProvider>
     </ErrorBoundary>
   );

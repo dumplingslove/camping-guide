@@ -1,7 +1,8 @@
 import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions } from "@/data/campgrounds";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter } from "lucide-react";
+import { useFavorites } from "@/contexts/FavoritesContext";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -26,10 +27,10 @@ export default function Home() {
   const [minKid, setMinKid] = useState(0);
   const [minTc, setMinTc] = useState(0);
   const [showFilters, setShowFilters] = useState(false);
+  const { favorites, compareList } = useFavorites();
 
   const filtered = useMemo(() => {
     return campgrounds.filter((c) => {
-      // Search
       if (search) {
         const q = search.toLowerCase();
         const match =
@@ -40,16 +41,13 @@ export default function Home() {
           c.features.some((f) => f.includes(q));
         if (!match) return false;
       }
-      // Drive time
       if (selectedDriveTime) {
         const range = driveTimeRanges.find((r) => r.label === selectedDriveTime);
         if (range && (c.driveTime < range.min || c.driveTime >= range.max)) return false;
       }
-      // Features
       if (selectedFeatures.length > 0) {
         if (!selectedFeatures.every((f) => c.features.includes(f))) return false;
       }
-      // Ratings
       if (c.sceneryRating < minScenery) return false;
       if (c.kidRating < minKid) return false;
       if (c.tcRating < minTc) return false;
@@ -89,9 +87,31 @@ export default function Home() {
               营地指南
             </span>
           </Link>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground font-mono">
-            <MapPin size={14} />
-            <span>From Redmond, WA</span>
+          <div className="flex items-center gap-3">
+            {/* Favorites link */}
+            <Link href="/favorites" className="relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-sunset hover:bg-sunset/5 transition-colors">
+              <Heart size={16} className={favorites.length > 0 ? "fill-sunset text-sunset" : ""} />
+              <span className="hidden sm:inline">收藏</span>
+              {favorites.length > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-sunset text-white text-[10px] flex items-center justify-center font-mono">
+                  {favorites.length}
+                </span>
+              )}
+            </Link>
+            {/* Compare link */}
+            <Link href="/compare" className="relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-lake hover:bg-lake/5 transition-colors">
+              <GitCompareArrows size={16} className={compareList.length > 0 ? "text-lake" : ""} />
+              <span className="hidden sm:inline">比较</span>
+              {compareList.length > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-lake text-white text-[10px] flex items-center justify-center font-mono">
+                  {compareList.length}
+                </span>
+              )}
+            </Link>
+            <div className="hidden md:flex items-center gap-2 text-sm text-muted-foreground font-mono ml-2">
+              <MapPin size={14} />
+              <span>From Redmond, WA</span>
+            </div>
           </div>
         </div>
       </header>

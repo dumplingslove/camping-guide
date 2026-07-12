@@ -1,7 +1,12 @@
+import { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "wouter";
 import { campgrounds } from "@/data/campgrounds";
-import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, Bookmark } from "lucide-react";
-import { motion } from "framer-motion";
+import { campgroundPhotos } from "@/data/photos";
+import { campgroundCoords, REDMOND_COORDS } from "@/data/coordinates";
+import { useFavorites } from "@/contexts/FavoritesContext";
+import { MapView } from "@/components/Map";
+import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, Bookmark, ChevronLeft, ChevronRight, Map as MapIcon, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: number; size?: number }) {
   return (
@@ -17,9 +22,377 @@ function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: num
   );
 }
 
+function PhotoGallery({ photos, captions }: { photos: string[]; captions?: string[] }) {
+  const [current, setCurrent] = useState(0);
+  const [lightbox, setLightbox] = useState(false);
+
+  if (photos.length === 0) return null;
+
+  return (
+    <>
+      <div className="bg-white rounded-xl border border-border p-5">
+        <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
+          <Camera size={18} className="text-pine" />
+          营地实景照片
+          <span className="text-sm font-mono font-normal text-muted-foreground">({photos.length}张)</span>
+        </h2>
+        <div className="relative rounded-lg overflow-hidden bg-muted aspect-[16/10] mb-3 cursor-pointer" onClick={() => setLightbox(true)}>
+          <img
+            src={photos[current]}
+            alt={captions?.[current] || `营地照片 ${current + 1}`}
+            className="w-full h-full object-cover"
+          />
+          {photos.length > 1 && (
+            <>
+              <button
+                onClick={(e) => { e.stopPropagation(); setCurrent((c) => (c - 1 + photos.length) % photos.length); }}
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
+              >
+                <ChevronLeft size={18} />
+              </button>
+              <button
+                onClick={(e) => { e.stopPropagation(); setCurrent((c) => (c + 1) % photos.length); }}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </>
+          )}
+          {captions?.[current] && (
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3">
+              <p className="text-white text-sm">{captions[current]}</p>
+            </div>
+          )}
+          <div className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-mono">
+            {current + 1} / {photos.length}
+          </div>
+        </div>
+        <div className="flex gap-2 overflow-x-auto pb-1">
+          {photos.map((photo, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`flex-shrink-0 w-16 h-12 rounded-md overflow-hidden border-2 transition-all ${
+                i === current ? "border-pine ring-1 ring-pine/30" : "border-transparent opacity-70 hover:opacity-100"
+              }`}
+            >
+              <img src={photo} alt="" className="w-full h-full object-cover" />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <AnimatePresence>
+        {lightbox && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4"
+            onClick={() => setLightbox(false)}
+          >
+            <button className="absolute top-4 right-4 text-white/80 hover:text-white" onClick={() => setLightbox(false)}>
+              <X size={28} />
+            </button>
+            <img
+              src={photos[current]}
+              alt={captions?.[current] || ""}
+              className="max-w-full max-h-[85vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+            {photos.length > 1 && (
+              <>
+                <button
+                  onClick={(e) => { e.stopPropagation(); setCurrent((c) => (c - 1 + photos.length) % photos.length); }}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <button
+                  onClick={(e) => { e.stopPropagation(); setCurrent((c) => (c + 1) % photos.length); }}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20"
+                >
+                  <ChevronRight size={24} />
+                </button>
+              </>
+            )}
+            {captions?.[current] && (
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full">
+                {captions[current]}
+              </div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
+
+function CampgroundMapImage({ mapUrl, name }: { mapUrl: string; name: string }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <>
+      <div className="bg-white rounded-xl border border-border p-5">
+        <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
+          <MapIcon size={18} className="text-lake" />
+          营地平面图
+        </h2>
+        <div
+          className="rounded-lg overflow-hidden bg-muted cursor-pointer border border-border"
+          onClick={() => setExpanded(true)}
+        >
+          <img
+            src={mapUrl}
+            alt={`${name} 营地地图`}
+            className="w-full h-auto max-h-96 object-contain"
+          />
+        </div>
+        <p className="text-xs text-muted-foreground mt-2 text-center">点击放大查看</p>
+      </div>
+
+      <AnimatePresence>
+        {expanded && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4"
+            onClick={() => setExpanded(false)}
+          >
+            <button className="absolute top-4 right-4 text-white/80 hover:text-white" onClick={() => setExpanded(false)}>
+              <X size={28} />
+            </button>
+            <img
+              src={mapUrl}
+              alt={`${name} 营地地图`}
+              className="max-w-full max-h-[90vh] object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
+
+// Interactive Google Map with directions
+function InteractiveMap({ campId, campName }: { campId: number; campName: string }) {
+  const coords = campgroundCoords[campId];
+  const mapRef = useRef<google.maps.Map | null>(null);
+  const [showDirections, setShowDirections] = useState(false);
+  const [driveInfo, setDriveInfo] = useState<{ duration: string; distance: string } | null>(null);
+  const directionsRendererRef = useRef<google.maps.DirectionsRenderer | null>(null);
+
+  if (!coords) return null;
+
+  const handleMapReady = (map: google.maps.Map) => {
+    mapRef.current = map;
+    // Add campground marker
+    new google.maps.marker.AdvancedMarkerElement({
+      map,
+      position: coords,
+      title: campName,
+    });
+  };
+
+  const toggleDirections = () => {
+    if (!mapRef.current) return;
+
+    if (showDirections) {
+      // Remove directions
+      if (directionsRendererRef.current) {
+        directionsRendererRef.current.setMap(null);
+        directionsRendererRef.current = null;
+      }
+      setShowDirections(false);
+      setDriveInfo(null);
+      mapRef.current.setCenter(coords);
+      mapRef.current.setZoom(11);
+    } else {
+      // Show directions from Redmond
+      const directionsService = new google.maps.DirectionsService();
+      const directionsRenderer = new google.maps.DirectionsRenderer({
+        map: mapRef.current,
+        suppressMarkers: false,
+      });
+      directionsRendererRef.current = directionsRenderer;
+
+      directionsService.route(
+        {
+          origin: REDMOND_COORDS,
+          destination: coords,
+          travelMode: google.maps.TravelMode.DRIVING,
+        },
+        (result, status) => {
+          if (status === "OK" && result) {
+            directionsRenderer.setDirections(result);
+            const leg = result.routes[0]?.legs[0];
+            if (leg) {
+              setDriveInfo({
+                duration: leg.duration?.text || "",
+                distance: leg.distance?.text || "",
+              });
+            }
+            setShowDirections(true);
+          }
+        }
+      );
+    }
+  };
+
+  return (
+    <div className="bg-white rounded-xl border border-border p-5">
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2">
+          <Navigation size={18} className="text-pine" />
+          位置与路线
+        </h2>
+        <button
+          onClick={toggleDirections}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+            showDirections
+              ? "bg-pine text-white"
+              : "bg-secondary text-foreground hover:bg-pine/10"
+          }`}
+        >
+          <MapPin size={12} />
+          {showDirections ? "隐藏路线" : "从 Redmond 出发"}
+        </button>
+      </div>
+      {driveInfo && (
+        <div className="mb-3 flex items-center gap-4 text-sm bg-pine/5 rounded-lg px-4 py-2">
+          <span className="flex items-center gap-1 font-mono">
+            <Clock size={14} className="text-pine" />
+            {driveInfo.duration}
+          </span>
+          <span className="flex items-center gap-1 font-mono">
+            <MapPin size={14} className="text-pine" />
+            {driveInfo.distance}
+          </span>
+        </div>
+      )}
+      <MapView
+        className="h-[350px] rounded-lg overflow-hidden"
+        initialCenter={coords}
+        initialZoom={11}
+        onMapReady={handleMapReady}
+      />
+    </div>
+  );
+}
+
+// Weather widget using Open-Meteo API (free, no key needed)
+function WeatherWidget({ campId }: { campId: number }) {
+  const coords = campgroundCoords[campId];
+  const [weather, setWeather] = useState<{
+    daily: {
+      time: string[];
+      temperature_2m_max: number[];
+      temperature_2m_min: number[];
+      precipitation_probability_max: number[];
+      weathercode: number[];
+      windspeed_10m_max: number[];
+    };
+  } | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    if (!coords) return;
+    setLoading(true);
+    setError(false);
+
+    fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${coords.lat}&longitude=${coords.lng}&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode,windspeed_10m_max&timezone=America/Los_Angeles&forecast_days=7&temperature_unit=fahrenheit&windspeed_unit=mph`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.daily) {
+          setWeather(data);
+        } else {
+          setError(true);
+        }
+      })
+      .catch(() => setError(true))
+      .finally(() => setLoading(false));
+  }, [coords?.lat, coords?.lng]);
+
+  if (!coords) return null;
+
+  const getWeatherIcon = (code: number) => {
+    if (code <= 3) return "☀️";
+    if (code <= 48) return "☁️";
+    if (code <= 67) return "🌧️";
+    if (code <= 77) return "🌨️";
+    if (code <= 82) return "🌧️";
+    if (code <= 86) return "❄️";
+    return "⛈️";
+  };
+
+  const getDayName = (dateStr: string) => {
+    const date = new Date(dateStr + "T12:00:00");
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    if (date.toDateString() === today.toDateString()) return "今天";
+    if (date.toDateString() === tomorrow.toDateString()) return "明天";
+    return ["周日", "周一", "周二", "周三", "周四", "周五", "周六"][date.getDay()];
+  };
+
+  return (
+    <div className="bg-white rounded-xl border border-border p-5">
+      <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
+        <Cloud size={18} className="text-lake" />
+        未来7天天气预报
+      </h2>
+
+      {loading && (
+        <div className="flex items-center justify-center py-8">
+          <div className="w-6 h-6 border-2 border-pine border-t-transparent rounded-full animate-spin" />
+        </div>
+      )}
+
+      {error && (
+        <p className="text-sm text-muted-foreground text-center py-4">天气数据暂时无法获取</p>
+      )}
+
+      {weather && (
+        <div className="grid grid-cols-7 gap-2">
+          {weather.daily.time.map((day, i) => (
+            <div key={day} className="text-center p-2 rounded-lg bg-secondary/50">
+              <div className="text-xs font-medium text-muted-foreground mb-1">{getDayName(day)}</div>
+              <div className="text-xl mb-1">{getWeatherIcon(weather.daily.weathercode[i])}</div>
+              <div className="text-xs font-mono">
+                <span className="text-foreground font-semibold">{Math.round(weather.daily.temperature_2m_max[i])}°</span>
+                <span className="text-muted-foreground"> / {Math.round(weather.daily.temperature_2m_min[i])}°</span>
+              </div>
+              <div className="mt-1 flex items-center justify-center gap-0.5 text-[10px] text-muted-foreground">
+                <Droplets size={10} />
+                {weather.daily.precipitation_probability_max[i]}%
+              </div>
+              <div className="flex items-center justify-center gap-0.5 text-[10px] text-muted-foreground">
+                <Wind size={10} />
+                {Math.round(weather.daily.windspeed_10m_max[i])}mph
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <p className="text-[10px] text-muted-foreground mt-3 text-center">
+        数据来源: Open-Meteo · 温度单位: °F
+      </p>
+    </div>
+  );
+}
+
 export default function CampgroundDetail() {
   const params = useParams<{ id: string }>();
   const campground = campgrounds.find((c) => c.id === Number(params.id));
+  const photoData = campgroundPhotos[Number(params.id)];
+  const { toggleFavorite, isFavorite, addToCompare, isInCompare, removeFromCompare } = useFavorites();
 
   if (!campground) {
     return (
@@ -34,6 +407,9 @@ export default function CampgroundDetail() {
     );
   }
 
+  const favorited = isFavorite(campground.id);
+  const inCompare = isInCompare(campground.id);
+
   return (
     <div className="min-h-screen topo-bg">
       {/* Header */}
@@ -44,6 +420,30 @@ export default function CampgroundDetail() {
             <span>返回列表</span>
           </Link>
           <div className="flex items-center gap-2">
+            {/* Favorite button */}
+            <button
+              onClick={() => toggleFavorite(campground.id)}
+              className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
+                favorited
+                  ? "bg-sunset/10 text-sunset"
+                  : "bg-secondary text-muted-foreground hover:text-sunset hover:bg-sunset/10"
+              }`}
+              title={favorited ? "取消收藏" : "收藏"}
+            >
+              <Heart size={16} className={favorited ? "fill-current" : ""} />
+            </button>
+            {/* Compare button */}
+            <button
+              onClick={() => inCompare ? removeFromCompare(campground.id) : addToCompare(campground.id)}
+              className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
+                inCompare
+                  ? "bg-lake/10 text-lake"
+                  : "bg-secondary text-muted-foreground hover:text-lake hover:bg-lake/10"
+              }`}
+              title={inCompare ? "从比较中移除" : "加入比较"}
+            >
+              <GitCompareArrows size={16} />
+            </button>
             <span className="drive-badge">
               <Clock size={12} />
               {campground.driveTimeLabel}
@@ -116,11 +516,51 @@ export default function CampgroundDetail() {
 
         {/* Info Cards */}
         <div className="space-y-6">
+          {/* Photo Gallery */}
+          {photoData && photoData.photos.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.12 }}
+            >
+              <PhotoGallery photos={photoData.photos} captions={photoData.captions} />
+            </motion.div>
+          )}
+
+          {/* Campground Map Image */}
+          {photoData?.map && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.14 }}
+            >
+              <CampgroundMapImage mapUrl={photoData.map} name={campground.nameCn} />
+            </motion.div>
+          )}
+
+          {/* Interactive Google Map */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.16 }}
+          >
+            <InteractiveMap campId={campground.id} campName={campground.name} />
+          </motion.div>
+
+          {/* Weather */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.18 }}
+          >
+            <WeatherWidget campId={campground.id} />
+          </motion.div>
+
           {/* Booking Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.15 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="bg-white rounded-xl border border-border p-5"
           >
             <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-3">
@@ -155,7 +595,7 @@ export default function CampgroundDetail() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.22 }}
               className="bg-white rounded-xl border border-border p-5"
             >
               <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
@@ -169,7 +609,7 @@ export default function CampgroundDetail() {
                       <th className="text-left py-2 px-3 font-medium text-muted-foreground">项目</th>
                       <th className="text-left py-2 px-3 font-medium text-muted-foreground">适合年龄</th>
                       <th className="text-left py-2 px-3 font-medium text-muted-foreground">距营地</th>
-                      <th className="text-left py-2 px-3 font-medium text-muted-foreground">详情</th>
+                      <th className="text-left py-2 px-3 font-medium text-muted-foreground hidden md:table-cell">详情</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -178,7 +618,7 @@ export default function CampgroundDetail() {
                         <td className="py-2.5 px-3 font-medium">{act.name}</td>
                         <td className="py-2.5 px-3 font-mono text-xs">{act.ageRange}</td>
                         <td className="py-2.5 px-3 text-muted-foreground">{act.distance}</td>
-                        <td className="py-2.5 px-3 text-muted-foreground">{act.details}</td>
+                        <td className="py-2.5 px-3 text-muted-foreground hidden md:table-cell">{act.details}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -203,7 +643,7 @@ export default function CampgroundDetail() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-border">
-                      <th className="text-left py-2 px-3 font-medium text-muted-foreground">Area</th>
+                      <th className="text-left py-2 px-3 font-medium text-muted-foreground">Area/Loop</th>
                       <th className="text-center py-2 px-3 font-medium text-muted-foreground">综合</th>
                       <th className="text-center py-2 px-3 font-medium text-muted-foreground">风景</th>
                       <th className="text-center py-2 px-3 font-medium text-muted-foreground">娃可玩</th>
@@ -233,6 +673,7 @@ export default function CampgroundDetail() {
                           <span className={`text-xs px-2 py-0.5 rounded-full ${
                             area.recommendation === "强烈推荐" ? "bg-pine/10 text-pine" :
                             area.recommendation === "推荐" ? "bg-lake/10 text-lake" :
+                            area.recommendation.includes("专用") ? "bg-muted text-muted-foreground" :
                             "bg-secondary text-muted-foreground"
                           }`}>
                             {area.recommendation}
@@ -253,7 +694,6 @@ export default function CampgroundDetail() {
             transition={{ duration: 0.4, delay: 0.3 }}
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
-            {/* Recommended */}
             <div className="bg-pine/5 rounded-xl border border-pine/20 p-5">
               <h3 className="font-display font-bold text-pine mb-2 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-full bg-pine/10 flex items-center justify-center text-xs">✓</span>
@@ -261,7 +701,6 @@ export default function CampgroundDetail() {
               </h3>
               <p className="text-sm text-foreground">{campground.recommendedSites}</p>
             </div>
-            {/* Avoid */}
             <div className="bg-sunset/5 rounded-xl border border-sunset/20 p-5">
               <h3 className="font-display font-bold text-sunset mb-2 flex items-center gap-2">
                 <span className="w-6 h-6 rounded-full bg-sunset/10 flex items-center justify-center text-xs">✗</span>
@@ -276,7 +715,7 @@ export default function CampgroundDetail() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.35 }}
-            className="bg-sand/10 rounded-xl border border-sand/30 p-5"
+            className="bg-sand-light/30 rounded-xl border border-sand/30 p-5"
           >
             <h3 className="font-display font-bold text-foreground mb-2 flex items-center gap-2">
               <Truck size={18} className="text-sand" />
