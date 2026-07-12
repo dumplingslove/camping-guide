@@ -150,6 +150,81 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
+function vitePluginPlacesProxy(): Plugin {
+  return {
+    name: "manus-places-proxy",
+    configureServer(server: ViteDevServer) {
+      // GET /api/places/search?query=... - proxy to legacy Google Places Text Search
+      // GET /api/places/photo?ref=...&maxwidth=600 - proxy to legacy Google Places Photo
+      server.middlewares.use("/api/places", async (req, res) => {
+        const forgeBaseUrl = (process.env.BUILT_IN_FORGE_API_URL || "").replace(/\/+$/, "");
+        const forgeKey = process.env.BUILT_IN_FORGE_API_KEY;
+
+        if (!forgeBaseUrl || !forgeKey) {
+          res.writeHead(500, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ error: "Places proxy not configured" }));
+          return;
+        }
+
+        const subPath = req.url || "";
+
+        if (subPath.startsWith("/search")) {
+          // Legacy Places Text Search API
+          try {
+            const params = new URL("http://x" + subPath).searchParams;
+            const query = params.get("query") || "";
+            const targetUrl = `${forgeBaseUrl}/v1/maps/proxy/maps/api/place/textsearch/json?query=${encodeURIComponent(query)}&key=${forgeKey}`;
+
+            const resp = await fetch(targetUrl);
+            const data = await resp.text();
+            res.writeHead(resp.status, {
+              "Content-Type": "application/json",
+              "Cache-Control": "public, max-age=86400",
+            });
+            res.end(data);
+          } catch {
+            res.writeHead(502, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({ error: "Places search failed" }));
+          }
+        } else if (subPath.startsWith("/photo")) {
+          // Legacy Places Photo API - returns redirect URL
+          try {
+            const params = new URL("http://x" + subPath).searchParams;
+            const photoRef = params.get("ref") || "";
+            const maxW = params.get("maxwidth") || "600";
+            const targetUrl = `${forgeBaseUrl}/v1/maps/proxy/maps/api/place/photo?maxwidth=${maxW}&photo_reference=${encodeURIComponent(photoRef)}&key=${forgeKey}`;
+
+            // Don't follow redirects - we want the Location header
+            const resp = await fetch(targetUrl, { redirect: "manual" });
+            const location = resp.headers.get("location");
+
+            if (location) {
+              res.writeHead(200, {
+                "Content-Type": "application/json",
+                "Cache-Control": "public, max-age=86400",
+              });
+              res.end(JSON.stringify({ photoUrl: location }));
+            } else {
+              // If no redirect, try to get the image directly
+              res.writeHead(200, {
+                "Content-Type": "application/json",
+                "Cache-Control": "public, max-age=86400",
+              });
+              res.end(JSON.stringify({ photoUrl: targetUrl }));
+            }
+          } catch {
+            res.writeHead(502, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({ error: "Photo fetch failed" }));
+          }
+        } else {
+          res.writeHead(404, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ error: "Unknown places endpoint" }));
+        }
+      });
+    },
+  };
+}
+
 function vitePluginStorageProxy(): Plugin {
   return {
     name: "manus-storage-proxy",
@@ -203,7 +278,7 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginPlacesProxy(), vitePluginStorageProxy()];
 
 export default defineConfig({
   plugins,

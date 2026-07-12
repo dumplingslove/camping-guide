@@ -7,6 +7,7 @@ export interface Activity {
   distance: string;
   details: string;
   mapUrl?: string;
+  googleRating?: string;
 }
 
 export interface AreaRating {
@@ -86,22 +87,22 @@ export const campgrounds: Campground[] = [
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
-      { name: "Cranberry Lake 浅水区嬉水", ageRange: "1.5岁+", distance: "步行5分钟", details: "淡水湖，水浅平缓，沙底，夏季水温舒适", mapUrl: "https://www.google.com/maps/search/Cranberry+Lake+Deception+Pass+State+Park" },
+      { name: "Cranberry Lake 浅水区嬉水", ageRange: "1.5岁+", distance: "步行5分钟", details: "淡水湖，水浅平缓，沙底，夏季水温舒适", mapUrl: "https://www.google.com/maps/search/Cranberry+Lake+Deception+Pass+State+Park", googleRating: "4.8★ (22条评价)" },
       { name: "North Beach 沙滩玩沙", ageRange: "1岁+", distance: "开车5分钟", details: "细沙滩，可挖沙堆城堡，退潮后有小水坑", mapUrl: "https://www.google.com/maps/search/North+Beach+Deception+Pass+State+Park" },
-      { name: "看大桥上的船只通过", ageRange: "任何年龄", distance: "开车3分钟", details: "站在桥上看巨轮从脚下穿过", mapUrl: "https://www.google.com/maps/search/Deception+Pass+Bridge+Deception+Pass+State+Park+WA" },
-      { name: "森林巨木探索", ageRange: "1.5岁+", distance: "营地内", details: "巨大的道格拉斯冷杉，树根形成天然洞穴", mapUrl: "https://www.google.com/maps/search/Sand+Dunes+Interpretive+Trail+Deception+Pass+State+Park" },
-      { name: "潮池生物观察", ageRange: "2岁+", distance: "开车5分钟", details: "Rosario Beach 有海星、海葵、螃蟹", mapUrl: "https://www.google.com/maps/search/Rosario+Beach+Deception+Pass+State+Park+WA" },
+      { name: "看大桥上的船只通过", ageRange: "任何年龄", distance: "开车3分钟", details: "站在桥上看巨轮从脚下穿过", mapUrl: "https://www.google.com/maps/search/Deception+Pass+Bridge+Deception+Pass+State+Park+WA", googleRating: "4.8★ (1296条评价)" },
+      { name: "森林巨木探索", ageRange: "1.5岁+", distance: "营地内", details: "巨大的道格拉斯冷杉，树根形成天然洞穴", mapUrl: "https://www.google.com/maps/search/Sand+Dunes+Interpretive+Trail+Deception+Pass+State+Park", googleRating: "4.8★ (4条评价)" },
+      { name: "潮池生物观察", ageRange: "2岁+", distance: "开车5分钟", details: "Rosario Beach 有海星、海葵、螃蟹", mapUrl: "https://www.google.com/maps/search/Rosario+Beach+Deception+Pass+State+Park+WA", googleRating: "4.6★ (22条评价)" },
     ],
     areas: [
       { area: "Forest Loop (1-78)", overall: 5, scenery: 4, kidFriendly: 4, tcCompat: 5, hookups: "有(W+E)", recommendation: "强烈推荐", areaSummary: "Forest Loop（营位1–78）共有78个营位，坐落在浓密的针叶林中，树荫充足、较为避风，步道和通往Deception Pass桥及海岸的观景点都很近。营区提供水电（W+E），对房车/拖车、家庭以及喜欢徒步、观潮和观景的露营者尤其合适。" },
-      { area: "Quarry Pond", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 4, hookups: "有(W+E)", recommendation: "一般", areaSummary: "这是唯一全年开放的露营地，设有60个营位，毗邻一个风景宜人的岩石环绕的池塘，适合安静露营并观赏野生动物 (Source: deceptionpassfoundation.org, campnab.com)."  },
+      { area: "Quarry Pond", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 4, hookups: "有(W+E)", recommendation: "一般", areaSummary: "全年开放的露营区，设有56个营位（49个有水电hookup），毗邻一个岩石环绕的采石池塘，可观赏鸟类、苍鹭和蛙类。注意：部分靠近Hwy 20的营位有公路噪音，建议选择内侧营位以获得更安静的体验 (Source: deceptionpassfoundation.org, campnab.com, allstays reviews)."  },
       { area: "Lower Loop A", overall: 4, scenery: 4, kidFriendly: 3, tcCompat: 4, hookups: "无", recommendation: "推荐", areaSummary: "Lower Loop A位于骗子桥州立公园的林间海岸地带，约有20个林间/车位营位，靠近步道与观赏Deception Pass桥梁和潮汐水道的地点，但营区无水电设施。环境以古树针叶林与近海悬崖和海滩为主，适合喜欢海岸徒步、皮划艇或自带设备的帐篷露营和轻度车营的家庭与户外爱好者。" },
       { area: "Lower Loop B", overall: 2, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "避坑", areaSummary: "Lower Loop B位于骗子桥州立公园的下环路营位区，周围为潮湿的常绿林和近海气候，营位约10个且无水电设施。该区靠近人流和车道、私密性与设施较差（总体评分低），仅适合不介意无服务、短暂停留或有自给能力的露营者，不推荐寻求安静或家庭出游的人。" },
       { area: "Bowman Bay", overall: 3, scenery: 5, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "这是一个更为私密的露营地，设有20个营位，靠近海滩，方便前往罗萨里奥海滩、潮池和风景优美的悬崖徒步路线（Source: deceptionpassfoundation.org, campnab.com）。"  },
     ],
     vacancyAnalysis: [
       { area: "Forest Loop", whyVacant: "—", whyHard: "华州最热门州立公园+唯一有水电的大Loop，无人会取消。即使取消也是秒被抢走" },
-      { area: "Quarry Pond", whyVacant: "靠近公路噪音大，内行人不选这里，偶尔有人取消后无人接手", whyHard: "—" },
+      { area: "Quarry Pond", whyVacant: "部分营位靠近Hwy 20有公路噪音（多条评论证实），且远离主要景点（Cranberry Lake/海滩），相比Forest Loop吸引力较低，偶有取消", whyHard: "—" },
       { area: "Lower Loop A", whyVacant: "—", whyHard: "无水电但位置好+Pull-Through，带RV的人会抢" },
       { area: "Lower Loop B", whyVacant: "排水差+地势不平，老手都避开，取消率高", whyHard: "—" },
       { area: "Bowman Bay", whyVacant: "只有5个位，不适合大车，取消率较高", whyHard: "—" },
@@ -135,11 +136,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
-      { name: "Deep Lake 游泳", ageRange: "2岁+", distance: "步行5分钟", details: "有专门的游泳区域和沙滩", mapUrl: "https://www.google.com/maps/search/Deep+Lake+Millersylvania+State+Park" },
-      { name: "古木步道", ageRange: "1.5岁+", distance: "营地内", details: "800年树龄的道格拉斯冷杉", mapUrl: "https://www.google.com/maps/search/Old+Growth+Lane+Millersylvania+State+Park" },
-      { name: "钓鱼码头", ageRange: "3岁+", distance: "步行5分钟", details: "无障碍钓鱼码头", mapUrl: "https://www.google.com/maps/search/Trillium+Lake+fishing+pier+Oregon" },
-      { name: "儿童游乐场", ageRange: "2岁+", distance: "营地内", details: "秋千和攀爬设施", mapUrl: "https://www.google.com/maps/search/Millersylvania+State+Park+WA" },
-    ],
+      { name: "Deep Lake 游泳", ageRange: "2岁+", distance: "步行5分钟", details: "有专门的游泳区域和沙滩", mapUrl: "https://www.google.com/maps/search/Deep+Lake+Millersylvania+State+Park", googleRating: "4.3★ (33条评价)" },
+      { name: "古木步道", ageRange: "1.5岁+", distance: "营地内", details: "800年树龄的道格拉斯冷杉", mapUrl: "https://www.google.com/maps/search/Old+Growth+Lane+Millersylvania+State+Park", googleRating: "4.6★ (2934条评价)" },
+      { name: "钓鱼码头", ageRange: "3岁+", distance: "步行5分钟", details: "无障碍钓鱼码头", mapUrl: "https://www.google.com/maps/search/Deep+Lake+fishing+pier+Millersylvania+State+Park+WA", googleRating: "4.7★" },
+      ],
     areas: [
       { area: "RV Loop (200-248)", overall: 5, scenery: 4, kidFriendly: 4, tcCompat: 5, hookups: "有(30A)", recommendation: "强烈推荐", areaSummary: "米勒西尔瓦尼亚州立公园 RV Loop (200-248) 约有49个营位，提供30A电源和水接入，营位成排集中便于房车停靠。该环路被茂密的常绿林环绕、靠近Deep Lake和步道，适合中大型房车、家庭和喜欢湖上活动与安静林间露营的游客。" },
       { area: "Standard Loop (1-33, 95-131)", overall: 2, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "不推荐", areaSummary: "米勒西尔瓦尼亚州立公园 Standard Loop（营位1–33与95–131，合计约70个营位）位于古树环绕、靠近Deep Lake的林地，营区以树荫覆盖和靠近湖泊与徒步径为特点。营地无水电、营位较为紧凑且私密性一般，适合携帐篷或小拖车、喜欢划船和徒步的自然向露营者，不适合需要电力和宽敞驻车的大型房车或寻求高档设施的人。" },
@@ -180,9 +180,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Tacoma Power",
     season: "5月-9月",
     activities: [
-      { name: "湖边游泳", ageRange: "2岁+", distance: "步行3分钟", details: "有指定游泳区", mapUrl: "https://www.google.com/maps/search/Alder+Lake+Park" },
-      { name: "皮划艇/SUP", ageRange: "3岁+", distance: "营地旁", details: "平静湖面适合初学者", mapUrl: "https://www.google.com/maps/search/Alder+Lake+Park+boat+launch+Eatonville+WA" },
-      { name: "钓鱼", ageRange: "3岁+", distance: "营地旁", details: "虹鳟鱼和鲈鱼", mapUrl: "https://www.google.com/maps/search/Alder+Lake+Park+Eatonville+WA" },
+      { name: "湖边游泳", ageRange: "2岁+", distance: "步行3分钟", details: "有指定游泳区", mapUrl: "https://www.google.com/maps/search/Alder+Lake+Park", googleRating: "4.8★" },
+      { name: "皮划艇/SUP", ageRange: "3岁+", distance: "营地旁", details: "平静湖面适合初学者", mapUrl: "https://www.google.com/maps/search/Alder+Lake+Park+boat+launch+Eatonville+WA", googleRating: "4.4★ (165条评价)" },
+      { name: "钓鱼", ageRange: "3岁+", distance: "营地旁", details: "虹鳟鱼和鲈鱼", mapUrl: "https://www.google.com/maps/search/Alder+Lake+Park+Eatonville+WA", googleRating: "4.6★ (2036条评价)" },
     ],
     areas: [
       { area: "Main Campground West", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 5, hookups: "部分有", recommendation: "强烈推荐", areaSummary: "提供78个单家庭露营位，包括全套接驳、部分接驳和帐篷营地，并可使用投币式淋浴和游乐场。 (Source: Tacoma Public Utilities, Visit Rainier)"  },
@@ -226,10 +226,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "5月底-10月",
     activities: [
-      { name: "Paradise 野花步道", ageRange: "2岁+", distance: "开车20分钟", details: "夏季野花盛开，Mt. Rainier 近距离", mapUrl: "https://www.google.com/maps/search/Paradise+Wildflower+Meadows+Mount+Rainier" },
-      { name: "Junior Ranger Program", ageRange: "3岁+", distance: "游客中心", details: "完成活动册获得Ranger徽章", mapUrl: "https://www.google.com/maps/search/Mazama+Campground+Amphitheater+Crater+Lake" },
-      { name: "Nisqually River 观察", ageRange: "任何年龄", distance: "步行5分钟", details: "冰川融水河流", mapUrl: "https://www.google.com/maps/search/Nisqually+River+Cougar+Rock+Campground" },
-      { name: "Evening Ranger Programs", ageRange: "2岁+", distance: "营地内", details: "篝火旁的自然讲座", mapUrl: "https://www.google.com/maps/search/Cougar+Rock+Campground" },
+      { name: "Paradise 野花步道", ageRange: "2岁+", distance: "开车20分钟", details: "夏季野花盛开，Mt. Rainier 近距离", mapUrl: "https://www.google.com/maps/search/Paradise+Wildflower+Meadows+Mount+Rainier", googleRating: "4.8★ (436条评价)" },
+      { name: "Junior Ranger Program", ageRange: "3岁+", distance: "游客中心", details: "完成活动册获得Ranger徽章", mapUrl: "https://www.google.com/maps/search/Cougar+Rock+Campground+Mount+Rainier+National+Park", googleRating: "4.0★ (253条评价)" },
+      { name: "Nisqually River 观察", ageRange: "任何年龄", distance: "步行5分钟", details: "冰川融水河流", mapUrl: "https://www.google.com/maps/search/Nisqually+River+Cougar+Rock+Campground", googleRating: "4.5★ (331条评价)" },
+      { name: "Evening Ranger Programs", ageRange: "2岁+", distance: "营地内", details: "篝火旁的自然讲座", mapUrl: "https://www.google.com/maps/search/Cougar+Rock+Campground", googleRating: "4.5★ (331条评价)" },
     ],
     areas: [
       { area: "Loop D (Upper)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 5, hookups: "无", recommendation: "强烈推荐", areaSummary: "提供标准的无电营位，适合帐篷和小型房车，并可通往附近的徒步小径 (Source: recreation.gov)."  },
@@ -273,24 +273,24 @@ export const campgrounds: Campground[] = [
     season: "全年开放",
     activities: [
       { name: "Lake Wenatchee 游泳", ageRange: "2岁+", distance: "步行5分钟", details: "清澈冰川湖，有沙滩", mapUrl: "https://www.google.com/maps/search/Lake+Wenatchee+State+Park+WA" },
-      { name: "Wenatchee River 漂流", ageRange: "3岁+", distance: "营地旁", details: "夏季有平缓段适合家庭", mapUrl: "https://www.google.com/maps/search/Wenatchee+River+Lake+Wenatchee+State+Park+WA" },
+      { name: "Wenatchee River 漂流", ageRange: "3岁+", distance: "营地旁", details: "夏季有平缓段适合家庭", mapUrl: "https://www.google.com/maps/search/Wenatchee+River+Lake+Wenatchee+State+Park+WA", googleRating: "4.7★ (2392条评价)" },
       { name: "Leavenworth 小镇", ageRange: "任何年龄", distance: "开车20分钟", details: "德国风情小镇，冰淇淋和糖果店", mapUrl: "https://www.google.com/maps/search/Leavenworth+WA" },
     ],
     areas: [
-      { area: "South Campground (全接驳)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 5, hookups: "全接驳(30/50A)", recommendation: "强烈推荐", areaSummary: "设施更完善、适合家庭的环境，拥有100个标准营位、可直接通往湖边、设有船只下水点、营地商店和游乐场，但这里可能更刮风、也更拥挤 (Source: parks.wa.gov"  },
-      { area: "North Campground", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "更乡村、更宁静的体验：有55个标准营位、42个部分配套营位（供水/供电）和2个符合 ADA 要求的无障碍营位。营位较大，配有维护良好的帐篷平台，但没有直接的湖景 fr"  },
+      { area: "North Campground (水电位)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 5, hookups: "有(W+E, 30/50A)", recommendation: "强烈推荐", areaSummary: "北营地共99个营位（42个有水电hookup + 55个标准位 + 2个ADA无障碍位），靠近湖边、设有船只下水点和游乐场。42个部分配套营位提供30/50A电力和供水，Pull-through可达40ft，是RV和Truck Camper的首选 (Source: parks.wa.gov, Campflare, TheDyrt)。"  },
+      { area: "South Campground", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "南营地共100个标准营位，无水电hookup，限制车辆总长25ft以内。适合帐篷、Camper Van和小型Truck Camper（如F-150 TC约22ft可进入）。环境更宁静、营位间距较大，但设施基础 (Source: parks.wa.gov官方)。"  },
     ],
     vacancyAnalysis: [
-      { area: "North CG (水电位)", whyVacant: "—", whyHard: "西雅图周边唯一有湖景+水电+浅水沙滩的营地，家庭露营天花板。取消率极低，取消后秒被抢" },
-      { area: "North CG (无水电位)", whyVacant: "比水电位竞争稍小，偶尔有帐篷客因天气取消", whyHard: "但依然很抢手" },
-      { area: "South CG", whyVacant: "无水电+限制<20ft+知名度低于North，帐篷客取消率较高", whyHard: "—" },
+      { area: "North CG (42个水电位)", whyVacant: "—", whyHard: "Cascade山脚唯一有湖景+30/50A水电+浅水沙滩的营地，家庭露营天花板。取消率极低，取消后秒被抢" },
+      { area: "North CG (55个标准位)", whyVacant: "比水电位竞争稍小，偶尔有帐篷客因天气取消", whyHard: "但依然很抢手，因为位于同一营区" },
+      { area: "South CG (100个标准位)", whyVacant: "无水电+限制25ft以内+知名度低于North，帐篷客取消率较高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统。South CG 限制20ft以内" },
+      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统。South CG 限制25ft以内，North CG有42个水电位" },
     ],
-    recommendedSites: "South CG: Site 1-20（湖景+全接驳+近沙滩）",
-    avoid: "North CG 部分营位树荫过密，无水电hookup",
-    tcNotes: "South CG 全接驳30/50A，完美适配TC。North CG无hookup但可停TC",
+    recommendedSites: "North CG: 水电位（湖景+30/50A全接驳+近沙滩+Pull-through可达40ft）",
+    avoid: "South CG 无水电且限制25ft以内，设施基础",
+    tcNotes: "North CG 42个水电位(30/50A)，Pull-through可达40ft，完美适配TC。South CG限制25ft以内，F-150 TC(约22ft)可进但无hookup",
     image: "/manus-storage/IcRjhRqDeZXrPFRm_84cf9318.jpg",
   },
   {
@@ -315,10 +315,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "5月底-9月（正常年份）",
     activities: [
-      { name: "Grove of the Patriarchs", ageRange: "2岁+", distance: "步行10分钟", details: "千年古木步道，有吊桥", mapUrl: "https://www.google.com/maps/search/Grove+of+the+Patriarchs+Mount+Rainier+National+Park+WA" },
-      { name: "Silver Falls Loop", ageRange: "3岁+", distance: "营地旁", details: "3英里环线，经过壮观瀑布", mapUrl: "https://www.google.com/maps/search/Silver+Falls+Loop+Ohanapecosh+Campground" },
-      { name: "Hot Springs 遗址", ageRange: "任何年龄", distance: "步行5分钟", details: "历史温泉遗址", mapUrl: "https://www.google.com/maps/search/Ohanapecosh+Hot+Springs" },
-      { name: "Ohanapecosh River 戏水", ageRange: "3岁+", distance: "营地旁", details: "清澈溪流，浅水区可玩", mapUrl: "https://www.google.com/maps/search/Ohanapecosh+River+Mount+Rainier+National+Park" },
+      { name: "Grove of the Patriarchs", ageRange: "2岁+", distance: "步行10分钟", details: "千年古木步道，有吊桥", mapUrl: "https://www.google.com/maps/search/Grove+of+the+Patriarchs+Mount+Rainier+National+Park+WA", googleRating: "4.8★ (173条评价)" },
+      { name: "Silver Falls Loop", ageRange: "3岁+", distance: "营地旁", details: "3英里环线，经过壮观瀑布", mapUrl: "https://www.google.com/maps/search/Silver+Falls+Loop+Ohanapecosh+Campground", googleRating: "4.8★ (18条评价)" },
+      { name: "Hot Springs 遗址", ageRange: "任何年龄", distance: "步行5分钟", details: "历史温泉遗址", mapUrl: "https://www.google.com/maps/search/Ohanapecosh+Hot+Springs", googleRating: "3.7★ (16条评价)" },
+      { name: "Ohanapecosh River 戏水", ageRange: "3岁+", distance: "营地旁", details: "清澈溪流，浅水区可玩", mapUrl: "https://www.google.com/maps/search/Ohanapecosh+River+Mount+Rainier+National+Park", googleRating: "4.8★ (344条评价)" },
     ],
     areas: [
       { area: "Loop A/B (河畔)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "标准和仅限帐篷的无电营位位于古树丛中，靠近河流和步道。 (Source: recreation.gov)"  },
@@ -359,9 +359,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "5月-9月",
     activities: [
-      { name: "Lake Crescent 游泳", ageRange: "3岁+", distance: "步行2分钟", details: "清澈见底的冰川湖", mapUrl: "https://www.google.com/maps/search/Lake+Crescent+Olympic+National+Park" },
-      { name: "Sol Duc Hot Springs", ageRange: "2岁+", distance: "开车30分钟", details: "天然温泉泡池", mapUrl: "https://www.google.com/maps/search/Sol+Duc+Hot+Springs+Olympic+National+Park+WA" },
-      { name: "Marymere Falls Trail", ageRange: "3岁+", distance: "开车10分钟", details: "1.8英里步道到90ft瀑布", mapUrl: "https://www.google.com/maps/search/Marymere+Falls+Trail+Olympic+National+Park" },
+      { name: "Lake Crescent 游泳", ageRange: "3岁+", distance: "步行2分钟", details: "清澈见底的冰川湖", mapUrl: "https://www.google.com/maps/search/Lake+Crescent+Olympic+National+Park", googleRating: "4.5★ (403条评价)" },
+      { name: "Sol Duc Hot Springs", ageRange: "2岁+", distance: "开车30分钟", details: "天然温泉泡池", mapUrl: "https://www.google.com/maps/search/Sol+Duc+Hot+Springs+Olympic+National+Park+WA", googleRating: "3.9★ (1854条评价)" },
+      { name: "Marymere Falls Trail", ageRange: "3岁+", distance: "开车10分钟", details: "1.8英里步道到90ft瀑布", mapUrl: "https://www.google.com/maps/search/Marymere+Falls+Trail+Olympic+National+Park", googleRating: "4.8★ (1984条评价)" },
       { name: "钓鱼", ageRange: "3岁+", distance: "营地旁", details: "湖中有鳟鱼", mapUrl: "https://www.google.com/maps/search/Rogue+River+Farewell+Bend+Campground" },
     ],
     areas: [
@@ -406,8 +406,8 @@ export const campgrounds: Campground[] = [
     season: "全年开放",
     activities: [
       { name: "Lake Chelan 游泳", ageRange: "2岁+", distance: "步行2分钟", details: "1500ft深的冰川湖，夏季水温适中", mapUrl: "https://www.google.com/maps/search/Lake+Chelan+State+Park+WA" },
-      { name: "Lady of the Lake 游船", ageRange: "任何年龄", distance: "开车10分钟", details: "游船到Stehekin小镇", mapUrl: "https://www.google.com/maps/search/Lady+of+the+Lake+Chelan" },
-      { name: "Slidewaters 水上乐园", ageRange: "2岁+", distance: "开车15分钟", details: "多条水滑梯和儿童区", mapUrl: "https://www.google.com/maps/search/Slidewaters+Chelan+WA" },
+      { name: "Lady of the Lake 游船", ageRange: "任何年龄", distance: "开车10分钟", details: "游船到Stehekin小镇", mapUrl: "https://www.google.com/maps/search/Lady+of+the+Lake+Chelan", googleRating: "4.6★ (652条评价)" },
+      { name: "Slidewaters 水上乐园", ageRange: "2岁+", distance: "开车15分钟", details: "多条水滑梯和儿童区", mapUrl: "https://www.google.com/maps/search/Slidewaters+Chelan+WA", googleRating: "4.6★ (2121条评价)" },
     ],
     areas: [
       { area: "湖畔营位 (1-35)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "湖畔营位（1–35）为切兰湖州立公园沿湖的35个全接驳营位，营位平坦开阔、直接临湖，步行可达船坡、游泳与垂钓点，观景与日落条件极佳。配备水电全接驳，尤其适合房车/拖车、家庭与喜爱水上活动的露营者；夏季热门，建议提前预订。" },
@@ -448,9 +448,9 @@ export const campgrounds: Campground[] = [
     season: "全年开放",
     activities: [
       { name: "海滩玩沙", ageRange: "1岁+", distance: "步行1分钟", details: "无尽的太平洋沙滩", mapUrl: "https://www.google.com/maps/search/Pacific+Beach+State+Park+WA" },
-      { name: "放风筝", ageRange: "2岁+", distance: "营地旁", details: "海风强劲，完美的风筝场地", mapUrl: "https://www.google.com/maps/search/Pacific+Beach+State+Park+WA" },
-      { name: "日落观赏", ageRange: "任何年龄", distance: "营地内", details: "太平洋日落", mapUrl: "https://www.google.com/maps/search/Pacific+Beach+State+Park+WA" },
-      { name: "挖蛤蜊", ageRange: "3岁+", distance: "海滩", details: "季节性开放", mapUrl: "https://www.google.com/maps/search/Pacific+Beach+State+Park+WA" },
+      { name: "放风筝", ageRange: "2岁+", distance: "营地旁", details: "海风强劲，完美的风筝场地", mapUrl: "https://www.google.com/maps/search/Pacific+Beach+State+Park+WA", googleRating: "4.6★ (1360条评价)" },
+      { name: "日落观赏", ageRange: "任何年龄", distance: "营地内", details: "太平洋日落", mapUrl: "https://www.google.com/maps/search/Pacific+Beach+State+Park+WA", googleRating: "4.6★ (1360条评价)" },
+      { name: "挖蛤蜊", ageRange: "3岁+", distance: "海滩", details: "季节性开放", mapUrl: "https://www.google.com/maps/search/Pacific+Beach+State+Park+WA", googleRating: "4.6★ (1360条评价)" },
     ],
     areas: [
       { area: "海景营位 (1-22)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "海景营位(1–22)位于太平洋海滩州立公园沿海地带，共22个面向海景的营位，提供全接驳（水、电），可步行直达沙滩并观赏海上日落。营地周边以宽阔砂滩、潮池与漂流木为主，风力较大且景观开阔，适合房车/露营车、家庭以及喜欢海滩活动、观鸟和拍照的露营者。" },
@@ -491,9 +491,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Clallam County",
     season: "全年开放",
     activities: [
-      { name: "Tongue Point 潮池", ageRange: "2岁+", distance: "步行10分钟", details: "华盛顿州最佳潮池之一", mapUrl: "https://www.google.com/maps/search/Tongue+Point+Salt+Creek+Recreation+Area" },
-      { name: "二战碉堡探索", ageRange: "3岁+", distance: "步行5分钟", details: "Camp Hayden历史遗迹", mapUrl: "https://www.google.com/maps/search/Camp+Hayden+Salt+Creek+Recreation+Area" },
-      { name: "观鲸", ageRange: "任何年龄", distance: "营地旁", details: "虎鲸和灰鲸", mapUrl: "https://www.google.com/maps/search/Cape+Lookout+Trail+Cape+Lookout+State+Park" },
+      { name: "Tongue Point 潮池", ageRange: "2岁+", distance: "步行10分钟", details: "华盛顿州最佳潮池之一", mapUrl: "https://www.google.com/maps/search/Tongue+Point+Salt+Creek+Recreation+Area", googleRating: "4.8★ (1555条评价)" },
+      { name: "二战碉堡探索", ageRange: "3岁+", distance: "步行5分钟", details: "Camp Hayden历史遗迹", mapUrl: "https://www.google.com/maps/search/Camp+Hayden+Salt+Creek+Recreation+Area", googleRating: "4.8★ (1555条评价)" },
+      { name: "观鲸", ageRange: "任何年龄", distance: "营地旁", details: "虎鲸和灰鲸", mapUrl: "https://www.google.com/maps/search/Cape+Lookout+Trail+Cape+Lookout+State+Park", googleRating: "4.7★ (2619条评价)" },
     ],
     areas: [
       { area: "Tongue Point 区域 (1-40)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 4, hookups: "部分有电", recommendation: "强烈推荐", areaSummary: "Tongue Point 区域（营位1–40，约40个营位）位于盐溪海崖与海滩带，林间与开阔海景并存，可近距离探索潮池并远眺海峡与奥林匹克山脉。营区部分营位有电，适合家庭、观鸟/摄影爱好者以及携带小型房车或帐篷、喜欢海岸景观和安静自然体验的露营者。" },
@@ -533,9 +533,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "全年开放",
     activities: [
-      { name: "Kalaloch Beach 漂流木", ageRange: "1岁+", distance: "步行5分钟", details: "巨大漂流木堆，天然攀爬乐园", mapUrl: "https://www.google.com/maps/search/Kalaloch+Beach+Olympic+National+Park" },
-      { name: "Tree of Life", ageRange: "任何年龄", distance: "步行15分钟", details: "悬空生长的著名大树", mapUrl: "https://www.google.com/maps/search/Tree+of+Life+Kalaloch" },
-      { name: "Beach 4 潮池", ageRange: "2岁+", distance: "开车10分钟", details: "退潮时丰富海洋生物", mapUrl: "https://www.google.com/maps/search/Beach+4+Olympic+National+Park" },
+      { name: "Kalaloch Beach 漂流木", ageRange: "1岁+", distance: "步行5分钟", details: "巨大漂流木堆，天然攀爬乐园", mapUrl: "https://www.google.com/maps/search/Kalaloch+Beach+Olympic+National+Park", googleRating: "4.8★ (919条评价)" },
+      { name: "Tree of Life", ageRange: "任何年龄", distance: "步行15分钟", details: "悬空生长的著名大树", mapUrl: "https://www.google.com/maps/search/Tree+of+Life+Kalaloch", googleRating: "4.7★ (2998条评价)" },
+      { name: "Beach 4 潮池", ageRange: "2岁+", distance: "开车10分钟", details: "退潮时丰富海洋生物", mapUrl: "https://www.google.com/maps/search/Beach+4+Olympic+National+Park", googleRating: "4.6★ (5条评价)" },
       { name: "Ruby Beach", ageRange: "任何年龄", distance: "开车20分钟", details: "海蚀柱和彩色卵石", mapUrl: "https://www.google.com/maps/search/Ruby+Beach+Olympic+National+Park+WA" },
     ],
     areas: [
@@ -543,15 +543,15 @@ export const campgrounds: Campground[] = [
       { area: "内侧营位 (37-170)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "卡拉洛奇营地内侧营位（编号37–170，约134个营位）位于奥林匹克国家公园海岸线稍内侧的林间地带，树木遮蔽、避风但需要步行才能到达海滩，营地无水电设施。适合喜欢较安静、被森林包围的帐篷或自带简单设施的房车露营者；夏季热门时段可能较拥挤，整体推荐一般。" },
     ],
     vacancyAnalysis: [
-      { area: "D Loop", whyVacant: "—", whyHard: "最靠近dump station，TC/RV首选，悬崖海景，6个月前放票即秒光" },
+      { area: "D Loop", whyVacant: "—", whyHard: "最靠近dump station（位于D17-D18旁），TC/RV首选，悬崖海景。虽然仅提前2周放票，但因位置优越+dump station便利，放出即秒光" },
       { area: "A Loop", whyVacant: "部分营位因侵蚀永久关闭，偶有取消", whyHard: "最大Loop+海景，总体需求极高" },
       { area: "C Loop", whyVacant: "2周前才放票，竞争相对小", whyHard: "—" },
       { area: "E/F Loop", whyVacant: "4天前才放票，可以碰运气", whyHard: "位子少(共19个)，竞争激烈" },
     ],
     bookingWindows: [
-      { area: "D Loop", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
-      { area: "C Loop", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov" },
-      { area: "E/F Loop", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov" },
+      { area: "A/B Loop", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 分批放票" },
+      { area: "C/D Loop", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov 分批放票" },
+      { area: "E/F Loop", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 分批放票" },
     ],
     recommendedSites: "Site 1-36（海崖边缘+直面太平洋日落）",
     avoid: "Site 100+（远离海崖+密林中无景观）",
@@ -579,10 +579,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "KOA",
     season: "全年开放",
     activities: [
-      { name: "加热泳池和水滑梯", ageRange: "2岁+", distance: "营地内", details: "室内加热泳池+室外水滑梯", mapUrl: "https://www.google.com/maps/search/Astoria%2FWarrenton%2FSeaside+KOA+Resort" },
-      { name: "迷你高尔夫", ageRange: "3岁+", distance: "营地内", details: "18洞迷你高尔夫球场", mapUrl: "https://www.google.com/maps/search/Astoria%2FWarrenton%2FSeaside+KOA+Resort" },
-      { name: "蹦蹦枕", ageRange: "2岁+", distance: "营地内", details: "大型充气蹦床", mapUrl: "https://www.google.com/maps/search/Astoria+Warrenton+Seaside+KOA+Resort+Hammond+Oregon" },
-      { name: "Seaside 海滩", ageRange: "任何年龄", distance: "开车15分钟", details: "经典俄勒冈海滩小镇", mapUrl: "https://www.google.com/maps/search/Seaside+Beach+Seaside+OR" },
+      { name: "加热泳池", ageRange: "2岁+", distance: "营地内", details: "室内加热泳池+室外水滑梯", mapUrl: "https://www.google.com/maps/search/Astoria%2FWarrenton%2FSeaside+KOA+Resort" },
+      { name: "迷你高尔夫", ageRange: "3岁+", distance: "营地内", details: "18洞迷你高尔夫球场", mapUrl: "https://www.google.com/maps/search/Astoria%2FWarrenton%2FSeaside+KOA+Resort", googleRating: "4.4★ (1821条评价)" },
+      { name: "蹦蹦枕", ageRange: "2岁+", distance: "营地内", details: "大型充气蹦床", mapUrl: "https://www.google.com/maps/search/Astoria+Warrenton+Seaside+KOA+Resort+Hammond+Oregon", googleRating: "4.4★ (1821条评价)" },
+      { name: "Seaside 海滩", ageRange: "任何年龄", distance: "开车15分钟", details: "经典俄勒冈海滩小镇", mapUrl: "https://www.google.com/maps/search/Seaside+Beach+Seaside+OR", googleRating: "4.7★ (5113条评价)" },
     ],
     areas: [
       { area: "Premium Sites (全接驳+Patio)", overall: 5, scenery: 3, kidFriendly: 5, tcCompat: 5, hookups: "全接驳(50A)", recommendation: "强烈推荐", areaSummary: "阿斯托里亚KOA度假营地的Premium Sites为少量升级型营位（带50A全接驳和独立Patio），提供度假式便利设施与舒适私密的露台空间。营地靠近哥伦比亚河口与太平洋海岸、交通便利并靠近阿斯托里亚/Seaside景点，适合大型房车或寻求全接驳与舒适度假体验的家庭、情侣或想要便利设施的露营者（强烈推荐，5/5）。" },
@@ -622,10 +622,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "5月-9月",
     activities: [
-      { name: "South Beach 海滩", ageRange: "2岁+", distance: "步行5分钟", details: "原始太平洋海岸线", mapUrl: "https://www.google.com/maps/search/South+Beach+Campground+Olympic+National+Park" },
-      { name: "漂流木探索", ageRange: "1.5岁+", distance: "海滩", details: "巨型漂流木构成天然游乐场", mapUrl: "https://www.google.com/maps/search/South+Beach+Campground+Olympic+National+Park" },
-      { name: "Hoh Rain Forest", ageRange: "2岁+", distance: "开车30分钟", details: "世界级温带雨林", mapUrl: "https://www.google.com/maps/search/Hoh+Rain+Forest+Olympic+National+Park+WA" },
-    ],
+      { name: "South Beach 海滩", ageRange: "2岁+", distance: "步行5分钟", details: "原始太平洋海岸线", mapUrl: "https://www.google.com/maps/search/South+Beach+Campground+Olympic+National+Park", googleRating: "4.6★ (3017条评价)" },
+      { name: "漂流木探索", ageRange: "1.5岁+", distance: "海滩", details: "巨型漂流木构成天然游乐场", mapUrl: "https://www.google.com/maps/search/South+Beach+Campground+Olympic+National+Park", googleRating: "4.6★ (3017条评价)" },
+      ],
     areas: [
       { area: "边缘营位 (1-10)", overall: 5, scenery: 5, kidFriendly: 3, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "南海滩营地的边缘营位（1–10）共有约10个靠公园边缘的营位，通常被树木与沙丘半遮蔽，步行即可到海滩和海岸步道。营位无水电接口，适合喜欢海景与安静、能自备水电或以帐篷/小中型拖车露营的露营者。" },
       { area: "中间营位 (11-55)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "南海滩营地中间营位（11–55号）约有45个营位，位于海岸沙丘与海滨针叶林之间，靠近海滩和步道但设施简单且无水电接入。地势较开阔且常有海风，适合喜欢海滩活动、散步和观鸟的帐篷露营者或自给自足的房车用户，追求舒适设施的露营者可能会觉得一般。" },
@@ -663,10 +662,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Oregon State Parks",
     season: "全年开放",
     activities: [
-      { name: "Peter Iredale 沉船", ageRange: "任何年龄", distance: "开车5分钟", details: "1906年搁浅的四桅帆船残骸", mapUrl: "https://www.google.com/maps/search/Peter+Iredale+Shipwreck+Fort+Stevens+State+Park+OR" },
-      { name: "军事博物馆", ageRange: "3岁+", distance: "开车5分钟", details: "南北战争到二战的军事历史", mapUrl: "https://www.google.com/maps/search/Friends+of+Old+Fort+Stevens" },
-      { name: "Coffenbury Lake 游泳", ageRange: "2岁+", distance: "开车5分钟", details: "淡水湖游泳区", mapUrl: "https://www.google.com/maps/search/Coffenbury+Lake+Fort+Stevens+State+Park+OR" },
-      { name: "自行车道网络", ageRange: "3岁+", distance: "营地内", details: "9英里平坦自行车道", mapUrl: "https://www.google.com/maps/search/Fort+Stevens+State+Park+OR" },
+      { name: "Peter Iredale 沉船", ageRange: "任何年龄", distance: "开车5分钟", details: "1906年搁浅的四桅帆船残骸", mapUrl: "https://www.google.com/maps/search/Peter+Iredale+Shipwreck+Fort+Stevens+State+Park+OR", googleRating: "4.7★ (4278条评价)" },
+      { name: "军事博物馆", ageRange: "3岁+", distance: "开车5分钟", details: "南北战争到二战的军事历史", mapUrl: "https://www.google.com/maps/search/Friends+of+Old+Fort+Stevens", googleRating: "4.8★ (62条评价)" },
+      { name: "Coffenbury Lake 游泳", ageRange: "2岁+", distance: "开车5分钟", details: "淡水湖游泳区", mapUrl: "https://www.google.com/maps/search/Coffenbury+Lake+Fort+Stevens+State+Park+OR", googleRating: "4.7★ (42条评价)" },
+      { name: "自行车道网络", ageRange: "3岁+", distance: "营地内", details: "9英里平坦自行车道", mapUrl: "https://www.google.com/maps/search/Fort+Stevens+State+Park+OR", googleRating: "4.7★ (7499条评价)" },
     ],
     areas: [
       { area: "O Loop (~40 sites)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "水电", recommendation: "强烈推荐", areaSummary: "O Loop（约40个营位）位于史蒂文斯堡州立公园内，紧邻哥伦比亚河河口与太平洋沙滩，周边有海滩、林带和历史堡垒遗迹，营位提供水电接入。该区适合喜欢海滩漫步、观鸟、钓鱼的家庭和房车露营者，设施完善、适合需要电力支持或带孩子的游客。" },
@@ -708,10 +707,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Oregon State Parks",
     season: "全年开放",
     activities: [
-      { name: "Beverly Beach 海滩", ageRange: "1岁+", distance: "步行10分钟", details: "通过隧道到达宽阔沙滩", mapUrl: "https://www.google.com/maps/search/Beverly+Beach+State+Park+OR" },
-      { name: "Oregon Coast Aquarium", ageRange: "2岁+", distance: "开车10分钟", details: "世界级水族馆", mapUrl: "https://www.google.com/maps/search/Oregon+Coast+Aquarium+Newport+OR" },
+      { name: "Beverly Beach 海滩", ageRange: "1岁+", distance: "步行10分钟", details: "通过隧道到达宽阔沙滩", mapUrl: "https://www.google.com/maps/search/Beverly+Beach+State+Park+OR", googleRating: "4.7★ (2575条评价)" },
+      { name: "Oregon Coast Aquarium", ageRange: "2岁+", distance: "开车10分钟", details: "世界级水族馆", mapUrl: "https://www.google.com/maps/search/Oregon+Coast+Aquarium+Newport+OR", googleRating: "4.3★ (4134条评价)" },
       { name: "Spencer Creek 戏水", ageRange: "1.5岁+", distance: "营地内", details: "穿过营地的小溪", mapUrl: "https://www.google.com/maps/search/Spencer+Creek+Beverly+Beach+State+Park+OR" },
-      { name: "Newport 海鲜", ageRange: "任何年龄", distance: "开车10分钟", details: "新鲜海鲜和海狮观赏", mapUrl: "https://www.google.com/maps/search/Newport+Historic+Bayfront+Newport+OR" },
+      { name: "Newport 海鲜", ageRange: "任何年龄", distance: "开车10分钟", details: "新鲜海鲜和海狮观赏", mapUrl: "https://www.google.com/maps/search/Newport+Historic+Bayfront+Newport+OR", googleRating: "4.7★ (1166条评价)" },
     ],
     areas: [
       { area: "B Loop (全接驳)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "最靠近海滩的全套接入营位圈，在桥下可眺望海滩并提供有线电视。尽管有一些道路噪音，仍然非常抢手。 (Source: Wheeling It review, TheDyrt 条评价)"  },
@@ -752,10 +751,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
-      { name: "Cape Disappointment Lighthouse", ageRange: "2岁+", distance: "步行15分钟", details: "悬崖上的历史灯塔", mapUrl: "https://www.google.com/maps/search/Cape+Disappointment+Lighthouse+Cape+Disappointment+State+Park+WA" },
-      { name: "North Head Lighthouse", ageRange: "2岁+", distance: "开车5分钟", details: "另一座壮观灯塔", mapUrl: "https://www.google.com/maps/search/North+Head+Lighthouse+Cape+Disappointment+State+Park+WA" },
-      { name: "Lewis & Clark 解说中心", ageRange: "3岁+", distance: "开车5分钟", details: "互动历史展览", mapUrl: "https://www.google.com/maps/search/Lewis+%26+Clark+Interpretive+Center+Cape+Disappointment+State+Park" },
-      { name: "Waikiki Beach", ageRange: "2岁+", distance: "步行10分钟", details: "受保护的小海湾", mapUrl: "https://www.google.com/maps/search/Waikiki+Beach+Cape+Disappointment+State+Park+WA" },
+      { name: "Cape Disappointment Lighthouse", ageRange: "2岁+", distance: "步行15分钟", details: "悬崖上的历史灯塔", mapUrl: "https://www.google.com/maps/search/Cape+Disappointment+Lighthouse+Cape+Disappointment+State+Park+WA", googleRating: "4.6★ (799条评价)" },
+      { name: "North Head Lighthouse", ageRange: "2岁+", distance: "开车5分钟", details: "另一座壮观灯塔", mapUrl: "https://www.google.com/maps/search/North+Head+Lighthouse+Cape+Disappointment+State+Park+WA", googleRating: "4.8★" },
+      { name: "Lewis & Clark 解说中心", ageRange: "3岁+", distance: "开车5分钟", details: "互动历史展览", mapUrl: "https://www.google.com/maps/search/Lewis+%26+Clark+Interpretive+Center+Cape+Disappointment+State+Park", googleRating: "4.7★ (432条评价)" },
+      { name: "Waikiki Beach", ageRange: "2岁+", distance: "步行10分钟", details: "受保护的小海湾", mapUrl: "https://www.google.com/maps/search/Waikiki+Beach+Cape+Disappointment+State+Park+WA", googleRating: "4.8★ (176条评价)" },
     ],
     areas: [
       { area: "Area A — Full Hookup (1-60)", overall: 5, scenery: 4, kidFriendly: 4, tcCompat: 5, hookups: "全连接(50A/W/S)", recommendation: "强烈推荐", areaSummary: "失望角州立公园A区（1–60号）约有60个提供全连接（50A/水/污水）的房车营位，靠近哥伦比亚河口与太平洋交汇处，周边有灯塔、沙滩、沙丘与林间步道，景观开阔且风较大。营位适合中大型房车、家庭和需要稳定电水污支持的露营者，也方便喜欢海滩活动、徒步和观鸟的游客。" },
@@ -799,9 +798,9 @@ export const campgrounds: Campground[] = [
     season: "5月底-9月底",
     activities: [
       { name: "湖边游泳", ageRange: "2岁+", distance: "步行5分钟", details: "63英亩湖泊，夏季水温适中", mapUrl: "https://www.google.com/maps/search/Trillium+Lake" },
-      { name: "湖岸环线步道", ageRange: "1.5岁+", distance: "营地内", details: "2英里平坦环线，可推婴儿车", mapUrl: "https://www.google.com/maps/search/Trillium+Lake+Loop+Trail+Oregon" },
+      { name: "湖岸环线步道", ageRange: "1.5岁+", distance: "营地内", details: "2英里平坦环线，可推婴儿车", mapUrl: "https://www.google.com/maps/search/Trillium+Lake+Loop+Trail+Oregon", googleRating: "4.8★" },
       { name: "钓鱼码头", ageRange: "3岁+", distance: "步行5分钟", details: "无障碍钓鱼码头，彩虹鳟鱼", mapUrl: "https://www.google.com/maps/search/Trillium+Lake+fishing+pier+Oregon" },
-      { name: "Mt. Hood 倒影摄影", ageRange: "任何年龄", distance: "步行10分钟", details: "清晨湖面如镜", mapUrl: "https://www.google.com/maps/search/Trillium+Lake+OR" },
+      { name: "Mt. Hood 倒影摄影", ageRange: "任何年龄", distance: "步行10分钟", details: "清晨湖面如镜", mapUrl: "https://www.google.com/maps/search/Trillium+Lake+OR", googleRating: "4.8★" },
     ],
     areas: [
       { area: "湖边营位 (1-15)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 3, hookups: "无", recommendation: "强烈推荐", areaSummary: "特里利姆湖湖边营位（1–15）约15处靠湖营位，直面特里利姆湖与马胡德山的经典倒影景观，周边为针叶林并临近环湖步道与船只下水点。无水电设施，适合追风景摄影者、家庭、徒步或皮划艇爱好者，以及帐篷或小型露营车入住；热门时段建议提前预订并自备水与补给。" },
@@ -843,9 +842,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "全年开放（道路开放时）",
     activities: [
-      { name: "Rialto Beach", ageRange: "1.5岁+", distance: "开车5分钟", details: "巨型漂流木和海蚀柱", mapUrl: "https://www.google.com/maps/search/Rialto+Beach+Olympic+National+Park+WA" },
-      { name: "Hole-in-the-Wall", ageRange: "3岁+", distance: "步行1.5英里", details: "退潮时可穿过的海蚀拱门", mapUrl: "https://www.google.com/maps/search/Hole-in-the-Wall+Rialto+Beach" },
-      { name: "雨林步道", ageRange: "2岁+", distance: "营地内", details: "苔藓覆盖的温带雨林", mapUrl: "https://www.google.com/maps/search/Mora+Campground" },
+      { name: "Rialto Beach", ageRange: "1.5岁+", distance: "开车5分钟", details: "巨型漂流木和海蚀柱", mapUrl: "https://www.google.com/maps/search/Rialto+Beach+Olympic+National+Park+WA", googleRating: "4.8★ (1243条评价)" },
+      { name: "Hole-in-the-Wall", ageRange: "3岁+", distance: "步行1.5英里", details: "退潮时可穿过的海蚀拱门", mapUrl: "https://www.google.com/maps/search/Hole-in-the-Wall+Rialto+Beach", googleRating: "4.8★" },
+      { name: "雨林步道", ageRange: "2岁+", distance: "营地内", details: "苔藓覆盖的温带雨林", mapUrl: "https://www.google.com/maps/search/Mora+Campground", googleRating: "5.0★ (3条评价)" },
     ],
     areas: [
       { area: "Loop E", overall: 5, scenery: 4, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "营地背靠夸拉尤特河，提供紧挨河岸的营位，但河景视野有限。(Source: TheDyrt user 条评价, Tripadvisor user 条评价)"  },
@@ -886,9 +885,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "5月底-9月",
     activities: [
-      { name: "Little Crater Lake 观赏", ageRange: "任何年龄", distance: "步行5分钟", details: "45°F恒温水晶清澈泉水池", mapUrl: "https://www.google.com/maps/search/Little+Crater+Lake+Oregon" },
-      { name: "Pacific Crest Trail", ageRange: "3岁+", distance: "营地旁", details: "PCT经过营地，可走短段", mapUrl: "https://www.google.com/maps/search/Pacific+Crest+Trail+Little+Crater+Lake+Campground+OR" },
-      { name: "Timothy Lake 游泳", ageRange: "2岁+", distance: "开车15分钟", details: "大型水库有沙滩", mapUrl: "https://www.google.com/maps/search/Timothy+Lake+Oregon" },
+      { name: "Little Crater Lake 观赏", ageRange: "任何年龄", distance: "步行5分钟", details: "45°F恒温水晶清澈泉水池", mapUrl: "https://www.google.com/maps/search/Little+Crater+Lake+Oregon", googleRating: "4.7★" },
+      { name: "Pacific Crest Trail", ageRange: "3岁+", distance: "营地旁", details: "PCT经过营地，可走短段", mapUrl: "https://www.google.com/maps/search/Pacific+Crest+Trail+Little+Crater+Lake+Campground+OR", googleRating: "4.7★" },
+      { name: "Timothy Lake 游泳", ageRange: "2岁+", distance: "开车15分钟", details: "大型水库有沙滩", mapUrl: "https://www.google.com/maps/search/Timothy+Lake+Oregon", googleRating: "4.8★" },
     ],
     areas: [
       { area: "全营地 (16 sites)", overall: 4, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "适合探险家庭", areaSummary: "小火山口湖营地共有约16个营位，围绕一处清澈湛蓝的火山口湖，景观独特、以林地与岩石地形为主。营地无水电设施、设施简朴，适合带孩子的探险家庭以及喜欢短途徒步、摄影和安静自然体验的露营者。" },
@@ -925,10 +924,10 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Oregon State Parks",
     season: "全年开放",
     activities: [
-      { name: "Deschutes River 戏水", ageRange: "2岁+", distance: "步行3分钟", details: "河边浅水区（注意急流）", mapUrl: "https://www.google.com/maps/search/Tumalo+State+Park" },
+      { name: "Deschutes River 戏水", ageRange: "2岁+", distance: "步行3分钟", details: "河边浅水区（注意急流）", mapUrl: "https://www.google.com/maps/search/Tumalo+State+Park", googleRating: "4.6★" },
       { name: "儿童游乐场", ageRange: "2岁+", distance: "营地内", details: "秋千和攀爬设施", mapUrl: "https://www.google.com/maps/search/Tumalo+State+Park+Oregon" },
-      { name: "High Desert Museum", ageRange: "任何年龄", distance: "开车15英里", details: "世界级沙漠博物馆", mapUrl: "https://www.google.com/maps/search/High+Desert+Museum+Bend+OR" },
-      { name: "Smith Rock", ageRange: "3岁+", distance: "开车30分钟", details: "壮观岩石峡谷", mapUrl: "https://www.google.com/maps/search/Smith+Rock+State+Park+OR" },
+      { name: "High Desert Museum", ageRange: "任何年龄", distance: "开车15英里", details: "距营地约30分钟车程（33英里），互动式自然博物馆，有活体动物展览和户外步道", mapUrl: "https://www.google.com/maps/search/High+Desert+Museum+Bend+OR" },
+      { name: "Smith Rock", ageRange: "3岁+", distance: "开车30分钟", details: "壮观岩石峡谷", mapUrl: "https://www.google.com/maps/search/Smith+Rock+State+Park+OR", googleRating: "4.9★ (7901条评价)" },
     ],
     areas: [
       { area: "Loop C (全接驳)", overall: 5, scenery: 3, kidFriendly: 4, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "营地提供较新的桌子、营位基座和篝火圈，但有些营位被描述为狭窄且私密性有限（Source: TheDyrt reviews）。"  },
@@ -968,9 +967,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Oregon State Parks",
     season: "全年（⚠️8月3日后关闭）",
     activities: [
-      { name: "3英里海滩", ageRange: "任何年龄", distance: "步行5分钟", details: "宽阔平坦沙滩", mapUrl: "https://www.google.com/maps/search/Netarts+Spit+Cape+Lookout+State+Park" },
+      { name: "3英里海滩", ageRange: "任何年龄", distance: "步行5分钟", details: "宽阔平坦沙滩", mapUrl: "https://www.google.com/maps/search/Netarts+Spit+Cape+Lookout+State+Park", googleRating: "4.7★ (1011条评价)" },
       { name: "Cape Lookout Trail", ageRange: "4岁+", distance: "营地旁", details: "5英里步道，壮观海景", mapUrl: "https://www.google.com/maps/search/Cape+Lookout+Trail+Cape+Lookout+State+Park+OR" },
-      { name: "潮间带探索", ageRange: "2岁+", distance: "步行10分钟", details: "退潮时丰富海洋生物", mapUrl: "https://www.google.com/maps/search/South+Beach+Cape+Lookout+State+Park" },
+      { name: "潮间带探索", ageRange: "2岁+", distance: "步行10分钟", details: "退潮时丰富海洋生物", mapUrl: "https://www.google.com/maps/search/South+Beach+Cape+Lookout+State+Park", googleRating: "4.7★ (1011条评价)" },
       { name: "观鲸", ageRange: "任何年龄", distance: "步道上", details: "冬春迁徙季节", mapUrl: "https://www.google.com/maps/search/Cape+Lookout+Trail+Cape+Lookout+State+Park" },
     ],
     areas: [
@@ -1012,9 +1011,9 @@ export const campgrounds: Campground[] = [
     bookingSystem: "Recreation.gov",
     season: "5月-9月",
     activities: [
-      { name: "Rogue River 游泳", ageRange: "3岁+", distance: "步行2分钟", details: "河弯处天然浅水游泳区", mapUrl: "https://www.google.com/maps/search/Farewell+Bend+Campground" },
+      { name: "Rogue River 游泳", ageRange: "3岁+", distance: "步行2分钟", details: "河弯处天然浅水游泳区", mapUrl: "https://www.google.com/maps/search/Farewell+Bend+Campground", googleRating: "4.6★ (120条评价)" },
       { name: "钓鱼", ageRange: "3岁+", distance: "营地旁", details: "彩虹鳟鱼", mapUrl: "https://www.google.com/maps/search/Rogue+River+Farewell+Bend+Campground" },
-      { name: "Rogue River Trail", ageRange: "3岁+", distance: "营地旁", details: "沿河步道", mapUrl: "https://www.google.com/maps/search/Upper+Rogue+River+Trail+Farewell+Bend+Campground" },
+      { name: "Rogue River Trail", ageRange: "3岁+", distance: "营地旁", details: "沿河步道", mapUrl: "https://www.google.com/maps/search/Upper+Rogue+River+Trail+Farewell+Bend+Campground", googleRating: "5.0★" },
       { name: "Crater Lake 一日游", ageRange: "任何年龄", distance: "开车1h", details: "世界级火山口湖", mapUrl: "https://www.google.com/maps/search/Crater+Lake+National+Park" },
     ],
     areas: [
@@ -1055,7 +1054,7 @@ export const campgrounds: Campground[] = [
     season: "7月初-10月初",
     activities: [
       { name: "Crater Lake Rim Drive", ageRange: "任何年龄", distance: "开车15分钟", details: "33英里环湖公路", mapUrl: "https://www.google.com/maps/search/Crater+Lake+Rim+Drive+Crater+Lake+National+Park+OR" },
-      { name: "Boat Tour 游船", ageRange: "3岁+", distance: "开车20分钟", details: "乘船到Wizard Island", mapUrl: "https://www.google.com/maps/search/Cleetwood+Cove+Boat+Dock+Crater+Lake" },
+      { name: "Boat Tour 游船", ageRange: "3岁+", distance: "开车20分钟", details: "乘船到Wizard Island", mapUrl: "https://www.google.com/maps/search/Cleetwood+Cove+Boat+Dock+Crater+Lake", googleRating: "4.7★ (232条评价)" },
       { name: "Junior Ranger Program", ageRange: "3岁+", distance: "游客中心", details: "获得Ranger徽章", mapUrl: "https://www.google.com/maps/search/Mazama+Campground+Amphitheater+Crater+Lake" },
       { name: "Pinnacles Trail", ageRange: "3岁+", distance: "开车20分钟", details: "1英里步道看火山岩尖塔", mapUrl: "https://www.google.com/maps/search/Pinnacles+Trail+Crater+Lake+National+Park" },
     ],

@@ -7,6 +7,7 @@ import { seasonData, monthLabels } from "@/data/seasons";
 import { activityPhotos } from "@/data/activityPhotos";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { MapView } from "@/components/Map";
+import { ActivityCard } from "@/components/ActivityCard";
 import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -777,43 +778,18 @@ export default function CampgroundDetail() {
                 娃可玩项目清单
               </h2>
               <div className="space-y-4">
-                {campground.activities.map((act, i) => {
-                  const photoUrl = activityPhotos[act.name];
-                  return (
-                    <div key={i} className="rounded-lg border border-border/60 overflow-hidden hover:shadow-md transition-shadow">
-                      {photoUrl && (
-                        <div className="relative h-40 overflow-hidden">
-                          <img src={photoUrl} alt={act.name} className="w-full h-full object-cover" />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                          <h4 className="absolute bottom-3 left-4 font-medium text-white text-sm drop-shadow-md">{act.name}</h4>
-                        </div>
-                      )}
-                      <div className="p-4">
-                        {!photoUrl && <h4 className="font-medium text-sm mb-1.5">{act.name}</h4>}
-                        <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-lake/10 text-lake font-mono">{act.ageRange}</span>
-                          <span className="inline-flex items-center gap-1">
-                            <MapPin size={10} />
-                            {act.distance}
-                          </span>
-                        </div>
-                        <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{act.details}</p>
-                        {act.mapUrl && (
-                          <a
-                            href={act.mapUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-md bg-forest/10 text-forest text-xs font-medium hover:bg-forest/20 transition-colors"
-                          >
-                            <MapIcon size={12} />
-                            在 Google Maps 查看真实照片和评价
-                            <ExternalLink size={10} />
-                          </a>
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
+                {campground.activities.map((act, i) => (
+                  <ActivityCard
+                    key={i}
+                    name={act.name}
+                    ageRange={act.ageRange}
+                    distance={act.distance}
+                    details={act.details}
+                    mapUrl={act.mapUrl}
+                    googleRating={act.googleRating}
+                    fallbackPhoto={activityPhotos[act.name]}
+                  />
+                ))}
               </div>
             </motion.div>
           )}
