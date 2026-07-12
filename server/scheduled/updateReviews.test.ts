@@ -2,14 +2,14 @@ import { describe, it, expect } from "vitest";
 import { campgroundReviewConfigs } from "./campgroundConfig";
 
 describe("campgroundReviewConfigs", () => {
-  it("should have 36 campground configurations", () => {
-    expect(campgroundReviewConfigs).toHaveLength(36);
+  it("should have 49 campground configurations", () => {
+    expect(campgroundReviewConfigs).toHaveLength(49);
   });
 
   it("should have unique IDs", () => {
     const ids = campgroundReviewConfigs.map(c => c.id);
     const uniqueIds = new Set(ids);
-    expect(uniqueIds.size).toBe(36);
+    expect(uniqueIds.size).toBe(49);
   });
 
   it("should have googlePlacesQuery for all campgrounds", () => {
@@ -20,7 +20,7 @@ describe("campgroundReviewConfigs", () => {
 
   it("should have recGovCampgroundId for federal campgrounds", () => {
     const recGov = campgroundReviewConfigs.filter(c => c.recGovCampgroundId);
-    expect(recGov.length).toBe(11);
+    expect(recGov.length).toBe(13);
     for (const config of recGov) {
       expect(config.recGovCampgroundId).toMatch(/^\d+$/);
     }

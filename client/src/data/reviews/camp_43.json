@@ -1,0 +1,46 @@
+{
+  "campgroundId": 43,
+  "campgroundName": "Larrabee",
+  "totalReviews": 5,
+  "averageRating": 4.2,
+  "googleTotalRatings": 199,
+  "reviews": [
+    {
+      "author": "Illogical Bacon",
+      "rating": 4,
+      "date": "a month ago",
+      "text": "The Good:\nThe location is serene* with easy access to the boat launch and a beachy area with tide pools (we saw starfish!) not to mention you are surrounded by pristine forests and the Chuckanut Mountains with their encompassing trails for both hiking and biking. All of the staff I ran into were extremely pleasant, friendly, and helpful. The bathrooms are some of the cleanest and well-maintained I've encountered at a State Park.\n\nThe Bad:\nCampsites are close together without much natural barrier between them. Weekends are pretty busy in peak season and you get what you get for fellow camp mates. Getting in and out can sometimes be tricky on the busy road and be VERY cafeful when crossing on foot to access the trailhead across the street.\n\n*The Ugly:\nYou won't be here for the peace and quiet, as trains run by at all hours of the day and night a mere 500 feet away and there is constant (sometimes obnoxiously loud) traffic noise.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Misha Smith",
+      "rating": 5,
+      "date": "9 months ago",
+      "text": "Larrabee State Park is definitely one of the few state parks I know I’ll be coming back to. Check-in was super easy, and the staff were very polite, kind, and well-mannered. The park itself is very well maintained, and you can tell the rangers and staff take pride in their work.\n\nSince there was a burn ban during our stay, we brought a propane fire pit, which ended up being perfect—especially when the rain came through. It kept us warm and made sitting outside still enjoyable. Some of the parking stalls are a little close together, but we were able to make it work just fine.\n\nThe park has access to a beautiful beach. It’s a bit of a walk to get there, but absolutely worth it. There are also several trailheads nearby, making it a great spot for hiking and exploring. The restrooms were kept very clean and neat, which we really appreciated.\n\nAnother plus is the park’s location—it’s close to Bellingham, so if you forget anything, town is just a short drive away.\n\nOverall, this park exceeded my expectations. Huge thanks to the park rangers and everyone who helps maintain such a wonderful place. We’ll definitely be back!",
+      "source": "google_maps"
+    },
+    {
+      "author": "James Airey",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "Amazing. Peaceful. Beautiful. Affordable. Nice hosts. Glad to be here.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Winston Lai",
+      "rating": 3,
+      "date": "2 years ago",
+      "text": "Campgrounds are nice, but campsites are quite small. Can hear the train and cars pass by but didn’t bother us too much. Firewood available for purchase from camp host for $7/bundle, and beach is quite nice, but you do have to walk from the campsite.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Rob MacMillan",
+      "rating": 3,
+      "date": "2 years ago",
+      "text": "Definitely a nice campground in terms of the layout and ocean lookouts/beach.  That being said, the constant trains made it difficult to get a good night of sleep.  It also sounded like the location was under a flight path and some cars were very noisy.  Great location for popping into town or going mountain biking at Galbraith (definitely a lot of bikers camping).",
+      "source": "google_maps"
+    }
+  ],
+  "lastUpdated": "2026-07-12",
+  "source": "google_maps"
+}

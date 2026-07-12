@@ -1,4 +1,4 @@
-// GPS coordinates for all 36 campgrounds
+// GPS coordinates for all 49 campgrounds
 // Used for Google Maps integration
 
 export interface CampgroundCoords {
@@ -43,6 +43,19 @@ export const campgroundCoords: Record<number, CampgroundCoords> = {
   34: { lat: 44.8770, lng: -122.6540 }, // Silver Falls
   35: { lat: 45.3260, lng: -117.2120 }, // Wallowa Lake
   36: { lat: 44.7190, lng: -122.1530 }, // Detroit Lake
+  37: { lat: 47.9550, lng: -123.8600 }, // Sol Duc
+  38: { lat: 42.0600, lng: -124.3100 }, // Harris Beach
+  39: { lat: 48.6900, lng: -121.0940 }, // Colonial Creek
+  40: { lat: 47.4650, lng: -120.3100 }, // Lincoln Rock
+  41: { lat: 48.1600, lng: -122.6800 }, // Fort Casey
+  42: { lat: 48.2300, lng: -122.7600 }, // Fort Ebey
+  43: { lat: 48.6550, lng: -122.4900 }, // Larrabee
+  44: { lat: 47.8600, lng: -119.1200 }, // Steamboat Rock
+  45: { lat: 43.1200, lng: -124.4100 }, // Bullards Beach
+  46: { lat: 45.2500, lng: -122.7700 }, // Champoeg
+  47: { lat: 43.3400, lng: -124.3700 }, // Sunset Bay
+  48: { lat: 44.5500, lng: -121.2700 }, // Cove Palisades
+  49: { lat: 43.7200, lng: -121.5100 }, // La Pine
 };
 
 // Redmond, WA (starting point for directions)

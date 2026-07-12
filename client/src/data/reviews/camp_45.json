@@ -1,0 +1,46 @@
+{
+  "campgroundId": 45,
+  "campgroundName": "Bullards Beach",
+  "totalReviews": 5,
+  "averageRating": 4.7,
+  "googleTotalRatings": 181,
+  "reviews": [
+    {
+      "author": "Mack",
+      "rating": 5,
+      "date": "4 months ago",
+      "text": "Bullards Beach State Park is one of my favorite places to go. I don't live far away from it and it was the first place I camped at when I moved back to Oregon. I highly recommend it for vacation. Great yurts. It also has a wonderful horse campground.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Lionel W",
+      "rating": 5,
+      "date": "6 months ago",
+      "text": "Great park.\nThe RV parking pad is absolutely level and private.\nMen’s shower room is spotless.\nThe trail is well maintained and the view is great.\nQuiet and dark at night.\nGreat price ($42 for non OR resident with power and water).",
+      "source": "google_maps"
+    },
+    {
+      "author": "LB",
+      "rating": 5,
+      "date": "2 months ago",
+      "text": "Well taken care of campground. Quiet, clean and beautiful. Bullards Beach State Park is a gem and central to many day trips...Port Orford,  Cape Blanco, Seven Devils State Park, Charleston and the three State parks there including Cape Arago, Coos Bay...on and on. We will visit again. I n87sgXCeKcQ",
+      "source": "google_maps"
+    },
+    {
+      "author": "Catherine Olivolo",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "It's a wonderful state park. There are lots of spaces, rvs yurts, tents. Hiking trails; close to the ocean. 2 miles north of Bandon.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Carey Grayson",
+      "rating": 4,
+      "date": "4 months ago",
+      "text": "State campground. Nicely maintained. Water and electric only, no sewer but there is a dump station. Close to the beach and hiking trails. Located just outside of town.",
+      "source": "google_maps"
+    }
+  ],
+  "lastUpdated": "2026-07-12",
+  "source": "google_maps"
+}

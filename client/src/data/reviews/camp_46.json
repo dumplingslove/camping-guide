@@ -1,0 +1,46 @@
+{
+  "campgroundId": 46,
+  "campgroundName": "Champoeg State Heritage Area",
+  "totalReviews": 5,
+  "averageRating": 4.7,
+  "googleTotalRatings": 228,
+  "reviews": [
+    {
+      "author": "Sandy",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "First time here. Lovely State Park with beautiful trails. One trail will take you to Butteville Store, which is actually not a store. Very historical with nice lunch menu, and homemade ice cream. Definitely worth the visit. Only 1 mile from Lady Hill Winery via trail.  Delicious wine and setting. So much to explore, especially if you hike or like to walk or ride bikes.  The Park Ranger is very helpful and joyful.  We spent 3 nights and enjoyed everything.  Most of the rv spots are level. Looking forward to returning.",
+      "source": "google_maps"
+    },
+    {
+      "author": "David Hammond",
+      "rating": 5,
+      "date": "a month ago",
+      "text": "This has to be one of the nicest STATE park we’ve been to. The visitors center is top notch with lots of items for purchase. The facilities throughout are well taken care of. The park is clean and way to navigate.  There is a dump station that is free and has two stations. This is a great park.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Pat Bender",
+      "rating": 3,
+      "date": "2 weeks ago",
+      "text": "Beautiful park but it needs some work. Trails overgrown, Widowmakers all over ready to fall and flatten people. There was a giant half a tree that had broken off laying on the ground close to the picnic area we had.",
+      "source": "google_maps"
+    },
+    {
+      "author": "j ai",
+      "rating": 5,
+      "date": "3 years ago",
+      "text": "Fun spot for camping. Even though the park is open year round, they close a lot in the winter and only RV sites, yurts and cabins are available for winter camping. Summertime there’s more tent sites and some group tent sites as well. The group tent sites are closer to the river. There is a dock but many signs saying no swimming. The camp hosts are always super nice and helpful and fun to chat with. The rangers are great as well. 💜",
+      "source": "google_maps"
+    },
+    {
+      "author": "Webig93 RV",
+      "rating": 5,
+      "date": "2 years ago",
+      "text": "Love this place.  Great camping, walking, bike riding, birding, and a playground for the kids near the campground.  We come here often as we live nearby, but we love to camp here in our trailer too.  They have educational displays in a few are about the history of the place and early pioneer life.  The VC is nice with cute gift items for sale too.  They also have several group picnic sites that must be reserved.  Perfect for retirement parties or any other occasion.",
+      "source": "google_maps"
+    }
+  ],
+  "lastUpdated": "2026-07-12",
+  "source": "google_maps"
+}

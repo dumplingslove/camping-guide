@@ -1,0 +1,46 @@
+{
+  "campgroundId": 47,
+  "campgroundName": "Sunset Bay",
+  "totalReviews": 5,
+  "averageRating": 4.7,
+  "googleTotalRatings": 3173,
+  "reviews": [
+    {
+      "author": "Private Eye",
+      "rating": 5,
+      "date": "2 months ago",
+      "text": "Camped here for 5 days and had a magical experience! Very clean campground with super friendly staff. Wood sold every evening 4-6p. Bathrooms are clean with hot showers! Lots of critters to keep you company (the good kind) but there are some trash pandas. Would visit again AND recommend.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Kevin V",
+      "rating": 5,
+      "date": "3 months ago",
+      "text": "Took my family to Sunset Bay Campground for their first taste of the Oregon coast.\nThey loved it!\nUsed it as a base camp while we visited other places each day.\nLoop A is under renovation from storm damage.\nThe beach and surrounding areas have changed since I was there in the '80s. Very enjoyable and relaxing.\nImages are not on a particular order.\nBeach and Bay, local creatures, cliff vid and images are from the trail that wanders south up the mountain from Sunset Bay. Be careful on the cliff edges, stay back. Soft ground.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Julie Jones",
+      "rating": 4,
+      "date": "5 months ago",
+      "text": "Souch fun to introduce my granddaughters to tide pools at the same beach I learned about them. Unfortunately the park fees are steep ($12 for out of state) and the QR code wasn't working. If we hadn't been with another person that was waiting in their vehicle, we would have received a ticket",
+      "source": "google_maps"
+    },
+    {
+      "author": "Matt Vickery",
+      "rating": 5,
+      "date": "2 months ago",
+      "text": "I stopped here on a road trip on a recommendation from some friends that were local to the area. I got to see the sunset at the bay, and then got a campsite across the street. The sea lions sang me to sleep, and I had a beautiful hike the next morning. 10/10 would recommend stopping and at least checking out the surrounding area.",
+      "source": "google_maps"
+    },
+    {
+      "author": "Dan Brennen",
+      "rating": 5,
+      "date": "5 months ago",
+      "text": "What an incredibly beautiful place to have here. The dunes were just amazing and peaceful and I felt like I was the only one there. What a treat!",
+      "source": "google_maps"
+    }
+  ],
+  "lastUpdated": "2026-07-12",
+  "source": "google_maps"
+}

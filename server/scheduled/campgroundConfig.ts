@@ -82,4 +82,24 @@ export const campgroundReviewConfigs: CampgroundReviewConfig[] = [
   { id: 34, name: "Silver Falls State Park", googlePlacesQuery: "Silver Falls State Park Campground Oregon" },
   { id: 35, name: "Wallowa Lake State Park", googlePlacesQuery: "Wallowa Lake State Park Campground Oregon" },
   { id: 36, name: "Detroit Lake State Recreation Area", googlePlacesQuery: "Detroit Lake State Recreation Area Campground Oregon" },
+
+  // ============================================================================
+  // GROUP 5: SECOND-PRIORITY CAMPGROUNDS (13) - Added from popularity checklist
+  // ============================================================================
+  // NPS / USFS - Recreation.gov PRIMARY (2)
+  { id: 37, name: "Sol Duc Hot Springs Campground", googlePlacesQuery: "Sol Duc Hot Springs Campground Olympic National Park", recGovCampgroundId: "251906" },
+  { id: 39, name: "Colonial Creek South Campground", googlePlacesQuery: "Colonial Creek South Campground North Cascades", recGovCampgroundId: "232266" },
+  // WA State Parks - Google Maps only (5)
+  { id: 40, name: "Lincoln Rock State Park", googlePlacesQuery: "Lincoln Rock State Park Campground Washington" },
+  { id: 41, name: "Fort Casey Historical State Park", googlePlacesQuery: "Fort Casey State Park Campground Whidbey Island Washington" },
+  { id: 42, name: "Fort Ebey State Park", googlePlacesQuery: "Fort Ebey State Park Campground Whidbey Island Washington" },
+  { id: 43, name: "Larrabee State Park", googlePlacesQuery: "Larrabee State Park Campground Bellingham Washington" },
+  { id: 44, name: "Steamboat Rock State Park", googlePlacesQuery: "Steamboat Rock State Park Campground Washington" },
+  // Oregon State Parks - Google Maps only (5)
+  { id: 38, name: "Harris Beach State Park", googlePlacesQuery: "Harris Beach State Park Campground Brookings Oregon" },
+  { id: 45, name: "Bullards Beach State Park", googlePlacesQuery: "Bullards Beach State Park Campground Oregon" },
+  { id: 46, name: "Champoeg State Heritage Area", googlePlacesQuery: "Champoeg State Heritage Area Campground Oregon" },
+  { id: 47, name: "Sunset Bay State Park", googlePlacesQuery: "Sunset Bay State Park Campground Oregon" },
+  { id: 48, name: "The Cove Palisades State Park", googlePlacesQuery: "The Cove Palisades State Park Campground Oregon" },
+  { id: 49, name: "LaPine State Park", googlePlacesQuery: "La Pine State Park Campground Oregon" },
 ];
