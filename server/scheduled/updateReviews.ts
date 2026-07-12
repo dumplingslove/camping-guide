@@ -14,6 +14,7 @@ import { campgroundReviewConfigs } from "./campgroundConfig";
 import { fetchReviewsForCampground, FetchedReview } from "./reviewFetcher";
 import { distillReviews, CampgroundInsights } from "./reviewDistiller";
 import { storagePut, storageGetSignedUrl } from "../storage";
+import { checkClosureStatus, ClosureStatusResult } from "./closureChecker";
 
 // Key for storing review data and insights in S3
 const REVIEWS_STORAGE_PREFIX = "reviews/camp_";
@@ -172,6 +173,14 @@ export async function updateReviewsHandler(req: Request, res: Response) {
       "application/json"
     );
 
+    // Check closure status for restricted campgrounds
+    let closureResults: ClosureStatusResult[] = [];
+    try {
+      closureResults = await checkClosureStatus();
+    } catch (error) {
+      console.error("[UpdateReviews] Closure check failed:", error);
+    }
+
     // Save update log
     const updateLog: UpdateLog = {
       lastRun: new Date().toISOString(),
@@ -198,8 +207,11 @@ export async function updateReviewsHandler(req: Request, res: Response) {
         newReviewsTotal: totalNew,
         distilledCount: totalDistilled,
         errorsCount: errors,
+        closureChecks: closureResults.length,
+        possiblyReopened: closureResults.filter(r => r.status === "possibly_reopened").length,
       },
       results,
+      closureStatus: closureResults,
     });
   } catch (error) {
     const errMsg = error instanceof Error ? error.message : String(error);
