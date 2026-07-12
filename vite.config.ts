@@ -225,6 +225,73 @@ function vitePluginPlacesProxy(): Plugin {
   };
 }
 
+function vitePluginTranslateProxy(): Plugin {
+  return {
+    name: "manus-translate-proxy",
+    configureServer(server: ViteDevServer) {
+      server.middlewares.use("/api/translate", async (req, res) => {
+        const forgeBaseUrl = (process.env.BUILT_IN_FORGE_API_URL || "").replace(/\/+$/, "");
+        const forgeKey = process.env.BUILT_IN_FORGE_API_KEY;
+
+        if (!forgeBaseUrl || !forgeKey) {
+          res.writeHead(500, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ error: "Translate proxy not configured" }));
+          return;
+        }
+
+        if (req.method !== "POST") {
+          res.writeHead(405, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ error: "Method not allowed" }));
+          return;
+        }
+
+        // Read request body
+        let body = "";
+        for await (const chunk of req) {
+          body += chunk;
+        }
+
+        try {
+          const { text } = JSON.parse(body);
+          if (!text || text.length > 5000) {
+            res.writeHead(400, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({ error: "Invalid text" }));
+            return;
+          }
+
+          const targetUrl = `${forgeBaseUrl}/v1/chat/completions`;
+          const resp = await fetch(targetUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": `Bearer ${forgeKey}`,
+            },
+            body: JSON.stringify({
+              model: "gpt-5-nano",
+              messages: [
+                { role: "system", content: "你是一个翻译助手。将以下英文露营评论翻译成中文。保持原意，语言自然流畅。只输出翻译结果，不要添加任何解释。" },
+                { role: "user", content: text },
+              ],
+            }),
+          });
+
+          const data = await resp.json() as any;
+          const translation = data.choices?.[0]?.message?.content || "翻译失败";
+
+          res.writeHead(200, {
+            "Content-Type": "application/json",
+            "Cache-Control": "public, max-age=86400",
+          });
+          res.end(JSON.stringify({ translation }));
+        } catch {
+          res.writeHead(502, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ error: "Translation failed" }));
+        }
+      });
+    },
+  };
+}
+
 function vitePluginStorageProxy(): Plugin {
   return {
     name: "manus-storage-proxy",
@@ -278,7 +345,7 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginPlacesProxy(), vitePluginStorageProxy()];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginPlacesProxy(), vitePluginTranslateProxy(), vitePluginStorageProxy()];
 
 export default defineConfig({
   plugins,

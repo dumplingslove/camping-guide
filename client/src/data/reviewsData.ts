@@ -1,13 +1,11 @@
 // Auto-generated from Recreation.gov and Google Maps reviews
-// Total: 4659 reviews across 24 campgrounds
-
-import reviewsData from "./reviews.json";
+// Total: 4674 reviews across 24 campgrounds
+// Reviews are lazy-loaded per campground to avoid loading 2.2MB upfront
 
 export interface Review {
-  id: string;
+  author: string;
   rating: number;
   text: string;
-  author: string;
   date: string;
   siteNumber: string;
   loop: string;
@@ -16,6 +14,7 @@ export interface Review {
   stayEnd: string;
   helpfulVotes: number;
   source: string;
+  area?: string;
 }
 
 export interface CampgroundReviews {
@@ -28,8 +27,25 @@ export interface CampgroundReviews {
 
 export type ReviewsMap = Record<string, CampgroundReviews>;
 
-export const reviews: ReviewsMap = reviewsData as unknown as ReviewsMap;
+// Cache for loaded reviews
+const reviewsCache: Record<string, CampgroundReviews> = {};
 
-export function getReviewsForCampground(campgroundId: number): CampgroundReviews | null {
-  return reviews[String(campgroundId)] || null;
+/**
+ * Lazy-load reviews for a specific campground.
+ * Each campground's reviews are in a separate JSON file to avoid loading 2.2MB upfront.
+ */
+export async function getReviewsForCampground(campgroundId: number): Promise<CampgroundReviews | null> {
+  const key = String(campgroundId);
+  if (reviewsCache[key]) {
+    return reviewsCache[key];
+  }
+  try {
+    const module = await import(`./reviews/camp_${campgroundId}.json`);
+    const data = module.default as CampgroundReviews;
+    reviewsCache[key] = data;
+    return data;
+  } catch (e) {
+    console.warn(`No reviews found for campground ${campgroundId}`, e);
+    return null;
+  }
 }
