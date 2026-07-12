@@ -25,4 +25,18 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+// Visited records - tracks campgrounds the user has visited
+export const visitedRecords = mysqlTable("visited_records", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull(),
+  campgroundId: int("campgroundId").notNull(),
+  startDate: varchar("startDate", { length: 20 }).notNull(), // YYYY-MM-DD
+  endDate: varchar("endDate", { length: 20 }), // YYYY-MM-DD, optional
+  sites: varchar("sites", { length: 100 }).default("").notNull(), // campsite numbers
+  notes: text("notes"), // personal notes
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type VisitedRecord = typeof visitedRecords.$inferSelect;
+export type InsertVisitedRecord = typeof visitedRecords.$inferInsert;

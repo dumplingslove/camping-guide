@@ -72,3 +72,5 @@
 ## New Features (User Request)
 - [x] Add summary table to homepage showing all 49 campgrounds with key info and visited status
 - [x] Improve visited record feature to support end date (date range instead of single date)
+- [x] Migrate visited records from localStorage to database (cross-device sync)
+- [x] Add visited statistics dashboard page with camping stats, state/monthly distribution charts

@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { eq, and, desc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, visitedRecords, InsertVisitedRecord, VisitedRecord } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,38 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+// ===== Visited Records =====
+
+export async function getVisitedRecords(userId: number): Promise<VisitedRecord[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(visitedRecords)
+    .where(eq(visitedRecords.userId, userId))
+    .orderBy(desc(visitedRecords.startDate));
+}
+
+export async function addVisitedRecord(record: InsertVisitedRecord): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.insert(visitedRecords).values(record);
+}
+
+export async function deleteVisitedRecord(id: number, userId: number): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.delete(visitedRecords).where(
+    and(eq(visitedRecords.id, id), eq(visitedRecords.userId, userId))
+  );
+}
+
+export async function updateVisitedRecord(
+  id: number,
+  userId: number,
+  data: Partial<Pick<InsertVisitedRecord, 'startDate' | 'endDate' | 'sites' | 'notes'>>
+): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.update(visitedRecords)
+    .set(data)
+    .where(and(eq(visitedRecords.id, id), eq(visitedRecords.userId, userId)));
+}

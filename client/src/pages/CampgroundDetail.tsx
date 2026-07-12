@@ -6,6 +6,7 @@ import { campgroundCoords, REDMOND_COORDS } from "@/data/coordinates";
 import { seasonData, monthLabels } from "@/data/seasons";
 import { activityPhotos } from "@/data/activityPhotos";
 import { useFavorites } from "@/contexts/FavoritesContext";
+import { useVisited, VisitedEntry } from "@/hooks/useVisited";
 import { MapView } from "@/components/Map";
 import { ActivityCard } from "@/components/ActivityCard";
 import { ReviewsSection } from "@/components/ReviewsSection";
@@ -359,57 +360,35 @@ function UserNotes({ campId, campName }: { campId: number; campName: string }) {
   );
 }
 
-interface VisitedEntry {
-  date: string;
-  endDate?: string;
-  sites: string;
-  notes: string;
-}
-
 function VisitedMarker({ campId, campName }: { campId: number; campName: string }) {
-  const storageKey = `camp_visited_${campId}`;
-  const [visits, setVisits] = useState<VisitedEntry[]>([]);
+  const { getVisitsForCampground, addVisit, deleteVisit, loading, isAuthenticated } = useVisited();
+  const visits = getVisitsForCampground(campId);
   const [showForm, setShowForm] = useState(false);
   const [newDate, setNewDate] = useState("");
   const [newEndDate, setNewEndDate] = useState("");
   const [newSites, setNewSites] = useState("");
   const [newNotes, setNewNotes] = useState("");
+  const [saving, setSaving] = useState(false);
 
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem(storageKey);
-      if (stored) setVisits(JSON.parse(stored));
-    } catch {}
-  }, [storageKey]);
-
-  const saveVisits = (updated: VisitedEntry[]) => {
-    setVisits(updated);
-    localStorage.setItem(storageKey, JSON.stringify(updated));
-    // Also update the global visited list for Home page
-    const globalKey = "camp_visited_global";
-    try {
-      const global = JSON.parse(localStorage.getItem(globalKey) || "{}");
-      if (updated.length > 0) {
-        const last = updated[0];
-        const dateDisplay = last.endDate ? `${last.date} ~ ${last.endDate}` : last.date;
-        global[campId] = { name: campName, count: updated.length, lastVisit: dateDisplay, lastSites: last.sites };
-      } else {
-        delete global[campId];
-      }
-      localStorage.setItem(globalKey, JSON.stringify(global));
-    } catch {};
-  };
-
-  const addVisit = () => {
+  const handleAddVisit = async () => {
     if (!newDate) return;
-    const entry: VisitedEntry = { date: newDate, endDate: newEndDate || undefined, sites: newSites.trim(), notes: newNotes.trim() };
-    saveVisits([entry, ...visits]);
-    setNewDate(""); setNewEndDate(""); setNewSites(""); setNewNotes(""); setShowForm(false);
+    setSaving(true);
+    try {
+      await addVisit({
+        campgroundId: campId,
+        startDate: newDate,
+        endDate: newEndDate || null,
+        sites: newSites.trim(),
+        notes: newNotes.trim() || null,
+      });
+      setNewDate(""); setNewEndDate(""); setNewSites(""); setNewNotes(""); setShowForm(false);
+    } finally {
+      setSaving(false);
+    }
   };
 
-  const removeVisit = (index: number) => {
-    const updated = visits.filter((_, i) => i !== index);
-    saveVisits(updated);
+  const handleRemoveVisit = async (visit: typeof visits[0], index: number) => {
+    await deleteVisit(visit, index);
   };
 
   return (
@@ -422,26 +401,33 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
             {visits.length}次
           </span>
         )}
+        {isAuthenticated && (
+          <span className="text-[10px] font-mono text-lake bg-lake/10 px-1.5 py-0.5 rounded ml-auto">云同步</span>
+        )}
       </h2>
 
-      {visits.length > 0 && (
+      {loading && (
+        <div className="text-sm text-muted-foreground py-2">加载中...</div>
+      )}
+
+      {!loading && visits.length > 0 && (
         <div className="space-y-2 mb-4">
           {visits.map((v, i) => (
-            <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-emerald-50/50 border border-emerald-100">
+            <div key={v.id || i} className="flex items-start gap-3 p-3 rounded-lg bg-emerald-50/50 border border-emerald-100">
               <div className="flex-1">
                 <div className="flex items-center gap-2 text-sm font-medium flex-wrap">
                   <Calendar size={12} className="text-emerald-600" />
-                  <span>{v.date}{v.endDate ? ` ~ ${v.endDate}` : ""}</span>
+                  <span>{v.startDate}{v.endDate ? ` ~ ${v.endDate}` : ""}</span>
                   {v.endDate && (
                     <span className="text-[10px] font-mono text-emerald-600 bg-emerald-100 px-1.5 py-0.5 rounded">
-                      {Math.ceil((new Date(v.endDate).getTime() - new Date(v.date).getTime()) / (1000 * 60 * 60 * 24))}晚
+                      {Math.ceil((new Date(v.endDate).getTime() - new Date(v.startDate).getTime()) / (1000 * 60 * 60 * 24))}晚
                     </span>
                   )}
                   {v.sites && <span className="text-xs font-mono bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">Site: {v.sites}</span>}
                 </div>
                 {v.notes && <p className="text-xs text-muted-foreground mt-1">{v.notes}</p>}
               </div>
-              <button onClick={() => removeVisit(i)} className="text-muted-foreground hover:text-sunset text-xs">
+              <button onClick={() => handleRemoveVisit(v, i)} className="text-muted-foreground hover:text-sunset text-xs">
                 <Trash2 size={12} />
               </button>
             </div>
@@ -466,7 +452,7 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
             <input type="text" value={newNotes} onChange={(e) => setNewNotes(e.target.value)} placeholder="记录心得、下次要带的东西..." className="px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
           </div>
           <div className="flex gap-2">
-            <button onClick={addVisit} className="px-3 py-1.5 bg-pine text-white rounded-lg text-sm hover:bg-pine-light transition-colors">保存</button>
+            <button onClick={handleAddVisit} disabled={saving} className="px-3 py-1.5 bg-pine text-white rounded-lg text-sm hover:bg-pine-light transition-colors disabled:opacity-50">{saving ? "保存中..." : "保存"}</button>
             <button onClick={() => setShowForm(false)} className="px-3 py-1.5 bg-secondary text-muted-foreground rounded-lg text-sm hover:bg-muted transition-colors">取消</button>
           </div>
         </div>

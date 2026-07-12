@@ -8,6 +8,13 @@
       "when": 1783877860875,
       "tag": "0000_lying_vulture",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1783896944606,
+      "tag": "0001_dry_stature",
+      "breakpoints": true
     }
   ]
 }

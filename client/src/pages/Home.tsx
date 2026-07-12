@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map } from "lucide-react";
+import { useVisited } from "@/hooks/useVisited";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3 } from "lucide-react";
 import { CampgroundSummaryTable } from "@/components/CampgroundSummaryTable";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -36,23 +37,25 @@ export default function Home() {
   const [selectedTier, setSelectedTier] = useState<CampgroundTier | "all">("all");
   const { favorites, compareList } = useFavorites();
 
-  // Visited state from localStorage
-  const [visitedMap, setVisitedMap] = useState<Record<string, { count: number; lastVisit: string; lastSites: string }>>({});
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem("camp_visited_global");
-      if (stored) setVisitedMap(JSON.parse(stored));
-    } catch {}
-    // Listen for storage changes from other tabs/pages
-    const handler = () => {
-      try {
-        const stored = localStorage.getItem("camp_visited_global");
-        if (stored) setVisitedMap(JSON.parse(stored));
-      } catch {}
-    };
-    window.addEventListener("storage", handler);
-    return () => window.removeEventListener("storage", handler);
-  }, []);
+  // Visited data - uses DB for logged-in users, localStorage fallback
+  const { visits: allVisits } = useVisited();
+  const visitedMap = useMemo(() => {
+    const result: Record<string, { count: number; lastVisit: string; lastSites: string }> = {};
+    // Group by campgroundId
+    const grouped: Record<number, typeof allVisits> = {};
+    for (const v of allVisits) {
+      if (!grouped[v.campgroundId]) grouped[v.campgroundId] = [];
+      grouped[v.campgroundId].push(v);
+    }
+    for (const campId of Object.keys(grouped)) {
+      const entries = grouped[Number(campId)];
+      const sorted = [...entries].sort((a, b) => b.startDate.localeCompare(a.startDate));
+      const last = sorted[0];
+      const dateDisplay = last.endDate ? `${last.startDate} ~ ${last.endDate}` : last.startDate;
+      result[campId] = { count: sorted.length, lastVisit: dateDisplay, lastSites: last.sites || "" };
+    }
+    return result;
+  }, [allVisits]);
 
   const filtered = useMemo(() => {
     return campgrounds.filter((c) => {
@@ -154,6 +157,11 @@ export default function Home() {
             <Link href="/itinerary" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
               <FileText size={16} />
               <span className="hidden sm:inline">行程</span>
+            </Link>
+            {/* Stats link */}
+            <Link href="/stats" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+              <BarChart3 size={16} />
+              <span className="hidden sm:inline">统计</span>
             </Link>
             <div className="hidden md:flex items-center gap-2 text-sm text-muted-foreground font-mono ml-2">
               <MapPin size={14} />
