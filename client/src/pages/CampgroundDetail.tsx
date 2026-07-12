@@ -7,7 +7,7 @@ import { seasonData, monthLabels } from "@/data/seasons";
 import { activityPhotos } from "@/data/activityPhotos";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { MapView } from "@/components/Map";
-import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon } from "lucide-react";
+import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: number; size?: number }) {
@@ -557,6 +557,45 @@ export default function CampgroundDetail() {
         {/* === IMPORTANT INFO FIRST === */}
         <div className="space-y-6">
 
+          {/* 0. Description & Popularity */}
+          {campground.description && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.11 }}
+              className="bg-white rounded-xl border border-border p-5"
+            >
+              <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-3">
+                <Info size={18} className="text-lake" />
+                营地简介
+              </h2>
+              <p className="text-sm text-foreground leading-relaxed mb-4">{campground.description}</p>
+              <div className="flex flex-wrap items-center gap-3">
+                {campground.popularityLevel && (
+                  <div className="inline-flex items-center gap-1.5">
+                    <Flame size={14} className={campground.popularityLevel.startsWith("极高") ? "text-red-500" : campground.popularityLevel.startsWith("高") ? "text-orange-500" : campground.popularityLevel.startsWith("中等") ? "text-amber-500" : "text-emerald-500"} />
+                    <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${
+                      campground.popularityLevel.startsWith("极高") ? "bg-red-50 text-red-700 border border-red-200" :
+                      campground.popularityLevel.startsWith("高") ? "bg-orange-50 text-orange-700 border border-orange-200" :
+                      campground.popularityLevel.startsWith("中等") ? "bg-amber-50 text-amber-700 border border-amber-200" :
+                      "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                    }`}>
+                      热门度: {campground.popularityLevel.split(" (")[0]}
+                    </span>
+                  </div>
+                )}
+                {campground.reviewCount && (
+                  <div className="inline-flex items-center gap-1.5">
+                    <MessageCircle size={14} className="text-muted-foreground" />
+                    <span className="text-xs text-muted-foreground">{campground.reviewCount}</span>
+                  </div>
+                )}
+              </div>
+              {campground.popularityLevel && campground.popularityLevel.includes("(") && (
+                <p className="text-xs text-muted-foreground mt-3 leading-relaxed italic">
+                  {campground.popularityLevel.split("(").slice(1).join("(").replace(/\)$/, "")}
+                </p>
+              )}
+            </motion.div>
+          )}
+
           {/* 1. Area Ratings - MOST IMPORTANT */}
           {campground.areas.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
@@ -582,7 +621,7 @@ export default function CampgroundDetail() {
                   </thead>
                   <tbody>
                     {campground.areas.map((area, i) => (
-                      <tr key={i} className="border-b border-border/50 last:border-0">
+                      <tr key={i} className={area.areaSummary ? "border-b-0" : "border-b border-border/50 last:border-0"}>
                         <td className="py-2.5 px-3 font-medium">{area.area}</td>
                         <td className="py-2.5 px-3 text-center"><RatingStars rating={area.overall} size={12} /></td>
                         <td className="py-2.5 px-3 text-center"><RatingStars rating={area.scenery} size={12} /></td>
@@ -603,6 +642,17 @@ export default function CampgroundDetail() {
                     ))}
                   </tbody>
                 </table>
+                {/* Area Summaries below the table */}
+                {campground.areas.some(a => a.areaSummary) && (
+                  <div className="mt-4 space-y-2">
+                    {campground.areas.filter(a => a.areaSummary).map((area, i) => (
+                      <div key={i} className="flex items-start gap-2 p-2.5 rounded-lg bg-muted/40 border border-border/30">
+                        <span className="text-xs font-mono font-medium text-pine bg-pine/10 px-2 py-0.5 rounded shrink-0 mt-0.5">{area.area}</span>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{area.areaSummary}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </motion.div>
           )}

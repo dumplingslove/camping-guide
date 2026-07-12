@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2 } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -405,6 +405,20 @@ export default function Home() {
                       <p className="text-sm text-foreground/80 mt-2 line-clamp-1">
                         {camp.tagline}
                       </p>
+                      {/* Popularity badge */}
+                      {camp.popularityLevel && (
+                        <div className="mt-2 inline-flex items-center gap-1">
+                          <Flame size={12} className={camp.popularityLevel.startsWith("极高") ? "text-red-500" : camp.popularityLevel.startsWith("高") ? "text-orange-500" : camp.popularityLevel.startsWith("中等") ? "text-amber-500" : "text-emerald-500"} />
+                          <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${
+                            camp.popularityLevel.startsWith("极高") ? "bg-red-50 text-red-700" :
+                            camp.popularityLevel.startsWith("高") ? "bg-orange-50 text-orange-700" :
+                            camp.popularityLevel.startsWith("中等") ? "bg-amber-50 text-amber-700" :
+                            "bg-emerald-50 text-emerald-700"
+                          }`}>
+                            {camp.popularityLevel.split(" (")[0]}
+                          </span>
+                        </div>
+                      )}
                       {/* Ratings */}
                       <div className="mt-3 grid grid-cols-3 gap-2">
                         <div className="flex flex-col items-center">
