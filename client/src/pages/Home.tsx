@@ -1,8 +1,8 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -28,6 +28,24 @@ export default function Home() {
   const [minTc, setMinTc] = useState(0);
   const [showFilters, setShowFilters] = useState(false);
   const { favorites, compareList } = useFavorites();
+
+  // Visited state from localStorage
+  const [visitedMap, setVisitedMap] = useState<Record<string, { count: number; lastVisit: string; lastSites: string }>>({});
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem("camp_visited_global");
+      if (stored) setVisitedMap(JSON.parse(stored));
+    } catch {}
+    // Listen for storage changes from other tabs/pages
+    const handler = () => {
+      try {
+        const stored = localStorage.getItem("camp_visited_global");
+        if (stored) setVisitedMap(JSON.parse(stored));
+      } catch {}
+    };
+    window.addEventListener("storage", handler);
+    return () => window.removeEventListener("storage", handler);
+  }, []);
 
   const filtered = useMemo(() => {
     return campgrounds.filter((c) => {
@@ -366,6 +384,15 @@ export default function Home() {
                           {camp.state}
                         </span>
                       </div>
+                      {/* Visited badge */}
+                      {visitedMap[camp.id] && (
+                        <div className="absolute bottom-3 right-3 bg-emerald-500/90 backdrop-blur-sm rounded-full px-2.5 py-1 flex items-center gap-1">
+                          <CheckCircle2 size={12} className="text-white" />
+                          <span className="text-xs font-semibold text-white">
+                            去过{visitedMap[camp.id].count > 1 ? ` ${visitedMap[camp.id].count}次` : ""}
+                          </span>
+                        </div>
+                      )}
                     </div>
                     {/* Content */}
                     <div className="p-4">
@@ -393,8 +420,16 @@ export default function Home() {
                           <RatingStars rating={camp.tcRating} />
                         </div>
                       </div>
+                      {/* Visited info */}
+                      {visitedMap[camp.id] && (
+                        <div className="mt-2 flex items-center gap-2 text-[10px] text-emerald-700 bg-emerald-50 rounded-lg px-2 py-1">
+                          <CheckCircle2 size={10} />
+                          <span>上次: {visitedMap[camp.id].lastVisit}</span>
+                          {visitedMap[camp.id].lastSites && <span className="font-mono">Site {visitedMap[camp.id].lastSites}</span>}
+                        </div>
+                      )}
                       {/* Features */}
-                      <div className="mt-3 flex flex-wrap gap-1">
+                      <div className="mt-2 flex flex-wrap gap-1">
                         {camp.features.slice(0, 4).map((f) => (
                           <span
                             key={f}
