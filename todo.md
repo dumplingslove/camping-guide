@@ -63,3 +63,8 @@
 - [x] Add "last updated" timestamp to campground data and display on cards/detail pages
 - [x] Mobile-responsive map page with bottom drawer layout (replace sidebar on mobile)
 - [x] Enrich batch 2/3 campgrounds with deep data (area ratings, kid activities, availability insights)
+
+## Bug Fixes (User Reported)
+- [x] Fix KOA campground broken image
+- [x] Improve review distillation quality for campgrounds with many reviews but sparse insights
+- [x] Fix all broken images across photos.ts (KOA placeholders, Salt Creek, Ohanapecosh, Beverly Beach, Pacific Shores)

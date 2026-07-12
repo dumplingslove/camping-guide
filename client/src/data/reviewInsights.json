@@ -102,8 +102,34 @@
       "适合游泳"
     ],
     "cellCoverage": "评论中未提及手机信号情况",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "RV Loop 200-248",
+        "reason": "完美适配TC，提供30A水电，可容纳40英尺的Pull-Through房车，半遮阴至全遮阴，非常适合房车露营。"
+      },
+      {
+        "site": "RV Loop 200-248",
+        "reason": "营地宽敞，地势平坦，适合搭建帐篷，且靠近湖泊和古老森林步道。"
+      },
+      {
+        "site": "湖边区域",
+        "reason": "湖泊风景优美，鱼类丰富，适合钓鱼和水上活动，但需注意水边渔线。"
+      },
+      {
+        "site": "森林步道",
+        "reason": "维护良好，动植物丰富，适合徒步和跑步，至少需要一到两小时探索。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "Standard Loops (1-33, 95-131)",
+        "reason": "虽然允许房车，但树荫过于茂密，且不提供水电，不推荐房车使用。"
+      },
+      {
+        "site": "Mini Group Loop D (74-101)",
+        "reason": "此区域会季节性关闭，预订前需确认开放情况。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "湖区活动",
@@ -120,12 +146,20 @@
     ],
     "areaInsights": [
       {
-        "area": "Lake area",
-        "insight": "湖区有长椅、烤架、船只租赁和商店，水域和游泳区在好天气时较拥挤"
+        "area": "RV Loop 200-248",
+        "insight": "此区域是房车露营的首选，提供便利设施，且营位宽敞，适合大型房车。"
       },
       {
-        "area": "Forest area",
-        "insight": "森林步道安静祥和，有老树林，营位宽敞干净且有树荫"
+        "area": "Standard Loop (1-33, 95-131)",
+        "insight": "不适合房车，更适合帐篷露营者，但需自备水电。"
+      },
+      {
+        "area": "湖泊和水域",
+        "insight": "湖泊是该营地的亮点之一，适合钓鱼、游泳和家庭活动，但高峰期会比较拥挤，且需注意水边遗留的渔线。"
+      },
+      {
+        "area": "森林步道",
+        "insight": "古老森林步道是该营地的另一大特色，维护良好，适合长时间徒步探索自然风光。"
       }
     ],
     "wildlifeWarnings": "湖里有很多鱼，周围动植物丰富。带狗的游客需注意水边的钓鱼线，有狗曾被缠住。",
@@ -144,8 +178,26 @@
       "水位较低"
     ],
     "cellCoverage": "无手机信号相关评论",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "Main Campground West",
+        "reason": "湖景优美，提供水电，靠近浅滩，适合家庭和房车。"
+      },
+      {
+        "site": "Main Campground East",
+        "reason": "提供水电，营位平坦宽敞，适合大型露营车。"
+      },
+      {
+        "site": "Rocky Point",
+        "reason": "提供水电，适合露营，但离湖稍远。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "Osprey",
+        "reason": "无设施，远离湖边，不接受房车，不适合寻求便利和湖景的露营者。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "划船/皮划艇/独木舟/水上摩托",
@@ -164,7 +216,24 @@
         "description": "有专门的家庭游泳区 (来源: Crazy B.)"
       }
     ],
-    "areaInsights": [],
+    "areaInsights": [
+      {
+        "area": "Main Campground West/East",
+        "insight": "这两个区域提供水电接口，营位平坦，非常适合大型露营车（TC）停靠，且Main Campground West有湖景和浅滩。"
+      },
+      {
+        "area": "Elk Plain",
+        "insight": "此区域设有游乐场，适合有小孩的家庭，但目前游乐场不可用。"
+      },
+      {
+        "area": "Osprey",
+        "insight": "该区域设施缺乏，远离湖泊，且不接受房车，不推荐给需要便利设施或湖边体验的露营者。"
+      },
+      {
+        "area": "Alder Lake Park",
+        "insight": "湖水清澈，有专门的家庭游泳区，是前往雷尼尔山途中的绝佳停留点，可欣赏湖泊和水坝美景，但湖边缺少步行/骑行道。"
+      }
+    ],
     "wildlifeWarnings": "无野生动物相关评论",
     "facilitiesQuality": "湖水干净，有专门的家庭游泳区；没有环湖步道或自行车道",
     "noiseIssues": "非露营季非常安静，无明显噪音投诉",
@@ -301,8 +370,30 @@
       "有虫子"
     ],
     "cellCoverage": "未提及手机信号情况",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "North CG: 水电位",
+        "reason": "湖景优美，提供30/50A全接驳水电，靠近沙滩，且为Pull-through设计，可容纳长达40英尺的房车，非常适合大型拖挂式露营车（TC）。"
+      },
+      {
+        "site": "North Campground",
+        "reason": "提供水电位，适合需要电力和水源的露营者，且靠近湖泊和沙滩，方便进行水上活动和欣赏美景。"
+      },
+      {
+        "site": "North CG (42个水电位)",
+        "reason": "专门为需要水电的露营者设计，提供30/50A接驳，且有足够的空间容纳大型房车，是拖挂式露营车的理想选择。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "South CG",
+        "reason": "无水电供应，且对房车长度限制在25英尺以内，设施基础，不适合需要全接驳或大型房车的露营者。"
+      },
+      {
+        "site": "South Campground",
+        "reason": "缺乏水电设施，房车长度受限，不适合对舒适度有较高要求或拥有大型露营设备的游客。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "皮划艇",
@@ -321,7 +412,20 @@
         "description": "距离Leavenworth不远，适合顺道游览 (来源: Julia P.)"
       }
     ],
-    "areaInsights": [],
+    "areaInsights": [
+      {
+        "area": "North Campground",
+        "insight": "北营地是湖温哥华州立公园的优选区域，尤其适合拖挂式露营车（TC）和需要水电接驳的露营者。它提供42个水电位，其中部分是湖景位，且靠近沙滩，方便水上活动。Pull-through设计可容纳长达40英尺的房车。"
+      },
+      {
+        "area": "South Campground",
+        "insight": "南营地不提供水电，且对房车长度有25英尺的严格限制。设施较为基础，更适合寻求原始露营体验或小型露营设备（如F-150 TC）的露营者，但需自备水源和电力。"
+      },
+      {
+        "area": "全营地",
+        "insight": "湖温哥华州立公园以其绝美的湖景和丰富的户外活动（如徒步、皮划艇、野餐）而闻名。虽然夏季可能多风且有蚊虫，但秋季的景色尤为迷人。公园内有充足的停车位、船只下水区和游乐场，适合家庭出游。"
+      }
+    ],
     "wildlifeWarnings": "未提及野生动物或食物储存建议",
     "facilitiesQuality": "厕所干净且备品充足; 有轮椅通道直达水边; 有游船下水区、取暖小屋和游乐场; 州立公园的电子预订系统存在问题，经常无法正常工作",
     "noiseIssues": "无明显噪音投诉，但提到有持续的风",
@@ -568,11 +672,24 @@
     "cellCoverage": "无手机信号相关评论",
     "recommendedSites": [
       {
-        "site": "85",
-        "reason": "湖景美，能看日落，但缺乏隐私"
+        "site": "Site 1-17",
+        "reason": "一线湖景、全接驳、近沙滩，非常适合TC露营。"
+      },
+      {
+        "site": "湖畔营位",
+        "reason": "全接驳，可欣赏美丽湖景，完美适配TC房车。"
+      },
+      {
+        "site": "Terraced Lakefront",
+        "reason": "可提供湖景，适合欣赏日落，但需注意隐私问题。"
       }
     ],
-    "avoidSites": [],
+    "avoidSites": [
+      {
+        "site": "Site 80+",
+        "reason": "位于山坡上，离湖较远，需要爬坡，且可能缺乏湖景。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "游泳",
@@ -597,8 +714,16 @@
     ],
     "areaInsights": [
       {
-        "area": "Mountain view lodge",
-        "insight": "适合家庭和带狗入住"
+        "area": "湖畔营位",
+        "insight": "这些营位提供全接驳服务（30/50A），非常适合房车露营，并且能欣赏到美丽的湖景和日落。"
+      },
+      {
+        "area": "山坡营位",
+        "insight": "山坡上的营位（如80+）离湖较远，可能需要爬坡，且湖景不如湖畔营位，隐私性也可能不足。"
+      },
+      {
+        "area": "全营地",
+        "insight": "营地设施完善，有干净的浴室、淋浴、儿童游乐场和指定游泳区。夏季船只噪音可能较大。"
       }
     ],
     "wildlifeWarnings": "无野生动物相关评论",
@@ -620,8 +745,26 @@
       "春季风大寒冷"
     ],
     "cellCoverage": "无明确提及手机信号情况",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "1-22",
+        "reason": "直面太平洋，提供全接驳服务，享有无遮挡海景，是最佳选择。"
+      },
+      {
+        "site": "全营地",
+        "reason": "全营地提供全接驳服务，对房车（TC）非常友好，有许多Pull-through车位。"
+      },
+      {
+        "site": "海景营位",
+        "reason": "可直接观看海洋或步行至海滩，景色优美，适合观赏日落。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "50+",
+        "reason": "这些营位可能被沙丘阻挡，无法看到海景。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "海滩漫步",
@@ -642,8 +785,16 @@
     ],
     "areaInsights": [
       {
-        "area": "Joe Creek",
-        "insight": "沿溪流露营体验很好 (来源: Blu O.)"
+        "area": "海景营位 (1-22)",
+        "insight": "这些营位享有无遮挡的海景，且提供全接驳服务，是观赏太平洋和日落的理想选择。"
+      },
+      {
+        "area": "内侧营位 (23-64)",
+        "insight": "虽然部分营位可能没有海景，但整个营地都提供全接驳服务，方便房车使用。"
+      },
+      {
+        "area": "全营地",
+        "insight": "整个营地都提供全接驳服务，并且有许多Pull-through车位，非常适合房车露营者。"
       }
     ],
     "wildlifeWarnings": "无明确提及野生动物或食物储存建议",
@@ -662,8 +813,26 @@
       "停车位充足"
     ],
     "cellCoverage": "未提及手机信号情况",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "1-20",
+        "reason": "这些营位靠近潮池，享有海景，并且地面平坦，非常适合露营车。"
+      },
+      {
+        "site": "Tongue Point区域",
+        "reason": "此区域地势平坦，特别适合露营车停放，并且靠近潮池，方便观赏海洋生物。"
+      },
+      {
+        "site": "全营地",
+        "reason": "整个营地都享有壮丽的景色，尤其在非高峰期，可以获得更好的体验。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "70+",
+        "reason": "这些营位远离海岸，缺乏设施，并且没有景观，不推荐。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "Tongue Point潮汐池",
@@ -686,7 +855,24 @@
         "description": "在海滩上捡拾贝壳、看日落、玩水或在公园里玩耍 (来源: P T.)"
       }
     ],
-    "areaInsights": [],
+    "areaInsights": [
+      {
+        "area": "Tongue Point 区域 (1-40)",
+        "insight": "该区域地势平坦，非常适合露营车，并且潮汐退去时会露出丰富的潮池，是观赏海洋生物的绝佳地点。"
+      },
+      {
+        "area": "内侧营位 (41-92)",
+        "insight": "部分内侧营位（如70+）远离海岸且缺乏景观和设施，选择时需注意。"
+      },
+      {
+        "area": "Bluff Sites (50-68)",
+        "insight": "这些悬崖边的营位可能需要通过楼梯和徒步才能到达海边，不适合年幼儿童或行动不便者，但能提供壮丽的海景。"
+      },
+      {
+        "area": "全营地",
+        "insight": "整个营地风景优美，提供海滩寻宝、观赏日落、玩水和公园活动等多样化体验，尤其在非高峰期人潮较少，体验更佳。"
+      }
+    ],
     "wildlifeWarnings": "在潮汐池可看到无脊椎动物、鸟类和鱼类；未提及危险野生动物或食物储存建议",
     "facilitiesQuality": "有很棒的浴室（nice bathrooms）和游乐场（nice playground），停车位充足，还有一些可供过夜的额外停车位",
     "noiseIssues": "无明显噪音投诉",
@@ -825,8 +1011,26 @@
       "靠近州立公园"
     ],
     "cellCoverage": "未提及手机信号",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "Premium Patio Sites",
+        "reason": "靠近泳池和游乐场，提供50A全接驳，适合大型房车/露营车，方便家庭活动。"
+      },
+      {
+        "site": "Premium Sites",
+        "reason": "提供全接驳服务和露台，适合喜欢舒适便利的露营者。"
+      },
+      {
+        "site": "Standard RV Sites",
+        "reason": "适合各类房车，提供充足的Pull-through位置，方便进出。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "Tent Area",
+        "reason": "不提供房车设施，不适合房车/露营车（TC）使用。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "海滩漫步",
@@ -845,7 +1049,20 @@
         "description": "骑车穿过对面的Ft Stevens州立公园可达 (来源: Caitlin J.)"
       }
     ],
-    "areaInsights": [],
+    "areaInsights": [
+      {
+        "area": "全营地",
+        "insight": "营地工作人员非常友好，积极维护营地清洁和安全，营造了良好的氛围，适合家庭入住。"
+      },
+      {
+        "area": "Tent/Cabin Area",
+        "insight": "露营小屋（Kabin）干净，但可能缺乏现代设施如咖啡机、电视等，如果对设施有较高要求，可能需要自备或考虑其他区域。"
+      },
+      {
+        "area": "Premium Patio Sites",
+        "insight": "这些站点是营地中最受欢迎的，因为它们靠近主要设施，提供了极佳的便利性和舒适度。"
+      }
+    ],
     "wildlifeWarnings": "未提及野生动物",
     "facilitiesQuality": "营地和木屋非常干净，商店物资齐全；提供迷你高尔夫、沙包、泳池/热水浴缸和营火等设施；木屋的睡垫很舒服，但部分木屋缺乏咖啡机、电视等现代设施，且窗帘遮光效果差。",
     "noiseIssues": "无明显噪音投诉",
@@ -863,8 +1080,30 @@
       "靠近Newport"
     ],
     "cellCoverage": "评论中未提及手机信号情况",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "1-10",
+        "reason": "这些营位距离海滩通道最近，步行2分钟即可到达海边，方便享受海滩活动。"
+      },
+      {
+        "site": "边缘营位",
+        "reason": "评论提及营地私密性好，边缘营位通常能提供更好的私密体验。"
+      },
+      {
+        "site": "任何靠近游乐场的营位",
+        "reason": "如果带着孩子，靠近游乐场的营位很方便，但需注意晚上可能较吵。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "40+",
+        "reason": "这些营位离海滩较远，风景一般，不如靠近海滩的营位。"
+      },
+      {
+        "site": "靠近游乐场的营位",
+        "reason": "评论指出游乐场直到深夜都可能很吵，影响休息，除非你带着孩子且不介意噪音。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "海滩步行",
@@ -885,12 +1124,20 @@
     ],
     "areaInsights": [
       {
-        "area": "游乐场附近",
-        "insight": "白天和晚上可能很吵闹，孩子们活动频繁"
+        "area": "全营地",
+        "insight": "南滩营地规模庞大，有数百个营位，感觉像一个小村庄而非僻静之地，设施齐全，维护良好，包括干净的淋浴和步道。"
       },
       {
-        "area": "海滩区域",
-        "insight": "不直接挨着营地，需要穿过沙丘和海岸森林步行到达"
+        "area": "边缘营位",
+        "insight": "营地提供良好的私密性，边缘营位可能更能体验到这一点，适合寻求安静的露营者。"
+      },
+      {
+        "area": "中间营位",
+        "insight": "虽然营地有许多营位，但评论提到营地干净且设施好，即使在中间区域也能获得不错的体验，但需注意离海滩较远。"
+      },
+      {
+        "area": "全营地",
+        "insight": "营地不提供水电接口（无hookup），但有排污站（Dump Station），停车位平坦，适合房车（TC）停靠，适合寻求原始露营体验的游客。"
       }
     ],
     "wildlifeWarnings": "4月底蚊子非常多，黄昏时分尤其严重，建议带驱蚊液；远处能听到海狮的叫声，但不算吵闹。",
@@ -981,8 +1228,26 @@
       "交通便利"
     ],
     "cellCoverage": "评论中未提及手机信号情况",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "B Loop",
+        "reason": "全接驳（水、电、排污），最靠近海滩通道，且靠近游乐场，适合家庭和拖挂露营车。"
+      },
+      {
+        "site": "G/H Loop",
+        "reason": "提供电力，适合需要充电的露营者。基础设施经过升级，体验良好。"
+      },
+      {
+        "site": "全营地",
+        "reason": "营地整体环境优美，树木茂盛，许多营位提供私密感，且设施干净，包括热水淋浴。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "A/C/D Loop",
+        "reason": "无hookup（不提供水、电、排污），不适合需要全接驳设施的拖挂露营车（TC）。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "海滩",
@@ -1003,8 +1268,20 @@
     ],
     "areaInsights": [
       {
-        "area": "Loop A",
-        "insight": "靠近海滩入口，去海滩非常方便，且海滩前有厕所，适合带小孩的家庭"
+        "area": "B Loop",
+        "insight": "该区域提供全接驳（50A），非常适合拖挂露营车，且靠近海滩和游乐场，是家庭露营的首选。"
+      },
+      {
+        "area": "G/H Loop",
+        "insight": "该区域提供电力，但无水和排污，适合对电力有需求但不介意无水接驳的露营者。设施近期已升级，体验更佳。"
+      },
+      {
+        "area": "A/C/D Loop",
+        "insight": "这些区域主要为帐篷露营设计，不提供任何接驳设施，适合喜欢原始露营体验的游客。"
+      },
+      {
+        "area": "全营地",
+        "insight": "营地经过大规模修复和升级，路面重铺，公用设施（如卫生间和淋浴）干净且提供热水。营地虽大，但许多营位设计得很有私密性。"
       }
     ],
     "wildlifeWarnings": "评论中未提及野生动物或食物储存警告",
@@ -1021,8 +1298,26 @@
       "适合观鸟"
     ],
     "cellCoverage": "未提及手机信号",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "区域A: 1-30号营位",
+        "reason": "全接驳（水、电、排污）并提供50A电力，靠近灯塔步道，非常适合大型露营车（TC）。"
+      },
+      {
+        "site": "区域A",
+        "reason": "提供全接驳（50A电力），完美适配TC露营车，设施完善。"
+      },
+      {
+        "site": "区域B",
+        "reason": "提供部分接驳（30A电力和水），适合大部分露营车，是区域A之外的良好替代选择。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "区域D",
+        "reason": "远离公园设施，环境潮湿，且不提供接驳服务，便利性较低。"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "Dead Man’s Cove徒步",
@@ -1043,8 +1338,20 @@
     ],
     "areaInsights": [
       {
-        "area": "小木屋区",
-        "insight": "维护良好，有暖气和电源，但营位间距太近缺乏隐私"
+        "area": "区域A",
+        "insight": "该区域提供50A的全接驳服务，非常适合需要高功率支持的TC露营车，且靠近灯塔步道，方便观光。"
+      },
+      {
+        "area": "区域B",
+        "insight": "提供30A的部分接驳服务（水和电），是大多数露营车的实用选择，设施良好。"
+      },
+      {
+        "area": "区域D",
+        "insight": "此区域不提供任何接驳服务，位置偏远且可能潮湿，不适合寻求便利设施的露营者。"
+      },
+      {
+        "area": "全营地",
+        "insight": "公园整体风景优美，拥有古老树木和丰富的徒步路线，但部分区域路况可能不佳，需注意驾驶安全。"
       }
     ],
     "wildlifeWarnings": "海滩有许多水母冲上岸；悬崖上可远观海狮和各种鸟类；未提及食物存放警告",
@@ -1385,8 +1692,22 @@
       "设施齐全"
     ],
     "cellCoverage": "评论中未提及手机信号情况",
-    "recommendedSites": [],
-    "avoidSites": [],
+    "recommendedSites": [
+      {
+        "site": "C Loop Upper",
+        "reason": "全接驳，完美适配TC，最近海滩，近游乐场"
+      },
+      {
+        "site": "A/B Loop",
+        "reason": "混合型营位，提供多种选择"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "D Loop",
+        "reason": "无hookup，车道狭窄，不适合TC"
+      }
+    ],
     "activitiesFromReviews": [
       {
         "name": "海滩漫步与放松",
@@ -1399,8 +1720,16 @@
     ],
     "areaInsights": [
       {
-        "area": "Day Use Area",
-        "insight": "设施齐全，停车位充足，去洗手间有铺砌小路，去水边需走土路"
+        "area": "C Loop Upper",
+        "insight": "该区域提供全接驳营位，非常适合房车（TC），且靠近海滩和游乐场，地理位置优越。"
+      },
+      {
+        "area": "D Loop",
+        "insight": "D Loop 主要为帐篷营位，不提供全接驳，且车道较窄，不适合大型房车。"
+      },
+      {
+        "area": "全营地",
+        "insight": "营地整体维护良好，洗手间干净，靠近美丽的海滩，是放松度假的理想选择，但需提前预订。"
       }
     ],
     "wildlifeWarnings": "评论中提到傍晚在海滩上可以近距离观赏到鲸鱼，未提及其他野生动物警告或食物存放建议",

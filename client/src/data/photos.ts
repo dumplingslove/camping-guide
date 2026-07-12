@@ -95,12 +95,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     photos: [
       "/manus-storage/ohanapecosh_photo1_20a0e8f5.jpg",
       "/manus-storage/ohanapecosh_photo2_b086375a.jpg",
-      "/manus-storage/ohanapecosh_photo3_e8d122e5.jpg",
-      "/manus-storage/bpVaUmkNVgAZQZZc.jpg",
-      "/manus-storage/gVwlCHIstIazliUG.jpg",
-      "/manus-storage/eozUdoIPjYZIrQYe.jpg",
-      "/manus-storage/jxbmhhfEqdTpSjYS.jpg",
-      "/manus-storage/DoCCqMxUvJcAHkXL.jpg"
+      "/manus-storage/ohanapecosh_photo3_e8d122e5.jpg"
     ],
     map: "/manus-storage/map_ohanapecosh_map_f3d2a522.jpg",
     captions: ["A Loop 河畔古木营位", "溪流旁的营位", "Grove of the Patriarchs 步道"],
@@ -163,11 +158,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/salt_creek_bluff_trailer_a89016ff.jpg",
       "/manus-storage/salt_creek_campsite_ca5b2a94.jpg",
       "/manus-storage/salt_creek_coastline_4b3343b0.jpg",
-      "/manus-storage/salt_creek_site_with_rv_02577e39.jpg",
-      "/manus-storage/salt_creek_campsite.jpg",
-      "/manus-storage/salt_creek_tidepools.jpg",
-      "/manus-storage/salt_creek_kids.jpg",
-      "/manus-storage/salt_creek_extra.jpg"
+      "/manus-storage/salt_creek_site_with_rv_02577e39.jpg"
     ],
     map: "/manus-storage/map_salt_creek_map_2210fc6c.jpg",
     captions: ["Bluff Sites 海景全景", "Bluff 区RV营位", "Bluff 区Trailer", "Forest Sites 林间", "海岸线风光", "RV营位实景"],
@@ -197,12 +188,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     photos: [
       "/manus-storage/astoria_koa_photo1_34ccb609.jpg",
       "/manus-storage/astoria_koa_photo2_0b82a1dd.jpg",
-      "/manus-storage/astoria_koa_photo3_55b2dc8a.jpg",
-      "/manus-storage/hero.jpg",
-      "/manus-storage/campsite.jpg",
-      "/manus-storage/scenic.jpg",
-      "/manus-storage/activity.jpg",
-      "/manus-storage/extra.jpg"
+      "/manus-storage/astoria_koa_photo3_55b2dc8a.jpg"
     ],
     map: "/manus-storage/map_astoria_koa_map_1b411579.jpg",
     captions: ["Deluxe Pull-through 位", "泳池和水滑梯", "营地设施全景"],
@@ -245,8 +231,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/beverly_beach_photo1_3c55533b.jpg",
       "/manus-storage/beverly_beach_photo2_544ede3b.jpg",
       "/manus-storage/beverly_beach_photo3_c0caf593.jpg",
-      "/manus-storage/beverly_beach_photo4_7635b80a.jpg",
-      "/manus-storage/activity.jpeg"
+      "/manus-storage/beverly_beach_photo4_7635b80a.jpg"
     ],
     map: "/manus-storage/map_beverly_beach_map_99a8d914.jpg",
     captions: ["Loop C 全接驳位", "海滩隧道入口", "Spencer Creek", "营地全景"],
@@ -372,11 +357,6 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   // 24. Pacific Shores (not recommended for TC)
   24: {
     map: "/manus-storage/map_pacific_shores_30bffc14.jpg",
-    photos: [
-      "/manus-storage/9gepn0YqoeYB_9eee938b.jpg",
-      "/manus-storage/HwvoeHs3NGaw_c7ac46e9.jpg",
-      "/manus-storage/yx2Rey3hLbiN_a885aec5.jpg",
-      "/manus-storage/CaNnl53P8X0h_b4c18f1e.jpg",
-    ],
+    photos: [],
   },
 };
