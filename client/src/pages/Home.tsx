@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map } from "lucide-react";
+import { CampgroundSummaryTable } from "@/components/CampgroundSummaryTable";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -381,6 +382,9 @@ export default function Home() {
           )}
         </AnimatePresence>
       </section>
+
+      {/* Summary Table */}
+      <CampgroundSummaryTable visitedMap={visitedMap} />
 
       {/* Campground Grid */}
       <section className="container pb-16">

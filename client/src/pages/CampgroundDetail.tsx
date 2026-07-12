@@ -361,6 +361,7 @@ function UserNotes({ campId, campName }: { campId: number; campName: string }) {
 
 interface VisitedEntry {
   date: string;
+  endDate?: string;
   sites: string;
   notes: string;
 }
@@ -370,6 +371,7 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
   const [visits, setVisits] = useState<VisitedEntry[]>([]);
   const [showForm, setShowForm] = useState(false);
   const [newDate, setNewDate] = useState("");
+  const [newEndDate, setNewEndDate] = useState("");
   const [newSites, setNewSites] = useState("");
   const [newNotes, setNewNotes] = useState("");
 
@@ -388,19 +390,21 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
     try {
       const global = JSON.parse(localStorage.getItem(globalKey) || "{}");
       if (updated.length > 0) {
-        global[campId] = { name: campName, count: updated.length, lastVisit: updated[0].date, lastSites: updated[0].sites };
+        const last = updated[0];
+        const dateDisplay = last.endDate ? `${last.date} ~ ${last.endDate}` : last.date;
+        global[campId] = { name: campName, count: updated.length, lastVisit: dateDisplay, lastSites: last.sites };
       } else {
         delete global[campId];
       }
       localStorage.setItem(globalKey, JSON.stringify(global));
-    } catch {}
+    } catch {};
   };
 
   const addVisit = () => {
     if (!newDate) return;
-    const entry: VisitedEntry = { date: newDate, sites: newSites.trim(), notes: newNotes.trim() };
+    const entry: VisitedEntry = { date: newDate, endDate: newEndDate || undefined, sites: newSites.trim(), notes: newNotes.trim() };
     saveVisits([entry, ...visits]);
-    setNewDate(""); setNewSites(""); setNewNotes(""); setShowForm(false);
+    setNewDate(""); setNewEndDate(""); setNewSites(""); setNewNotes(""); setShowForm(false);
   };
 
   const removeVisit = (index: number) => {
@@ -425,9 +429,14 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
           {visits.map((v, i) => (
             <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-emerald-50/50 border border-emerald-100">
               <div className="flex-1">
-                <div className="flex items-center gap-2 text-sm font-medium">
+                <div className="flex items-center gap-2 text-sm font-medium flex-wrap">
                   <Calendar size={12} className="text-emerald-600" />
-                  {v.date}
+                  <span>{v.date}{v.endDate ? ` ~ ${v.endDate}` : ""}</span>
+                  {v.endDate && (
+                    <span className="text-[10px] font-mono text-emerald-600 bg-emerald-100 px-1.5 py-0.5 rounded">
+                      {Math.ceil((new Date(v.endDate).getTime() - new Date(v.date).getTime()) / (1000 * 60 * 60 * 24))}晚
+                    </span>
+                  )}
                   {v.sites && <span className="text-xs font-mono bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">Site: {v.sites}</span>}
                 </div>
                 {v.notes && <p className="text-xs text-muted-foreground mt-1">{v.notes}</p>}
@@ -443,10 +452,19 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
       {showForm ? (
         <div className="space-y-2 p-3 rounded-lg bg-muted/50 border border-border">
           <div className="grid grid-cols-2 gap-2">
-            <input type="date" value={newDate} onChange={(e) => setNewDate(e.target.value)} className="px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
-            <input type="text" value={newSites} onChange={(e) => setNewSites(e.target.value)} placeholder="营位号 (如 135, B12)" className="px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
+            <div>
+              <label className="text-[10px] text-muted-foreground mb-0.5 block">入住日期</label>
+              <input type="date" value={newDate} onChange={(e) => setNewDate(e.target.value)} className="w-full px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
+            </div>
+            <div>
+              <label className="text-[10px] text-muted-foreground mb-0.5 block">离开日期</label>
+              <input type="date" value={newEndDate} onChange={(e) => setNewEndDate(e.target.value)} min={newDate || undefined} className="w-full px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
+            </div>
           </div>
-          <input type="text" value={newNotes} onChange={(e) => setNewNotes(e.target.value)} placeholder="备注 (可选)" className="w-full px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
+          <div className="grid grid-cols-2 gap-2">
+            <input type="text" value={newSites} onChange={(e) => setNewSites(e.target.value)} placeholder="营位号 (如 135, B12)" className="px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
+            <input type="text" value={newNotes} onChange={(e) => setNewNotes(e.target.value)} placeholder="记录心得、下次要带的东西..." className="px-3 py-1.5 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30" />
+          </div>
           <div className="flex gap-2">
             <button onClick={addVisit} className="px-3 py-1.5 bg-pine text-white rounded-lg text-sm hover:bg-pine-light transition-colors">保存</button>
             <button onClick={() => setShowForm(false)} className="px-3 py-1.5 bg-secondary text-muted-foreground rounded-lg text-sm hover:bg-muted transition-colors">取消</button>

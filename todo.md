@@ -68,3 +68,7 @@
 - [x] Fix KOA campground broken image
 - [x] Improve review distillation quality for campgrounds with many reviews but sparse insights
 - [x] Fix all broken images across photos.ts (KOA placeholders, Salt Creek, Ohanapecosh, Beverly Beach, Pacific Shores)
+
+## New Features (User Request)
+- [x] Add summary table to homepage showing all 49 campgrounds with key info and visited status
+- [x] Improve visited record feature to support end date (date range instead of single date)
