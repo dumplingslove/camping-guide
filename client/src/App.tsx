@@ -10,6 +10,7 @@ import CampgroundDetail from "./pages/CampgroundDetail";
 import Compare from "./pages/Compare";
 import Favorites from "./pages/Favorites";
 import Itinerary from "./pages/Itinerary";
+import AdminReviews from "./pages/AdminReviews";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/compare" component={Compare} />
       <Route path="/favorites" component={Favorites} />
       <Route path="/itinerary" component={Itinerary} />
+      <Route path="/admin/reviews" component={AdminReviews} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

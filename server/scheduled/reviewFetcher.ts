@@ -1,8 +1,13 @@
 /**
  * Review fetcher module - handles fetching reviews from multiple sources:
- * 1. Google Maps Places API (primary for ALL campgrounds)
- * 2. Recreation.gov API (secondary for federal campgrounds)
- * 3. KOA website (secondary for KOA campground)
+ * 
+ * PRIORITY STRATEGY:
+ * - Recreation.gov API is PRIMARY for federal campgrounds (10 campgrounds) - returns 100+ reviews with site/loop data
+ * - KOA website is PRIMARY for KOA campground (1 campground) - returns 50+ reviews with detailed text
+ * - Google Maps Places API is FALLBACK for all others (13 campgrounds) or when primary fails
+ * 
+ * For campgrounds with a dedicated source (rec.gov / KOA), we ONLY use Google Maps
+ * if the primary source returns 0 results (API down, etc.)
  */
 
 import { ENV } from "../_core/env";
@@ -24,7 +29,8 @@ export interface FetchedReview {
 }
 
 // ============================================================================
-// Google Maps Places API (via Manus Forge proxy)
+// Google Maps Places API (via Manus Forge proxy) - FALLBACK source
+// Returns max 5 most recent reviews per call
 // ============================================================================
 
 interface GooglePlaceReview {
@@ -103,7 +109,8 @@ export async function fetchGoogleMapsReviews(
 }
 
 // ============================================================================
-// Recreation.gov API (secondary source for federal campgrounds)
+// Recreation.gov API - PRIMARY source for federal campgrounds
+// Returns up to 100 reviews per page with detailed site/loop/date metadata
 // ============================================================================
 
 interface RecGovReview {
@@ -129,24 +136,31 @@ export async function fetchRecreationGovReviews(
   const urls = [
     `https://www.recreation.gov/api/ratingreview/public?facilityId=${config.recGovCampgroundId}&page=0&size=100&sortBy=MOST_RECENT`,
     `https://www.recreation.gov/api/ratingreview/public?facility_id=${config.recGovCampgroundId}&page=0&size=100`,
+    `https://www.recreation.gov/api/camps/campgrounds/${config.recGovCampgroundId}/reviews?page=1&size=100`,
   ];
 
   for (const url of urls) {
     try {
       const response = await fetch(url, {
         headers: {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
           "Accept": "application/json, text/plain, */*",
           "Referer": `https://www.recreation.gov/camping/campgrounds/${config.recGovCampgroundId}`,
+          "Origin": "https://www.recreation.gov",
         },
       });
 
       if (!response.ok) continue;
 
-      const data = await response.json() as { ratings?: RecGovReview[]; error?: string };
-      if (data.error || !data.ratings) continue;
+      const data = await response.json() as { ratings?: RecGovReview[]; reviews?: RecGovReview[]; error?: string };
+      if (data.error) continue;
 
-      return data.ratings.map((r: RecGovReview) => {
+      const reviews = data.ratings || data.reviews;
+      if (!reviews || reviews.length === 0) continue;
+
+      console.log(`[ReviewFetcher] Recreation.gov returned ${reviews.length} reviews for campground ${config.id}`);
+
+      return reviews.map((r: RecGovReview) => {
         const dateStr = r.createdDate ? r.createdDate.substring(0, 7) : "";
         const text = [r.title, r.body].filter(Boolean).join(" - ");
 
@@ -176,7 +190,8 @@ export async function fetchRecreationGovReviews(
 }
 
 // ============================================================================
-// KOA Website Scraping (secondary source for KOA campground)
+// KOA Website Scraping - PRIMARY source for KOA campground
+// Returns up to 50 reviews per page with detailed text
 // ============================================================================
 
 export async function fetchKoaReviews(
@@ -251,6 +266,10 @@ export async function fetchKoaReviews(
       }
     }
 
+    if (reviews.length > 0) {
+      console.log(`[ReviewFetcher] KOA returned ${reviews.length} reviews for campground ${config.id}`);
+    }
+
     return reviews;
   } catch (error) {
     console.error(`[ReviewFetcher] Error fetching KOA reviews for campground ${config.id}:`, error);
@@ -259,29 +278,48 @@ export async function fetchKoaReviews(
 }
 
 // ============================================================================
-// Main fetch dispatcher - fetches from all available sources for a campground
+// Main fetch dispatcher - uses priority-based strategy
+// 
+// Priority logic:
+// 1. If campground has recGovCampgroundId → try Recreation.gov FIRST (primary)
+//    - If Rec.gov returns reviews → use those (skip Google Maps)
+//    - If Rec.gov fails → fall back to Google Maps
+// 2. If campground has koaReviewsUrl → try KOA FIRST (primary)
+//    - If KOA returns reviews → use those (skip Google Maps)
+//    - If KOA fails → fall back to Google Maps
+// 3. All other campgrounds → use Google Maps directly (only source)
 // ============================================================================
 
 export async function fetchReviewsForCampground(
   config: CampgroundReviewConfig
 ): Promise<FetchedReview[]> {
-  const allReviews: FetchedReview[] = [];
-
-  // Primary source: Google Maps (all campgrounds)
-  const googleReviews = await fetchGoogleMapsReviews(config);
-  allReviews.push(...googleReviews);
-
-  // Secondary source: Recreation.gov (federal campgrounds only)
+  // Strategy 1: Recreation.gov campgrounds - try Rec.gov first
   if (config.recGovCampgroundId) {
     const recGovReviews = await fetchRecreationGovReviews(config);
-    allReviews.push(...recGovReviews);
+    if (recGovReviews.length > 0) {
+      // Primary source succeeded - use it exclusively
+      console.log(`[ReviewFetcher] Using Recreation.gov as primary for campground ${config.id} (${recGovReviews.length} reviews)`);
+      return recGovReviews;
+    }
+    // Primary failed - fall back to Google Maps
+    console.log(`[ReviewFetcher] Recreation.gov failed for campground ${config.id}, falling back to Google Maps`);
+    return await fetchGoogleMapsReviews(config);
   }
 
-  // Secondary source: KOA website (KOA campground only)
+  // Strategy 2: KOA campground - try KOA first
   if (config.koaReviewsUrl) {
     const koaReviews = await fetchKoaReviews(config);
-    allReviews.push(...koaReviews);
+    if (koaReviews.length > 0) {
+      // Primary source succeeded - use it exclusively
+      console.log(`[ReviewFetcher] Using KOA as primary for campground ${config.id} (${koaReviews.length} reviews)`);
+      return koaReviews;
+    }
+    // Primary failed - fall back to Google Maps
+    console.log(`[ReviewFetcher] KOA failed for campground ${config.id}, falling back to Google Maps`);
+    return await fetchGoogleMapsReviews(config);
   }
 
-  return allReviews;
+  // Strategy 3: All other campgrounds - Google Maps is the only source
+  console.log(`[ReviewFetcher] Using Google Maps for campground ${config.id} (no dedicated source)`);
+  return await fetchGoogleMapsReviews(config);
 }

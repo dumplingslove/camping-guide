@@ -18,3 +18,6 @@
 - [x] Register review management tRPC router
 - [x] Create Heartbeat cron job (weekly Monday 3AM UTC)
 - [x] Verify area summaries and activities are based on actual reviews (confirmed: all activities cite specific reviewers, area insights include review counts and ratings)
+- [x] Adjust review fetcher priority: Recreation.gov and KOA as PRIMARY sources, Google Maps as fallback only
+- [x] Implement admin panel page (manual trigger, update logs, review count per campground)
+- [x] Add review trend visualization (rating over time, review count growth) to campground detail pages
