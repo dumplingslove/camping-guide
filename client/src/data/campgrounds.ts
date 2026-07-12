@@ -104,7 +104,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Forest Loop: Site 135, 137, 139（湖景+全接驳+平坦）；Lower Loop A（宽敞，适合大车）",
     avoid: "Quarry Pond（靠近公路噪音大）、Lower Loop B（排水不良+Split-level地势不平）",
     tcNotes: "Forest Loop 78个营位，水电+25-30ft营位+平坦。无绝对禁区，但预订时注意个别营位限制在20ft以内",
-    image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800",
+    image: "/manus-storage/mObNwivbLDinKDGt_34427a30.jpg",
   },
   {
     id: 2,
@@ -146,7 +146,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "RV Loop 200-248（30A水电、Pull-Through可达40ft、半遮阴至全遮阴）",
     avoid: "Standard Loops (1-33, 95-131) 虽允许RV但树荫过密、无水电。Mini Group Loop D (74-101) 有季节性关闭",
     tcNotes: "RV Loop 200-248 完美适配TC，30A电力+水+Pull-Through。Standard Loop无水电不推荐",
-    image: "https://images.unsplash.com/photo-1510312305653-8ed496efae75?w=800",
+    image: "/manus-storage/EnJpoftfMRTCONgv_cb371cc0.jpg",
   },
   {
     id: 3,
@@ -189,7 +189,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Main Campground West（湖景+水电+近浅滩）。Elk Plain有游乐场但当前不可用",
     avoid: "Osprey（无设施+远离湖边+不接受RV）",
     tcNotes: "Main CG West/East 部分有水电hookup，平坦大营位适合TC。Rocky Point有W/E但离湖远",
-    image: "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=800",
+    image: "/manus-storage/bPIvqeqlUfkPdRxn_dab076ad.png",
   },
   {
     id: 4,
@@ -232,7 +232,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Loop D: Site D005, D006, D029, D033, D035（最宽敞+近溪流+安静）",
     avoid: "Loop A/B（离主路近、较吵、营位较小）",
     tcNotes: "无hookup但有Dump Station。Loop D营位最宽敞（可达35ft），平坦。Loop C也不错",
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800",
+    image: "/manus-storage/QOBgWqFANsVEzyll_bf990d4a.jpg",
   },
   {
     id: 5,
@@ -271,7 +271,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "South CG: Site 1-20（湖景+全接驳+近沙滩）",
     avoid: "North CG 部分营位树荫过密，无水电hookup",
     tcNotes: "South CG 全接驳30/50A，完美适配TC。North CG无hookup但可停TC",
-    image: "https://images.unsplash.com/photo-1475483768296-6163e08872a1?w=800",
+    image: "/manus-storage/IcRjhRqDeZXrPFRm_84cf9318.jpg",
   },
   {
     id: 6,
@@ -313,7 +313,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Loop A: Site A001-A020（溪流声+古木环绕+安静）",
     avoid: "Loop F（离溪流远+地势不平）",
     tcNotes: "⚠️ 2025-2026年关闭整修。无hookup，32ft限制。Loop A/B河畔营位平坦",
-    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800",
+    image: "/manus-storage/bpVaUmkNVgAZQZZc.jpg",
   },
   {
     id: 7,
@@ -356,7 +356,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 1-15（直面新月湖+日落方向）",
     avoid: "Site 60+（离湖远+靠近公路噪音）",
     tcNotes: "无hookup，21ft限制！仅适合小型TC。湖景位平坦但空间有限",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+    image: "/manus-storage/OFYfQSFbeLYWWaYW_41e8fd26.jpg",
   },
   {
     id: 8,
@@ -395,7 +395,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 1-17（一线湖景+全接驳+近沙滩）",
     avoid: "Site 80+（山坡上，离湖远，需爬坡）",
     tcNotes: "湖畔营位全接驳30/50A，完美适配TC",
-    image: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800",
+    image: "/manus-storage/MBQKLLuqIkiQRsqp_bbf40e1f.jpg",
   },
   {
     id: 9,
@@ -436,7 +436,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 1-22（直面太平洋+全接驳+无遮挡海景）",
     avoid: "Site 50+（被沙丘挡住，无海景）",
     tcNotes: "全营地全接驳，TC天堂。Pull-through位子多",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+    image: "/manus-storage/klbUGbzsJFjUFpyH_3f328cf4.jpg",
   },
   {
     id: 10,
@@ -475,7 +475,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 1-20（最近潮池+海景+平坦）",
     avoid: "Site 70+（远离海岸+无设施+无景观）",
     tcNotes: "部分有电但无水hookup。Tongue Point区域平坦适合TC",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800",
+    image: "/manus-storage/salt_creek_campsite.jpg",
   },
   {
     id: 11,
@@ -518,7 +518,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 1-36（海崖边缘+直面太平洋日落）",
     avoid: "Site 100+（远离海崖+密林中无景观）",
     tcNotes: "无hookup，35ft限制。海崖营位平坦但需注意风大",
-    image: "https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?w=800",
+    image: "/manus-storage/AWJUEQIZHhCswCJW_0e4b07aa.jpg",
   },
   {
     id: 12,
@@ -558,7 +558,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Premium Patio Sites（最近泳池+游乐场+50A全接驳）",
     avoid: "Tent Area（无RV设施，不适合TC）",
     tcNotes: "KOA全接驳50A，完美适配任何RV/TC。Pull-through位子充足",
-    image: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800",
+    image: "/manus-storage/hero.jpg",
   },
   {
     id: 13,
@@ -596,7 +596,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 1-10（最近海滩通道，步行2分钟到海边）",
     avoid: "Site 40+（离海滩远，风景一般）",
     tcNotes: "无hookup，原始营地；有Dump Station；停车位平坦可停TC",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800",
+    image: "/manus-storage/VVvJztakIIvLncRs_e51331f6.jpg",
   },
   {
     id: 14,
@@ -638,7 +638,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "O Loop（最近Peter Iredale沉船+游乐场+水电+Pull-through）",
     avoid: "South Loops（施工关闭中）",
     tcNotes: "O/C/G Loop 全部有水电hookup，完美适配TC。O Loop有Pull-through",
-    image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800",
+    image: "/manus-storage/VUQzskmggOKwojZQ_44678da2.jpg",
   },
   {
     id: 15,
@@ -679,7 +679,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "B Loop（全接驳+最近海滩通道+近游乐场）",
     avoid: "A/C/D Loop（无hookup，不适合TC）",
     tcNotes: "B Loop 全接驳50A，完美适配TC。G/H Loop有电但无水",
-    image: "https://images.unsplash.com/photo-1500259571355-332da5cb07aa?w=800",
+    image: "/manus-storage/hero.jpg",
   },
   {
     id: 16,
@@ -722,7 +722,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Area A: Site 1-30（全接驳+近灯塔步道+50A电力）",
     avoid: "Area D（远离设施+潮湿+无hookup）",
     tcNotes: "Area A 全接驳50A/W/S，完美适配TC。Area B也可以（30A/W）",
-    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800",
+    image: "/manus-storage/PbAymmqAHTNlEtAB_9dc69d3d.jpg",
   },
   {
     id: 17,
@@ -763,7 +763,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 1-15（直面Mt. Hood倒影+湖边+清晨如镜）",
     avoid: "Site 16-45（内圈无湖景+蚊子多）",
     tcNotes: "无hookup，24ft限制。Vault Toilet仅有。湖边营位平坦但空间有限",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+    image: "/manus-storage/lPBhnXfPWYgZkHrM_21456f6e.jpg",
   },
   {
     id: 18,
@@ -804,7 +804,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Loop E（最宽敞+近Rialto Beach步道入口+安静）",
     avoid: "Loop C/D（较窄+远离海滩+潮湿阴暗）",
     tcNotes: "⚠️ Mora Road 2026年7月8日-10月15日关闭。无hookup，35ft限制。有Dump Station",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800",
+    image: "/manus-storage/KJneQHoHFtSbdCrk_0b7272cb.jpg",
   },
   {
     id: 19,
@@ -840,7 +840,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 005, 006（26ft车道，近PCT入口，最近湖边）",
     avoid: "极其原始——无淋浴、无hookup、无手机信号",
     tcNotes: "车道限制26ft，无设施，仅适合自给自足小型TC。Vault Toilet仅有",
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800",
+    image: "/manus-storage/ACggXiKtVQsbKDbE_a519de53.jpg",
   },
   {
     id: 20,
@@ -879,7 +879,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Loop C（全接驳+近游乐场+Bend市区10分钟+Pull-through）",
     avoid: "Loop A 无hookup，不适合需要电力的TC。夏季河流急流危险",
     tcNotes: "Loop C 全接驳30/50A，Pull-through完美适配TC",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800",
+    image: "/manus-storage/OEiSoMLIaHStYPiZ_99aa0685.jpg",
   },
   {
     id: 21,
@@ -921,7 +921,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "C Loop Upper（全接驳+最近海滩+近游乐场）",
     avoid: "D Loop（无hookup+窄车道，不适合TC）",
     tcNotes: "⚠️ 2026年8月3日起关闭。C Loop 全接驳，完美适配TC",
-    image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800",
+    image: "/manus-storage/tSSJhQFlSJjAlOqT_a65b7842.jpg",
   },
   {
     id: 22,
@@ -960,7 +960,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "Site 30-45（直面Rogue River+天然游泳池+隐私极佳）",
     avoid: "Site 1-15（离河远+靠近公路噪音）。完全无手机信号",
     tcNotes: "无hookup，30ft限制。Vault Toilet仅有。河畔营位平坦。适合自给自足型TC",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
+    image: "/manus-storage/jPwdauThSqRNVKzL_f15f94b3.jpg",
   },
   {
     id: 23,
@@ -1001,7 +1001,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "F Loop（唯一有电力+最宽敞营位+30A）",
     avoid: "G Loop（团体专用）。开放时间极短（7月初-10月初）；夜间可降至冰点",
     tcNotes: "F Loop 30A电力，适配TC。A-D Loop 无hookup但车道够长可停TC",
-    image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800",
+    image: "/manus-storage/YZDPDsAYaJHRsMWv_09f4b6c6.jpg",
   },
   {
     id: 24,
@@ -1032,7 +1032,7 @@ export const campgrounds: Campground[] = [
     recommendedSites: "不推荐TC用户预订",
     avoid: "整个营地不接受TC",
     tcNotes: "严格禁止TC入住",
-    image: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800",
+    image: "/manus-storage/9gepn0YqoeYB_9eee938b.jpg",
   },
 ];
 
