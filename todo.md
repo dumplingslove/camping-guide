@@ -89,13 +89,13 @@
 - [x] Champoeg: Replace campground map main image with actual scenic photo
 
 ## Final QA Report Fixes (2026-07-12)
-- [ ] P0-BUG1: Fix InsightsPanel crash for campgrounds 25-36 (type mismatch in recommendedSites/areaInsights/activitiesFromReviews)
-- [ ] P0-BUG2: Fix ReviewsSection crash for campgrounds 37-49 (totalReviewsOnPlatform vs googleTotalRatings field name)
-- [ ] P0-BUG3: Fix reviewInsights.json key naming (CG37-CG49 should be 37-49)
-- [ ] P1-1: Fix Cape Lookout status - remove closed tag, update to future closure notice (Aug 3, 2026)
-- [ ] P1-2: Fix Ohanapecosh bookingUrl (232464 is Kalaloch, correct is 232465)
-- [ ] P1-3: Fix drive times for Cove Palisades, LaPine, Harris Beach, Bullards Beach, Sunset Bay
-- [ ] P1-4: Fix hero text "1.5-7小时" to match actual data range
-- [ ] P2-1: Show brief warning reason on homepage cards with "注意" label
-- [ ] P2-2: Unify driveTimeLabel format (remove range format like "3-3.5h")
-- [ ] P2-3: Disambiguate two "南海滩" campground names
+- [x] P0-BUG1: Fix InsightsPanel crash for campgrounds 25-36 (type mismatch in recommendedSites/areaInsights/activitiesFromReviews)
+- [x] P0-BUG2: Fix ReviewsSection crash for campgrounds 37-49 (totalReviewsOnPlatform vs googleTotalRatings field name)
+- [x] P0-BUG3: Fix reviewInsights.json key naming (CG37-CG49 should be 37-49)
+- [x] P1-1: Fix Cape Lookout status - remove closed tag, update to future closure notice (Aug 3, 2026)
+- [x] P1-2: Fix Ohanapecosh bookingUrl (232464 is Kalaloch, correct is 232465)
+- [x] P1-3: Fix drive times for Cove Palisades, LaPine, Harris Beach, Bullards Beach, Sunset Bay
+- [x] P1-4: Fix hero text "1.5-7小时" to match actual data range
+- [x] P2-1: Show brief warning reason on homepage cards with "注意" label
+- [x] P2-2: Unify driveTimeLabel format (remove range format like "3-3.5h")
+- [x] P2-3: Disambiguate two "南海滩" campground names
