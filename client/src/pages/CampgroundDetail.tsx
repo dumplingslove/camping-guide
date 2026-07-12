@@ -577,7 +577,7 @@ export default function CampgroundDetail() {
                       campground.popularityLevel.startsWith("中等") ? "bg-amber-50 text-amber-700 border border-amber-200" :
                       "bg-emerald-50 text-emerald-700 border border-emerald-200"
                     }`}>
-                      热门度: {campground.popularityLevel.split(" (")[0]}
+                      热门度: {campground.popularityLevel.split("（")[0].split(" (")[0]}
                     </span>
                   </div>
                 )}
@@ -588,9 +588,11 @@ export default function CampgroundDetail() {
                   </div>
                 )}
               </div>
-              {campground.popularityLevel && campground.popularityLevel.includes("(") && (
+              {campground.popularityLevel && (campground.popularityLevel.includes("（") || campground.popularityLevel.includes("(")) && (
                 <p className="text-xs text-muted-foreground mt-3 leading-relaxed italic">
-                  {campground.popularityLevel.split("(").slice(1).join("(").replace(/\)$/, "")}
+                  {campground.popularityLevel.includes("（") 
+                    ? campground.popularityLevel.split("（").slice(1).join("（").replace(/）$/, "")
+                    : campground.popularityLevel.split("(").slice(1).join("(").replace(/\)$/, "")}
                 </p>
               )}
             </motion.div>
@@ -796,6 +798,18 @@ export default function CampgroundDetail() {
                           </span>
                         </div>
                         <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{act.details}</p>
+                        {act.mapUrl && (
+                          <a
+                            href={act.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-md bg-forest/10 text-forest text-xs font-medium hover:bg-forest/20 transition-colors"
+                          >
+                            <MapIcon size={12} />
+                            在 Google Maps 查看真实照片和评价
+                            <ExternalLink size={10} />
+                          </a>
+                        )}
                       </div>
                     </div>
                   );
