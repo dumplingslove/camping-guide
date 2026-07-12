@@ -43,8 +43,8 @@
 - [x] P1: Fix Ohanapecosh bookingUrl (232464 → 232465)
 - [x] P1: Fix drive times for Cove Palisades, LaPine, Harris Beach, Bullards Beach, Sunset Bay
 - [x] P1: Fix hero text to match actual data range (1.5-7.5小时)
-- [ ] P2: Show warning text on homepage cards for camps with warning field
-- [ ] P2: Unify driveTimeLabel format
+- [x] P2: Show warning text on homepage cards for camps with warning field
+- [x] P2: Unify driveTimeLabel format (normalized to 0.25h increments)
 
 ## QA Round 2 Fixes
 - [x] Remove fabricated Moran State Park closure (no evidence of water pipe replacement closure)
@@ -53,7 +53,7 @@
 - [x] Fix Mora Campground bookingUrl (232465 → 247591)
 - [x] Fix Crater Lake Mazama bookingUrl (232463 → 10337002)
 - [x] Fix South Beach Campground (not on rec.gov, is first-come-first-served)
-- [ ] Verify remaining warnings (Fort Casey/Ebey jets, Sol Duc fees, Bullards plover)
+- [x] Verify remaining warnings (Fort Casey/Ebey jets ✓ NAS Whidbey confirmed, Bullards plover ✓ Mar 15-Sep 15 confirmed)
 
 ## QA Round 3 Fixes
 - [x] Fix Google Maps "included multiple times" error (singleton pattern for script loading)

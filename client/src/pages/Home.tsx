@@ -459,6 +459,13 @@ export default function Home() {
                       <p className="text-sm text-foreground/80 mt-2 line-clamp-1">
                         {camp.tagline}
                       </p>
+                      {/* Warning text */}
+                      {camp.warning && !camp.closureInfo && (
+                        <p className="mt-1.5 text-[11px] text-amber-700 bg-amber-50 rounded px-2 py-1 line-clamp-2 leading-tight">
+                          <AlertTriangle size={10} className="inline mr-1 -mt-0.5" />
+                          {camp.warning.length > 60 ? camp.warning.slice(0, 60) + "..." : camp.warning}
+                        </p>
+                      )}
                       {/* Tier & Popularity badges */}
                       <div className="mt-2 flex flex-wrap items-center gap-1.5">
                         {camp.tier && (
