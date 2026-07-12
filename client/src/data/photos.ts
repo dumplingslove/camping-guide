@@ -23,7 +23,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/xcjaYbtWvqWrgSjS_e4a7e4ff.jpg"
     ],
     map: "/manus-storage/map_deception_pass_map_2f779bca.jpg",
-    captions: ["Loop A 湖畔全接驳位", "Loop A 大型TC停放", "Cranberry Lake 湖景", "Loop B 林间营位", "Quarry Pond 区域", "Loop A 全景"],
+    captions: ["Loop A 湖畔全接驳位", "Loop A 大型TC停放", "Cranberry Lake 湖景", "Loop B 林间营位", "Quarry Pond 区域", "Loop A 全景", "Deception Pass 桥景", "Bowman Bay 海岸", "North Beach 沙滩", "森林步道", "日落全景"],
   },
   // 2. Millersylvania
   2: {
@@ -38,7 +38,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/XRKYkthrFvCdzNqM_0d3256ba.jpg"
     ],
     map: "/manus-storage/map_millersylvania_map_c811bbad.jpg",
-    captions: ["古木环绕的营位", "参天道格拉斯冷杉", "RV营位（水电）", "营地全景"],
+    captions: ["古木环绕的营位", "参天道格拉斯冷杉", "RV营位（水电）", "营地全景", "Deep Lake 湖畔", "林间步道", "RV Loop 入口", "古木林荫"],
   },
   // 3. Alder Lake
   3: {
@@ -52,7 +52,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/fZcyTjviIRfXiYDv_3a716200.jpg"
     ],
     map: "/manus-storage/map_alder_lake_map_90c58ef8.jpg",
-    captions: ["Sunny Beach 全接驳位", "主营地区域", "远眺Mt. Rainier"],
+    captions: ["Sunny Beach 全接驳位", "主营地区域", "远眺Mt. Rainier", "湖畔日落", "Rocky Point 区域", "Alder Lake 全景", "林间营位"],
   },
   // 4. Cougar Rock
   4: {
@@ -64,14 +64,13 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/cougar_rock_new2_696bd6d7.jpg",
       "/manus-storage/cougar_rock_new3_366308b9.jpg",
       "/manus-storage/cougar_rock_new4_19a1d3cf.jpg",
-      "/manus-storage/cougar_rock_new4_19a1d3cf.jpg",
       "/manus-storage/cougar_rock_new5_3f78b548.jpg",
       "/manus-storage/QOBgWqFANsVEzyll_bf990d4a.jpg",
       "/manus-storage/NHRJtxijNebGKEhE_5e5731e4.jpg",
       "/manus-storage/mzKgbyNEZWfKicMm_d9426df3.jpg"
     ],
     map: "/manus-storage/map_cougar_rock_map_c95cb11f.jpg",
-    captions: ["A Loop 入口", "B Loop Site 005", "B Loop Site 029", "B Loop Site 033", "B Loop Site 035", "C Loop Site 001", "D Loop Site 001 河畔", "D Loop Site 006 推荐位", "E Loop Site 030"],
+    captions: ["A Loop 入口", "B Loop Site 005", "B Loop Site 029", "B Loop Site 033", "B Loop Site 035", "C Loop Site 001", "D Loop Site 001 河畔", "D Loop Site 006 推荐位", "E Loop Site 030", "Cougar Rock 全景", "Paradise 步道入口"],
   },
   // 5. Lake Wenatchee
   5: {
@@ -81,14 +80,13 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/lake_wenatchee_020_dba7ec26.jpg",
       "/manus-storage/lake_wenatchee_new1_e0dfbbc5.jpg",
       "/manus-storage/lake_wenatchee_new2_584f3cb3.jpg",
-      "/manus-storage/lake_wenatchee_new1_e0dfbbc5.jpg",
       "/manus-storage/IcRjhRqDeZXrPFRm_84cf9318.jpg",
       "/manus-storage/mfbcrueRwKmWkGzS_901db1c7.jpg",
       "/manus-storage/AVDbJzulGmNjOxat_02b9e064.jpg",
       "/manus-storage/QdLhNXSvPaaTGaiZ_c6c0354e.jpg"
     ],
     map: "/manus-storage/map_lake_wenatchee_map_4b8e1b13.jpg",
-    captions: ["South Park 湖畔位", "South Park 水电位", "North Park 河畔", "South Park 全景", "营地道路", "North Park 深处"],
+    captions: ["South Park 湖畔位", "South Park 水电位", "North Park 河畔", "South Park 全景", "营地道路", "North Park 深处", "湖畔日落", "Wenatchee River", "山景全景"],
   },
   // 6. Ohanapecosh
   6: {
@@ -114,7 +112,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/nPsfsjVUQnwUXdNd_d9d849d0.jpeg"
     ],
     map: "/manus-storage/map_fairholme_map_7983f464.jpg",
-    captions: ["湖畔第一排 Site 1", "Site 10 湖景", "Site 20 林间", "内侧 Site 60", "Site 70", "Site 80"],
+    captions: ["湖畔第一排 Site 1", "Site 10 湖景", "Site 20 林间", "内侧 Site 60", "Site 70", "Site 80", "营地实景", "周边风光", "营位细节"],
   },
   // 8. Lake Chelan
   8: {
@@ -131,7 +129,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/DnyNkamSTuyrMCZE_c29f1a45.jpeg"
     ],
     map: "/manus-storage/map_lake_chelan_map_167913f8.jpg",
-    captions: ["Lakeside 全接驳位", "湖畔营位全景", "Lake Chelan 湖景", "Upper Loop", "游泳区域", "日落湖景"],
+    captions: ["Lakeside 全接驳位", "湖畔营位全景", "Lake Chelan 湖景", "Upper Loop", "游泳区域", "日落湖景", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 9. Pacific Beach
   9: {
@@ -148,7 +146,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/LqWvLItBZZgZQVku_8a2584b8.jpg"
     ],
     map: "/manus-storage/map_pacific_beach_map_c2700ba8.jpg",
-    captions: ["海景第一排 Site 1", "Site 3 全接驳", "Site 5 海景", "第二排营位", "Site 20", "Site 36 尾部"],
+    captions: ["海景第一排 Site 1", "Site 3 全接驳", "Site 5 海景", "第二排营位", "Site 20", "Site 36 尾部", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 10. Salt Creek
   10: {
@@ -170,18 +168,14 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/kalaloch_a010_358e4804.jpg",
       "/manus-storage/kalaloch_a029_f103811c.jpg",
       "/manus-storage/kalaloch_new1_492de482.webp",
-      "/manus-storage/kalaloch_new1_492de482.webp",
       "/manus-storage/kalaloch_new2_4b75584f.webp",
-      "/manus-storage/kalaloch_new1_492de482.webp",
-      "/manus-storage/kalaloch_new1_492de482.webp",
-      "/manus-storage/kalaloch_new1_492de482.webp",
       "/manus-storage/kalaloch_new3_58121902.jpg",
       "/manus-storage/AWJUEQIZHhCswCJW_0e4b07aa.jpg",
       "/manus-storage/zpmrInySHqMeLFvP_b0a06656.jpg",
       "/manus-storage/JHSYxwsflXlRnzAK_96374144.jpg"
     ],
     map: "/manus-storage/map_kalaloch_map_70686c2d.png",
-    captions: ["A Loop Site 1 海崖", "A Loop Site 10", "A Loop Site 29", "B Loop Site 1", "C Loop", "D Loop Site 13", "海崖全景", "漂流木海滩", "Bluff 步道", "日落海景"],
+    captions: ["A Loop Site 1 海崖", "A Loop Site 10", "A Loop Site 29", "B Loop Site 1", "C Loop", "D Loop Site 13", "海崖全景", "漂流木海滩", "Bluff 步道"],
   },
   // 12. Astoria KOA
   12: {
@@ -207,7 +201,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/frEOBRFIzFhGaGBa_724b5b91.png"
     ],
     map: "/manus-storage/map_south_beach_map_3c2ccf2e.jpg",
-    captions: ["海滩通道", "漂流木海岸", "营位实景", "太平洋全景"],
+    captions: ["海滩通道", "漂流木海岸", "营位实景", "太平洋全景", "营地实景", "周边风光", "营位细节", "步道入口", "设施全景"],
   },
   // 14. Fort Stevens
   14: {
@@ -223,7 +217,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/mqvyPBcTswepazIj_c6f09b9a.jpg"
     ],
     map: "/manus-storage/map_fort_stevens_map_7d1acc9e.jpg",
-    captions: ["Loop D 全接驳位", "Peter Iredale 沉船", "自行车道", "Loop E 营位", "Coffenbury Lake"],
+    captions: ["Loop D 全接驳位", "Peter Iredale 沉船", "自行车道", "Loop E 营位", "Coffenbury Lake", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 15. Beverly Beach
   15: {
@@ -251,7 +245,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/LnPPFoMxgfiksuVH_1daf55d1.jpg"
     ],
     map: "/manus-storage/map_cape_disappointment_map_07f50279.jpg",
-    captions: ["Loop A Site 1 全接驳", "Loop A Site 10", "Loop B 林间", "Loop C 海景", "Loop C 深处", "Loop D 帐篷区"],
+    captions: ["Loop A Site 1 全接驳", "Loop A Site 10", "Loop B 林间", "Loop C 海景", "Loop C 深处", "Loop D 帐篷区", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 17. Trillium Lake
   17: {
@@ -265,7 +259,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/sCSzwFZqUbHTMObr_0f3a468d.jpg"
     ],
     map: "/manus-storage/map_trillium_lake_map_4f4062e7.jpg",
-    captions: ["Mt. Hood 湖面倒影", "湖畔营位", "环湖步道"],
+    captions: ["Mt. Hood 湖面倒影", "湖畔营位", "环湖步道", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 18. Mora
   18: {
@@ -281,7 +275,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/cnoswHSHPqdYQKhd_e98313c9.jpeg"
     ],
     map: "/manus-storage/map_mora_map_c4399de3.png",
-    captions: ["A Loop 雨林营位", "Rialto Beach 漂流木", "海蚀柱", "雨林步道", "河畔营位"],
+    captions: ["A Loop 雨林营位", "Rialto Beach 漂流木", "海蚀柱", "雨林步道", "河畔营位", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 19. Little Crater Lake
   19: {
@@ -294,7 +288,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/LrOgvaHPiuLlBSuy_15cb765a.jpg",
       "/manus-storage/glwuubkyleUkzqMl_46486f47.jpg",
     ],
-    captions: ["水晶清澈的泉水池", "PCT步道入口", "原始森林营位"],
+    captions: ["水晶清澈的泉水池", "PCT步道入口", "原始森林营位", "营地实景", "周边风光", "营位细节"],
   },
   // 20. Tumalo
   20: {
@@ -308,7 +302,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/zyyUlZieZEkYZMSq_4d61dbaf.jpg"
     ],
     map: "/manus-storage/map_tumalo_map_25cb913f.jpg",
-    captions: ["Loop C 全接驳位", "Deschutes River", "营地游乐场"],
+    captions: ["Loop C 全接驳位", "Deschutes River", "营地游乐场", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 21. Cape Lookout
   21: {
@@ -322,7 +316,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/uOHyrqSBiTRzvYNx_a2f4a6cc.jpg"
     ],
     map: "/manus-storage/map_cape_lookout_map_8a2cb24c.jpg",
-    captions: ["C Loop 全接驳位", "海滩步道", "太平洋全景"],
+    captions: ["C Loop 全接驳位", "海滩步道", "太平洋全景", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 22. Farewell Bend
   22: {
@@ -336,7 +330,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/OFYfQSFbeLYWWaYW_41e8fd26.jpg",
       "/manus-storage/ZFsKjLJgEEDqziPZ_a7d7b81c.png",
     ],
-    captions: ["Rogue River 河畔营位", "天然游泳区", "林间营位"],
+    captions: ["Rogue River 河畔营位", "天然游泳区", "林间营位", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 23. Crater Lake Mazama
   23: {
@@ -352,7 +346,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/manus-storage/xAqQXiWwlnliCIPe_28ffe2c4.jpg"
     ],
     map: "/manus-storage/map_crater_lake_mazama_map_1336e7b4.jpg",
-    captions: ["Crater Lake 全景", "F Loop 有电营位", "Rim Drive 观景点", "Wizard Island", "Mazama Village 营地"],
+    captions: ["Crater Lake 全景", "F Loop 有电营位", "Rim Drive 观景点", "Wizard Island", "Mazama Village 营地", "营地实景", "周边风光", "营位细节", "步道入口"],
   },
   // 24. Pacific Shores (not recommended for TC)
   24: {

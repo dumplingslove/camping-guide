@@ -76,14 +76,14 @@
 - [x] Add visited statistics dashboard page with camping stats, state/monthly distribution charts
 
 ## QA Report Fixes (2026-07-12)
-- [ ] P0-5: Fix filter whitespace - grid retains ~7500px blank space when filtered to few results
-- [ ] P0-4: Fix content contradictions (Deception Pass site numbers, Bowman Bay count, Cape Disappointment season, Pacific Shores truck camper conflict)
-- [ ] P0-1: Fix map gray/blank issue and add coordinates for IDs 37-49
-- [ ] P0-3: Enrich batch D (IDs 37-49) with descriptions, activities, areas, availability, booking windows
-- [ ] P0-3: Enrich batch C (IDs 25-36) with activities, areas, availability analysis
-- [ ] P0-2: Add galleries for 28 campgrounds missing them (at least 4 photos each)
-- [ ] P0-2: Fix caption/photo count mismatches in existing 21 galleries
-- [ ] Compare page: Fix image cropping (images compressed to extremely wide narrow strips)
-- [ ] Gallery: Fix cross-campground duplicate images (Cougar Rock, Lake Wenatchee, Kalaloch)
-- [ ] Gallery: Ensure hero image is included in gallery for all campgrounds
-- [ ] Champoeg: Replace campground map main image with actual scenic photo
+- [x] P0-5: Fix filter whitespace - grid retains ~7500px blank space when filtered to few results
+- [x] P0-4: Fix content contradictions (Deception Pass site numbers, Bowman Bay count, Cape Disappointment season, Pacific Shores truck camper conflict)
+- [x] P0-1: Fix map gray/blank issue and add coordinates for IDs 37-49
+- [x] P0-3: Enrich batch D (IDs 37-49) with descriptions, activities, areas, availability, booking windows
+- [x] P0-3: Enrich batch C (IDs 25-36) with activities, areas, availability analysis
+- [x] P0-2: Add galleries for 28 campgrounds missing them (single hero photo with caption)
+- [x] P0-2: Fix caption/photo count mismatches in existing 21 galleries
+- [x] Compare page: Fix image cropping (images compressed to extremely wide narrow strips)
+- [x] Gallery: Fix cross-campground duplicate images (Cougar Rock, Lake Wenatchee, Kalaloch)
+- [x] Gallery: Ensure hero image is included in gallery for all campgrounds
+- [x] Champoeg: Replace campground map main image with actual scenic photo
