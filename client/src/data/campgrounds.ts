@@ -77,6 +77,7 @@ export interface Campground {
   image: string;
   lat?: number;
   lng?: number;
+  lastUpdated?: string; // ISO date string e.g. "2026-07-12"
 }
 
 export const campgrounds: Campground[] = [
@@ -137,6 +138,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/mObNwivbLDinKDGt_34427a30.jpg",
     lat: 48.3929,
     lng: -122.6455,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 2,
@@ -187,6 +189,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/EnJpoftfMRTCONgv_cb371cc0.jpg",
     lat: 46.9082,
     lng: -122.9093,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 3,
@@ -240,6 +243,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/bPIvqeqlUfkPdRxn_dab076ad.png",
     lat: 46.785,
     lng: -122.317,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 4,
@@ -294,6 +298,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/QOBgWqFANsVEzyll_bf990d4a.jpg",
     lat: 46.768,
     lng: -121.787,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 5,
@@ -342,6 +347,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/IcRjhRqDeZXrPFRm_84cf9318.jpg",
     lat: 47.812,
     lng: -120.729,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 6,
@@ -401,6 +407,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/bpVaUmkNVgAZQZZc.jpg",
     lat: 46.734,
     lng: -121.569,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 7,
@@ -454,6 +461,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/OFYfQSFbeLYWWaYW_41e8fd26.jpg",
     lat: 48.075,
     lng: -123.806,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 8,
@@ -502,6 +510,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/MBQKLLuqIkiQRsqp_bbf40e1f.jpg",
     lat: 47.838,
     lng: -120.193,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 9,
@@ -551,6 +560,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/klbUGbzsJFjUFpyH_3f328cf4.jpg",
     lat: 47.208,
     lng: -124.202,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 10,
@@ -600,6 +610,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/salt_creek_campsite.jpg",
     lat: 48.164,
     lng: -123.696,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 11,
@@ -652,6 +663,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/AWJUEQIZHhCswCJW_0e4b07aa.jpg",
     lat: 47.613,
     lng: -124.374,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 12,
@@ -702,6 +714,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/hero.jpg",
     lat: 46.165,
     lng: -123.928,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 13,
@@ -749,6 +762,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/VVvJztakIIvLncRs_e51331f6.jpg",
     lat: 44.618,
     lng: -124.06,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 14,
@@ -802,6 +816,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/VUQzskmggOKwojZQ_44678da2.jpg",
     lat: 46.206,
     lng: -123.964,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 15,
@@ -852,6 +867,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/hero.jpg",
     lat: 44.728,
     lng: -124.058,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 16,
@@ -912,6 +928,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/PbAymmqAHTNlEtAB_9dc69d3d.jpg",
     lat: 46.279,
     lng: -124.053,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 17,
@@ -962,6 +979,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/lPBhnXfPWYgZkHrM_21456f6e.jpg",
     lat: 45.269,
     lng: -121.738,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 18,
@@ -1014,6 +1032,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/KJneQHoHFtSbdCrk_0b7272cb.jpg",
     lat: 47.913,
     lng: -124.607,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 19,
@@ -1058,6 +1077,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/ACggXiKtVQsbKDbE_a519de53.jpg",
     lat: 45.148,
     lng: -121.743,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 20,
@@ -1107,6 +1127,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/OEiSoMLIaHStYPiZ_99aa0685.jpg",
     lat: 44.129,
     lng: -121.368,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 21,
@@ -1156,6 +1177,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/tSSJhQFlSJjAlOqT_a65b7842.jpg",
     lat: 45.352,
     lng: -123.972,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 22,
@@ -1205,6 +1227,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/jPwdauThSqRNVKzL_f15f94b3.jpg",
     lat: 44.026,
     lng: -121.645,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 23,
@@ -1256,6 +1279,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/YZDPDsAYaJHRsMWv_09f4b6c6.jpg",
     lat: 42.866,
     lng: -122.168,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 24,
@@ -1293,6 +1317,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/9gepn0YqoeYB_9eee938b.jpg",
     lat: 44.471,
     lng: -124.075,
+    lastUpdated: "2026-07-10",
   },
   {
     id: 25,
@@ -1327,6 +1352,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/fort-worden_18de7e21.jpg",
     lat: 48.1344,
     lng: -122.7654,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 26,
@@ -1361,6 +1387,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/grayland-beach_e162883c.jpg",
     lat: 46.7906,
     lng: -124.0894,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 27,
@@ -1395,6 +1422,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/wenatchee-confluence_a36ce9ab.jpg",
     lat: 47.4573,
     lng: -120.3255,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 28,
@@ -1429,6 +1457,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/fort-flagler_f50ffadb.webp",
     lat: 48.0877,
     lng: -122.7024,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 29,
@@ -1464,6 +1493,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/hoh-rainforest_0bba0dcc.webp",
     lat: 47.8039,
     lng: -123.6664,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 30,
@@ -1499,6 +1529,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/moran-state-park_9f5fe54f.jpg",
     lat: 48.6654,
     lng: -122.8237,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 31,
@@ -1533,6 +1564,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/south-beach-or_9de9877e.jpg",
     lat: 44.604,
     lng: -124.0637,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 32,
@@ -1567,6 +1599,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/nehalem-bay_256cfc1c.jpg",
     lat: 45.685,
     lng: -123.9367,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 33,
@@ -1601,6 +1634,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/honeyman_feef5391.jpg",
     lat: 43.9289,
     lng: -124.105,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 34,
@@ -1635,6 +1669,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/silver-falls_3932b390.jpg",
     lat: 44.8788,
     lng: -122.6589,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 35,
@@ -1669,6 +1704,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/wallowa-lake_f6d304c2.jpg",
     lat: 45.2828,
     lng: -117.2138,
+    lastUpdated: "2026-07-08",
   },
   {
     id: 36,
@@ -1703,6 +1739,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/detroit-lake_c1467c2b.jpg",
     lat: 44.7295,
     lng: -122.1765,
+    lastUpdated: "2026-07-08",
   },
 
   {
@@ -1733,7 +1770,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "A21-A30 (靠近温泉步道入口，树荫好)",
     avoid: "C Loop (离温泉最远，靠近公路噪音)",
-    tcNotes: "营位较小，部分适合小型TC。Sol Duc Road路况良好。建议选择pull-through营位。",  },
+    tcNotes: "营位较小，部分适合小型TC。Sol Duc Road路况良好。建议选择pull-through营位。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 38,
     name: "Harris Beach State Park Campground",
@@ -1762,7 +1801,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 62-76 (海景营位，可看到海蚀柱)",
     avoid: "Sites 1-15 (靠近公路101，噪音大)",
-    tcNotes: "大部分营位可容纳中型RV，有Full Hookup选项。Loop A和B较宽敞。",  },
+    tcNotes: "大部分营位可容纳中型RV，有Full Hookup选项。Loop A和B较宽敞。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 39,
     name: "Colonial Creek South Campground",
@@ -1791,7 +1832,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 1-18 (靠近Diablo Lake湖畔，翡翠色湖水)",
     avoid: "Sites 50+ (离湖较远，靠近公路)",
-    tcNotes: "营位大小不一，部分可容纳中型RV。道路为铺装路面，但弯道较多。无Hookup。",  },
+    tcNotes: "营位大小不一，部分可容纳中型RV。道路为铺装路面，但弯道较多。无Hookup。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 40,
     name: "Lincoln Rock State Park",
@@ -1820,7 +1863,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 1-20 (靠近湖边，有游泳区视野)",
     avoid: "Sites 60+ (离湖远，夏天较热无遮荫)",
-    tcNotes: "宽敞的RV营位，有Full Hookup。适合各种大小的TC。",  },
+    tcNotes: "宽敞的RV营位，有Full Hookup。适合各种大小的TC。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 41,
     name: "Fort Casey Historical State Park",
@@ -1849,7 +1894,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 1-10 (靠近灯塔和炮台遗迹)",
     avoid: "靠近停车场的营位 (游客噪音)",
-    tcNotes: "营位较紧凑，适合小型TC。部分营位有电力接口。历史要塞区域平坦。",  },
+    tcNotes: "营位较紧凑，适合小型TC。部分营位有电力接口。历史要塞区域平坦。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 42,
     name: "Fort Ebey State Park Campground",
@@ -1878,7 +1925,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 1-15 (靠近悬崖步道入口)",
     avoid: "靠近入口的营位 (车辆进出噪音)",
-    tcNotes: "营位在树林中，部分较窄。适合小型到中型TC。无Hookup。",  },
+    tcNotes: "营位在树林中，部分较窄。适合小型到中型TC。无Hookup。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 43,
     name: "Larrabee State Park Campground",
@@ -1907,7 +1956,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 26-38 (靠近海滩，步行可达潮间带)",
     avoid: "靠近铁路的营位 (火车噪音，尤其夜间)",
-    tcNotes: "混合营位，部分有Full Hookup。靠近海滩的营位较平坦。",  },
+    tcNotes: "混合营位，部分有Full Hookup。靠近海滩的营位较平坦。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 44,
     name: "Steamboat Rock State Park",
@@ -1936,7 +1987,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 100-126 (Dunes Loop, 靠近湖边游泳区)",
     avoid: "Sites 200+ (离湖最远，夏天极热无遮荫)",
-    tcNotes: "宽敞的RV营位，有Full Hookup。地形开阔平坦，非常适合大型TC。",  },
+    tcNotes: "宽敞的RV营位，有Full Hookup。地形开阔平坦，非常适合大型TC。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 45,
     name: "Bullards Beach State Park",
@@ -1965,7 +2018,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 1-25 (靠近马道和海滩入口)",
     avoid: "靠近Horse Camp的营位 (马匹气味和蝇虫)",
-    tcNotes: "宽敞的RV营位，有Full Hookup。Loop较平坦，进出方便。",  },
+    tcNotes: "宽敞的RV营位，有Full Hookup。Loop较平坦，进出方便。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 46,
     name: "Champoeg State Heritage Area",
@@ -1993,7 +2048,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Loop A Sites 1-20 (靠近河边步道)",
     avoid: "靠近Group Camp区域 (大团体噪音)",
-    tcNotes: "平坦的RV营位，有电力和水接口。Willamette River沿岸，进出方便。",  },
+    tcNotes: "平坦的RV营位，有电力和水接口。Willamette River沿岸，进出方便。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 47,
     name: "Sunset Bay State Park Campground",
@@ -2022,7 +2079,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites A1-A15 (靠近Sunset Bay海滩)",
     avoid: "Sites C1-C10 (离海滩最远，靠近公路)",
-    tcNotes: "营位中等大小，部分有Full Hookup。海岸营地，风可能较大。",  },
+    tcNotes: "营位中等大小，部分有Full Hookup。海岸营地，风可能较大。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 48,
     name: "The Cove Palisades State Park",
@@ -2051,7 +2110,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Deschutes Loop Sites 1-30 (湖景，有Full Hookup)",
     avoid: "Crooked River Loop (离湖远，夏天极热)",
-    tcNotes: "Deschutes Loop有Full Hookup，营位宽敞。湖景营位需提前预订。",  },
+    tcNotes: "Deschutes Loop有Full Hookup，营位宽敞。湖景营位需提前预订。",
+    lastUpdated: "2026-07-11",
+  },
   {
     id: 49,
     name: "LaPine State Park",
@@ -2080,7 +2141,9 @@ export const campgrounds: Campground[] = [
     bookingWindows: [],
     recommendedSites: "Sites 1-30 (靠近Deschutes River，松树林荫)",
     avoid: "靠近Day Use区域的营位 (白天游客多)",
-    tcNotes: "宽敞的RV营位，有Full Hookup。Deschutes River沿岸，松树林中。",  },
+    tcNotes: "宽敞的RV营位，有Full Hookup。Deschutes River沿岸，松树林中。",
+    lastUpdated: "2026-07-11",
+  },
 ];
 
 export const driveTimeRanges = [

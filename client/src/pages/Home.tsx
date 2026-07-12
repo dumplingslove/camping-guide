@@ -533,6 +533,12 @@ export default function Home() {
                           </span>
                         )}
                       </div>
+                      {/* Last updated */}
+                      {camp.lastUpdated && (
+                        <p className="mt-2 text-[10px] text-muted-foreground/60 font-mono">
+                          数据更新: {camp.lastUpdated}
+                        </p>
+                      )}
                     </div>
                   </article>
                 </Link>

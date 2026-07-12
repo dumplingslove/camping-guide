@@ -3,8 +3,9 @@ import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, CampgroundTier } from "@/data/campgrounds";
 import { campgroundCoords, REDMOND_COORDS } from "@/data/coordinates";
 import { MapView } from "@/components/Map";
-import { Star, Clock, MapPin, Filter, X, ArrowLeft, Ban } from "lucide-react";
+import { Clock, MapPin, Filter, X, ArrowLeft, Ban, List } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 
 // Tier color mapping for map pins
 const tierPinColors: Record<CampgroundTier, string> = {
@@ -54,6 +55,7 @@ export default function MapPage() {
   const [selectedState, setSelectedState] = useState<"all" | "WA" | "OR">("all");
   const [hoveredCampground, setHoveredCampground] = useState<number | null>(null);
   const [showFilters, setShowFilters] = useState(true);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
   const filteredCampgrounds = useMemo(() => {
     return campgrounds.filter((c) => {
@@ -182,6 +184,140 @@ export default function MapPage() {
 
   const hasActiveFilters = selectedTier !== "all" || selectedDriveTime !== null || selectedState !== "all";
 
+  // Shared filter/list content - extracted to avoid duplication
+  const FilterContent = () => (
+    <div className="space-y-5">
+      {/* Legend */}
+      <div>
+        <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">图例</h3>
+        <div className="space-y-1.5">
+          {tierOptions.filter(t => t.value !== "all").map((opt) => (
+            <div key={opt.value} className="flex items-center gap-2">
+              <div
+                className="w-3.5 h-3.5 rounded-full border-2 border-white shadow-sm"
+                style={{ background: tierPinColors[opt.value as CampgroundTier] }}
+              />
+              <span className="text-xs text-foreground">{opt.label}</span>
+              <span className="text-[10px] text-muted-foreground ml-auto font-mono">{opt.count}</span>
+            </div>
+          ))}
+          <div className="flex items-center gap-2 mt-1 pt-1 border-t border-border/50">
+            <div className="w-3.5 h-3.5 rounded-full border-2 border-white shadow-sm bg-pine" />
+            <span className="text-xs text-foreground">家 (Redmond)</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Tier filter */}
+      <div>
+        <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">分类</h3>
+        <div className="flex flex-wrap gap-1.5">
+          {tierOptions.map((opt) => (
+            <button
+              key={opt.value}
+              onClick={() => setSelectedTier(opt.value)}
+              className={`px-2.5 py-1 rounded-full text-[11px] font-medium transition-all ${
+                selectedTier === opt.value
+                  ? "bg-pine text-white"
+                  : "bg-secondary border border-border text-foreground hover:border-pine/30"
+              }`}
+            >
+              {opt.label} ({opt.count})
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* State filter */}
+      <div>
+        <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">州</h3>
+        <div className="flex gap-1.5">
+          {(["all", "WA", "OR"] as const).map((s) => (
+            <button
+              key={s}
+              onClick={() => setSelectedState(s)}
+              className={`px-3 py-1 rounded-full text-[11px] font-medium transition-all ${
+                selectedState === s
+                  ? "bg-pine text-white"
+                  : "bg-secondary border border-border text-foreground hover:border-pine/30"
+              }`}
+            >
+              {s === "all" ? "全部" : s}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Drive time filter */}
+      <div>
+        <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">车程</h3>
+        <div className="flex flex-wrap gap-1.5">
+          {driveTimeRanges.map((range) => (
+            <button
+              key={range.label}
+              onClick={() => setSelectedDriveTime(selectedDriveTime === range.label ? null : range.label)}
+              className={`px-2.5 py-1 rounded-full text-[11px] font-mono transition-all ${
+                selectedDriveTime === range.label
+                  ? "bg-pine text-white"
+                  : "bg-secondary border border-border text-foreground hover:border-pine/30"
+              }`}
+            >
+              <Clock size={10} className="inline mr-0.5" />
+              {range.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Clear filters */}
+      {hasActiveFilters && (
+        <button
+          onClick={clearFilters}
+          className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <X size={12} />
+          清除所有筛选
+        </button>
+      )}
+
+      {/* Campground list */}
+      <div>
+        <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+          营地列表 ({filteredCampgrounds.length})
+        </h3>
+        <div className="space-y-1 max-h-[35vh] md:max-h-[calc(100vh-500px)] overflow-y-auto">
+          {filteredCampgrounds.map((camp) => (
+            <Link
+              key={camp.id}
+              href={`/campground/${camp.id}`}
+              className={`block p-2 rounded-lg text-left hover:bg-secondary/80 transition-colors ${
+                hoveredCampground === camp.id ? "bg-secondary" : ""
+              }`}
+              onMouseEnter={() => setHoveredCampground(camp.id)}
+              onMouseLeave={() => setHoveredCampground(null)}
+            >
+              <div className="flex items-center gap-2">
+                <div
+                  className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                  style={{ background: camp.closureInfo ? "#991b1b" : tierPinColors[camp.tier || "不适配"] }}
+                />
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs font-medium text-foreground truncate">
+                    {camp.nameCn}
+                    {camp.closureInfo && <Ban size={10} className="inline ml-1 text-red-600" />}
+                  </p>
+                  <p className="text-[10px] text-muted-foreground font-mono truncate">
+                    {camp.driveTimeLabel} · {camp.state} · ⭐{camp.sceneryRating}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="h-screen flex flex-col bg-paper">
       {/* Header */}
@@ -190,7 +326,7 @@ export default function MapPage() {
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-2 text-muted-foreground hover:text-pine transition-colors">
               <ArrowLeft size={18} />
-              <span className="text-sm font-medium">返回列表</span>
+              <span className="text-sm font-medium hidden sm:inline">返回列表</span>
             </Link>
           </div>
           <h1 className="font-display font-bold text-pine text-lg flex items-center gap-2">
@@ -198,9 +334,10 @@ export default function MapPage() {
             营地地图
           </h1>
           <div className="flex items-center gap-2">
+            {/* Desktop filter toggle */}
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+              className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                 showFilters ? "bg-pine text-white" : "bg-white border border-border hover:border-pine/30"
               }`}
             >
@@ -217,7 +354,7 @@ export default function MapPage() {
 
       {/* Main content */}
       <div className="flex-1 flex relative overflow-hidden">
-        {/* Sidebar filters */}
+        {/* Desktop Sidebar filters - hidden on mobile */}
         <AnimatePresence>
           {showFilters && (
             <motion.aside
@@ -225,137 +362,10 @@ export default function MapPage() {
               animate={{ width: 280, opacity: 1 }}
               exit={{ width: 0, opacity: 0 }}
               transition={{ duration: 0.25, ease: [0.23, 1, 0.32, 1] }}
-              className="border-r border-border bg-white overflow-y-auto flex-shrink-0"
+              className="hidden md:block border-r border-border bg-white overflow-y-auto flex-shrink-0"
             >
-              <div className="p-4 space-y-5">
-                {/* Legend */}
-                <div>
-                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">图例</h3>
-                  <div className="space-y-1.5">
-                    {tierOptions.filter(t => t.value !== "all").map((opt) => (
-                      <div key={opt.value} className="flex items-center gap-2">
-                        <div
-                          className="w-3.5 h-3.5 rounded-full border-2 border-white shadow-sm"
-                          style={{ background: tierPinColors[opt.value as CampgroundTier] }}
-                        />
-                        <span className="text-xs text-foreground">{opt.label}</span>
-                        <span className="text-[10px] text-muted-foreground ml-auto font-mono">{opt.count}</span>
-                      </div>
-                    ))}
-                    <div className="flex items-center gap-2 mt-1 pt-1 border-t border-border/50">
-                      <div className="w-3.5 h-3.5 rounded-full border-2 border-white shadow-sm bg-pine" />
-                      <span className="text-xs text-foreground">家 (Redmond)</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Tier filter */}
-                <div>
-                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">分类</h3>
-                  <div className="flex flex-wrap gap-1.5">
-                    {tierOptions.map((opt) => (
-                      <button
-                        key={opt.value}
-                        onClick={() => setSelectedTier(opt.value)}
-                        className={`px-2.5 py-1 rounded-full text-[11px] font-medium transition-all ${
-                          selectedTier === opt.value
-                            ? "bg-pine text-white"
-                            : "bg-secondary border border-border text-foreground hover:border-pine/30"
-                        }`}
-                      >
-                        {opt.label} ({opt.count})
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* State filter */}
-                <div>
-                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">州</h3>
-                  <div className="flex gap-1.5">
-                    {(["all", "WA", "OR"] as const).map((s) => (
-                      <button
-                        key={s}
-                        onClick={() => setSelectedState(s)}
-                        className={`px-3 py-1 rounded-full text-[11px] font-medium transition-all ${
-                          selectedState === s
-                            ? "bg-pine text-white"
-                            : "bg-secondary border border-border text-foreground hover:border-pine/30"
-                        }`}
-                      >
-                        {s === "all" ? "全部" : s}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Drive time filter */}
-                <div>
-                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">车程</h3>
-                  <div className="flex flex-wrap gap-1.5">
-                    {driveTimeRanges.map((range) => (
-                      <button
-                        key={range.label}
-                        onClick={() => setSelectedDriveTime(selectedDriveTime === range.label ? null : range.label)}
-                        className={`px-2.5 py-1 rounded-full text-[11px] font-mono transition-all ${
-                          selectedDriveTime === range.label
-                            ? "bg-pine text-white"
-                            : "bg-secondary border border-border text-foreground hover:border-pine/30"
-                        }`}
-                      >
-                        <Clock size={10} className="inline mr-0.5" />
-                        {range.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Clear filters */}
-                {hasActiveFilters && (
-                  <button
-                    onClick={clearFilters}
-                    className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <X size={12} />
-                    清除所有筛选
-                  </button>
-                )}
-
-                {/* Campground list */}
-                <div>
-                  <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                    营地列表 ({filteredCampgrounds.length})
-                  </h3>
-                  <div className="space-y-1 max-h-[calc(100vh-500px)] overflow-y-auto">
-                    {filteredCampgrounds.map((camp) => (
-                      <Link
-                        key={camp.id}
-                        href={`/campground/${camp.id}`}
-                        className={`block p-2 rounded-lg text-left hover:bg-secondary/80 transition-colors ${
-                          hoveredCampground === camp.id ? "bg-secondary" : ""
-                        }`}
-                        onMouseEnter={() => setHoveredCampground(camp.id)}
-                        onMouseLeave={() => setHoveredCampground(null)}
-                      >
-                        <div className="flex items-center gap-2">
-                          <div
-                            className="w-2.5 h-2.5 rounded-full flex-shrink-0"
-                            style={{ background: camp.closureInfo ? "#991b1b" : tierPinColors[camp.tier || "不适配"] }}
-                          />
-                          <div className="flex-1 min-w-0">
-                            <p className="text-xs font-medium text-foreground truncate">
-                              {camp.nameCn}
-                              {camp.closureInfo && <Ban size={10} className="inline ml-1 text-red-600" />}
-                            </p>
-                            <p className="text-[10px] text-muted-foreground font-mono truncate">
-                              {camp.driveTimeLabel} · {camp.state} · ⭐{camp.sceneryRating}
-                            </p>
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+              <div className="p-4">
+                <FilterContent />
               </div>
             </motion.aside>
           )}
@@ -379,8 +389,52 @@ export default function MapPage() {
               </div>
             </div>
           )}
+
+          {/* Mobile bottom bar - opens drawer */}
+          <div className="md:hidden absolute bottom-0 left-0 right-0 safe-area-bottom">
+            <button
+              onClick={() => setMobileDrawerOpen(true)}
+              className="w-full bg-white/95 backdrop-blur-md border-t border-border px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
+            >
+              <div className="flex items-center gap-2">
+                <List size={16} className="text-pine" />
+                <span className="text-sm font-medium text-foreground">
+                  {filteredCampgrounds.length} 个营地
+                </span>
+                {hasActiveFilters && (
+                  <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-pine/10 text-pine font-medium">
+                    已筛选
+                  </span>
+                )}
+              </div>
+              <div className="flex items-center gap-1 text-muted-foreground">
+                <span className="text-xs">筛选 & 列表</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="18 15 12 9 6 15" />
+                </svg>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Drawer */}
+      <Drawer open={mobileDrawerOpen} onOpenChange={setMobileDrawerOpen}>
+        <DrawerContent className="max-h-[75vh]">
+          <DrawerHeader className="pb-2">
+            <DrawerTitle className="text-sm font-display text-pine flex items-center gap-2">
+              <Filter size={14} />
+              筛选 & 营地列表
+              <span className="text-[10px] font-mono text-muted-foreground ml-auto">
+                {filteredCampgrounds.length}/{campgrounds.length}
+              </span>
+            </DrawerTitle>
+          </DrawerHeader>
+          <div className="px-4 pb-6 overflow-y-auto">
+            <FilterContent />
+          </div>
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 }

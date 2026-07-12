@@ -912,7 +912,16 @@ export default function CampgroundDetail() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-white/50 backdrop-blur-sm mt-8">
+      {/* Last Updated */}
+      {campground.lastUpdated && (
+        <div className="container mt-6 text-center">
+          <p className="text-xs text-muted-foreground/50 font-mono">
+            数据最后验证: {campground.lastUpdated}
+          </p>
+        </div>
+      )}
+
+      <footer className="border-t border-border bg-white/50 backdrop-blur-sm mt-4">
         <div className="container py-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-sm text-pine hover:underline">
             <ArrowLeft size={14} />

@@ -58,3 +58,8 @@
 ## QA Round 3 Fixes
 - [x] Fix Google Maps "included multiple times" error (singleton pattern for script loading)
 - [x] Fix campgroundConfig.ts rec.gov IDs to match corrected bookingUrls
+
+## Follow-up Improvements
+- [x] Add "last updated" timestamp to campground data and display on cards/detail pages
+- [x] Mobile-responsive map page with bottom drawer layout (replace sidebar on mobile)
+- [x] Enrich batch 2/3 campgrounds with deep data (area ratings, kid activities, availability insights)
