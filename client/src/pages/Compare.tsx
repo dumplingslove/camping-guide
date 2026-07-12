@@ -4,6 +4,9 @@ import { campgrounds } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { ArrowLeft, X, Star, TreePine, Baby, Truck, Clock, MapPin, ExternalLink, Plus } from "lucide-react";
 import { motion } from "framer-motion";
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer, Legend, Tooltip } from "recharts";
+
+const RADAR_COLORS = ["#2d5016", "#1a7ab8", "#c17817", "#9b2c2c"];
 
 function RatingStars({ rating, max = 5, size = 14 }: { rating: number; max?: number; size?: number }) {
   return (
@@ -28,6 +31,20 @@ export default function Compare() {
     .filter(Boolean) as typeof campgrounds;
 
   const availableToAdd = campgrounds.filter((c) => !compareList.includes(c.id));
+
+  // Radar chart data
+  const radarData = compareItems.length > 0 ? [
+    { dimension: "风景", fullMark: 5, ...Object.fromEntries(compareItems.map((c) => [c.nameCn, c.sceneryRating])) },
+    { dimension: "娃可玩", fullMark: 5, ...Object.fromEntries(compareItems.map((c) => [c.nameCn, c.kidRating])) },
+    { dimension: "TC适配", fullMark: 5, ...Object.fromEntries(compareItems.map((c) => [c.nameCn, c.tcRating])) },
+    { dimension: "设施", fullMark: 5, ...Object.fromEntries(compareItems.map((c) => [c.nameCn, c.areas.length > 0 ? (c.areas[0].hookups?.includes("全接驳") || c.areas[0].hookups?.includes("Full") ? 5 : c.areas[0].hookups?.includes("水电") || c.areas[0].hookups?.includes("W/E") ? 4 : c.areas[0].hookups?.includes("无") || c.areas[0].hookups === "None" ? 2 : 3) : 3])) },
+    { dimension: "私密性", fullMark: 5, ...Object.fromEntries(compareItems.map((c) => [c.nameCn, c.areas.length > 0 ? ((c.areas[0] as any).privacy || 3) : 3])) },
+    { dimension: "便利度", fullMark: 5, ...Object.fromEntries(compareItems.map((c) => {
+      const driveH = parseFloat(c.driveTimeLabel);
+      const score = driveH <= 2 ? 5 : driveH <= 3 ? 4 : driveH <= 4 ? 3 : driveH <= 5 ? 2 : 1;
+      return [c.nameCn, score];
+    })) },
+  ] : [];
 
   if (compareItems.length === 0) {
     return (
@@ -81,6 +98,55 @@ export default function Compare() {
         >
           营地对比
         </motion.h1>
+
+        {/* Radar Chart */}
+        {compareItems.length >= 2 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="bg-white rounded-xl border border-border p-6 mb-8"
+          >
+            <h2 className="font-display text-lg font-bold text-foreground mb-4">多维对比雷达图</h2>
+            <div className="h-[360px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <RadarChart data={radarData} cx="50%" cy="50%" outerRadius="75%">
+                  <PolarGrid stroke="#e5e5e5" />
+                  <PolarAngleAxis
+                    dataKey="dimension"
+                    tick={{ fill: "#555", fontSize: 13, fontWeight: 500 }}
+                  />
+                  <PolarRadiusAxis
+                    angle={30}
+                    domain={[0, 5]}
+                    tick={{ fill: "#999", fontSize: 11 }}
+                    tickCount={6}
+                  />
+                  {compareItems.map((camp, idx) => (
+                    <Radar
+                      key={camp.id}
+                      name={camp.nameCn}
+                      dataKey={camp.nameCn}
+                      stroke={RADAR_COLORS[idx]}
+                      fill={RADAR_COLORS[idx]}
+                      fillOpacity={0.15}
+                      strokeWidth={2}
+                    />
+                  ))}
+                  <Legend
+                    wrapperStyle={{ fontSize: "12px", paddingTop: "16px" }}
+                  />
+                  <Tooltip
+                    contentStyle={{ borderRadius: "8px", border: "1px solid #e5e5e5", fontSize: "12px" }}
+                  />
+                </RadarChart>
+              </ResponsiveContainer>
+            </div>
+            <p className="text-xs text-muted-foreground mt-2 text-center">
+              6个维度：风景、娃可玩、TC适配、设施（水电接驳）、私密性、便利度（车程远近）
+            </p>
+          </motion.div>
+        )}
 
         {/* Comparison Table */}
         <div className="overflow-x-auto">

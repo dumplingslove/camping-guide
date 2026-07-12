@@ -230,6 +230,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   },
   // 19. Little Crater Lake
   19: {
+    map: "/manus-storage/map_little_crater_lake_aa40ef7e.jpg",
     photos: [
       "/manus-storage/little_crater_lake_photo1_f0fb7ec7.jpg",
       "/manus-storage/little_crater_lake_photo2_cb98da0d.jpg",
@@ -259,6 +260,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   },
   // 22. Farewell Bend
   22: {
+    map: "/manus-storage/farewell_bend_map_c4cd61a1.webp",
     photos: [
       "/manus-storage/farewell_bend_photo1_d506008e.jpg",
       "/manus-storage/farewell_bend_photo2_f3042605.jpeg",
@@ -280,6 +282,7 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   },
   // 24. Pacific Shores (not recommended for TC)
   24: {
+    map: "/manus-storage/map_pacific_shores_30bffc14.jpg",
     photos: [],
   },
 };

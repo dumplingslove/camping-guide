@@ -4,6 +4,7 @@ import { campgrounds } from "@/data/campgrounds";
 import { campgroundPhotos } from "@/data/photos";
 import { campgroundCoords, REDMOND_COORDS } from "@/data/coordinates";
 import { seasonData, monthLabels } from "@/data/seasons";
+import { activityPhotos } from "@/data/activityPhotos";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { MapView } from "@/components/Map";
 import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon } from "lucide-react";
@@ -723,13 +724,21 @@ export default function CampgroundDetail() {
                 <Baby size={18} className="text-lake" />
                 娃可玩项目清单
               </h2>
-              <div className="space-y-3">
-                {campground.activities.map((act, i) => (
-                  <div key={i} className="rounded-lg border border-border/60 p-4 hover:shadow-sm transition-shadow">
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="flex-1">
-                        <h4 className="font-medium text-sm">{act.name}</h4>
-                        <div className="flex items-center gap-3 mt-1.5 text-xs text-muted-foreground">
+              <div className="space-y-4">
+                {campground.activities.map((act, i) => {
+                  const photoUrl = activityPhotos[act.name];
+                  return (
+                    <div key={i} className="rounded-lg border border-border/60 overflow-hidden hover:shadow-md transition-shadow">
+                      {photoUrl && (
+                        <div className="relative h-40 overflow-hidden">
+                          <img src={photoUrl} alt={act.name} className="w-full h-full object-cover" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                          <h4 className="absolute bottom-3 left-4 font-medium text-white text-sm drop-shadow-md">{act.name}</h4>
+                        </div>
+                      )}
+                      <div className="p-4">
+                        {!photoUrl && <h4 className="font-medium text-sm mb-1.5">{act.name}</h4>}
+                        <div className="flex items-center gap-3 text-xs text-muted-foreground">
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-lake/10 text-lake font-mono">{act.ageRange}</span>
                           <span className="inline-flex items-center gap-1">
                             <MapPin size={10} />
@@ -739,8 +748,8 @@ export default function CampgroundDetail() {
                         <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{act.details}</p>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </motion.div>
           )}
