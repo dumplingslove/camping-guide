@@ -1,46 +1,78 @@
 {
-  "campgroundId": 40,
   "campgroundName": "Lincoln Rock",
-  "totalReviews": 5,
-  "averageRating": 4.7,
-  "googleTotalRatings": 894,
+  "totalReviewsOnPlatform": 894,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Aubrie Law",
       "rating": 5,
-      "date": "9 months ago",
       "text": "Soooo much fun! My family and I love it here, its our 2nd time coming. Great views, boat launch, swimming are for the kids and a nice playground.  They have bathrooms where you can also take a hot shower. Nice for taking a bike ride as well. The views out on the water are beautiful. Definitely coming back again next summer.",
-      "source": "google_maps"
+      "date": "9 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "E. B.",
       "rating": 5,
-      "date": "9 months ago",
       "text": "Beautiful park. Great camping facilities. This is a super place to come with the family. Nice playground for the little ones. Good boat ramp. Good place to just sit and look out on the reservoir. People who live closer by should be taking advantage of this place. Perfect spot to work remotely if you're looking for a space away from your space. Great option for picnics.",
-      "source": "google_maps"
+      "date": "9 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Elizabeth Cashdollar",
       "rating": 5,
-      "date": "2 weeks ago",
       "text": "Great state park with more amenities than most RV parks. The bike trail is amazing.",
-      "source": "google_maps"
+      "date": "2 weeks ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Tara H",
       "rating": 5,
-      "date": "a year ago",
       "text": "We stayed at spot 73 in our glamper over the weekend (05/30/25 - 06/01/25). This park is by far the cleanest and most gorgeous one yet! The campsite is big and feels very private. Our site had water and electric hookups. There is a dump station by the ranger station. We did have to wait in line to dump during checkout time, so just be mentally prepared for that.\nThere is a paved trail that connects to the Apple Capital Loop Trail but we didn't explore it. It was our 1st trip here so we did some sightseeing and even drove to Leavenworth for dinner!\nWe loved the little store where we got milkshakes and Italian soda. They did have a very small selection of supplies that you might have forgotten to bring. Sunscreen, razor, fish bait, snacks.  The water was cold but worth dipping your toes in! We didn't rent boats but it was awesome knowing we could if we wanted to.\nWe stopped by the lookout where you can see Lincoln's facial profile and it amazingly looks like President Lincoln! We enjoyed this park and will have to come back.",
-      "source": "google_maps"
+      "date": "a year ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Chancee Wilkinson",
       "rating": 5,
-      "date": "12 months ago",
       "text": "We spent the night here and it was a lovely surprise. As we drove into town I was not excited about how hot it was and the major lack of trees. We turned down the road to the state park and were greeted by many large trees and green grassy fielded. We were in site 31 and it was so nice. We have a 42ft 5th wheel and tow truck. The spot was plenty big for us and no issues getting in, out and driving around the park. There are big shade trees all around and loads of space between site. The river was fun to play in, it’s the perfect depth for little kids. There is a park and play set for the kids that is pretty fun. It overall is a very nice state park and a breath of fresh air with all the green and shade in the middle of all the hot dry heat.",
-      "source": "google_maps"
+      "date": "12 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.7
 }

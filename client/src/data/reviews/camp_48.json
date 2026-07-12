@@ -1,46 +1,78 @@
 {
-  "campgroundId": 48,
   "campgroundName": "The Cove Palisades",
-  "totalReviews": 5,
-  "averageRating": 4.7,
-  "googleTotalRatings": 1137,
+  "totalReviewsOnPlatform": 1137,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Ke'Liana Adams",
       "rating": 5,
-      "date": "a month ago",
       "text": "Very fun twisty and turny drive, including 2 bridges-- one 2 lane and one single lane, across each portion of the rivers that created the awesomeness that is the Cove ❤️👌",
-      "source": "google_maps"
+      "date": "a month ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Sampor Burke",
       "rating": 1,
-      "date": "a month ago",
       "text": "Beautiful little park with great views and a relaxing atmosphere. The playground was clean and fun for kids, and there were plenty of picnic areas to sit and enjoy the scenery. It’s also very dog-friendly with lots of space to walk. Restrooms were decent and easy to access. Overall a peaceful spot for families, pets, or just getting outside for a bit.",
-      "source": "google_maps"
+      "date": "a month ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Teresa Melville",
       "rating": 5,
-      "date": "3 months ago",
       "text": "Went in the off season, but quickly learned the view puts this place always in season.",
-      "source": "google_maps"
+      "date": "3 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Gary Currie",
       "rating": 4,
-      "date": "a year ago",
       "text": "We had never been to this gem.\nIt was just a drive through to check it out, but wow, what an amazing surprise.\nAnother Oregon State Park that is truly breathtaking.\nLooks like tons of great camping, boating,  swimming when the algae is gone, and just chilling.\nWe are definitely going back to camp.\nDon't let this beauty not be visited.\nIt's 4 stars because until I camp.",
-      "source": "google_maps"
+      "date": "a year ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Cheri Wright",
       "rating": 3,
-      "date": "a year ago",
       "text": "We did not stay here but did a drive thru around the whole thing. Campgrounds are dry and nothing fancy. But have hook ups in some spots. The lake is huge. It was very windy when we went and water was rough. Water was very green so not sure if that's anything to worry about. Very popular with Boaters. Beautiful canyon views.",
-      "source": "google_maps"
+      "date": "a year ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.7
 }

@@ -20,7 +20,7 @@ describe("campgroundReviewConfigs", () => {
 
   it("should have recGovCampgroundId for federal campgrounds", () => {
     const recGov = campgroundReviewConfigs.filter(c => c.recGovCampgroundId);
-    expect(recGov.length).toBe(13);
+    expect(recGov.length).toBe(12);
     for (const config of recGov) {
       expect(config.recGovCampgroundId).toMatch(/^\d+$/);
     }

@@ -1,44 +1,78 @@
 {
-  "campgroundId": 33,
+  "campgroundName": "Campground 33",
+  "totalReviewsOnPlatform": 356,
   "source": "google_maps",
-  "fetchedAt": "2026-07-12T19:32:24.170Z",
-  "placeRating": 4.5,
-  "totalRatings": 356,
   "reviews": [
     {
       "author": "ThereseBiz",
       "rating": 4,
       "text": "-This was my first visit to this very large, and busy campground. It was a beautiful state park with many trails and waterways and much more to do then camp!. Despite the campsites being fairly small and close together, I found a spot backed up to a forested area, providing a nice space to take my  dogs exploring. I opted for the east side farthest away from the dunes and ATVs, but enjoyed driving to the dunes to watch them roar by. There is also a great birding area on the drive out to the south jetty and numerous access points directly to the beach.\n-The day-use area was a pleasant surprise, offering a lodge-type gathering building and outdoor patio with picnic tables right on the lake. There was also a fishing dock, kayak and boat rentals, swimming area, and sand board rentals. Something for everybody! While the proximity to Highway 101 and lack of privacy were drawbacks, the overall atmosphere of the campground was enjoyable, with a summer camp-like vibe that would be perfect for a family or group visit. I also appreciated the amenities of Oregon State Campgrounds as they are usually very well kept, have firewood available and have large bathrooms with hot showers and flush toilets.\n-Despite the sometimes cramped sites and flurry of activity, I found the experience to be a fun change from my typical quiet nature get-a-way and I look forward to bringing my grandkids next time to do more then just camp!",
       "date": "a year ago",
-      "time": 1722096537
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Robert Mclaughlin",
       "rating": 5,
       "text": "Very nice very large place, over 400 spots. Very organized and the volunteers are very good and informative.  Mybe some food items at the store but that doesn't take away from what this park offers. Some sites are not full hook ups, no black water at spot but there is a dump station.",
       "date": "11 months ago",
-      "time": 1755045861
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Roger Kinder",
       "rating": 5,
       "text": "Had a great stay in H loop so we could ride our bikes out onto the sand directly from our camp site.  Sold fire wood and fire starter which was needed due to rain every night.  Bathrooms were good and warm showers were very nice!",
       "date": "2 months ago",
-      "time": 1777475186
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "June Fun",
       "rating": 5,
       "text": "The park was beautiful and had lots of great trails to explore. The smaller lake was warm enough that many people were swimming. There were also great hidden places to find if you wanted to go exploring. Our camping spot was nice and fit our 36ft. RV well. The only downside was that we had neighbors with yappy dogs. We had heard that the dune vehicles could make the area very noisy but were not bothered at all. Overall it was a beautiful park that we would love to come back to.",
       "date": "5 years ago",
-      "time": 1600133753
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Katie Ferris",
       "rating": 5,
       "text": "This was one of cleanest and most well maintained campgrounds I have ever stayed in. It is packed and was pretty busy most of our stay. We rented a yurt which I think is the way to go if you don’t have an RV, gives you a bit more privacy. Lots to do and see at the campsite and the surrounding areas including trails, dunes, swimming, and kayaking. The campground is patrolled by rangers and volunteers non stop, but they didn’t seem to be prohibiting people from enjoying themselves. I appreciated how secure the site was.",
       "date": "a year ago",
-      "time": 1724085028
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
-  ]
+  ],
+  "googleRating": 4.5
 }

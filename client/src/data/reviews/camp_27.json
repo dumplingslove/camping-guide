@@ -1,44 +1,78 @@
 {
-  "campgroundId": 27,
+  "campgroundName": "Campground 27",
+  "totalReviewsOnPlatform": 1265,
   "source": "google_maps",
-  "fetchedAt": "2026-07-12T19:32:18.037Z",
-  "placeRating": 4.5,
-  "totalRatings": 1265,
   "reviews": [
     {
       "author": "Deb Whitford",
       "rating": 5,
       "text": "Beautiful grass and trees...very clean park!  Campground is about 1/2 full right now before schools get out for Summer..  very peaceful 😉",
       "date": "2 months ago",
-      "time": 1777395826
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Gina Steinmetz",
       "rating": 5,
       "text": "I love this park. We have volunteered and camped here for 4 summers. The grounds show how hard the staff and volunteers put in to it. The head Ranger, Jose was always making everyone from guests to staff feel like they were his top priority. The parks has something for everybody. From lush, well groomed campsites, water access with beach and the famous Apple Capitol Loop trail that goes through it, you have it all. I really appreciated how clean and maintained the park was. Kudos for the best state park in the State of Washington!!!!! ( in my opinion:)",
       "date": "6 months ago",
-      "time": 1766512677
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Bad Influence Adventures",
       "rating": 3,
       "text": "It's a really nice park, but...\nMany of the sites have low hanging limbs that hit the roofs of 5th wheel trailers. Both loops need the limbs trimmed back to allow taller rigs to drive through without risking damage to ACs or the roof membrane.  Thankfully, our 5th wheel has a composite roof.",
       "date": "3 weeks ago",
-      "time": 1781576723
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Leslie McGehee",
       "rating": 5,
       "text": "I really liked this state park. It is fairly large & very well maintained & clean. We walked through the campground which looked very nice also. The Apple Capital Recreation Loop trail is right there if you want to get a good walk in. The beach area was lovely also. There is a bridge over the Wenatchee River where you can see it going into the Columbia River. Also, check out the gravel trail & you can see lots of nature there. Saw bald eagles & several ospreys. I'm a fan of Wenatchee in general, so I really enjoyed this park.",
       "date": "2 years ago",
-      "time": 1720671174
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Rob Burkhart",
       "rating": 5,
       "text": "So we have been on an epic road trip this summer. We are on day 65. We're just about to 15,000, MI. We've been left. Nevada went through Arizona, Utah, Montana, Canada, Alaska back down through Canada now in Washington state. While it's been an epic trip, I've got to say that this park has been one of the most amazing parts of it. Just a beautiful place. Tons of shade. Plenty of room between sites. Really really nice staff and rangers cannot say enough good about it.",
       "date": "12 months ago",
-      "time": 1752709120
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
-  ]
+  ],
+  "googleRating": 4.5
 }

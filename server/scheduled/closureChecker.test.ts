@@ -21,8 +21,7 @@ describe("closureChecker", () => {
     const ids = getRestrictedCampgroundIds();
     expect(ids).toContain(6);   // Ohanapecosh
     expect(ids).toContain(16);  // Cape Disappointment
-    expect(ids).toContain(21);  // Cape Lookout
-    expect(ids).toHaveLength(3);
+    expect(ids).toHaveLength(2);
   });
 
   it("reports still_closed when closure signals found", async () => {
@@ -32,7 +31,7 @@ describe("closureChecker", () => {
     });
 
     const results = await checkClosureStatus();
-    expect(results).toHaveLength(3);
+    expect(results).toHaveLength(2);
     
     const ohanapecosh = results.find(r => r.campgroundId === 6);
     expect(ohanapecosh).toBeDefined();
@@ -47,7 +46,7 @@ describe("closureChecker", () => {
     });
 
     const results = await checkClosureStatus();
-    expect(results).toHaveLength(3);
+    expect(results).toHaveLength(2);
     
     // All should show possibly_reopened since the mock returns availability signals
     results.forEach(r => {
@@ -59,7 +58,7 @@ describe("closureChecker", () => {
     mockFetch.mockRejectedValue(new Error("Network error"));
 
     const results = await checkClosureStatus();
-    expect(results).toHaveLength(3);
+    expect(results).toHaveLength(2);
     
     results.forEach(r => {
       expect(r.status).toBe("check_failed");
@@ -74,7 +73,7 @@ describe("closureChecker", () => {
     });
 
     const results = await checkClosureStatus();
-    expect(results).toHaveLength(3);
+    expect(results).toHaveLength(2);
     
     results.forEach(r => {
       expect(r.status).toBe("still_closed");
@@ -90,7 +89,7 @@ describe("closureChecker", () => {
     });
 
     const results = await checkClosureStatus();
-    expect(results).toHaveLength(3);
+    expect(results).toHaveLength(2);
     
     results.forEach(r => {
       expect(r.status).toBe("check_failed");

@@ -1,46 +1,78 @@
 {
-  "campgroundId": 44,
   "campgroundName": "Steamboat Rock",
-  "totalReviews": 5,
-  "averageRating": 4.8,
-  "googleTotalRatings": 1403,
+  "totalReviewsOnPlatform": 1403,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Dana Rand",
       "rating": 5,
-      "date": "10 months ago",
       "text": "Well maintained park. It resembles more like a privately operated RV park rather than a state park. Very clean bathrooms with some that have private bathroom/shower units. Walking paths connect all loops and provide access to beaches. An Ice cream truck drives around the loops in the evenings providing ice-cream and ice for a reasonable rate. There is a concession stand that sells pizza and candy. If you're up for a moderate to difficult hike, you can climb the monolith about 300 feet above the park providing a 360 degree view around Banks Lake.",
-      "source": "google_maps"
+      "date": "10 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Mercedes Cousland",
       "rating": 5,
-      "date": "2 months ago",
       "text": "Surprised about the surrounding beauty and campground was safe and clean. Have a plan B for hiking. The actual rock requires some hand scurrying! May come back just to play on the beach!!!",
-      "source": "google_maps"
+      "date": "2 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Cody Cole",
       "rating": 5,
-      "date": "3 weeks ago",
       "text": "I want to give it a lower rating in an attempt to make getting a site easier...but I just can't do it. 😄\nSteamboat Rock State Park is one of Washington's hidden gems. The views are incredible, the campground is clean and well maintained, and the sunsets over the lake are hard to beat. The beach is great for families, the water is perfect for swimming and paddleboarding, and hiking up the rock is absolutely worth the effort.\nThe staff does a fantastic job keeping everything running smoothly, and the whole place has a laid-back, peaceful vibe that's getting harder to find.\nSo, against my own selfish interests, here's the truth: ⭐⭐⭐⭐⭐. Just do me a favor and don't book the site I wanted. 😉",
-      "source": "google_maps"
+      "date": "3 weeks ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Andrew Lambert",
       "rating": 5,
-      "date": "11 months ago",
       "text": "Steamboat rock State Park is a amazing campground and park\nIt has plenty of amenities with eas access to the lake, boat and restrooms.\n\nMosquito's and ticks were not a issue for my family of humans and dogs although I have heard of that being a issue here.\n\nThe men's restroom had a broken urinal and the air dryers were worthless.\n\nMy only big complaint with the campground is it was being over run by scooters at high speed.\n\nSteamboat rock trail was a quick and challenging scenic hike. Proper footwear and water is highly recommended due to hot temps in the summer and unstable ground while ascending steamboat rock.",
-      "source": "google_maps"
+      "date": "11 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Greg King",
       "rating": 5,
-      "date": "9 months ago",
       "text": "This is a really my nice park down camping. It's kept up good and we saw the staff, I think maybe volunteers, cleaning each camp site after people checked out.\nIt's right on the water and the have a paved path that winds through each section of the park. Each access to the lake for putting in paddle boards and kayaks.\nAt the end of the park, the very north see section, is a large parking lot and boat ramp.\nThere is a hiking trail up to the top of Steamboat Rock, but read about the hike before taking it. Some sections are very step with fallen rock, making it difficult to walk across. There are also rattlesnakes around the rocks when it's hot outside.\nAlso this is a great fishing lake.\nThere is another great hike just a few miles away up Northrup canyon.\nThe only thing they needs attention are the bathrooms, they are old and in need of remodel or replacement. Most RVers don't use them anyway but tent campers do.\nDog friendly as well as long as they are on leash and on control. We saw lots of people with dogs and didn't see any dog poop anywhere, so people are respectful.\nThis has become one of our favorite parks.",
-      "source": "google_maps"
+      "date": "9 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.8
 }

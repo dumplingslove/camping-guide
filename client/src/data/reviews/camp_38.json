@@ -1,46 +1,78 @@
 {
-  "campgroundId": 38,
   "campgroundName": "Harris Beach",
-  "totalReviews": 5,
-  "averageRating": 4.6,
-  "googleTotalRatings": 284,
+  "totalReviewsOnPlatform": 284,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Lily Tatusko",
       "rating": 4,
-      "date": "a month ago",
       "text": "There’s some true disparity between the tent sites. We stayed at B9 and it was awesome!! There was even a little secret forest spot you could tuck a tent into. The even numbers B8-16 seem tough, some of the spots are so small you probably couldn’t even fit a 5 person tent. Short walk to the beach, views were AMAZING!! Check the tides for good tidepools! You can walk to the “downtown” area but we drove. Clean bathrooms! We booked online the night before and I’m glad we did because when we got there, all of the sites were reserved.",
-      "source": "google_maps"
+      "date": "a month ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "K S",
       "rating": 5,
-      "date": "3 months ago",
       "text": "Our favorite campground!\n\nThis is all because of the amazing park hosts and volunteer hosts! The facilities are very clean, the restrooms especially are amongst the cleanest I have stayed in. The hosts are the nicest, and keep the area super clean. We were amazed at how diligently each site is cleaned after, they do an amazing job setting up each camper for success. They also have firewood and fire starters available which made the whole trip that much better.\n\nWe loved our first stay so much we booked three more trips immediately, thank you for giving us something to look forward to, especially during these times.",
-      "source": "google_maps"
+      "date": "3 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Marnie Ravitch",
       "rating": 5,
-      "date": "8 months ago",
       "text": "Someone recommended we stay here on our trip up the west coast. We booked two nights last minute.  I really wish we could spend more time here.  If you love the ocean and beaches as well as huge, lush, shaded camping sites, this is for you!  A state park with fill rv hookups is kind of unusual. The place is spotless.  The adjacent park area is breathtaking. I can't wait to come back and spend more time!\n\nWe had to come in at night. I don't recommend that unless you're very comfortable parking in the dark.  It's very dark here at night.\n\nStaff is remarkably helpful.\n\nWe didn't use the restrooms so I can't speak to that.\n\nOur site was practically level; took very little tinkering.  Utilities in great shape, well maintained. Plenty of sky for our starlink.  I think t mobile worked fine here, too. Very spacious and private sites. Plenty of space for chairs, etc.\n\nNot far from Crescent City but a much better campground than you will find there.\n\nThe two nights we were here, we only heard the ocean. No loud neighbors or traffic whatsoever.\n\nThe picture attached was taken from the edge of our site.\n\nWe really can't wait to come back!!",
-      "source": "google_maps"
+      "date": "8 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Jenny Alexander",
       "rating": 5,
-      "date": "9 months ago",
       "text": "Harris Beach Campground State Park is well—maintained and attractive. We were in site 6A, which had a large grassy area and vegetation separating the sites on either side of us. A lot of the sites were under trees, which would be great on a hot day, but it was raining so we it wasn’t as dark and gloomy in our site.\nIt cleared enough for a walk down to the day use area and a spectacular sunset",
-      "source": "google_maps"
+      "date": "9 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Amber",
       "rating": 5,
-      "date": "a month ago",
       "text": "This palace is a one stop delight. Offering much to be desired. Ranger Danae is very openly to changes in schedule causi g need for reimbursement... this truly made our day. Stop in here. Make reservation. Support local. And Enjoy your time.. BIG thanks 😊 to these awesome caretakers. Try the yurt... they come heated.",
-      "source": "google_maps"
+      "date": "a month ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.6
 }

@@ -101,22 +101,9 @@
       "树荫充足",
       "适合游泳"
     ],
-    "areaInsights": [
-      {
-        "area": "Lake area",
-        "insight": "湖区有长椅、烤架、船只租赁和商店，水域和游泳区在好天气时较拥挤"
-      },
-      {
-        "area": "Forest area",
-        "insight": "森林步道安静祥和，有老树林，营位宽敞干净且有树荫"
-      }
-    ],
+    "cellCoverage": "评论中未提及手机信号情况",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "评论中未提及手机信号情况",
-    "wildlifeWarnings": "湖里有很多鱼，周围动植物丰富。带狗的游客需注意水边的钓鱼线，有狗曾被缠住。",
-    "facilitiesQuality": "卫生间干净且提供卫生纸，有淋浴设施。湖区有长椅、烤架、船只租赁和商店。公园提供排球网等娱乐设施。",
-    "noiseIssues": "夏季周末营地内可能会比较吵闹，但步道区域非常安静祥和。其他露营者通常很尊重他人，虽然有小孩但不会太吵。",
     "activitiesFromReviews": [
       {
         "name": "湖区活动",
@@ -131,6 +118,19 @@
         "description": "打排球、骑自行车和滑旱冰 (来源: Deborah W.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Lake area",
+        "insight": "湖区有长椅、烤架、船只租赁和商店，水域和游泳区在好天气时较拥挤"
+      },
+      {
+        "area": "Forest area",
+        "insight": "森林步道安静祥和，有老树林，营位宽敞干净且有树荫"
+      }
+    ],
+    "wildlifeWarnings": "湖里有很多鱼，周围动植物丰富。带狗的游客需注意水边的钓鱼线，有狗曾被缠住。",
+    "facilitiesQuality": "卫生间干净且提供卫生纸，有淋浴设施。湖区有长椅、烤架、船只租赁和商店。公园提供排球网等娱乐设施。",
+    "noiseIssues": "夏季周末营地内可能会比较吵闹，但步道区域非常安静祥和。其他露营者通常很尊重他人，虽然有小孩但不会太吵。",
     "bestSeasonTips": "夏季周末和天气好时，营地和水域周围会比较拥挤和吵闹。建议预留一两个小时探索安静的森林步道。"
   },
   "3": {
@@ -143,13 +143,9 @@
       "非露营季安静",
       "水位较低"
     ],
-    "areaInsights": [],
+    "cellCoverage": "无手机信号相关评论",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "无手机信号相关评论",
-    "wildlifeWarnings": "无野生动物相关评论",
-    "facilitiesQuality": "湖水干净，有专门的家庭游泳区；没有环湖步道或自行车道",
-    "noiseIssues": "非露营季非常安静，无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "划船/皮划艇/独木舟/水上摩托",
@@ -168,6 +164,10 @@
         "description": "有专门的家庭游泳区 (来源: Crazy B.)"
       }
     ],
+    "areaInsights": [],
+    "wildlifeWarnings": "无野生动物相关评论",
+    "facilitiesQuality": "湖水干净，有专门的家庭游泳区；没有环湖步道或自行车道",
+    "noiseIssues": "非露营季非常安静，无明显噪音投诉",
     "bestSeasonTips": "非露营季（淡季）非常安静，但可能会遇到水位远低于平均水平的情况"
   },
   "4": {
@@ -183,28 +183,7 @@
       "火柴木价格高",
       "道路噪音大"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop A",
-        "insight": "靠近主路，交通噪音大，营地较适合带车露营，A11距离主路近且受光干扰严重"
-      },
-      {
-        "area": "Loop B",
-        "insight": "营地空间较小，部分营位无遮阴如B023，B002风景好但空间小，B019湿润靠近溪流，社交距离好"
-      },
-      {
-        "area": "Loop C",
-        "insight": "危险树木多，许多营位关闭，C026仅有路边碎石无营地区域，C015、C028拉车道宽敞适合RV，C013树荫和私密性好，C028位置偏远安静，部分营地人流较多如C012"
-      },
-      {
-        "area": "Loop D",
-        "insight": "距离天堂较近，营地空间和隐私较好，D032评价很高，D028、D034营地设施完备，存在大量死树需管理"
-      },
-      {
-        "area": "Loop E",
-        "insight": "营地较为安静无发电机政策，E014位置隐蔽且分层，E019靠近主路噪音大且空间小，E025空间紧凑但风景好"
-      }
-    ],
+    "cellCoverage": "所有营地均无手机信号，部分评论提及Wired手机无信号，Verizon和T-Mobile也无信号，只有天堂游客中心和Longmire区域能接收到部分T-Mobile信号",
     "recommendedSites": [
       {
         "site": "D032",
@@ -257,10 +236,6 @@
         "reason": "关闭导致预订冲突与搬迁麻烦"
       }
     ],
-    "cellCoverage": "所有营地均无手机信号，部分评论提及Wired手机无信号，Verizon和T-Mobile也无信号，只有天堂游客中心和Longmire区域能接收到部分T-Mobile信号",
-    "wildlifeWarnings": "无明显野生动物威胁报道，建议所有营地访客将食物存放于车内以防熊类，野兔偶尔可见，营地周边树木多，存在部分危险倒伏树，应谨慎",
-    "facilitiesQuality": "卫生间干净且维护良好，部分营地设有用水水龙头和洗碗槽，无淋浴设施；火柴木不可在营地购买，仅在Longmire商店以15美元一捆出售，价格较高，部分游客提取倒伏树枝为燃料；一些营地设有回收设施",
-    "noiseIssues": "主路车辆噪音大，尤其A11及E19，部分营地邻近道路难避免；营地内无发电机使用政策；某些营地因游客行走频繁如C012影响静谧；夜间机动车远光灯刺眼影响睡眠",
     "activitiesFromReviews": [
       {
         "name": "天堂徒步",
@@ -287,6 +262,31 @@
         "description": "夏季消暑好去处(来源: Gillian V.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop A",
+        "insight": "靠近主路，交通噪音大，营地较适合带车露营，A11距离主路近且受光干扰严重"
+      },
+      {
+        "area": "Loop B",
+        "insight": "营地空间较小，部分营位无遮阴如B023，B002风景好但空间小，B019湿润靠近溪流，社交距离好"
+      },
+      {
+        "area": "Loop C",
+        "insight": "危险树木多，许多营位关闭，C026仅有路边碎石无营地区域，C015、C028拉车道宽敞适合RV，C013树荫和私密性好，C028位置偏远安静，部分营地人流较多如C012"
+      },
+      {
+        "area": "Loop D",
+        "insight": "距离天堂较近，营地空间和隐私较好，D032评价很高，D028、D034营地设施完备，存在大量死树需管理"
+      },
+      {
+        "area": "Loop E",
+        "insight": "营地较为安静无发电机政策，E014位置隐蔽且分层，E019靠近主路噪音大且空间小，E025空间紧凑但风景好"
+      }
+    ],
+    "wildlifeWarnings": "无明显野生动物威胁报道，建议所有营地访客将食物存放于车内以防熊类，野兔偶尔可见，营地周边树木多，存在部分危险倒伏树，应谨慎",
+    "facilitiesQuality": "卫生间干净且维护良好，部分营地设有用水水龙头和洗碗槽，无淋浴设施；火柴木不可在营地购买，仅在Longmire商店以15美元一捆出售，价格较高，部分游客提取倒伏树枝为燃料；一些营地设有回收设施",
+    "noiseIssues": "主路车辆噪音大，尤其A11及E19，部分营地邻近道路难避免；营地内无发电机使用政策；某些营地因游客行走频繁如C012影响静谧；夜间机动车远光灯刺眼影响睡眠",
     "bestSeasonTips": "夏季8月底至9月初游客多，部分营地及环路在劳动节后关闭，需注意搬迁规则；野火禁令未普遍实施，但野外购买火柴木价格较高；夏季晚间气温凉爽适宜远足，冬季部分高海拔步道仍有积雪；避免夏季盛花季过早访问，以免未见野花(来源: Melissa M.)"
   },
   "5": {
@@ -300,13 +300,9 @@
       "轮椅友好",
       "有虫子"
     ],
-    "areaInsights": [],
+    "cellCoverage": "未提及手机信号情况",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "未提及手机信号情况",
-    "wildlifeWarnings": "未提及野生动物或食物储存建议",
-    "facilitiesQuality": "厕所干净且备品充足; 有轮椅通道直达水边; 有游船下水区、取暖小屋和游乐场; 州立公园的电子预订系统存在问题，经常无法正常工作",
-    "noiseIssues": "无明显噪音投诉，但提到有持续的风",
     "activitiesFromReviews": [
       {
         "name": "皮划艇",
@@ -325,6 +321,10 @@
         "description": "距离Leavenworth不远，适合顺道游览 (来源: Julia P.)"
       }
     ],
+    "areaInsights": [],
+    "wildlifeWarnings": "未提及野生动物或食物储存建议",
+    "facilitiesQuality": "厕所干净且备品充足; 有轮椅通道直达水边; 有游船下水区、取暖小屋和游乐场; 州立公园的电子预订系统存在问题，经常无法正常工作",
+    "noiseIssues": "无明显噪音投诉，但提到有持续的风",
     "bestSeasonTips": "秋季: 颜色最美，但颜色最好看的营地通常在最美的时候关闭; 夏季: 风停后会有很多虫子; 季节末期: 售票亭会关闭，需要准备现金"
   },
   "6": {
@@ -338,36 +338,7 @@
       "适合徒步",
       "靠近瀑布"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop A",
-        "insight": "靠近河流，风景优美，但部分营位缺乏隐私，有噪音问题"
-      },
-      {
-        "area": "Loop C",
-        "insight": "靠近河流，部分营位非常宽敞，但有些营位靠近步道或垃圾站，隐私较差"
-      },
-      {
-        "area": "Loop D",
-        "insight": "靠近河流和步道，部分营位宽敞平坦，但内部营位隐私较差，偶尔有噪音"
-      },
-      {
-        "area": "Loop E",
-        "insight": "营位宽敞，树木茂密，距离卫生间近，整体安静"
-      },
-      {
-        "area": "Loop F",
-        "insight": "适合家庭，安静，靠近步道，树冠覆盖好"
-      },
-      {
-        "area": "Loop G",
-        "insight": "需步行上山，适合年轻人，适合观星"
-      },
-      {
-        "area": "Loop H",
-        "insight": "靠近道路，有车辆交通噪音"
-      }
-    ],
+    "cellCoverage": "营地内基本无手机信号，但在Paradise区域有满格信号。",
     "recommendedSites": [
       {
         "site": "C017",
@@ -424,10 +395,6 @@
         "reason": "靠近道路，车辆交通多，帐篷区中间有大树根"
       }
     ],
-    "cellCoverage": "营地内基本无手机信号，但在Paradise区域有满格信号。",
-    "wildlifeWarnings": "营地有防熊箱，确实有熊出没。有花栗鼠、乌鸦、知更鸟和雀类。黄昏时有少量蚊子。建议将食物存放在车内或防熊箱中。",
-    "facilitiesQuality": "卫生间干净，有冲水马桶和自来水水槽，但没有淋浴。部分卫生间经常缺少纸巾。有饮用水。营地有防熊箱。有卖柴火的人（7美元一捆，含引火物）。",
-    "noiseIssues": "部分营位（如A046）有邻居大声喧哗、开派对和狗叫的问题。部分营位（如H019）有车辆交通噪音。靠近河流的营位有水流的白噪音。整体来说，大多数营位比较安静。",
     "activitiesFromReviews": [
       {
         "name": "Silver Falls Trail",
@@ -450,6 +417,39 @@
         "description": "距离营地约45-60分钟车程，风景优美 (来源: Caroline B., Steven J.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop A",
+        "insight": "靠近河流，风景优美，但部分营位缺乏隐私，有噪音问题"
+      },
+      {
+        "area": "Loop C",
+        "insight": "靠近河流，部分营位非常宽敞，但有些营位靠近步道或垃圾站，隐私较差"
+      },
+      {
+        "area": "Loop D",
+        "insight": "靠近河流和步道，部分营位宽敞平坦，但内部营位隐私较差，偶尔有噪音"
+      },
+      {
+        "area": "Loop E",
+        "insight": "营位宽敞，树木茂密，距离卫生间近，整体安静"
+      },
+      {
+        "area": "Loop F",
+        "insight": "适合家庭，安静，靠近步道，树冠覆盖好"
+      },
+      {
+        "area": "Loop G",
+        "insight": "需步行上山，适合年轻人，适合观星"
+      },
+      {
+        "area": "Loop H",
+        "insight": "靠近道路，有车辆交通噪音"
+      }
+    ],
+    "wildlifeWarnings": "营地有防熊箱，确实有熊出没。有花栗鼠、乌鸦、知更鸟和雀类。黄昏时有少量蚊子。建议将食物存放在车内或防熊箱中。",
+    "facilitiesQuality": "卫生间干净，有冲水马桶和自来水水槽，但没有淋浴。部分卫生间经常缺少纸巾。有饮用水。营地有防熊箱。有卖柴火的人（7美元一捆，含引火物）。",
+    "noiseIssues": "部分营位（如A046）有邻居大声喧哗、开派对和狗叫的问题。部分营位（如H019）有车辆交通噪音。靠近河流的营位有水流的白噪音。整体来说，大多数营位比较安静。",
     "bestSeasonTips": "夏季（7月和8月）是旺季，建议提前预订。6月初晚上较冷（华氏40-50度）。夏季周末建议早上7点前到达Paradise或Sunrise以避免排队，工作日建议早上8点前到达。部分区域在季末（如9月）可能会关闭。"
   },
   "7": {
@@ -463,24 +463,7 @@
       "设施缺乏",
       "手机信号差"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop A",
-        "insight": "厕所维修中只有移动厕所，营位拥挤不平，离湖近但有游泳者痒症警告"
-      },
-      {
-        "area": "Loop B",
-        "insight": "有冲水马桶但无淋浴，部分营位(如27, 29, 31)适合帐篷且有隐私，但部分营位(如20, 31)不平整不适合房车"
-      },
-      {
-        "area": "Loop C",
-        "insight": "离湖近，部分营位(如53)宽敞但缺乏隐私，能听到公路噪音"
-      },
-      {
-        "area": "Walk-in区域(80号段)",
-        "insight": "紧邻湖畔风景极佳，但需要搬运装备上下陡坡，部分营位(如83, 84)空间小且不平整，缺乏隐私"
-      }
-    ],
+    "cellCoverage": "大部分区域无信号（如Verizon无信号），但有评论提到T-Mobile有1-2格5G信号",
     "recommendedSites": [
       {
         "site": "85",
@@ -529,10 +512,6 @@
         "reason": "空间极小，只能勉强放下一两人的背包帐篷"
       }
     ],
-    "cellCoverage": "大部分区域无信号（如Verizon无信号），但有评论提到T-Mobile有1-2格5G信号",
-    "wildlifeWarnings": "有防熊箱(bear boxes/food lockers)提供，但有人乱扔垃圾可能引来熊，有乌鸦出没，有提到湖边有可爱的鸭子",
-    "facilitiesQuality": "有新装修的冲水马桶（Loop B和C），但没有淋浴设施。Loop A的厕所维修中，只有移动厕所且情况糟糕（满溢、有虫子）。有饮用水龙头。没有肥皂和纸巾短缺。有杂货店但只收现金且价格标示不准。营地不提供洗手液，需要自带",
-    "noiseIssues": "101号公路的交通噪音非常大，尤其是早上的伐木卡车（使用压缩刹车），日夜都有车辆噪音。还有邻居的噪音（大声说话、发电机、打呼噜）",
     "activitiesFromReviews": [
       {
         "name": "Olympic Discovery Trail",
@@ -551,6 +530,27 @@
         "description": "可以在湖边玩桨板、游泳和划船 (来源: Sofia B., Maria M.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop A",
+        "insight": "厕所维修中只有移动厕所，营位拥挤不平，离湖近但有游泳者痒症警告"
+      },
+      {
+        "area": "Loop B",
+        "insight": "有冲水马桶但无淋浴，部分营位(如27, 29, 31)适合帐篷且有隐私，但部分营位(如20, 31)不平整不适合房车"
+      },
+      {
+        "area": "Loop C",
+        "insight": "离湖近，部分营位(如53)宽敞但缺乏隐私，能听到公路噪音"
+      },
+      {
+        "area": "Walk-in区域(80号段)",
+        "insight": "紧邻湖畔风景极佳，但需要搬运装备上下陡坡，部分营位(如83, 84)空间小且不平整，缺乏隐私"
+      }
+    ],
+    "wildlifeWarnings": "有防熊箱(bear boxes/food lockers)提供，但有人乱扔垃圾可能引来熊，有乌鸦出没，有提到湖边有可爱的鸭子",
+    "facilitiesQuality": "有新装修的冲水马桶（Loop B和C），但没有淋浴设施。Loop A的厕所维修中，只有移动厕所且情况糟糕（满溢、有虫子）。有饮用水龙头。没有肥皂和纸巾短缺。有杂货店但只收现金且价格标示不准。营地不提供洗手液，需要自带",
+    "noiseIssues": "101号公路的交通噪音非常大，尤其是早上的伐木卡车（使用压缩刹车），日夜都有车辆噪音。还有邻居的噪音（大声说话、发电机、打呼噜）",
     "bestSeasonTips": "海拔较高，晚上非常冷。气候潮湿，生火可能较困难。夏季（6-8月）是旺季，很难预订到连续两晚的营位，且可能有禁火令（burn ban）"
   },
   "8": {
@@ -565,12 +565,7 @@
       "船只噪音",
       "缺乏隐私"
     ],
-    "areaInsights": [
-      {
-        "area": "Mountain view lodge",
-        "insight": "适合家庭和带狗入住"
-      }
-    ],
+    "cellCoverage": "无手机信号相关评论",
     "recommendedSites": [
       {
         "site": "85",
@@ -578,10 +573,6 @@
       }
     ],
     "avoidSites": [],
-    "cellCoverage": "无手机信号相关评论",
-    "wildlifeWarnings": "无野生动物相关评论",
-    "facilitiesQuality": "厕所干净，配有独立的淋浴间（有评论提到附近厕所有4个独立淋浴间）；营地维护良好；有宽敞的儿童游乐场和指定的游泳区；沙滩区域较小。",
-    "noiseIssues": "夏季有非常大的船只噪音（boating noise）。",
     "activitiesFromReviews": [
       {
         "name": "游泳",
@@ -604,6 +595,15 @@
         "description": "可以在湖边看烟花 (来源: Pooja R.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Mountain view lodge",
+        "insight": "适合家庭和带狗入住"
+      }
+    ],
+    "wildlifeWarnings": "无野生动物相关评论",
+    "facilitiesQuality": "厕所干净，配有独立的淋浴间（有评论提到附近厕所有4个独立淋浴间）；营地维护良好；有宽敞的儿童游乐场和指定的游泳区；沙滩区域较小。",
+    "noiseIssues": "夏季有非常大的船只噪音（boating noise）。",
     "bestSeasonTips": "夏季会有很大的船只噪音；如果去钓鱼，6月前湖水满时建议乘船钓鱼，6月之后更适合岸钓。"
   },
   "9": {
@@ -619,18 +619,9 @@
       "允许海滩生火",
       "春季风大寒冷"
     ],
-    "areaInsights": [
-      {
-        "area": "Joe Creek",
-        "insight": "沿溪流露营体验很好 (来源: Blu O.)"
-      }
-    ],
+    "cellCoverage": "无明确提及手机信号情况",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "无明确提及手机信号情况",
-    "wildlifeWarnings": "无明确提及野生动物或食物储存建议",
-    "facilitiesQuality": "营地仅提供电力接入（30安培），有排污站；无饮用水加水点，水龙头的水未过滤，需提前备好淡水；允许使用便携式燃气/丙烷火坑，木柴生火只能在海滩上进行；洗手间很干净，但靠近登记处的洗手间因被破坏而关闭；淋浴间可用但有些破旧，需要更换瓷砖和清洁维护；营地草坪有时未修剪。",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "海滩漫步",
@@ -649,6 +640,15 @@
         "description": "晚上可以观星 (来源: Wildcraft R.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Joe Creek",
+        "insight": "沿溪流露营体验很好 (来源: Blu O.)"
+      }
+    ],
+    "wildlifeWarnings": "无明确提及野生动物或食物储存建议",
+    "facilitiesQuality": "营地仅提供电力接入（30安培），有排污站；无饮用水加水点，水龙头的水未过滤，需提前备好淡水；允许使用便携式燃气/丙烷火坑，木柴生火只能在海滩上进行；洗手间很干净，但靠近登记处的洗手间因被破坏而关闭；淋浴间可用但有些破旧，需要更换瓷砖和清洁维护；营地草坪有时未修剪。",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "春季不太拥挤，但天气可能寒冷多风，需要做好防风保暖准备；去之前建议查看天气预报，可能会遇到风暴。"
   },
   "10": {
@@ -661,13 +661,9 @@
       "冬季免费",
       "停车位充足"
     ],
-    "areaInsights": [],
+    "cellCoverage": "未提及手机信号情况",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "未提及手机信号情况",
-    "wildlifeWarnings": "在潮汐池可看到无脊椎动物、鸟类和鱼类；未提及危险野生动物或食物储存建议",
-    "facilitiesQuality": "有很棒的浴室（nice bathrooms）和游乐场（nice playground），停车位充足，还有一些可供过夜的额外停车位",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "Tongue Point潮汐池",
@@ -690,6 +686,10 @@
         "description": "在海滩上捡拾贝壳、看日落、玩水或在公园里玩耍 (来源: P T.)"
       }
     ],
+    "areaInsights": [],
+    "wildlifeWarnings": "在潮汐池可看到无脊椎动物、鸟类和鱼类；未提及危险野生动物或食物储存建议",
+    "facilitiesQuality": "有很棒的浴室（nice bathrooms）和游乐场（nice playground），停车位充足，还有一些可供过夜的额外停车位",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "冬季免收费用，且停车位充足；退潮时是探索潮汐池和岛屿的最佳时机"
   },
   "11": {
@@ -705,32 +705,7 @@
       "缺乏隐私",
       "靠近生命之树"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop A",
-        "insight": "靠近海滩，部分营位有海景，但靠近公路的营位噪音大，A027非常私密，A013宽敞，A069靠近厕所和垃圾桶有异味"
-      },
-      {
-        "area": "Loop B",
-        "insight": "树荫多，B011位置好且隐蔽，B018靠近101公路有噪音"
-      },
-      {
-        "area": "Loop C",
-        "insight": "树林中，树荫多，C005离海滩不远但有公路噪音，C014停车空间小"
-      },
-      {
-        "area": "Loop D",
-        "insight": "D034退后于悬崖但仍有海景且防风，D038空间只有正常一半大，D008靠路边噪音大"
-      },
-      {
-        "area": "Loop E",
-        "insight": "E004建在水泥板上不适合帐篷，E区厕所曾翻修"
-      },
-      {
-        "area": "Loop F",
-        "insight": "F002私密但狭窄且无海景，F006能听到海浪声"
-      }
-    ],
+    "cellCoverage": "评论中未明确提及手机信号覆盖情况。",
     "recommendedSites": [
       {
         "site": "A027",
@@ -783,10 +758,6 @@
         "reason": "营位短且狭窄，地图显示在海边但因植被遮挡无海景"
       }
     ],
-    "cellCoverage": "评论中未明确提及手机信号覆盖情况。",
-    "wildlifeWarnings": "野生动物不是大问题，但建议不要把东西随处乱放。在海滩上可以看到老鹰，有时早晨能在岸边看到灰鲸。退潮时在Ruby Beach和Beach 4可以看到海星等海洋生物。没有提到熊或浣熊的警告。",
-    "facilitiesQuality": "厕所评价两极分化，部分人认为非常干净（可能是翻修后），但多人抱怨没有肥皂、洗手液或纸巾，且干手机损坏。E区厕所曾长期处于施工状态。营地没有淋浴设施。有饮用水龙头，但部分可能无法使用。房车排污站收费（$10，老年人$5），且需要穿过营地。每个营位都有带烤架的火坑，但部分烤架损坏。",
-    "noiseIssues": "主要噪音来源是101公路（US Hwy 101）上的伐木卡车和交通噪音，尤其是靠近公路的营位（如D016, A063, A069, B018）。其他噪音包括：夏季拥挤时的邻居噪音（大声放音乐、看电影、玩游戏）、狗叫声（如C002）、以及清晨的交通噪音。海浪声在部分营位可以作为很好的白噪音。",
     "activitiesFromReviews": [
       {
         "name": "Ruby Beach",
@@ -813,6 +784,35 @@
         "description": "距离约35英里，有老式木屋和餐厅 (来源: Gary D.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop A",
+        "insight": "靠近海滩，部分营位有海景，但靠近公路的营位噪音大，A027非常私密，A013宽敞，A069靠近厕所和垃圾桶有异味"
+      },
+      {
+        "area": "Loop B",
+        "insight": "树荫多，B011位置好且隐蔽，B018靠近101公路有噪音"
+      },
+      {
+        "area": "Loop C",
+        "insight": "树林中，树荫多，C005离海滩不远但有公路噪音，C014停车空间小"
+      },
+      {
+        "area": "Loop D",
+        "insight": "D034退后于悬崖但仍有海景且防风，D038空间只有正常一半大，D008靠路边噪音大"
+      },
+      {
+        "area": "Loop E",
+        "insight": "E004建在水泥板上不适合帐篷，E区厕所曾翻修"
+      },
+      {
+        "area": "Loop F",
+        "insight": "F002私密但狭窄且无海景，F006能听到海浪声"
+      }
+    ],
+    "wildlifeWarnings": "野生动物不是大问题，但建议不要把东西随处乱放。在海滩上可以看到老鹰，有时早晨能在岸边看到灰鲸。退潮时在Ruby Beach和Beach 4可以看到海星等海洋生物。没有提到熊或浣熊的警告。",
+    "facilitiesQuality": "厕所评价两极分化，部分人认为非常干净（可能是翻修后），但多人抱怨没有肥皂、洗手液或纸巾，且干手机损坏。E区厕所曾长期处于施工状态。营地没有淋浴设施。有饮用水龙头，但部分可能无法使用。房车排污站收费（$10，老年人$5），且需要穿过营地。每个营位都有带烤架的火坑，但部分烤架损坏。",
+    "noiseIssues": "主要噪音来源是101公路（US Hwy 101）上的伐木卡车和交通噪音，尤其是靠近公路的营位（如D016, A063, A069, B018）。其他噪音包括：夏季拥挤时的邻居噪音（大声放音乐、看电影、玩游戏）、狗叫声（如C002）、以及清晨的交通噪音。海浪声在部分营位可以作为很好的白噪音。",
     "bestSeasonTips": "夏季（7-8月）非常繁忙且难以预订，即使在夏天沿海温度也较凉爽，太阳下山后会变冷。华盛顿州雨季时树冠覆盖能提供很好的保护。夏季中午停车要注意防晒，车内温度可能会很高。海滩即使在夏天也可能多风且寒冷。"
   },
   "12": {
@@ -824,13 +824,9 @@
       "设施丰富",
       "靠近州立公园"
     ],
-    "areaInsights": [],
+    "cellCoverage": "未提及手机信号",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "未提及手机信号",
-    "wildlifeWarnings": "未提及野生动物",
-    "facilitiesQuality": "营地和木屋非常干净，商店物资齐全；提供迷你高尔夫、沙包、泳池/热水浴缸和营火等设施；木屋的睡垫很舒服，但部分木屋缺乏咖啡机、电视等现代设施，且窗帘遮光效果差。",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "海滩漫步",
@@ -849,6 +845,10 @@
         "description": "骑车穿过对面的Ft Stevens州立公园可达 (来源: Caitlin J.)"
       }
     ],
+    "areaInsights": [],
+    "wildlifeWarnings": "未提及野生动物",
+    "facilitiesQuality": "营地和木屋非常干净，商店物资齐全；提供迷你高尔夫、沙包、泳池/热水浴缸和营火等设施；木屋的睡垫很舒服，但部分木屋缺乏咖啡机、电视等现代设施，且窗帘遮光效果差。",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "未提及最佳季节建议"
   },
   "13": {
@@ -862,22 +862,9 @@
       "设施完善",
       "靠近Newport"
     ],
-    "areaInsights": [
-      {
-        "area": "游乐场附近",
-        "insight": "白天和晚上可能很吵闹，孩子们活动频繁"
-      },
-      {
-        "area": "海滩区域",
-        "insight": "不直接挨着营地，需要穿过沙丘和海岸森林步行到达"
-      }
-    ],
+    "cellCoverage": "评论中未提及手机信号情况",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "评论中未提及手机信号情况",
-    "wildlifeWarnings": "4月底蚊子非常多，黄昏时分尤其严重，建议带驱蚊液；远处能听到海狮的叫声，但不算吵闹。",
-    "facilitiesQuality": "营地非常干净，维护良好。厕所和淋浴间很干净，淋浴免费且无需排长队。有铺设好的步道和飞盘高尔夫球场。",
-    "noiseIssues": "游乐场附近白天和晚上会有孩子们玩耍的噪音，比较吵闹；远处能听到海狮的叫声，但不扰人。",
     "activitiesFromReviews": [
       {
         "name": "海滩步行",
@@ -896,6 +883,19 @@
         "description": "靠近Newport，方便就餐和游览景点 (来源: Vee K.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "游乐场附近",
+        "insight": "白天和晚上可能很吵闹，孩子们活动频繁"
+      },
+      {
+        "area": "海滩区域",
+        "insight": "不直接挨着营地，需要穿过沙丘和海岸森林步行到达"
+      }
+    ],
+    "wildlifeWarnings": "4月底蚊子非常多，黄昏时分尤其严重，建议带驱蚊液；远处能听到海狮的叫声，但不算吵闹。",
+    "facilitiesQuality": "营地非常干净，维护良好。厕所和淋浴间很干净，淋浴免费且无需排长队。有铺设好的步道和飞盘高尔夫球场。",
+    "noiseIssues": "游乐场附近白天和晚上会有孩子们玩耍的噪音，比较吵闹；远处能听到海狮的叫声，但不扰人。",
     "bestSeasonTips": "4月底蚊子非常多，黄昏时分尤其严重，必须带驱蚊液；天气适合喜欢凉爽气候的人。"
   },
   "14": {
@@ -908,24 +908,7 @@
       "靠近Astoria",
       "营地费用较高"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop H",
-        "insight": "营地中间和附近可能比较泥泞，有蚊子"
-      },
-      {
-        "area": "Loop F",
-        "insight": "营地235号，安静、平和、易于导航，有大型房车拉通车位，有电和水，附近有洗手间、火坑和野餐桌"
-      },
-      {
-        "area": "Loop F",
-        "insight": "营地236号，相对私密，虽然不是完全平坦但可以使用"
-      },
-      {
-        "area": "Loop E",
-        "insight": "有淋浴设施"
-      }
-    ],
+    "cellCoverage": "无明确提及手机信号",
     "recommendedSites": [
       {
         "site": "F235",
@@ -937,10 +920,6 @@
       }
     ],
     "avoidSites": [],
-    "cellCoverage": "无明确提及手机信号",
-    "wildlifeWarnings": "蚊子非常多，建议带强效驱蚊喷雾（如含有氯菊酯的喷雾），并注意防蚊措施。公园内有麋鹿自由漫步，开车需缓慢谨慎。",
-    "facilitiesQuality": "淋浴热水充足，洗手间/淋浴间有些简陋但热水很多。有电和水，有火坑和野餐桌。有免费热水淋浴。公园外有自助洗衣店。排污费10美元。",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "Astoria Sunday market",
@@ -967,6 +946,27 @@
         "description": "游乐场 (来源: Cathy O.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop H",
+        "insight": "营地中间和附近可能比较泥泞，有蚊子"
+      },
+      {
+        "area": "Loop F",
+        "insight": "营地235号，安静、平和、易于导航，有大型房车拉通车位，有电和水，附近有洗手间、火坑和野餐桌"
+      },
+      {
+        "area": "Loop F",
+        "insight": "营地236号，相对私密，虽然不是完全平坦但可以使用"
+      },
+      {
+        "area": "Loop E",
+        "insight": "有淋浴设施"
+      }
+    ],
+    "wildlifeWarnings": "蚊子非常多，建议带强效驱蚊喷雾（如含有氯菊酯的喷雾），并注意防蚊措施。公园内有麋鹿自由漫步，开车需缓慢谨慎。",
+    "facilitiesQuality": "淋浴热水充足，洗手间/淋浴间有些简陋但热水很多。有电和水，有火坑和野餐桌。有免费热水淋浴。公园外有自助洗衣店。排污费10美元。",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "捕鱼季节可能不适合非捕鱼游客 (来源: Carl O.)"
   },
   "15": {
@@ -980,18 +980,9 @@
       "靠近溪流",
       "交通便利"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop A",
-        "insight": "靠近海滩入口，去海滩非常方便，且海滩前有厕所，适合带小孩的家庭"
-      }
-    ],
+    "cellCoverage": "评论中未提及手机信号情况",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "评论中未提及手机信号情况",
-    "wildlifeWarnings": "评论中未提及野生动物或食物储存警告",
-    "facilitiesQuality": "厕所和淋浴非常干净，提供热水淋浴；游乐场很干净；公园近期进行了大规模维修，升级了公用设施，重新铺设了大部分区域的道路，并修剪了树木。",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "海滩",
@@ -1010,6 +1001,15 @@
         "description": "位于Lincoln City和Newport之间，就在高速公路旁，附近有很多餐厅和杂货店 (来源: Elizabeth N.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop A",
+        "insight": "靠近海滩入口，去海滩非常方便，且海滩前有厕所，适合带小孩的家庭"
+      }
+    ],
+    "wildlifeWarnings": "评论中未提及野生动物或食物储存警告",
+    "facilitiesQuality": "厕所和淋浴非常干净，提供热水淋浴；游乐场很干净；公园近期进行了大规模维修，升级了公用设施，重新铺设了大部分区域的道路，并修剪了树木。",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "春假期间人较多，但学校开学后（春假后几天）营地会变得非常空旷；夏季周末体验很好。"
   },
   "16": {
@@ -1020,18 +1020,9 @@
       "设施维护好",
       "适合观鸟"
     ],
-    "areaInsights": [
-      {
-        "area": "小木屋区",
-        "insight": "维护良好，有暖气和电源，但营位间距太近缺乏隐私"
-      }
-    ],
+    "cellCoverage": "未提及手机信号",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "未提及手机信号",
-    "wildlifeWarnings": "海滩有许多水母冲上岸；悬崖上可远观海狮和各种鸟类；未提及食物存放警告",
-    "facilitiesQuality": "小木屋维护良好，有暖气和电源；到处都有充足的卫生间；道路维护良好",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "Dead Man’s Cove徒步",
@@ -1050,6 +1041,15 @@
         "description": "附近就餐好去处，食物和饮品很棒 (来源: Shubhro B.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "小木屋区",
+        "insight": "维护良好，有暖气和电源，但营位间距太近缺乏隐私"
+      }
+    ],
+    "wildlifeWarnings": "海滩有许多水母冲上岸；悬崖上可远观海狮和各种鸟类；未提及食物存放警告",
+    "facilitiesQuality": "小木屋维护良好，有暖气和电源；到处都有充足的卫生间；道路维护良好",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "4月初海滩通道和露营地可能会关闭；天气多变，建议随时准备雨衣和雨裤"
   },
   "17": {
@@ -1065,16 +1065,7 @@
       "适合家庭",
       "禁火令"
     ],
-    "areaInsights": [
-      {
-        "area": "AREA TRILLIUM",
-        "insight": "营位宽敞私密，部分营位靠近湖边，但Day Use区域非常拥挤，周末和节假日人满为患，有非露营者占用资源的问题"
-      },
-      {
-        "area": "Dam Area",
-        "insight": "061号营地有宽敞的蒙古包(Yurt)，配有床铺和燃气炉，但没有电，门锁需要往上提才能锁上"
-      }
-    ],
+    "cellCoverage": "评论中未提及手机信号情况",
     "recommendedSites": [
       {
         "site": "016",
@@ -1099,10 +1090,6 @@
         "reason": "标志不清，找不到位置，预订的停车位被占，且不直接靠水"
       }
     ],
-    "cellCoverage": "评论中未提及手机信号情况",
-    "wildlifeWarnings": "有花栗鼠(chipmunks)在营地跑动；看到了秃鹰(bald eagle)和老鹰(Hawk)；有木蚁(carpenter ants)出没；未提及熊或浣熊等大型野生动物及食物储存警告，但提到如果营位靠近湖边和主步道，需要锁好个人物品以防被盗。",
-    "facilitiesQuality": "旱厕(vault/pit toilets)大多保持干净且有纸，但部分营位(如035)附近味道极重；有自来水供应，但有时会停水(如041营位遇到水龙头被塑料袋包住停水)；营地不再售卖柴火，需要去镇上买；部分营位的野餐桌损坏(如006、022、047)；有铺装的停车位和道路。",
-    "noiseIssues": "主要噪音来源：房车发电机噪音(部分人无视规定整天运行)、Day Use区域的游客(大声喧哗、放音乐)、深夜放烟花、半夜翻垃圾桶找瓶子的人、以及不遵守规定的狗。",
     "activitiesFromReviews": [
       {
         "name": "Timberline Lodge",
@@ -1125,6 +1112,19 @@
         "description": "湖面平静，有船道和租赁服务 (来源: 多位reviewer)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "AREA TRILLIUM",
+        "insight": "营位宽敞私密，部分营位靠近湖边，但Day Use区域非常拥挤，周末和节假日人满为患，有非露营者占用资源的问题"
+      },
+      {
+        "area": "Dam Area",
+        "insight": "061号营地有宽敞的蒙古包(Yurt)，配有床铺和燃气炉，但没有电，门锁需要往上提才能锁上"
+      }
+    ],
+    "wildlifeWarnings": "有花栗鼠(chipmunks)在营地跑动；看到了秃鹰(bald eagle)和老鹰(Hawk)；有木蚁(carpenter ants)出没；未提及熊或浣熊等大型野生动物及食物储存警告，但提到如果营位靠近湖边和主步道，需要锁好个人物品以防被盗。",
+    "facilitiesQuality": "旱厕(vault/pit toilets)大多保持干净且有纸，但部分营位(如035)附近味道极重；有自来水供应，但有时会停水(如041营位遇到水龙头被塑料袋包住停水)；营地不再售卖柴火，需要去镇上买；部分营位的野餐桌损坏(如006、022、047)；有铺装的停车位和道路。",
+    "noiseIssues": "主要噪音来源：房车发电机噪音(部分人无视规定整天运行)、Day Use区域的游客(大声喧哗、放音乐)、深夜放烟花、半夜翻垃圾桶找瓶子的人、以及不遵守规定的狗。",
     "bestSeasonTips": "夏季(7-8月)非常拥挤，Day Use区域人满为患；5月底/6月初可能还有积雪但非常宁静；9月/10月天气较冷(夜间可能降至30-50华氏度)但风景优美且人少；建议早起在Day Use游客到来前去湖面活动；注意查看天气预报，有时会有禁火令(fire ban)。"
   },
   "18": {
@@ -1140,28 +1140,7 @@
       "适合帐篷",
       "房车受限"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop A",
-        "insight": "较小营地，适合小拖车或帐篷，A19私密性好，A07树木多难倒车"
-      },
-      {
-        "area": "Loop B",
-        "insight": "营地铺砌但较小，B21在厕所对面无私密性，B35靠近路边无私密性"
-      },
-      {
-        "area": "Loop C",
-        "insight": "厕所新且干净，C43有野餐桌和火圈，C46较隐蔽但有公路噪音"
-      },
-      {
-        "area": "Loop D",
-        "insight": "营地较大，适合帐篷和房车，D67易积水，D64紧凑且私密性一般"
-      },
-      {
-        "area": "Loop E",
-        "insight": "营地大，多为房车，E84非常大且私密，E90夜间房车灯光亮且吵闹"
-      }
-    ],
+    "cellCoverage": "无手机信号（no cellular service），需要提前在Forks镇下载地图和处理事务。",
     "recommendedSites": [
       {
         "site": "E84",
@@ -1206,10 +1185,6 @@
         "reason": "有公路噪音"
       }
     ],
-    "cellCoverage": "无手机信号（no cellular service），需要提前在Forks镇下载地图和处理事务。",
-    "wildlifeWarnings": "有啮齿动物（可能是松鼠）在夜间爬上车顶；附近有白头海雕和野生水獭出没。",
-    "facilitiesQuality": "厕所干净但没有洗手液（需自带），没有淋浴设施，没有挂钩和置物架，部分门锁损坏；提供饮用水，但水龙头没有螺纹接口，无法连接房车水管；有房车排污站（dump station）；垃圾站和供水设施维护良好。",
-    "noiseIssues": "直升机运木头的噪音（早上7点到晚上7点）；发电机噪音；邻居大声喧哗、播放音乐和开派对（直到凌晨1点或2点）；狗叫声和小孩尖叫声；公路噪音（C46）；夜间海滩方向的烟花爆炸声。",
     "activitiesFromReviews": [
       {
         "name": "Rialto Beach",
@@ -1236,6 +1211,31 @@
         "description": "short drive, tide pools, seals, beach logs (来源: 53C reviewer)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop A",
+        "insight": "较小营地，适合小拖车或帐篷，A19私密性好，A07树木多难倒车"
+      },
+      {
+        "area": "Loop B",
+        "insight": "营地铺砌但较小，B21在厕所对面无私密性，B35靠近路边无私密性"
+      },
+      {
+        "area": "Loop C",
+        "insight": "厕所新且干净，C43有野餐桌和火圈，C46较隐蔽但有公路噪音"
+      },
+      {
+        "area": "Loop D",
+        "insight": "营地较大，适合帐篷和房车，D67易积水，D64紧凑且私密性一般"
+      },
+      {
+        "area": "Loop E",
+        "insight": "营地大，多为房车，E84非常大且私密，E90夜间房车灯光亮且吵闹"
+      }
+    ],
+    "wildlifeWarnings": "有啮齿动物（可能是松鼠）在夜间爬上车顶；附近有白头海雕和野生水獭出没。",
+    "facilitiesQuality": "厕所干净但没有洗手液（需自带），没有淋浴设施，没有挂钩和置物架，部分门锁损坏；提供饮用水，但水龙头没有螺纹接口，无法连接房车水管；有房车排污站（dump station）；垃圾站和供水设施维护良好。",
+    "noiseIssues": "直升机运木头的噪音（早上7点到晚上7点）；发电机噪音；邻居大声喧哗、播放音乐和开派对（直到凌晨1点或2点）；狗叫声和小孩尖叫声；公路噪音（C46）；夜间海滩方向的烟花爆炸声。",
     "bestSeasonTips": "夏季（7-8月）多雨、多雾、阴冷，需要准备防雨帐篷；9月早晚较冷；建议携带遮阳篷或天幕防雨；由于树荫多，太阳能板充电效率低；遇到禁火令（burn ban）时无法生火取暖，天气会很冷。"
   },
   "19": {
@@ -1251,12 +1251,7 @@
       "需自带垃圾",
       "适合徒步"
     ],
-    "areaInsights": [
-      {
-        "area": "AREA LITTLE CRATER LAKE",
-        "insight": "营地较小，靠近Little Crater Lake和PCT，环境优美，有草甸，但白天会有游客和PCT徒步者经过，部分营位不平整有树根，蚊子较多，取水不便。"
-      }
-    ],
+    "cellCoverage": "没有手机信号 (来源: Julie Reid R., Review 36)",
     "recommendedSites": [
       {
         "site": "007",
@@ -1281,10 +1276,6 @@
         "reason": "靠近入口，白天游客和PCT徒步者经过时较吵 (来源: Debra F.)"
       }
     ],
-    "cellCoverage": "没有手机信号 (来源: Julie Reid R., Review 36)",
-    "wildlifeWarnings": "有鹿在夜间穿过营地 (来源: Review 27)；有很多黄蜂，做饭时会被骚扰 (来源: Rachel C.)",
-    "facilitiesQuality": "厕所：有堆肥/旱厕，部分评价说很干净且有纸 (Peter W., Elizabeth S., Chris W., Margaret C.)，但也有评价说很脏、有异味、缺纸、超过10天未打扫 (Rachel C., Isabella R., Review 25)；取水：只有一个手动压水井，且在营地入口处，取水困难，建议自带大容量水桶 (Julie Reid R., Jacqueline G., Review 21, Review 25, Review 35)；垃圾：没有垃圾桶，需要自己带走垃圾 (Sue K., Review 21)",
-    "noiseIssues": "白天有游客和PCT徒步者经过，不安静 (Debra F., Sue K.)；有小孩大声尖叫 (Julie Reid R., Review 42)；邻居大声喧哗、打鼓、唱歌、放音乐 (Review 38)；树木在风中会有噪音 (Chris W.)",
     "activitiesFromReviews": [
       {
         "name": "Little Crater Lake",
@@ -1303,6 +1294,15 @@
         "description": "可从PCT步道向南徒步前往Mt. Hood方向 (来源: Susan M.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "AREA LITTLE CRATER LAKE",
+        "insight": "营地较小，靠近Little Crater Lake和PCT，环境优美，有草甸，但白天会有游客和PCT徒步者经过，部分营位不平整有树根，蚊子较多，取水不便。"
+      }
+    ],
+    "wildlifeWarnings": "有鹿在夜间穿过营地 (来源: Review 27)；有很多黄蜂，做饭时会被骚扰 (来源: Rachel C.)",
+    "facilitiesQuality": "厕所：有堆肥/旱厕，部分评价说很干净且有纸 (Peter W., Elizabeth S., Chris W., Margaret C.)，但也有评价说很脏、有异味、缺纸、超过10天未打扫 (Rachel C., Isabella R., Review 25)；取水：只有一个手动压水井，且在营地入口处，取水困难，建议自带大容量水桶 (Julie Reid R., Jacqueline G., Review 21, Review 25, Review 35)；垃圾：没有垃圾桶，需要自己带走垃圾 (Sue K., Review 21)",
+    "noiseIssues": "白天有游客和PCT徒步者经过，不安静 (Debra F., Sue K.)；有小孩大声尖叫 (Julie Reid R., Review 42)；邻居大声喧哗、打鼓、唱歌、放音乐 (Review 38)；树木在风中会有噪音 (Chris W.)",
     "bestSeasonTips": "8月下旬草甸的花基本开败了 (来源: Susan M.); 6月到8月期间蚊子较多，因为靠近湿地 (来源: Isabella R., Review 21, Review 25, Review 44); 某些时候会有禁火令 (来源: Sue K., Peter W., Rachel C.)"
   },
   "20": {
@@ -1315,6 +1315,41 @@
       "手机信号差",
       "适合漂流",
       "有野生动物"
+    ],
+    "cellCoverage": "手机信号极弱或完全没有。",
+    "recommendedSites": [
+      {
+        "site": "A87",
+        "reason": "靠河风景优美，干净宽敞"
+      },
+      {
+        "site": "B25",
+        "reason": "干净且相对宽敞，设施好"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "无",
+        "reason": "评论中未提及特定避坑营位"
+      }
+    ],
+    "activitiesFromReviews": [
+      {
+        "name": "Deschutes河漂流",
+        "description": "夏天非常适合乘坐管道或木筏漂流 (来源: Orlando M.)"
+      },
+      {
+        "name": "访问Tumalo镇",
+        "description": "有有趣的餐车和好喝的Tumalo苹果酒 (来源: Marney T.)"
+      },
+      {
+        "name": "逛老本德(Old Bend)",
+        "description": "距离营地仅15分钟车程 (来源: Orlando M.)"
+      },
+      {
+        "name": "购物",
+        "description": "Costco距离仅约3英里 (来源: Orlando M.)"
+      }
     ],
     "areaInsights": [
       {
@@ -1334,44 +1369,9 @@
         "insight": "位于马路对面沿河，非常棒"
       }
     ],
-    "recommendedSites": [
-      {
-        "site": "A87",
-        "reason": "靠河风景优美，干净宽敞"
-      },
-      {
-        "site": "B25",
-        "reason": "干净且相对宽敞，设施好"
-      }
-    ],
-    "avoidSites": [
-      {
-        "site": "无",
-        "reason": "评论中未提及特定避坑营位"
-      }
-    ],
-    "cellCoverage": "手机信号极弱或完全没有。",
     "wildlifeWarnings": "营地有丰富的野生动物，包括可爱的兔子。未提及食物储存警告。",
     "facilitiesQuality": "厕所和淋浴间非常干净、现代且保暖，有私人淋浴间。Loop B有大型户外洗碗槽。女厕所隔间门锁需要维修。所有设施（水龙头等）运转良好。",
     "noiseIssues": "无明显噪音投诉",
-    "activitiesFromReviews": [
-      {
-        "name": "Deschutes河漂流",
-        "description": "夏天非常适合乘坐管道或木筏漂流 (来源: Orlando M.)"
-      },
-      {
-        "name": "访问Tumalo镇",
-        "description": "有有趣的餐车和好喝的Tumalo苹果酒 (来源: Marney T.)"
-      },
-      {
-        "name": "逛老本德(Old Bend)",
-        "description": "距离营地仅15分钟车程 (来源: Orlando M.)"
-      },
-      {
-        "name": "购物",
-        "description": "Costco距离仅约3英里 (来源: Orlando M.)"
-      }
-    ],
     "bestSeasonTips": "夏季是Deschutes河漂流的最佳季节；9月下旬（旺季后）去比较合适，房车可以停靠在A区（原本为徒步/自行车保留的区域）。"
   },
   "21": {
@@ -1384,18 +1384,9 @@
       "需提前预订",
       "设施齐全"
     ],
-    "areaInsights": [
-      {
-        "area": "Day Use Area",
-        "insight": "设施齐全，停车位充足，去洗手间有铺砌小路，去水边需走土路"
-      }
-    ],
+    "cellCoverage": "评论中未提及手机信号情况",
     "recommendedSites": [],
     "avoidSites": [],
-    "cellCoverage": "评论中未提及手机信号情况",
-    "wildlifeWarnings": "评论中提到傍晚在海滩上可以近距离观赏到鲸鱼，未提及其他野生动物警告或食物存放建议",
-    "facilitiesQuality": "洗手间非常干净且维护良好，到处都有水龙头，提供淋浴设施，有全连接房车营位以及小木屋和蒙古包",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "海滩漫步与放松",
@@ -1406,6 +1397,15 @@
         "description": "傍晚在海滩上可以近距离看到鲸鱼 (来源: Emily P.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Day Use Area",
+        "insight": "设施齐全，停车位充足，去洗手间有铺砌小路，去水边需走土路"
+      }
+    ],
+    "wildlifeWarnings": "评论中提到傍晚在海滩上可以近距离观赏到鲸鱼，未提及其他野生动物警告或食物存放建议",
+    "facilitiesQuality": "洗手间非常干净且维护良好，到处都有水龙头，提供淋浴设施，有全连接房车营位以及小木屋和蒙古包",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "夏季非常繁忙，建议提前很久预订；工作日相对不那么拥挤"
   },
   "22": {
@@ -1419,12 +1419,7 @@
       "适合徒步",
       "缺乏私密性"
     ],
-    "areaInsights": [
-      {
-        "area": "FAREWELL BEND CAMPGROUND",
-        "insight": "营地整体沿Rogue River分布，靠近河流的营位能听到水声，有助于掩盖公路噪音；部分营位间距大，但有些单人营位像团队营位一样共享公共区域，私密性较差；1-12号营位因树木修剪显得光秃秃，且部分低编号营位目前没有水。"
-      }
-    ],
+    "cellCoverage": "评论中未明确提及手机信号（Cell Coverage）或Wi-Fi的具体情况。",
     "recommendedSites": [
       {
         "site": "004",
@@ -1437,10 +1432,6 @@
         "reason": "营地道路和RV停放处布满厚厚的松针，未清理，且有游客穿过营位去河边；040: 营地主人要求额外支付第二辆车的费用，且态度不好；050: 营地主人态度恶劣，甚至将已预订的营位让给他人；009: 靠近最旧的厕所，且厕所未清理，营位内有前人留下的垃圾；014: 营地主人不负责任，厕所未清理，且营位私密性差；057: 营位内有蝎子出没。"
       }
     ],
-    "cellCoverage": "评论中未明确提及手机信号（Cell Coverage）或Wi-Fi的具体情况。",
-    "wildlifeWarnings": "有游客在距离Union Creek营地约半英里处遇到黑熊，但大喊后熊跑开了；营地内有蝎子出没（057号营位）；部分游客提到有未拴绳的狗在营地内乱跑并试图攻击其他狗；尽管靠近水边，但蚊虫问题并不严重（7月底）。",
-    "facilitiesQuality": "厕所和浴室：营地有冲水马桶，但没有淋浴。厕所的清洁状况评价两极分化，部分游客（如2020、2022年）抱怨厕所极度肮脏、没有卫生纸、甚至有堵塞和排泄物未清理；但也有游客（如2021、2025年）表示厕所非常干净。水：营地内有多个水龙头，取水方便，但部分低编号营位（如1-12号）可能因管道问题停水。柴火：营地主人处通常有柴火出售，但有时（如2023年）营地主人不卖柴火。",
-    "noiseIssues": "主要噪音来源是附近的公路（Highway），但靠近Rogue River的营位（如004, 018, 020, 029, 035, 036）能听到很大的水流声，这通常能有效掩盖公路噪音和邻居的噪音。部分游客提到有其他露营者穿过他们的营位去河边，造成了一定的干扰。",
     "activitiesFromReviews": [
       {
         "name": "Crater Lake National Park",
@@ -1467,6 +1458,15 @@
         "description": "风景令人惊叹 (来源: Maryann M.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "FAREWELL BEND CAMPGROUND",
+        "insight": "营地整体沿Rogue River分布，靠近河流的营位能听到水声，有助于掩盖公路噪音；部分营位间距大，但有些单人营位像团队营位一样共享公共区域，私密性较差；1-12号营位因树木修剪显得光秃秃，且部分低编号营位目前没有水。"
+      }
+    ],
+    "wildlifeWarnings": "有游客在距离Union Creek营地约半英里处遇到黑熊，但大喊后熊跑开了；营地内有蝎子出没（057号营位）；部分游客提到有未拴绳的狗在营地内乱跑并试图攻击其他狗；尽管靠近水边，但蚊虫问题并不严重（7月底）。",
+    "facilitiesQuality": "厕所和浴室：营地有冲水马桶，但没有淋浴。厕所的清洁状况评价两极分化，部分游客（如2020、2022年）抱怨厕所极度肮脏、没有卫生纸、甚至有堵塞和排泄物未清理；但也有游客（如2021、2025年）表示厕所非常干净。水：营地内有多个水龙头，取水方便，但部分低编号营位（如1-12号）可能因管道问题停水。柴火：营地主人处通常有柴火出售，但有时（如2023年）营地主人不卖柴火。",
+    "noiseIssues": "主要噪音来源是附近的公路（Highway），但靠近Rogue River的营位（如004, 018, 020, 029, 035, 036）能听到很大的水流声，这通常能有效掩盖公路噪音和邻居的噪音。部分游客提到有其他露营者穿过他们的营位去河边，造成了一定的干扰。",
     "bestSeasonTips": "夏季（6-8月）是热门季节，但部分年份（如2020、2022）营地维护较差，厕所清洁不到位；初夏（5月底至6月初）去Crater Lake时，北门可能因积雪仍关闭；秋季（9-10月）天气较凉爽，但可能下雨；7月底蚊虫较少。"
   },
   "23": {
@@ -1482,36 +1482,7 @@
       "靠近峡谷",
       "设施陈旧"
     ],
-    "areaInsights": [
-      {
-        "area": "Loop A",
-        "insight": "拥挤但不错"
-      },
-      {
-        "area": "Loop B",
-        "insight": "靠近商店，方便，B6位于峡谷边缘风景好，B10电桩位置偏"
-      },
-      {
-        "area": "Loop C",
-        "insight": "C1无野餐桌，C27靠近排污站但无异味，C22拉通式营位对长房车较难停入"
-      },
-      {
-        "area": "Loop D",
-        "insight": "树木茂密宽敞，D15靠近商店和步道，D25非常拥挤且发电机吵闹，D18对大房车较难停入"
-      },
-      {
-        "area": "Loop E",
-        "insight": "先到先得(FCFS)，排队较慢，E19对大房车不友好，E30营位积水严重"
-      },
-      {
-        "area": "Loop F",
-        "insight": "F9靠近峡谷风景极佳但无隐私，F15小木屋设施好，F20曾停电"
-      },
-      {
-        "area": "Loop G",
-        "insight": "G17蚊子多，G22靠近峡谷且私密性好，G2靠近厕所夜间有灯光和噪音打扰，G区无淋浴"
-      }
-    ],
+    "cellCoverage": "大部分区域无信号或信号极差。步道上距离营位约50英尺处有2格Verizon信号(F9)；餐厅有手机信号和Wifi(Ted L.)；商店有Wifi(Jennifer T., Barbara S.)",
     "recommendedSites": [
       {
         "site": "G17",
@@ -1568,10 +1539,6 @@
         "reason": "附近厕所一直很脏且无纸巾"
       }
     ],
-    "cellCoverage": "大部分区域无信号或信号极差。步道上距离营位约50英尺处有2格Verizon信号(F9)；餐厅有手机信号和Wifi(Ted L.)；商店有Wifi(Jennifer T., Barbara S.)",
-    "wildlifeWarnings": "有蚊子出没，需带驱蚊液(G17, D34)；帐篷区地面有蚂蚁窝(C9)；房车内发现老鼠(C27)；营地提供防熊箱(bear-proof cabinet)供存放食物(F23, C1)",
-    "facilitiesQuality": "设施评价两极分化。部分评价认为厕所和淋浴干净(G27, F21, F9, B9, G28)；但多条评价指出厕所非常脏、缺乏维护(F5, C6, D33, G5/A3)。淋浴在商店附近，部分免费且热水充足，但也有评价称淋浴间发霉(C16)或堵塞(F23)。商店物品齐全但价格昂贵，木柴$13/捆，冰块$12/袋且只有16磅大包装。缺乏洗碗水排放处(D15)",
-    "noiseIssues": "发电机噪音严重(D25)；邻居大声喧哗和争吵(C9)；儿童整晚骑滑板车(D14)；靠近厕所的营位早晨有人员走动噪音(G2)；营地整体相对安静，但部分区域受邻居影响大",
     "activitiesFromReviews": [
       {
         "name": "Annie Creek trail",
@@ -1594,6 +1561,39 @@
         "description": "距离营地约10-20分钟车程，可游泳 (来源: Laura P., Emily S., Jacqueline I.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "Loop A",
+        "insight": "拥挤但不错"
+      },
+      {
+        "area": "Loop B",
+        "insight": "靠近商店，方便，B6位于峡谷边缘风景好，B10电桩位置偏"
+      },
+      {
+        "area": "Loop C",
+        "insight": "C1无野餐桌，C27靠近排污站但无异味，C22拉通式营位对长房车较难停入"
+      },
+      {
+        "area": "Loop D",
+        "insight": "树木茂密宽敞，D15靠近商店和步道，D25非常拥挤且发电机吵闹，D18对大房车较难停入"
+      },
+      {
+        "area": "Loop E",
+        "insight": "先到先得(FCFS)，排队较慢，E19对大房车不友好，E30营位积水严重"
+      },
+      {
+        "area": "Loop F",
+        "insight": "F9靠近峡谷风景极佳但无隐私，F15小木屋设施好，F20曾停电"
+      },
+      {
+        "area": "Loop G",
+        "insight": "G17蚊子多，G22靠近峡谷且私密性好，G2靠近厕所夜间有灯光和噪音打扰，G区无淋浴"
+      }
+    ],
+    "wildlifeWarnings": "有蚊子出没，需带驱蚊液(G17, D34)；帐篷区地面有蚂蚁窝(C9)；房车内发现老鼠(C27)；营地提供防熊箱(bear-proof cabinet)供存放食物(F23, C1)",
+    "facilitiesQuality": "设施评价两极分化。部分评价认为厕所和淋浴干净(G27, F21, F9, B9, G28)；但多条评价指出厕所非常脏、缺乏维护(F5, C6, D33, G5/A3)。淋浴在商店附近，部分免费且热水充足，但也有评价称淋浴间发霉(C16)或堵塞(F23)。商店物品齐全但价格昂贵，木柴$13/捆，冰块$12/袋且只有16磅大包装。缺乏洗碗水排放处(D15)",
+    "noiseIssues": "发电机噪音严重(D25)；邻居大声喧哗和争吵(C9)；儿童整晚骑滑板车(D14)；靠近厕所的营位早晨有人员走动噪音(G2)；营地整体相对安静，但部分区域受邻居影响大",
     "bestSeasonTips": "7月可能有大量蚊子(G17)，需带驱蚊液；10月第一个周末是游览的好时机，人少且天气好(F15)；夏季(7-8月)营地非常抢手，建议提前预订或排队(E区先到先得)"
   },
   "24": {
@@ -1607,12 +1607,7 @@
       "员工友善",
       "洗手间开放晚"
     ],
-    "areaInsights": [
-      {
-        "area": "无具体Loop信息",
-        "insight": "营地位于俄勒冈海岸上方，海滨营位（oceanfront ones）风景极佳，但整体营位偏小，缺乏私密性"
-      }
-    ],
+    "cellCoverage": "无手机信号信息: 评论中未提及手机信号情况",
     "recommendedSites": [
       {
         "site": "无具体推荐营位",
@@ -1625,16 +1620,21 @@
         "reason": "评论中未提及具体需要避开的营位"
       }
     ],
-    "cellCoverage": "无手机信号信息: 评论中未提及手机信号情况",
-    "wildlifeWarnings": "无野生动物警告: 评论中未提及野生动物或食物储存建议",
-    "facilitiesQuality": "整体设施维护完美，公共区域和浴室一尘不染。但Clubhouse男厕所的一个马桶冲水有问题需要修理。所有洗手间早上7:30才开放，建议提早到6:00或保持Clubhouse洗手间24小时密码开放",
-    "noiseIssues": "无明显噪音投诉",
     "activitiesFromReviews": [
       {
         "name": "海滩散步",
         "description": "通过度假村的私人小径步行前往海滩 (来源: D B.)"
       }
     ],
+    "areaInsights": [
+      {
+        "area": "无具体Loop信息",
+        "insight": "营地位于俄勒冈海岸上方，海滨营位（oceanfront ones）风景极佳，但整体营位偏小，缺乏私密性"
+      }
+    ],
+    "wildlifeWarnings": "无野生动物警告: 评论中未提及野生动物或食物储存建议",
+    "facilitiesQuality": "整体设施维护完美，公共区域和浴室一尘不染。但Clubhouse男厕所的一个马桶冲水有问题需要修理。所有洗手间早上7:30才开放，建议提早到6:00或保持Clubhouse洗手间24小时密码开放",
+    "noiseIssues": "无明显噪音投诉",
     "bestSeasonTips": "无具体季节建议: 评论中未提及最佳访问季节或天气警告"
   },
   "25": {
@@ -1645,13 +1645,20 @@
       "犬友好",
       "历史遗迹探索"
     ],
-    "areaSummary": "靠近海滩的宽敞营地与林区相邻，适合RV与徒步，拥有历史碉堡和多条步道，日落景色优美且适合遛狗。",
-    "areaInsights": "总体评价非常正面：海滨营地距离沙滩近，景观开阔、日落漂亮，营位宽敞且多数提供水、电、排污（适合RV）。公园内步道、多处海滩通道与历史“电池”建筑值得探索。需注意：草地有荆棘/蒺藜会粘附物品，帐篷营位在大风天不太理想（有人转到林区更舒适）；公园鹿群常见，白天也会出现。",
-    "recommendedSites": "海滩营地（特别适合RV，靠近海岸、景观佳，且多数位点提供水电排污）；在风大天可选择林区营位（评论提到将帐篷移至林区更舒适）。",
-    "avoidSites": "海滩边的帐篷营位在强风日应避免；草地上有荆棘/蒺藜的区域（可能黏到衣物或装备）应谨慎选择营位。",
     "cellCoverage": "未提及",
-    "noiseLevel": "总体偏安静、平和（评论提到营地干净、宁静）",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "海滩营地（特别适合RV，靠近海岸、景观佳，且多数位点提供水电排污）；在风大天可选择林区营位（评论提到将帐篷移至林区更舒适）。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "海滩边的帐篷营位在强风日应避免；草地上有荆棘/蒺藜的区域（可能黏到衣物或装备）应谨慎选择营位。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "观日落",
         "description": "海滨营地靠近沙滩，日落景色被多位评论者特别提及（来自Vee K、Benson Adams）。"
@@ -1672,7 +1679,17 @@
         "name": "RV露营（带水电排污）",
         "description": "每个RV营位通常有水、电和排污设施，非常适合RV露营者（来自James Christie）。"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "总体评价非常正面：海滨营地距离沙滩近，景观开阔、日落漂亮，营位宽敞且多数提供水、电、排污（适合RV）。公园内步道、多处海滩通道与历史“电池”建筑值得探索。需注意：草地有荆棘/蒺藜会粘附物品，帐篷营位在大风天不太理想（有人转到林区更舒适）；公园鹿群常见，白天也会出现。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体偏安静、平和（评论提到营地干净、宁静）",
+    "bestSeasonTips": ""
   },
   "26": {
     "tags": [
@@ -1682,13 +1699,20 @@
       "适合携犬",
       "蒙古包(yurt)住宿"
     ],
-    "areaSummary": "海滨营地，沙滩可直达，营位私密且宽敞，包含房车营位与蒙古包(yurt)。设施维护良好、卫生干净，适合安静海岸度假与散步观景。",
-    "areaInsights": "评论指出营位设计优秀：环形营位私密、适合大拖车，少数直通位非常宽敞，营位平整多为沥青垫并带草地。蒙古包（如118号）被推荐，配有30A外接电源，洗手间普遍干净。但也有人反映蒙古包有霉味、淋浴区潮湿、更衣不便；部分营位无化粪池。沙滩宽阔可驱车上岸，日落景色与长距离海滨散步为主要亮点。",
-    "recommendedSites": "蒙古包(yurt)如118号（评价中提到舒适且配有床位与取暖器、外接30A电源）；环形(loop)营位和少数pull-through直通营位，适合大拖车和注重私密的营者。",
-    "avoidSites": "对霉菌/过敏者应避免使用蒙古包或事先询问清洁状况；若需要化粪池/下水道服务的营者需注意部分营位无septic（无下水服务）。",
     "cellCoverage": "评论中未提及手机信号情况",
-    "noiseLevel": "多位评论者描述营区安静、不拥挤，整体噪音水平低，适合寻求宁静的露营体验",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "蒙古包(yurt)如118号（评价中提到舒适且配有床位与取暖器、外接30A电源）；环形(loop)营位和少数pull-through直通营位，适合大拖车和注重私密的营者。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "对霉菌/过敏者应避免使用蒙古包或事先询问清洁状况；若需要化粪池/下水道服务的营者需注意部分营位无septic（无下水服务）。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "海滩散步/长距离步行",
         "description": "评论多次提到宽阔的沙滩适合长时间散步（Clayton C., Agnes Miazga, Cheryl Muonio）"
@@ -1713,7 +1737,17 @@
         "name": "周边一日游（Westport）",
         "description": "可驾车到邻近的Westport用餐、走堤坝观浪作为短途游玩选择（Cheryl Muonio）"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论指出营位设计优秀：环形营位私密、适合大拖车，少数直通位非常宽敞，营位平整多为沥青垫并带草地。蒙古包（如118号）被推荐，配有30A外接电源，洗手间普遍干净。但也有人反映蒙古包有霉味、淋浴区潮湿、更衣不便；部分营位无化粪池。沙滩宽阔可驱车上岸，日落景色与长距离海滨散步为主要亮点。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "多位评论者描述营区安静、不拥挤，整体噪音水平低，适合寻求宁静的露营体验",
+    "bestSeasonTips": ""
   },
   "27": {
     "tags": [
@@ -1723,13 +1757,20 @@
       "树荫充足营位宽敞",
       "高车需注意低垂树枝"
     ],
-    "areaSummary": "营地绿树成荫、草地整洁，沙滩与苹果首都环线步道近在咫尺，营位宽敞分布有序，管理和志愿者维护到位，氛围宁静适合家庭与长途旅者。",
-    "areaInsights": "评论一致称赞公园维护与清洁，员工与志愿者（如园长Jose）服务热情；营位树荫多、间距大、沙滩与环线步道便捷、适合散步与观鸟。但有评论指出两条循环路部分营位有低垂树枝，会刮碰高大型拖挂房车的屋顶与空调，需要修剪或选低矮车辆。",
-    "recommendedSites": "靠近沙滩的营位、靠近Apple Capital（苹果首都）环线步道的营位、草地与树荫充足且间距宽的营区（评论多次提到为整洁、宽敞的营位）",
-    "avoidSites": "两条循环路中有低垂树枝的营位（对5th wheel或高大型房车存在刮碰风险），高车应避开或提前咨询营地修剪情况",
     "cellCoverage": "未提及",
-    "noiseLevel": "整体安静/非常宁静（多位评论提到氛围宁静、非常peaceful）",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "靠近沙滩的营位、靠近Apple Capital（苹果首都）环线步道的营位、草地与树荫充足且间距宽的营区（评论多次提到为整洁、宽敞的营位）"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "两条循环路中有低垂树枝的营位（对5th wheel或高大型房车存在刮碰风险），高车应避开或提前咨询营地修剪情况"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "露营/志愿服务",
         "description": "Gina Steinmetz 提到“我们有志愿并在此露营4个夏天”，表示适合长期露营与志愿活动"
@@ -1750,7 +1791,17 @@
         "name": "房车/拖挂露营（注意事项）",
         "description": "Bad Influence Adventures 报告部分营位低垂枝条会刮碰5th wheel屋顶或空调，建议高车谨慎选择营位"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论一致称赞公园维护与清洁，员工与志愿者（如园长Jose）服务热情；营位树荫多、间距大、沙滩与环线步道便捷、适合散步与观鸟。但有评论指出两条循环路部分营位有低垂树枝，会刮碰高大型拖挂房车的屋顶与空调，需要修剪或选低矮车辆。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "整体安静/非常宁静（多位评论提到氛围宁静、非常peaceful）",
+    "bestSeasonTips": ""
   },
   "28": {
     "tags": [
@@ -1760,13 +1811,15 @@
       "观鸟/野生动物",
       "多风/需防风"
     ],
-    "areaSummary": "海滨军事遗址营地，环境原始视野开阔，适合徒步、划船与观鸟，以历史探访和自然体验为主。",
-    "areaInsights": "总体为高评分景区：具有船坞与停泊球、优秀的皮划艇水域和多个海滩，徒步线路维护良好且可通达二战炮台与地堡。野生动物丰富（海雕、海豹、春季水仙等），夏季有小卖部软冰淇淋。需注意沿海步道风大、地堡内部光线暗（建议带强光手电），码头/泊位无水电供应。营地管理友好，曾协助延长预约并提供维修建议。",
-    "recommendedSites": "营地（campground）、历史炮台/要塞区域、沿海步道、海滩、船坞与下船坡道（适合划艇/钓鱼）",
-    "avoidSites": "",
     "cellCoverage": "评论中未明确提及手机信号情况",
-    "noiseLevel": "沿海步道风大，整体环境较为宁静，适合观鸟与夜观对岸灯火",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "营地（campground）、历史炮台/要塞区域、沿海步道、海滩、船坞与下船坡道（适合划艇/钓鱼）"
+      }
+    ],
+    "avoidSites": [],
+    "activitiesFromReviews": [
       {
         "name": "划船/皮划艇",
         "description": "有船坞、下船坡道和泊位，皮划艇水域优秀（来源：Review 1, Review 2）"
@@ -1791,7 +1844,17 @@
         "name": "夏季小吃/休闲",
         "description": "夏季小卖部提供软冰淇淋等休闲食品（来源：Review 2）"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "总体为高评分景区：具有船坞与停泊球、优秀的皮划艇水域和多个海滩，徒步线路维护良好且可通达二战炮台与地堡。野生动物丰富（海雕、海豹、春季水仙等），夏季有小卖部软冰淇淋。需注意沿海步道风大、地堡内部光线暗（建议带强光手电），码头/泊位无水电供应。营地管理友好，曾协助延长预约并提供维修建议。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "沿海步道风大，整体环境较为宁静，适合观鸟与夜观对岸灯火",
+    "bestSeasonTips": ""
   },
   "29": {
     "tags": [
@@ -1801,13 +1864,20 @@
       "适合徒步",
       "野生动物观赏"
     ],
-    "areaSummary": "霍雨林营地位于国家公园内，靠近湍急的Hoh河和雨林步道，设施简朴实用，适合徒步、家庭或情侣短途露营。",
-    "areaInsights": "评论显示营地以靠近Hoh河与雨林步道为亮点，适合徒步与亲近自然。设施偏基础：坑式厕所、冷水洗手池、无热水与香皂，优点有专用洗碗区与可调节火坑。部分营位紧邻营内道路、车辆可能占路显得局促；也有评价称营位较宽敞且私密。需注意雨天、无手机信号与防熊的食物管理，建议早到避开人群并自备洗漱用品。",
-    "recommendedSites": "优先选择靠近河岸的营位以享受河景与入睡的河声；靠近游客中心/护林员站起点的营位方便短途与长途徒步出发；家庭或多车群体可选靠近大型停车点的营位。",
-    "avoidSites": "避免靠近营内道路且车位可能半占路面的营位（被评价为局促、无隐私）；在雨季或高峰期注意避开靠近游客中心周边可能拥挤的区域。",
     "cellCoverage": "无手机信号／无蜂窝服务（评论明确提到无手机信号）。",
-    "noiseLevel": "总体安静，以河流和雨林自然声为主；但靠近营内道路的营位可能较吵，旺季或晚到时也可能出现人群与等待。",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择靠近河岸的营位以享受河景与入睡的河声；靠近游客中心/护林员站起点的营位方便短途与长途徒步出发；家庭或多车群体可选靠近大型停车点的营位。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "避免靠近营内道路且车位可能半占路面的营位（被评价为局促、无隐私）；在雨季或高峰期注意避开靠近游客中心周边可能拥挤的区域。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "Hall of Mosses 短环线",
         "description": "短环步道，从游客中心附近出发，可体验雨林景观与苔藓（来源：John Seaborn）。"
@@ -1828,7 +1898,17 @@
         "name": "野生动物观赏",
         "description": "可在营地附近看到鹿等野生动物，但需注意不要留食物以防熊（来源：Kim Kim、Amanda）。"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论显示营地以靠近Hoh河与雨林步道为亮点，适合徒步与亲近自然。设施偏基础：坑式厕所、冷水洗手池、无热水与香皂，优点有专用洗碗区与可调节火坑。部分营位紧邻营内道路、车辆可能占路显得局促；也有评价称营位较宽敞且私密。需注意雨天、无手机信号与防熊的食物管理，建议早到避开人群并自备洗漱用品。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体安静，以河流和雨林自然声为主；但靠近营内道路的营位可能较吵，旺季或晚到时也可能出现人群与等待。",
+    "bestSeasonTips": ""
   },
   "30": {
     "tags": [
@@ -1837,13 +1917,15 @@
       "水上活动/可租划艇",
       "营地多且设施完善"
     ],
-    "areaSummary": "莫兰州立公园景色优美、林湖交错，营地分区多且靠水，既有沙滩和划艇租赁点，也适合家庭、轻度徒步和驾车观赏。",
-    "areaInsights": "评论总体正面：公园景色丰富、观景点多且多为可驾达，适合家庭和初级徒步者。设施有四个营地、干净卫生间、零食档及划艇/皮划艇租赁与沙滩游泳区。需注意无房车电力接入（不适合带电源的RV）、部分上坡步道较陡且热门营位需提前预订，周末往返渡轮需提前预约并可能排长队。停车/登记费约$10。",
-    "recommendedSites": "Cascade Lake（Cascade Lake Trail 和 Cascade Falls）、公园沙滩/指定游泳区、划艇/皮划艇租赁处、四个营地区域（适合帐篷和拖车）",
-    "avoidSites": "",
     "cellCoverage": "未提及",
-    "noiseLevel": "未提及",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "Cascade Lake（Cascade Lake Trail 和 Cascade Falls）、公园沙滩/指定游泳区、划艇/皮划艇租赁处、四个营地区域（适合帐篷和拖车）"
+      }
+    ],
+    "avoidSites": [],
+    "activitiesFromReviews": [
       {
         "name": "徒步/登顶观景",
         "description": "多条步道可达山顶和观景点， summit视野很好；部分上坡较陡，适合轻度徒步者及家庭（来源：Review1, Review3, Review5）"
@@ -1868,7 +1950,17 @@
         "name": "驾车观赏/日出日落",
         "description": "许多景点可驾车到达，适合轻松观赏日出或日落（来源：Review1, Review5）"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论总体正面：公园景色丰富、观景点多且多为可驾达，适合家庭和初级徒步者。设施有四个营地、干净卫生间、零食档及划艇/皮划艇租赁与沙滩游泳区。需注意无房车电力接入（不适合带电源的RV）、部分上坡步道较陡且热门营位需提前预订，周末往返渡轮需提前预约并可能排长队。停车/登记费约$10。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "未提及",
+    "bestSeasonTips": ""
   },
   "31": {
     "tags": [
@@ -1878,13 +1970,20 @@
       "营位密集/隐私有限",
       "免费热水淋浴"
     ],
-    "areaSummary": "大型且设施完善的海滨营地，靠近纽波特，适合家庭旅行与便捷游玩，但营位相对紧凑，隐私性和静谧性视具体位置与季节而定。",
-    "areaInsights": "评论普遍称赞场地清洁、维护良好（免费热水淋浴、整洁厕所）、步道通往沙滩及码头，设有飞盘高尔夫和充足停车位。营地规模大、营位众多且靠得较近，靠近游乐场的营位日间/夜间可能嘈杂；傍晚有蚊虫较多。位置临近纽波特，适合家庭与追求便利的游客，但不适合追求隐蔽静谧的露营体验。",
-    "recommendedSites": "远离游乐场的营位（评论提到有较好隐私性的营位，但未指明具体环路或编号），选择靠近步道但不直接靠近儿童活动区的营位以兼顾便捷与安静。",
-    "avoidSites": "靠近游乐场的营位（评论中提到游乐场附近白天和晚间会有噪音），以及在旺季人多时相互靠得很近的营区环路。",
     "cellCoverage": "未提及",
-    "noiseLevel": "总体较安静，但靠近游乐场的营位会有明显噪音；能听到远处海狮的叫声（不算干扰性噪音）。",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "远离游乐场的营位（评论提到有较好隐私性的营位，但未指明具体环路或编号），选择靠近步道但不直接靠近儿童活动区的营位以兼顾便捷与安静。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "靠近游乐场的营位（评论中提到游乐场附近白天和晚间会有噪音），以及在旺季人多时相互靠得很近的营区环路。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "步道至海滩/码头",
         "description": "有铺装步道可步行至沙滩和一英里外的堤坝/码头（来源：Review 1、Review 2、Review 3）。"
@@ -1905,7 +2004,17 @@
         "name": "观海狮/海岸景观",
         "description": "可听到远处海狮的声音，海岸景观和沙丘森林步行增添体验（来源：Review 2、Review 1）。"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论普遍称赞场地清洁、维护良好（免费热水淋浴、整洁厕所）、步道通往沙滩及码头，设有飞盘高尔夫和充足停车位。营地规模大、营位众多且靠得较近，靠近游乐场的营位日间/夜间可能嘈杂；傍晚有蚊虫较多。位置临近纽波特，适合家庭与追求便利的游客，但不适合追求隐蔽静谧的露营体验。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体较安静，但靠近游乐场的营位会有明显噪音；能听到远处海狮的叫声（不算干扰性噪音）。",
+    "bestSeasonTips": ""
   },
   "32": {
     "tags": [
@@ -1915,13 +2024,20 @@
       "骑马营地",
       "房车友好"
     ],
-    "areaSummary": "海滨营地，背靠沙丘通往宽阔海滩，环境安静，设施齐全，既适合房车与帐篷，也有马匹营地，犬只得以上沙滩，且有干净洗浴和新近升级的水电接口。",
-    "areaInsights": "总体评价偏正面：公园维护良好，厕所与淋浴干净，部分营位有新水电接口（含50A等），马营位配套完善（马棚、粪坑、手推车）。房车区无下水道接口，但入口处有付费清污站（约$10）。优势为远离101安静、海滩优美；不足为个别露营者礼仪差（儿童在车道玩耍），以及外州退伍军人未见优惠。到海滩需爬过沙丘，步行有一定距离。",
-    "recommendedSites": "H10（马营位，评论中提及配套齐全），D43（靠近新建的优良卫生间，评论者提及）",
-    "avoidSites": "靠近营地主车道或公共休憩区的营位（评论中提到有时有不守规矩的露营者和儿童在车道活动，应提高警惕）",
     "cellCoverage": "未提及",
-    "noiseLevel": "总体安静，远离101交通噪音；但局部可能受其他露营者行为影响（偶有礼仪问题引起噪扰）",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "H10（马营位，评论中提及配套齐全），D43（靠近新建的优良卫生间，评论者提及）"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "靠近营地主车道或公共休憩区的营位（评论中提到有时有不守规矩的露营者和儿童在车道活动，应提高警惕）"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "海滩步行/观海",
         "description": "需穿越沙丘到达宽阔海滩，景色好且适合散步与休闲（来源：Bob, Isa）"
@@ -1942,7 +2058,17 @@
         "name": "洗手间与淋浴",
         "description": "评论提到干净的全冲厕所和淋浴建筑，且有新建或翻新的卫生间楼（来源：Kristine, Isa）"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "总体评价偏正面：公园维护良好，厕所与淋浴干净，部分营位有新水电接口（含50A等），马营位配套完善（马棚、粪坑、手推车）。房车区无下水道接口，但入口处有付费清污站（约$10）。优势为远离101安静、海滩优美；不足为个别露营者礼仪差（儿童在车道玩耍），以及外州退伍军人未见优惠。到海滩需爬过沙丘，步行有一定距离。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体安静，远离101交通噪音；但局部可能受其他露营者行为影响（偶有礼仪问题引起噪扰）",
+    "bestSeasonTips": ""
   },
   "33": {
     "tags": [
@@ -1951,13 +2077,20 @@
       "家庭友好/团体适合",
       "人多/热闹"
     ],
-    "areaSummary": "大型州立公园，营地设施完善、活动丰富，靠近沙滩与湖泊。营位较密集，林边营地相对安静，但靠近101号公路或沙丘车道会有噪音。",
-    "areaInsights": "评论一致指出设施维护良好（大卫生间、热水淋浴、卖柴、租赁与划船码头等），营地规模大（约400位），管理有志愿者与护林员巡逻；缺点为营位较紧凑、部分无全套接水/无黑水点需用倾倒站，以及靠近101号公路或沙丘越野车道处可能有噪音。多人推荐住yurt或选择林边营位以获得更多私密与安静。",
-    "recommendedSites": "东侧靠林区的营位（ThereseBiz 推荐，较安静）；H环（H loop）（Roger Kinder，方便从营地骑行直达沙滩）；yurt（Katie 推荐，较有隐私）。",
-    "avoidSites": "靠近沙丘/ATV车道的营位和靠近101号公路的营位（可能噪音大）；营位密集区或已知有爱吠狗的邻近营地（若需安静应避免）。",
     "cellCoverage": "评论未提及手机信号情况。",
-    "noiseLevel": "整体偏热闹（夏季繁忙），沙丘越野车和靠近101号公路处会有明显噪音；林边或东侧营位相对安静，但偶有邻居狗吠。",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "东侧靠林区的营位（ThereseBiz 推荐，较安静）；H环（H loop）（Roger Kinder，方便从营地骑行直达沙滩）；yurt（Katie 推荐，较有隐私）。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "靠近沙丘/ATV车道的营位和靠近101号公路的营位（可能噪音大）；营位密集区或已知有爱吠狗的邻近营地（若需安静应避免）。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "徒步/步道探索",
         "description": "公园有众多步道供探索（ThereseBiz、June Fun、Katie 提到）"
@@ -1994,7 +2127,17 @@
         "name": "公园管理与志愿服务",
         "description": "公园组织有序，志愿者信息丰富且巡逻到位，安全感高（Robert、Katie 提到）"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论一致指出设施维护良好（大卫生间、热水淋浴、卖柴、租赁与划船码头等），营地规模大（约400位），管理有志愿者与护林员巡逻；缺点为营位较紧凑、部分无全套接水/无黑水点需用倾倒站，以及靠近101号公路或沙丘越野车道处可能有噪音。多人推荐住yurt或选择林边营位以获得更多私密与安静。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "整体偏热闹（夏季繁忙），沙丘越野车和靠近101号公路处会有明显噪音；林边或东侧营位相对安静，但偶有邻居狗吠。",
+    "bestSeasonTips": ""
   },
   "34": {
     "tags": [
@@ -2004,13 +2147,20 @@
       "林间营地与小木屋",
       "停车充足"
     ],
-    "areaSummary": "公园以十瀑环线和林间营地著称，瀑布季节性水量充沛、景色壮观；营地与小木屋安静整洁，设施齐备，徒步路线维护良好，适合家庭和休闲徒步者。",
-    "areaInsights": "评论一致称赞春季瀑布水量大、景观震撼；Trail of Ten Falls完整环线约8英里，路段维护良好但有台阶和约300英尺落差，部分区段因倒树会有封闭。营地与小木屋安静、卫生间和淋浴清洁、停车充足；步道虽繁忙但通常不至于拥挤，适合非专业徒步者。",
-    "recommendedSites": "营地（campground）、Smith Creek小木屋区域、从South Falls起点开始徒步（South Falls trailhead）",
-    "avoidSites": "无评论中特别建议避免的营位或区域",
     "cellCoverage": "未提及手机信号情况",
-    "noiseLevel": "营地被描述为安静友好；步道游客较多但不压迫，整体噪音水平适中",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "营地（campground）、Smith Creek小木屋区域、从South Falls起点开始徒步（South Falls trailhead）"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "无评论中特别建议避免的营位或区域"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "Trail of Ten Falls（十瀑环线）",
         "description": "完整环线约8英里，温和海拔增减、路况良好，评论由Areina B与Cynthia Mortensen提及，适合一日徒步。"
@@ -2031,7 +2181,17 @@
         "name": "观瀑与走到瀑布后方",
         "description": "评论多次提到可以走到部分瀑布后面，景观特别且值得体验，Cynthia Mortensen特别强调此体验不可错过。"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论一致称赞春季瀑布水量大、景观震撼；Trail of Ten Falls完整环线约8英里，路段维护良好但有台阶和约300英尺落差，部分区段因倒树会有封闭。营地与小木屋安静、卫生间和淋浴清洁、停车充足；步道虽繁忙但通常不至于拥挤，适合非专业徒步者。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "营地被描述为安静友好；步道游客较多但不压迫，整体噪音水平适中",
+    "bestSeasonTips": ""
   },
   "35": {
     "tags": [
@@ -2041,13 +2201,20 @@
       "营位紧凑/私密性差",
       "观星佳"
     ],
-    "areaSummary": "环抱壮丽湖景、活动丰富的州立公园，设施齐全（含热水淋浴与船只租赁），但营位较紧凑，旺季人多噪声明显，适合喜欢水上和观景活动的游客。",
-    "areaInsights": "点评一致称赞湖景、缆车和租船等活动，卫生间/淋浴干净且有热水，护林员友好。缺点为营位间距小、私密性差、满员时噪声大；有评论提到营地主机人员不太热情、湖边有时有鱼腥味，且入口道路单向易拥堵。费用偏高但设施齐全，适合带RV或喜欢丰富活动的家庭。",
-    "recommendedSites": "Group Campsite B；带50amp与污水接口的RV营位（如需电力/排污）",
-    "avoidSites": "常规单人营位（评论提到私密性差、灌木少）；靠近镇区/房屋边缘或营位排列过于紧凑的位置（易受噪声影响）",
     "cellCoverage": "评论中未提及手机信号情况",
-    "noiseLevel": "在旺季或满员时噪音较大，营位靠得很近会听见邻居对话；非高峰或远离主营地、夜晚观星时较为宁静",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "Group Campsite B；带50amp与污水接口的RV营位（如需电力/排污）"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "常规单人营位（评论提到私密性差、灌木少）；靠近镇区/房屋边缘或营位排列过于紧凑的位置（易受噪声影响）"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "船只与水上租赁",
         "description": "码头提供船只、独木舟、桨板和其他租赁（提及者：a rod、Mustafa M）"
@@ -2076,7 +2243,17 @@
         "name": "营地设施（浴室/淋浴）",
         "description": "州立公园浴室与淋浴干净且有热水，是多个评论中被特别表扬的设施（提及者：a rod、This moms Crazy Life）"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "点评一致称赞湖景、缆车和租船等活动，卫生间/淋浴干净且有热水，护林员友好。缺点为营位间距小、私密性差、满员时噪声大；有评论提到营地主机人员不太热情、湖边有时有鱼腥味，且入口道路单向易拥堵。费用偏高但设施齐全，适合带RV或喜欢丰富活动的家庭。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "在旺季或满员时噪音较大，营位靠得很近会听见邻居对话；非高峰或远离主营地、夜晚观星时较为宁静",
+    "bestSeasonTips": ""
   },
   "36": {
     "tags": [
@@ -2086,13 +2263,20 @@
       "周末/热门时段拥挤",
       "营地小卖部/卖木柴"
     ],
-    "areaSummary": "靠近日湖的家庭友好型营地，水上活动丰富，营地有全接入设施与小卖部，周末与日间热门区域人较多。",
-    "areaInsights": "评论总体正面：适合家庭和多种户外活动（划船、钓鱼、徒步、沙滩戏水）。设施方面有全接入供电/水/下水及营地主机卖木柴、冰和小吃。缺点为指示牌在夜间不足、部分日用区和周末非常拥挤、岸边多石且部分人喜欢更宽敞的营位间距。",
-    "recommendedSites": "G环（G loop）——Don Lowe 提到该区域视野好，可观湖景并适合春季观赏开花景致。",
-    "avoidSites": "无具体应绝对避免的营位，但建议避开周末或热门日用区（如Mongold 日用区）高峰时段，因人多且岸边多石，非沙滩型爱好者可能不适应。",
     "cellCoverage": "未提及",
-    "noiseLevel": "未直接说明噪音值；但评论提到周末营地满员和日间热门点人多，暗示高峰时段可能较嘈杂。",
-    "activities": [
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "G环（G loop）——Don Lowe 提到该区域视野好，可观湖景并适合春季观赏开花景致。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "无具体应绝对避免的营位，但建议避开周末或热门日用区（如Mongold 日用区）高峰时段，因人多且岸边多石，非沙滩型爱好者可能不适应。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "划船/皮划艇",
         "description": "水域条件好且受欢迎，Angilo Fletcher 和 Christina Morgan 提到带船和皮划艇体验很好。"
@@ -2121,15 +2305,34 @@
         "name": "露营（全接入RV）",
         "description": "Allen Miller 提到营地价格实惠并有全接入设施，适合带RV的家庭露营。"
       }
-    ]
+    ],
+    "areaInsights": [
+      {
+        "area": "综合",
+        "insight": "评论总体正面：适合家庭和多种户外活动（划船、钓鱼、徒步、沙滩戏水）。设施方面有全接入供电/水/下水及营地主机卖木柴、冰和小吃。缺点为指示牌在夜间不足、部分日用区和周末非常拥挤、岸边多石且部分人喜欢更宽敞的营位间距。"
+      }
+    ],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "未直接说明噪音值；但评论提到周末营地满员和日间热门点人多，暗示高峰时段可能较嘈杂。",
+    "bestSeasonTips": ""
   },
-  "CG37": {
-    "areaSummary": "索尔达克温泉营地位于雨林与河流之间，自然风光（瀑布与河景）是最大亮点。总体体验两极分化：风景与徒步线路很棒，但温泉与RV停车区有时拥挤、清洁与设施有限。",
-    "recommendedSites": "推荐选择Loop B或步行入营点（如评论中提到的Site 4），这些位置更私密、靠近溪流且感觉像独立营位；若打算长期泡温泉且不介意花费，可考虑住度假村客房享受不限次温泉入场。",
-    "avoidSites": "建议避开入口附近和靠近登记、洗碗站与公共卫生间的营位（例如评论中提到的Site 36/入门区），以及拥挤且缺少隐私的RV停车区（评论指出该区像大型停车场且卫生间不足）。",
-    "noiseNotes": "营地大部分区域安静，伴随溪流与鸟鸣；靠近入口、洗碗区或卫生间的营位会有人为噪声；温泉区域常常拥挤，可能较嘈杂。",
-    "signalNotes": "沿河水边可以接收到微弱手机信号（light cell signal）；步行入营或更深林中营位通常更偏远、信号较差，营地未提到有公共Wi‑Fi。",
-    "activities": [
+  "37": {
+    "tags": [],
+    "cellCoverage": "沿河水边可以接收到微弱手机信号（light cell signal）；步行入营或更深林中营位通常更偏远、信号较差，营地未提到有公共Wi‑Fi。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "推荐选择Loop B或步行入营点（如评论中提到的Site 4），这些位置更私密、靠近溪流且感觉像独立营位；若打算长期泡温泉且不介意花费，可考虑住度假村客房享受不限次温泉入场。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "建议避开入口附近和靠近登记、洗碗站与公共卫生间的营位（例如评论中提到的Site 36/入门区），以及拥挤且缺少隐私的RV停车区（评论指出该区像大型停车场且卫生间不足）。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "温泉泡浴",
         "description": "度假村有三个不同温度的天然温泉池（最热池约104–105°F），并设有冷池转换；非住客需付费入场（约$18含税，通常限1.5小时），度假村餐厅与礼品店也可使用。水有明显硫磺味、颜色会随地热活动变化。"
@@ -2147,19 +2350,28 @@
         "description": "营地靠近河流与瀑布，适合观景、摄影与在自然中野餐，河景与瀑布是多数游客最满意的部分。"
       }
     ],
-    "reviewHighlights": [
-      "“自然景观（瀑布與河流）比設施更令人印象深刻。”",
-      "“如果想要私密與安靜，選擇Loop B或步行入營位（例如Site 4）；入口與洗碗站附近（Site 36）較吵且人多。”",
-      "“溫泉舒服但容易擁擠且清潔/設施有待加強；非住客需支付約$18且通常僅限1.5小時，度假村房價較高但含不限次入場。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "营地大部分区域安静，伴随溪流与鸟鸣；靠近入口、洗碗区或卫生间的营位会有人为噪声；温泉区域常常拥挤，可能较嘈杂。",
+    "bestSeasonTips": ""
   },
-  "CG38": {
-    "areaSummary": "Harris Beach 是面向太平洋的州立公园露营地，营地维护良好、设施干净，树荫茂密且营位私密宽敞。靠近海滩和相邻公园，适合看日落、踏潮池和安静听海浪。",
-    "recommendedSites": "优先选择报道较好的营位：B9（评价中称为“awesome”，有隐秘森林位置可搭帐篷）和6A（大草坪且两侧有植被隔开，较私密）。若想更舒适可考虑园区的蒙古包/帐篷屋（yurt，有暖气）。建议提前在线预订（评论里有人前一晚预订成功），选位时偏好树荫充足、较大的营位以便放置椅子和营地设施。",
-    "avoidSites": "尽量避免B区的偶数位（评论提到 B8–B16 偶数位较小，可能无法容纳5人帐篷）。不建议夜间初次抵达且对夜间停车不自信的露营者在天黑时入营（营地夜间很暗）。",
-    "noiseNotes": "总体很安静，评论多次提到“只有海浪声”，没有吵闹邻居或交通噪音。夜间较黑、安静，适合听海和观星。",
-    "signalNotes": "有住客报告 Starlink 能用，T‑Mobile 信号也“工作良好”。但为保险起见，偏向沿海偏远地带，个别位置可能有信号波动，建议提前准备离线地图或卫星设备。",
-    "activities": [
+  "38": {
+    "tags": [],
+    "cellCoverage": "有住客报告 Starlink 能用，T‑Mobile 信号也“工作良好”。但为保险起见，偏向沿海偏远地带，个别位置可能有信号波动，建议提前准备离线地图或卫星设备。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择报道较好的营位：B9（评价中称为“awesome”，有隐秘森林位置可搭帐篷）和6A（大草坪且两侧有植被隔开，较私密）。若想更舒适可考虑园区的蒙古包/帐篷屋（yurt，有暖气）。建议提前在线预订（评论里有人前一晚预订成功），选位时偏好树荫充足、较大的营位以便放置椅子和营地设施。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "尽量避免B区的偶数位（评论提到 B8–B16 偶数位较小，可能无法容纳5人帐篷）。不建议夜间初次抵达且对夜间停车不自信的露营者在天黑时入营（营地夜间很暗）。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "海滩与潮池",
         "description": "短步行即可到海滩，潮汐丰富，适合查看潮池（出行前注意查看潮汐时间）。"
@@ -2177,19 +2389,28 @@
         "description": "可步行或短驾到附近“市区”或Crescent City（评论提到不远但营地更优），适合补给或外出就餐。"
       }
     ],
-    "reviewHighlights": [
-      "“B9 很棒，有个可以把帐篷藏进去的隐秘小树林。”",
-      "“营地和厕所非常干净，公园管理员和志愿者很热心，保持区域非常整洁。”",
-      "“夜里很安静，我们两晚只听到海洋的声音。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体很安静，评论多次提到“只有海浪声”，没有吵闹邻居或交通噪音。夜间较黑、安静，适合听海和观星。",
+    "bestSeasonTips": ""
   },
-  "CG39": {
-    "areaSummary": "Colonial Creek South 位于迪亚布洛湖边，营地景色优美、靠近湖泊与徒步径（Diablo Lake 越野径车程约10分钟），营地维护良好但靠近公路的路段有时受周边道路或邻居活动影响。整体体验以观景和水上活动为主，设施（如冲水厕所和可上锁的防熊食物箱）状况很好。",
-    "recommendedSites": "优先选择靠湖的视野位或较大营位（在 recreation.gov 上提前确认营位尺寸）。如果没有预订，可尝试等候当日取消（有时可免费占用被取消的当晚营位）。每个营位有可上锁的防熊食物箱，请务必将食物上锁或放车内。参加水上活动时务必穿救生衣并留意风力与暗流。",
-    "avoidSites": "避免选择只能容纳小帐篷的狭小营位（可能不适合多人或大装备）。若想安静，避开紧邻他营位的地点——营位之间较近，邻居噪音可能明显。避免在未经防护或风险提示的水域游泳（湖水非常冷、较深且有强流），如不穿救生衣或风大时勿划行。",
-    "noiseNotes": "多位评论提到营位较靠近、邻居声音可能会传来；总体上若不介意邻居噪音即可接受，但寻求安静体验者应挑选较偏或较大的营位。",
-    "signalNotes": "评论中未直接提及手机或Wi‑Fi信号，推断该地区为山区湖泊地带，手机信号可能时强时弱。建议提前下载地图与离线资料，并准备应急通讯方案（如告知他人行程、携带充电设备）。",
-    "activities": [
+  "39": {
+    "tags": [],
+    "cellCoverage": "评论中未直接提及手机或Wi‑Fi信号，推断该地区为山区湖泊地带，手机信号可能时强时弱。建议提前下载地图与离线资料，并准备应急通讯方案（如告知他人行程、携带充电设备）。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择靠湖的视野位或较大营位（在 recreation.gov 上提前确认营位尺寸）。如果没有预订，可尝试等候当日取消（有时可免费占用被取消的当晚营位）。每个营位有可上锁的防熊食物箱，请务必将食物上锁或放车内。参加水上活动时务必穿救生衣并留意风力与暗流。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "避免选择只能容纳小帐篷的狭小营位（可能不适合多人或大装备）。若想安静，避开紧邻他营位的地点——营位之间较近，邻居噪音可能明显。避免在未经防护或风险提示的水域游泳（湖水非常冷、较深且有强流），如不穿救生衣或风大时勿划行。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "湖上水上活动（皮划艇／SUP／划船）",
         "description": "营地临湖，适合皮划艇、SUP 等水上活动；但水冷、深且有强流且风力变化快，务必穿救生衣并注意天气与风况。"
@@ -2207,19 +2428,28 @@
         "description": "营地设施完善（冲水厕所、餐桌、火堆圈/但有时禁火）、适合放松和亲近自然；注意储存食物以防熊出没。"
       }
     ],
-    "reviewHighlights": [
-      "“营地维护良好，卫生间有自来水和冲洗厕所，非常棒。”",
-      "“营位大小差异大，有的只能容纳一个小帐篷，有的能容纳大帐篷+小帐篷——出发前请在 recreation.gov 上确认营位尺寸。”",
-      "“营位之间较近，若不介意邻居的声音就没问题；务必把食物上锁或放车里，因为会有熊出没。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "多位评论提到营位较靠近、邻居声音可能会传来；总体上若不介意邻居噪音即可接受，但寻求安静体验者应挑选较偏或较大的营位。",
+    "bestSeasonTips": ""
   },
-  "CG40": {
-    "areaSummary": "林肯岩（Lincoln Rock）风景优美、设施齐全，适合家庭出游和房车停靠。营地树荫充足、营位宽敞、卫生设施干净并有热水淋浴，且有船坡、游泳/涉水区和优秀的自行车步道。",
-    "recommendedSites": "评论中提到的具体营位：73号（私密、带水电接入，适合glamper）和31号（空间充足，适合42英尺5th wheel）。总体建议：带大车/房车的露营者可优先选择有水电接入且空间大的营位；若需倾倒污水，请避开退营高峰时段以免排队。",
-    "avoidSites": "没有明确被建议避免的具体营位。一般建议避开退营/结账时间去使用倾倒站（dump station），以免排长队。",
-    "noiseNotes": "总体偏安静，营位间距大且感觉私密，适合远程工作。靠近儿童游乐场的营位可能会有白天儿童活动的噪音。",
-    "signalNotes": "有评论指出“非常适合远程工作”，可推断手机信号或网络覆盖在园区大部分区域是可用的，但官方Wi‑Fi未被明确提及，信号强弱可能因运营商和具体营位位置而异，建议出行前确认运营商覆盖。",
-    "activities": [
+  "40": {
+    "tags": [],
+    "cellCoverage": "有评论指出“非常适合远程工作”，可推断手机信号或网络覆盖在园区大部分区域是可用的，但官方Wi‑Fi未被明确提及，信号强弱可能因运营商和具体营位位置而异，建议出行前确认运营商覆盖。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "评论中提到的具体营位：73号（私密、带水电接入，适合glamper）和31号（空间充足，适合42英尺5th wheel）。总体建议：带大车/房车的露营者可优先选择有水电接入且空间大的营位；若需倾倒污水，请避开退营高峰时段以免排队。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "没有明确被建议避免的具体营位。一般建议避开退营/结账时间去使用倾倒站（dump station），以免排长队。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "划船/船坡（Boat launch）",
         "description": "公园有良好的下船坡，适合划船、动力艇或垂钓，评论多次提到可以租船或自带船出湖。"
@@ -2237,19 +2467,28 @@
         "description": "有铺装步道可连接Apple Capital Loop Trail，骑行路线优良；公园还有观景点可看到类似林肯侧脸的岩石标志景观。"
       }
     ],
-    "reviewHighlights": [
-      "“营地干净、风景壮观，设施比大多数房车公园更齐全。”",
-      "“营位宽敞且私密，像73号和31号都适合大车/房车。”",
-      "“非常适合家庭出游：有船坡、游泳区和儿童游乐场；也适合远程工作或野餐。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体偏安静，营位间距大且感觉私密，适合远程工作。靠近儿童游乐场的营位可能会有白天儿童活动的噪音。",
+    "bestSeasonTips": ""
   },
-  "CG41": {
-    "areaSummary": "Fort Casey 是一处保存良好的百年历史要塞，坐落在 Puget Sound 一带，景色壮丽、草地宽阔，适合散步、摄影与亲子游。整体维护良好，堡垒与地面保存完好，但部分区域开放且靠近落差，需注意安全。",
-    "recommendedSites": "推荐参观 Admiralty Head 灯塔（若开放）、可自由穿行的掩体/堡垒、沿岸步道与大片草地用于漫步和拍照。建议随身携带防风防雨衣物，出发前查询灯塔开放时间，并密切看护儿童。",
-    "avoidSites": "避免靠近未设围栏的落差处和未封闭的危险边缘；在风雨较大的日子限制在高处或露天区域活动。注意：在一月等淡季灯塔可能关闭，不能进入内部参观。",
-    "noiseNotes": "总体环境偏安静，以自然声（海风、鸟鸣）为主；但遇到大风或暴雨天气时风声会很明显，体感噪音增大。",
-    "signalNotes": "评论未直接提及手机或 Wi‑Fi 信号，基于海岸与公园环境可推断移动信号可能视运营商与天气有所波动，不能保证稳定 Wi‑Fi 覆盖，建议事先下载地图或离线资料。",
-    "activities": [
+  "41": {
+    "tags": [],
+    "cellCoverage": "评论未直接提及手机或 Wi‑Fi 信号，基于海岸与公园环境可推断移动信号可能视运营商与天气有所波动，不能保证稳定 Wi‑Fi 覆盖，建议事先下载地图或离线资料。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "推荐参观 Admiralty Head 灯塔（若开放）、可自由穿行的掩体/堡垒、沿岸步道与大片草地用于漫步和拍照。建议随身携带防风防雨衣物，出发前查询灯塔开放时间，并密切看护儿童。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "避免靠近未设围栏的落差处和未封闭的危险边缘；在风雨较大的日子限制在高处或露天区域活动。注意：在一月等淡季灯塔可能关闭，不能进入内部参观。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "探索堡垒与掩体",
         "description": "可以进入并步行穿越部分开放的二战/防御掩体，感受历史氛围并近距离查看遗迹。"
@@ -2267,19 +2506,28 @@
         "description": "常见鹿、兔、花栗鼠和多种鸟类，是拍摄自然与人像（有时可在婚礼拍摄中进入灯塔） 的好地点。"
       }
     ],
-    "reviewHighlights": [
-      "“堡垒和周边地面维护得很好，保存完好，参观体验很棒。”",
-      "“Admiralty Head 灯塔是标志性景点，但有时会关闭，建议提前确认开放情况。”",
-      "“地点很适合孩子和摄影，但靠近落差处没有太多限制，儿童需密切看管。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体环境偏安静，以自然声（海风、鸟鸣）为主；但遇到大风或暴雨天气时风声会很明显，体感噪音增大。",
+    "bestSeasonTips": ""
   },
-  "CG42": {
-    "areaSummary": "Fort Ebey 是一处风景优美且较为僻静的州立公园，营地多为林地，靠近峭壁能看到海景与壮丽日落，适合家庭与团体。营地维护良好、营位宽敞且私密度高，但夏季会比平时繁忙。",
-    "recommendedSites": "优先选择靠近步道或峭壁的营位以获得海景与日落视野；若需要隐私或大空间，选森林密植、营位较大的地点；若对卫生间/淋浴依赖较高，选择靠近营地中央卫生间的位置；出发前备好现金／代币（淋浴需代币），或到公园入口购买木柴和冰。",
-    "avoidSites": "评论中未指出特定需避开的营位，但注意营地仅有一处集中卫生间且无排污站（no dumping station），若需要排污服务或不愿远离卫生间，请在选位时留意位置；避免期望营地有排污设施。",
-    "noiseNotes": "总体安静、夜间噪音不多，营地氛围平和；夏季游客增多时会相对热闹，但与周边更拥挤的地点（如 Deception Pass）相比仍较为宁静。",
-    "signalNotes": "评论未直接提到手机信号，合理推断：林区与峭壁处可能信号较弱；靠近公园入口或主道路处信号可能较好。建议事先下载离线地图并准备应急通讯方案。",
-    "activities": [
+  "42": {
+    "tags": [],
+    "cellCoverage": "评论未直接提到手机信号，合理推断：林区与峭壁处可能信号较弱；靠近公园入口或主道路处信号可能较好。建议事先下载离线地图并准备应急通讯方案。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择靠近步道或峭壁的营位以获得海景与日落视野；若需要隐私或大空间，选森林密植、营位较大的地点；若对卫生间/淋浴依赖较高，选择靠近营地中央卫生间的位置；出发前备好现金／代币（淋浴需代币），或到公园入口购买木柴和冰。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "评论中未指出特定需避开的营位，但注意营地仅有一处集中卫生间且无排污站（no dumping station），若需要排污服务或不愿远离卫生间，请在选位时留意位置；避免期望营地有排污设施。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "徒步/健行",
         "description": "营地内外有多条步道可通往峭壁与海岸，适合短途散步或较长的徒步路线。"
@@ -2297,19 +2545,28 @@
         "description": "营位配有野餐桌与火坑，适合家庭或团体聚会、篝火和摄影休闲活动。"
       }
     ],
-    "reviewHighlights": [
-      "“非常漂亮、安静且宁静的营地，海景和远足很棒。适合家庭和大团体。”",
-      "“营地维护良好、营位宽敞且私密，多数营位间距较大，林区感觉较为原始僻静。”",
-      "“淋浴需代币（3分钟1美元、代币在淋浴楼后方机器兑换或在公园办公室购买），营地只有一处集中卫生间且公园没有排污站。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体安静、夜间噪音不多，营地氛围平和；夏季游客增多时会相对热闹，但与周边更拥挤的地点（如 Deception Pass）相比仍较为宁静。",
+    "bestSeasonTips": ""
   },
-  "CG43": {
-    "areaSummary": "Larrabee 是一个靠海的风景优美州立公园，毗邻 Chuckanut 山脉，拥有沙滩、潮池和多条徒步/骑行小径，公园维护良好、服务热情。缺点是营位紧凑且靠近穿行的铁路和公路，夜间噪声可能影响想要安静体验的露营者。",
-    "recommendedSites": "没有具体营位号的推荐；建议尽量预订或请求远离铁路和主干道的营位、靠近树林一侧的营位以获得更多屏蔽；高峰周末提前到场以选好位置；遇到禁火令可携带丙烷火坑保暖；准备耳塞以应对夜间噪声。",
-    "avoidSites": "尽量避免靠近铁路（评论中提到约500英尺处有列车经过）和靠马路/停机路径的营位；避开车位过于狭窄或与邻营位毫无间隔的位置，以减少被噪声和近邻影响的几率。",
-    "noiseNotes": "多条评论提到列车全天候经过（有评论称“在昼夜任何时刻都有列车经过”），且有持续的交通噪声和偶发低空飞机噪音；部分露营者表示噪音影响睡眠，另一些则觉得影响不大，取决于个人耐受度和所选营位距离噪源的远近。",
-    "signalNotes": "评论中未直接提到手机信号或 Wi‑Fi，但地点靠近贝灵厄姆（Bellingham），可以合理推断进出城镇的道路和营地周边通常有较好手机覆盖；若对网络依赖较高，建议在出发前确认自家运营商在该区域的覆盖情况。",
-    "activities": [
+  "43": {
+    "tags": [],
+    "cellCoverage": "评论中未直接提到手机信号或 Wi‑Fi，但地点靠近贝灵厄姆（Bellingham），可以合理推断进出城镇的道路和营地周边通常有较好手机覆盖；若对网络依赖较高，建议在出发前确认自家运营商在该区域的覆盖情况。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "没有具体营位号的推荐；建议尽量预订或请求远离铁路和主干道的营位、靠近树林一侧的营位以获得更多屏蔽；高峰周末提前到场以选好位置；遇到禁火令可携带丙烷火坑保暖；准备耳塞以应对夜间噪声。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "尽量避免靠近铁路（评论中提到约500英尺处有列车经过）和靠马路/停机路径的营位；避开车位过于狭窄或与邻营位毫无间隔的位置，以减少被噪声和近邻影响的几率。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "海滩与潮池",
         "description": "公园有可步行到达的海滩和潮池，可观潮、生物（评论提到看到海星）并享受海岸景观。"
@@ -2327,19 +2584,28 @@
         "description": "靠近 Galbraith 等骑行点，受到骑行者欢迎，是进行山地自行车活动的好基地。"
       }
     ],
-    "reviewHighlights": [
-      "“工作人员非常友好，公园维护良好，卫生间很干净” — 多位评论一致称赞管理与服务质量。",
-      "“铁路全天候经过，夜间噪声明显” — 多条评论指出列车和交通噪音会影响安静的露营体验。",
-      "“海滩、潮池和周边徒步/骑行路线非常出色” — 适合想要靠海和近山活动的露营者。"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "多条评论提到列车全天候经过（有评论称“在昼夜任何时刻都有列车经过”），且有持续的交通噪声和偶发低空飞机噪音；部分露营者表示噪音影响睡眠，另一些则觉得影响不大，取决于个人耐受度和所选营位距离噪源的远近。",
+    "bestSeasonTips": ""
   },
-  "CG44": {
-    "areaSummary": "Steamboat Rock州立公园景色优美、靠湖而建，营地维护良好、氛围悠闲，适合家庭游、划水和登岩观景。设施有部分陈旧（如公共卫生间），夏季高温与徒步路段陡峭需注意安全。",
-    "recommendedSites": "优先选择靠水的营位或靠近步道连接处的营位，便于下水、划桨和上岸活动；带私人卫浴/淋浴单元的营位适合想要更多隐私或家庭使用者；带船的游客可选靠近北端大停车场/船坡的营位。",
-    "avoidSites": "避开被高速滑板车频繁穿行的回路（影响安全与安静）；对高度或攀爬经验不足者避免登顶Steamboat Rock的最陡段；炎热季节注意避开发生响尾蛇的裸露岩石区域。",
-    "noiseNotes": "总体氛围悠闲和平静，晚间有冰淇淋车巡回（带来便利也有短时噪音）；部分回路存在高速滑板车造成的噪声与安全问题。",
-    "signalNotes": "评论未直接提及手机或Wi‑Fi信号；推断为乡村湖区，手机信号可能断续或较弱，北端大停车场/船坡处或沿主要道路处可能信号较好；建议提前下载离线地图并准备应急通信手段。",
-    "activities": [
+  "44": {
+    "tags": [],
+    "cellCoverage": "评论未直接提及手机或Wi‑Fi信号；推断为乡村湖区，手机信号可能断续或较弱，北端大停车场/船坡处或沿主要道路处可能信号较好；建议提前下载离线地图并准备应急通信手段。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择靠水的营位或靠近步道连接处的营位，便于下水、划桨和上岸活动；带私人卫浴/淋浴单元的营位适合想要更多隐私或家庭使用者；带船的游客可选靠近北端大停车场/船坡的营位。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "避开被高速滑板车频繁穿行的回路（影响安全与安静）；对高度或攀爬经验不足者避免登顶Steamboat Rock的最陡段；炎热季节注意避开发生响尾蛇的裸露岩石区域。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "登Steamboat Rock",
         "description": "约爬升300英尺，部分路段需手部攀爬或跨越落石，挑战性中等偏难，但到顶可获得360度全景，强烈建议穿好鞋并带足水。"
@@ -2357,19 +2623,28 @@
         "description": "Banks Lake鱼况良好，是钓鱼好去处；湖面日落景色被多次提及，适合摄影与静观自然。"
       }
     ],
-    "reviewHighlights": [
-      "“营地维护良好，更像私营的RV公园，卫生间很干净，有私人卫浴单元。”",
-      "“登岩虽有难度（需手部攀爬），但到顶端可获得360度的壮观景色，绝对值得。”",
-      "“沙滩适合家庭，水非常适合游泳和划板；但公共卫生间有老旧或损坏问题，回路有时被高速滑板车扰乱。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体氛围悠闲和平静，晚间有冰淇淋车巡回（带来便利也有短时噪音）；部分回路存在高速滑板车造成的噪声与安全问题。",
+    "bestSeasonTips": ""
   },
-  "CG45": {
-    "areaSummary": "Bullards Beach 州立公园靠近海岸，营地维护良好，适合房车、蒙古包(yurt)和帐篷露营。整体氛围安静、景观优美，是进行海滩徒步和附近多日短途旅行的好基地。",
-    "recommendedSites": "推荐入住营地的蒙古包（yurt）和房车位——评论中特别提到蒙古包“很棒”且房车停车位平整且私密。若使用房车，注意营地只有水电供应（无直连污水），可使用公园的排污站；靠近班登（Bandon）镇，方便补给和就餐。",
-    "avoidSites": "评论中未直接指出需避开的具体营位或区域。推断：如果需要车载污水直排或全套房车钩电（含下水），此营地可能不适合，因为仅提供水电（需使用排污站）。",
-    "noiseNotes": "多条评论强调营地安静且夜间光害少（“安静且夜晚很黑”），总体为低噪环境，适合寻求宁静的露营体验。",
-    "signalNotes": "评论未直接提及手机信号或 Wi‑Fi。推断：营地距离班登镇仅约2英里，靠近镇区处信号可能良好，但靠近海岸或偏远营位时手机信号可能变弱，若依赖网络请提前准备离线地图或询问公园管理处。",
-    "activities": [
+  "45": {
+    "tags": [],
+    "cellCoverage": "评论未直接提及手机信号或 Wi‑Fi。推断：营地距离班登镇仅约2英里，靠近镇区处信号可能良好，但靠近海岸或偏远营位时手机信号可能变弱，若依赖网络请提前准备离线地图或询问公园管理处。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "推荐入住营地的蒙古包（yurt）和房车位——评论中特别提到蒙古包“很棒”且房车停车位平整且私密。若使用房车，注意营地只有水电供应（无直连污水），可使用公园的排污站；靠近班登（Bandon）镇，方便补给和就餐。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "评论中未直接指出需避开的具体营位或区域。推断：如果需要车载污水直排或全套房车钩电（含下水），此营地可能不适合，因为仅提供水电（需使用排污站）。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "徒步/观景",
         "description": "营地有维护良好的步道，景观优美，适合短途徒步与观景。"
@@ -2387,19 +2662,28 @@
         "description": "可作为前往 Port Orford、Cape Blanco、Seven Devils State Park、Charleston 及 Cape Arago/Coos Bay 等地的一日或多日游基地。"
       }
     ],
-    "reviewHighlights": [
-      "“蒙古包很棒”（评论者强烈推荐 yurt）。",
-      "“房车停车位非常平整且私密，男士淋浴间干净”，设施维护良好且性价比高（非俄勒冈居民含水电约 $42）。",
-      "营地“安静、干净且风景优美”，适合做为多处周边景点的出发点。"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "多条评论强调营地安静且夜间光害少（“安静且夜晚很黑”），总体为低噪环境，适合寻求宁静的露营体验。",
+    "bestSeasonTips": ""
   },
-  "CG46": {
-    "areaSummary": "Champoeg State Heritage Area 是一个景色优美、以步道和历史遗迹为主的州立公园，适合露营、骑行、徒步和亲子活动。访客中心设施完善并有历史展览，营地选项丰富（RV、帐篷、圆顶帐篷/小屋），总体体验非常正面，但部分步道需要维护。",
-    "recommendedSites": "如果开房车，选择 RV 营位——大多数地面平整；冬季优先预订 RV 营位、圆顶帐篷（yurt）或小屋；夏季若想靠近河流可预订靠河的团体帐篷位。参观游客中心（有礼品与教育展）并顺道步行到 Butteville Store 与 Lady Hill Winery（步道约1英里），团体野餐区需提前预订。利用公园内的免费双位排污站（dump station）。",
-    "avoidSites": "评语提到部分步道灌木丛过度生长且有“widowmakers”（悬危大树枝/倒树）存在，尤其靠近野餐区那片有断裂树干躺地的区域应谨慎避开或注意安全；码头区有多处禁止游泳的标示，应避免在该处下水。",
-    "noiseNotes": "总体安静、家庭友好，游客和评语中未提到噪音问题；营地主机和护林员友好热情，营地氛围轻松。儿童游乐场可能在白天产生正常的活动声响。",
-    "signalNotes": "评论未直接提到手机信号或 Wi‑Fi，合理推断：靠近游客中心和公园出入口处信号较好，营地深处或沿河区域信号可能不稳定。建议在到访前下载离线地图并备有热点或备用通讯方案。",
-    "activities": [
+  "46": {
+    "tags": [],
+    "cellCoverage": "评论未直接提到手机信号或 Wi‑Fi，合理推断：靠近游客中心和公园出入口处信号较好，营地深处或沿河区域信号可能不稳定。建议在到访前下载离线地图并备有热点或备用通讯方案。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "如果开房车，选择 RV 营位——大多数地面平整；冬季优先预订 RV 营位、圆顶帐篷（yurt）或小屋；夏季若想靠近河流可预订靠河的团体帐篷位。参观游客中心（有礼品与教育展）并顺道步行到 Butteville Store 与 Lady Hill Winery（步道约1英里），团体野餐区需提前预订。利用公园内的免费双位排污站（dump station）。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "评语提到部分步道灌木丛过度生长且有“widowmakers”（悬危大树枝/倒树）存在，尤其靠近野餐区那片有断裂树干躺地的区域应谨慎避开或注意安全；码头区有多处禁止游泳的标示，应避免在该处下水。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "徒步与步道探索",
         "description": "公园步道风景优美，可步行到 Butteville Store（历史性地点）并连接到周边路线；适合短途或长距离徒步。"
@@ -2417,19 +2701,28 @@
         "description": "步道约1英里可达 Lady Hill Winery，附近的 Butteville Store（虽非传统商店）提供午餐与自制冰淇淋，适合边徒步边游览的短途休闲行程。"
       }
     ],
-    "reviewHighlights": [
-      "“游客中心一流，设施维护良好并有纪念品可购。”",
-      "“大多数 RV 营位平整，公园干净且有免费双位排污站。”",
-      "“步道部分需维护，有倒树/危险树枝，请注意安全。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体安静、家庭友好，游客和评语中未提到噪音问题；营地主机和护林员友好热情，营地氛围轻松。儿童游乐场可能在白天产生正常的活动声响。",
+    "bestSeasonTips": ""
   },
-  "CG47": {
-    "areaSummary": "Sunset Bay 位于海湾与沙滩之间，景色优美、沙丘和潮池丰富，整体氛围安静、适合放松度假。营地干净、设施（如热水淋浴和洗手间）维护良好，工作人员友好。",
-    "recommendedSites": "优先选择靠近海湾/海滩的营位以观景和近海活动；注意营地售木时间（每晚 16:00–18:00）可现场购买生火用木材。携带现金或备用付费方式以防门票二维码失效。若想更安静的体验，可选择远离露营区中心的沙丘区域。",
-    "avoidSites": "避开正在整修的 Loop A（风暴损坏整修中）；沿山崖的边缘要远离危险地带（地面松软、易塌），不要靠近悬崖边缘活动或停车。",
-    "noiseNotes": "天然噪音以海洋和海狮叫声为主，多数评论认为是愉悦的背景声；需注意夜间有浣熊（“trash pandas”）活动，可能会翻找食物发出声响。",
-    "signalNotes": "评论未直接说明手机/Wi‑Fi 信号，但提到二维码缴费无法使用，推断部分地点可能信号不稳或电子服务不可靠。建议提前准备离线地图和纸质/备用支付方式。",
-    "activities": [
+  "47": {
+    "tags": [],
+    "cellCoverage": "评论未直接说明手机/Wi‑Fi 信号，但提到二维码缴费无法使用，推断部分地点可能信号不稳或电子服务不可靠。建议提前准备离线地图和纸质/备用支付方式。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择靠近海湾/海滩的营位以观景和近海活动；注意营地售木时间（每晚 16:00–18:00）可现场购买生火用木材。携带现金或备用付费方式以防门票二维码失效。若想更安静的体验，可选择远离露营区中心的沙丘区域。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "避开正在整修的 Loop A（风暴损坏整修中）；沿山崖的边缘要远离危险地带（地面松软、易塌），不要靠近悬崖边缘活动或停车。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "观潮与潮池探索",
         "description": "在海滩的潮池探寻海星、小螃蟹等海洋生物，适合带小孩和家人教学体验。"
@@ -2447,19 +2740,28 @@
         "description": "观赏海狮、各类海鸟及其他小型生物；夜间注意浣熊等会接近营地觅食。"
       }
     ],
-    "reviewHighlights": [
-      "“营地非常干净，工作人员超友好，洗手间有热水淋浴。”",
-      "“每晚 16:00–18:00 有木材出售，非常方便。”",
-      "“Loop A 正在因风暴损坏整修；沿悬崖步道需小心，地面较软要远离边缘。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "天然噪音以海洋和海狮叫声为主，多数评论认为是愉悦的背景声；需注意夜间有浣熊（“trash pandas”）活动，可能会翻找食物发出声响。",
+    "bestSeasonTips": ""
   },
-  "CG48": {
-    "areaSummary": "The Cove Palisades 是一个以幽美峡谷景观和大湖为特色的州立公园，适合自驾观光、露营和划船。总体体验以壮观景色、宁静氛围为主，但在热门区域会有划船人潮并伴随风大或水藻问题。",
-    "recommendedSites": "优先选择面向峡谷或湖泊的观景营位以获得最佳视野；若需要电源请选有 hookups 的营位；非旺季或平日去能更安静地享受景色。行车时注意道路曲折狭窄（单车道桥），谨慎驾驶。",
-    "avoidSites": "尽量避免在水面呈绿色、疑似藻类严重的地点游泳或下水；若想安静，避开靠近船只上岸/船运繁忙的区域和靠近船只出入口的营地；高架或暴露的营位在大风天可能不舒适。",
-    "noiseNotes": "总体偏安静、适合家庭休闲，但靠近热门船只区域会有划船噪音；风较大时会产生持续噪声，具体以当天风况为准。",
-    "signalNotes": "评论中未直接提及手机/无线信号强度，但地处峡谷与湖区，合理推断信号可能不稳定或较弱，建议提前下载地图/离线资料并准备应急通信方案。",
-    "activities": [
+  "48": {
+    "tags": [],
+    "cellCoverage": "评论中未直接提及手机/无线信号强度，但地处峡谷与湖区，合理推断信号可能不稳定或较弱，建议提前下载地图/离线资料并准备应急通信方案。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择面向峡谷或湖泊的观景营位以获得最佳视野；若需要电源请选有 hookups 的营位；非旺季或平日去能更安静地享受景色。行车时注意道路曲折狭窄（单车道桥），谨慎驾驶。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "尽量避免在水面呈绿色、疑似藻类严重的地点游泳或下水；若想安静，避开靠近船只上岸/船运繁忙的区域和靠近船只出入口的营地；高架或暴露的营位在大风天可能不舒适。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "划船/驾艇",
         "description": "湖面广阔、非常受划船爱好者欢迎，是主要的水上活动，但要注意水质和风况。"
@@ -2477,19 +2779,28 @@
         "description": "有干净的游乐场、充足的野餐区，适合带孩子与宠物的家庭活动。"
       }
     ],
-    "reviewHighlights": [
-      "“景致让这个地方即便在淡季也像常年旺季一样。”（Teresa 的观点）",
-      "“漂亮的峡谷景色和超大的湖面，但水呈绿色且风大，划船很流行。”（综合 Cheri 与 Gary 的观察）",
-      "“适合家庭和带宠物出行，游乐场干净，野餐区多，整体氛围平和放松。”（Sampor 的描述）"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "总体偏安静、适合家庭休闲，但靠近热门船只区域会有划船噪音；风较大时会产生持续噪声，具体以当天风况为准。",
+    "bestSeasonTips": ""
   },
-  "CG49": {
-    "areaSummary": "La Pine 营地为全年开放的营地，有河畔营位和热水淋浴等便利设施，但存在管理与礼仪问题：部分区域有下水道异味、道路狭窄且有人无视通行规则，旺季或关闭部分环路时会显得拥挤。",
-    "recommendedSites": "优先选择靠河的营位（河畔位置评价较好），有人特别提到“营位 123”体验不错；预订前务必询问具体营位位置与电力状况，若有超大拖车建议停入溢出停车区或选择能方便通行的拉出式营位。",
-    "avoidSites": "尽量避开南环（south loop）——有多次被报告的下水道臭味；避免靠近营地入口或小木屋对面的营位（被住客频繁穿越且噪音大）；若为帐篷露营，避开在小木屋开放且北/中营地关闭导致人群集中的时段。",
-    "noiseNotes": "噪音来源包括从小木屋或入口区域穿越营位的住客、夜间使用头灯照射他人、以及在步道上高速骑行或穿行的自行车；当北/中环路关闭时，营地更易拥挤且噪音增加。部分住客因此夜间无法入睡并提前离营。",
-    "signalNotes": "有评论明确指出营地没有手机信号和 WiFi；若需要联网或手机服务应提前准备（离线地图、应急通讯方案）。",
-    "activities": [
+  "49": {
+    "tags": [],
+    "cellCoverage": "有评论明确指出营地没有手机信号和 WiFi；若需要联网或手机服务应提前准备（离线地图、应急通讯方案）。",
+    "recommendedSites": [
+      {
+        "site": "推荐",
+        "reason": "优先选择靠河的营位（河畔位置评价较好），有人特别提到“营位 123”体验不错；预订前务必询问具体营位位置与电力状况，若有超大拖车建议停入溢出停车区或选择能方便通行的拉出式营位。"
+      }
+    ],
+    "avoidSites": [
+      {
+        "site": "避坑",
+        "reason": "尽量避开南环（south loop）——有多次被报告的下水道臭味；避免靠近营地入口或小木屋对面的营位（被住客频繁穿越且噪音大）；若为帐篷露营，避开在小木屋开放且北/中营地关闭导致人群集中的时段。"
+      }
+    ],
+    "activitiesFromReviews": [
       {
         "name": "骑行",
         "description": "营地周边有步道和可骑行路线，但需注意有骑行者常在步道快速通行，且部分路段有自行车禁行标志被忽视。"
@@ -2507,10 +2818,10 @@
         "description": "营地提供热水淋浴等基础设施，适合需要基本营地服务的露营者。"
       }
     ],
-    "reviewHighlights": [
-      "“南环持续出现下水道臭味，体验极差（会让我不再选择南环）。”",
-      "“营地没有手机信号和 WiFi；在现代旅行中这对很多人来说是重要问题。”",
-      "“河畔营位和热水淋浴评价很高，但要注意有人会穿越营位与自行车穿行造成干扰（营位 123 被提到为不错的选择）。”"
-    ]
+    "areaInsights": [],
+    "wildlifeWarnings": "",
+    "facilitiesQuality": "",
+    "noiseIssues": "噪音来源包括从小木屋或入口区域穿越营位的住客、夜间使用头灯照射他人、以及在步道上高速骑行或穿行的自行车；当北/中环路关闭时，营地更易拥挤且噪音增加。部分住客因此夜间无法入睡并提前离营。",
+    "bestSeasonTips": ""
   }
 }

@@ -1,46 +1,78 @@
 {
-  "campgroundId": 39,
   "campgroundName": "Colonial Creek South",
-  "totalReviews": 5,
-  "averageRating": 4.6,
-  "googleTotalRatings": 288,
+  "totalReviewsOnPlatform": 288,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Eva Boots",
       "rating": 5,
-      "date": "a month ago",
       "text": "Route 20 is still closed just past the campground from the flooding in December, but the campground is open and in wonderful condition. The campsites are a little close but as long as you don't mind some noise from neighbors it's not an issue.",
-      "source": "google_maps"
+      "date": "a month ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Francesc Vilariño Güell",
       "rating": 4,
-      "date": "a year ago",
       "text": "Pretty nice campground to enjoy water activities on the lake, as well as some nearby hiking. The Diablo Lake trailhead is only 10 minutes driving and has good views of the lake and the dam. The campground has plenty of spots, but they vary significantly on size, some can only accommodate one small tent, while others have room for both a large tent and a small one. All spots have a dining table and fire pit, though fires are no longer allowed. The restroom is top notch, has running water and flushing toilets, magical! All in all, a great campground to relax and enjoy nature.",
-      "source": "google_maps"
+      "date": "a year ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Anna",
       "rating": 5,
-      "date": "3 years ago",
       "text": "This campsite is amazing!\nWe had no reservations and were relying on cancellations. We were blessed that weekend. Moved 3 times to different campsites that became available for that day. Rangers Wendy and Christine were awesome as well as the gentleman that opened up the camp for the day. No fees if you grab a cancelled site for the night. Please keep your food locked up either in your car or in storage that is provided at each site. Bears do come by and they recently had to put one down:/",
-      "source": "google_maps"
+      "date": "3 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "daniel robinson",
       "rating": 5,
-      "date": "5 years ago",
       "text": "Beautiful camp ground with a gorgeous lake. This place is by far one of my favorite places. The sites are all sorts of sizes so please check in advance with recreation.gov to make sure your site will be what you need. The trails here are very well maintained and so is the beach. The water is very cold, gets deep quickly and has some very strong currents so please wear a life jacket at all times. Kayak and sup users be aware of the wind it picks up quick and tends to blow hard.",
-      "source": "google_maps"
+      "date": "5 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "pacificnorthwestlandrover",
       "rating": 5,
-      "date": "3 years ago",
       "text": "love this location to stop at and take beautiful photos of Diablo and surroundings. camping spots with gorgeous views right on the water. i have yet to camp here, but looks like a great spot if you dont mind camping right next to a lot of people. restrooms, i hear have running water. each spot has lockable bear proof bins for your food",
-      "source": "google_maps"
+      "date": "3 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.6
 }

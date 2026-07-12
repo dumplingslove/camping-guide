@@ -21,19 +21,18 @@ export interface CampgroundReviewConfig {
 
 export const campgroundReviewConfigs: CampgroundReviewConfig[] = [
   // ============================================================================
-  // GROUP 1: Recreation.gov campgrounds (10) - PRIMARY: Recreation.gov API
+  // GROUP 1: Recreation.gov campgrounds (9) - PRIMARY: Recreation.gov API
   // These get 100+ reviews with site number, loop, dates, and helpful votes
   // ============================================================================
   { id: 4, name: "Cougar Rock Campground", googlePlacesQuery: "Cougar Rock Campground Mount Rainier", recGovCampgroundId: "232463" },
-  { id: 6, name: "Ohanapecosh Campground", googlePlacesQuery: "Ohanapecosh Campground Mount Rainier", recGovCampgroundId: "232464" },
+  { id: 6, name: "Ohanapecosh Campground", googlePlacesQuery: "Ohanapecosh Campground Mount Rainier", recGovCampgroundId: "232465" },
   { id: 7, name: "Fairholme Campground", googlePlacesQuery: "Fairholme Campground Olympic National Park", recGovCampgroundId: "251851" },
   { id: 11, name: "Kalaloch Campground", googlePlacesQuery: "Kalaloch Campground Olympic National Park", recGovCampgroundId: "232464" },
-  { id: 13, name: "South Beach Campground", googlePlacesQuery: "South Beach Campground Olympic National Park", recGovCampgroundId: "247591" },
   { id: 17, name: "Trillium Lake Campground", googlePlacesQuery: "Trillium Lake Campground Oregon", recGovCampgroundId: "231957" },
-  { id: 18, name: "Mora Campground", googlePlacesQuery: "Mora Campground Olympic National Park", recGovCampgroundId: "232465" },
+  { id: 18, name: "Mora Campground", googlePlacesQuery: "Mora Campground Olympic National Park", recGovCampgroundId: "247591" },
   { id: 19, name: "Little Crater Lake Campground", googlePlacesQuery: "Little Crater Lake Campground Oregon", recGovCampgroundId: "231956" },
   { id: 22, name: "Farewell Bend Campground", googlePlacesQuery: "Farewell Bend Campground Deschutes Oregon", recGovCampgroundId: "231958" },
-  { id: 23, name: "Crater Lake Mazama Village", googlePlacesQuery: "Mazama Village Campground Crater Lake Oregon", recGovCampgroundId: "232463" },
+  { id: 23, name: "Crater Lake Mazama Village", googlePlacesQuery: "Mazama Village Campground Crater Lake Oregon", recGovCampgroundId: "10337002" },
 
   // ============================================================================
   // GROUP 2: KOA campground (1) - PRIMARY: KOA website scraping
@@ -52,6 +51,7 @@ export const campgroundReviewConfigs: CampgroundReviewConfig[] = [
   { id: 8, name: "Lake Chelan State Park", googlePlacesQuery: "Lake Chelan State Park Campground Washington" },
   { id: 9, name: "Pacific Beach State Park", googlePlacesQuery: "Pacific Beach State Park Campground Washington" },
   { id: 16, name: "Cape Disappointment State Park", googlePlacesQuery: "Cape Disappointment State Park Campground Washington" },
+  { id: 13, name: "South Beach Campground (Olympic NP)", googlePlacesQuery: "South Beach Campground Olympic National Park" },
 
   // Oregon State Parks (4)
   { id: 14, name: "Fort Stevens State Park", googlePlacesQuery: "Fort Stevens State Park Campground Oregon" },

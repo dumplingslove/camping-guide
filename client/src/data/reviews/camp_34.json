@@ -1,44 +1,78 @@
 {
-  "campgroundId": 34,
+  "campgroundName": "Campground 34",
+  "totalReviewsOnPlatform": 10376,
   "source": "google_maps",
-  "fetchedAt": "2026-07-12T19:32:25.184Z",
-  "placeRating": 4.9,
-  "totalRatings": 10376,
   "reviews": [
     {
       "author": "Areina B",
       "rating": 5,
       "text": "This was our second visit to Silver Falls State Park, and it was just as beautiful as we remembered — maybe even better this time around.\n\nOur first visit was a few years ago during summer break. While it was gorgeous, it was also very crowded, and the waterfalls didn’t have nearly as much water flowing. This year, we decided to visit in May while the waterfalls were still full, and it was absolutely worth it.\n\nWe completed the full loop trail, about 8 miles total, and the hike felt very manageable with only mild elevation gain. The trail was pleasant and well-maintained, and seeing all 10 waterfalls along the route kept us motivated the entire way. Knowing another waterfall was coming within a mile made the hike feel exciting and rewarding.\n\nThe trail was definitely busy, but it never felt overwhelming. Most sections were wide enough for people to comfortably pass in both directions, and occasionally stopping for others was never a problem.\n\nEvery single waterfall was magnificent — powerful, full of water, and incredibly beautiful. We were lucky to have amazing weather too, which made the whole experience even better.\n\nThis park is truly one of Oregon’s treasures, and we’re already looking forward to coming back again next year.",
       "date": "2 months ago",
-      "time": 1778700306
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Mharz Fama",
       "rating": 5,
       "text": "Such a beautiful place to camp. Nice clean bathroom and shower rooms. You can start the hike to South Falls from the campsite if you're camping at the site. Plenty of parking space at the parking lot. It's worth a hike once you see the falls. Definitely start your hike from South Falls... I'm not a hiker but I made it through... follow me on Facebook MHARZ FAMA",
       "date": "a month ago",
-      "time": 1780504634
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Cynthia Mortensen",
       "rating": 5,
       "text": "Silver Falls State Park is a gem!! We stayed at the campground, which was clean, quiet and friendly. While at the park we hiked the Trail of Ten Falls along the Canyon, Winter and Rim Trails.    There were some closures due to fallen trees so we saw 7 out of the 10 falls plus several small falls. We did not expect the size and beauty of these falls! They are absolutely amazing!  Especially the falls you can walk behind! What a wonderful experience. We did not find the trails to be difficult. There are some stairs and elevation gains but they were not difficult and well maintained.\nWe went to the park on a Monday in March and it was not crowded. The falls had a large amount of water flowing this time of year, which was beautiful! This is not to be missed!",
       "date": "3 months ago",
-      "time": 1774575376
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "russ wheelhouse",
       "rating": 5,
       "text": "Stayed two nights at a small cabin in the Smith Creek part of the state park. Very peaceful location for the cabins. Surrounded by big doug firs.  South Falls are about 10 minute drive away.  The full loop that takes you behind the falls is around 1.2 miles.  The trail has a drop of 300 feet.   Very beautiful area.",
       "date": "a month ago",
-      "time": 1780463453
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Coryne S Suzuki",
       "rating": 5,
       "text": "May 2026 - We did a quick South Falls hike and it was amazing! I am not a hiker but I'm glad I bought hiking boots and was a trooper 🙌 Some parts of the hike were a bit challenging for me but the views and waterfalls were worth it! 💚💚💚\nEasy parking, clean and well supplied restrooms, bring water!",
       "date": "2 months ago",
-      "time": 1778534927
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
-  ]
+  ],
+  "googleRating": 4.9
 }

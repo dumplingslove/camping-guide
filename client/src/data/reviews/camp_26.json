@@ -1,44 +1,78 @@
 {
-  "campgroundId": 26,
+  "campgroundName": "Campground 26",
+  "totalReviewsOnPlatform": 1527,
   "source": "google_maps",
-  "fetchedAt": "2026-07-12T19:32:17.018Z",
-  "placeRating": 4.7,
-  "totalRatings": 1527,
   "reviews": [
     {
       "author": "Agnes Miazga",
       "rating": 5,
       "text": "We absolutely love this state park. The loop set ups are great for privacy and big trailera. The park is always clean and taken care of. We used to go to Oregon and do the coast but haven't gone since we found this park. The conscience of driving right onto the beach and finding your own oasis is FANTASTIC. We have seen some amazing sunsets here.",
       "date": "3 weeks ago",
-      "time": 1782065160
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Clayton C.",
       "rating": 5,
       "text": "Grayland Beach State Park was a fantastic getaway! We stayed in a cozy yurt at site 118, which comfortably fit four people and our dogs. The yurt came equipped with a double bed, single bed, and a futon—plus a heater that kept things perfectly toasty. The park itself was peaceful and spacious, with clean washrooms and well-separated sites that never felt crowded. The highlight, though, was the stunning sandy beach—absolutely breathtaking and perfect for long, relaxing walks. Highly recommend for a relaxing coastal escape.",
       "date": "a year ago",
-      "time": 1750651011
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Russ Roush",
       "rating": 5,
       "text": "One of the nicest State Parks. Rates up there with Ike Kinswa.\n\nYou don't have worry about overhanging trees hitting your roof. The few pull through sites are HUGE. Most of the campsites offer privacy.\n\nMany of the yurts have parking spaces bigger than actual campsites.\n\nCompared to many state parks the pads are relatively level. They are asphalted. Most sites offer a generous grass section.\n\nUnlike most state parks, no borders and trees making it difficult to back in.\n\nI didn't see a single campsite where the pad is angled wrong.\n\nThis is a gem compared to Ocean City.\n\nCould it be improved? Definitely. The park is large enough for more campsites.\n\nThe state needs to cater to those with solar. Offer a few small,medium, and large sites with only 10 amp hookup, water and sewer. Require that you must  primary use solar to use these sites.\n\nDuring the peak summer months those with solar can power their rig off of solar and only use the 10 amp to help recharge batteries at night. In fact the whole section of solar required sites could have it where the 10 amp circuits turn on at 10 pm and off at 4 am. 120Vac at 10 amps is 1200 watts. 6 hours of night time usage is 7200wh.\nIt's too little to power most kitchen appliances and at hours that most won't be using power. But those 6 hours of 1200 watts means that on cloudy days the batteries get some help without having to run a generator much.\n\nPictures of a yurt site. It has external 30a service plus water",
       "date": "8 months ago",
-      "time": 1762563700
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Cheryl Muonio",
       "rating": 4,
       "text": "We brought a rented RV and rented a yurt for extra wiggle room. We had electric and water hookups, no septic. When I entered the yurt I immediately smelled mold. I guess it’s not a surprise for a yurt but I’m allergic and wasn’t able to spend time in it.\n\nThe bathrooms near the yurts were fine. The shower rooms were a single room shower. The condensation was such that it was one big wet room - difficult when changing into dry clothes after your shower. Next time I’d use the larger bathrooms further from the yurts.\n\nWalking to the beach is maybe 1/3 mile on a trail through the woods and sand dunes. It’s a long flat beach that my dogs loved running on. We saw two bald eagles enjoying a snack at the surf.\n\nWe drove up to Westport one day, which was nice. Grabbed lunch at a restaurant and walked along the jetty for some great waves and beach walk.",
       "date": "7 months ago",
-      "time": 1763510580
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Md Borkot Ali Khan Shimul",
       "rating": 5,
       "text": "What a peaceful and relaxing place! It’s so quiet and clean — just perfect for a weekend getaway. I shared a few videos because the surroundings are just too beautiful not to! The restrooms were impressively clean too, which made the whole experience even more comfortable. It’s also a great spot for a BBQ with family or friends — plenty of space and fresh ocean air to enjoy. Definitely a place I’d love to come back to!",
       "date": "a year ago",
-      "time": 1747888937
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
-  ]
+  ],
+  "googleRating": 4.7
 }

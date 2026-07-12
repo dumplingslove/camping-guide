@@ -1,46 +1,78 @@
 {
-  "campgroundId": 41,
   "campgroundName": "Fort Casey",
-  "totalReviews": 5,
-  "averageRating": 4.8,
-  "googleTotalRatings": 5431,
+  "totalReviewsOnPlatform": 5431,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Carly Stice",
       "rating": 5,
-      "date": "a month ago",
       "text": "Wow! I have never been to a fort that is so well maintained. Amazing time getting to walk through the facility. I will say if you have small children, keep a close eye on them there are some drop offs and the area is pretty unrestricted.",
-      "source": "google_maps"
+      "date": "a month ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Michael Machado",
       "rating": 4,
-      "date": "6 months ago",
       "text": "The Park seemed to be a pretty good size. We happened to go on a rainy, very windy day so we were not able to walk around to everything and earlu January there is not much going on and the lighthouse was closed.\nSome of the bunkers are left open and you can easily walk through them. The bunkers look well maintained as well as the surrounding grounds.",
-      "source": "google_maps"
+      "date": "6 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Sofia’s Photos",
       "rating": 5,
-      "date": "2 months ago",
       "text": "This place is very dear to my heart. Years ago, one of the most meaningful photo sessions of my career happened here, and it unexpectedly reached millions of people online.\nWhat makes this spot so special is the atmosphere, the beautiful views, and the iconic lighthouse. Sometimes it’s open, and we were once lucky enough to go inside during a wedding photo session, which made the experience unforgettable.\nI always love coming back here. Some places are simply beautiful. Others become part of your story.",
-      "source": "google_maps"
+      "date": "2 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Nancy Valleroy-Jenkins",
       "rating": 5,
-      "date": "2 months ago",
       "text": "Amazing place! Lots of history and information, safe, trails, well kept, gorgeous views! The fort itself is very interesting and well preserved. The lighthouse is full of more history and like access to the past.",
-      "source": "google_maps"
+      "date": "2 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Kevin Vickery",
       "rating": 5,
-      "date": "4 weeks ago",
       "text": "Historic fort from a century ago, with battlements perched atop hills overlooking Puget Sound. Acres of grass to wander, between relics of the past.\n\nKeep your eyes out for deer, rabbits, chipmunks and many different bird species.\n\nAdmiralty Head Lighthouse sits on the grounds as well.",
-      "source": "google_maps"
+      "date": "4 weeks ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.8
 }

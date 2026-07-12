@@ -34,3 +34,27 @@
 - [x] Add 2026-restricted campground reopening date reminders (display expected reopen dates on cards/detail pages)
 - [x] Add status checking for restricted campgrounds in scheduled updates
 - [x] Implement interactive map view page for browsing campgrounds by region
+
+## QA Round 1 Fixes
+- [x] P0: Fix InsightsPanel crash for campgrounds 25-36 (handle string vs array schema mismatch)
+- [x] P0: Fix ReviewsSection crash for campgrounds 37-49 (handle missing totalReviewsOnPlatform field)
+- [x] P0: Fix reviewInsights.json keys CG37-CG49 → 37-49
+- [x] P1: Fix Cape Lookout closure status (park is open, construction starts Aug 3 2026)
+- [x] P1: Fix Ohanapecosh bookingUrl (232464 → 232465)
+- [x] P1: Fix drive times for Cove Palisades, LaPine, Harris Beach, Bullards Beach, Sunset Bay
+- [x] P1: Fix hero text to match actual data range (1.5-7.5小时)
+- [ ] P2: Show warning text on homepage cards for camps with warning field
+- [ ] P2: Unify driveTimeLabel format
+
+## QA Round 2 Fixes
+- [x] Remove fabricated Moran State Park closure (no evidence of water pipe replacement closure)
+- [x] Remove fabricated Larrabee State Park closure (no evidence, kept train noise warning)
+- [x] Fix Mora Road closure date (Oct 15 → Oct 5, clarify campground stays open)
+- [x] Fix Mora Campground bookingUrl (232465 → 247591)
+- [x] Fix Crater Lake Mazama bookingUrl (232463 → 10337002)
+- [x] Fix South Beach Campground (not on rec.gov, is first-come-first-served)
+- [ ] Verify remaining warnings (Fort Casey/Ebey jets, Sol Duc fees, Bullards plover)
+
+## QA Round 3 Fixes
+- [x] Fix Google Maps "included multiple times" error (singleton pattern for script loading)
+- [x] Fix campgroundConfig.ts rec.gov IDs to match corrected bookingUrls

@@ -1,46 +1,78 @@
 {
-  "campgroundId": 42,
   "campgroundName": "Fort Ebey",
-  "totalReviews": 5,
-  "averageRating": 4.7,
-  "googleTotalRatings": 93,
+  "totalReviewsOnPlatform": 93,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Hamza Hydri Syed",
       "rating": 5,
-      "date": "2 months ago",
       "text": "very beautiful, quite and serene campground, with great views of the ocean and nice hikes. ideal for families and larger groups",
-      "source": "google_maps"
+      "date": "2 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Jeff",
       "rating": 5,
-      "date": "10 months ago",
       "text": "This was the first time staying here and we were very impressed. The campground is very beautiful, clean, well maintained, and the sites are very large. We had a really great time and can’t wait to return.  Once we walked on a trail a few minutes away near the old fort, we saw an amazing sunset there.",
-      "source": "google_maps"
+      "date": "10 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Karethra Bex",
       "rating": 4,
-      "date": "3 years ago",
       "text": "This is a nice campground that offers ample space for vehicle or tent.  There are hiking/ walking trails and historical bunkers on site. Showers are $1 for 3 minutes and tokens are used for the showers with the token exchange machine outside on the back of the shower building. The restrooms weren't the cleanest, but not too bad given the park seems to be very busy. There wasn't too much late night noise and overall, it was a pleasant experience.",
-      "source": "google_maps"
+      "date": "3 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Romeo Delshad",
       "rating": 4,
-      "date": "2 years ago",
       "text": "Good places to visit. Quite and secluded. A few great trails to visit. Camping also absolutely stunning during the summer months.\nNo dumping station though. But a decent bathroom a nice place to go",
-      "source": "google_maps"
+      "date": "2 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Christopher Druck",
       "rating": 5,
-      "date": "7 years ago",
       "text": "This was the first place I ever camped after moving to WA, and it instantly became one of my favorite all-time favorite camping spots. This park feels a little more secluded and untouched compared to nearby Deception Pass, which can be very crowded in the summer. Fort Ebey was not crowded at all and was filled with stunning scenery. The campground was really nice, and was located in a densely forested area. Most of the campsites have a lot of privacy and are not very close together. The campsite was very well maintained and raked when we arrived. Each campsite has a picnic table and a fire pit. The campground has only one bathroom located near the center of the campground, so keep that in mind when you're choosing your campsite. The bathrooms were very well maintained, and had hand soap available in the sink area. Inside the bathroom there is also 2 token operated showers. Shower tokens, as well as fire wood and ice, are for sale at the state park office at the main entrance of the park. Firewood was $7/bundle when I visited. There are water spigots conveniently located throughout the campground as well. The campground was mostly peaceful and people were not too loud. Also, there are several trail offshoots right inside the campground that lead to the bluff area, which offers stunning views of the Salish Sea and the Olympic Peninsula and Vancouver Island to the west.",
-      "source": "google_maps"
+      "date": "7 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.7
 }

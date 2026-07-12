@@ -1,46 +1,78 @@
 {
-  "campgroundId": 37,
   "campgroundName": "Sol Duc Hot Springs",
-  "totalReviews": 5,
-  "averageRating": 4.4,
-  "googleTotalRatings": 214,
+  "totalReviewsOnPlatform": 214,
+  "source": "google_maps",
   "reviews": [
     {
       "author": "Holly",
       "rating": 2,
-      "date": "2 years ago",
       "text": "RV parking area was overcrowded and lacked bathrooms. It was basically a huge parking lot with no privacy, and it was a huge disappointment. While having an RV provides a toilet, it’s still inconvenient not to have restroom facilities nearby. The hookups for water and electricity were available, but overall, it seems the parking lot fell short of our expectations. Sure, it was a close walk to the hot springs. Let’s talk about the hot springs. The hot springs themselves were okay, but cleanliness was lacking. The locker room was gross to say the least. They didn’t even have soap in the showers to rinse off properly after soaking in the hot springs. Overcrowding might have contributed to this. Despite the shortcomings, soaking in the hot springs was still enjoyable. The transition from the hot springs to the cold pool was a nice touch. The $18 plus tax admission fee wasn’t justified for the experience since you could only stay 1.5 hours. You should be able to come and go all day. The cabin prices were steep at $300 per night, and didn’t find them worthwhile, so we went with the RV spot for $128 for two nights. I’m still trying to figure out what we paid for. The falls and the river stood out as highlights of our trip! The falls were beautiful, and it was nice to be out in nature despite the camping situation. It’s essential to remember that Sol Duc Hot Springs is located in the national forest, and there’s a $30 entrance fee. Overall, the natural surroundings made a more significant impression than the amenities. If you’re thinking of visiting and camping stay in Loop B if you don’t need hook ups. This is where the secluded camping is!",
-      "source": "google_maps"
+      "date": "2 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Alice Madsen",
       "rating": 5,
-      "date": "a year ago",
       "text": "# 13 Olympic National Park\n06/15-20 Sol Duc Campground -Site 4 Hike-in\nThrilled we were able to swap out site 36 which was right by the entrance across from registration, the dishwashing station and bathrooms. Our excellent camp host recommended site 4 and despite the inconvenience of moving to a hike-in spot, it has been well worth it. It feels like you’re the only people around. You not only hear the creek, but you see it, and there’s plenty of room for a six person tent with a 10x6 vestibule and another smaller (10’x10’ tent) within a reasonable distance on same campsite. No critters other than birds to enjoy.",
-      "source": "google_maps"
+      "date": "a year ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "India A",
       "rating": 4,
-      "date": "4 years ago",
       "text": "Quiet, huge trees, wet and cold, but a nice getaway! 4 stars because it's crowded, hard to reserve, and has a really short open season. All the wooded campgrounds near the Olympic National Park have a similar setting and amenities, so unless you're going to hang out in the hot springs, you're usually better off somewhere else.\n\nLoop B is more private than loop A, many sites are below the road, and there is light cell signal right along the water. The RV camp is bare bones.\n\nThe Hot Spring water is lovely, especially when it's raining. It has a very strong sulfur scent, sometimes the water is yellow. This is natural and normal, but varies with the geo activity. Temperature in the hottest pool is usually around 104°/105° F. The hike from the upper parking lot to Sol Duc falls is very easy, for a nice long walk, hike Lovers Lane from the hot spring parking lot.\n\nCost - If you plan to spend most of your time in the hot spring, stay at the resort, rooms range from $250-$350 and include unlimited sessions in the springs for 2 people. (There's also a 3 bedroom house that sleeps up to 8 for $500) A 1 1/2 hour session in the springs costs up to $18 per person if you aren't staying at the resort, that adds up fast. The rooms are very simple so the cost is only worth it if you're planning on spending a lot of time in the water or don't own camping equipment.\n\nFood and coffee at the restaurant is good, salads and burgers are worth the cost.\nThe gift shop has blankets, alcohol, towels, and swim accessories that you don't see at many of the national park gift shops.",
-      "source": "google_maps"
+      "date": "4 years ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "Alan Quigley",
       "rating": 5,
-      "date": "a year ago",
       "text": "Campsites are deep in the rainforest, on or close to the river. There are many miles of hikes right from your campsite. Backpack camping at a few lakes. A beautiful and very unique waterfall. Also if you want to relax in a hot spring, there is a short walk through the woods to a resort with 3 different temperature hot springs. Fed by natural Hot springs in the forest. Fair warning, be a responsible camper. Pack your food away or have an airtight container. Because the animals know when there's food and they come quickly. Mostly the birds and chipmunks. But bears, raccoons and cats are not unheard of roaming in the area.",
-      "source": "google_maps"
+      "date": "a year ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     },
     {
       "author": "老Laoxi",
       "rating": 5,
-      "date": "9 months ago",
       "text": "Camp ground is heavily shaded and surrounde with big trees. Flush toilets are fairly clean but water faucets are not working at the time.",
-      "source": "google_maps"
+      "date": "9 months ago",
+      "siteNumber": "",
+      "loop": "",
+      "siteType": "",
+      "stayStart": "",
+      "stayEnd": "",
+      "helpfulVotes": 0,
+      "source": "google_maps",
+      "area": ""
     }
   ],
-  "lastUpdated": "2026-07-12",
-  "source": "google_maps"
+  "googleRating": 4.4
 }

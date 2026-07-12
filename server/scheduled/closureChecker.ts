@@ -62,22 +62,7 @@ const restrictedCampgrounds: RestrictedCampground[] = [
     ],
     openSignals: ["available", "book", "reserve", "select date"],
   },
-  {
-    id: 21,
-    name: "Cape Lookout State Park",
-    tier: "2026受限",
-    closureInfo: {
-      reason: "营地施工整修（排水、步道、日用区域升级）",
-      closedSince: "2025-10",
-      expectedReopen: "2026年秋季（施工从夏季推迟至秋季，预计8月后开始关闭）",
-      source: "Oregon State Parks 特别通知 + Tillamook Headlight Herald 2025年2月报道",
-      lastChecked: "2026-07-12",
-    },
-    checkUrls: [
-      "https://www.reserveamerica.com/explore/cape-lookout-state-park/OR/140006/overview",
-    ],
-    openSignals: ["available", "book", "reserve", "select date", "check availability"],
-  },
+
 ];
 
 export interface ClosureStatusResult {
