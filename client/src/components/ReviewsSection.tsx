@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Star, ThumbsUp, MapPin, Calendar, Filter, ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
+import { Star, ThumbsUp, MapPin, Calendar, Filter, ChevronDown, ChevronUp, ExternalLink, Search } from "lucide-react";
 import { getReviewsForCampground, type Review } from "@/data/reviewsData";
 
 interface ReviewsSectionProps {
@@ -109,6 +109,7 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
   const campReviews = getReviewsForCampground(campgroundId);
   const [filterRating, setFilterRating] = useState<number | null>(null);
   const [filterLoop, setFilterLoop] = useState<string>("");
+  const [filterSite, setFilterSite] = useState<string>("");
   const [sortBy, setSortBy] = useState<"recent" | "helpful" | "rating">("helpful");
   const [showCount, setShowCount] = useState(10);
 
@@ -135,6 +136,9 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
     if (filterLoop) {
       reviews = reviews.filter((r) => r.loop === filterLoop);
     }
+    if (filterSite) {
+      reviews = reviews.filter((r) => r.siteNumber?.toLowerCase().includes(filterSite.toLowerCase()));
+    }
 
     switch (sortBy) {
       case "recent":
@@ -149,7 +153,7 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
     }
 
     return reviews;
-  }, [campReviews, filterRating, filterLoop, sortBy]);
+  }, [campReviews, filterRating, filterLoop, filterSite, sortBy]);
 
   // Rating distribution
   const ratingDist = useMemo(() => {
@@ -238,11 +242,22 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
             ))}
           </select>
         )}
-        {(filterRating || filterLoop) && (
+        <div className="relative">
+          <Search className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 text-gray-400" />
+          <input
+            type="text"
+            value={filterSite}
+            onChange={(e) => setFilterSite(e.target.value)}
+            placeholder="搜索营位号..."
+            className="text-xs border border-gray-200 rounded pl-6 pr-2 py-1 bg-white w-28 focus:outline-none focus:ring-1 focus:ring-emerald-300"
+          />
+        </div>
+        {(filterRating || filterLoop || filterSite) && (
           <button
             onClick={() => {
               setFilterRating(null);
               setFilterLoop("");
+              setFilterSite("");
             }}
             className="text-xs text-red-500 hover:text-red-700"
           >

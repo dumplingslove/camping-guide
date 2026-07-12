@@ -9,6 +9,7 @@ import { useFavorites } from "@/contexts/FavoritesContext";
 import { MapView } from "@/components/Map";
 import { ActivityCard } from "@/components/ActivityCard";
 import { ReviewsSection } from "@/components/ReviewsSection";
+import { InsightsPanel } from "@/components/InsightsPanel";
 import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -795,8 +796,15 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
-          {/* 7. User Reviews */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.24 }}
+          {/* 7. Review Insights */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.23 }}
+            className="bg-white rounded-xl border border-border p-5"
+          >
+            <InsightsPanel campgroundId={campground.id} />
+          </motion.div>
+
+          {/* 8. User Reviews */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.25 }}
             className="bg-white rounded-xl border border-border p-5"
           >
             <ReviewsSection campgroundId={campground.id} />

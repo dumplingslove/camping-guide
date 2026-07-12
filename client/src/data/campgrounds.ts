@@ -246,7 +246,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov，每天太平洋时间早7点放票" },
     ],
-    recommendedSites: "Loop D: Site D005, D006, D029, D033, D035（最宽敞+近溪流+安静）",
+    recommendedSites: "Loop D: Site D005, D006, D029, D033, D035（最宽敞+近溪流+安静）（评论验证：D032: 卫生间频繁清洁，靠近天堂, C013: 干净整洁，距离天堂八英里，静谧, C015: 部分遮荫，适合RV，隐私性好, C028: 拉车道长，空间大，适合30尺拖挂，远离邻居, E014: 独立且有分层设计，隐私好, B002: 风景美，靠近河流及步道）",
     avoid: "Loop A/B（离主路近、较吵、营位较小）",
     tcNotes: "无hookup但有Dump Station。Loop D营位最宽敞（可达35ft），平坦。Loop C也不错",
     image: "/manus-storage/QOBgWqFANsVEzyll_bf990d4a.jpg",
@@ -333,7 +333,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov。⚠️ 2025-2026年关闭施工" },
     ],
-    recommendedSites: "Loop A: Site A001-A020（溪流声+古木环绕+安静）",
+    recommendedSites: "Loop A: Site A001-A020（溪流声+古木环绕+安静）（评论验证：C017: 宽敞，靠近河流，有树荫，隐私好, D006: 靠近河流和步道，风景优美, E017: 营位宽敞，卫生间干净，靠近瀑布步道, A021: 地势高，靠近河流，风景优美, A019: 靠近河流，风景优美, C023: 俯瞰河流，可容纳4人帐篷，无邻居）",
     avoid: "Loop F（离溪流远+地势不平）",
     tcNotes: "⚠️ 2025-2026年关闭整修。无hookup，32ft限制。Loop A/B河畔营位平坦",
     image: "/manus-storage/bpVaUmkNVgAZQZZc.jpg",
@@ -379,7 +379,7 @@ export const campgrounds: Campground[] = [
       { area: "Loop B", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
       { area: "Loop C", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov" },
     ],
-    recommendedSites: "Site 1-15（直面新月湖+日落方向）",
+    recommendedSites: "Site 1-15（直面新月湖+日落方向）（评论验证：85: 紧邻湖畔风景极佳, 53: 宽敞可停两车和多顶帐篷, 27: 适合小型房车，有蕨类植物和树木，私密性好, 88: 平坦且风景极佳, 29: 很好的驶入式营位，空间大且有隐私, 90: 紧邻湖边，空间大可容纳两顶4人帐篷）",
     avoid: "Site 60+（离湖远+靠近公路噪音）",
     tcNotes: "无hookup，21ft限制！仅适合小型TC。湖景位平坦但空间有限",
     image: "/manus-storage/OFYfQSFbeLYWWaYW_41e8fd26.jpg",
@@ -421,7 +421,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
     ],
-    recommendedSites: "Site 1-17（一线湖景+全接驳+近沙滩）",
+    recommendedSites: "Site 1-17（一线湖景+全接驳+近沙滩）（评论验证：85: 湖景美，能看日落，但缺乏隐私）",
     avoid: "Site 80+（山坡上，离湖远，需爬坡）",
     tcNotes: "湖畔营位全接驳30/50A，完美适配TC",
     image: "/manus-storage/MBQKLLuqIkiQRsqp_bbf40e1f.jpg",
@@ -553,7 +553,7 @@ export const campgrounds: Campground[] = [
       { area: "C/D Loop", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov 分批放票" },
       { area: "E/F Loop", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 分批放票" },
     ],
-    recommendedSites: "Site 1-36（海崖边缘+直面太平洋日落）",
+    recommendedSites: "Site 1-36（海崖边缘+直面太平洋日落）（评论验证：A027: 非常私密，有大树可以爬上去看日落，离海滩步道近, A013: 宽敞，有海景，双车道可停两辆皮卡和拖车, B011: 安静干净，被树木灌木遮挡私密性好，离厕所和海滩近, A048: 宽敞，有植被提供私密性，树冠覆盖好, D034: 退后于悬崖但仍有海景，比悬崖边防风，与邻居有一定距离, A011: 宽敞，有水景，有通往海滩的小路）",
     avoid: "Site 100+（远离海崖+密林中无景观）",
     tcNotes: "无hookup，35ft限制。海崖营位平坦但需注意风大",
     image: "/manus-storage/AWJUEQIZHhCswCJW_0e4b07aa.jpg",
@@ -681,7 +681,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
     ],
-    recommendedSites: "O Loop（最近Peter Iredale沉船+游乐场+水电+Pull-through）",
+    recommendedSites: "O Loop（最近Peter Iredale沉船+游乐场+水电+Pull-through）（评论验证：F235: 安静、平和、易于导航，有大型房车拉通车位，有电和水，附近有洗手间、火坑和野餐桌, F236: 相对私密，虽然不是完全平坦但可以使用）",
     avoid: "South Loops（施工关闭中）",
     tcNotes: "O/C/G Loop 全部有水电hookup，完美适配TC。O Loop有Pull-through",
     image: "/manus-storage/VUQzskmggOKwojZQ_44678da2.jpg",
@@ -815,7 +815,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
-    recommendedSites: "Site 1-15（直面Mt. Hood倒影+湖边+清晨如镜）",
+    recommendedSites: "Site 1-15（直面Mt. Hood倒影+湖边+清晨如镜）（评论验证：016: 宽敞，自然空间大，铺装停车位好，靠近圆形剧场；024: 非常平坦且私密；032: 离湖有一定距离，既方便去环湖步道又不会太吵，空间大；047: 靠近船道，方便带桨板下水，有两个停车区，树木多；056: 离湖近，安静干净；061: 宽敞的蒙古包，设施齐全。）",
     avoid: "Site 16-45（内圈无湖景+蚊子多）",
     tcNotes: "无hookup，24ft限制。Vault Toilet仅有。湖边营位平坦但空间有限",
     image: "/manus-storage/lPBhnXfPWYgZkHrM_21456f6e.jpg",
@@ -859,7 +859,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov。⚠️ Mora Road 2026年7月8日至10月15日关闭施工" },
     ],
-    recommendedSites: "Loop E（最宽敞+近Rialto Beach步道入口+安静）",
+    recommendedSites: "Loop E（最宽敞+近Rialto Beach步道入口+安静）（评论验证：E84: 营地巨大，有河景，私密性极佳, A19: 非常私密，靠近厕所但听不到噪音，空间大且平坦, C43: 树木茂盛，感觉私密，配有野餐桌和火圈, A10: 实际空间比标称大，可停放23英尺房车, E89: 空间大，适合23英尺以上房车及额外车辆）",
     avoid: "Loop C/D（较窄+远离海滩+潮湿阴暗）",
     tcNotes: "⚠️ Mora Road 2026年7月8日-10月15日关闭。无hookup，35ft限制。有Dump Station",
     image: "/manus-storage/KJneQHoHFtSbdCrk_0b7272cb.jpg",
@@ -898,7 +898,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
-    recommendedSites: "Site 005, 006（26ft车道，近PCT入口，最近湖边）",
+    recommendedSites: "Site 005, 006（26ft车道，近PCT入口，最近湖边）（评论验证：007: 绝对完美，离厕所距离适中，马路对面就是去湖的步道，宽敞 (来源: Angel G., Elizabeth S., Chris W.), 010: 宽敞，离厕所近但又不太近，适合9人大帐篷 (来源: Rachel C., Review 29)）",
     avoid: "极其原始——无淋浴、无hookup、无手机信号",
     tcNotes: "车道限制26ft，无设施，仅适合自给自足小型TC。Vault Toilet仅有",
     image: "/manus-storage/ACggXiKtVQsbKDbE_a519de53.jpg",
@@ -940,7 +940,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
     ],
-    recommendedSites: "Loop C（全接驳+近游乐场+Bend市区10分钟+Pull-through）",
+    recommendedSites: "Loop C（全接驳+近游乐场+Bend市区10分钟+Pull-through）（评论验证：A87: 靠河风景优美，干净宽敞, B25: 干净且相对宽敞，设施好）",
     avoid: "Loop A 无hookup，不适合需要电力的TC。夏季河流急流危险",
     tcNotes: "Loop C 全接驳30/50A，Pull-through完美适配TC",
     image: "/manus-storage/OEiSoMLIaHStYPiZ_99aa0685.jpg",
@@ -1027,7 +1027,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
-    recommendedSites: "Site 30-45（直面Rogue River+天然游泳池+隐私极佳）",
+    recommendedSites: "Site 30-45（直面Rogue River+天然游泳池+隐私极佳）（评论验证：004: 营位宽敞平坦，靠近河流，水声能掩盖公路噪音；018: 紧邻Rogue River，水流声能完美掩盖公路和邻居的噪音；020: 营位私密且安静，空间大，靠近河流；023: 靠近河流，声音和景色都很美；026: 紧邻Rogue River，能听到水声；029: 进出方便，靠近河流；032: 紧邻河流，私密性好；035 & 036: 空间宽敞，靠近河流，有树荫，水龙头近；039: 宽敞，紧邻河流，没有公路噪音；042: 靠近河流，宽敞平坦，蚊虫少；044: 营位非常大，靠近水源和河流；046: 宽敞，有小溪流过，安静；047: 靠近河流，步行可达瀑布，空间大，私密性好；052: 靠近厕所，空间宽敞。）",
     avoid: "Site 1-15（离河远+靠近公路噪音）。完全无手机信号",
     tcNotes: "无hookup，30ft限制。Vault Toilet仅有。河畔营位平坦。适合自给自足型TC",
     image: "/manus-storage/jPwdauThSqRNVKzL_f15f94b3.jpg",
@@ -1071,7 +1071,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
-    recommendedSites: "F Loop（唯一有电力+最宽敞营位+30A）",
+    recommendedSites: "F Loop（唯一有电力+最宽敞营位+30A）（评论验证：G17: 宽敞隐蔽, G27: 宽敞干净, D30: 宽敞且无发电机噪音, F21: 非常大, F9: 靠近峡谷风景极佳，宽敞干净, D15: 宽敞，树木高大，靠近步道和商店）",
     avoid: "G Loop（团体专用）。开放时间极短（7月初-10月初）；夜间可降至冰点",
     tcNotes: "F Loop 30A电力，适配TC。A-D Loop 无hookup但车道够长可停TC",
     image: "/manus-storage/YZDPDsAYaJHRsMWv_09f4b6c6.jpg",
@@ -1105,7 +1105,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
     ],
-    recommendedSites: "不推荐TC用户预订",
+    recommendedSites: "不推荐TC用户预订（评论验证：无具体推荐营位: 评论中未提及具体推荐的营位号码，但提到海滨营位（oceanfront ones）很棒）",
     avoid: "整个营地不接受TC",
     tcNotes: "严格禁止TC入住",
     image: "/manus-storage/9gepn0YqoeYB_9eee938b.jpg",
