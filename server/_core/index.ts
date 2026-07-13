@@ -11,6 +11,7 @@ import { serveStatic, setupVite } from "./vite";
 import { updateReviewsHandler } from "../scheduled/updateReviews";
 import { translateHandler } from "../api/translate";
 import { placesSearchHandler, placesPhotoHandler } from "../api/places";
+import { loginHandler } from "../loginRoute";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -42,6 +43,9 @@ async function startServer() {
 
   // Scheduled task endpoints (must be before Vite/static fallthrough)
   app.post("/api/scheduled/update-reviews", updateReviewsHandler);
+
+  // Auth routes (Express, not tRPC, because cookie setting needs headers control)
+  app.post("/api/auth/login", loginHandler);
 
   // Custom API routes
   app.post("/api/translate", translateHandler);

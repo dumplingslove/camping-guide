@@ -1,35 +1,48 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
-import { trpc } from "@/lib/trpc";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Lock, Mail, TreePine, AlertCircle } from "lucide-react";
+import { Lock, Mail, AlertCircle } from "lucide-react";
 
 export default function Login() {
   const [, setLocation] = useLocation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const loginMutation = trpc.emailAuth.login.useMutation({
-    onSuccess: () => {
-      // Redirect to home after successful login
-      window.location.href = "/";
-    },
-    onError: (err) => {
-      setError(err.message || "登录失败");
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     if (!email || !password) {
       setError("请填写邮箱和密码");
       return;
     }
-    loginMutation.mutate({ email, password });
+
+    setLoading(true);
+    try {
+      const resp = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await resp.json();
+
+      if (!resp.ok) {
+        setError(data.error || "登录失败");
+        return;
+      }
+
+      // Redirect to home after successful login
+      window.location.href = "/";
+    } catch (err: any) {
+      setError("网络错误，请稍后重试");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -107,9 +120,9 @@ export default function Login() {
           <Button
             type="submit"
             className="w-full bg-pine hover:bg-pine/90"
-            disabled={loginMutation.isPending}
+            disabled={loading}
           >
-            {loginMutation.isPending ? "登录中..." : "登录"}
+            {loading ? "登录中..." : "登录"}
           </Button>
         </form>
 
