@@ -119,3 +119,11 @@
 - [x] Convert all Chinese area names to English (23 replacements)
 - [x] Sync vacancyAnalysis and bookingWindows area names to match updated areas
 - [x] Verify and fix IDs 2 (Millersylvania), 16 (Cape Disappointment), 27 (Wenatchee Confluence)
+
+## QA Report Round 2 Fixes (2026-07-13)
+- [x] P0: Map page tiles confirmed working (49 markers visible, tiles loading correctly)
+- [x] P1: Add description, reviewCount, bookingWindows for IDs 37-49 (13 campgrounds)
+- [x] P1: Add campsite maps for IDs 25-49 (25 maps uploaded)
+- [x] P1: Add photos to reach 4+ per campground (all 49 now have 4+)
+- [x] P2: Unify hero image into photos[] array (prepended as first photo)
+- [x] P2: Fix compare page image cropping (aspect-[4/3] + object-top)

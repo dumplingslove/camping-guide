@@ -907,7 +907,10 @@ export default function CampgroundDetail() {
           {/* 8. Photo Gallery */}
           {photoData && photoData.photos.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.26 }}>
-              <PhotoGallery photos={photoData.photos} captions={photoData.captions} />
+              <PhotoGallery
+                photos={[campground.image, ...photoData.photos]}
+                captions={[campground.nameCn + " 全景", ...(photoData.captions || [])]}
+              />
             </motion.div>
           )}
 

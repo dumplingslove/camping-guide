@@ -93,10 +93,9 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     photos: [
       "/manus-storage/ohanapecosh_photo1_20a0e8f5.jpg",
       "/manus-storage/ohanapecosh_photo2_b086375a.jpg",
-      "/manus-storage/ohanapecosh_photo3_e8d122e5.jpg"
-    ],
+      "/manus-storage/ohanapecosh_photo3_e8d122e5.jpg", "/manus-storage/camp_6_photo_4_9c547782.jpg"],
     map: "/manus-storage/map_ohanapecosh_map_f3d2a522.jpg",
-    captions: ["A Loop 河畔古木营位", "溪流旁的营位", "Grove of the Patriarchs 步道"],
+    captions: ["A Loop 河畔古木营位", "溪流旁的营位", "Grove of the Patriarchs 步道", "Ohanapecosh河翠绿清澈的河水"],
   },
   // 7. Fairholme
   7: {
@@ -182,10 +181,9 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     photos: [
       "/manus-storage/astoria_koa_photo1_34ccb609.jpg",
       "/manus-storage/astoria_koa_photo2_0b82a1dd.jpg",
-      "/manus-storage/astoria_koa_photo3_55b2dc8a.jpg"
-    ],
+      "/manus-storage/astoria_koa_photo3_55b2dc8a.jpg", "/manus-storage/camp_12_photo_4_f2cd4605.jpg"],
     map: "/manus-storage/map_astoria_koa_map_1b411579.jpg",
-    captions: ["Deluxe Pull-through 位", "泳池和水滑梯", "营地设施全景"],
+    captions: ["Deluxe Pull-through 位", "泳池和水滑梯", "营地设施全景", "俄勒冈州阿斯托利亚/沃伦顿/海滨KOA度假村的室外游泳池，孩子们在水中玩耍。"],
   },
   // 13. South Beach
   13: {
@@ -351,132 +349,157 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   // 24. Pacific Shores (not recommended for TC)
   24: {
     map: "/manus-storage/map_pacific_shores_30bffc14.jpg",
-    photos: ["/manus-storage/pacific_shores_resort_97b8255b.jpg"],
-    captions: ["度假村海景全景"],
+    photos: ["/manus-storage/pacific_shores_resort_97b8255b.jpg", "/manus-storage/camp_24_photo_4_2570fc6b.jpg", "/manus-storage/camp_24_photo_5_af041889.jpg", "/manus-storage/camp_24_photo_6_f104d026.jpg"],
+    captions: ["度假村海景全景", "停靠在太平洋海岸房车度假村的房车，背景是美丽的建筑和草坪。", "度假村会所与精致园林", "海岸线灯塔与蔚蓝海景"],
   },
   // 25. Fort Worden
   25: {
-    photos: ["/manus-storage/camp_25_photo_1_35d442de.jpg", "/manus-storage/camp_25_photo_2_6c2cc1b9.jpg", "/manus-storage/camp_25_photo_3_858e7e23.jpg"],
-    captions: ["林间营位", "草地营位", "房车营地"],
+    photos: ["/manus-storage/camp_25_photo_1_35d442de.jpg", "/manus-storage/camp_25_photo_2_6c2cc1b9.jpg", "/manus-storage/camp_25_photo_3_858e7e23.jpg", "/manus-storage/camp_25_photo_4_50a19f57.jpg"],
+    captions: ["林间营位", "草地营位", "房车营地", "华盛顿州汤森港沃登堡州立公园的威尔逊角灯塔，背景是壮丽的雪山。"],
+    map: "/manus-storage/map_camp_25_913ddb92.png",
   },
   // 26. Grayland Beach
   26: {
-    photos: ["/manus-storage/camp_26_photo_1_34b136b2.jpg", "/manus-storage/camp_26_photo_2_be4465dd.jpg", "/manus-storage/camp_26_photo_3_85261e6c.jpg"],
-    captions: ["林间蒙古包营位", "海岸线航拍全景", "海滩绝美日落"],
+    photos: ["/manus-storage/camp_26_photo_1_34b136b2.jpg", "/manus-storage/camp_26_photo_2_be4465dd.jpg", "/manus-storage/camp_26_photo_3_85261e6c.jpg", "/manus-storage/camp_26_photo_4_71e957d5.jpg"],
+    captions: ["林间蒙古包营位", "海岸线航拍全景", "海滩绝美日落", "华盛顿州格雷兰海滩州立公园的蒙古包住宿设施"],
+    map: "/manus-storage/map_camp_26_d6d6cf4e.png",
   },
   // 27. Wenatchee Confluence
   27: {
-    photos: ["/manus-storage/camp_27_photo_1_32db2828.jpg", "/manus-storage/camp_27_photo_2_428b29da.jpg", "/manus-storage/camp_27_photo_3_d5d04f5a.jpg"],
-    captions: ["营地草坪与房车", "树下房车营位", "湖畔野餐区"],
+    photos: ["/manus-storage/camp_27_photo_1_32db2828.jpg", "/manus-storage/camp_27_photo_2_428b29da.jpg", "/manus-storage/camp_27_photo_3_d5d04f5a.jpg", "/manus-storage/camp_27_photo_4_afcf38d1.jpg"],
+    captions: ["营地草坪与房车", "树下房车营位", "湖畔野餐区", "韦纳奇汇流州立公园的露营地，设有野餐桌和帐篷"],
+    map: "/manus-storage/map_camp_27_2b88825e.png",
   },
   // 28. Fort Flagler
   28: {
-    photos: ["/manus-storage/camp_28_photo_1_2dd0cd83.webp", "/manus-storage/camp_28_photo_2_5b5869c1.jpg", "/manus-storage/camp_28_photo_3_1f412297.jpg"],
-    captions: ["林间营位", "海湾码头", "海滨草地"],
+    photos: ["/manus-storage/camp_28_photo_1_2dd0cd83.webp", "/manus-storage/camp_28_photo_2_5b5869c1.jpg", "/manus-storage/camp_28_photo_3_1f412297.jpg", "/manus-storage/camp_28_photo_4_38cca85b.jpg"],
+    captions: ["林间营位", "海湾码头", "海滨草地", "华盛顿州弗拉格勒堡州立公园的宁静海滩和码头景观"],
+    map: "/manus-storage/map_camp_28_60a903ac.png",
   },
   // 29. Hoh Rain Forest
   29: {
-    photos: ["/manus-storage/camp_29_photo_1_accb585a.jpg", "/manus-storage/camp_29_photo_2_a3f6676e.jpg", "/manus-storage/camp_29_photo_3_a5da5957.jpg"],
-    captions: ["林间营位", "森林房车营地", "草地帐篷营位"],
+    photos: ["/manus-storage/camp_29_photo_1_accb585a.jpg", "/manus-storage/camp_29_photo_2_a3f6676e.jpg", "/manus-storage/camp_29_photo_3_a5da5957.jpg", "/manus-storage/camp_29_photo_4_54b2b4ac.jpg"],
+    captions: ["林间营位", "森林房车营地", "草地帐篷营位", "奥林匹克国家公园霍河雨林露营地，周围环绕着长满青苔的树木。"],
+    map: "/manus-storage/map_camp_29_f98d93d2.jpg",
   },
   // 30. Moran State Park
   30: {
-    photos: ["/manus-storage/camp_30_photo_1_341f078c.jpg", "/manus-storage/camp_30_photo_2_0a35be02.jpg", "/manus-storage/camp_30_photo_3_85ca8b8e.jpg"],
-    captions: ["湖畔林间营地", "湖面泛舟与码头", "山顶俯瞰海湾美景"],
+    photos: ["/manus-storage/camp_30_photo_1_341f078c.jpg", "/manus-storage/camp_30_photo_2_0a35be02.jpg", "/manus-storage/camp_30_photo_3_85ca8b8e.jpg", "/manus-storage/camp_30_photo_4_e02353ba.jpg"],
+    captions: ["湖畔林间营地", "湖面泛舟与码头", "山顶俯瞰海湾美景", "莫兰州立公园宪法山观景台的岛屿和水域美景。"],
+    map: "/manus-storage/map_camp_30_388b39e5.png",
   },
   // 31. South Beach OR
   31: {
-    photos: ["/manus-storage/camp_31_photo_1_4a016c75.jpg", "/manus-storage/camp_31_photo_2_ca1ae0ae.jpg", "/manus-storage/camp_31_photo_3_8249609f.jpg"],
-    captions: ["南海滩沙滩", "林间步道", "营地入口"],
+    photos: ["/manus-storage/camp_31_photo_1_4a016c75.jpg", "/manus-storage/camp_31_photo_2_ca1ae0ae.jpg", "/manus-storage/camp_31_photo_3_8249609f.jpg", "/manus-storage/camp_31_photo_4_1030adf7.jpg"],
+    captions: ["南海滩沙滩", "林间步道", "营地入口", "俄勒冈州纽波特南海滩州立公园的壮丽海岸线景观"],
+    map: "/manus-storage/map_camp_31_2edc4e97.png",
   },
   // 32. Nehalem Bay
   32: {
-    photos: ["/manus-storage/camp_32_photo_1_9b6f6e79.jpg", "/manus-storage/camp_32_photo_2_1859b52c.jpg", "/manus-storage/camp_32_photo_3_b7f1c83a.jpg"],
-    captions: ["草地帐篷营位", "海湾步道风景", "沙丘海滩风光"],
+    photos: ["/manus-storage/camp_32_photo_1_9b6f6e79.jpg", "/manus-storage/camp_32_photo_2_1859b52c.jpg", "/manus-storage/camp_32_photo_3_b7f1c83a.jpg", "/manus-storage/camp_32_photo_4_9fd5e9db.jpg"],
+    captions: ["草地帐篷营位", "海湾步道风景", "沙丘海滩风光", "Nehalem湾全景与彩虹"],
+    map: "/manus-storage/map_camp_32_e51eb8c5.png",
   },
   // 33. Honeyman
   33: {
-    photos: ["/manus-storage/camp_33_photo_1_b521a545.jpg", "/manus-storage/camp_33_photo_2_3477d04b.jpg", "/manus-storage/camp_33_photo_3_04b99be9.jpg"],
-    captions: ["湖畔码头与沙丘", "林间露营地", "森林蒙古包"],
+    photos: ["/manus-storage/camp_33_photo_1_b521a545.jpg", "/manus-storage/camp_33_photo_2_3477d04b.jpg", "/manus-storage/camp_33_photo_3_04b99be9.jpg", "/manus-storage/camp_33_photo_4_66b76725.jpg"],
+    captions: ["湖畔码头与沙丘", "林间露营地", "森林蒙古包", "Honeyman州立公园Cleawox湖和沙丘的风景"],
+    map: "/manus-storage/map_camp_33_8a3fa288.png",
   },
   // 34. Silver Falls
   34: {
-    photos: ["/manus-storage/camp_34_photo_1_dd585966.jpg", "/manus-storage/camp_34_photo_2_4d0e89ea.jpg", "/manus-storage/camp_34_photo_3_dae45dd2.jpg"],
-    captions: ["壮丽瀑布景观", "林间房车营地", "森林帐篷营位"],
+    photos: ["/manus-storage/camp_34_photo_1_dd585966.jpg", "/manus-storage/camp_34_photo_2_4d0e89ea.jpg", "/manus-storage/camp_34_photo_3_dae45dd2.jpg", "/manus-storage/camp_34_photo_4_daf8e05e.jpg"],
+    captions: ["壮丽瀑布景观", "林间房车营地", "森林帐篷营位", "俄勒冈州银瀑布州立公园的南瀑布和步道"],
+    map: "/manus-storage/map_camp_34_f24d27d2.png",
   },
   // 35. Wallowa Lake
   35: {
-    photos: ["/manus-storage/camp_35_photo_1_9ac99bb8.jpg", "/manus-storage/camp_35_photo_2_ab66be82.jpg", "/manus-storage/camp_35_photo_3_45378b95.jpg"],
-    captions: ["湖泊山景", "林间营位", "湖畔雪山"],
+    photos: ["/manus-storage/camp_35_photo_1_9ac99bb8.jpg", "/manus-storage/camp_35_photo_2_ab66be82.jpg", "/manus-storage/camp_35_photo_3_45378b95.jpg", "/manus-storage/camp_35_photo_4_bddec261.jpg"],
+    captions: ["湖泊山景", "林间营位", "湖畔雪山", "从瓦洛厄湖州立公园营地看到的湖泊和雪山美景"],
+    map: "/manus-storage/map_camp_35_4517251f.png",
   },
   // 36. Detroit Lake
   36: {
-    photos: ["/manus-storage/camp_36_photo_1_04d2b57b.jpg", "/manus-storage/camp_36_photo_2_51667a78.jpg", "/manus-storage/camp_36_photo_3_1d34d4f7.jpg"],
-    captions: ["湖畔露营烧烤", "林间营地篝火", "湖泊沙滩风景"],
+    photos: ["/manus-storage/camp_36_photo_1_04d2b57b.jpg", "/manus-storage/camp_36_photo_2_51667a78.jpg", "/manus-storage/camp_36_photo_3_1d34d4f7.jpg", "/manus-storage/camp_36_photo_4_c2304934.jpg"],
+    captions: ["湖畔露营烧烤", "林间营地篝火", "湖泊沙滩风景", "底特律湖州立游乐区营地，展示了房车露营的设置和休闲的氛围。"],
+    map: "/manus-storage/map_camp_36_d4194e14.png",
   },
   // 37. Sol Duc
   37: {
-    photos: ["/manus-storage/camp_37_photo_1_a27d0379.jpg", "/manus-storage/camp_37_photo_2_a66f2d7e.jpg", "/manus-storage/camp_37_photo_3_40dde2f0.jpg"],
-    captions: ["林间营位", "温泉度假村", "森林野餐区"],
+    photos: ["/manus-storage/camp_37_photo_1_a27d0379.jpg", "/manus-storage/camp_37_photo_2_a66f2d7e.jpg", "/manus-storage/camp_37_photo_3_40dde2f0.jpg", "/manus-storage/camp_37_photo_4_da9abde2.jpg"],
+    captions: ["林间营位", "温泉度假村", "森林野餐区", "奥林匹克国家公园内的索尔达克瀑布（Sol Duc Falls）。"],
+    map: "/manus-storage/map_camp_37_75bb9269.png",
   },
   // 38. Harris Beach
   38: {
-    photos: ["/manus-storage/camp_38_photo_1_11c86f9d.jpg", "/manus-storage/camp_38_photo_2_df2006a0.jpg", "/manus-storage/camp_38_photo_3_f75bee0b.jpg"],
-    captions: ["林间帐篷营位", "林间房车营位", "海滩礁石风光"],
+    photos: ["/manus-storage/camp_38_photo_1_11c86f9d.jpg", "/manus-storage/camp_38_photo_2_df2006a0.jpg", "/manus-storage/camp_38_photo_3_f75bee0b.jpg", "/manus-storage/camp_38_photo_4_8baee8a6.jpg"],
+    captions: ["林间帐篷营位", "林间房车营位", "海滩礁石风光", "哈里斯海滩州立公园的日出，可以看到著名的山羊岛（Goat Island）和海蚀柱。"],
+    map: "/manus-storage/map_camp_38_5a4d2d47.png",
   },
   // 39. Colonial Creek
   39: {
-    photos: ["/manus-storage/camp_39_photo_1_51074da3.jpg", "/manus-storage/camp_39_photo_2_b0b765cc.jpg", "/manus-storage/camp_39_photo_3_0c423716.jpg"],
-    captions: ["营地湖景", "湖畔野餐桌", "湖面栈道"],
+    photos: ["/manus-storage/camp_39_photo_1_51074da3.jpg", "/manus-storage/camp_39_photo_2_b0b765cc.jpg", "/manus-storage/camp_39_photo_3_0c423716.jpg", "/manus-storage/camp_39_photo_4_7d76e6d8.jpg"],
+    captions: ["营地湖景", "湖畔野餐桌", "湖面栈道", "从Colonial Creek South露营地看到的Diablo湖美景"],
+    map: "/manus-storage/map_camp_39_839e1439.jpg",
   },
   // 40. Lincoln Rock
   40: {
-    photos: ["/manus-storage/camp_40_photo_1_1166d0d1.jpg", "/manus-storage/camp_40_photo_2_5ce06ec0.jpg", "/manus-storage/camp_40_photo_3_f8f874f4.jpg"],
-    captions: ["营地湖景", "林间营位", "营地游乐场"],
+    photos: ["/manus-storage/camp_40_photo_1_1166d0d1.jpg", "/manus-storage/camp_40_photo_2_5ce06ec0.jpg", "/manus-storage/camp_40_photo_3_f8f874f4.jpg", "/manus-storage/camp_40_photo_4_d42c0ae6.jpg"],
+    captions: ["营地湖景", "林间营位", "营地游乐场", "林肯岩州立公园的湖景，展示了哥伦比亚河的宁静水面和远处的山丘。"],
+    map: "/manus-storage/map_camp_40_966e51ab.png",
   },
   // 41. Fort Casey
   41: {
-    photos: ["/manus-storage/camp_41_photo_1_230ea416.jpg", "/manus-storage/camp_41_photo_2_660d1dcd.jpg", "/manus-storage/camp_41_photo_3_8343a8a6.jpg"],
-    captions: ["海滨营地全景", "海滩房车营地", "历史炮台建筑"],
+    photos: ["/manus-storage/camp_41_photo_1_230ea416.jpg", "/manus-storage/camp_41_photo_2_660d1dcd.jpg", "/manus-storage/camp_41_photo_3_8343a8a6.jpg", "/manus-storage/camp_41_photo_4_e802a530.jpg"],
+    captions: ["海滨营地全景", "海滩房车营地", "历史炮台建筑", "华盛顿州惠德贝岛凯西堡州立公园的沃思炮台（Battery Worth）升起的右侧火炮。"],
+    map: "/manus-storage/map_camp_41_dff35f1e.png",
   },
   // 42. Fort Ebey
   42: {
-    photos: ["/manus-storage/camp_42_photo_1_1817a8af.jpg", "/manus-storage/camp_42_photo_2_4fa7e1fe.jpg", "/manus-storage/camp_42_photo_3_db9bf911.jpg"],
-    captions: ["海滩风景", "军事炮台遗址", "林间步道"],
+    photos: ["/manus-storage/camp_42_photo_1_1817a8af.jpg", "/manus-storage/camp_42_photo_2_4fa7e1fe.jpg", "/manus-storage/camp_42_photo_3_db9bf911.jpg", "/manus-storage/camp_42_photo_4_1ad3442b.jpg"],
+    captions: ["海滩风景", "军事炮台遗址", "林间步道", "惠德比岛福特·埃贝州立公园海滩上空的戏剧性阴云"],
+    map: "/manus-storage/map_camp_42_0d6a1d4d.png",
   },
   // 43. Larrabee
   43: {
-    photos: ["/manus-storage/camp_43_photo_1_f64e97a7.jpg", "/manus-storage/camp_43_photo_2_44c7ee40.jpg", "/manus-storage/camp_43_photo_3_4f7ae3ce.jpg"],
-    captions: ["林间营位", "海湾风景", "海滩日落"],
+    photos: ["/manus-storage/camp_43_photo_1_f64e97a7.jpg", "/manus-storage/camp_43_photo_2_44c7ee40.jpg", "/manus-storage/camp_43_photo_3_4f7ae3ce.jpg", "/manus-storage/camp_43_photo_4_a382ece0.jpg"],
+    captions: ["林间营位", "海湾风景", "海滩日落", "华盛顿州拉拉比州立公园的岩石海岸线和萨米什湾风景"],
+    map: "/manus-storage/map_camp_43_5a100b3b.png",
   },
   // 44. Steamboat Rock
   44: {
-    photos: ["/manus-storage/camp_44_photo_1_3cde74bd.jpg", "/manus-storage/camp_44_photo_2_bbb4db67.jpg", "/manus-storage/camp_44_photo_3_3ec3daf0.jpg"],
-    captions: ["湖畔营地全景", "营地与湖泊风光", "湖畔沙滩与营地"],
+    photos: ["/manus-storage/camp_44_photo_1_3cde74bd.jpg", "/manus-storage/camp_44_photo_2_bbb4db67.jpg", "/manus-storage/camp_44_photo_3_3ec3daf0.jpg", "/manus-storage/camp_44_photo_4_bd9fda29.jpg"],
+    captions: ["湖畔营地全景", "营地与湖泊风光", "湖畔沙滩与营地", "华盛顿州汽船岩州立公园，从班克斯湖上看到的壮丽岩层景观。"],
+    map: "/manus-storage/map_camp_44_cb5edf75.png",
   },
   // 45. Bullards Beach
   45: {
-    photos: ["/manus-storage/camp_45_photo_1_a0e8d40b.jpg", "/manus-storage/camp_45_photo_2_fa167ec4.jpg", "/manus-storage/camp_45_photo_3_d190e23c.jpg"],
-    captions: ["海滩风景", "房车营位", "营地全景"],
+    photos: ["/manus-storage/camp_45_photo_1_a0e8d40b.jpg", "/manus-storage/camp_45_photo_2_fa167ec4.jpg", "/manus-storage/camp_45_photo_3_d190e23c.jpg", "/manus-storage/camp_45_photo_4_766623f3.jpg"],
+    captions: ["海滩风景", "房车营位", "营地全景", "俄勒冈州班登布拉兹海滩州立公园的科基尔河灯塔日落美景"],
+    map: "/manus-storage/map_camp_45_93ce5ef5.png",
   },
   // 46. Champoeg
   46: {
-    photos: ["/manus-storage/camp_46_photo_1_0b749168.jpg", "/manus-storage/camp_46_photo_2_e9cc383b.jpg", "/manus-storage/camp_46_photo_3_6af8d85c.jpg"],
-    captions: ["林间营位", "营地篝火", "草坪营位"],
+    photos: ["/manus-storage/camp_46_photo_1_0b749168.jpg", "/manus-storage/camp_46_photo_2_e9cc383b.jpg", "/manus-storage/camp_46_photo_3_6af8d85c.jpg", "/manus-storage/camp_46_photo_4_40067fa3.jpg"],
+    captions: ["林间营位", "营地篝火", "草坪营位", "俄勒冈州尚波伊州立遗产区的先驱纪念馆"],
+    map: "/manus-storage/map_camp_46_bec50d42.png",
   },
   // 47. Sunset Bay
   47: {
-    photos: ["/manus-storage/camp_47_photo_1_d1d8aaac.jpg", "/manus-storage/camp_47_photo_2_308d1cf0.jpg", "/manus-storage/camp_47_photo_3_774e474f.jpg"],
-    captions: ["海湾沙滩风景", "营地入口及林间道路", "林间露营位及帐篷"],
+    photos: ["/manus-storage/camp_47_photo_1_d1d8aaac.jpg", "/manus-storage/camp_47_photo_2_308d1cf0.jpg", "/manus-storage/camp_47_photo_3_774e474f.jpg", "/manus-storage/camp_47_photo_4_9bf3fd25.jpg"],
+    captions: ["海湾沙滩风景", "营地入口及林间道路", "林间露营位及帐篷", "日落湾州立公园受保护的海湾，周围环绕着海崖和砂岩悬崖。"],
+    map: "/manus-storage/map_camp_47_3332de4a.png",
   },
   // 48. Cove Palisades
   48: {
-    photos: ["/manus-storage/camp_48_photo_1_8cd4db06.jpg", "/manus-storage/camp_48_photo_2_cbca821b.jpg", "/manus-storage/camp_48_photo_3_f45070ba.jpg"],
-    captions: ["房车营地与野餐区", "林间帐篷营位", "湖畔野餐区与峡谷风光"],
+    photos: ["/manus-storage/camp_48_photo_1_8cd4db06.jpg", "/manus-storage/camp_48_photo_2_cbca821b.jpg", "/manus-storage/camp_48_photo_3_f45070ba.jpg", "/manus-storage/camp_48_photo_4_57b4d68e.jpg"],
+    captions: ["房车营地与野餐区", "林间帐篷营位", "湖畔野餐区与峡谷风光", "从半岛上的Tam-a-lau步道向北眺望比利奇努克湖，可以看到岛屿研究自然区和下方的海湾栅栏州立公园设施。"],
+    map: "/manus-storage/map_camp_48_571aece4.png",
   },
   // 49. La Pine
   49: {
-    photos: ["/manus-storage/camp_49_photo_1_401e2ebf.jpg", "/manus-storage/camp_49_photo_2_6d25fac3.jpg", "/manus-storage/camp_49_photo_3_46b50517.jpg"],
-    captions: ["营地河流风光", "房车营位", "林间帐篷营位"],
+    photos: ["/manus-storage/camp_49_photo_1_401e2ebf.jpg", "/manus-storage/camp_49_photo_2_6d25fac3.jpg", "/manus-storage/camp_49_photo_3_46b50517.jpg", "/manus-storage/camp_49_photo_4_f1e8c2bb.jpg"],
+    captions: ["营地河流风光", "房车营位", "林间帐篷营位", "俄勒冈州拉派恩州立公园内有500年历史的“大树”（美国黄松）"],
+    map: "/manus-storage/map_camp_49_e9ddb871.png",
   },
 };

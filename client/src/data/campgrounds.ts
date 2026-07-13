@@ -1949,6 +1949,11 @@ export const campgrounds: Campground[] = [
     driveTime: 210,
     driveTimeLabel: "3.5h",
     tagline: "温泉与雨林的完美结合",
+    description: "索尔达克温泉度假村营地（Sol Duc Hot Springs Resort Campground）位于奥林匹克国家公园的古老森林中，紧邻索尔达克河，提供独特的温泉体验和便捷的徒步路线。营地环境宁静，设施完善，游客可以享受矿物温泉浴，或徒步前往著名的索尔达克瀑布（来源：Recreation.gov）。",
+    reviewCount: "Google Maps: 4.6★ (1,130条评价), Tripadvisor: 3.5★ (55条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 系统，提前6个月滚动放票" },
+    ],
     image: "/manus-storage/sol_duc_a6d30d29.jpg",
     bookingSystem: "Recreation.gov",
     bookingUrl: "https://www.recreation.gov/camping/campgrounds/251906",
@@ -1979,7 +1984,6 @@ export const campgrounds: Campground[] = [
       { area: "B Loop", whyVacant: "偶有取消", whyHard: "取消后很快被抢" },
       { area: "Interior Sites (C Loop)", whyVacant: "离温泉最远+靠近公路，取消率稍高", whyHard: "—" }
     ],
-    bookingWindows: [],
     recommendedSites: "A Loop: A21-A30（最靠近温泉步道入口+树荫好+安静）",
     avoid: "C Loop（离温泉最远+靠近公路噪音）",
     tcNotes: "营位较小，部分适合小型TC。Sol Duc Road路况良好。建议选择pull-through营位。",
@@ -1997,6 +2001,11 @@ export const campgrounds: Campground[] = [
     driveTime: 450,
     driveTimeLabel: "7.5h",
     tagline: "壮丽的海岸线与绝佳的观鸟胜地",
+    description: "哈里斯海滩州立公园营地位于俄勒冈州南部崎岖的海岸线上，提供全年开放的露营体验，拥有沙滩、潮池和近海岛屿等壮丽景观。营地设施完善，适合帐篷和房车露营，是观赏野生动物和探索海岸线的理想大本营（来源：Oregon State Parks）。",
+    reviewCount: "Google Maps: 4.6★ (284条评价), The Dyrt: 4.5★ (112条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统，每天早6点放票" },
+    ],
     image: "/manus-storage/harris_beach_8df381a3.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
     bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/harris-beach-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402257",
@@ -2026,7 +2035,6 @@ export const campgrounds: Campground[] = [
       { area: "A Loop (Full Hookup, 1-63)", whyVacant: "—", whyHard: "俄勒冈南海岸最热门营地，全接驳位极其抢手" },
       { area: "Electrical", whyVacant: "偶有取消", whyHard: "取消后很快被抢" }
     ],
-    bookingWindows: [],
     recommendedSites: "Full Hookup: Site 1-20（最靠近海滩+海景位+全接驳）",
     avoid: "Tent区最内侧（离海滩远+无接驳）",
     tcNotes: "大部分营位可容纳中型RV，有Full Hookup选项。Loop A和B较宽敞。",
@@ -2044,6 +2052,11 @@ export const campgrounds: Campground[] = [
     driveTime: 180,
     driveTimeLabel: "3h",
     tagline: "北喀斯喀特国家公园内的湖畔森林营地",
+    description: "Colonial Creek South Campground 位于北喀斯喀特国家公园的暗黑湖（Diablo Lake）畔，是一个被古老森林环绕的偏远但热闹的营地。营地提供多种露营方式，包括驾车露营和步行帐篷露营，游客可以方便地进入湖泊进行钓鱼、划船等水上活动，并可直接连接多条徒步小径（来源：National Park Service）。",
+    reviewCount: "Google Maps: 4.5★ (729条评价), The Dyrt: 4.5★ (44条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 系统，提前6个月滚动放票" },
+    ],
     image: "/manus-storage/colonial_creek_bcd4d3a3.webp",
     bookingSystem: "Recreation.gov",
     bookingUrl: "https://www.recreation.gov/camping/campgrounds/232266",
@@ -2072,7 +2085,6 @@ export const campgrounds: Campground[] = [
       { area: "Main Campground (64-130)", whyVacant: "—", whyHard: "North Cascades NP唯一大型营地，先到先得+可预订混合，旺季很快满" },
       { area: "Main Campground", whyVacant: "仅夏季开放+离湖远，偶有空位", whyHard: "—" }
     ],
-    bookingWindows: [],
     recommendedSites: "South Loop: 靠近湖边的营位（湖景+步道入口近）",
     avoid: "North Loop最深处（离湖远+离卫生间远）",
     tcNotes: "营位大小不一，部分可容纳中型RV。道路为铺装路面，但弯道较多。无Hookup。",
@@ -2090,6 +2102,11 @@ export const campgrounds: Campground[] = [
     driveTime: 192,
     driveTimeLabel: "3.25h",
     tagline: "哥伦比亚河畔的家庭水上乐园与运动天堂",
+    description: "林肯岩州立公园（Lincoln Rock State Park）位于哥伦比亚河畔的恩蒂亚特湖东侧，以其友好的社区氛围和优美的风景而闻名。公园提供宽敞的露营地、全套房车接口、干净的设施以及直接的水上通道，非常适合家庭游玩和水上活动（来源：Washington State Parks, The Dyrt）。",
+    reviewCount: "Google Maps: 4.7★ (894条评价), The Dyrt: 4.5★ (15条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
+    ],
     image: "/manus-storage/lincoln_rock_c41605f0.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
     bookingUrl: "https://washington.goingtocamp.com/create-booking/results?resourceLocationId=-2147483590&mapId=-2147483372",
@@ -2119,7 +2136,6 @@ export const campgrounds: Campground[] = [
       { area: "Loop #2 Full Hookup (28-59)", whyVacant: "—", whyHard: "夏季极热地区唯一有水上设施的营地，家庭极其追捧" },
       { area: "Loop #1 Standard (1-27)", whyVacant: "无接驳+夏季酷热，偶有取消", whyHard: "—" }
     ],
-    bookingWindows: [],
     recommendedSites: "Full Hookup: Site 1-15（最靠近游泳区+水上滑梯+全接驳）",
     avoid: "Standard区最远端（离水上设施远+夏季太热无遮荫）",
     tcNotes: "宽敞的RV营位，有Full Hookup。适合各种大小的TC。",
@@ -2137,6 +2153,11 @@ export const campgrounds: Campground[] = [
     driveTime: 101,
     driveTimeLabel: "1.75h",
     tagline: "历史遗迹与无敌海景的完美结合",
+    description: "卡西堡历史州立公园（Fort Casey Historical State Park）位于华盛顿州惠德贝岛，是一个拥有海岸美景和历史军事设施的独特露营地。游客可以探索保存完好的军事炮台和1903年的灯塔，体验结合了历史探险与海滨休闲的露营乐趣。（来源：Washington State Parks）",
+    reviewCount: "Google Maps: 4.6★ (56条评价), The Dyrt: 4.5★ (20条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
+    ],
     image: "/manus-storage/fort_casey_fd3ad483.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
     bookingUrl: "https://washington.goingtocamp.com/create-booking/results?resourceLocationId=-2147483617&mapId=-2147483386",
@@ -2163,7 +2184,6 @@ export const campgrounds: Campground[] = [
     vacancyAnalysis: [
       { area: "Main Campground", whyVacant: "Whidbey Island需坐渡轮，部分人嫌麻烦偶有取消", whyHard: "但旺季周末仍很快满" }
     ],
-    bookingWindows: [],
     recommendedSites: "靠近炮台的营位（步行最短到历史区域+海景）",
     avoid: "最靠近渡轮码头的营位（渡轮噪音+车流）",
     tcNotes: "营位较紧凑，适合小型TC。部分营位有电力接口。历史要塞区域平坦。",
@@ -2181,6 +2201,11 @@ export const campgrounds: Campground[] = [
     driveTime: 138,
     driveTimeLabel: "2.25h",
     tagline: "历史军事遗迹与壮丽海景的完美结合",
+    description: "伊比堡州立公园营地（Fort Ebey State Park Campground）位于惠德贝岛，被茂密的森林环绕，提供极佳的私密性，并可俯瞰胡安·德·富卡海峡的壮丽悬崖海景。营地不仅适合帐篷和房车露营，还靠近历史悠久的二战军事设施和长达25英里的徒步与自行车道，为游客提供丰富的户外体验（来源：The Dyrt, Washington State Parks）。",
+    reviewCount: "Google Maps: 4.7★ (93条评价), TheDyrt: 4.5★ (16条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
+    ],
     image: "/manus-storage/fort_ebey_4cc204b5.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
     bookingUrl: "https://washington.goingtocamp.com/create-booking/results?resourceLocationId=-2147483616&mapId=-2147483385",
@@ -2207,7 +2232,6 @@ export const campgrounds: Campground[] = [
     vacancyAnalysis: [
       { area: "Main Loop", whyVacant: "无接驳+需坐渡轮到Whidbey Island，相比Fort Casey知名度稍低", whyHard: "但旺季周末仍满" }
     ],
-    bookingWindows: [],
     recommendedSites: "靠近悬崖步道入口的营位（步行最短到海景+树荫好）",
     avoid: "最靠近入口的营位（车流噪音）",
     tcNotes: "营位在树林中，部分较窄。适合小型到中型TC。无Hookup。",
@@ -2225,6 +2249,11 @@ export const campgrounds: Campground[] = [
     driveTime: 107,
     driveTimeLabel: "1.75h",
     tagline: "华盛顿州首个州立公园，坐拥萨米什湾绝美海景与潮池",
+    description: "拉腊比州立公园（Larrabee State Park）是华盛顿州第一个州立公园，位于查卡纳特山（Chuckanut Mountain）向海一侧，以其萨米什湾（Samish Bay）和圣胡安群岛（San Juan Islands）的明信片般美景而闻名。营地提供森林环境中的房车和帐篷营地，游客可以享受海滩探索、潮池观赏以及丰富的徒步和山地自行车道，但需注意附近有频繁的火车经过（来源：Washington State Parks, The Dyrt）。",
+    reviewCount: "Google Maps: 4.7★ (1,800+条评价), TripAdvisor: 4.2★ (258条评价), The Dyrt: 4.0★ (41条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
+    ],
     image: "/manus-storage/larrabee_fa6480ad.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
     bookingUrl: "https://washington.goingtocamp.com/create-booking/results?resourceLocationId=-2147483593&mapId=-2147483374",
@@ -2252,7 +2281,6 @@ export const campgrounds: Campground[] = [
     vacancyAnalysis: [
       { area: "Standard Sites (1-51)", whyVacant: "靠近Bellingham，本地人周末常来，偶有平日空位", whyHard: "旺季周末很快满" }
     ],
-    bookingWindows: [],
     recommendedSites: "Standard Loop: 靠近Wildcat Cove的营位（海滩最近+树荫好）",
     avoid: "Primitive Sites（不适合TC）和靠近Chuckanut Drive的营位（公路噪音）",
     tcNotes: "混合营位，部分有Full Hookup。靠近海滩的营位较平坦。",
@@ -2270,6 +2298,11 @@ export const campgrounds: Campground[] = [
     driveTime: 282,
     driveTimeLabel: "4.75h",
     tagline: "沙漠中的绿洲，壮丽的玄武岩与湖泊交相辉映",
+    description: "汽船岩州立公园（Steamboat Rock State Park）位于华盛顿州班克斯湖北端，占地5043英亩，拥有5万英尺的淡水海岸线。公园以其标志性的玄武岩山丘景观而闻名，提供游泳、划船、钓鱼等丰富的水上活动，以及广受欢迎的露营体验（来源：华盛顿州立公园官网）。",
+    reviewCount: "Google Maps: 4.8★ (6条评价), The Dyrt: 4.7★ (3条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
+    ],
     image: "/manus-storage/steamboat_rock_52bb0aba.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
     bookingUrl: "https://washington.goingtocamp.com/create-booking/results?resourceLocationId=-2147483552&mapId=-2147483354",
@@ -2300,7 +2333,6 @@ export const campgrounds: Campground[] = [
       { area: "Sage Camp Loop (Utility)", whyVacant: "—", whyHard: "华州东部最热门水上活动营地，夏季极其抢手" },
       { area: "Dune/Bay Camp Loop", whyVacant: "无接驳+夏季酷热（40°C+），帐篷客常取消", whyHard: "—" }
     ],
-    bookingWindows: [],
     recommendedSites: "Full Hookup: 靠近湖边和船坞的营位（水上活动最方便+全接驳）",
     avoid: "Standard区最远端（离湖远+夏季酷热无遮荫+无水电）",
     tcNotes: "宽敞的RV营位，有Full Hookup。地形开阔平坦，非常适合大型TC。",
@@ -2318,6 +2350,11 @@ export const campgrounds: Campground[] = [
     driveTime: 390,
     driveTimeLabel: "6.5h",
     tagline: "沙丘、灯塔与海岸松林的完美结合",
+    description: "布拉兹海滩州立公园（Bullards Beach State Park）位于班登以北的科基尔河口，是一个适合家庭游玩的大型公园。营地坐落在海岸松林中，免受强劲海风的侵扰，游客可以享受沙滩漫步、骑马、探索灯塔以及在河中钓鱼和捕蟹的乐趣（来源：Oregon State Parks）。",
+    reviewCount: "Google Maps: 4.7★ (1614条评价), The Dyrt: 4.5★ (60条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统，每天早6点放票" },
+    ],
     image: "/manus-storage/bullards_beach_6f40c834.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
     bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/bullards-beach-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402234",
@@ -2347,7 +2384,6 @@ export const campgrounds: Campground[] = [
       { area: "A Loop (Electrical + Water)", whyVacant: "营位较多（100个），非旺季有空位", whyHard: "旺季周末仍满" },
       { area: "Electrical (B-C)", whyVacant: "数量多，相对容易预订", whyHard: "—" }
     ],
-    bookingWindows: [],
     recommendedSites: "A Loop: 靠近自行车道入口的营位（通往灯塔最方便+全接驳）",
     avoid: "Horse Camp（有味道+不适合普通露营）",
     tcNotes: "宽敞的RV营位，有Full Hookup。Loop较平坦，进出方便。",
@@ -2365,6 +2401,11 @@ export const campgrounds: Campground[] = [
     driveTime: 258,
     driveTimeLabel: "4.25h",
     tagline: "历史与自然的完美结合",
+    description: "尚波格州立遗产区（Champoeg State Heritage Area）位于风景秀丽的威拉米特河畔，融合了历史、自然与休闲特色，曾是俄勒冈州早期拓荒者的定居点。营地提供房车全接驳车位、帐篷营地、蒙古包和木屋等多种住宿选择，并设有适合带宠物散步的步道和飞盘高尔夫球场（来源：Oregon State Parks）。",
+    reviewCount: "Google Maps: 4.7★ (2635条评价), The Dyrt: 4.5★ (69条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统，每天早6点放票" },
+    ],
     image: "/manus-storage/champoeg_scenic_68c7341b.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
     bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/champoeg-state-heritage-area/r/campgroundDetails.do?contractCode=OR&parkId=402238",
@@ -2393,7 +2434,6 @@ export const campgrounds: Campground[] = [
       { area: "A Loop (Electrical + Water)", whyVacant: "靠近波特兰但不是海岸/山区，吸引力相对较低，非旺季有空位", whyHard: "旺季周末仍满" },
       { area: "Electrical (B)", whyVacant: "同上，且数量适中", whyHard: "—" }
     ],
-    bookingWindows: [],
     recommendedSites: "A Loop: 靠近Willamette River的营位（河景+全接驳+步道入口近）",
     avoid: "B Loop最内侧（离河远+离卫生间远）",
     tcNotes: "平坦的RV营位，有电力和水接口。Willamette River沿岸，进出方便。",
@@ -2411,6 +2451,11 @@ export const campgrounds: Campground[] = [
     driveTime: 360,
     driveTimeLabel: "6h",
     tagline: "风景如画的半月形海湾与沙滩",
+    description: "日落湾州立公园露营地位于俄勒冈海岸风景最优美的地区之一，拥有受高耸海崖保护的美丽沙滩和宁静海湾。这里提供房车、帐篷和蒙古包等多种露营选择，游客可以轻松前往海滩进行赶海、钓鱼、游泳和划船等活动，并可通过步道连接附近的海岸公园（Oregon State Parks）。",
+    reviewCount: "Google Maps: 4.6★ (167条评价), The Dyrt: 4.0★ (54条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统，每天早6点放票" },
+    ],
     image: "/manus-storage/sunset_bay_63e00786.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
     bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/sunset-bay-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402285",
@@ -2440,7 +2485,6 @@ export const campgrounds: Campground[] = [
       { area: "A Loop (Electrical + Water)", whyVacant: "—", whyHard: "仅29个全接驳位+受保护海湾极其稀缺，旺季极其抢手" },
       { area: "Electrical (B)", whyVacant: "偶有取消", whyHard: "取消后很快被抢" }
     ],
-    bookingWindows: [],
     recommendedSites: "A Loop: 靠近海湾步道的营位（步行最短到海滩+全接驳）",
     avoid: "Tent区（不适合TC）",
     tcNotes: "营位中等大小，部分有Full Hookup。海岸营地，风可能较大。",
@@ -2458,6 +2502,11 @@ export const campgrounds: Campground[] = [
     driveTime: 260,
     driveTimeLabel: "4.5h",
     tagline: "壮丽峡谷与水上运动的完美结合",
+    description: "The Cove Palisades州立公园位于俄勒冈州中部的峡谷地带，坐落在比利奇努克湖畔，以其壮丽的峡谷风光和丰富的水上活动而闻名。这里提供适合家庭的露营体验，游客可以享受划船、游泳和钓鱼等乐趣，同时欣赏高耸的岩壁和高地沙漠景观（来源：Oregon State Parks）。",
+    reviewCount: "Google Maps: 4.7★ (1137条评价), The Dyrt: 4.5★ (25条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统，每天早6点放票" },
+    ],
     image: "/manus-storage/cove_palisades_53e100ca.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
     bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/the-cove-palisades-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402287",
@@ -2486,7 +2535,6 @@ export const campgrounds: Campground[] = [
       { area: "Deschutes River Campground (Full Hookup)", whyVacant: "—", whyHard: "中俄勒冈最热门水上活动营地，夏季极其抢手" },
       { area: "Crooked River", whyVacant: "数量较多（91个），非旺季有空位", whyHard: "旺季周末仍满" }
     ],
-    bookingWindows: [],
     recommendedSites: "Deschutes: 靠近船坞的营位（水上活动最方便+全接驳+湖景）",
     avoid: "最远离湖边的营位（夏季酷热+步行到湖边太远）",
     tcNotes: "Deschutes Loop有Full Hookup，营位宽敞。湖景营位需提前预订。",
@@ -2504,6 +2552,11 @@ export const campgrounds: Campground[] = [
     driveTime: 300,
     driveTimeLabel: "5h",
     tagline: "高地沙漠与亚高山森林中的宁静河畔营地",
+    description: "拉派恩州立公园（LaPine State Park）位于俄勒冈州中部，坐落在高山沙漠的亚高山森林中，沿着风景秀丽的德舒特河（Deschutes River）上游延伸。这里提供全年开放的露营体验，包括房车营地和舒适的木屋，游客可以享受徒步、山地自行车、钓鱼和漂流等丰富的户外活动（来源：Oregon State Parks）。",
+    reviewCount: "Google Maps: 4.6★ (1,196条评价), The Dyrt: 4.5★ (36条评价)",
+    bookingWindows: [
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统，每天早6点放票" },
+    ],
     image: "/manus-storage/la_pine_114112fe.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
     bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/la-pine-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402264",
@@ -2534,7 +2587,6 @@ export const campgrounds: Campground[] = [
       { area: "South Loop (1-44, Full Hookup)", whyVacant: "—", whyHard: "Bend地区最受欢迎的州立营地，全接驳位旺季极其抢手" },
       { area: "Electrical", whyVacant: "偶有取消", whyHard: "取消后很快被抢" }
     ],
-    bookingWindows: [],
     recommendedSites: "Full Hookup: 靠近Deschutes River的营位（河景+树荫+全接驳）",
     avoid: "最远离河边的营位（失去河景优势）",
     tcNotes: "宽敞的RV营位，有Full Hookup。Deschutes River沿岸，松树林中。",
