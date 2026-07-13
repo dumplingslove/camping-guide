@@ -138,3 +138,15 @@
 - [x] Mobile regression: responsive patterns verified, weather grid made scrollable
 - [x] Mobile regression: 768px uses md breakpoints correctly (grid-cols-2, etc.)
 - [x] Mobile regression: 1024px uses lg breakpoints correctly (grid-cols-3, etc.)
+
+## BC Campgrounds Addition (2026-07-13)
+- [x] Add 4 BC campgrounds: Rathtrevor Beach, E.C. Manning Park, Cultus Lake, Golden Ears
+- [x] Research detailed area/loop info for each BC campground
+- [x] Upload photos and campsite maps for BC campgrounds
+- [x] Add activities for all 4 BC campgrounds
+- [x] Fix booking URLs (BC Parks Discover Camping direct links)
+- [x] Fix Google Maps URLs for all 4 BC campgrounds
+- [ ] Upload official campsite maps for BC campgrounds (IDs 50-53)
+- [ ] Re-audit Golden Ears area data (includes Gold Creek/North Beach which are separate campgrounds)
+- [ ] Add BC border crossing tips section or note
+- [ ] Update site title/subtitle to reflect BC scope
