@@ -107,7 +107,7 @@ export const campgrounds: Campground[] = [
       { name: "Cranberry Lake 浅水区嬉水", ageRange: "1.5岁+", distance: "步行5分钟", details: "淡水湖，水浅平缓，沙底，夏季水温舒适", mapUrl: "https://www.google.com/maps/search/Cranberry+Lake+Deception+Pass+State+Park", googleRating: "4.8★ (22条评价)" },
       { name: "North Beach 沙滩玩沙", ageRange: "1岁+", distance: "开车5分钟", details: "细沙滩，可挖沙堆城堡，退潮后有小水坑", mapUrl: "https://www.google.com/maps/search/North+Beach+Deception+Pass+State+Park" },
       { name: "看大桥上的船只通过", ageRange: "任何年龄", distance: "开车3分钟", details: "站在桥上看巨轮从脚下穿过", mapUrl: "https://www.google.com/maps/search/Deception+Pass+Bridge+Deception+Pass+State+Park+WA", googleRating: "4.8★ (1296条评价)" },
-      { name: "森林巨木探索", ageRange: "1.5岁+", distance: "营地内", details: "巨大的道格拉斯冷杉，树根形成天然洞穴", mapUrl: "https://www.google.com/maps/search/Sand+Dunes+Interpretive+Trail+Deception+Pass+State+Park", googleRating: "4.8★ (4条评价)" },
+      { name: "森林巨木探索", ageRange: "1.5岁+", distance: "营地内", details: "巨大的道格拉斯冷杉，树根形成天然洞穴", mapUrl: "https://www.google.com/maps/search/Old+Growth+Forest+Trail+Deception+Pass+State+Park", googleRating: "4.8★ (4条评价)" },
       { name: "潮池生物观察", ageRange: "2岁+", distance: "开车5分钟", details: "Rosario Beach 有海星、海葵、螃蟹", mapUrl: "https://www.google.com/maps/search/Rosario+Beach+Deception+Pass+State+Park+WA", googleRating: "4.6★ (22条评价)" },
       { name: "Cranberry Lake 游泳/划船", ageRange: "任何年龄", distance: "附近", details: "非常正面 (提及4次)" },
       { name: "桥景徒步（Deception Pass Bridge）", ageRange: "任何年龄", distance: "附近", details: "震撼 (提及3次)" },

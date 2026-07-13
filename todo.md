@@ -162,3 +162,9 @@
 - [x] 修复活动(activities)配图错误 (同一修复: Places API现在搜索正确地点并返回正确照片)
 - [x] (P3) 详情页头图未重复纳入下方相册 → 已确认头图已在gallery第一张(line 925: photos={[campground.image, ...photoData.photos]})
 - [x] (P3) 地图首次加载延迟增加loading提示 (Map.tsx添加spinner+"地图加载中..."覆盖层)
+
+## 活动配图全面修复 (2026-07-13)
+- [x] 反转ActivityCard照片优先级：curated fallback > Places API（Places API搜索结果不可靠）
+- [x] 为全部171个活动添加curated fallback照片（之前只有87个，现在187个覆盖全部）
+- [x] 修复森林巨木探索mapUrl（从Sand Dunes改为Old Growth Forest Trail）
+- [x] 确认Cranberry Lake链接正常（Google Maps正确显示4.8★湖泊）

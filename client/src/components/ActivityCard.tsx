@@ -15,19 +15,19 @@ interface ActivityCardProps {
 export function ActivityCard({ name, ageRange, distance, details, mapUrl, googleRating, fallbackPhoto }: ActivityCardProps) {
   const [imgError, setImgError] = useState(false);
   
-  // Extract search query from mapUrl for Places API photo lookup
-  const searchQuery = mapUrl ? extractSearchQuery(mapUrl) : undefined;
+  // Only use Places API if no curated fallback photo exists (Places API results are often inaccurate)
+  const searchQuery = (!fallbackPhoto && mapUrl) ? extractSearchQuery(mapUrl) : undefined;
   const { photoUrl: placePhotoUrl, loading } = usePlacePhoto(searchQuery);
   
-  // Use Google Maps photo if available, otherwise fallback to the old Unsplash photo
-  const displayPhoto = (!imgError && placePhotoUrl) || (!imgError && fallbackPhoto) || null;
-  const photoSrc = placePhotoUrl || fallbackPhoto;
+  // Priority: curated fallback photo > Places API photo
+  const photoSrc = fallbackPhoto || placePhotoUrl || null;
+  const isPlacePhoto = !fallbackPhoto && !!placePhotoUrl;
 
   return (
     <div className="rounded-lg border border-border/60 overflow-hidden hover:shadow-md transition-shadow">
       {photoSrc && !imgError && (
         <div className="relative h-40 overflow-hidden bg-muted">
-          {loading && !placePhotoUrl && (
+          {loading && !placePhotoUrl && !fallbackPhoto && (
             <div className="absolute inset-0 flex items-center justify-center bg-muted animate-pulse">
               <ImageIcon size={24} className="text-muted-foreground/40" />
             </div>
@@ -41,7 +41,7 @@ export function ActivityCard({ name, ageRange, distance, details, mapUrl, google
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <h4 className="absolute bottom-3 left-4 font-medium text-white text-sm drop-shadow-md">{name}</h4>
-          {placePhotoUrl && (
+          {isPlacePhoto && (
             <span className="absolute top-2 right-2 text-[9px] bg-black/50 text-white/80 px-1.5 py-0.5 rounded">
               Google Maps 实景
             </span>
