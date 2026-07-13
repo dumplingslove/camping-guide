@@ -223,7 +223,8 @@ function WeatherWidget({ campId }: { campId: number }) {
       {loading ? (
         <div className="h-24 flex items-center justify-center text-muted-foreground text-sm">加载中...</div>
       ) : weather ? (
-        <div className="grid grid-cols-7 gap-2">
+        <div className="overflow-x-auto -mx-1 px-1">
+        <div className="grid grid-cols-7 gap-2 min-w-[350px]">
           {weather.time.map((date: string, i: number) => (
             <div key={date} className="text-center p-2 rounded-lg bg-muted/50">
               <div className="text-[10px] text-muted-foreground font-mono">
@@ -241,6 +242,7 @@ function WeatherWidget({ campId }: { campId: number }) {
               </div>
             </div>
           ))}
+        </div>
         </div>
       ) : (
         <p className="text-sm text-muted-foreground">天气数据暂时不可用</p>

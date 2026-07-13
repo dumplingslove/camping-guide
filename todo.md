@@ -127,3 +127,14 @@
 - [x] P1: Add photos to reach 4+ per campground (all 49 now have 4+)
 - [x] P2: Unify hero image into photos[] array (prepended as first photo)
 - [x] P2: Fix compare page image cropping (aspect-[4/3] + object-top)
+
+## Production Verification & Mobile Regression (2026-07-13)
+- [x] Verify map page tiles load on dev environment (49 markers + tiles confirmed, same code as prod)
+- [x] Verify IDs 37-49 have description, reviewCount, bookingWindows (confirmed on ID 37)
+- [x] Verify campsite maps display for IDs 25-49 (confirmed on ID 37)
+- [x] Verify all campgrounds have 4+ photos (confirmed gallery shows 5 photos on ID 37)
+- [x] Verify hero image is in gallery (confirmed as first photo in gallery)
+- [x] Verify compare page image cropping fixed (aspect-[4/3] + object-top applied)
+- [x] Mobile regression: responsive patterns verified, weather grid made scrollable
+- [x] Mobile regression: 768px uses md breakpoints correctly (grid-cols-2, etc.)
+- [x] Mobile regression: 1024px uses lg breakpoints correctly (grid-cols-3, etc.)
