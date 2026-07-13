@@ -356,127 +356,127 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   },
   // 25. Fort Worden
   25: {
-    photos: ["/manus-storage/fort-worden_18de7e21.jpg"],
-    captions: ["沃登堡历史海防堡垒"],
+    photos: ["/manus-storage/camp_25_photo_1_35d442de.jpg", "/manus-storage/camp_25_photo_2_6c2cc1b9.jpg", "/manus-storage/camp_25_photo_3_858e7e23.jpg"],
+    captions: ["林间营位", "草地营位", "房车营地"],
   },
   // 26. Grayland Beach
   26: {
-    photos: ["/manus-storage/grayland-beach_e162883c.jpg"],
-    captions: ["格雷兰海滩沙丘"],
+    photos: ["/manus-storage/camp_26_photo_1_34b136b2.jpg", "/manus-storage/camp_26_photo_2_be4465dd.jpg", "/manus-storage/camp_26_photo_3_85261e6c.jpg"],
+    captions: ["林间蒙古包营位", "海岸线航拍全景", "海滩绝美日落"],
   },
   // 27. Wenatchee Confluence
   27: {
-    photos: ["/manus-storage/wenatchee-confluence_a36ce9ab.jpg"],
-    captions: ["两河交汇处"],
+    photos: ["/manus-storage/camp_27_photo_1_32db2828.jpg", "/manus-storage/camp_27_photo_2_428b29da.jpg", "/manus-storage/camp_27_photo_3_d5d04f5a.jpg"],
+    captions: ["营地草坪与房车", "树下房车营位", "湖畔野餐区"],
   },
   // 28. Fort Flagler
   28: {
-    photos: ["/manus-storage/fort-flagler_f50ffadb.webp"],
-    captions: ["弗拉格勒堡海岸"],
+    photos: ["/manus-storage/camp_28_photo_1_2dd0cd83.webp", "/manus-storage/camp_28_photo_2_5b5869c1.jpg", "/manus-storage/camp_28_photo_3_1f412297.jpg"],
+    captions: ["林间营位", "海湾码头", "海滨草地"],
   },
   // 29. Hoh Rain Forest
   29: {
-    photos: ["/manus-storage/hoh-rainforest_0bba0dcc.webp"],
-    captions: ["霍雨林苔藓巨树"],
+    photos: ["/manus-storage/camp_29_photo_1_accb585a.jpg", "/manus-storage/camp_29_photo_2_a3f6676e.jpg", "/manus-storage/camp_29_photo_3_a5da5957.jpg"],
+    captions: ["林间营位", "森林房车营地", "草地帐篷营位"],
   },
   // 30. Moran State Park
   30: {
-    photos: ["/manus-storage/moran-state-park_9f5fe54f.jpg"],
-    captions: ["Mt. Constitution观景"],
+    photos: ["/manus-storage/camp_30_photo_1_341f078c.jpg", "/manus-storage/camp_30_photo_2_0a35be02.jpg", "/manus-storage/camp_30_photo_3_85ca8b8e.jpg"],
+    captions: ["湖畔林间营地", "湖面泛舟与码头", "山顶俯瞰海湾美景"],
   },
   // 31. South Beach OR
   31: {
-    photos: ["/manus-storage/south-beach-or_9de9877e.jpg"],
-    captions: ["南海滩海岸线"],
+    photos: ["/manus-storage/camp_31_photo_1_4a016c75.jpg", "/manus-storage/camp_31_photo_2_ca1ae0ae.jpg", "/manus-storage/camp_31_photo_3_8249609f.jpg"],
+    captions: ["南海滩沙滩", "林间步道", "营地入口"],
   },
   // 32. Nehalem Bay
   32: {
-    photos: ["/manus-storage/nehalem-bay_256cfc1c.jpg"],
-    captions: ["尼哈勒姆湾沙滩"],
+    photos: ["/manus-storage/camp_32_photo_1_9b6f6e79.jpg", "/manus-storage/camp_32_photo_2_1859b52c.jpg", "/manus-storage/camp_32_photo_3_b7f1c83a.jpg"],
+    captions: ["草地帐篷营位", "海湾步道风景", "沙丘海滩风光"],
   },
   // 33. Honeyman
   33: {
-    photos: ["/manus-storage/honeyman_feef5391.jpg"],
-    captions: ["沙丘与湖泊"],
+    photos: ["/manus-storage/camp_33_photo_1_b521a545.jpg", "/manus-storage/camp_33_photo_2_3477d04b.jpg", "/manus-storage/camp_33_photo_3_04b99be9.jpg"],
+    captions: ["湖畔码头与沙丘", "林间露营地", "森林蒙古包"],
   },
   // 34. Silver Falls
   34: {
-    photos: ["/manus-storage/silver-falls_3932b390.jpg"],
-    captions: ["South Falls瀑布"],
+    photos: ["/manus-storage/camp_34_photo_1_dd585966.jpg", "/manus-storage/camp_34_photo_2_4d0e89ea.jpg", "/manus-storage/camp_34_photo_3_dae45dd2.jpg"],
+    captions: ["壮丽瀑布景观", "林间房车营地", "森林帐篷营位"],
   },
   // 35. Wallowa Lake
   35: {
-    photos: ["/manus-storage/wallowa-lake_f6d304c2.jpg"],
-    captions: ["瓦洛厄湖与群山"],
+    photos: ["/manus-storage/camp_35_photo_1_9ac99bb8.jpg", "/manus-storage/camp_35_photo_2_ab66be82.jpg", "/manus-storage/camp_35_photo_3_45378b95.jpg"],
+    captions: ["湖泊山景", "林间营位", "湖畔雪山"],
   },
   // 36. Detroit Lake
   36: {
-    photos: ["/manus-storage/detroit-lake_c1467c2b.jpg"],
-    captions: ["底特律湖全景"],
+    photos: ["/manus-storage/camp_36_photo_1_04d2b57b.jpg", "/manus-storage/camp_36_photo_2_51667a78.jpg", "/manus-storage/camp_36_photo_3_1d34d4f7.jpg"],
+    captions: ["湖畔露营烧烤", "林间营地篝火", "湖泊沙滩风景"],
   },
   // 37. Sol Duc
   37: {
-    photos: ["/manus-storage/sol_duc_a6d30d29.jpg"],
-    captions: ["索尔达克温泉"],
+    photos: ["/manus-storage/camp_37_photo_1_a27d0379.jpg", "/manus-storage/camp_37_photo_2_a66f2d7e.jpg", "/manus-storage/camp_37_photo_3_40dde2f0.jpg"],
+    captions: ["林间营位", "温泉度假村", "森林野餐区"],
   },
   // 38. Harris Beach
   38: {
-    photos: ["/manus-storage/harris_beach_8df381a3.jpg"],
-    captions: ["哈里斯海滩海蚀柱"],
+    photos: ["/manus-storage/camp_38_photo_1_11c86f9d.jpg", "/manus-storage/camp_38_photo_2_df2006a0.jpg", "/manus-storage/camp_38_photo_3_f75bee0b.jpg"],
+    captions: ["林间帐篷营位", "林间房车营位", "海滩礁石风光"],
   },
   // 39. Colonial Creek
   39: {
-    photos: ["/manus-storage/colonial_creek_bcd4d3a3.webp"],
-    captions: ["Diablo Lake绿松石湖水"],
+    photos: ["/manus-storage/camp_39_photo_1_51074da3.jpg", "/manus-storage/camp_39_photo_2_b0b765cc.jpg", "/manus-storage/camp_39_photo_3_0c423716.jpg"],
+    captions: ["营地湖景", "湖畔野餐桌", "湖面栈道"],
   },
   // 40. Lincoln Rock
   40: {
-    photos: ["/manus-storage/lincoln_rock_c41605f0.jpg"],
-    captions: ["哥伦比亚河畔"],
+    photos: ["/manus-storage/camp_40_photo_1_1166d0d1.jpg", "/manus-storage/camp_40_photo_2_5ce06ec0.jpg", "/manus-storage/camp_40_photo_3_f8f874f4.jpg"],
+    captions: ["营地湖景", "林间营位", "营地游乐场"],
   },
   // 41. Fort Casey
   41: {
-    photos: ["/manus-storage/fort_casey_fd3ad483.jpg"],
-    captions: ["凯西堡历史炮台"],
+    photos: ["/manus-storage/camp_41_photo_1_230ea416.jpg", "/manus-storage/camp_41_photo_2_660d1dcd.jpg", "/manus-storage/camp_41_photo_3_8343a8a6.jpg"],
+    captions: ["海滨营地全景", "海滩房车营地", "历史炮台建筑"],
   },
   // 42. Fort Ebey
   42: {
-    photos: ["/manus-storage/fort_ebey_4cc204b5.jpg"],
-    captions: ["伊贝堡海岸悬崖"],
+    photos: ["/manus-storage/camp_42_photo_1_1817a8af.jpg", "/manus-storage/camp_42_photo_2_4fa7e1fe.jpg", "/manus-storage/camp_42_photo_3_db9bf911.jpg"],
+    captions: ["海滩风景", "军事炮台遗址", "林间步道"],
   },
   // 43. Larrabee
   43: {
-    photos: ["/manus-storage/larrabee_fa6480ad.jpg"],
-    captions: ["拉腊比海湾"],
+    photos: ["/manus-storage/camp_43_photo_1_f64e97a7.jpg", "/manus-storage/camp_43_photo_2_44c7ee40.jpg", "/manus-storage/camp_43_photo_3_4f7ae3ce.jpg"],
+    captions: ["林间营位", "海湾风景", "海滩日落"],
   },
   // 44. Steamboat Rock
   44: {
-    photos: ["/manus-storage/steamboat_rock_52bb0aba.jpg"],
-    captions: ["汽船岩与Banks Lake"],
+    photos: ["/manus-storage/camp_44_photo_1_3cde74bd.jpg", "/manus-storage/camp_44_photo_2_bbb4db67.jpg", "/manus-storage/camp_44_photo_3_3ec3daf0.jpg"],
+    captions: ["湖畔营地全景", "营地与湖泊风光", "湖畔沙滩与营地"],
   },
   // 45. Bullards Beach
   45: {
-    photos: ["/manus-storage/bullards_beach_6f40c834.jpg"],
-    captions: ["Coquille River灯塔"],
+    photos: ["/manus-storage/camp_45_photo_1_a0e8d40b.jpg", "/manus-storage/camp_45_photo_2_fa167ec4.jpg", "/manus-storage/camp_45_photo_3_d190e23c.jpg"],
+    captions: ["海滩风景", "房车营位", "营地全景"],
   },
   // 46. Champoeg
   46: {
-    photos: ["/manus-storage/champoeg_scenic_68c7341b.jpg"],
-    captions: ["Willamette River河畔"],
+    photos: ["/manus-storage/camp_46_photo_1_0b749168.jpg", "/manus-storage/camp_46_photo_2_e9cc383b.jpg", "/manus-storage/camp_46_photo_3_6af8d85c.jpg"],
+    captions: ["林间营位", "营地篝火", "草坪营位"],
   },
   // 47. Sunset Bay
   47: {
-    photos: ["/manus-storage/sunset_bay_63e00786.jpg"],
-    captions: ["日落湾半月形海湾"],
+    photos: ["/manus-storage/camp_47_photo_1_d1d8aaac.jpg", "/manus-storage/camp_47_photo_2_308d1cf0.jpg", "/manus-storage/camp_47_photo_3_774e474f.jpg"],
+    captions: ["海湾沙滩风景", "营地入口及林间道路", "林间露营位及帐篷"],
   },
   // 48. Cove Palisades
   48: {
-    photos: ["/manus-storage/cove_palisades_53e100ca.jpg"],
-    captions: ["峡谷与Lake Billy Chinook"],
+    photos: ["/manus-storage/camp_48_photo_1_8cd4db06.jpg", "/manus-storage/camp_48_photo_2_cbca821b.jpg", "/manus-storage/camp_48_photo_3_f45070ba.jpg"],
+    captions: ["房车营地与野餐区", "林间帐篷营位", "湖畔野餐区与峡谷风光"],
   },
   // 49. La Pine
   49: {
-    photos: ["/manus-storage/la_pine_114112fe.jpg"],
-    captions: ["Ponderosa Pine松林"],
+    photos: ["/manus-storage/camp_49_photo_1_401e2ebf.jpg", "/manus-storage/camp_49_photo_2_6d25fac3.jpg", "/manus-storage/camp_49_photo_3_46b50517.jpg"],
+    captions: ["营地河流风光", "房车营位", "林间帐篷营位"],
   },
 };

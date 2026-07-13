@@ -99,3 +99,9 @@
 - [x] P2-1: Show brief warning reason on homepage cards with "注意" label
 - [x] P2-2: Unify driveTimeLabel format (remove range format like "3-3.5h")
 - [x] P2-3: Disambiguate two "南海滩" campground names
+
+## New Features (User Request 2026-07-12)
+- [x] Add Google Maps links for all 49 campgrounds to summary table
+- [x] Fix incorrect campsite map annotations (removed fake markers, replaced with clean list view)
+- [x] Add more gallery photos for campgrounds 25-49 (3 photos each)
+- [x] Fix all 49 campground bookingUrls to link directly to correct campground pages

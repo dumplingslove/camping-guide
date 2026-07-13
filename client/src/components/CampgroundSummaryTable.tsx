@@ -20,6 +20,7 @@ import {
   TableIcon,
   Ban,
   AlertTriangle,
+  MapPin,
 } from "lucide-react";
 
 type SortField = "id" | "nameCn" | "driveTime" | "sceneryRating" | "kidRating" | "tcRating" | "state" | "tier" | "visited";
@@ -153,6 +154,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
                   <SortableHead field="kidRating">娃可玩</SortableHead>
                   <SortableHead field="tcRating">TC</SortableHead>
                   <TableHead className="text-center">状态</TableHead>
+                  <TableHead>地图</TableHead>
                   <TableHead>上次去过</TableHead>
                 </TableRow>
               </TableHeader>
@@ -213,6 +215,20 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
                           </span>
                         ) : (
                           <span className="text-[10px] text-emerald-600">正常</span>
+                        )}
+                      </TableCell>
+                      {/* Google Maps */}
+                      <TableCell className="text-center">
+                        {camp.googleMapsUrl && (
+                          <a
+                            href={camp.googleMapsUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-0.5 text-[10px] text-lake hover:text-pine transition-colors"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <MapPin size={12} />
+                          </a>
                         )}
                       </TableCell>
                       {/* Last visited */}

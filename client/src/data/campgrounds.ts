@@ -77,6 +77,7 @@ export interface Campground {
   image: string;
   lat?: number;
   lng?: number;
+  googleMapsUrl?: string; // Google Maps URL for the campground
   lastUpdated?: string; // ISO date string e.g. "2026-07-12"
 }
 
@@ -99,7 +100,7 @@ export const campgrounds: Campground[] = [
     region: "Whidbey Island",
     type: "state",
     features: ["海滩", "湖泊", "大桥", "潮池", "全接驳"],
-    bookingUrl: "https://washington.goingtocamp.com",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park",
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
@@ -138,6 +139,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/mObNwivbLDinKDGt_34427a30.jpg",
     lat: 48.3929,
     lng: -122.6455,
+    googleMapsUrl: "https://www.google.com/maps/place/Deception+Pass+State+Park/@48.3962,-122.6555,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -158,7 +160,7 @@ export const campgrounds: Campground[] = [
     region: "Olympia",
     type: "state",
     features: ["湖泊", "古木", "游泳", "钓鱼", "水电"],
-    bookingUrl: "https://washington.goingtocamp.com",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park",
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
@@ -189,6 +191,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/EnJpoftfMRTCONgv_cb371cc0.jpg",
     lat: 46.9082,
     lng: -122.9093,
+    googleMapsUrl: "https://www.google.com/maps/place/Millersylvania+State+Park/@46.9122,-122.9089,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -243,6 +246,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/bPIvqeqlUfkPdRxn_dab076ad.png",
     lat: 46.785,
     lng: -122.317,
+    googleMapsUrl: "https://www.google.com/maps/place/Alder+Lake+Park/@46.8050,-122.3150,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -298,6 +302,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/QOBgWqFANsVEzyll_bf990d4a.jpg",
     lat: 46.768,
     lng: -121.787,
+    googleMapsUrl: "https://www.google.com/maps/place/Cougar+Rock+Campground/@46.7698,-121.7878,15z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -318,7 +323,7 @@ export const campgrounds: Campground[] = [
     region: "Leavenworth",
     type: "state",
     features: ["湖泊", "雪山", "河流", "骑马", "水电"],
-    bookingUrl: "https://washington.goingtocamp.com",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/lake-wenatchee-state-park",
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
@@ -347,6 +352,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/IcRjhRqDeZXrPFRm_84cf9318.jpg",
     lat: 47.812,
     lng: -120.729,
+    googleMapsUrl: "https://www.google.com/maps/place/Lake+Wenatchee+State+Park/@47.8112,-120.7253,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -407,6 +413,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/ohanapecosh_photo1_20a0e8f5.jpg",
     lat: 46.734,
     lng: -121.569,
+    googleMapsUrl: "https://www.google.com/maps/place/Ohanapecosh+Campground/@46.7312,-121.5684,15z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -461,6 +468,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/OFYfQSFbeLYWWaYW_41e8fd26.jpg",
     lat: 48.075,
     lng: -123.806,
+    googleMapsUrl: "https://www.google.com/maps/place/Fairholme+Campground/@48.0750,-123.9150,15z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -481,7 +489,7 @@ export const campgrounds: Campground[] = [
     region: "Chelan",
     type: "state",
     features: ["深湖", "游泳", "水上运动", "酒庄", "全接驳"],
-    bookingUrl: "https://washington.goingtocamp.com",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/lake-chelan-state-park",
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
@@ -510,6 +518,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/MBQKLLuqIkiQRsqp_bbf40e1f.jpg",
     lat: 47.838,
     lng: -120.193,
+    googleMapsUrl: "https://www.google.com/maps/place/Lake+Chelan+State+Park/@47.8319,-120.2097,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -530,7 +539,7 @@ export const campgrounds: Campground[] = [
     region: "Pacific Coast",
     type: "state",
     features: ["海滩", "日落", "风筝", "全接驳"],
-    bookingUrl: "https://washington.goingtocamp.com",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/pacific-beach-state-park",
     bookingSystem: "WA State Parks",
     season: "全年开放",
     activities: [
@@ -560,6 +569,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/klbUGbzsJFjUFpyH_3f328cf4.jpg",
     lat: 47.208,
     lng: -124.202,
+    googleMapsUrl: "https://www.google.com/maps/place/Pacific+Beach+State+Park/@47.2100,-124.2050,15z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -610,6 +620,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/salt_creek_bluff_overview_68f35c4c.jpg",
     lat: 48.164,
     lng: -123.696,
+    googleMapsUrl: "https://www.google.com/maps/place/Salt+Creek+Recreation+Area/@48.1647,-123.6928,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -663,6 +674,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/AWJUEQIZHhCswCJW_0e4b07aa.jpg",
     lat: 47.613,
     lng: -124.374,
+    googleMapsUrl: "https://www.google.com/maps/place/Kalaloch+Campground/@47.6133,-124.3744,15z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -714,6 +726,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/koa-astoria_b1cce336.jpg",
     lat: 46.165,
     lng: -123.928,
+    googleMapsUrl: "https://www.google.com/maps/place/Astoria+Warrenton+Seaside+KOA+Resort/@46.1650,-123.9250,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -734,7 +747,7 @@ export const campgrounds: Campground[] = [
     region: "Olympic NP Coast",
     type: "national",
     features: ["海滩", "漂流木", "野性海岸", "徒步"],
-    bookingUrl: "https://www.nps.gov/olym/planyourvisit/camping.htm",
+    bookingUrl: "https://www.recreation.gov/camping/campgrounds/247590",
     bookingSystem: "先到先得 (First-Come-First-Served)",
     season: "5月-9月",
     activities: [
@@ -762,6 +775,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/VVvJztakIIvLncRs_e51331f6.jpg",
     lat: 44.618,
     lng: -124.06,
+    googleMapsUrl: "https://www.google.com/maps/place/South+Beach+Campground,+Olympic+National+Park/@47.6850,-124.3700,15z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -782,7 +796,7 @@ export const campgrounds: Campground[] = [
     region: "North Oregon Coast",
     type: "state",
     features: ["沉船", "军事遗迹", "自行车道", "湖泊", "全接驳"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/fort-stevens-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402178",
     bookingSystem: "Oregon State Parks",
     season: "全年开放",
     activities: [
@@ -816,6 +830,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/VUQzskmggOKwojZQ_44678da2.jpg",
     lat: 46.206,
     lng: -123.964,
+    googleMapsUrl: "https://www.google.com/maps/place/Fort+Stevens+State+Park/@46.2050,-123.9650,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -836,7 +851,7 @@ export const campgrounds: Campground[] = [
     region: "Central Oregon Coast",
     type: "state",
     features: ["海滩", "溪流", "Newport", "水族馆", "全接驳"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/beverly-beach-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402126",
     bookingSystem: "Oregon State Parks",
     season: "全年开放",
     activities: [
@@ -867,6 +882,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/beverly-beach_da1cc9b5.jpg",
     lat: 44.728,
     lng: -124.058,
+    googleMapsUrl: "https://www.google.com/maps/place/Beverly+Beach+State+Park/@44.7280,-124.0600,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -894,7 +910,7 @@ export const campgrounds: Campground[] = [
     region: "Long Beach Peninsula",
     type: "state",
     features: ["灯塔", "海崖", "Lewis & Clark", "全接驳"],
-    bookingUrl: "https://washington.goingtocamp.com",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
     bookingSystem: "WA State Parks",
     season: "全年开放（2025.9-2026夏 因翻新关闭）",
     activities: [
@@ -928,6 +944,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/PbAymmqAHTNlEtAB_9dc69d3d.jpg",
     lat: 46.279,
     lng: -124.053,
+    googleMapsUrl: "https://www.google.com/maps/place/Cape+Disappointment+State+Park/@46.2790,-124.0550,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -979,6 +996,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/lPBhnXfPWYgZkHrM_21456f6e.jpg",
     lat: 45.269,
     lng: -121.738,
+    googleMapsUrl: "https://www.google.com/maps/place/Trillium+Lake/@45.2680,-121.7380,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1032,6 +1050,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/KJneQHoHFtSbdCrk_0b7272cb.jpg",
     lat: 47.913,
     lng: -124.607,
+    googleMapsUrl: "https://www.google.com/maps/place/Mora+Campground/@47.9130,-124.6370,15z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1077,6 +1096,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/ACggXiKtVQsbKDbE_a519de53.jpg",
     lat: 45.148,
     lng: -121.743,
+    googleMapsUrl: "https://www.google.com/maps/place/Little+Crater+Lake+Campground/@45.1480,-121.7450,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1097,7 +1117,7 @@ export const campgrounds: Campground[] = [
     region: "Central Oregon",
     type: "state",
     features: ["河流", "游乐场", "Bend", "全接驳"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/tumalo-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402486",
     bookingSystem: "Oregon State Parks",
     season: "全年开放",
     activities: [
@@ -1127,6 +1147,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/OEiSoMLIaHStYPiZ_99aa0685.jpg",
     lat: 44.129,
     lng: -121.368,
+    googleMapsUrl: "https://www.google.com/maps/place/Tumalo+State+Park/@44.1280,-121.3350,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1148,7 +1169,7 @@ export const campgrounds: Campground[] = [
     type: "state",
     features: ["海滩", "步道", "观鲸", "全接驳"],
     warning: "⚠️ 2026年8月3日起将关闭施工，建议8月前前往",
-    bookingUrl: "https://oregonstateparks.reserveamerica.com",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/cape-lookout-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402146",
     bookingSystem: "Oregon State Parks",
     season: "全年（⚠️ 2026年8月3日起关闭施工）",
     activities: [
@@ -1177,6 +1198,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/tSSJhQFlSJjAlOqT_a65b7842.jpg",
     lat: 45.352,
     lng: -123.972,
+    googleMapsUrl: "https://www.google.com/maps/place/Cape+Lookout+State+Park/@45.3410,-123.9720,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1227,6 +1249,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/jPwdauThSqRNVKzL_f15f94b3.jpg",
     lat: 44.026,
     lng: -121.645,
+    googleMapsUrl: "https://www.google.com/maps/place/Farewell+Bend+Campground,+Rogue+River/@42.6960,-122.5780,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1279,6 +1302,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/YZDPDsAYaJHRsMWv_09f4b6c6.jpg",
     lat: 42.866,
     lng: -122.168,
+    googleMapsUrl: "https://www.google.com/maps/place/Mazama+Village+Campground,+Crater+Lake/@42.8660,-122.1690,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1325,6 +1349,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/pacific_shores_resort_97b8255b.jpg",
     lat: 44.471,
     lng: -124.075,
+    googleMapsUrl: "https://www.google.com/maps/place/Pacific+Shores+Motorcoach+Resort/@44.8370,-124.0560,14z",
     lastUpdated: "2026-07-10",
   },
   {
@@ -1345,7 +1370,7 @@ export const campgrounds: Campground[] = [
     region: "Olympic Peninsula",
     type: "state",
     features: ["海滩", "历史堡垒", "游乐场", "全接驳", "淋浴"],
-    bookingUrl: "https://washington.goingtocamp.com/",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
     bookingSystem: "washington.goingtocamp.com",
     season: "全年开放",
     activities: [
@@ -1373,6 +1398,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/fort-worden_18de7e21.jpg",
     lat: 48.1344,
     lng: -122.7654,
+    googleMapsUrl: "https://www.google.com/maps/place/Fort+Worden+State+Park/@48.1340,-122.7650,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1393,7 +1419,7 @@ export const campgrounds: Campground[] = [
     region: "Washington Coast",
     type: "state",
     features: ["海滩", "全接驳", "淋浴", "游乐场", "自行车道"],
-    bookingUrl: "https://washington.goingtocamp.com/",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park",
     bookingSystem: "washington.goingtocamp.com",
     season: "全年开放",
     activities: [
@@ -1420,6 +1446,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/grayland-beach_e162883c.jpg",
     lat: 46.7906,
     lng: -124.0894,
+    googleMapsUrl: "https://www.google.com/maps/place/Grayland+Beach+State+Park/@46.7850,-124.0900,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1440,7 +1467,7 @@ export const campgrounds: Campground[] = [
     region: "Central Washington",
     type: "state",
     features: ["河流", "游泳", "游乐场", "全接驳", "自行车道"],
-    bookingUrl: "https://washington.goingtocamp.com/",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park",
     bookingSystem: "washington.goingtocamp.com",
     season: "全年开放",
     activities: [
@@ -1467,6 +1494,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/wenatchee-confluence_a36ce9ab.jpg",
     lat: 47.4573,
     lng: -120.3255,
+    googleMapsUrl: "https://www.google.com/maps/place/Wenatchee+Confluence+State+Park/@47.4550,-120.3150,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1487,7 +1515,7 @@ export const campgrounds: Campground[] = [
     region: "Olympic Peninsula",
     type: "state",
     features: ["海滩", "历史堡垒", "淋浴", "钓鱼", "游乐场"],
-    bookingUrl: "https://washington.goingtocamp.com/",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
     bookingSystem: "washington.goingtocamp.com",
     season: "全年开放",
     activities: [
@@ -1514,6 +1542,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/fort-flagler_f50ffadb.webp",
     lat: 48.0877,
     lng: -122.7024,
+    googleMapsUrl: "https://www.google.com/maps/place/Fort+Flagler+State+Park/@48.0850,-122.7000,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1564,6 +1593,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/hoh-rainforest_0bba0dcc.webp",
     lat: 47.8039,
     lng: -123.6664,
+    googleMapsUrl: "https://www.google.com/maps/place/Hoh+Rain+Forest+Campground/@47.8610,-123.9340,15z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1585,7 +1615,7 @@ export const campgrounds: Campground[] = [
     type: "state",
     features: ["湖泊", "游泳", "古木", "徒步步道", "游船"],
     warning: "需乘坐渡轮前往Orcas Island，建议提前预订渡轮",
-    bookingUrl: "https://washington.goingtocamp.com/",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/moran-state-park",
     bookingSystem: "washington.goingtocamp.com",
     season: "全年开放",
     activities: [
@@ -1614,6 +1644,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/moran-state-park_9f5fe54f.jpg",
     lat: 48.6654,
     lng: -122.8237,
+    googleMapsUrl: "https://www.google.com/maps/place/Moran+State+Park/@48.6550,-122.8300,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1634,7 +1665,7 @@ export const campgrounds: Campground[] = [
     region: "Oregon Coast",
     type: "state",
     features: ["海滩", "游乐场", "全接驳", "淋浴", "自行车道"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/south-beach-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402165",
     bookingSystem: "oregonstateparks.reserveamerica.com",
     season: "全年开放",
     activities: [
@@ -1662,6 +1693,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/south-beach-or_9de9877e.jpg",
     lat: 44.604,
     lng: -124.0637,
+    googleMapsUrl: "https://www.google.com/maps/place/South+Beach+State+Park,+Newport+OR/@44.5980,-124.0650,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1682,7 +1714,7 @@ export const campgrounds: Campground[] = [
     region: "Oregon Coast",
     type: "state",
     features: ["海滩", "海湾", "全接驳", "淋浴", "游乐场"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/nehalem-bay-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402191",
     bookingSystem: "oregonstateparks.reserveamerica.com",
     season: "全年开放",
     activities: [
@@ -1708,6 +1740,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/nehalem-bay_256cfc1c.jpg",
     lat: 45.685,
     lng: -123.9367,
+    googleMapsUrl: "https://www.google.com/maps/place/Nehalem+Bay+State+Park/@45.6650,-123.9400,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1728,7 +1761,7 @@ export const campgrounds: Campground[] = [
     region: "Oregon Coast",
     type: "state",
     features: ["湖泊", "沙丘", "全接驳", "淋浴", "游乐场"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/jessie-m-honeyman-memorial-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402334",
     bookingSystem: "oregonstateparks.reserveamerica.com",
     season: "全年开放",
     activities: [
@@ -1756,6 +1789,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/honeyman_feef5391.jpg",
     lat: 43.9289,
     lng: -124.105,
+    googleMapsUrl: "https://www.google.com/maps/place/Jessie+M.+Honeyman+Memorial+State+Park/@43.9280,-124.1100,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1776,7 +1810,7 @@ export const campgrounds: Campground[] = [
     region: "Willamette Valley",
     type: "state",
     features: ["瀑布", "古木", "全接驳", "淋浴", "游乐场"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/silver-falls-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402235",
     bookingSystem: "oregonstateparks.reserveamerica.com",
     season: "全年开放",
     activities: [
@@ -1804,6 +1838,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/silver-falls_3932b390.jpg",
     lat: 44.8788,
     lng: -122.6589,
+    googleMapsUrl: "https://www.google.com/maps/place/Silver+Falls+State+Park/@44.8770,-122.6540,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1824,7 +1859,7 @@ export const campgrounds: Campground[] = [
     region: "Eastern Oregon",
     type: "state",
     features: ["湖泊", "全接驳", "淋浴", "游乐场", "钓鱼"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/wallowa-lake-state-park/r/campgroundDetails.do?contractCode=OR&parkId=405408",
     bookingSystem: "oregonstateparks.reserveamerica.com",
     season: "全年开放",
     activities: [
@@ -1851,6 +1886,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/wallowa-lake_f6d304c2.jpg",
     lat: 45.2828,
     lng: -117.2138,
+    googleMapsUrl: "https://www.google.com/maps/place/Wallowa+Lake+State+Park/@45.2780,-117.2120,14z",
     lastUpdated: "2026-07-08",
   },
   {
@@ -1871,7 +1907,7 @@ export const campgrounds: Campground[] = [
     region: "Central Cascades",
     type: "state",
     features: ["湖泊", "游乐场", "全接驳", "淋浴", "钓鱼"],
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/detroit-lake-state-recreation-area/r/campgroundDetails.do?contractCode=OR&parkId=402241",
     bookingSystem: "oregonstateparks.reserveamerica.com",
     season: "全年开放",
     activities: [
@@ -1899,6 +1935,7 @@ export const campgrounds: Campground[] = [
     image: "/manus-storage/detroit-lake_c1467c2b.jpg",
     lat: 44.7295,
     lng: -122.1765,
+    googleMapsUrl: "https://www.google.com/maps/place/Detroit+Lake+State+Recreation+Area/@44.7220,-122.1530,14z",
     lastUpdated: "2026-07-08",
   },
 
@@ -1947,6 +1984,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "营位较小，部分适合小型TC。Sol Duc Road路况良好。建议选择pull-through营位。",
     lat: 47.955,
     lng: -123.86,
+    googleMapsUrl: "https://www.google.com/maps/place/Sol+Duc+Hot+Springs+Resort/@47.9550,-123.8600,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -1993,6 +2031,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "大部分营位可容纳中型RV，有Full Hookup选项。Loop A和B较宽敞。",
     lat: 42.06,
     lng: -124.31,
+    googleMapsUrl: "https://www.google.com/maps/place/Harris+Beach+State+Park/@42.0810,-124.3350,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2038,6 +2077,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "营位大小不一，部分可容纳中型RV。道路为铺装路面，但弯道较多。无Hookup。",
     lat: 48.69,
     lng: -121.094,
+    googleMapsUrl: "https://www.google.com/maps/place/Colonial+Creek+South+Campground/@48.6880,-121.0960,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2051,7 +2091,7 @@ export const campgrounds: Campground[] = [
     tagline: "哥伦比亚河畔的家庭水上乐园与运动天堂",
     image: "/manus-storage/lincoln_rock_c41605f0.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
-    bookingUrl: "https://washington.goingtocamp.com/lincoln-rock-state-park",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/lincoln-rock-state-park",
     features: ["湖泊", "游泳", "划船", "游乐场", "淋浴", "Full Hookup", "徒步", "自行车"],
     sceneryRating: 4,
     kidRating: 5,
@@ -2083,6 +2123,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "宽敞的RV营位，有Full Hookup。适合各种大小的TC。",
     lat: 47.465,
     lng: -120.31,
+    googleMapsUrl: "https://www.google.com/maps/place/Lincoln+Rock+State+Park/@47.5280,-120.2950,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2096,7 +2137,7 @@ export const campgrounds: Campground[] = [
     tagline: "历史遗迹与无敌海景的完美结合",
     image: "/manus-storage/fort_casey_fd3ad483.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
-    bookingUrl: "https://washington.goingtocamp.com/fort-casey-historical-state-park",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/fort-casey-historical-state-park",
     features: ["海滩", "历史遗迹", "观鸟", "划船", "徒步", "钓鱼", "淋浴"],
     sceneryRating: 5,
     kidRating: 4,
@@ -2126,6 +2167,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "营位较紧凑，适合小型TC。部分营位有电力接口。历史要塞区域平坦。",
     lat: 48.16,
     lng: -122.68,
+    googleMapsUrl: "https://www.google.com/maps/place/Fort+Casey+State+Park/@48.1610,-122.6780,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2139,7 +2181,7 @@ export const campgrounds: Campground[] = [
     tagline: "历史军事遗迹与壮丽海景的完美结合",
     image: "/manus-storage/fort_ebey_4cc204b5.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
-    bookingUrl: "https://washington.goingtocamp.com/fort-ebey-state-park",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
     features: ["海滩", "徒步", "历史遗迹", "观鸟", "自行车", "淋浴", "冲浪", "滑翔伞"],
     sceneryRating: 5,
     kidRating: 4,
@@ -2169,6 +2211,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "营位在树林中，部分较窄。适合小型到中型TC。无Hookup。",
     lat: 48.23,
     lng: -122.76,
+    googleMapsUrl: "https://www.google.com/maps/place/Fort+Ebey+State+Park/@48.2220,-122.7650,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2182,7 +2225,7 @@ export const campgrounds: Campground[] = [
     tagline: "华盛顿州首个州立公园，坐拥萨米什湾绝美海景与潮池",
     image: "/manus-storage/larrabee_fa6480ad.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
-    bookingUrl: "https://washington.goingtocamp.com/larrabee-state-park",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
     features: ["海滩", "徒步", "钓鱼", "划船", "观鸟", "淋浴", "游乐场", "潮池"],
     sceneryRating: 5,
     kidRating: 4,
@@ -2213,6 +2256,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "混合营位，部分有Full Hookup。靠近海滩的营位较平坦。",
     lat: 48.655,
     lng: -122.49,
+    googleMapsUrl: "https://www.google.com/maps/place/Larrabee+State+Park/@48.6530,-122.4920,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2226,7 +2270,7 @@ export const campgrounds: Campground[] = [
     tagline: "沙漠中的绿洲，壮丽的玄武岩与湖泊交相辉映",
     image: "/manus-storage/steamboat_rock_52bb0aba.jpg",
     bookingSystem: "WA State Parks (GoingToCamp)",
-    bookingUrl: "https://washington.goingtocamp.com/steamboat-rock-state-park",
+    bookingUrl: "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park",
     features: ["湖泊", "沙滩", "徒步", "钓鱼", "游泳", "游乐场", "淋浴", "Full Hookup"],
     sceneryRating: 5,
     kidRating: 5,
@@ -2258,6 +2302,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "宽敞的RV营位，有Full Hookup。地形开阔平坦，非常适合大型TC。",
     lat: 47.86,
     lng: -119.12,
+    googleMapsUrl: "https://www.google.com/maps/place/Steamboat+Rock+State+Park/@47.8620,-119.0900,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2304,6 +2349,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "宽敞的RV营位，有Full Hookup。Loop较平坦，进出方便。",
     lat: 43.12,
     lng: -124.41,
+    googleMapsUrl: "https://www.google.com/maps/place/Bullards+Beach+State+Park/@43.1280,-124.4150,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2349,6 +2395,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "平坦的RV营位，有电力和水接口。Willamette River沿岸，进出方便。",
     lat: 45.25,
     lng: -122.77,
+    googleMapsUrl: "https://www.google.com/maps/place/Champoeg+State+Heritage+Area/@45.2480,-122.9020,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2395,6 +2442,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "营位中等大小，部分有Full Hookup。海岸营地，风可能较大。",
     lat: 43.34,
     lng: -124.37,
+    googleMapsUrl: "https://www.google.com/maps/place/Sunset+Bay+State+Park/@43.3340,-124.3730,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2440,6 +2488,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "Deschutes Loop有Full Hookup，营位宽敞。湖景营位需提前预订。",
     lat: 44.55,
     lng: -121.27,
+    googleMapsUrl: "https://www.google.com/maps/place/The+Cove+Palisades+State+Park/@44.5380,-121.2650,14z",
     lastUpdated: "2026-07-11",
   },
   {
@@ -2487,6 +2536,7 @@ export const campgrounds: Campground[] = [
     tcNotes: "宽敞的RV营位，有Full Hookup。Deschutes River沿岸，松树林中。",
     lat: 43.72,
     lng: -121.51,
+    googleMapsUrl: "https://www.google.com/maps/place/LaPine+State+Park/@43.7620,-121.5050,14z",
     lastUpdated: "2026-07-11",
   },
 ];
