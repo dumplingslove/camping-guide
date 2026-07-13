@@ -168,3 +168,7 @@
 - [x] 为全部171个活动添加curated fallback照片（之前只有87个，现在187个覆盖全部）
 - [x] 修复森林巨木探索mapUrl（从Sand Dunes改为Old Growth Forest Trail）
 - [x] 确认Cranberry Lake链接正常（Google Maps正确显示4.8★湖泊）
+
+## Bug修复 (2026-07-13)
+- [x] 营地简介(overview)的Google Maps链接错误 (全部53个googleMapsUrl从/maps/place/改为/maps/search/格式)
+- [x] 进入detail page不会scroll to top (添加useEffect scrollTo(0,0))

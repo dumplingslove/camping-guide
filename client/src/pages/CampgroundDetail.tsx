@@ -473,6 +473,11 @@ export default function CampgroundDetail() {
   const photoData = campgroundPhotos[Number(params.id)];
   const { toggleFavorite, isFavorite, addToCompare, isInCompare, removeFromCompare } = useFavorites();
 
+  // Scroll to top when entering detail page or switching campground
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [params.id]);
+
   if (!campground) {
     return (
       <div className="min-h-screen topo-bg flex items-center justify-center">
