@@ -105,3 +105,8 @@
 - [x] Fix incorrect campsite map annotations (removed fake markers, replaced with clean list view)
 - [x] Add more gallery photos for campgrounds 25-49 (3 photos each)
 - [x] Fix all 49 campground bookingUrls to link directly to correct campground pages
+
+## User Request (2026-07-13)
+- [x] Add Google Maps link to campground detail page summary section
+- [x] Fix all booking URLs to link directly to reservation/booking pages (not campground info pages)
+- [x] Fix Lake Chelan State Park area/loop information (incorrect data)

@@ -642,6 +642,40 @@ export default function CampgroundDetail() {
                     : campground.popularityLevel.split("(").slice(1).join("(").replace(/\)$/, "")}
                 </p>
               )}
+              {/* Quick action links */}
+              <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-border">
+                <a
+                  href={campground.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-pine text-white rounded-lg hover:bg-pine-light transition-colors text-sm font-medium"
+                >
+                  <ExternalLink size={14} />
+                  去预订
+                </a>
+                {campground.googleMapsUrl && (
+                  <a
+                    href={campground.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-border text-foreground rounded-lg hover:bg-muted/50 transition-colors text-sm font-medium"
+                  >
+                    <MapPin size={14} className="text-sunset" />
+                    Google Maps
+                  </a>
+                )}
+                {campground.lat && campground.lng && (
+                  <a
+                    href={`https://www.google.com/maps/dir/${47.6740},${-122.1215}/${campground.lat},${campground.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-border text-foreground rounded-lg hover:bg-muted/50 transition-colors text-sm font-medium"
+                  >
+                    <Navigation size={14} className="text-pine" />
+                    从 Redmond 导航
+                  </a>
+                )}
+              </div>
             </motion.div>
           )}
 

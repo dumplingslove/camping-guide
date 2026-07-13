@@ -672,22 +672,18 @@
     "cellCoverage": "无手机信号相关评论",
     "recommendedSites": [
       {
-        "site": "Site 1-17",
-        "reason": "一线湖景、全接驳、近沙滩，非常适合TC露营。"
+        "site": "North RV Section (全接驳)",
+        "reason": "17个全接驳营位（水/电/污水，30A），沥青停车垫，TC/RV首选，近boat launch。"
       },
       {
-        "site": "湖畔营位",
-        "reason": "全接驳，可欣赏美丽湖景，完美适配TC房车。"
-      },
-      {
-        "site": "Terraced Lakefront",
-        "reason": "可提供湖景，适合欣赏日落，但需注意隐私问题。"
+        "site": "Terraced Lakefront (东侧)",
+        "reason": "公园最佳帐篷区，阶梯式湖景平台，可步行到水边，适合帐篷露营。"
       }
     ],
     "avoidSites": [
       {
-        "site": "Site 80+",
-        "reason": "位于山坡上，离湖较远，需要爬坡，且可能缺乏湖景。"
+        "site": "Terraced Lakefront (TC/RV不适合)",
+        "reason": "步行式阶梯营位，需走台阶，无法停车，不适合任何车辆露营。"
       }
     ],
     "activitiesFromReviews": [
@@ -714,16 +710,16 @@
     ],
     "areaInsights": [
       {
-        "area": "湖畔营位",
-        "insight": "这些营位提供全接驳服务（30/50A），非常适合房车露营，并且能欣赏到美丽的湖景和日落。"
+        "area": "North RV Section",
+        "insight": "17个全接驳+18个部分接驳营位，沥青停车垫垂直排列。功能性强但景观一般，遮蔽少，评论者常比作商业RV停车场。TC/RV唯一选择。"
       },
       {
-        "area": "山坡营位",
-        "insight": "山坡上的营位（如80+）离湖较远，可能需要爬坡，且湖景不如湖畔营位，隐私性也可能不足。"
+        "area": "Terraced Lakefront (东侧)",
+        "insight": "较新的阶梯式帐篷营位，多层平台朝湖下坡。湖景直达，可步行到水边。不适合车辆（需走台阶）。评论提到日落美但隐私有限。"
       },
       {
-        "area": "全营地",
-        "insight": "营地设施完善，有干净的浴室、淋浴、儿童游乐场和指定游泳区。夏季船只噪音可能较大。"
+        "area": "South Tent Area",
+        "insight": "与RV区分开的安静帐篷区，灌木覆盖多，隐私好但营位偏小，离湖稍远。知名度低，相对容易预订。"
       }
     ],
     "wildlifeWarnings": "无野生动物相关评论",
