@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Junior Ranger Program",
+    "query": "Cougar Rock Campground Ashford WA",
+    "got": "Cougar Rock Campground",
+    "activity_key": "junior ranger program",
+    "key_words": [
+      "junior",
+      "ranger",
+      "program"
+    ]
+  },
+  {
+    "name": "Evening Ranger Programs",
+    "query": "Cougar Rock Campground",
+    "got": "Cougar Rock Campground",
+    "activity_key": "evening ranger programs",
+    "key_words": [
+      "ranger",
+      "evening",
+      "programs"
+    ]
+  },
+  {
+    "name": "Spencer Creek 戏水",
+    "query": "Spencer Creek beach Newport Oregon",
+    "got": "Beverly Beach State Park",
+    "activity_key": "spencer creek",
+    "key_words": [
+      "creek",
+      "spencer"
+    ]
+  },
+  {
+    "name": "Mt. Hood 倒影摄影",
+    "query": "Trillium Lake OR",
+    "got": "Trillium Lake",
+    "activity_key": "mt. hood",
+    "key_words": [
+      "hood",
+      "mt."
+    ]
+  },
+  {
+    "name": "Deschutes River 戏水",
+    "query": "Deschutes River swimming Bend OR",
+    "got": "Steelhead Falls",
+    "activity_key": "deschutes river",
+    "key_words": [
+      "river",
+      "deschutes"
+    ]
+  },
+  {
+    "name": "儿童游乐场",
+    "query": "Deschutes River swimming Bend OR Oregon",
+    "got": "Steelhead Falls",
+    "activity_key": "deschutes river",
+    "key_words": [
+      "river",
+      "deschutes"
+    ]
+  },
+  {
+    "name": "Junior Ranger Program",
+    "query": "Mazama Village Crater Lake National Park OR",
+    "got": "Mazama Village Campground & Cabins",
+    "activity_key": "junior ranger program",
+    "key_words": [
+      "junior",
+      "ranger",
+      "program"
+    ]
+  },
+  {
+    "name": "Willamette River步道",
+    "query": "Willamette River Champoeg State Heritage Area",
+    "got": "Champoeg State Heritage Area - Park Entrance",
+    "activity_key": "willamette river",
+    "key_words": [
+      "river",
+      "willamette"
+    ]
+  },
+  {
+    "name": "Deschutes River游泳",
+    "query": "Deschutes River swimming LaPine Oregon",
+    "got": "Natural Water Slides",
+    "activity_key": "deschutes river",
+    "key_words": [
+      "river",
+      "deschutes"
+    ]
+  }
+]

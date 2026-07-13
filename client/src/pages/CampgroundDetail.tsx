@@ -667,19 +667,8 @@ export default function CampgroundDetail() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-border text-foreground rounded-lg hover:bg-muted/50 transition-colors text-sm font-medium"
                   >
-                    <MapPin size={14} className="text-sunset" />
-                    Google Maps
-                  </a>
-                )}
-                {campground.lat && campground.lng && (
-                  <a
-                    href={`https://www.google.com/maps/dir/${47.6740},${-122.1215}/${campground.lat},${campground.lng}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-border text-foreground rounded-lg hover:bg-muted/50 transition-colors text-sm font-medium"
-                  >
                     <Navigation size={14} className="text-pine" />
-                    从 Redmond 导航
+                    导航到营地入口
                   </a>
                 )}
               </div>
@@ -737,7 +726,21 @@ export default function CampgroundDetail() {
                   <div className="mt-4 space-y-2">
                     {campground.areas.filter(a => a.areaSummary).map((area, i) => (
                       <div key={i} className="flex items-start gap-2 p-2.5 rounded-lg bg-muted/40 border border-border/30">
-                        <span className="text-xs font-mono font-medium text-pine bg-pine/10 px-2 py-0.5 rounded shrink-0 mt-0.5">{area.area}</span>
+                        <div className="flex items-center gap-1.5 shrink-0 mt-0.5">
+                          <span className="text-xs font-mono font-medium text-pine bg-pine/10 px-2 py-0.5 rounded">{area.area}</span>
+                          {area.entranceUrl && (
+                            <a
+                              href={area.entranceUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-0.5 text-[10px] text-lake hover:text-pine transition-colors px-1.5 py-0.5 rounded bg-lake/5 hover:bg-lake/10"
+                              title="导航到该区域入口"
+                            >
+                              <Navigation size={10} />
+                              入口
+                            </a>
+                          )}
+                        </div>
                         <p className="text-xs text-muted-foreground leading-relaxed">{area.areaSummary}</p>
                       </div>
                     ))}

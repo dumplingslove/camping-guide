@@ -172,3 +172,8 @@
 ## Bug修复 (2026-07-13)
 - [x] 营地简介(overview)的Google Maps链接错误 (全部53个googleMapsUrl从/maps/place/改为/maps/search/格式)
 - [x] 进入detail page不会scroll to top (添加useEffect scrollTo(0,0))
+
+## 关键修复 (2026-07-13)
+- [x] 营地googleMapsUrl改为指向campsite入口/check-in点（不是公园），不同area标注不同入口
+- [x] 修复Cranberry Lake浅水区嘻水的mapUrl和配图（mapUrl改为Cranberry+Lake+Whidbey+Island+WA，配图从攒岩图改为湖泳图）
+- [x] 逐一验证所有171个活动的mapUrl链接正确性（全量171/171全部正确解析，审计结果见mapurl-audit-results.txt）

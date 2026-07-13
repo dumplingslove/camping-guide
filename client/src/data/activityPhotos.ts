@@ -5,7 +5,7 @@ export const activityPhotos: Record<string, string> = {
   "Cape Disappointment Lighthouse": "https://images.unsplash.com/photo-1585159812596-fac104f2f069?w=600&h=400&fit=crop",
   "Cape Lookout Trail": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop",
   "Coffenbury Lake 游泳": "https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&h=400&fit=crop",
-  "Cranberry Lake 浅水区嬉水": "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=600&h=400&fit=crop",
+  "Cranberry Lake 浅水区嬉水": "/manus-storage/cranberry-lake-swimming_215ed193.jpg",
   "Crater Lake Rim Drive": "https://images.unsplash.com/photo-1570641963303-92ce4845ed4c?w=600&h=400&fit=crop",
   "Crater Lake 一日游": "https://images.unsplash.com/photo-1570641963303-92ce4845ed4c?w=600&h=400&fit=crop",
   "Deep Lake 游泳": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=400&fit=crop",
