@@ -150,3 +150,9 @@
 - [ ] Re-audit Golden Ears area data (includes Gold Creek/North Beach which are separate campgrounds)
 - [ ] Add BC border crossing tips section or note
 - [ ] Update site title/subtitle to reflect BC scope
+
+## UX Improvements (2026-07-13)
+- [x] Detail page返回时滚动到大表位置
+- [x] 大表默认展开（不折叠）
+- [x] 改进筛选filter UI和功能
+- [x] BC营地补齐内容（Manning Park hookup详情、Rathtrevor轮渡tips、vacancy分析等）

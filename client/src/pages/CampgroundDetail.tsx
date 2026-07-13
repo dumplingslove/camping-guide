@@ -494,7 +494,7 @@ export default function CampgroundDetail() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-border">
         <div className="container flex items-center justify-between h-14">
-          <Link href="/" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/?scrollTo=table" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft size={16} />
             <span>返回列表</span>
           </Link>
@@ -966,7 +966,7 @@ export default function CampgroundDetail() {
 
       <footer className="border-t border-border bg-white/50 backdrop-blur-sm mt-4">
         <div className="container py-6 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-sm text-pine hover:underline">
+          <Link href="/?scrollTo=table" className="flex items-center gap-2 text-sm text-pine hover:underline">
             <ArrowLeft size={14} />
             返回所有营地
           </Link>

@@ -57,7 +57,7 @@ function tierColor(tier?: CampgroundTier): string {
 }
 
 export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlobal }) {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
   const [sortField, setSortField] = useState<SortField>("driveTime");
   const [sortDir, setSortDir] = useState<SortDir>("asc");
 
@@ -115,7 +115,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
   );
 
   return (
-    <section className="container pb-8">
+    <section id="summary-table" className="container pb-8">
       <div className="bg-white rounded-xl border border-border overflow-hidden">
         {/* Header */}
         <button

@@ -1,10 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
-import { Link } from "wouter";
+import { Link, useSearch } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { useVisited } from "@/hooks/useVisited";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3 } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown } from "lucide-react";
 import { CampgroundSummaryTable } from "@/components/CampgroundSummaryTable";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -27,13 +27,29 @@ export default function Home() {
   // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
   let { user, loading, error, isAuthenticated, logout } = useAuth();
 
+  // Scroll to summary table when returning from detail page
+  const searchString = useSearch();
+  useEffect(() => {
+    if (searchString.includes("scrollTo=table")) {
+      setTimeout(() => {
+        const el = document.getElementById("summary-table");
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+      // Clean up the URL
+      window.history.replaceState({}, "", "/");
+    }
+  }, [searchString]);
+
   const [search, setSearch] = useState("");
   const [selectedDriveTime, setSelectedDriveTime] = useState<string | null>(null);
   const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
   const [minScenery, setMinScenery] = useState(0);
   const [minKid, setMinKid] = useState(0);
   const [minTc, setMinTc] = useState(0);
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
+  const [selectedState, setSelectedState] = useState<string | null>(null);
   const [selectedTier, setSelectedTier] = useState<CampgroundTier | "all">("all");
   const { favorites, compareList } = useFavorites();
 
@@ -80,9 +96,10 @@ export default function Home() {
       if (c.kidRating < minKid) return false;
       if (c.tcRating < minTc) return false;
       if (selectedTier !== "all" && c.tier !== selectedTier) return false;
+      if (selectedState && c.state !== selectedState) return false;
       return true;
     });
-  }, [search, selectedDriveTime, selectedFeatures, minScenery, minKid, minTc, selectedTier]);
+  }, [search, selectedDriveTime, selectedFeatures, minScenery, minKid, minTc, selectedTier, selectedState]);
 
   const toggleFeature = (f: string) => {
     setSelectedFeatures((prev) =>
@@ -98,9 +115,10 @@ export default function Home() {
     setMinKid(0);
     setMinTc(0);
     setSelectedTier("all");
+    setSelectedState(null);
   };
 
-  const hasActiveFilters = search || selectedDriveTime || selectedFeatures.length > 0 || minScenery > 0 || minKid > 0 || minTc > 0 || selectedTier !== "all";
+  const hasActiveFilters = search || selectedDriveTime || selectedFeatures.length > 0 || minScenery > 0 || minKid > 0 || minTc > 0 || selectedTier !== "all" || selectedState !== null;
 
   const tierOptions: { value: CampgroundTier | "all"; label: string; color: string }[] = [
     { value: "all", label: "全部", color: "bg-white border-border" },
@@ -221,20 +239,31 @@ export default function Home() {
 
       {/* Filters */}
       <section className="container py-6">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setShowFilters(!showFilters)}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-border hover:border-pine/30 transition-colors text-sm font-medium"
-            >
-              <Filter size={16} />
-              筛选
-              {hasActiveFilters && (
-                <span className="w-2 h-2 rounded-full bg-sunset" />
-              )}
-            </button>
-            {/* Tier quick filters */}
-            <div className="hidden lg:flex items-center gap-1.5">
+        {/* Primary filter bar - always visible */}
+        <div className="bg-white rounded-xl border border-border p-4 space-y-3">
+          {/* Row 1: State + Tier + Count */}
+          <div className="flex flex-wrap items-center gap-2">
+            {/* State filter */}
+            <div className="flex items-center gap-1.5 mr-2">
+              <MapPin size={14} className="text-muted-foreground" />
+              {[{ value: null, label: "全部" }, { value: "WA", label: "WA" }, { value: "OR", label: "OR" }, { value: "BC", label: "BC" }].map((s) => (
+                <button
+                  key={s.label}
+                  onClick={() => setSelectedState(selectedState === s.value ? null : s.value)}
+                  className={`px-2.5 py-1 rounded-md text-xs font-mono font-medium transition-all ${
+                    selectedState === s.value
+                      ? "bg-pine text-white"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                  }`}
+                >
+                  {s.label}
+                </button>
+              ))}
+            </div>
+            {/* Divider */}
+            <div className="hidden sm:block w-px h-5 bg-border" />
+            {/* Tier filters */}
+            <div className="flex flex-wrap items-center gap-1.5">
               {tierOptions.map((opt) => (
                 <button
                   key={opt.value}
@@ -249,102 +278,89 @@ export default function Home() {
                 </button>
               ))}
             </div>
-            {/* Drive time quick filters */}
-            <div className="hidden md:flex items-center gap-2">
-              {driveTimeRanges.map((range) => (
+            {/* Count + Clear */}
+            <div className="ml-auto flex items-center gap-3">
+              {hasActiveFilters && (
                 <button
-                  key={range.label}
-                  onClick={() =>
-                    setSelectedDriveTime(
-                      selectedDriveTime === range.label ? null : range.label
-                    )
-                  }
-                  className={`px-3 py-1.5 rounded-full text-xs font-mono transition-all ${
-                    selectedDriveTime === range.label
-                      ? "bg-pine text-white"
-                      : "bg-white border border-border hover:border-pine/30 text-foreground"
+                  onClick={clearFilters}
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <X size={12} />
+                  清除
+                </button>
+              )}
+              <span className="text-xs text-muted-foreground font-mono">
+                {filtered.length} / {campgrounds.length}
+              </span>
+            </div>
+          </div>
+
+          {/* Row 2: Drive time */}
+          <div className="flex flex-wrap items-center gap-2">
+            <Clock size={14} className="text-muted-foreground" />
+            {driveTimeRanges.map((range) => (
+              <button
+                key={range.label}
+                onClick={() =>
+                  setSelectedDriveTime(
+                    selectedDriveTime === range.label ? null : range.label
+                  )
+                }
+                className={`px-3 py-1.5 rounded-full text-xs font-mono transition-all ${
+                  selectedDriveTime === range.label
+                    ? "bg-pine text-white"
+                    : "bg-muted/50 border border-border/50 text-foreground hover:border-pine/30"
+                }`}
+              >
+                {range.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Row 3: Features (scrollable) */}
+          <div className="flex items-center gap-2">
+            <Filter size={14} className="text-muted-foreground shrink-0" />
+            <div className="flex flex-wrap gap-1.5">
+              {featureOptions.map((f) => (
+                <button
+                  key={f}
+                  onClick={() => toggleFeature(f)}
+                  className={`px-2.5 py-1 rounded-full text-[11px] transition-all ${
+                    selectedFeatures.includes(f)
+                      ? "bg-lake text-white"
+                      : "bg-muted/50 border border-border/50 text-foreground hover:border-lake/30"
                   }`}
                 >
-                  <Clock size={12} className="inline mr-1" />
-                  {range.label}
+                  {f}
                 </button>
               ))}
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            {hasActiveFilters && (
-              <button
-                onClick={clearFilters}
-                className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <X size={14} />
-                清除筛选
-              </button>
-            )}
-            <span className="text-sm text-muted-foreground font-mono">
-              {filtered.length} / {campgrounds.length} 营地
-            </span>
-          </div>
-        </div>
 
-        {/* Expanded filters */}
-        <AnimatePresence>
-          {showFilters && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.25, ease: [0.23, 1, 0.32, 1] }}
-              className="overflow-hidden"
-            >
-              <div className="bg-white rounded-xl border border-border p-5 mb-4 space-y-4">
-                {/* Drive time on mobile */}
-                <div className="md:hidden">
-                  <label className="text-sm font-medium text-foreground mb-2 block">车程</label>
-                  <div className="flex flex-wrap gap-2">
-                    {driveTimeRanges.map((range) => (
-                      <button
-                        key={range.label}
-                        onClick={() =>
-                          setSelectedDriveTime(
-                            selectedDriveTime === range.label ? null : range.label
-                          )
-                        }
-                        className={`px-3 py-1.5 rounded-full text-xs font-mono transition-all ${
-                          selectedDriveTime === range.label
-                            ? "bg-pine text-white"
-                            : "bg-secondary border border-border text-foreground"
-                        }`}
-                      >
-                        {range.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                {/* Features */}
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">特色</label>
-                  <div className="flex flex-wrap gap-2">
-                    {featureOptions.map((f) => (
-                      <button
-                        key={f}
-                        onClick={() => toggleFeature(f)}
-                        className={`px-3 py-1.5 rounded-full text-xs transition-all ${
-                          selectedFeatures.includes(f)
-                            ? "bg-lake text-white"
-                            : "bg-secondary border border-border text-foreground hover:border-lake/30"
-                        }`}
-                      >
-                        {f}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                {/* Rating filters */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {/* Row 4: Rating sliders (collapsible) */}
+          <button
+            onClick={() => setShowFilters(!showFilters)}
+            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {showFilters ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+            评分筛选
+            {(minScenery > 0 || minKid > 0 || minTc > 0) && (
+              <span className="w-1.5 h-1.5 rounded-full bg-sunset" />
+            )}
+          </button>
+          <AnimatePresence>
+            {showFilters && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
+                className="overflow-hidden"
+              >
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 border-t border-border/50">
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-1 flex items-center gap-1">
-                      <TreePine size={14} /> 最低风景评分
+                    <label className="text-xs font-medium text-foreground mb-1 flex items-center gap-1">
+                      <TreePine size={12} /> 风景 {minScenery > 0 ? `≥ ${minScenery}` : "不限"}
                     </label>
                     <input
                       type="range"
@@ -352,13 +368,12 @@ export default function Home() {
                       max={5}
                       value={minScenery}
                       onChange={(e) => setMinScenery(Number(e.target.value))}
-                      className="w-full accent-pine"
+                      className="w-full accent-pine h-1.5"
                     />
-                    <span className="text-xs font-mono text-muted-foreground">{minScenery > 0 ? `≥ ${minScenery}⭐` : "不限"}</span>
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-1 flex items-center gap-1">
-                      <Baby size={14} /> 最低娃可玩评分
+                    <label className="text-xs font-medium text-foreground mb-1 flex items-center gap-1">
+                      <Baby size={12} /> 娃可玩 {minKid > 0 ? `≥ ${minKid}` : "不限"}
                     </label>
                     <input
                       type="range"
@@ -366,13 +381,12 @@ export default function Home() {
                       max={5}
                       value={minKid}
                       onChange={(e) => setMinKid(Number(e.target.value))}
-                      className="w-full accent-pine"
+                      className="w-full accent-pine h-1.5"
                     />
-                    <span className="text-xs font-mono text-muted-foreground">{minKid > 0 ? `≥ ${minKid}⭐` : "不限"}</span>
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground mb-1 flex items-center gap-1">
-                      <Truck size={14} /> 最低TC适配评分
+                    <label className="text-xs font-medium text-foreground mb-1 flex items-center gap-1">
+                      <Truck size={12} /> TC适配 {minTc > 0 ? `≥ ${minTc}` : "不限"}
                     </label>
                     <input
                       type="range"
@@ -380,15 +394,14 @@ export default function Home() {
                       max={5}
                       value={minTc}
                       onChange={(e) => setMinTc(Number(e.target.value))}
-                      className="w-full accent-pine"
+                      className="w-full accent-pine h-1.5"
                     />
-                    <span className="text-xs font-mono text-muted-foreground">{minTc > 0 ? `≥ ${minTc}⭐` : "不限"}</span>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </section>
 
       {/* Summary Table */}
