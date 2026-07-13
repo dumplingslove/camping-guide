@@ -52,7 +52,7 @@ export default function MapPage() {
   const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
   const [selectedTier, setSelectedTier] = useState<CampgroundTier | "all">("all");
   const [selectedDriveTime, setSelectedDriveTime] = useState<string | null>(null);
-  const [selectedState, setSelectedState] = useState<"all" | "WA" | "OR">("all");
+  const [selectedState, setSelectedState] = useState<"all" | "WA" | "OR" | "BC">("all");
   const [hoveredCampground, setHoveredCampground] = useState<number | null>(null);
   const [showFilters, setShowFilters] = useState(true);
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -232,7 +232,7 @@ export default function MapPage() {
       <div>
         <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">州</h3>
         <div className="flex gap-1.5">
-          {(["all", "WA", "OR"] as const).map((s) => (
+          {(["all", "WA", "OR", "BC"] as const).map((s) => (
             <button
               key={s}
               onClick={() => setSelectedState(s)}

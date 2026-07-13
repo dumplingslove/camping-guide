@@ -146,10 +146,10 @@
 - [x] Add activities for all 4 BC campgrounds
 - [x] Fix booking URLs (BC Parks Discover Camping direct links)
 - [x] Fix Google Maps URLs for all 4 BC campgrounds
-- [ ] Upload official campsite maps for BC campgrounds (IDs 50-53)
-- [ ] Re-audit Golden Ears area data (includes Gold Creek/North Beach which are separate campgrounds)
-- [ ] Add BC border crossing tips section or note
-- [ ] Update site title/subtitle to reflect BC scope
+- [x] Upload official campsite maps for BC campgrounds (IDs 50-53)
+- [x] Re-audit Golden Ears area data (Gold Creek and North Beach added as separate areas with descriptions)
+- [x] Add BC border crossing tips (embedded in each campground's tcNotes: ferry info, highway routes, border crossing tips)
+- [x] Update site title/subtitle to reflect BC scope (53个精选营地, added BC to map/stats filters)
 
 ## UX Improvements (2026-07-13)
 - [x] Detail page返回时滚动到大表位置

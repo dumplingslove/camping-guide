@@ -80,7 +80,7 @@ export default function Stats() {
     const avgNights = totalTrips > 0 ? (totalNights / totalTrips).toFixed(1) : "0";
 
     // By state
-    const byState: Record<string, number> = { WA: 0, OR: 0 };
+    const byState: Record<string, number> = { WA: 0, OR: 0, BC: 0 };
     for (const campId of Array.from(uniqueCampIds)) {
       const camp = campgrounds.find((c) => c.id === campId);
       if (camp) byState[camp.state] = (byState[camp.state] || 0) + 1;
@@ -173,7 +173,7 @@ export default function Stats() {
     return Object.entries(stats.byState)
       .filter(([, count]) => count > 0)
       .map(([state, count]) => ({
-        name: state === "WA" ? "华盛顿" : "俄勒冈",
+        name: state === "WA" ? "华盛顿" : state === "OR" ? "俄勒冈" : "BC省",
         value: count,
         state,
       }));

@@ -2684,16 +2684,16 @@ export const campgrounds: Campground[] = [
       { name: "野花草甸观赏", ageRange: "任何年龄", distance: "开车20分钟", details: "7-8月Blackwall Peak高山草甸野花盛开，景色壮观" },
     ],
     areas: [
-      { area: "Large Loop (1-92)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "⭐ 首选", areaSummary: "靠近湖边，有淋浴和冲水马桶。营位宽敵且树木茂盛私密性好。步行5分钟到湖滩和沙滩。" },
-      { area: "Small Loop (93-143)", overall: 4, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "设施略简（无淋浴，仅有旱厕），离湖稍远。但更安静，营位同样宽敵。适合自给自足的家庭。" }
+      { area: "Large Loop (1-92)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "⭐ 首选", areaSummary: "靠近湖边，有淋浴和冲水马桶。营位宽敞且树木茂盛私密性好。步行5分钟到湖滩和沙滩。" },
+      { area: "Small Loop (93-143)", overall: 4, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "设施略简（无淋浴，仅有旱厕），离湖稍远。但更安静，营位同样宽敞。适合自给自足的家庭。" }
     ],
     vacancyAnalysis: [
       { area: "Large Loop (1-92)", whyVacant: "—", whyHard: "BC省最受欢迎的家庭营地，夏季秒光。需提前2个月开放日当天7am抢位" },
       { area: "Small Loop (93-143)", whyVacant: "设施略差（无淋浴）且离湖稍远，偶有取消。Site 143靠近公路可能有噪音", whyHard: "—" },
     ],
-    recommendedSites: "Large Loop靠湖侧营位（如Site 1-20）风景最佳，步行即可到达湖滩。营位间距宽敷，树木茂盛私密性好。",
+    recommendedSites: "Large Loop靠湖侧营位（如Site 1-20）风景最佳，步行即可到达湖滩。营位间距宽敞，树木茂盛私密性好。",
     avoid: "Small Loop Site 143靠近Highway 3可能有交通噪音；高海拔（1250m）夜间可降至5-8°C，带娃需备保暖睡袋。",
-    tcNotes: "Manning Park是BC省少数提供全Hookup的省立公园（Hampton Campground有全接驳），但Lightning Lake本身无Hookup。营位宽敷平坦，容纳大型车辆无压力。有Sani-dump。从Seatle过境走Hwy 3，建议在Hope加油补给。",
+    tcNotes: "Manning Park是BC省少数提供全Hookup的省立公园（Hampton Campground有全接驳），但Lightning Lake本身无Hookup。营位宽敞平坦，容纳大型车辆无压力。有Sani-dump。从Seattle过境走Hwy 3，建议在Hope加油补给。",
     lat: 49.062,
     lng: -120.825,
     googleMapsUrl: "https://www.google.com/maps/place/Lightning+Lake+Campground/@49.062,-120.825,14z",
@@ -2736,7 +2736,7 @@ export const campgrounds: Campground[] = [
     ],
     areas: [
       { area: "Delta Grove Campground (58 sites)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "E(2)", recommendation: "⭐ 首选", areaSummary: "湖边位置，有 2个供电营位。有Double Sites(6个)适合大家庭。最靠近湖水，很快就能走到沙滩。" },
-      { area: "Maple Bay Campground (105 sites)", overall: 4, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "最大的营地，空间宽敵安静。靠湖侧营位位置不错。106个车辆可达营位。" },
+      { area: "Maple Bay Campground (105 sites)", overall: 4, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "最大的营地，空间宽敞安静。靠湖侧营位位置不错。106个车辆可达营位。" },
       { area: "Entrance Bay Campground (52 sites)", overall: 4, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "低位营位靠近湖边，高位营位离公路较近。有5个Double Sites适合大家庭。" },
       { area: "Clear Creek Campground (82 sites)", overall: 3, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "可选", areaSummary: "位置稍往内陆，离湖稍远。有2个Double Sites。通过Seven Sisters Trail可连接到Entrance Bay。" }
     ],
@@ -2748,7 +2748,7 @@ export const campgrounds: Campground[] = [
     ],
     recommendedSites: "Delta Grove最佳（靠湖+有电），其次Entrance Bay低位营位离湖近。Maple Bay空间大且安静。Reddit推荐顺序: (1) Delta Grove, (2) Maple Bay, (3) Clear Creek。",
     avoid: "夏季周末非常拥挤，湖边日间使用区人满为患。Clear Creek高位营位离湖较远且靠近公路。",
-    tcNotes: "仅Delta Grove有2个供电营位，其余均无Hookup。Truck Camper需充满水电。营位宽敵，大部分可容纳大型车辆。有Sani-dump。从Seatle过境后走Hwy 1东行至Chilliwack出口，全程高速。",
+    tcNotes: "仅Delta Grove有2个供电营位，其余均无Hookup。Truck Camper需充满水电。营位宽敞，大部分可容纳大型车辆。有Sani-dump。从Seattle过境后走Hwy 1东行至Chilliwack出口，全程高速。",
     lat: 49.0580556,
     lng: -121.966968,
     googleMapsUrl: "https://www.google.com/maps/place/Cultus+Lake+Provincial+Park/@49.058,-121.967,14z",
@@ -2790,9 +2790,9 @@ export const campgrounds: Campground[] = [
       { name: "游乐场", ageRange: "2岁+", distance: "营地内", details: "营地内设有儿童游乐设施" },
     ],
     areas: [
-      { area: "Alouette North (A1-A47)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "⭐ 首选", areaSummary: "外圈营位私密性极佳，靠近游乐场和淋浴设施。营位宽敵且树木茂盛。推荐A1, A40等外圈位。" },
-      { area: "Alouette South (A48-D39)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "离海滩较远（步行15-25分钟）。但营位同样宽敵私密。推荐B13, B16, B29等外圈位。" },
-      { area: "Gold Creek (1-149)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "全年开放。靠近Gold Creek步道和Campers Beach。营位宽敵。非夏季空位较多。" },
+      { area: "Alouette North (A1-A47)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "⭐ 首选", areaSummary: "外圈营位私密性极佳，靠近游乐场和淋浴设施。营位宽敞且树木茂盛。推荐A1, A40等外圈位。" },
+      { area: "Alouette South (A48-D39)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "离海滩较远（步行15-25分钟）。但营位同样宽敞私密。推荐B13, B16, B29等外圈位。" },
+      { area: "Gold Creek (1-149)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "全年开放。靠近Gold Creek步道和Campers Beach。营位宽敞。非夏季空位较多。" },
       { area: "North Beach (1-54)", overall: 5, scenery: 5, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "⭐ 首选", areaSummary: "最靠近海滩的营地，步行即可到达沙滩。极其抢手。带娃家庭的绝佳选择。" }
     ],
     vacancyAnalysis: [
@@ -2803,7 +2803,7 @@ export const campgrounds: Campground[] = [
     ],
     recommendedSites: "Alouette North外圈营位（A1、A40等）私密性最好。尽量选靠近东北角海滩入口的营位。推荐站位: B13, A40, B16, B29, A1。",
     avoid: "部分营位有斜坡车道（BC Parks网站标注'moderately sloping driveway'），预订前查看描述。无手机信号。周五下午入住可能排队45分钟+。",
-    tcNotes: "无Hookup（No Hookups）。营位宽敵平坦，大部分可容纳RV。注意水龙头无螺纹接口，不方便直接接管加水。Sani-dump软管无螺纹。从Seatle过境后走Hwy 1西行至Maple Ridge出口，全程高速。注意防熊，食物必须存放在车内。",
+    tcNotes: "无Hookup（No Hookups）。营位宽敞平坦，大部分可容纳RV。注意水龙头无螺纹接口，不方便直接接管加水。Sani-dump软管无螺纹。从Seattle过境后走Hwy 1西行至Maple Ridge出口，全程高速。注意防熊，食物必须存放在车内。",
     lat: 49.320787,
     lng: -122.4635053,
     googleMapsUrl: "https://www.google.com/maps/place/Alouette+Campground/@49.320787,-122.4635053,15z",

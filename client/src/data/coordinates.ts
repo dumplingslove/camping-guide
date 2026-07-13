@@ -1,4 +1,4 @@
-// GPS coordinates for all 49 campgrounds
+// GPS coordinates for all 53 campgrounds
 // Used for Google Maps integration
 
 export interface CampgroundCoords {
@@ -56,6 +56,10 @@ export const campgroundCoords: Record<number, CampgroundCoords> = {
   47: { lat: 43.3400, lng: -124.3700 }, // Sunset Bay
   48: { lat: 44.5500, lng: -121.2700 }, // Cove Palisades
   49: { lat: 43.7200, lng: -121.5100 }, // La Pine
+  50: { lat: 49.3200, lng: -124.3100 }, // Rathtrevor Beach
+  51: { lat: 49.0600, lng: -120.8200 }, // Lightning Lake (Manning Park)
+  52: { lat: 49.0600, lng: -121.9800 }, // Cultus Lake
+  53: { lat: 49.3200, lng: -122.4600 }, // Golden Ears (Alouette)
 };
 
 // Redmond, WA (starting point for directions)

@@ -506,20 +506,24 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   50: {
     photos: ["/manus-storage/rathtrevor_beach_hero_b471b8a3.jpg", "/manus-storage/rathtrevor_low_tide_c48138dc.jpg", "/manus-storage/rathtrevor_campsite_c46409b9.jpg", "/manus-storage/rathtrevor_beach2_918db20d.jpg", "/manus-storage/rathtrevor_rv_forest_6300e702.jpg"],
     captions: ["退潮时绵延一公里的沙滩", "退潮全景与远山", "林间营位", "海滩与树木", "森林中的RV营位"],
+    map: "/manus-storage/rathtrevor_map_c92472c7.png",
   },
   // 51. Lightning Lake (Manning Park)
   51: {
     photos: ["/manus-storage/lightning_lake_hero_74eaf803.webp", "/manus-storage/lightning_lake_kayak_050121e6.webp", "/manus-storage/lightning_lake_campsite_ac26a314.jpeg", "/manus-storage/lightning_lake_reflection_4a74918c.jpg", "/manus-storage/lightning_lake_frontcountry_dbb44e2c.jpg"],
     captions: ["闪电湖与群山倒影", "湖上皮划艇", "林间营位与游乐场", "湖面倒影", "营地全景"],
+    map: "/manus-storage/lightning_lake_map_9aebf297.png",
   },
   // 52. Cultus Lake
   52: {
     photos: ["/manus-storage/cultus_lake_hero_d8fa675e.jpg", "/manus-storage/cultus_lake_campsite_105489d1.jpg", "/manus-storage/cultus_lake_mountain_6df189f5.jpeg", "/manus-storage/cultus_lake_warm_water_7d4d85ae.jpg", "/manus-storage/cultus_lake_beach_3616a772.jpg"],
     captions: ["湖畔沙滩与山景", "林间RV营位", "湖水与群山", "温暖清澈的湖水", "湖畔休闲"],
+    map: "/manus-storage/cultus_lake_map_617111b7.jpg",
   },
   // 53. Golden Ears (Alouette)
   53: {
     photos: ["/manus-storage/golden_ears_hero_246b57dd.jpg", "/manus-storage/golden_ears_camping_c5c5456e.jpg", "/manus-storage/golden_ears_alouette_ed9a2704.jpg", "/manus-storage/golden_ears_beach_c82e83d4.jpg", "/manus-storage/golden_ears_lake_a7c298c0.jpg"],
     captions: ["阿卢埃特湖全景", "湖畔露营", "营地与湖景", "湖畔沙滩", "湖边野餐区"],
+    map: "/manus-storage/golden_ears_map_6d038b16.jpg",
   },
 };

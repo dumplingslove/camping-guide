@@ -771,6 +771,18 @@ export default function CampgroundDetail() {
               Truck Camper 适配说明
             </h3>
             <p className="text-sm text-foreground leading-relaxed">{campground.tcNotes}</p>
+            {campground.state === "BC" && (
+              <div className="mt-4 p-3 bg-amber-50/80 border border-amber-200/60 rounded-lg">
+                <p className="text-xs font-semibold text-amber-800 mb-1.5">🇨🇦 BC过境提示</p>
+                <ul className="text-xs text-amber-900/80 space-y-1 list-disc list-inside">
+                  <li>护照/NEXUS卡必带，儿童也需护照</li>
+                  <li>禁止携带柴火过境（加拿大严格禁止外来木材，当地购买或用营地提供的）</li>
+                  <li>食物限制：禁止携带鲜肉/水果/蔬菜过境，罐头和包装食品OK</li>
+                  <li>建议周日-周四过境避开周末高峰，Peace Arch和Pacific Highway口岸最常用</li>
+                  <li>加油：BC省油价显著高于WA，建议过境前加满</li>
+                </ul>
+              </div>
+            )}
           </motion.div>
 
           {/* 4. Vacancy Analysis - NEW */}
