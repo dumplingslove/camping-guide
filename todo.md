@@ -114,3 +114,8 @@
 ## Area Data Audit (2026-07-13)
 - [x] Audit and verify area info for all 49 campgrounds against official sources
 - [x] Fix any incorrect area names, site numbers, or descriptions (19 major + 8 minor fixes applied)
+
+## Area Name Unification (2026-07-13)
+- [x] Convert all Chinese area names to English (23 replacements)
+- [x] Sync vacancyAnalysis and bookingWindows area names to match updated areas
+- [x] Verify and fix IDs 2 (Millersylvania), 16 (Cape Disappointment), 27 (Wenatchee Confluence)

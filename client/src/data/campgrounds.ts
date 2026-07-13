@@ -131,7 +131,7 @@ export const campgrounds: Campground[] = [
       { area: "Bowman Bay (Sites 271-290)", whyVacant: "只有约20个位但多数为步行/小车营位，不适合大型RV，取消率较高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
     ],
     recommendedSites: "Forest Loop: Site 50, 52, 54（靠近步道+全接驳+平坦+树荫好）；Quarry Pond: Site 210, 215（安静内侧+全接驳）；Lower Loop A（宽敞Pull-Through，适合大车）",
     avoid: "Quarry Pond（靠近公路噪音大）、Lower Loop B（排水不良+Split-level地势不平）",
@@ -183,7 +183,7 @@ export const campgrounds: Campground[] = [
       { area: "Mini Group (35-94)", whyVacant: "无水电+知名度低+Loop D季节性关闭，很多人不知道这个区域存在", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
     ],
     recommendedSites: "RV Loop 200-248（30A水电、Pull-Through可达40ft、半遮阴至全遮阴）",
     avoid: "Standard Loops (1-33, 95-131) 虽允许RV但树荫过密、无水电。Mini Group Loop D (74-101) 有季节性关闭",
@@ -232,13 +232,13 @@ export const campgrounds: Campground[] = [
       { area: "Osprey", overall: 2, scenery: 3, kidFriendly: 2, tcCompat: 0, hookups: "无", recommendation: "避坑", areaSummary: "位于主公园区内，兼有林地和开阔场地，提供铺砌且平整的营位，但据报道部分帐篷营位地面不平整。 (Source: Tacoma Public Utilities, The Dyrt 条评价)"  },
     ],
     vacancyAnalysis: [
-      { area: "Main CG West", whyVacant: "—", whyHard: "雪山湖景+水电位，家庭露营首选。取消率低，取消后秒被抢" },
-      { area: "Main CG East", whyVacant: "水电位较少，位置比West差一点，偶尔有取消", whyHard: "—" },
+      { area: "Main Campground West", whyVacant: "—", whyHard: "雪山湖景+水电位，家庭露营首选。取消率低，取消后秒被抢" },
+      { area: "Main Campground East", whyVacant: "水电位较少，位置比West差一点，偶尔有取消", whyHard: "—" },
       { area: "Rocky Point", whyVacant: "公路噪音+旱厕+无淋浴+湖岸陡峭不能下水，设施和体验远不如Main CG", whyHard: "—" },
       { area: "Elk Plain", whyVacant: "当前状态Unavailable，可能季节性关闭", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "Tacoma Power 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "Tacoma Power 系统" },
     ],
     recommendedSites: "Main Campground West（湖景+水电+近浅滩）。Elk Plain有游乐场但当前不可用",
     avoid: "Osprey（无设施+远离湖边+不接受RV）",
@@ -288,13 +288,13 @@ export const campgrounds: Campground[] = [
       { area: "Loop A/B", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "位于公园主路旁，树木覆盖良好，但因靠近道路私密性较差（Source: TheDyrt user review）。"  },
     ],
     vacancyAnalysis: [
-      { area: "Loop B", whyVacant: "—", whyHard: "2026年Mt. Rainier唯一可预约营地（Ohanapecosh关闭），TC用户唯一选择。取消费仅$10但无人愿意放弃。即使取消也是秒被抢走，因为有大量bot监控"},
-      { area: "Loop R", whyVacant: "—", whyHard: "仅19个位，适配RV的更少，竞争比Loop B还激烈"},
+      { area: "Loop A/B", whyVacant: "—", whyHard: "2026年Mt. Rainier唯一可预约营地（Ohanapecosh关闭），TC用户唯一选择。取消费仅$10但无人愿意放弃。即使取消也是秒被抢走，因为有大量bot监控"},
+      { area: "Loop D/E (Overflow)", whyVacant: "—", whyHard: "仅19个位，适配RV的更少，竞争比Loop B还激烈"},
       { area: "Loop C", whyVacant: "—", whyHard: "Pull-Through最多（16个），RV用户的第二选择。取消后秒光" },
-      { area: "Loop E", whyVacant: "偶尔有取消，因为位置较远且无Pull-Through", whyHard: "—" },
+      { area: "Loop C/D/E", whyVacant: "偶尔有取消，因为位置较远且无Pull-Through", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov，每天太平洋时间早7点放票" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov，每天太平洋时间早7点放票" },
     ],
     recommendedSites: "Loop D: Site D005, D006, D029, D033, D035（最宽敞+近溪流+安静）（评论验证：D032: 卫生间频繁清洁，靠近天堂, C013: 干净整洁，距离天堂八英里，静谧, C015: 部分遮荫，适合RV，隐私性好, C028: 拉车道长，空间大，适合30尺拖挂，远离邻居, E014: 独立且有分层设计，隐私好, B002: 风景美，靠近河流及步道）",
     avoid: "Loop A/B（离主路近、较吵、营位较小）",
@@ -339,12 +339,12 @@ export const campgrounds: Campground[] = [
       { area: "South Campground (Sites 1-100, standard)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "南营地共100个标准营位，无水电hookup，限制车辆总长25ft以内。适合帐篷、Camper Van和小型Truck Camper（如F-150 TC约22ft可进入）。环境更宁静、营位间距较大，但设施基础 (Source: parks.wa.gov官方)。"  },
     ],
     vacancyAnalysis: [
-      { area: "North CG (42个水电位)", whyVacant: "—", whyHard: "Cascade山脚唯一有湖景+30/50A水电+浅水沙滩的营地，家庭露营天花板。取消率极低，取消后秒被抢" },
-      { area: "North CG (55个标准位)", whyVacant: "比水电位竞争稍小，偶尔有帐篷客因天气取消", whyHard: "但依然很抢手，因为位于同一营区" },
-      { area: "South CG (100个标准位)", whyVacant: "无水电+限制25ft以内+知名度低于North，帐篷客取消率较高", whyHard: "—" },
+      { area: "North Campground (Partial Utility)", whyVacant: "—", whyHard: "Cascade山脚唯一有湖景+30/50A水电+浅水沙滩的营地，家庭露营天花板。取消率极低，取消后秒被抢" },
+      { area: "North Campground (Standard)", whyVacant: "比水电位竞争稍小，偶尔有帐篷客因天气取消", whyHard: "但依然很抢手，因为位于同一营区" },
+      { area: "South Campground (Standard)", whyVacant: "无水电+限制25ft以内+知名度低于North，帐篷客取消率较高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统。South CG 限制25ft以内，North CG有42个水电位" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统。South CG 限制25ft以内，North CG有42个水电位" },
     ],
     recommendedSites: "North CG: 水电位（湖景+30/50A全接驳+近沙滩+Pull-through可达40ft）",
     avoid: "South CG 无水电且限制25ft以内，设施基础",
@@ -395,17 +395,17 @@ export const campgrounds: Campground[] = [
       { name: "驾车前往Sunrise和Paradise", ageRange: "任何年龄", distance: "附近", details: "距离营地约45-60分钟车程，风景优美 (来源: Caroline B., Steven J.)" },
     ],
     areas: [
-      { area: "Loop A/B (河畔)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "标准和仅限帐篷的无电营位位于古树丛中，靠近河流和步道。 (Source: recreation.gov)"  },
+      { area: "Loop A/B (Riverside)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "标准和仅限帐篷的无电营位位于古树丛中，靠近河流和步道。 (Source: recreation.gov)"  },
       { area: "Loop C/D/E", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "提供标准和仅限帐篷的无电营位，周围为原始森林，树荫浓密。 (Source: recreation.gov, TheDyrt)"  },
       { area: "Loop F", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "标准的无电营位位于茂密的树冠下。(Source: recreation.gov). 【评论洞察】适合家庭，安静，靠近步道，树冠覆盖好"  },
     ],
     vacancyAnalysis: [
-      { area: "Loop B/C", whyVacant: "—", whyHard: "最靠近河流和瀑布步道，老手必选，取消率极低"},
-      { area: "Loop D/F", whyVacant: "距离主要景点稍远，偶有取消", whyHard: "—"},
-      { area: "Loop E", whyVacant: "禁止发电机，RV用户不选", whyHard: "追求安静的帐篷客抢着要"},
+      { area: "Loop A/B + C/D/E", whyVacant: "—", whyHard: "最靠近河流和瀑布步道，老手必选，取消率极低"},
+      { area: "Loop C/D/E + F", whyVacant: "距离主要景点稍远，偶有取消", whyHard: "—"},
+      { area: "Loop C/D/E", whyVacant: "禁止发电机，RV用户不选", whyHard: "追求安静的帐篷客抢着要"},
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov。⚠️ 2025-2026年关闭施工" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov。⚠️ 2025-2026年关闭施工" },
     ],
     recommendedSites: "Loop A: Site A001-A020（溪流声+古木环绕+安静）（评论验证：C017: 宽敞，靠近河流，有树荫，隐私好, D006: 靠近河流和步道，风景优美, E017: 营位宽敞，卫生间干净，靠近瀑布步道, A021: 地势高，靠近河流，风景优美, A019: 靠近河流，风景优美, C023: 俯瞰河流，可容纳4人帐篷，无邻居）",
     avoid: "Loop F（离溪流远+地势不平）",
@@ -452,10 +452,10 @@ export const campgrounds: Campground[] = [
       { area: "Forest Sites (31-87)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "费尔霍姆营地林地营位（营位31–87，约57个）分布在浓密树林中，树荫充足、私密性较好，地面多为自然土壤与落叶覆盖，氛围安静。营区无水电供应、设施较为简朴，适合喜欢林间帐篷或自给式小型房车的露营者，不适合需要固定电力或更多便利设施的车宿客人；总体条件一般（3/5）。" },
     ],
     vacancyAnalysis: [
-      { area: "Loop A", whyVacant: "—", whyHard: "奥林匹克国家公园内最容易达到的湖边营地。取消费仅$10但无人愿意放弃Lake Crescent的体验"},
-      { area: "Loop B", whyVacant: "入口坡陡，大型车辆订了发现进不去会取消。取消率相对高", whyHard: "—"},
-      { area: "Loop C", whyVacant: "提前2周才放票，知名度低，竞争相对小", whyHard: "—"},
-      { area: "Walk-To", whyVacant: "需要徒步搬装备，很多人不愿意。天气变化取消率高", whyHard: "—" },
+      { area: "Lakeside Sites", whyVacant: "—", whyHard: "奥林匹克国家公园内最容易达到的湖边营地。取消费仅$10但无人愿意放弃Lake Crescent的体验"},
+      { area: "Lakeside Sites", whyVacant: "入口坡陡，大型车辆订了发现进不去会取消。取消率相对高", whyHard: "—"},
+      { area: "Forest Sites", whyVacant: "提前2周才放票，知名度低，竞争相对小", whyHard: "—"},
+      { area: "Forest Sites (Walk-in)", whyVacant: "需要徒步搬装备，很多人不愿意。天气变化取消率高", whyHard: "—" },
     ],
     bookingWindows: [
       { area: "Loop A", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 滚动放票" },
@@ -502,7 +502,7 @@ export const campgrounds: Campground[] = [
     ],
     areas: [
       { area: "North RV Section", overall: 3, scenery: 2, kidFriendly: 3, tcCompat: 5, hookups: "全接驳(17个) / 部分接驳(18个)", recommendation: "TC/RV首选", areaSummary: "北侧RV区包含17个全接驳营位（水/电/污水，30A）和18个部分接驳营位（水/电）。沥青停车垫垂直于主路排列，功能性强但景观一般。遮蔽少、营位间隐私有限，评论者常将其比作商业RV停车场。适合需要hookup的TC/RV用户。(Source: explorewashingtonstate.com)" },
-      { area: "Terraced Lakefront (东侧)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 1, hookups: "无", recommendation: "帐篷强烈推荐", areaSummary: "公园内最佳帐篷露营区。较新的营位建在朝湖下坡的阶梯式平台上，通过楼梯到达多层平台——一层放帐篷、一层放野餐桌、一层放椅子。大多数营位需从停车处走几步台阶。湖景直达、可步行到水边。不适合RV/TC（步行式营位）。(Source: explorewashingtonstate.com)" },
+      { area: "Terraced Lakefront (East Side)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 1, hookups: "无", recommendation: "帐篷强烈推荐", areaSummary: "公园内最佳帐篷露营区。较新的营位建在朝湖下坡的阶梯式平台上，通过楼梯到达多层平台——一层放帐篷、一层放野餐桌、一层放椅子。大多数营位需从停车处走几步台阶。湖景直达、可步行到水边。不适合RV/TC（步行式营位）。(Source: explorewashingtonstate.com)" },
       { area: "South Tent Area", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "安静备选", areaSummary: "与RV区分开的帐篷区域。灌木和树木覆盖较多，视觉隐私更好。营位偏小。适合追求遮蔽和安静、不介意离湖稍远的露营者。(Source: explorewashingtonstate.com)" },
     ],
     vacancyAnalysis: [
@@ -511,7 +511,7 @@ export const campgrounds: Campground[] = [
       { area: "South Tent Area", whyVacant: "知名度低，很多人不知道这个区域", whyHard: "—"},
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
     ],
     recommendedSites: "North RV Section全接驳营位（TC首选，30A电力，近boat launch）",
     avoid: "Terraced Lakefront不适合TC（步行式阶梯营位，无法停车）",
@@ -556,13 +556,13 @@ export const campgrounds: Campground[] = [
       { area: "Interior Standard (32-64)", overall: 3, scenery: 2, kidFriendly: 3, tcCompat: 4, hookups: "全接驳", recommendation: "一般", areaSummary: "太平洋海滩州立公园内侧营位（23–64号，共42个营位）位于营区内侧，提供水电全接驳并靠近卫生设施，步行可到达沙滩和潮池。营地地势平坦、受海风影响但相对受保护，适合房车与家庭露营者寻求便捷海滩出入的游客；若想要更好的海景或更安静的体验，可考虑海滨营位。" },
     ],
     vacancyAnalysis: [
-      { area: "Area A (1-16)", whyVacant: "—", whyHard: "直面太平洋的第一排，全WA最稀缺的\"推开车门就是海\"体验。无人会取消" },
-      { area: "Area B (17-50)", whyVacant: "—", whyHard: "有电hookup+近海滩，性价比最高的区域，取消后秒光" },
-      { area: "Area B (51-57)", whyVacant: "无电+位置居中，性价比不如前排，偶尔有取消", whyHard: "—" },
-      { area: "Area B (58-64)", whyVacant: "多风+排水差，老手都知道要避开，取消率高", whyHard: "—" },
+      { area: "Ocean-Facing Utility (1-16)", whyVacant: "—", whyHard: "直面太平洋的第一排，全WA最稀缺的\"推开车门就是海\"体验。无人会取消" },
+      { area: "Ocean-Facing Utility (17-31) + Interior (32-50)", whyVacant: "—", whyHard: "有电hookup+近海滩，性价比最高的区域，取消后秒光" },
+      { area: "Interior Standard (51-57)", whyVacant: "无电+位置居中，性价比不如前排，偶尔有取消", whyHard: "—" },
+      { area: "Interior Standard (58-64)", whyVacant: "多风+排水差，老手都知道要避开，取消率高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
     ],
     recommendedSites: "Site 1-22（直面太平洋+全接驳+无遮挡海景）",
     avoid: "Site 50+（被沙丘挡住，无海景）",
@@ -609,11 +609,11 @@ export const campgrounds: Campground[] = [
     ],
     vacancyAnalysis: [
       { area: "Bluff Sites (50-68)", whyVacant: "—", whyHard: "全美最佳海景RV位之一，社交媒体网红打卡点。取消罚款14天内不可退，取消率极低" },
-      { area: "Utility (16-39)", whyVacant: "位置普通无海景，主要优势是有电，对风景党吸引力低。偶尔有取消", whyHard: "—" },
-      { area: "Non-Utility (40-49, 69-92)", whyVacant: "无电+无海景+位置在树林中，知名度低，取消率较高", whyHard: "—" },
+      { area: "Bluff Sites (Utility, 16-39)", whyVacant: "位置普通无海景，主要优势是有电，对风景党吸引力低。偶尔有取消", whyHard: "—" },
+      { area: "Forest Sites (Non-Utility)", whyVacant: "无电+无海景+位置在树林中，知名度低，取消率较高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 14, advanceLabel: "提前14天", notes: "Clallam County Parks 系统，滚动放票" },
+      { area: "All Sites", advanceDays: 14, advanceLabel: "提前14天", notes: "Clallam County Parks 系统，滚动放票" },
     ],
     recommendedSites: "Site 1-20（最近潮池+海景+平坦）",
     avoid: "Site 70+（远离海岸+无设施+无景观）",
@@ -655,14 +655,14 @@ export const campgrounds: Campground[] = [
       { name: "Lake Quinault", ageRange: "任何年龄", distance: "附近", details: "距离约35英里，有老式木屋和餐厅 (来源: Gary D.)" },
     ],
     areas: [
-      { area: "海崖营位 (1-36)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "卡拉洛奇海崖营位（1–36，共36个营位）坐落在太平洋悬崖线上，可俯瞰广阔海面与漂流木沙滩，景色壮观但常有风雾。营区无水电，适合追求海景日落、海滩漫步与摄影的家庭、情侣或自给自足的帐篷/小型房车露营者，不适合需要电源或高度避风的人。" },
-      { area: "内侧营位 (37-170)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "卡拉洛奇营地内侧营位（编号37–170，约134个营位）位于奥林匹克国家公园海岸线稍内侧的林间地带，树木遮蔽、避风但需要步行才能到达海滩，营地无水电设施。适合喜欢较安静、被森林包围的帐篷或自带简单设施的房车露营者；夏季热门时段可能较拥挤，整体推荐一般。" },
+      { area: "Bluff Sites (1-36)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "卡拉洛奇海崖营位（1–36，共36个营位）坐落在太平洋悬崖线上，可俯瞰广阔海面与漂流木沙滩，景色壮观但常有风雾。营区无水电，适合追求海景日落、海滩漫步与摄影的家庭、情侣或自给自足的帐篷/小型房车露营者，不适合需要电源或高度避风的人。" },
+      { area: "Interior Sites (37-170)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "卡拉洛奇营地内侧营位（编号37–170，约134个营位）位于奥林匹克国家公园海岸线稍内侧的林间地带，树木遮蔽、避风但需要步行才能到达海滩，营地无水电设施。适合喜欢较安静、被森林包围的帐篷或自带简单设施的房车露营者；夏季热门时段可能较拥挤，整体推荐一般。" },
     ],
     vacancyAnalysis: [
-      { area: "D Loop", whyVacant: "—", whyHard: "最靠近dump station（位于D17-D18旁），TC/RV首选，悬崖海景。虽然仅提前2周放票，但因位置优越+dump station便利，放出即秒光" },
-      { area: "A Loop", whyVacant: "部分营位因侵蚀永久关闭，偶有取消", whyHard: "最大Loop+海景，总体需求极高" },
-      { area: "C Loop", whyVacant: "2周前才放票，竞争相对小", whyHard: "—" },
-      { area: "E/F Loop", whyVacant: "4天前才放票，可以碰运气", whyHard: "位子少(共19个)，竞争激烈" },
+      { area: "Bluff Sites (D Loop)", whyVacant: "—", whyHard: "最靠近dump station（位于D17-D18旁），TC/RV首选，悬崖海景。虽然仅提前2周放票，但因位置优越+dump station便利，放出即秒光" },
+      { area: "Bluff Sites (A Loop)", whyVacant: "部分营位因侵蚀永久关闭，偶有取消", whyHard: "最大Loop+海景，总体需求极高" },
+      { area: "Interior Sites (C Loop)", whyVacant: "2周前才放票，竞争相对小", whyHard: "—" },
+      { area: "Interior Sites (E/F Loop)", whyVacant: "4天前才放票，可以碰运气", whyHard: "位子少(共19个)，竞争激烈" },
     ],
     bookingWindows: [
       { area: "A/B Loop", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 分批放票" },
@@ -710,16 +710,16 @@ export const campgrounds: Campground[] = [
       { name: "骑行去沉船遗址", ageRange: "任何年龄", distance: "附近", details: "骑车穿过对面的Ft Stevens州立公园可达 (来源: Caitlin J.)" },
     ],
     areas: [
-      { area: "Premium Sites (全接驳+Patio)", overall: 5, scenery: 3, kidFriendly: 5, tcCompat: 5, hookups: "全接驳(50A)", recommendation: "强烈推荐", areaSummary: "阿斯托里亚KOA度假营地的Premium Sites为少量升级型营位（带50A全接驳和独立Patio），提供度假式便利设施与舒适私密的露台空间。营地靠近哥伦比亚河口与太平洋海岸、交通便利并靠近阿斯托里亚/Seaside景点，适合大型房车或寻求全接驳与舒适度假体验的家庭、情侣或想要便利设施的露营者（强烈推荐，5/5）。" },
+      { area: "Premium Sites (Full Hookup + Patio)", overall: 5, scenery: 3, kidFriendly: 5, tcCompat: 5, hookups: "全接驳(50A)", recommendation: "强烈推荐", areaSummary: "阿斯托里亚KOA度假营地的Premium Sites为少量升级型营位（带50A全接驳和独立Patio），提供度假式便利设施与舒适私密的露台空间。营地靠近哥伦比亚河口与太平洋海岸、交通便利并靠近阿斯托里亚/Seaside景点，适合大型房车或寻求全接驳与舒适度假体验的家庭、情侣或想要便利设施的露营者（强烈推荐，5/5）。" },
       { area: "Standard RV Sites", overall: 4, scenery: 3, kidFriendly: 4, tcCompat: 5, hookups: "全接驳(30A)", recommendation: "推荐", areaSummary: "阿斯托里亚KOA度假营地的Standard RV Sites提供数十个平整的全接驳（30A）营位，通常为砾石或铺装车位且靠近营地的公共设施。地处哥伦比亚河口与海滨之间、气候偏海洋性，适合需要便利水电接驳、带家人或宠物的房车旅行者，便于前往阿斯托里亚/西赛德的海滩和景点。" },
       { area: "Tent/Cabin Area", overall: 3, scenery: 3, kidFriendly: 4, tcCompat: 0, hookups: "无", recommendation: "不适用TC", areaSummary: "阿斯托里亚KOA的Tent/Cabin Area为帐篷与小木屋混合区，约有数十个无水电接入的营位，通常靠近营地的公共卫生间与淋浴设施。该区靠近海岸与沙丘、风大且空气清新，适合喜欢海边露营的帐篷客、小家庭或想体验简易小屋且不依赖电源的露营者，不适合需要水电或大型房车的旅客。" },
     ],
     vacancyAnalysis: [
-      { area: "100 Area", whyVacant: "周中偶有空位", whyHard: "夏季周末+节假日提前数月满" },
-      { area: "200/300 Area", whyVacant: "价格较高，预算有限的家庭不选", whyHard: "Pull-through+全接驳，大车必选" },
+      { area: "Premium Sites", whyVacant: "周中偶有空位", whyHard: "夏季周末+节假日提前数月满" },
+      { area: "Standard RV Sites", whyVacant: "价格较高，预算有限的家庭不选", whyHard: "Pull-through+全接驳，大车必选" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 365, advanceLabel: "提前12个月", notes: "KOA.com 系统" },
+      { area: "All Sites", advanceDays: 365, advanceLabel: "提前12个月", notes: "KOA.com 系统" },
     ],
     recommendedSites: "Premium Patio Sites（最近泳池+游乐场+50A全接驳）",
     avoid: "Tent Area（无RV设施，不适合TC）",
@@ -760,15 +760,15 @@ export const campgrounds: Campground[] = [
       { name: "Newport周边景点", ageRange: "任何年龄", distance: "附近", details: "靠近Newport，方便就餐和游览景点 (来源: Vee K.)" },
     ],
     areas: [
-      { area: "边缘营位 (1-10)", overall: 5, scenery: 5, kidFriendly: 3, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "南海滩营地的边缘营位（1–10）共有约10个靠公园边缘的营位，通常被树木与沙丘半遮蔽，步行即可到海滩和海岸步道。营位无水电接口，适合喜欢海景与安静、能自备水电或以帐篷/小中型拖车露营的露营者。" },
-      { area: "中间营位 (11-55)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "南海滩营地中间营位（11–55号）约有45个营位，位于海岸沙丘与海滨针叶林之间，靠近海滩和步道但设施简单且无水电接入。地势较开阔且常有海风，适合喜欢海滩活动、散步和观鸟的帐篷露营者或自给自足的房车用户，追求舒适设施的露营者可能会觉得一般。" },
+      { area: "Perimeter Sites (1-10)", overall: 5, scenery: 5, kidFriendly: 3, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "南海滩营地的边缘营位（1–10）共有约10个靠公园边缘的营位，通常被树木与沙丘半遮蔽，步行即可到海滩和海岸步道。营位无水电接口，适合喜欢海景与安静、能自备水电或以帐篷/小中型拖车露营的露营者。" },
+      { area: "Interior Sites (11-55)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "南海滩营地中间营位（11–55号）约有45个营位，位于海岸沙丘与海滨针叶林之间，靠近海滩和步道但设施简单且无水电接入。地势较开阔且常有海风，适合喜欢海滩活动、散步和观鸟的帐篷露营者或自给自足的房车用户，追求舒适设施的露营者可能会觉得一般。" },
     ],
     vacancyAnalysis: [
-      { area: "A Loop", whyVacant: "—", whyHard: "最靠近海滩，步行即达，取消率低" },
-      { area: "B/C Loop", whyVacant: "距海稍远，偶有取消", whyHard: "—" },
+      { area: "Perimeter Sites (1-10)", whyVacant: "—", whyHard: "最靠近海滩，步行即达，取消率低" },
+      { area: "Interior Sites", whyVacant: "距海稍远，偶有取消", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
     recommendedSites: "Site 1-10（最近海滩通道，步行2分钟到海边）",
     avoid: "Site 40+（离海滩远，风景一般）",
@@ -818,12 +818,12 @@ export const campgrounds: Campground[] = [
       { area: "Yurt/Cabin Area", overall: 0, scenery: 0, kidFriendly: 0, tcCompat: 0, hookups: "—", recommendation: "⚠️施工关闭", areaSummary: "目前因对老化的基础设施和公用设施进行升级而暂时关闭，计划新增帐篷露营环线 (Source: Oregon State Parks official website)."  },
     ],
     vacancyAnalysis: [
-      { area: "O Loop", whyVacant: "—", whyHard: "最新Loop，大车友好，Pull-through，俄勒冈海岸最热门营地之一" },
-      { area: "C Loop", whyVacant: "部分营位有坡度，偶有取消", whyHard: "50A电力，RV用户首选" },
-      { area: "G Loop", whyVacant: "铺装车道有些倾斜，挑剔的人会取消", whyHard: "全接驳(水电污)，数量少" },
+      { area: "A-C Loop (Full Hookup)", whyVacant: "—", whyHard: "最新Loop，大车友好，Pull-through，俄勒冈海岸最热门营地之一" },
+      { area: "D-F Loop (Electrical)", whyVacant: "部分营位有坡度，偶有取消", whyHard: "50A电力，RV用户首选" },
+      { area: "G-H Loop (Standard)", whyVacant: "铺装车道有些倾斜，挑剔的人会取消", whyHard: "全接驳(水电污)，数量少" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
     ],
     recommendedSites: "O Loop（最近Peter Iredale沉船+游乐场+水电+Pull-through）（评论验证：F235: 安静、平和、易于导航，有大型房车拉通车位，有电和水，附近有洗手间、火坑和野餐桌, F236: 相对私密，虽然不是完全平坦但可以使用）",
     avoid: "South Loops（施工关闭中）",
@@ -865,9 +865,9 @@ export const campgrounds: Campground[] = [
       { name: "餐厅和超市", ageRange: "任何年龄", distance: "附近", details: "位于Lincoln City和Newport之间，就在高速公路旁，附近有很多餐厅和杂货店 (来源: Elizabeth N.)" },
     ],
     areas: [
-      { area: "B Loop (全接驳)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "最靠近海滩的全套接入营位圈，在桥下可眺望海滩并提供有线电视。尽管有一些道路噪音，仍然非常抢手。 (Source: Wheeling It review, TheDyrt 条评价)"  },
-      { area: "G/H Loop (电力)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 4, hookups: "电力", recommendation: "推荐", areaSummary: "G/H Loop (电力) 位于贝弗利海滩州立公园的海岸露营区，环绕海岸林与沙丘，步行即可到达宽阔的沙滩和潮池，设有几十个位带电力接口的营位。适合需要电源的房车或家庭露营者与希望近距离享受海景和海浪声的休闲露营者，营区靠近公园的卫生淋浴设施。" },
-      { area: "A/C/D Loop (帐篷)", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "不推荐TC", areaSummary: "A/C/D 帐篷区紧邻海滩，营位约几十个，地势较平，多为海松和沙丘植被，常有强风和海雾。无水电接口且不推荐房车/拖车，适合想近距离观海、愿意徒步携带装备的帐篷露营者，记得带足饮水和防风防潮用品。" },
+      { area: "B Loop (Full Hookup)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "最靠近海滩的全套接入营位圈，在桥下可眺望海滩并提供有线电视。尽管有一些道路噪音，仍然非常抢手。 (Source: Wheeling It review, TheDyrt 条评价)"  },
+      { area: "G/H Loop (Electrical)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 4, hookups: "电力", recommendation: "推荐", areaSummary: "G/H Loop (电力) 位于贝弗利海滩州立公园的海岸露营区，环绕海岸林与沙丘，步行即可到达宽阔的沙滩和潮池，设有几十个位带电力接口的营位。适合需要电源的房车或家庭露营者与希望近距离享受海景和海浪声的休闲露营者，营区靠近公园的卫生淋浴设施。" },
+      { area: "A/C/D Loop (Tent)", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "不推荐TC", areaSummary: "A/C/D 帐篷区紧邻海滩，营位约几十个，地势较平，多为海松和沙丘植被，常有强风和海雾。无水电接口且不推荐房车/拖车，适合想近距离观海、愿意徒步携带装备的帐篷露营者，记得带足饮水和防风防潮用品。" },
     ],
     vacancyAnalysis: [
       { area: "B Loop", whyVacant: "—", whyHard: "全接驳+靠近海滩通道，俄勒冈海岸最热门之一" },
@@ -875,7 +875,7 @@ export const campgrounds: Campground[] = [
       { area: "A/C/D Loop", whyVacant: "无电力，帐篷客天气变化易取消", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
     ],
     recommendedSites: "B Loop（全接驳+最近海滩通道+近游乐场）",
     avoid: "A/C/D Loop（无hookup，不适合TC）",
@@ -937,7 +937,7 @@ export const campgrounds: Campground[] = [
       { area: "Area C (92-180)", whyVacant: "无hookup+距海远+位置普通，帐篷客天气变化会取消", whyHard: "但取消后仍然很快被抢，因为总体供不应求" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
     ],
     recommendedSites: "Area A: Site 1-30（全接驳+近灯塔步道+50A电力）",
     avoid: "Area D（远离设施+潮湿+无hookup）",
@@ -984,12 +984,12 @@ export const campgrounds: Campground[] = [
       { area: "Outer Loop (41-57)", overall: 4, scenery: 4, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "外圈营位46–57约有12个营位，位于特里利姆湖营地外围，临近湖岸与林地，环境以松林和湖景为主（部分营位可见胡德山景致），无水电设施。适合帐篷或小型拖车的露营者、喜欢近水活动、摄影或日落观景的人士；夏季和周末很受欢迎，建议提前预订并自备水和必需品。" },
     ],
     vacancyAnalysis: [
-      { area: "湖边营位", whyVacant: "—", whyHard: "仅15个位子+无敌湖景+Mt Hood倒影，6个月前秒光" },
-      { area: "内圈营位", whyVacant: "无湖景，被树林包围，偶有取消", whyHard: "—" },
-      { area: "外圈营位", whyVacant: "距湖稍远，但安静私密", whyHard: "老手知道这些位子安静且有部分湖景" },
+      { area: "Lakeside", whyVacant: "—", whyHard: "仅15个位子+无敌湖景+Mt Hood倒影，6个月前秒光" },
+      { area: "Inner Loop", whyVacant: "无湖景，被树林包围，偶有取消", whyHard: "—" },
+      { area: "Outer Loop", whyVacant: "距湖稍远，但安静私密", whyHard: "老手知道这些位子安静且有部分湖景" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
     recommendedSites: "Site 1-15（直面Mt. Hood倒影+湖边+清晨如镜）（评论验证：016: 宽敞，自然空间大，铺装停车位好，靠近圆形剧场；024: 非常平坦且私密；032: 离湖有一定距离，既方便去环湖步道又不会太吵，空间大；047: 靠近船道，方便带桨板下水，有两个停车区，树木多；056: 离湖近，安静干净；061: 宽敞的蒙古包，设施齐全。）",
     avoid: "Site 16-45（内圈无湖景+蚊子多）",
@@ -1038,12 +1038,12 @@ export const campgrounds: Campground[] = [
       { area: "Loop C/D", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "提供可提前两周预订的标准无电营位，营地坐落在长满苔藓的树木之间。 (Source: recreation.gov)"  },
     ],
     vacancyAnalysis: [
-      { area: "Loop E", whyVacant: "—", whyHard: "靠近Quillayute River，宽敞安静，老手必选" },
+      { area: "Loop C/D/E", whyVacant: "—", whyHard: "靠近Quillayute River，宽敞安静，老手必选" },
       { area: "Loop A/B", whyVacant: "靠近入口较吵，偶有取消", whyHard: "—" },
       { area: "Loop C/D", whyVacant: "位置居中，不靠河也不靠入口，偶有空位", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov。⚠️ Mora Road 2026年7月8日至10月15日关闭施工" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov。⚠️ Mora Road 2026年7月8日至10月15日关闭施工" },
     ],
     recommendedSites: "Loop E（最宽敞+近Rialto Beach步道入口+安静）（评论验证：E84: 营地巨大，有河景，私密性极佳, A19: 非常私密，靠近厕所但听不到噪音，空间大且平坦, C43: 树木茂盛，感觉私密，配有野餐桌和火圈, A10: 实际空间比标称大，可停放23英尺房车, E89: 空间大，适合23英尺以上房车及额外车辆）",
     avoid: "Loop C/D（较窄+远离海滩+潮湿阴暗）",
@@ -1083,13 +1083,13 @@ export const campgrounds: Campground[] = [
       { name: "徒步前往Mt. Hood方向", ageRange: "任何年龄", distance: "附近", details: "可从PCT步道向南徒步前往Mt. Hood方向 (来源: Susan M.)" },
     ],
     areas: [
-      { area: "全营地 (16 sites)", overall: 4, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "适合探险家庭", areaSummary: "小火山口湖营地共有约16个营位，围绕一处清澈湛蓝的火山口湖，景观独特、以林地与岩石地形为主。营地无水电设施、设施简朴，适合带孩子的探险家庭以及喜欢短途徒步、摄影和安静自然体验的露营者。" },
+      { area: "Entire Campground (16 sites)", overall: 4, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "适合探险家庭", areaSummary: "小火山口湖营地共有约16个营位，围绕一处清澈湛蓝的火山口湖，景观独特、以林地与岩石地形为主。营地无水电设施、设施简朴，适合带孩子的探险家庭以及喜欢短途徒步、摄影和安静自然体验的露营者。" },
     ],
     vacancyAnalysis: [
-      { area: "全营地", whyVacant: "仅16个位子但知名度低，非周末偶有空位", whyHard: "夏季周末+PCT徒步客+网红效应，很快满" },
+      { area: "Entire Campground", whyVacant: "仅16个位子但知名度低，非周末偶有空位", whyHard: "夏季周末+PCT徒步客+网红效应，很快满" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
     recommendedSites: "Site 005, 006（26ft车道，近PCT入口，最近湖边）（评论验证：007: 绝对完美，离厕所距离适中，马路对面就是去湖的步道，宽敞 (来源: Angel G., Elizabeth S., Chris W.), 010: 宽敞，离厕所近但又不太近，适合9人大帐篷 (来源: Rachel C., Review 29)）",
     avoid: "极其原始——无淋浴、无hookup、无手机信号",
@@ -1136,11 +1136,11 @@ export const campgrounds: Campground[] = [
       { area: "B-E Loop (Electrical/Standard)", overall: 4, scenery: 5, kidFriendly: 5, tcCompat: 3, hookups: "无", recommendation: "推荐(帐篷)", areaSummary: "营地设有带硬化垫的帐篷营位、野餐桌和篝火圈，但部分营位靠近公路，会受到交通噪音影响（Source: TheDyrt reviews）。"  },
     ],
     vacancyAnalysis: [
-      { area: "Loop C", whyVacant: "—", whyHard: "仅23个全接驳位，Bend地区最热门RV营地" },
-      { area: "Loop A", whyVacant: "无hookup，RV用户不选；冬季偶有空位", whyHard: "河畔位子风景好，帐篷客抢手" },
+      { area: "B-E Loop (Electrical/Standard)", whyVacant: "—", whyHard: "仅23个全接驳位，Bend地区最热门RV营地" },
+      { area: "A Loop (Full Hookup)", whyVacant: "无hookup，RV用户不选；冬季偶有空位", whyHard: "河畔位子风景好，帐篷客抢手" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
     ],
     recommendedSites: "Loop C（全接驳+近游乐场+Bend市区10分钟+Pull-through）（评论验证：A87: 靠河风景优美，干净宽敞, B25: 干净且相对宽敞，设施好）",
     avoid: "Loop A 无hookup，不适合需要电力的TC。夏季河流急流危险",
@@ -1181,17 +1181,17 @@ export const campgrounds: Campground[] = [
       { name: "海滩漫步与放松", ageRange: "任何年龄", distance: "附近", details: "营地紧邻6英里长的美丽海滩 (来源: Emily P.)" },
     ],
     areas: [
-      { area: "C Loop Upper (全接驳)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "望角州立公园C环上部有数十个全接驳营位，位于海岸松林与沙丘之间，步行即可到达海滩和环岬观景步道。非常适合房车/拖车露营的家庭与喜欢海岸徒步、观鲸观鸟的露营者，设施完备且环境安静，强烈推荐。" },
-      { area: "A/B Loop (混合)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "部分有电", recommendation: "推荐", areaSummary: "望角州立公园A/B环线是一个混合型海岬营地，约有100个左右营位，部分营位有电，营地位于沙丘与林地交错的海岸线上，步行即可到达辽阔的海滩和观鲸、徒步路线。适合家庭、帐篷和中大型房车的露营者，喜欢海滩散步和海岸风景的访客（海岸多风，注意潮汐与防风保暖）。" },
-      { area: "D Loop (帐篷)", overall: 3, scenery: 5, kidFriendly: 3, tcCompat: 1, hookups: "无", recommendation: "不适合TC", areaSummary: "望角州立公园D环为纯帐篷区，环绕着海岸松和云杉并靠近开阔沙滩与观景步道，营位约20至30个，属于原始露营（无水电）。适合背包客、徒步和海滩爱好者以及寻求安静海景露营的帐篷露营者，不适合房车或需要电水支持的露营者。" },
+      { area: "C Loop Upper (Full Hookup)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "全接驳", recommendation: "强烈推荐", areaSummary: "望角州立公园C环上部有数十个全接驳营位，位于海岸松林与沙丘之间，步行即可到达海滩和环岬观景步道。非常适合房车/拖车露营的家庭与喜欢海岸徒步、观鲸观鸟的露营者，设施完备且环境安静，强烈推荐。" },
+      { area: "A/B Loop (Mixed Hookup)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "部分有电", recommendation: "推荐", areaSummary: "望角州立公园A/B环线是一个混合型海岬营地，约有100个左右营位，部分营位有电，营地位于沙丘与林地交错的海岸线上，步行即可到达辽阔的海滩和观鲸、徒步路线。适合家庭、帐篷和中大型房车的露营者，喜欢海滩散步和海岸风景的访客（海岸多风，注意潮汐与防风保暖）。" },
+      { area: "D Loop (Tent)", overall: 3, scenery: 5, kidFriendly: 3, tcCompat: 1, hookups: "无", recommendation: "不适合TC", areaSummary: "望角州立公园D环为纯帐篷区，环绕着海岸松和云杉并靠近开阔沙滩与观景步道，营位约20至30个，属于原始露营（无水电）。适合背包客、徒步和海滩爱好者以及寻求安静海景露营的帐篷露营者，不适合房车或需要电水支持的露营者。" },
     ],
     vacancyAnalysis: [
       { area: "C Loop Upper", whyVacant: "—", whyHard: "全接驳+近海滩通道+隐私好，6个月前秒光" },
       { area: "A/B Loop", whyVacant: "部分营位较小或有坡度，偶有取消", whyHard: "—" },
-      { area: "D Loop", whyVacant: "帐篷专用，天气变化取消率高", whyHard: "—" },
+      { area: "Bluff Sites (D Loop)", whyVacant: "帐篷专用，天气变化取消率高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks。⚠️ 营地将于2026年8月3日关闭施工" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks。⚠️ 营地将于2026年8月3日关闭施工" },
     ],
     recommendedSites: "C Loop Upper（全接驳+最近海滩+近游乐场）",
     avoid: "D Loop（无hookup+窄车道，不适合TC）",
@@ -1238,11 +1238,11 @@ export const campgrounds: Campground[] = [
       { area: "Interior (9-29)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "告别弯营地内侧营位（1-29）约有29个营位，靠近蛇河河岸，周边为河滨林带和开阔草地，提供朴素的河边露营环境且不含水电供应。适合喜欢钓鱼、划船和观鸟的帐篷或短期车宿露营者，不太适合需要电源或更多设施的长住大型房车。" },
     ],
     vacancyAnalysis: [
-      { area: "河畔营位", whyVacant: "距离主要城市远(6h)，知名度不高", whyHard: "河边游泳+钓鱼+隐私好，回头客多" },
-      { area: "内侧营位", whyVacant: "无河景，较普通", whyHard: "—" },
+      { area: "Riverside", whyVacant: "距离主要城市远(6h)，知名度不高", whyHard: "河边游泳+钓鱼+隐私好，回头客多" },
+      { area: "Interior", whyVacant: "无河景，较普通", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
     recommendedSites: "Site 30-45（直面Rogue River+天然游泳池+隐私极佳）（评论验证：004: 营位宽敞平坦，靠近河流，水声能掩盖公路噪音；018: 紧邻Rogue River，水流声能完美掩盖公路和邻居的噪音；020: 营位私密且安静，空间大，靠近河流；023: 靠近河流，声音和景色都很美；026: 紧邻Rogue River，能听到水声；029: 进出方便，靠近河流；032: 紧邻河流，私密性好；035 & 036: 空间宽敞，靠近河流，有树荫，水龙头近；039: 宽敞，紧邻河流，没有公路噪音；042: 靠近河流，宽敞平坦，蚊虫少；044: 营位非常大，靠近水源和河流；046: 宽敞，有小溪流过，安静；047: 靠近河流，步行可达瀑布，空间大，私密性好；052: 靠近厕所，空间宽敞。）",
     avoid: "Site 1-15（离河远+靠近公路噪音）。完全无手机信号",
@@ -1285,17 +1285,17 @@ export const campgrounds: Campground[] = [
       { name: "Pacific Crest Trail", ageRange: "任何年龄", distance: "附近", details: "从Highway 62向南徒步 (来源: Ted L.)" },
     ],
     areas: [
-      { area: "F Loop (电力)", overall: 5, scenery: 4, kidFriendly: 4, tcCompat: 5, hookups: "电力(30A)", recommendation: "强烈推荐", areaSummary: "火山口湖马扎马村F环为带30A电力接口的林间营位区（约20个营位），靠近游客中心和环湖公路，海拔较高、被针叶林环绕。适合拖挂房车或需电力支持的家庭／车宿露营者，便于白天前往火山口湖景点和使用公园设施。" },
-      { area: "A-D Loop (无hookup)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "火山口湖马扎马村 A-D Loop 位于高海拔的针叶林中、靠近游客中心和环湖公路，约有200个无水电营位，环境安静且林荫遮蔽。因无接入设施，适合帐篷和自给型房车、家庭与徒步者，夏季非常繁忙建议提前预订。" },
-      { area: "G Loop (团体)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "团体专用", areaSummary: "火山口湖马扎马村 G Loop 是公园内的团体营区，通常有大约6–8个可预订的团体营位（可容纳从十几到数十人不等），营位本身无水电设施。营区位于高海拔的针叶林，靠近 Mazama Village 的服务点且季节性开放，适合团队、家庭聚会或有组织的露营团体，不太适合独自露营或依赖水电的露营者。" },
+      { area: "F Loop (Electrical)", overall: 5, scenery: 4, kidFriendly: 4, tcCompat: 5, hookups: "电力(30A)", recommendation: "强烈推荐", areaSummary: "火山口湖马扎马村F环为带30A电力接口的林间营位区（约20个营位），靠近游客中心和环湖公路，海拔较高、被针叶林环绕。适合拖挂房车或需电力支持的家庭／车宿露营者，便于白天前往火山口湖景点和使用公园设施。" },
+      { area: "A-D Loop (No Hookup)", overall: 4, scenery: 4, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "火山口湖马扎马村 A-D Loop 位于高海拔的针叶林中、靠近游客中心和环湖公路，约有200个无水电营位，环境安静且林荫遮蔽。因无接入设施，适合帐篷和自给型房车、家庭与徒步者，夏季非常繁忙建议提前预订。" },
+      { area: "G Loop (Group)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "团体专用", areaSummary: "火山口湖马扎马村 G Loop 是公园内的团体营区，通常有大约6–8个可预订的团体营位（可容纳从十几到数十人不等），营位本身无水电设施。营区位于高海拔的针叶林，靠近 Mazama Village 的服务点且季节性开放，适合团队、家庭聚会或有组织的露营团体，不太适合独自露营或依赖水电的露营者。" },
     ],
     vacancyAnalysis: [
       { area: "F Loop", whyVacant: "—", whyHard: "唯一有电力的Loop，仅~40位，世界级景点旁" },
       { area: "A-D Loop", whyVacant: "距离远(7h)，部分人改住Lodge，偶有取消", whyHard: "夏季周末仍然很紧张" },
-      { area: "G Loop", whyVacant: "团体专用，个人不可预订", whyHard: "—" },
+      { area: "A-D Loop (No Hookup)", whyVacant: "团体专用，个人不可预订", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
     ],
     recommendedSites: "F Loop（唯一有电力+最宽敞营位+30A）（评论验证：G17: 宽敞隐蔽, G27: 宽敞干净, D30: 宽敞且无发电机噪音, F21: 非常大, F9: 靠近峡谷风景极佳，宽敞干净, D15: 宽敞，树木高大，靠近步道和商店）",
     avoid: "G Loop（团体专用）。开放时间极短（7月初-10月初）；夜间可降至冰点",
@@ -1339,10 +1339,10 @@ export const campgrounds: Campground[] = [
       { area: "Interior Sites", overall: 3, scenery: 2, kidFriendly: 3, tcCompat: 0, hookups: "有(50A/W/S/Cable)", recommendation: "不适用(禁TC)", areaSummary: "内部营位，无海景但价格稍低。同样仅限Class A/C。" },
     ],
     vacancyAnalysis: [
-      { area: "全营地", whyVacant: "价格高昂（$100+/晚）且仅允许豪华A/C类房车，客群窄，旺季之外偶有空位", whyHard: "—" },
+      { area: "Oceanfront Sites", whyVacant: "价格高昂（$100+/晚）且仅允许豪华A/C类房车，客群窄，旺季之外偶有空位", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 365, advanceLabel: "提前1年", notes: "官网直接预订 pacificshores.com（俄勒冈州私营度假村）" },
+      { area: "All Sites", advanceDays: 365, advanceLabel: "提前1年", notes: "官网直接预订 pacificshores.com（俄勒冈州私营度假村）" },
     ],
     recommendedSites: "不推荐TC用户预订（评论验证：无具体推荐营位: 评论中未提及具体推荐的营位号码，但提到海滨营位（oceanfront ones）很棒）",
     avoid: "整个营地不接受TC",
@@ -1383,15 +1383,15 @@ export const campgrounds: Campground[] = [
       { name: "Port Townsend小镇", ageRange: "任何年龄", distance: "开车5分钟", details: "维多利亚风格小镇，冰淇淋店和玩具店" }
     ],
     areas: [
-      { area: "Upper Loop (全接驳)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "有(30A/W/S)", recommendation: "强烈推荐", areaSummary: "约50个全接驳营位，靠近游乐场和卫生间，地势平坦，树荫适中。最适合带娃家庭和TC。" },
-      { area: "Lower Loop (无接驳)", overall: 3, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约30个无接驳营位，靠近海滩但营位较小，不太适合大型RV。风景更好但设施不便。" }
+      { area: "Upper Loop (Full Hookup)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "有(30A/W/S)", recommendation: "强烈推荐", areaSummary: "约50个全接驳营位，靠近游乐场和卫生间，地势平坦，树荫适中。最适合带娃家庭和TC。" },
+      { area: "Lower Loop (No Hookup)", overall: 3, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约30个无接驳营位，靠近海滩但营位较小，不太适合大型RV。风景更好但设施不便。" }
     ],
     vacancyAnalysis: [
       { area: "Upper Loop", whyVacant: "—", whyHard: "WA州旺季入住率最高的营地之一，全接驳位极其抢手" },
       { area: "Lower Loop", whyVacant: "无接驳+营位小，部分露营者不愿选择", whyHard: "但因总体供不应求，取消后仍很快被抢" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
     recommendedSites: "Upper Loop: Site 1-20（全接驳+近游乐场+平坦宽敞）",
     avoid: "Lower Loop靠近道路的营位（噪音+无接驳）",
@@ -1435,11 +1435,11 @@ export const campgrounds: Campground[] = [
       { area: "Standard Loop", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "约40个无接驳营位，被沙丘草地环绕，更靠近海滩但无水电。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "海岸全接驳营位稀缺，旺季和razor clam季节尤其抢手" },
-      { area: "Standard Sites (1-51)", whyVacant: "无接驳+海风大+较暴露，非旺季偶有空位", whyHard: "—" }
+      { area: "Full Hookup Loop", whyVacant: "—", whyHard: "海岸全接驳营位稀缺，旺季和razor clam季节尤其抢手" },
+      { area: "Standard Loop", whyVacant: "无接驳+海风大+较暴露，非旺季偶有空位", whyHard: "—" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
     recommendedSites: "Full Hookup: 靠近海滩步道入口的营位（步行最短到海滩）",
     avoid: "Standard Loop最外圈（风大+无遮挡+远离卫生间）",
@@ -1479,15 +1479,15 @@ export const campgrounds: Campground[] = [
       { name: "Leavenworth小镇", ageRange: "任何年龄", distance: "开车25分钟", details: "巴伐利亚风格小镇，冰淇淋和糖果店", mapUrl: "https://www.google.com/maps/search/Leavenworth+WA", googleRating: "4.7★" }
     ],
     areas: [
-      { area: "Full Hookup (1-51)", overall: 5, scenery: 3, kidFriendly: 5, tcCompat: 5, hookups: "有(50A/W/S)", recommendation: "强烈推荐", areaSummary: "51个全接驳营位（50A电力），地势平坦，靠近自行车道和河边。树荫适中，夏季较热但设施完善。" },
-      { area: "Standard (52-59)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "8个无接驳帐篷营位，较小且私密性一般。" }
+      { area: "Full Hookup (1-52)", overall: 5, scenery: 3, kidFriendly: 5, tcCompat: 5, hookups: "有(50A/W/S)", recommendation: "强烈推荐", areaSummary: "51个全接驳营位（50A电力），地势平坦，靠近自行车道和河边。树荫适中，夏季较热但设施完善。" },
+      { area: "Standard (53-60)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "8个无接驳帐篷营位，较小且私密性一般。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "50A全接驳+靠近Leavenworth+夏季炎热干燥适合水上活动，旺季一位难求" },
-      { area: "Standard", whyVacant: "无接驳+夏季酷热+营位小，帐篷客偶有取消", whyHard: "—" }
+      { area: "Full Hookup (1-52)", whyVacant: "—", whyHard: "50A全接驳+靠近Leavenworth+夏季炎热干燥适合水上活动，旺季一位难求" },
+      { area: "Standard (53-60)", whyVacant: "无接驳+夏季酷热+营位小，帐篷客偶有取消", whyHard: "—" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
     recommendedSites: "Full Hookup: Site 30-40（靠近河边+自行车道入口+树荫较好）",
     avoid: "Standard区（夏季太热+无遮荫+无水电）",
@@ -1527,7 +1527,7 @@ export const campgrounds: Campground[] = [
       { name: "环岛自行车道", ageRange: "4岁+", distance: "营地内", details: "约6英里环线，地势平缓" }
     ],
     areas: [
-      { area: "Upper Campground (全接驳)", overall: 4, scenery: 3, kidFriendly: 4, tcCompat: 5, hookups: "有(30A/W)", recommendation: "推荐", areaSummary: "约57个全接驳营位，林间环境，靠近卫生间和淋浴。地势平坦适合RV。" },
+      { area: "Upper Campground (Full Hookup)", overall: 4, scenery: 3, kidFriendly: 4, tcCompat: 5, hookups: "有(30A/W)", recommendation: "推荐", areaSummary: "约57个全接驳营位，林间环境，靠近卫生间和淋浴。地势平坦适合RV。" },
       { area: "Beach Campground", overall: 4, scenery: 5, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "推荐", areaSummary: "约10个海滩营位，直面海峡，风景绝佳但无接驳且风大。" }
     ],
     vacancyAnalysis: [
@@ -1535,7 +1535,7 @@ export const campgrounds: Campground[] = [
       { area: "Beach Campground", whyVacant: "风大+无接驳+营位少，取消率较高", whyHard: "仅10个位，取消后也很快被抢" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
     recommendedSites: "Upper Campground: Site 30-40（树荫好+靠近步道+全接驳）",
     avoid: "Beach Campground最外侧（风极大+无遮挡）",
@@ -1581,12 +1581,12 @@ export const campgrounds: Campground[] = [
       { area: "C Loop", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约18个营位，最远离设施，更原始但也更安静。" }
     ],
     vacancyAnalysis: [
-      { area: "A Loop", whyVacant: "—", whyHard: "Olympic NP最热门营地之一，先到先得无法预订，旺季早上8-9点就满" },
+      { area: "Bluff Sites (A Loop)", whyVacant: "—", whyHard: "Olympic NP最热门营地之一，先到先得无法预订，旺季早上8-9点就满" },
       { area: "B Loop", whyVacant: "—", whyHard: "同上，稍晚满但也很快" },
-      { area: "C Loop", whyVacant: "最远离设施+最原始，偶有人提前离开", whyHard: "但旺季仍然很快被占" }
+      { area: "Interior Sites (C Loop)", whyVacant: "最远离设施+最原始，偶有人提前离开", whyHard: "但旺季仍然很快被占" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "recreation.gov" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "recreation.gov" },
     ],
     recommendedSites: "A Loop: Site A1-A10（最靠近Hall of Mosses步道入口+树荫最好）",
     avoid: "C Loop最深处（离卫生间远+夜间较暗+路况差）",
@@ -1627,17 +1627,17 @@ export const campgrounds: Campground[] = [
       { name: "Orcas Island小镇", ageRange: "任何年龄", distance: "开车15分钟", details: "艺术画廊、冰淇淋店和海鲜餐厅" }
     ],
     areas: [
-      { area: "Midway Campground (136 sites, 全接驳)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "有(30A/W)", recommendation: "强烈推荐", areaSummary: "约40个全接驳营位，靠近Cascade Lake游泳区，地势平坦。最适合家庭和RV。" },
-      { area: "North End (59 sites, 无接驳)", overall: 4, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "推荐", areaSummary: "约30个无接驳营位，更安静更原始，靠近Mountain Lake。营位较小。" },
+      { area: "Midway Campground (136 sites, Full Hookup)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "有(30A/W)", recommendation: "强烈推荐", areaSummary: "约40个全接驳营位，靠近Cascade Lake游泳区，地势平坦。最适合家庭和RV。" },
+      { area: "North End (59 sites, No Hookup)", overall: 4, scenery: 5, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "推荐", areaSummary: "约30个无接驳营位，更安静更原始，靠近Mountain Lake。营位较小。" },
       { area: "South End + Mountain Lake Landing", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "约80个无接驳营位，最大的区域但离湖较远。" }
     ],
     vacancyAnalysis: [
-      { area: "Midway (全接驳)", whyVacant: "—", whyHard: "San Juan群岛唯一有全接驳的州立营地+需坐渡轮，计划性强不易取消" },
+      { area: "Midway Campground (Full Hookup)", whyVacant: "—", whyHard: "San Juan群岛唯一有全接驳的州立营地+需坐渡轮，计划性强不易取消" },
       { area: "North End", whyVacant: "无接驳+较原始，偶有取消", whyHard: "但旺季仍很快被抢" },
       { area: "South End + Mountain Lake Landing", whyVacant: "离湖远+营位多，相对容易有空位", whyHard: "—" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
     recommendedSites: "Midway: 靠近Cascade Lake的营位（步行最短到游泳区+全接驳）",
     avoid: "South End最远端（离湖远+离卫生间远）",
@@ -1682,11 +1682,11 @@ export const campgrounds: Campground[] = [
       { area: "Tent/Yurt Area", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 0, hookups: "无", recommendation: "不适用", areaSummary: "帐篷区和蒙古包，不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup (A)", whyVacant: "—", whyHard: "俄勒冈海岸最大营地之一但50A全接驳位仍稀缺" },
+      { area: "A Loop (Electrical + Water)", whyVacant: "—", whyHard: "俄勒冈海岸最大营地之一但50A全接驳位仍稀缺" },
       { area: "Electrical Only (B)", whyVacant: "数量多（170+位），非旺季周末有空位", whyHard: "旺季周末和假日仍满" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "A Loop: 靠近海滩步道的全接驳位（步行最短到海滩）",
     avoid: "B Loop最内侧（离海滩最远+靠近公路）",
@@ -1733,7 +1733,7 @@ export const campgrounds: Campground[] = [
       { area: "Electrical Hookup", whyVacant: "营位数量多（265个），非旺季相对容易预订", whyHard: "旺季周末和假日仍满" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "Site 1-50（靠近海滩步道+自行车道起点+树荫较好）",
     avoid: "Site 200+（离海滩最远+靠近马场有味道）",
@@ -1782,7 +1782,7 @@ export const campgrounds: Campground[] = [
       { area: "Electrical (A-E)", whyVacant: "数量多（280+位），非旺季有空位", whyHard: "旺季周末仍很快满" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "F Loop: 靠近Cleawox Lake的营位（步行最短到湖边+全接驳）",
     avoid: "A Loop最内侧（离湖和沙丘最远）",
@@ -1827,11 +1827,11 @@ export const campgrounds: Campground[] = [
       { area: "Tent Only", overall: 3, scenery: 5, kidFriendly: 3, tcCompat: 0, hookups: "无", recommendation: "不适用", areaSummary: "帐篷区，不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup (A)", whyVacant: "—", whyHard: "俄勒冈最受欢迎的州立公园，全接驳位极其抢手" },
+      { area: "A Loop (Electrical + Water)", whyVacant: "—", whyHard: "俄勒冈最受欢迎的州立公园，全接驳位极其抢手" },
       { area: "Electrical (B-C)", whyVacant: "偶有取消，尤其是雨季", whyHard: "但旺季仍很快被抢" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "A Loop: Site 1-20（靠近South Falls步道入口+全接驳+树荫好）",
     avoid: "Tent区（不适合TC）",
@@ -1875,11 +1875,11 @@ export const campgrounds: Campground[] = [
       { area: "Tent (C-E Loops)", overall: 3, scenery: 5, kidFriendly: 3, tcCompat: 0, hookups: "无", recommendation: "不适用", areaSummary: "帐篷区，风景同样壮观但不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "俄勒冈东部最热门营地，风景绝佳+设施完善，旺季提前6个月就满" },
+      { area: "Full Hookup (A-B)", whyVacant: "—", whyHard: "俄勒冈东部最热门营地，风景绝佳+设施完善，旺季提前6个月就满" },
       { area: "Tent", whyVacant: "帐篷客偶有取消", whyHard: "但旺季仍很快被抢" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "A-B Loop: 靠近湖边的营位（湖景+全接驳+步行到水边最短）",
     avoid: "C-D Tent区（不适合TC）",
@@ -1924,11 +1924,11 @@ export const campgrounds: Campground[] = [
       { area: "Tent/Walk-in Sites", overall: 2, scenery: 4, kidFriendly: 2, tcCompat: 0, hookups: "无", recommendation: "不适用", areaSummary: "步行帐篷区，不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "波特兰最近的大型湖泊营地+50A全接驳，旺季极其抢手" },
+      { area: "Full Hookup Loops", whyVacant: "—", whyHard: "波特兰最近的大型湖泊营地+50A全接驳，旺季极其抢手" },
       { area: "Electrical", whyVacant: "数量较多，非旺季有空位", whyHard: "旺季周末仍满" }
     ],
     bookingWindows: [
-      { area: "全营地", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "Full Hookup: Site 1-30（最靠近湖边+船坞+全接驳）",
     avoid: "Walk-in Tent区（不适合TC）",
@@ -1975,9 +1975,9 @@ export const campgrounds: Campground[] = [
       { area: "C Loop", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约22个营位，离温泉最远，靠近公路有噪音。" }
     ],
     vacancyAnalysis: [
-      { area: "A Loop", whyVacant: "—", whyHard: "Olympic NP最热门营地之一，温泉吸引力极大，旺季需提前6个月预订" },
+      { area: "Bluff Sites (A Loop)", whyVacant: "—", whyHard: "Olympic NP最热门营地之一，温泉吸引力极大，旺季需提前6个月预订" },
       { area: "B Loop", whyVacant: "偶有取消", whyHard: "取消后很快被抢" },
-      { area: "C Loop", whyVacant: "离温泉最远+靠近公路，取消率稍高", whyHard: "—" }
+      { area: "Interior Sites (C Loop)", whyVacant: "离温泉最远+靠近公路，取消率稍高", whyHard: "—" }
     ],
     bookingWindows: [],
     recommendedSites: "A Loop: A21-A30（最靠近温泉步道入口+树荫好+安静）",
@@ -2023,7 +2023,7 @@ export const campgrounds: Campground[] = [
       { area: "C Loop (Tent, 87-149)", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 0, hookups: "无", recommendation: "不适用", areaSummary: "帐篷区，不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "俄勒冈南海岸最热门营地，全接驳位极其抢手" },
+      { area: "A Loop (Full Hookup, 1-63)", whyVacant: "—", whyHard: "俄勒冈南海岸最热门营地，全接驳位极其抢手" },
       { area: "Electrical", whyVacant: "偶有取消", whyHard: "取消后很快被抢" }
     ],
     bookingWindows: [],
@@ -2066,11 +2066,11 @@ export const campgrounds: Campground[] = [
     ],
     areas: [
       { area: "Main Campground (64-130)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "强烈推荐", areaSummary: "约68个营位，靠近Diablo Lake湖岸，被古老针叶林环绕。无接驳但风景绝佳。最长RV 35ft。" },
-      { area: "Upper Section (131-164, 季节性)", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约42个营位，仅夏季开放，较远离湖边。" }
+      { area: "Upper Section (131-164, Seasonal)", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约42个营位，仅夏季开放，较远离湖边。" }
     ],
     vacancyAnalysis: [
       { area: "Main Campground (64-130)", whyVacant: "—", whyHard: "North Cascades NP唯一大型营地，先到先得+可预订混合，旺季很快满" },
-      { area: "North Loop", whyVacant: "仅夏季开放+离湖远，偶有空位", whyHard: "—" }
+      { area: "Main Campground", whyVacant: "仅夏季开放+离湖远，偶有空位", whyHard: "—" }
     ],
     bookingWindows: [],
     recommendedSites: "South Loop: 靠近湖边的营位（湖景+步道入口近）",
@@ -2116,8 +2116,8 @@ export const campgrounds: Campground[] = [
       { area: "Loop #3 Partial Hookup (60-94)", overall: 4, scenery: 3, kidFriendly: 4, tcCompat: 4, hookups: "有(W/30A)", recommendation: "推荐", areaSummary: "约35个部分接驳营位（水+30A电），靠近Columbia River，地势平坦。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "夏季极热地区唯一有水上设施的营地，家庭极其追捧" },
-      { area: "Standard", whyVacant: "无接驳+夏季酷热，偶有取消", whyHard: "—" }
+      { area: "Loop #2 Full Hookup (28-59)", whyVacant: "—", whyHard: "夏季极热地区唯一有水上设施的营地，家庭极其追捧" },
+      { area: "Loop #1 Standard (1-27)", whyVacant: "无接驳+夏季酷热，偶有取消", whyHard: "—" }
     ],
     bookingWindows: [],
     recommendedSites: "Full Hookup: Site 1-15（最靠近游泳区+水上滑梯+全接驳）",
@@ -2297,8 +2297,8 @@ export const campgrounds: Campground[] = [
       { area: "Bay Camp Loop (Utility 131-166)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 4, hookups: "有(W/30A)", recommendation: "一般", areaSummary: "约36个水电营位，位于公园最南端，较安静但离主要设施较远。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "华州东部最热门水上活动营地，夏季极其抢手" },
-      { area: "Standard", whyVacant: "无接驳+夏季酷热（40°C+），帐篷客常取消", whyHard: "—" }
+      { area: "Sage Camp Loop (Utility)", whyVacant: "—", whyHard: "华州东部最热门水上活动营地，夏季极其抢手" },
+      { area: "Dune/Bay Camp Loop", whyVacant: "无接驳+夏季酷热（40°C+），帐篷客常取消", whyHard: "—" }
     ],
     bookingWindows: [],
     recommendedSites: "Full Hookup: 靠近湖边和船坞的营位（水上活动最方便+全接驳）",
@@ -2344,7 +2344,7 @@ export const campgrounds: Campground[] = [
       { area: "Horse Camp", overall: 2, scenery: 3, kidFriendly: 2, tcCompat: 2, hookups: "有(W)", recommendation: "不推荐", areaSummary: "马匹营地，不适合普通露营者。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup (A)", whyVacant: "营位较多（100个），非旺季有空位", whyHard: "旺季周末仍满" },
+      { area: "A Loop (Electrical + Water)", whyVacant: "营位较多（100个），非旺季有空位", whyHard: "旺季周末仍满" },
       { area: "Electrical (B-C)", whyVacant: "数量多，相对容易预订", whyHard: "—" }
     ],
     bookingWindows: [],
@@ -2390,7 +2390,7 @@ export const campgrounds: Campground[] = [
       { area: "Yurt/Cabin + Tent (T1-T6)", overall: 3, scenery: 3, kidFriendly: 4, tcCompat: 0, hookups: "—", recommendation: "不适用", areaSummary: "蒙古包和小木屋，不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup (A)", whyVacant: "靠近波特兰但不是海岸/山区，吸引力相对较低，非旺季有空位", whyHard: "旺季周末仍满" },
+      { area: "A Loop (Electrical + Water)", whyVacant: "靠近波特兰但不是海岸/山区，吸引力相对较低，非旺季有空位", whyHard: "旺季周末仍满" },
       { area: "Electrical (B)", whyVacant: "同上，且数量适中", whyHard: "—" }
     ],
     bookingWindows: [],
@@ -2437,7 +2437,7 @@ export const campgrounds: Campground[] = [
       { area: "C-D Loop (Tent/Yurt, C1-C27, D1-D35)", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 0, hookups: "无", recommendation: "不适用", areaSummary: "帐篷和蒙古包区，不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup (A)", whyVacant: "—", whyHard: "仅29个全接驳位+受保护海湾极其稀缺，旺季极其抢手" },
+      { area: "A Loop (Electrical + Water)", whyVacant: "—", whyHard: "仅29个全接驳位+受保护海湾极其稀缺，旺季极其抢手" },
       { area: "Electrical (B)", whyVacant: "偶有取消", whyHard: "取消后很快被抢" }
     ],
     bookingWindows: [],
@@ -2483,7 +2483,7 @@ export const campgrounds: Campground[] = [
       { area: "Crooked River Campground (E Loop, Electrical)", overall: 4, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "有(30A/W)", recommendation: "推荐", areaSummary: "约91个带水电营位，位于峡谷底部，风景更壮观。" }
     ],
     vacancyAnalysis: [
-      { area: "Deschutes (全接驳)", whyVacant: "—", whyHard: "中俄勒冈最热门水上活动营地，夏季极其抢手" },
+      { area: "Deschutes River Campground (Full Hookup)", whyVacant: "—", whyHard: "中俄勒冈最热门水上活动营地，夏季极其抢手" },
       { area: "Crooked River", whyVacant: "数量较多（91个），非旺季有空位", whyHard: "旺季周末仍满" }
     ],
     bookingWindows: [],
@@ -2531,7 +2531,7 @@ export const campgrounds: Campground[] = [
       { area: "North Loop (100-149, Electrical) + Cabins", overall: 3, scenery: 4, kidFriendly: 4, tcCompat: 0, hookups: "—", recommendation: "不适用", areaSummary: "小木屋，不适合TC。" }
     ],
     vacancyAnalysis: [
-      { area: "Full Hookup", whyVacant: "—", whyHard: "Bend地区最受欢迎的州立营地，全接驳位旺季极其抢手" },
+      { area: "South Loop (1-44, Full Hookup)", whyVacant: "—", whyHard: "Bend地区最受欢迎的州立营地，全接驳位旺季极其抢手" },
       { area: "Electrical", whyVacant: "偶有取消", whyHard: "取消后很快被抢" }
     ],
     bookingWindows: [],
