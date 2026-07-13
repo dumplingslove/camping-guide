@@ -15,6 +15,8 @@ export const users = mysqlTable("users", {
   openId: varchar("openId", { length: 64 }).notNull().unique(),
   name: text("name"),
   email: varchar("email", { length: 320 }),
+  /** bcrypt hash of password. Null for OAuth-only users. */
+  passwordHash: varchar("passwordHash", { length: 255 }),
   loginMethod: varchar("loginMethod", { length: 64 }),
   role: mysqlEnum("role", ["user", "admin"]).default("user").notNull(),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
@@ -40,3 +42,14 @@ export const visitedRecords = mysqlTable("visited_records", {
 
 export type VisitedRecord = typeof visitedRecords.$inferSelect;
 export type InsertVisitedRecord = typeof visitedRecords.$inferInsert;
+
+// Favorites - tracks campgrounds the user has favorited
+export const favorites = mysqlTable("favorites", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull(),
+  campgroundId: int("campgroundId").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type Favorite = typeof favorites.$inferSelect;
+export type InsertFavorite = typeof favorites.$inferInsert;

@@ -32,6 +32,63 @@ export function useVisited() {
     onSuccess: () => dbQuery.refetch(),
   });
 
+  const bulkImportMutation = trpc.visited.bulkImport.useMutation({
+    onSuccess: () => dbQuery.refetch(),
+  });
+
+  // Auto-migrate localStorage visited data to DB on first login
+  useEffect(() => {
+    if (!isAuthenticated) return;
+    if (dbQuery.isLoading) return;
+
+    const MIGRATED_KEY = "camp_visited_migrated";
+    if (localStorage.getItem(MIGRATED_KEY)) return;
+
+    // Collect all localStorage visited entries
+    const entries: { campgroundId: number; startDate: string; endDate?: string | null; sites: string; notes?: string | null }[] = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith("camp_visited_") && key !== "camp_visited_global") {
+        const campId = parseInt(key.replace("camp_visited_", ""), 10);
+        if (isNaN(campId)) continue;
+        try {
+          const stored = JSON.parse(localStorage.getItem(key) || "[]");
+          for (const entry of stored) {
+            entries.push({
+              campgroundId: campId,
+              startDate: entry.date || entry.startDate || "",
+              endDate: entry.endDate || null,
+              sites: entry.sites || "",
+              notes: entry.notes || null,
+            });
+          }
+        } catch {}
+      }
+    }
+
+    if (entries.length > 0) {
+      bulkImportMutation.mutate(
+        { records: entries },
+        {
+          onSuccess: () => {
+            localStorage.setItem(MIGRATED_KEY, "true");
+            // Clean up localStorage visited entries
+            const keysToRemove: string[] = [];
+            for (let i = 0; i < localStorage.length; i++) {
+              const key = localStorage.key(i);
+              if (key && (key.startsWith("camp_visited_") || key === "camp_visited_global")) {
+                keysToRemove.push(key);
+              }
+            }
+            keysToRemove.forEach(k => localStorage.removeItem(k));
+          },
+        }
+      );
+    } else {
+      localStorage.setItem(MIGRATED_KEY, "true");
+    }
+  }, [isAuthenticated, dbQuery.isLoading]);
+
   // localStorage fallback for non-logged-in users
   const [localVisits, setLocalVisits] = useState<VisitedEntry[]>([]);
 

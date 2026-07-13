@@ -15,6 +15,13 @@
       "when": 1783896944606,
       "tag": "0001_dry_stature",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1783929405512,
+      "tag": "0002_tiresome_swordsman",
+      "breakpoints": true
     }
   ]
 }

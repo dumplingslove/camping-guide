@@ -177,3 +177,9 @@
 - [x] 营地googleMapsUrl改为指向campsite入口/check-in点（不是公园），不同area标注不同入口
 - [x] 修复Cranberry Lake浅水区嘻水的mapUrl和配图（mapUrl改为Cranberry+Lake+Whidbey+Island+WA，配图从攒岩图改为湖泳图）
 - [x] 逐一验证所有171个活动的mapUrl链接正确性（全量171/171全部正确解析，审计结果见mapurl-audit-results.txt）
+
+## 账户系统改造 (2026-07-13)
+- [x] 添加邮箱+密码登录（仅管理员，不支持注册）
+- [x] 收藏功能从localStorage迁移到数据库（云端存储）
+- [x] 登录后自动检测并迁移localStorage中的旧数据到数据库
+- [x] 导出项目代码到GitHub备份 (https://github.com/dumplingslove/camping-guide)

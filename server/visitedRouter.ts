@@ -39,6 +39,37 @@ export const visitedRouter = router({
       return { success: true };
     }),
 
+  // Bulk import visited records from localStorage migration
+  bulkImport: protectedProcedure
+    .input(
+      z.object({
+        records: z.array(
+          z.object({
+            campgroundId: z.number(),
+            startDate: z.string(),
+            endDate: z.string().nullish(),
+            sites: z.string().default(""),
+            notes: z.string().nullish(),
+          })
+        ),
+      })
+    )
+    .mutation(async ({ ctx, input }) => {
+      let imported = 0;
+      for (const record of input.records) {
+        await addVisitedRecord({
+          userId: ctx.user.id,
+          campgroundId: record.campgroundId,
+          startDate: record.startDate,
+          endDate: record.endDate || null,
+          sites: record.sites,
+          notes: record.notes || null,
+        });
+        imported++;
+      }
+      return { success: true, imported };
+    }),
+
   // Update a visited record
   update: protectedProcedure
     .input(

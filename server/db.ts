@@ -1,6 +1,6 @@
 import { eq, and, desc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, visitedRecords, InsertVisitedRecord, VisitedRecord } from "../drizzle/schema";
+import { InsertUser, users, visitedRecords, InsertVisitedRecord, VisitedRecord, favorites, Favorite, InsertFavorite } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -123,4 +123,60 @@ export async function updateVisitedRecord(
   await db.update(visitedRecords)
     .set(data)
     .where(and(eq(visitedRecords.id, id), eq(visitedRecords.userId, userId)));
+}
+
+// ===== Auth Helpers =====
+
+export async function getUserByEmail(email: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(users).where(eq(users.email, email)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+export async function updateUserPassword(userId: number, passwordHash: string): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.update(users).set({ passwordHash }).where(eq(users.id, userId));
+}
+
+// ===== Favorites =====
+
+export async function getFavorites(userId: number): Promise<Favorite[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(favorites)
+    .where(eq(favorites.userId, userId))
+    .orderBy(desc(favorites.createdAt));
+}
+
+export async function addFavorite(userId: number, campgroundId: number): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  // Avoid duplicates
+  const existing = await db.select().from(favorites)
+    .where(and(eq(favorites.userId, userId), eq(favorites.campgroundId, campgroundId)))
+    .limit(1);
+  if (existing.length > 0) return;
+  await db.insert(favorites).values({ userId, campgroundId });
+}
+
+export async function removeFavorite(userId: number, campgroundId: number): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.delete(favorites).where(
+    and(eq(favorites.userId, userId), eq(favorites.campgroundId, campgroundId))
+  );
+}
+
+export async function bulkAddFavorites(userId: number, campgroundIds: number[]): Promise<void> {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  if (campgroundIds.length === 0) return;
+  // Get existing favorites to avoid duplicates
+  const existing = await db.select().from(favorites).where(eq(favorites.userId, userId));
+  const existingIds = new Set(existing.map(f => f.campgroundId));
+  const newIds = campgroundIds.filter(id => !existingIds.has(id));
+  if (newIds.length === 0) return;
+  await db.insert(favorites).values(newIds.map(id => ({ userId, campgroundId: id })));
 }

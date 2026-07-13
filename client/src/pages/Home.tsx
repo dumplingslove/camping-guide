@@ -181,6 +181,23 @@ export default function Home() {
               <BarChart3 size={16} />
               <span className="hidden sm:inline">统计</span>
             </Link>
+            {/* Login/User */}
+            {isAuthenticated ? (
+              <button
+                onClick={() => logout()}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-red-600 hover:bg-red-50 transition-colors"
+                title={user?.name || "用户"}
+              >
+                <span className="w-6 h-6 rounded-full bg-pine/10 flex items-center justify-center text-[10px] font-bold text-pine">
+                  {(user?.name || "U")[0]}
+                </span>
+                <span className="hidden sm:inline text-xs">注销</span>
+              </button>
+            ) : (
+              <Link href="/login" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+                <span className="hidden sm:inline">登录</span>
+              </Link>
+            )}
             <div className="hidden md:flex items-center gap-2 text-sm text-muted-foreground font-mono ml-2">
               <MapPin size={14} />
               <span>From Redmond, WA</span>

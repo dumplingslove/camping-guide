@@ -13,6 +13,7 @@ import Itinerary from "./pages/Itinerary";
 import AdminReviews from "./pages/AdminReviews";
 import MapPage from "./pages/MapPage";
 import Stats from "./pages/Stats";
+import Login from "./pages/Login";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/map" component={MapPage} />
       <Route path="/stats" component={Stats} />
       <Route path="/admin/reviews" component={AdminReviews} />
+      <Route path="/login" component={Login} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
