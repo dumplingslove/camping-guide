@@ -2622,11 +2622,11 @@ export const campgrounds: Campground[] = [
     type: "provincial",
     season: "Jun-Sep",
     activities: [
-      { name: "退潮沙滩探索", ageRange: "1岁+", distance: "步行5分钟", details: "退潮时海滩延伸近1公里，浅水区温暖安全，适合幼儿玩沙和踩水", mapUrl: "https://www.google.com/maps/place/Rathtrevor+Beach/@49.322,-124.262,15z" },
+      { name: "退潮沙滩探索", ageRange: "1岁+", distance: "步行5分钟", details: "退潮时海滩延伸近1公里，浅水区温暖安全，适合幼儿玩沙和踩水", mapUrl: "https://www.google.com/maps/search/Rathtrevor+Beach+Provincial+Park+beach" },
       { name: "潮池生物观察", ageRange: "2岁+", distance: "步行10分钟", details: "退潮时可观察海星、螃蟹、海葵等潮间带生物" },
       { name: "森林步道漫步", ageRange: "1.5岁+", distance: "营地内", details: "平坦的林间步道穿越高大的花旗松林，适合推婴儿车", mapUrl: "https://www.google.com/maps/search/Rathtrevor+Beach+Trail" },
       { name: "游乐场玩耍", ageRange: "2岁+", distance: "营地内", details: "营地内设有儿童游乐设施" },
-      { name: "Parksville海滨小镇", ageRange: "任何年龄", distance: "开车5分钟", details: "冰淇淋店、迷你高尔夫、社区公园等家庭活动", mapUrl: "https://www.google.com/maps/place/Parksville,+BC" },
+      { name: "Parksville海滨小镇", ageRange: "任何年龄", distance: "开车5分钟", details: "冰淇淋店、迷你高尔夫、社区公园等家庭活动", mapUrl: "https://www.google.com/maps/search/Parksville+Community+Park+BC" },
       { name: "观鸟（Brant鹅）", ageRange: "任何年龄", distance: "海滩", details: "每年春季大量Brant鹅迁徙经过，公园以此命名营区" },
     ],
     areas: [
@@ -2675,12 +2675,12 @@ export const campgrounds: Campground[] = [
     type: "provincial",
     season: "Jul-Sep",
     activities: [
-      { name: "Lightning Lake 游泳/浅水玩耍", ageRange: "1.5岁+", distance: "步行5分钟", details: "湖水夏季温暖，有沙滩和浅水区，非常适合幼儿玩水", mapUrl: "https://www.google.com/maps/place/Lightning+Lake/@49.062,-120.825,14z" },
+      { name: "Lightning Lake 游泳/浅水玩耍", ageRange: "1.5岁+", distance: "步行5分钟", details: "湖水夏季温暖，有沙滩和浅水区，非常适合幼儿玩水", mapUrl: "https://www.google.com/maps/search/Lightning+Lake+Day+Use+Area+Manning+Park+BC" },
       { name: "Lightning Lake 环湖步道", ageRange: "2岁+", distance: "湖边", details: "9km环湖步道，平坦好走，可推婴儿车，沿途风景优美", mapUrl: "https://www.google.com/maps/search/Lightning+Lake+Loop+Trail+Manning+Park" },
       { name: "独木舟/皮划艇租赁", ageRange: "2岁+", distance: "湖边船屋", details: "可租独木舟、皮划艇、脚踏船，在湖上漫游", mapUrl: "https://www.google.com/maps/search/Lightning+Lake+Boat+Rental+Manning+Park" },
       { name: "游乐场", ageRange: "2岁+", distance: "营地内", details: "营地内设有儿童游乐场" },
       { name: "Frosty Mountain 徒步（高级）", ageRange: "成人", distance: "营地出发", details: "10.4km单程，海拔1150m爬升，可看到壮丽的高山草甸和雪山全景" },
-      { name: "Manning Park Resort 活动", ageRange: "任何年龄", distance: "开车10分钟", details: "度假村有餐厅、小店、迷你高尔夫等设施", mapUrl: "https://www.google.com/maps/place/Manning+Park+Resort" },
+      { name: "Manning Park Resort 活动", ageRange: "任何年龄", distance: "开车10分钟", details: "度假村有餐厅、小店、迷你高尔夫等设施", mapUrl: "https://www.google.com/maps/search/Manning+Park+Resort+BC" },
       { name: "野花草甸观赏", ageRange: "任何年龄", distance: "开车20分钟", details: "7-8月Blackwall Peak高山草甸野花盛开，景色壮观" },
     ],
     areas: [
@@ -2726,11 +2726,11 @@ export const campgrounds: Campground[] = [
     type: "provincial",
     season: "Jun-Sep",
     activities: [
-      { name: "Cultus Lake 游泳", ageRange: "1.5岁+", distance: "步行5分钟", details: "湖水温暖（夏季可达22-24°C），有沙滩和标记游泳区，非常适合幼儿", mapUrl: "https://www.google.com/maps/place/Cultus+Lake/@49.058,-121.967,14z" },
-      { name: "Cultus Lake Waterpark", ageRange: "2岁+", distance: "开车5分钟", details: "附近的水上乐园，有滑水道、波浪池等，适合全家", mapUrl: "https://www.google.com/maps/place/Cultus+Lake+Waterpark" },
+      { name: "Cultus Lake 游泳", ageRange: "1.5岁+", distance: "步行5分钟", details: "湖水温暖（夏季可达22-24°C），有沙滩和标记游泳区，非常适合幼儿", mapUrl: "https://www.google.com/maps/search/Cultus+Lake+Provincial+Park+beach+BC" },
+      { name: "Cultus Lake Waterpark", ageRange: "2岁+", distance: "开车5分钟", details: "附近的水上乐园，有滑水道、波浪池等，适合全家", mapUrl: "https://www.google.com/maps/search/Cultus+Lake+Waterpark+Chilliwack+BC" },
       { name: "Teapot Hill 步道", ageRange: "3岁+", distance: "开车5分钟", details: "5km往返，可俯瞰整个湖泊和山谷，沿途有藏在树上的茶壶装饰", mapUrl: "https://www.google.com/maps/search/Teapot+Hill+Trail+Cultus+Lake" },
       { name: "独木舟/皮划艇", ageRange: "2岁+", distance: "湖边", details: "可在湖上划独木舟、皮划艇或站立式桨板", mapUrl: "https://www.google.com/maps/search/Cultus+Lake+boat+rental" },
-      { name: "Cultus Lake Adventure Park", ageRange: "2岁+", distance: "开车5分钟", details: "小型游乐园，有卑弯车、碰碰船、迷你高尔夫等", mapUrl: "https://www.google.com/maps/place/Cultus+Lake+Adventure+Park" },
+      { name: "Cultus Lake Adventure Park", ageRange: "2岁+", distance: "开车5分钟", details: "小型游乐园，有卑弯车、碰碰船、迷你高尔夫等", mapUrl: "https://www.google.com/maps/search/Cultus+Lake+Adventure+Park+BC" },
       { name: "Giant Douglas-fir Trail", ageRange: "1.5岁+", distance: "营地附近", details: "45分钟往返的平坦步道，可看到巨大的古老花旗松" },
       { name: "钓鱼", ageRange: "3岁+", distance: "湖边", details: "湖中有虹鳟、切喀特鳟等，适合亲子垂钓" },
     ],
@@ -2781,7 +2781,7 @@ export const campgrounds: Campground[] = [
     type: "provincial",
     season: "Jun-Sep",
     activities: [
-      { name: "Alouette Lake 游泳/沙滩", ageRange: "1.5岁+", distance: "步行10分钟", details: "South Beach有标记游泳区和沙滩，夏季水温适宜", mapUrl: "https://www.google.com/maps/place/Alouette+Lake+South+Beach" },
+      { name: "Alouette Lake 游泳/沙滩", ageRange: "1.5岁+", distance: "步行10分钟", details: "South Beach有标记游泳区和沙滩，夏季水温适宜", mapUrl: "https://www.google.com/maps/search/Alouette+Lake+South+Beach+Golden+Ears+Park" },
       { name: "独木舟/皮划艇租赁", ageRange: "2岁+", distance: "South Beach", details: "South Beach日间使用区可租独木舟、皮划艇和脚踏船", mapUrl: "https://www.google.com/maps/search/Alouette+Lake+canoe+rental" },
       { name: "Gold Creek 步道", ageRange: "2岁+", distance: "营地附近", details: "平坦的河边步道，可推婴儿车，沿途可看到瀑布", mapUrl: "https://www.google.com/maps/search/Gold+Creek+Trail+Golden+Ears" },
       { name: "Lower Falls 短徒步", ageRange: "2岁+", distance: "开车5分钟", details: "2.7km往返的简单步道，可到达美丽的瀑布", mapUrl: "https://www.google.com/maps/search/Lower+Falls+Golden+Ears+Park" },

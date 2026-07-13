@@ -156,3 +156,9 @@
 - [x] 大表默认展开（不折叠）
 - [x] 改进筛选filter UI和功能
 - [x] BC营地补齐内容（Manning Park hookup详情、Rathtrevor轮渡tips、vacancy分析等）
+
+## 质检报告修复 (2026-07-13)
+- [x] 修复活动(activities)清单中Google Maps链接错误 (BC营地mapUrl从/maps/place/改为/maps/search/+精确查询词)
+- [x] 修复活动(activities)配图错误 (同一修复: Places API现在搜索正确地点并返回正确照片)
+- [x] (P3) 详情页头图未重复纳入下方相册 → 已确认头图已在gallery第一张(line 925: photos={[campground.image, ...photoData.photos]})
+- [x] (P3) 地图首次加载延迟增加loading提示 (Map.tsx添加spinner+"地图加载中..."覆盖层)

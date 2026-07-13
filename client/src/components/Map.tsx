@@ -76,7 +76,7 @@
 
 /// <reference types="@types/google.maps" />
 
-import { useEffect, useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { usePersistFn } from "@/hooks/usePersistFn";
 import { cn } from "@/lib/utils";
 
@@ -136,6 +136,7 @@ export function MapView({
 }: MapViewProps) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<google.maps.Map | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const init = usePersistFn(async () => {
     await loadMapScript();
@@ -152,6 +153,7 @@ export function MapView({
       streetViewControl: true,
       mapId: "DEMO_MAP_ID",
     });
+    setIsLoading(false);
     if (onMapReady) {
       onMapReady(map.current);
     }
@@ -162,6 +164,14 @@ export function MapView({
   }, [init]);
 
   return (
-    <div ref={mapContainer} className={cn("w-full h-[500px]", className)} />
+    <div className={cn("w-full h-[500px] relative", className)}>
+      <div ref={mapContainer} className="w-full h-full" />
+      {isLoading && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-muted/80 backdrop-blur-sm rounded-lg">
+          <div className="w-8 h-8 border-3 border-pine/30 border-t-pine rounded-full animate-spin mb-3" />
+          <p className="text-sm text-muted-foreground font-medium">地图加载中...</p>
+        </div>
+      )}
+    </div>
   );
 }
