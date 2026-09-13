@@ -1,0 +1,72 @@
+{
+  "军事博物馆": {
+    "file": "act-285.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fort_Stevens_Military_Equipment_(Clatsop_County,_Oregon_scenic_images)_(clatDA0117a).jpg",
+    "author": "Gary Halvorson, Oregon State Archives",
+    "license": "CC BY 2.0",
+    "note": "Fort Stevens实地军事装备（加农炮与军用吉普）展陈，契合该公园军事博物馆展品主题"
+  },
+  "Commanding Officer's Quarters博物馆": {
+    "file": "act-286.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fort_Worden_-_Officers_Row_01.jpg",
+    "author": "Joe Mabel",
+    "license": "CC BY-SA 3.0",
+    "note": "Fort Worden Officers Row历史军官住宅群（该博物馆即位于Officers Row）"
+  },
+  "Visitor Center": {
+    "file": "act-287.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Beaver_Meadows_Visitor_Center_2014a.jpg",
+    "author": "Dirk Huizenga",
+    "license": "CC BY-SA 4.0",
+    "note": "国家公园游客中心建筑外观（Beaver Meadows Visitor Center；非Hoh本馆，Commons无Hoh馆舍本体开放许可图）"
+  },
+  "Cultus Lake Adventure Park": {
+    "file": "act-288.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Water_slide_and_pool.jpg",
+    "author": "Brandt Luke Zorn",
+    "license": "CC BY-SA 2.0",
+    "note": "户外水上乐园滑梯与戏水池实景"
+  },
+  "Mountain Lake划船": {
+    "file": "act-289.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Canoeing,_Lake_Tahoe.jpg",
+    "author": "Downtowngal",
+    "license": "CC BY-SA 3.0",
+    "note": "湖上独木舟/皮划艇，有人物在划船"
+  },
+  "Slidewaters 水上乐园": {
+    "file": "act-290.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Water-Park-Slide-7955.jpg",
+    "author": "David R. Tribble (Loadmaster)",
+    "license": "CC BY-SA 3.0",
+    "note": "儿童乘浮圈滑水道，水上乐园实景"
+  },
+  "Timothy Lake游泳": {
+    "file": "act-291.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Swimming_in_Hungry_Mother_Lake_(7352260530).jpg",
+    "author": "Virginia State Parks staff",
+    "license": "CC BY 2.0",
+    "note": "湖中游泳的人（非Timothy Lake本湖，Commons无该湖游泳实拍的开放许可图）"
+  },
+  "Ohanapecosh River戏水": {
+    "file": "act-292.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Wading_in_the_Creek_by_Terry_Straehley_(49848863902).jpg",
+    "author": "Terry Straehley",
+    "license": "CC BY 2.0",
+    "note": "儿童在浅滩溪流中戏水，契合娃可玩"
+  },
+  "Spencer Creek戏水": {
+    "file": "act-293.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Swiming-babinda-creek.jpg",
+    "author": "Steve Fitzgerald",
+    "license": "CC BY-SA 4.0",
+    "note": "溪流中游泳的人（Babinda Creek，非Spencer Creek本溪，Commons无该溪戏水实拍的开放许可图）"
+  },
+  "Rogue River游泳": {
+    "file": "act-294.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Swimming_in_the_river_-_geograph.org.uk_-_889901.jpg",
+    "author": "Tessa Shepperson",
+    "license": "CC BY-SA 2.0",
+    "note": "多人在河中戏水游泳（非Rogue River本河，Commons无该河游泳实拍的开放许可图）"
+  }
+}

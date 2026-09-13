@@ -902,3 +902,16 @@
 - `act-282.jpg`（驾车前往Sunrise和Paradise）— Caleb Riston（CC0）— https://commons.wikimedia.org/wiki/File:Rainier20200906.jpg
 - `act-283.jpg`（骑行去沉船遗址）— Rick Obst（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Bow_of_the_Peter_Iredale_shipwreck_in_Fort_Stevens_State_Park.jpg
 - `act-284.jpg`（骑行步道）— Mtn-graphic（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Two_riders_on_the_Kal-Haven_Trail_facing_east.jpg
+
+## 活动图片 act-285–act-294（2026-09-13 精确替换 10 张错配 fallback）
+
+- `act-285.jpg`（军事博物馆）— Gary Halvorson, Oregon State Archives，CC BY 2.0，来源：https://commons.wikimedia.org/wiki/File:Fort_Stevens_Military_Equipment_(Clatsop_County,_Oregon_scenic_images)_(clatDA0117a).jpg
+- `act-286.jpg`（Commanding Officer's Quarters博物馆）— Joe Mabel，CC BY-SA 3.0，来源：https://commons.wikimedia.org/wiki/File:Fort_Worden_-_Officers_Row_01.jpg
+- `act-287.jpg`（Visitor Center）— Dirk Huizenga，CC BY-SA 4.0，来源：https://commons.wikimedia.org/wiki/File:Beaver_Meadows_Visitor_Center_2014a.jpg
+- `act-288.jpg`（Cultus Lake Adventure Park）— Brandt Luke Zorn，CC BY-SA 2.0，来源：https://commons.wikimedia.org/wiki/File:Water_slide_and_pool.jpg
+- `act-289.jpg`（Mountain Lake划船）— Downtowngal，CC BY-SA 3.0，来源：https://commons.wikimedia.org/wiki/File:Canoeing,_Lake_Tahoe.jpg
+- `act-290.jpg`（Slidewaters 水上乐园）— David R. Tribble (Loadmaster)，CC BY-SA 3.0，来源：https://commons.wikimedia.org/wiki/File:Water-Park-Slide-7955.jpg
+- `act-291.jpg`（Timothy Lake 游泳）— Virginia State Parks staff，CC BY 2.0，来源：https://commons.wikimedia.org/wiki/File:Swimming_in_Hungry_Mother_Lake_(7352260530).jpg
+- `act-292.jpg`（Ohanapecosh River 戏水）— Terry Straehley，CC BY 2.0，来源：https://commons.wikimedia.org/wiki/File:Wading_in_the_Creek_by_Terry_Straehley_(49848863902).jpg
+- `act-293.jpg`（Spencer Creek 戏水）— Steve Fitzgerald，CC BY-SA 4.0，来源：https://commons.wikimedia.org/wiki/File:Swiming-babinda-creek.jpg
+- `act-294.jpg`（Rogue River 游泳）— Tessa Shepperson，CC BY-SA 2.0，来源：https://commons.wikimedia.org/wiki/File:Swimming_in_the_river_-_geograph.org.uk_-_889901.jpg
