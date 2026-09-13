@@ -806,4 +806,52 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     ],
     captions: ["日出时分的阿卢特湖与群山", "林间帐篷营位，苔藓森林环绕", "湖畔砾石沙滩与群山", "泛舟阿卢特湖", "金耳山雪峰全景", "帐篷营位全景，MSR帐篷、野餐桌与烤架，碎石营位地面，古树环绕", "碎石帐篷垫上的MSR帐篷近景，林间营位地面细节"],
   },
+  // 54. Kachess Campground
+  54: {
+    photos: [
+      "/camping-guide/images/camp-54/01.jpg",
+      "/camping-guide/images/camp-54/02.jpg",
+      "/camping-guide/images/camp-54/03.jpg",
+      "/camping-guide/images/camp-54/04.jpg",
+      "/camping-guide/images/camp-54/05.jpg",
+      "/camping-guide/images/camp-54/06.jpg",
+      "/camping-guide/images/camp-54/07.jpg",
+      "/camping-guide/images/camp-54/08.jpg",
+      "/camping-guide/images/camp-54/09.jpg",
+      "/camping-guide/images/camp-54/10.jpg"
+    ],
+    captions: ["Beargrass 环区 37 号营位实拍：林间营位、野餐桌与篝火圈", "Gale Creek 环区 8 号营位实拍，可见 8 号营位牌", "Beargrass 环区 25 号双人营位实拍，可见 25 DOUBLE 营位牌", "Gale Creek 环区 20 号营位实拍，可见 20 号营位牌", "Beargrass 环区 41 号双人营位实拍", "Gale Creek 环区 9 号双人营位实拍", "Beargrass 环区 38 号营位实拍", "Beargrass 环区 34 号营位实拍（2023年实住营位）", "Beargrass 环区 29 号双人营位实拍", "Gale Creek 环区 6 号营位实拍"],
+  },
+  // 55. Middle Fork Campground
+  55: {
+    photos: [
+      "/camping-guide/images/camp-55/01.jpg",
+      "/camping-guide/images/camp-55/02.jpg",
+      "/camping-guide/images/camp-55/03.jpg",
+      "/camping-guide/images/camp-55/04.jpg",
+      "/camping-guide/images/camp-55/05.jpg",
+      "/camping-guide/images/camp-55/06.jpg",
+      "/camping-guide/images/camp-55/07.jpg",
+      "/camping-guide/images/camp-55/08.jpg",
+      "/camping-guide/images/camp-55/09.jpg",
+      "/camping-guide/images/camp-55/10.jpg"
+    ],
+    captions: ["30 号营位：野餐桌、烤架、篝火圈与食物储物柜", "23 号营位：野餐桌、篝火圈、储物柜，高大冷杉环绕", "4 号双人营位：两张野餐桌与储物柜", "16 号营位：野餐桌、烤架、储物柜、密林环抱", "10 号营位：野餐桌、篝火圈、食物储物柜", "3 号团体营位：多张野餐桌、篝火圈与巨石", "7 号营位：野餐桌、储物柜、高大针叶林", "21 号营位：林间帐篷垫", "11 号营位：林间帐篷垫", "34 号营位：野餐桌、烤架、篝火圈、储物柜"],
+  },
+  // 56. Coho Campground
+  56: {
+    photos: [
+      "/camping-guide/images/camp-56/01.jpg",
+      "/camping-guide/images/camp-56/02.jpg",
+      "/camping-guide/images/camp-56/03.jpg",
+      "/camping-guide/images/camp-56/04.jpg",
+      "/camping-guide/images/camp-56/05.jpg",
+      "/camping-guide/images/camp-56/06.jpg",
+      "/camping-guide/images/camp-56/07.jpg",
+      "/camping-guide/images/camp-56/08.jpg",
+      "/camping-guide/images/camp-56/09.jpg",
+      "/camping-guide/images/camp-56/10.jpg"
+    ],
+    captions: ["Yurt 57 蒙古包外观：绿色帆布圆顶、高架平台、观湖木甲板", "营地入口标识牌 Welcome to Coho Campground", "Wynoochee Lake 湖景", "Yurt 57 内部：沙发床、桌椅、木格栅墙", "Yurt 57 内部：双层床", "Yurt 57 观湖木甲板视角", "环湖步道口与 Working Forest 解说牌", "营地日用野餐区", "湖岸船坡道与停车区", "湖岸线景观"],
+  },
 };
