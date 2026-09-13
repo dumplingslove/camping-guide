@@ -1,0 +1,45 @@
+{
+  "card": "images/camp-27/card.jpg",
+  "gallery": [
+    {
+      "author": "Washington State Parks",
+      "caption": "宽阔草坪上的房车营位，远处是干旱山丘",
+      "file": "images/camp-27/01.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "湖畔沙滩与长椅，绿草坪向水边延伸",
+      "file": "images/camp-27/02.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "河畔野餐桌，远眺河流与对岸山丘",
+      "file": "images/camp-27/03.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "骑行者在园内铺装步道上骑行",
+      "file": "images/camp-27/04.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "女孩在文纳奇河步行桥上滑滑板，铁桥与山丘为背景",
+      "file": "images/camp-27/05.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park"
+    }
+  ],
+  "id": 27,
+  "name": "Wenatchee Confluence State Park",
+  "card_source": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park",
+  "card_author": "Washington State Parks",
+  "card_license": "官网图片，版权归 Washington State Parks 所有"
+}

@@ -1,0 +1,47 @@
+{
+ "id": 15,
+ "name": "Beverly Beach State Park",
+ "card": "images/camp-15/card.jpg",
+ "card_caption": "Beverly Beach 的漂流木滩，小溪穿过沙滩入海",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Beverly%20beach%20state%20park.jpg",
+ "card_author": "Finetooth",
+ "card_license": "CC BY-SA 3.0",
+ "gallery": [
+  {
+   "file": "images/camp-15/01.jpg",
+   "caption": "幽静的林间营位",
+   "source": "https://commons.wikimedia.org/wiki/File:Beverly%20Beach%20State%20Park%20Campsite.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-15/02.jpg",
+   "caption": "Spencer Creek 上的小桥，桥后是房车营区",
+   "source": "https://commons.wikimedia.org/wiki/File:Footbridge_Over_Spencer_Creek_in_Beverly_Beach_State_Park.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-15/03.jpg",
+   "caption": "Beverly Beach 海滩与远处的岬角",
+   "source": "https://commons.wikimedia.org/wiki/File:Driftwood%20in%20Spencer%20Creek%20at%20Beverly%20Beach%20State%20Park.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-15/04.jpg",
+   "caption": "穿行于蕨类与古木间的林间步道",
+   "source": "https://commons.wikimedia.org/wiki/File:Walking%20the%20dog%20trail%20at%20Beverly%20Beach%20State%20Park.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-15/05.jpg",
+   "caption": "从山坡俯瞰大海，野花盛开",
+   "source": "https://commons.wikimedia.org/wiki/File:Beverly_Beach_and_the_Pacific_Ocean_at_Sunrise.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 2.0"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

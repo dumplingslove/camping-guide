@@ -1,0 +1,60 @@
+{
+ "id": 22,
+ "name": "Farewell Bend Campground",
+ "card": "images/camp-22/card.jpg",
+ "card_caption": "营地附近的 Rogue River 急流",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20Fairwell%20Bend.jpg",
+ "card_author": "Markgorzynski",
+ "card_license": "CC BY-SA 3.0",
+ "gallery": [
+  {
+   "file": "images/camp-22/01.jpg",
+   "caption": "Union Creek 附近的 Rogue River 上游激流",
+   "source": "https://commons.wikimedia.org/wiki/File:Upper%20Rogue%20River%20Near%20Union%20Creek%20OR.JPG",
+   "author": "PGHolbrook",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-22/02.jpg",
+   "caption": "Rogue River Gorge 上游，白水奔腾",
+   "source": "https://commons.wikimedia.org/wiki/File:Rogue%20gorge%20top.jpg",
+   "author": "Finetooth",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-22/03.jpg",
+   "caption": "Rogue River 河谷，皮划艇顺流而下",
+   "source": "https://commons.wikimedia.org/wiki/File:Rafting%20the%20Rogue%20Wild%20%26%20Scenic%20River%20%2834874594925%29.jpg",
+   "author": "Bureau of Land Management Oregon and Washington from Portland, America",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-22/04.jpg",
+   "caption": "Rogue River 峡谷俯瞰",
+   "source": "https://commons.wikimedia.org/wiki/File:-conservationlands15%20Social%20Media%20Takeover%2C%20July%2015th%2C%20Wild%20and%20Scenic%20Rivers%20%2819701585218%29.jpg",
+   "author": "Bureau  of Land Management",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-22/05.jpg",
+   "caption": "Natural Bridge 步道旁，Rogue River 白水穿过熔岩峡谷",
+   "source": "https://commons.wikimedia.org/wiki/File:Rogue-Umpqua%20Scenic%20Byway%20-%20Looking%20Down%20the%20River%20at%20Natural%20Bridge%20-%20NARA%20-%207721339.jpg",
+   "author": "A. E. Crane, U.S. Department of Transportation",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-22/06.jpg",
+   "caption": "National Creek 瀑布",
+   "source": "https://commons.wikimedia.org/wiki/File:National%20Creek%20Falls%2C%20Douglas%20Co%2C%20OR.jpg",
+   "author": "BobJGalindo",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-22/07.jpg",
+   "caption": "Rogue 国家野生与风景河流标识牌",
+   "source": "https://commons.wikimedia.org/wiki/File:Rogue%20National%20Wild%20and%20Scenic%20River%20%2834446242450%29.jpg",
+   "author": "Bureau of Land Management Oregon and Washington from Portland, America",
+   "license": "Public domain"
+  }
+ ]
+}

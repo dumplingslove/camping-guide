@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="营地指南 logo">
+  <!-- badge: pine -->
+  <circle cx="32" cy="32" r="30" fill="#1e4030"/>
+  <!-- sun: sunset -->
+  <circle cx="43" cy="18" r="6.5" fill="#c75f36"/>
+  <!-- mountains: pine-light with snow caps -->
+  <path d="M4 42 L20 20 L30 33 L38 23 L60 42 V46 H4 Z" fill="#2f5b43"/>
+  <path d="M20 20 L24.5 25.5 L15.5 25.5 Z" fill="#faf7ee"/>
+  <path d="M38 23 L42 28 L34 28 Z" fill="#faf7ee"/>
+  <!-- tent: paper with pine doorway -->
+  <path d="M17 54 L32 35 L47 54 Z" fill="#faf7ee"/>
+  <path d="M32 43.5 L37.5 54 H26.5 Z" fill="#1e4030"/>
+  <!-- ground: sand -->
+  <rect x="6" y="54" width="52" height="3.4" rx="1.7" fill="#d9be82"/>
+</svg>

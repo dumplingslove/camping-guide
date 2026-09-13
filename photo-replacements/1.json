@@ -1,0 +1,87 @@
+{
+ "id": 1,
+ "name": "Deception Pass State Park",
+ "card": "images/camp-1/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3ADeception%20Pass%20toward%20dusk%2001.jpg",
+ "card_author": "Joe Mabel",
+ "card_license": "CC BY-SA 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-1/01.jpg",
+   "caption": "鸟瞰 Deception Pass 大桥，桥下碧蓝海水涌动，群岛与针叶林环绕",
+   "source": "https://commons.wikimedia.org/wiki/File%3ADeception%20Pass%20Bridge%2003.jpg",
+   "author": "J Brew",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-1/02.jpg",
+   "caption": "从桥上南端向北眺望，绿色栏杆旁车辆驶过，海峡两侧峭壁森林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALooking%20north%20from%20south%20span%20of%20Deception%20Pass%20bridge%2001.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-1/03.jpg",
+   "caption": "从桥上俯瞰海峡中的 Strawberry Island，海水碧蓝",
+   "source": "https://commons.wikimedia.org/wiki/File%3ADeception%20Pass%2020.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-1/04.jpg",
+   "caption": "Bowman Bay 碧绿海水与砾石滩，岸边森林与停车场",
+   "source": "https://commons.wikimedia.org/wiki/File%3ABowman%20Bay%2C%20April%202010.jpg",
+   "author": "Cody Logan",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-1/05.jpg",
+   "caption": "从 Rosario Head 俯瞰 Bowman Bay，海湾静谧，远山连绵",
+   "source": "https://commons.wikimedia.org/wiki/File%3ABowman%20Bay%20from%20Rosario%20Head%2001.jpg",
+   "author": "Photo by Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-1/06.jpg",
+   "caption": "North Beach 步道，穿行于高大的针叶林与苔藓岩石间",
+   "source": "https://commons.wikimedia.org/wiki/File%3ANorth%20Beach%20Trail%20-%20Deception%20pass%20State%20Park%20%2833858001051%29.jpg",
+   "author": "John Leszczynski from Washington, DC, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-1/07.jpg",
+   "caption": "Rosario Beach 附近的岩石海岸，日落余晖下的礁石与黑沙滩",
+   "source": "https://commons.wikimedia.org/wiki/File%3ARocky%20shoreline%20of%20the%20Rosario%20Beach%20near%20Deception%20Pass%20WA%20%2854318026624%29.jpg",
+   "author": "Cindy Shebley",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-1/08.jpg",
+   "caption": "林间苔藓覆盖的岩石山脊，周围是茂密的针叶林（徒步道旁景）",
+   "source": "https://commons.wikimedia.org/wiki/File%3ADeception%20Pass%20hiking%20-%20Flickr%20-%20brewbooks.jpg",
+   "author": "brewbooks from near Seattle, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-1/09.jpg",
+   "caption": "Cranberry Lake 附近约 850 年树龄的古道格拉斯冷杉，虬曲的枝干",
+   "source": "https://commons.wikimedia.org/wiki/File%3AAncient%20Douglas%20fir%20tree%20at%20Deception%20pass%20state%20park.jpg",
+   "author": "Shantham11",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-1/10.jpg",
+   "caption": "露营者在黄色帐篷门口抱着狗狗合影",
+   "source": "https://commons.wikimedia.org/wiki/File%3AMom%20and%20Baby%20Tor%20at%20Tent.jpg",
+   "author": "Rechelle Schimke",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-1/11.jpg",
+   "caption": "有人在 Cranberry Lake 上划黄色皮划艇，岸边是茂密针叶林",
+   "source": "https://commons.wikimedia.org/wiki/File%3AKayak%205729.JPG",
+   "author": "Walter Siegmund (talk)",
+   "license": "CC BY-SA 3.0"
+  }
+ ]
+}

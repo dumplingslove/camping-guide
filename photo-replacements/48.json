@@ -1,0 +1,45 @@
+{
+ "id": 48,
+ "name": "The Cove Palisades State Park",
+ "card": "images/camp-48/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Cove_Palisades.jpg",
+ "card_author": "Stuart Seeger",
+ "card_license": "CC BY 2.0",
+ "gallery": [
+  {
+   "file": "images/camp-48/01.jpg",
+   "caption": "公园峡谷与毕利奇诺克湖全景",
+   "author": "Ian Poellet",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cove_Palisades_SP_Oregon_2002.03.31.jpg"
+  },
+  {
+   "file": "images/camp-48/02.jpg",
+   "caption": "毕利奇诺克湖峡谷鸟瞰",
+   "author": "Ken Lund",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook_Canyon,_Cove_Palisades_(1291846448).jpg"
+  },
+  {
+   "file": "images/camp-48/03.jpg",
+   "caption": "Crooked River 日间使用区湖面码头",
+   "author": "Gary Halvorson",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook,_Cove_Palisades_State_Park,_Crooked_River_Day_Use_Area_-_DPLA_-_13cb50f694d0dc05627b5a3c397a9d8f.jpg"
+  },
+  {
+   "file": "images/camp-48/04.jpg",
+   "caption": "湖景与远处的喀斯喀特雪山",
+   "author": "icetsarina",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook,_Oregon_(35860948095).jpg"
+  },
+  {
+   "file": "images/camp-48/05.jpg",
+   "caption": "悬崖湖湾边的野花与湖景",
+   "author": "Oregon Department of Transportation / Robin Marshburn",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook_by_Robin_Marshburn_(8272124727).jpg"
+  }
+ ]
+}

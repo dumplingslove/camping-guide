@@ -1,0 +1,87 @@
+{
+ "id": 4,
+ "name": "Cougar Rock Campground",
+ "card": "images/camp-4/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Campground%20Site%20C-20%20%2874d89b80-3ce1-48e9-89bc-9711ac2c2c20%29.jpg",
+ "card_author": "NPS Photo",
+ "card_license": "Public domain",
+ "gallery": [
+  {
+   "file": "images/camp-4/01.jpg",
+   "caption": "C-20 营位高出地面的帐篷平台，林间空地",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Campground%20Site%20C-20%20%289b03f5ea-e836-49ee-812b-ee19421fd843%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/02.jpg",
+   "caption": "C-2 营位的无障碍标识牌，下方挂着预订单",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Accessible%20Site%20C-2%20%282dc42493-ee11-4e6d-9fe3-b0ac8c84cb88%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/03.jpg",
+   "caption": "A 环的男女厕所小屋，水泥步道通往洗手间",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Campground%20A%20Loop%20Restroom%20%283ad613c7-f3ce-4204-af02-c36f6fb27a79%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/04.jpg",
+   "caption": "B 环的洗手间小屋，门前有石砌饮水台和取水设施",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Campground%20C%20Loop%20Restrooms%20%28b90067cd-01c5-49b5-935c-b5bc65cf0b45%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/05.jpg",
+   "caption": "露天剧场，原木座位面向木质表演台，周围是密林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Campground%20Amphitheater%20%28d527f56c-5b41-432b-a48a-ef70c9311597%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/06.jpg",
+   "caption": "木质无障碍栈桥穿过古老的针叶林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ARamp%20to%20Cougar%20Rock%20Amphitheater%20%280af01d18-82f4-48a6-9640-183c1ce9c56c%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/07.jpg",
+   "caption": "D 环的男女洗手间，背后是悬崖山峰与密林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Picnic%20Area%20Accessible%20Bathroom%20%281ec040cc-d6b7-4e84-8afa-52715d902960%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/08.jpg",
+   "caption": "无障碍停车场，标有轮椅车位，旁边是林间野餐区",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Picnic%20Area%20Accessible%20Parking%20%2876e5bd48-c026-4ccf-a9c4-29b8e1fc882a%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/09.jpg",
+   "caption": "林间碎石空地上的两张野餐桌，背后是茂密针叶林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Accessible%20Picnic%20Tables%20%2896695c83-fa35-4fe7-bc54-3dc5ccd93d1e%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/10.jpg",
+   "caption": "营地入口的橙色警示牌：露营自担风险，提示山洪、泥石流等地质灾害",
+   "source": "https://commons.wikimedia.org/wiki/File%3ASign%20%28adb674792c9648d39500d4134c97b301%29.JPG",
+   "author": "Steve Redman (MORA)",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-4/11.jpg",
+   "caption": "NPS 志愿者与两名小朋友击掌互动，小朋友手里拿着 Junior Ranger 活动手册",
+   "source": "https://commons.wikimedia.org/wiki/File%3ASwearing%20in%20Jr.%20Rangers%20%2816893709180%29.jpg",
+   "author": "Mount Rainier National Park from Ashford, WA, United States",
+   "license": "CC BY 2.0"
+  }
+ ]
+}

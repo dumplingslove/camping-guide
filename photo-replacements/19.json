@@ -1,0 +1,53 @@
+{
+ "id": 19,
+ "name": "Little Crater Lake",
+ "card": "images/camp-19/card.jpg",
+ "card_caption": "碧蓝泉水全景：枯木横卧水面，倒映针叶林",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3ALittle_Crater_lake_2016.jpg",
+ "card_author": "Geoff Parsons",
+ "card_license": "CC BY-SA 2.0",
+ "gallery": [
+  {
+   "file": "images/camp-19/01.jpg",
+   "caption": "水晶般清澈的碧蓝泉水倒映针叶林，枯木横卧水面",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALittle_Crater_lake_2016.jpg",
+   "author": "Geoff Parsons",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-19/02.jpg",
+   "caption": "清澈见底的泉水中，沉没的枯木清晰可见",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_1da1616e32e6e8e1beec0202b55ea481.jpg",
+   "author": "Gary Halvorson, Oregon State Archives",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-19/03.jpg",
+   "caption": "高大针叶林倒映在碧绿的湖面上",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_497823e32b469575a222fcf44ecce61c.jpg",
+   "author": "Gary Halvorson, Oregon State Archives",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-19/04.jpg",
+   "caption": "湖畔枯树与碧蓝泉水，岸边绿草丛生",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_4dc73e0d1fb085e5c6f62d61f97d421c.jpg",
+   "author": "Gary Halvorson, Oregon State Archives",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-19/05.jpg",
+   "caption": "深邃蓝色泉水下，沉木根系清晰可见",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_50c76e86669106cc84e2f5586e04de89.jpg",
+   "author": "Gary Halvorson, Oregon State Archives",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-19/06.jpg",
+   "caption": "湖面倒映云杉林，水下枯木影影绰绰",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_5d3bc0a2e6e650bfd46e2fc6370f7410.jpg",
+   "author": "Gary Halvorson, Oregon State Archives",
+   "license": "CC BY 4.0"
+  }
+ ]
+}

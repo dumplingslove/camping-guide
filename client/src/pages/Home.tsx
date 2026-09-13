@@ -4,7 +4,7 @@ import { Link, useSearch } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { useVisited } from "@/hooks/useVisited";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown, User } from "lucide-react";
 import { CampgroundSummaryTable } from "@/components/CampgroundSummaryTable";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663328359702/ih5KuobX6RNPFjbp9hkXB2/logo-icon-WrmXjRpLUoFPAVuBPxkQwH.webp"
+              src="/camping-guide/images/logo.svg"
               alt="Logo"
               className="w-9 h-9"
             />
@@ -145,9 +145,9 @@ export default function Home() {
               营地指南
             </span>
           </Link>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1 sm:gap-3">
             {/* Favorites link */}
-            <Link href="/favorites" className="relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-sunset hover:bg-sunset/5 transition-colors">
+            <Link href="/favorites" className="relative flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-sunset hover:bg-sunset/5 transition-colors">
               <Heart size={16} className={favorites.length > 0 ? "fill-sunset text-sunset" : ""} />
               <span className="hidden sm:inline">收藏</span>
               {favorites.length > 0 && (
@@ -157,7 +157,7 @@ export default function Home() {
               )}
             </Link>
             {/* Compare link */}
-            <Link href="/compare" className="relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-lake hover:bg-lake/5 transition-colors">
+            <Link href="/compare" className="relative flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-lake hover:bg-lake/5 transition-colors">
               <GitCompareArrows size={16} className={compareList.length > 0 ? "text-lake" : ""} />
               <span className="hidden sm:inline">比较</span>
               {compareList.length > 0 && (
@@ -167,17 +167,17 @@ export default function Home() {
               )}
             </Link>
             {/* Map link */}
-            <Link href="/map" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+            <Link href="/map" className="flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
               <Map size={16} />
               <span className="hidden sm:inline">地图</span>
             </Link>
             {/* Itinerary link */}
-            <Link href="/itinerary" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+            <Link href="/itinerary" className="flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
               <FileText size={16} />
               <span className="hidden sm:inline">行程</span>
             </Link>
             {/* Stats link */}
-            <Link href="/stats" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+            <Link href="/stats" className="flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
               <BarChart3 size={16} />
               <span className="hidden sm:inline">统计</span>
             </Link>
@@ -185,7 +185,7 @@ export default function Home() {
             {isAuthenticated ? (
               <button
                 onClick={() => logout()}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-red-600 hover:bg-red-50 transition-colors"
+                className="flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-red-600 hover:bg-red-50 transition-colors"
                 title={user?.name || "用户"}
               >
                 <span className="w-6 h-6 rounded-full bg-pine/10 flex items-center justify-center text-[10px] font-bold text-pine">
@@ -194,7 +194,8 @@ export default function Home() {
                 <span className="hidden sm:inline text-xs">注销</span>
               </button>
             ) : (
-              <Link href="/login" className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+              <Link href="/login" className="flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-pine hover:bg-pine/5 transition-colors">
+                <User size={16} className="sm:hidden" />
                 <span className="hidden sm:inline">登录</span>
               </Link>
             )}
@@ -210,13 +211,13 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663328359702/ih5KuobX6RNPFjbp9hkXB2/hero-banner-VFVRSpzAaRZXVdqamqYTLs.webp"
+            src="/camping-guide/images/camp-23/card.jpg"
             alt="Pacific Northwest Camping"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-pine/60 via-pine/40 to-pine/80" />
         </div>
-        <div className="relative container py-20 md:py-32">
+        <div className="relative container py-14 sm:py-20 md:py-32">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -300,7 +301,7 @@ export default function Home() {
               {hasActiveFilters && (
                 <button
                   onClick={clearFilters}
-                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-2"
                 >
                   <X size={12} />
                   清除
@@ -357,7 +358,7 @@ export default function Home() {
           {/* Row 4: Rating sliders (collapsible) */}
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+            className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors py-2"
           >
             {showFilters ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
             评分筛选

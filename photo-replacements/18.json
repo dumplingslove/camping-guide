@@ -1,0 +1,74 @@
+{
+ "id": 18,
+ "name": "Mora Campground",
+ "card": "images/camp-18/card.jpg",
+ "card_caption": "原始雨林中的帐篷营位，巨树环绕，配篝火圈",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Tent%20camping%20mora%20campground%20campsite%20coast%20d%20archuleta%20march%2006%202015%20%2817185640829%29.jpg",
+ "card_author": "Olympic National Park",
+ "card_license": "Public domain",
+ "gallery": [
+  {
+   "file": "images/camp-18/01.jpg",
+   "caption": "清晨的 Rialto Beach：阳光洒在 James Island 海蚀柱上",
+   "source": "https://commons.wikimedia.org/wiki/File:Morning%20rialto%20beach%20summer%20sun%20james%20island%20d%20archuleta%202015%20%2822784849180%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-18/02.jpg",
+   "caption": "Rialto Beach 沙滩上的漂流木与远方海蚀柱",
+   "source": "https://commons.wikimedia.org/wiki/File:2014%20Rialto%20Beach%2003.JPG",
+   "author": "Miguel Hermoso Cuesta",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-18/03.jpg",
+   "caption": "Rialto Beach 沙滩与拍岸海浪",
+   "source": "https://commons.wikimedia.org/wiki/File:2014%20Rialto%20Beach%2004.JPG",
+   "author": "Miguel Hermoso Cuesta",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-18/04.jpg",
+   "caption": "布满青苔的礁石与漂流木",
+   "source": "https://commons.wikimedia.org/wiki/File:2014%20Rialto%20Beach%2008.JPG",
+   "author": "Miguel Hermoso Cuesta",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-18/05.jpg",
+   "caption": "雾气笼罩的 Rialto Beach 海滩与岬角",
+   "source": "https://commons.wikimedia.org/wiki/File:Fog%20on%20Rialto%20Beach%20%2824783335989%29.jpg",
+   "author": "John Leszczynski from Washington, DC, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-18/06.jpg",
+   "caption": "Rialto Beach 日落，海蚀柱剪影",
+   "source": "https://commons.wikimedia.org/wiki/File:Best%20pastel%20sunset%20Rialto%20ssheltren%20nps%20photo%20%2823111523301%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-18/07.jpg",
+   "caption": "仰望海蚀柱峭壁，顶部孤树迎风",
+   "source": "https://commons.wikimedia.org/wiki/File:Close%20rock%20tree%20sky%20Rialto%20beach%20cbubar%202015%20%2822681783428%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-18/08.jpg",
+   "caption": "Dahdayla Rock 海蚀柱近景",
+   "source": "https://commons.wikimedia.org/wiki/File:Dahdayla%20Rock.jpg",
+   "author": "Ron Clausen",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-18/09.jpg",
+   "caption": "Quillayute River 平静河面倒映森林",
+   "source": "https://commons.wikimedia.org/wiki/File:Green%20quillayute%20river%20summer%20calm%20reflections%20d%20archuleta%202015%20%2823104417456%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  }
+ ]
+}

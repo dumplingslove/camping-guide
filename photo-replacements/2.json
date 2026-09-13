@@ -1,0 +1,66 @@
+{
+ "id": 2,
+ "name": "Millersylvania State Park",
+ "card": "images/camp-2/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3AMillersylvania%20State%20Park%2001.jpg",
+ "card_author": "Joe Mabel",
+ "card_license": "CC BY-SA 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-2/01.jpg",
+   "caption": "巨木环绕的野餐区，石质小屋与野餐桌",
+   "source": "https://commons.wikimedia.org/wiki/File%3AMillersylvania%20State%20Park%2002.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-2/02.jpg",
+   "caption": "林间木栅栏小径，两侧高大针叶林",
+   "source": "https://commons.wikimedia.org/wiki/File%3AMillersylvania%20State%20Park%2006.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-2/03.jpg",
+   "caption": "高大雪松林下的湖畔野餐区，野餐桌散落林间草地",
+   "source": "https://commons.wikimedia.org/wiki/File%3APicnic%20area%208922.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-2/04.jpg",
+   "caption": "两棵树干交缠合生的苔藓古树",
+   "source": "https://commons.wikimedia.org/wiki/File%3AInosculation%20of%20two%20trees.jpg",
+   "author": "John Sears",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-2/05.jpg",
+   "caption": "冬季薄雾中的湖面，两只白鸟掠过，背景是密林",
+   "source": "https://commons.wikimedia.org/wiki/File%3A2023--1%20January--%22First%20Day%22%20hike%20at%20Millersylvania%20State%20Park%2C%20Washington.jpg",
+   "author": "Phil Venditti",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-2/06.jpg",
+   "caption": "一群人走在冬季的木板步道上（First Day 徒步）",
+   "source": "https://commons.wikimedia.org/wiki/File%3A2023--1%20January--%22First%20Day%22%20hike%20in%20MIllersylvania%20State%20Park%20Washington.jpg",
+   "author": "Phil Venditti",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-2/07.jpg",
+   "caption": "刻着公园名字的原木入口牌（Millersylvania State Park）",
+   "source": "https://commons.wikimedia.org/wiki/File%3APk%20Entrance%208761.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-2/08.jpg",
+   "caption": "高大的雪松仰视，晨光穿过枝叶",
+   "source": "https://commons.wikimedia.org/wiki/File%3ASunrise%208627.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  }
+ ]
+}

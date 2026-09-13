@@ -52,7 +52,7 @@ export default function Login() {
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-3 mb-4">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663328359702/ih5KuobX6RNPFjbp9hkXB2/logo-icon-WrmXjRpLUoFPAVuBPxkQwH.webp"
+              src="/camping-guide/images/logo.svg"
               alt="Logo"
               className="w-10 h-10"
             />

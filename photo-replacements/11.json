@@ -1,0 +1,75 @@
+{
+ "id": 11,
+ "name": "Kalaloch Campground",
+ "card": "images/camp-11/card.jpg",
+ "card_caption": "Kalaloch 海滩的漂流木与鹅卵石滩，背后是峭壁",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Kalaloch%20Beach%20Olympic%20June%202018%20009.jpg",
+ "card_author": "King of Hearts",
+ "card_license": "CC BY-SA 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-11/01.jpg",
+   "caption": "林间的营位，参天古木环绕",
+   "source": "https://commons.wikimedia.org/wiki/File:Campsite%203434.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-11/02.jpg",
+   "caption": "营地环路，车辆停在林间营位旁",
+   "source": "https://commons.wikimedia.org/wiki/File:Campsite%203440.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-11/03.jpg",
+   "caption": "面朝大海的房车营位，海风吹拂的松树",
+   "source": "https://commons.wikimedia.org/wiki/File:Trailer%20rv%20kalaloch%20campground%20beach%20camping%20c%20bubar%20march%2005%202015%20%2817371870725%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-11/04.jpg",
+   "caption": "营地野餐桌旁的露营者与小狗",
+   "source": "https://commons.wikimedia.org/wiki/File:Visitor%20dog%20campsite%20kalaloch%20campground%20camping%20c%20bubar%20march%2005%202015%20%2817186004039%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-11/05.jpg",
+   "caption": "海滩观景步道，游人眺望太平洋",
+   "source": "https://commons.wikimedia.org/wiki/File:Visitor%20walking%20trail%20beach%20access%20kalaloch%20campground%20coast%20c%20bubar%20march%2005%202015%20%2817164730597%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-11/06.jpg",
+   "caption": "布满漂流木的 Kalaloch 海滩",
+   "source": "https://commons.wikimedia.org/wiki/File:Large%20driftwood%20beach%20logs%20kalaloch%20campground%20beach%20d%20archuleta%20march%2005%202015%20%2817106797547%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-11/07.jpg",
+   "caption": "峭壁下的漂流木滩，远处海岸线绵延",
+   "source": "https://commons.wikimedia.org/wiki/File:Beach%201%2C%20Kalaloch%20Beach%2C%20Washington%2003.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-11/08.jpg",
+   "caption": "日落时分的海面，远方隐约可见灯塔",
+   "source": "https://commons.wikimedia.org/wiki/File:Destruction%20Island%20from%20Beach%204%2C%20Kalaloch%20Beach%2C%20Washington%2001.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-11/09.jpg",
+   "caption": "沙滩上巨大的漂流木树根",
+   "source": "https://commons.wikimedia.org/wiki/File:Big%20driftwood%20at%20Beach%202%2C%20Kalaloch%20Beach%2C%20Washington%2001.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

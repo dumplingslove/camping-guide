@@ -1,0 +1,47 @@
+{
+ "id": 12,
+ "name": "Astoria/Warrenton/Seaside KOA Resort",
+ "card": "images/camp-12/card.jpg",
+ "card_caption": "度假村鸟瞰：主楼、房车营位与周边林地",
+ "card_source": "https://koa.com/campgrounds/astoria/",
+ "card_author": "KOA（Astoria/Warrenton/Seaside KOA）",
+ "card_license": "版权所有，未获自由复用许可",
+ "gallery": [
+  {
+   "file": "images/camp-12/01.jpg",
+   "caption": "小木屋前，一家人在烧烤聚餐",
+   "source": "https://koa.com/campgrounds/astoria/",
+   "author": "KOA（Astoria/Warrenton/Seaside KOA）",
+   "license": "版权所有，未获自由复用许可"
+  },
+  {
+   "file": "images/camp-12/02.jpg",
+   "caption": "主楼与 KOA 标识，门前停着房车",
+   "source": "https://koa.com/campgrounds/astoria/",
+   "author": "KOA（Astoria/Warrenton/Seaside KOA）",
+   "license": "版权所有，未获自由复用许可"
+  },
+  {
+   "file": "images/camp-12/03.jpg",
+   "caption": "林间的小木屋住宿区",
+   "source": "https://koa.com/campgrounds/astoria/",
+   "author": "KOA（Astoria/Warrenton/Seaside KOA）",
+   "license": "版权所有，未获自由复用许可"
+  },
+  {
+   "file": "images/camp-12/04.jpg",
+   "caption": "原木主楼入口，门前摆着摇椅",
+   "source": "https://koa.com/campgrounds/astoria/",
+   "author": "KOA（Astoria/Warrenton/Seaside KOA）",
+   "license": "版权所有，未获自由复用许可"
+  },
+  {
+   "file": "images/camp-12/05.jpg",
+   "caption": "营地里的蹦蹦枕和迷你高尔夫，孩子们在玩耍",
+   "source": "https://koa.com/content/campgrounds/astoria/photos/7fabbe59-a2f1-4b76-ae01-2c6bb3cd2a69photo14619373-13b7-4599-8348-36f837d176d1.jpg",
+   "author": "KOA（Astoria/Warrenton/Seaside KOA）",
+   "license": "版权所有，未获自由复用许可"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

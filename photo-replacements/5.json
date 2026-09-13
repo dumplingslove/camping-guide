@@ -1,0 +1,73 @@
+{
+ "id": 5,
+ "name": "Lake Wenatchee State Park",
+ "card": "images/camp-5/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3ALakewenatchee.jpg",
+ "card_author": "Core of the Elements",
+ "card_license": "CC BY-SA 3.0",
+ "gallery": [
+  {
+   "file": "images/camp-5/01.jpg",
+   "caption": "公园入口欢迎牌（Lake Wenatchee State Park Welcome）",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20State%20Park%20entrance%20sign.jpg",
+   "author": "HoneyKnut",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-5/02.jpg",
+   "caption": "山峰在平静湖面上倒影，前景是水中灌木",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20State%20Park%20%28185828482%29.jpg",
+   "author": "Steve Andersen from Seattle, WA, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-5/03.jpg",
+   "caption": "一艘游艇停在平静如镜的湖面，山与森林倒影清晰",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20State%20Park%20%28185827987%29.jpg",
+   "author": "Steve Andersen from Seattle, WA, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-5/04.jpg",
+   "caption": "湖水中一截枯木根，倒影如画，背后是茂密针叶林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20State%20Park%20%28185829664%29.jpg",
+   "author": "Steve Andersen from Seattle, WA, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-5/05.jpg",
+   "caption": "一只金黄色的黄松花栗鼠站在湖畔石块上",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20State%20Park%20%28185815732%29.jpg",
+   "author": "Steve Andersen from Seattle, WA, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-5/06.jpg",
+   "caption": "夏季南岸沙滩，游人嬉水，碧蓝湖水与远山森林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20State%20Park%20%28185802384%29.jpg",
+   "author": "Steve Andersen from Seattle, WA, USA",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-5/07.jpg",
+   "caption": "清晨湖岸，薄雾中的山峦倒影，岸边岩石嶙峋",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20Early%20Morning%20Sunrise%20%2851490290586%29.jpg",
+   "author": "Cindy Shebley",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-5/08.jpg",
+   "caption": "云朵与山峰倒影在平静湖中（HDR 风格）",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20WA.jpg",
+   "author": "Bala",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-5/09.jpg",
+   "caption": "冬季雪后的湖岸，暖阳映照在冰雪覆盖的岩石与湖面上",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20%28Unsplash%29.jpg",
+   "author": "Anubhav Saxena anubhav",
+   "license": "CC0"
+  }
+ ]
+}

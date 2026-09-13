@@ -1,0 +1,74 @@
+{
+ "id": 23,
+ "name": "Crater Lake Mazama Village",
+ "card": "images/camp-23/card.jpg",
+ "card_caption": "火山口湖经典景观：巫师岛与深蓝湖水",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%2C%20OR%20%28DSC%200020%29.jpg",
+ "card_author": "Trougnouf (Benoit Brummer)",
+ "card_license": "CC BY 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-23/01.jpg",
+   "caption": "火山口湖历史黑白全景，远眺巫师岛",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20and%20Wizard%20Island%20%283230055230%29.jpg",
+   "author": "OSU Special Collections & Archives : Commons",
+   "license": "No restrictions"
+  },
+  {
+   "file": "images/camp-23/02.jpg",
+   "caption": "火山口湖全景：深蓝湖水环绕巫师岛",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20National%20Park%20-%20HCP%20-%20October%2013%2C%202022%20-%20025.jpg",
+   "author": "Vulturesong",
+   "license": "CC0"
+  },
+  {
+   "file": "images/camp-23/03.jpg",
+   "caption": "巫师岛倒映在平静的湖面上",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20National%20Park%20-%20HCP%20-%20October%2013%2C%202022%20-%20006.jpg",
+   "author": "Vulturesong",
+   "license": "CC0"
+  },
+  {
+   "file": "images/camp-23/04.jpg",
+   "caption": "湖畔步道俯瞰巫师岛与深蓝湖水",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20National%20Park%20-%20HCP%20-%20October%2013%2C%202022%20-%20007.jpg",
+   "author": "Vulturesong",
+   "license": "CC0"
+  },
+  {
+   "file": "images/camp-23/05.jpg",
+   "caption": "从湖畔高处俯瞰巫师岛",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20National%20Park%20-%20HCP%20-%20October%2013%2C%202022%20-%20008.jpg",
+   "author": "Vulturesong",
+   "license": "CC0"
+  },
+  {
+   "file": "images/camp-23/06.jpg",
+   "caption": "松树间眺望巫师岛与火山口湖",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20National%20Park%20-%20HCP%20-%20October%2013%2C%202022%20-%20012.jpg",
+   "author": "Vulturesong",
+   "license": "CC0"
+  },
+  {
+   "file": "images/camp-23/07.jpg",
+   "caption": "针叶林间眺望巫师岛",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20National%20Park%20-%20HCP%20-%20October%2013%2C%202022%20-%20020.jpg",
+   "author": "Vulturesong",
+   "license": "CC0"
+  },
+  {
+   "file": "images/camp-23/08.jpg",
+   "caption": "巫师岛近景，前景是残雪覆盖的岩石",
+   "source": "https://commons.wikimedia.org/wiki/File:Crater%20Lake%20October%202019%20015.jpg",
+   "author": "King of Hearts",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-23/09.jpg",
+   "caption": "湖畔游客静坐欣赏火山口湖（历史照片）",
+   "source": "https://commons.wikimedia.org/wiki/File:Landscape%20Views%20at%20Crater%20Lake%20National%20Park%2C%20Oregon%20%280771cc31-b155-423c-89de-29effe8006ef%29.jpg",
+   "author": "NPS staff",
+   "license": "Public domain"
+  }
+ ]
+}

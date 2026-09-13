@@ -1,0 +1,45 @@
+{
+  "card": "images/camp-28/card.jpg",
+  "gallery": [
+    {
+      "author": "Washington State Parks",
+      "caption": "沙滩与漂流木，房车营地近在咫尺",
+      "file": "images/camp-28/01.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "参天古木环绕的林间营位与野餐桌",
+      "file": "images/camp-28/02.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "炮台走廊：Battery Row 沿线的混凝土工事与旧炮架",
+      "file": "images/camp-28/03.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "幽深的林间步道，两侧蕨类与苔藓",
+      "file": "images/camp-28/04.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "滑翔伞在海崖上空飞舞，历史建筑与海湾为背景",
+      "file": "images/camp-28/05.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park"
+    }
+  ],
+  "id": 28,
+  "name": "Fort Flagler Historical State Park",
+  "card_source": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+  "card_author": "Washington State Parks",
+  "card_license": "官网图片，版权归 Washington State Parks 所有"
+}

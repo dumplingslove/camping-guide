@@ -1,0 +1,82 @@
+{
+ "id": 16,
+ "name": "Cape Disappointment State Park",
+ "card": "images/camp-16/card.jpg",
+ "card_caption": "峭壁上的 Cape Disappointment 灯塔，海浪拍打礁石",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20and%20Cape%20Disappointment%20Light.jpg",
+ "card_author": "Adbar",
+ "card_license": "CC BY-SA 3.0",
+ "gallery": [
+  {
+   "file": "images/camp-16/01.jpg",
+   "caption": "海岬峭壁与汹涌的海浪",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20State%20Park.jpg",
+   "author": "Mattsjc",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-16/02.jpg",
+   "caption": "Cape Disappointment 灯塔特写，黑色条纹塔身",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20Lighthouse%20%26%20outbuilding.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-16/03.jpg",
+   "caption": "日落时分的 North Head 灯塔",
+   "source": "https://commons.wikimedia.org/wiki/File:North%20Head%20Lighthouse%20at%20Cape%20Disappointment.jpg",
+   "author": "Mattsjc",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-16/04.jpg",
+   "caption": "通往海边的林间小径",
+   "source": "https://commons.wikimedia.org/wiki/File:Trail%20to%20North%20Head%20Light%2C%202011.JPG",
+   "author": "Another Believer",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-16/05.jpg",
+   "caption": "North Head 灯塔，红顶白塔",
+   "source": "https://commons.wikimedia.org/wiki/File:North%20Head%20Light%2C%20bench%2C%202011.JPG",
+   "author": "Another Believer",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-16/06.jpg",
+   "caption": "仰视 Cape Disappointment 灯塔",
+   "source": "https://commons.wikimedia.org/wiki/File:2022-02-13%2C%20Cape%20Disappointment%20Lighhouse%2C%2002.jpg",
+   "author": "trekkyandy",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-16/07.jpg",
+   "caption": "灯塔侧面，塔身斑驳",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20Lighthouse%20%2814788544998%29.jpg",
+   "author": "Jonathan Miske",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-16/08.jpg",
+   "caption": "礁石海岸与远处的海岬",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20State%20Park%20with%20Lighthouse.jpg",
+   "author": "Teufelhunde86",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-16/09.jpg",
+   "caption": "Cape Disappointment 灯塔塔身特写",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20Lighthouse%20WA.jpg",
+   "author": "Colleen Taugher",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-16/10.jpg",
+   "caption": "俯瞰公园内的森林山谷",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape_Disappointment_State_Park_-_Ilwaco,_Washington_-_51740006441.jpg",
+   "author": "Dougtone",
+   "license": "CC BY-SA 2.0"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

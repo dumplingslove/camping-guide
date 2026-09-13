@@ -75,7 +75,7 @@ export default function Favorites() {
                     {/* Remove favorite button */}
                     <button
                       onClick={(e) => { e.preventDefault(); toggleFavorite(camp.id); }}
-                      className="absolute top-3 left-3 z-10 w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors"
+                      className="absolute top-3 left-3 z-10 w-11 h-11 sm:w-8 sm:h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors"
                     >
                       <Heart size={16} className="text-sunset fill-sunset" />
                     </button>

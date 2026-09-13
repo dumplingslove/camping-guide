@@ -1,0 +1,82 @@
+{
+ "id": 9,
+ "name": "Pacific Beach State Park",
+ "card": "images/camp-9/card.jpg",
+ "card_caption": "沙丘湿地间的水道，远处是 Pacific Beach 海滩",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%20State%20Park.jpg",
+ "card_author": "Jess Wood",
+ "card_license": "CC BY 2.0",
+ "gallery": [
+  {
+   "file": "images/camp-9/01.jpg",
+   "caption": "Pacific Beach 宽阔沙滩全景，海天一色",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%20Washington%20beach%20panorama.JPG",
+   "author": "Resoru",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-9/02.jpg",
+   "caption": "Pacific Beach 小镇的海滨街区，两旁是度假小屋",
+   "source": "https://commons.wikimedia.org/wiki/File:PacificBeachWA2018.jpg",
+   "author": "Ken Gallager",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/03.jpg",
+   "caption": "沙丘后的湿地草甸与水洼",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20beach%20meadow%2001.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/04.jpg",
+   "caption": "薄雾中的海滩，游人在远处漫步",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20light%20mist%20on%20the%20beach.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/05.jpg",
+   "caption": "沙滩上的漂流木堆，远处是海岸松林",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20driftwood%20structure%20on%20the%20beach.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/06.jpg",
+   "caption": "一条小溪蜿蜒穿过沙滩汇入大海",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20small%20stream%20appropaches%20the%20ocean.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/07.jpg",
+   "caption": "沙滩与沙丘草甸，远处松林绵延",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20looking%20north%20on%20the%20beach%20slightly%20north%20of%20town.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/08.jpg",
+   "caption": "退潮后的宽阔沙滩，游人在海边休憩",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20looking%20roughly%20south.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/09.jpg",
+   "caption": "沙滩上潮汐留下的细腻纹路",
+   "source": "https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20patterns%20in%20the%20sand.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-9/10.jpg",
+   "caption": "沙滩上的一枚海饼干（sand dollar）",
+   "source": "https://commons.wikimedia.org/wiki/File:Sand%20dollar%2C%20Pacific%20Beach%2C%20Washington%2001.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

@@ -82,7 +82,7 @@ export default function Compare() {
             <span className="text-sm text-muted-foreground font-mono">{compareItems.length}/4 营地</span>
             <button
               onClick={clearCompare}
-              className="text-xs text-muted-foreground hover:text-destructive transition-colors"
+              className="text-xs text-muted-foreground hover:text-destructive transition-colors px-3 py-3"
             >
               清空
             </button>
@@ -153,7 +153,7 @@ export default function Compare() {
           <table className="w-full bg-white rounded-xl border border-border overflow-hidden">
             <thead>
               <tr className="border-b border-border">
-                <th className="text-left p-4 font-medium text-muted-foreground w-32">对比项</th>
+                <th className="sticky left-0 z-10 bg-white text-left p-4 font-medium text-muted-foreground w-32">对比项</th>
                 {compareItems.map((camp) => (
                   <th key={camp.id} className="p-4 min-w-[200px]">
                     <div className="relative">
@@ -187,7 +187,7 @@ export default function Compare() {
             <tbody>
               {/* Drive Time */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">
                   <div className="flex items-center gap-1.5"><Clock size={14} /> 车程</div>
                 </td>
                 {compareItems.map((camp) => (
@@ -199,7 +199,7 @@ export default function Compare() {
               </tr>
               {/* Region */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">
                   <div className="flex items-center gap-1.5"><MapPin size={14} /> 地区</div>
                 </td>
                 {compareItems.map((camp) => (
@@ -209,7 +209,7 @@ export default function Compare() {
               </tr>
               {/* Scenery */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">
                   <div className="flex items-center gap-1.5"><TreePine size={14} /> 风景</div>
                 </td>
                 {compareItems.map((camp) => (
@@ -221,7 +221,7 @@ export default function Compare() {
               </tr>
               {/* Kid Friendly */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">
                   <div className="flex items-center gap-1.5"><Baby size={14} /> 娃可玩</div>
                 </td>
                 {compareItems.map((camp) => (
@@ -233,7 +233,7 @@ export default function Compare() {
               </tr>
               {/* TC Compat */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">
                   <div className="flex items-center gap-1.5"><Truck size={14} /> TC适配</div>
                 </td>
                 {compareItems.map((camp) => (
@@ -245,7 +245,7 @@ export default function Compare() {
               </tr>
               {/* Season */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">开放季节</td>
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">开放季节</td>
                 {compareItems.map((camp) => (
                   <td key={camp.id} className="p-4 text-center text-sm">{camp.season}</td>
                 ))}
@@ -253,7 +253,7 @@ export default function Compare() {
               </tr>
               {/* Hookups */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">最佳水电</td>
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">最佳水电</td>
                 {compareItems.map((camp) => (
                   <td key={camp.id} className="p-4 text-center text-sm">
                     {camp.areas.length > 0 ? camp.areas[0].hookups : "N/A"}
@@ -263,7 +263,7 @@ export default function Compare() {
               </tr>
               {/* Features */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">特色</td>
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">特色</td>
                 {compareItems.map((camp) => (
                   <td key={camp.id} className="p-4">
                     <div className="flex flex-wrap gap-1 justify-center">
@@ -279,7 +279,7 @@ export default function Compare() {
               </tr>
               {/* Recommended Sites */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">推荐营位</td>
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">推荐营位</td>
                 {compareItems.map((camp) => (
                   <td key={camp.id} className="p-4 text-sm text-center">{camp.recommendedSites}</td>
                 ))}
@@ -287,7 +287,7 @@ export default function Compare() {
               </tr>
               {/* TC Notes */}
               <tr className="border-b border-border/50">
-                <td className="p-4 text-sm font-medium text-muted-foreground">TC说明</td>
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">TC说明</td>
                 {compareItems.map((camp) => (
                   <td key={camp.id} className="p-4 text-sm text-center text-muted-foreground">{camp.tcNotes}</td>
                 ))}
@@ -295,14 +295,14 @@ export default function Compare() {
               </tr>
               {/* Booking */}
               <tr>
-                <td className="p-4 text-sm font-medium text-muted-foreground">预订</td>
+                <td className="sticky left-0 bg-white p-4 text-sm font-medium text-muted-foreground">预订</td>
                 {compareItems.map((camp) => (
                   <td key={camp.id} className="p-4 text-center">
                     <a
                       href={camp.bookingUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-3 py-1.5 bg-pine text-white rounded-lg text-xs font-medium hover:bg-pine-light transition-colors"
+                      className="inline-flex items-center gap-1 px-4 py-3 sm:px-3 sm:py-1.5 bg-pine text-white rounded-lg text-xs font-medium hover:bg-pine-light transition-colors"
                     >
                       <ExternalLink size={12} />
                       预订
@@ -322,7 +322,7 @@ export default function Compare() {
           <div className="bg-white rounded-xl max-w-lg w-full max-h-[70vh] overflow-hidden" onClick={(e) => e.stopPropagation()}>
             <div className="p-4 border-b border-border flex items-center justify-between">
               <h3 className="font-display font-bold">选择营地加入比较</h3>
-              <button onClick={() => setShowPicker(false)} className="text-muted-foreground hover:text-foreground">
+              <button onClick={() => setShowPicker(false)} className="p-2 text-muted-foreground hover:text-foreground">
                 <X size={20} />
               </button>
             </div>

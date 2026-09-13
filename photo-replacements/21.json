@@ -1,0 +1,60 @@
+{
+ "id": 21,
+ "name": "Cape Lookout State Park",
+ "card": "images/camp-21/card.jpg",
+ "card_caption": "金色晚霞下的 Cape Lookout 岬角",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Cape%20Lookout%20State%20Park%20-%20DPLA%20-%208d69130dfadc5a04ad3eb46f63c2e93b.jpg",
+ "card_author": "Gary Halvorson, Oregon State Archives",
+ "card_license": "CC BY 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-21/01.jpg",
+   "caption": "Cape Lookout State Park 日用区海滩",
+   "source": "https://commons.wikimedia.org/wiki/File:Beach%20in%20the%20day%20use%20area%20at%20Cape%20Lookout%20State%20Park.jpg",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-21/02.jpg",
+   "caption": "流经日用区的小溪",
+   "source": "https://commons.wikimedia.org/wiki/File:A%20stream%20flowing%20through%20the%20day%20use%20area%20at%20Cape%20Lookout%20State%20Park.jpg",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-21/03.jpg",
+   "caption": "日用区小溪上的木桥",
+   "source": "https://commons.wikimedia.org/wiki/File:Bridge%20over%20a%20stream%20in%20the%20day%20use%20area%20of%20Cape%20Lookout%20State%20Park.jpg",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-21/04.jpg",
+   "caption": "Cape Lookout 岬角峭壁",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Lookout%20%28Oregon%29.jpg",
+   "author": "WorldVexillologist",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-21/05.jpg",
+   "caption": "Cape Lookout 岬角与海滩",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Lookout%205.jpg",
+   "author": "WireLizard",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-21/06.jpg",
+   "caption": "悬崖边的 Cape Lookout 岬角",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Lookout%20%287081069737%29.jpg",
+   "author": "S. Rae from Scotland, UK",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-21/07.jpg",
+   "caption": "从岬角俯瞰蜿蜒的海滩与太平洋",
+   "source": "https://commons.wikimedia.org/wiki/File:Cape%20Lookout%20State%20Park%20-%20Oregon%20-%2010092776824.jpg",
+   "author": "Dougtone",
+   "license": "CC BY-SA 2.0"
+  }
+ ]
+}

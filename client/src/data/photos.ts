@@ -10,520 +10,654 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
   // 1. Deception Pass
   1: {
     photos: [
-      "/manus-storage/deception_pass_001_04780771.jpg",
-      "/manus-storage/deception_pass_002_201b4616.jpg",
-      "/manus-storage/deception_pass_003_2e64acf2.jpg",
-      "/manus-storage/deception_pass_new1_b19320cd.jpg",
-      "/manus-storage/deception_pass_new2_a93f8876.png",
-      "/manus-storage/deception_pass_new3_6da1ea14.jpeg",
-      "/manus-storage/mObNwivbLDinKDGt_34427a30.jpg",
-      "/manus-storage/BXymLsyYLhpCNLpp_b1d6f3b0.jpg",
-      "/manus-storage/ZBOTAVUPinRxmiRE_4ca38a14.jpg",
-      "/manus-storage/BlOZYifeYusBkaMk_e4f96d7a.jpg",
-      "/manus-storage/xcjaYbtWvqWrgSjS_e4a7e4ff.jpg"
+      "/camping-guide/images/camp-1/01.jpg",
+      "/camping-guide/images/camp-1/02.jpg",
+      "/camping-guide/images/camp-1/03.jpg",
+      "/camping-guide/images/camp-1/04.jpg",
+      "/camping-guide/images/camp-1/05.jpg",
+      "/camping-guide/images/camp-1/06.jpg",
+      "/camping-guide/images/camp-1/07.jpg",
+      "/camping-guide/images/camp-1/08.jpg",
+      "/camping-guide/images/camp-1/09.jpg",
+      "/camping-guide/images/camp-1/10.jpg",
+      "/camping-guide/images/camp-1/11.jpg"
     ],
-    map: "/manus-storage/map_deception_pass_map_2f779bca.jpg",
-    captions: ["Loop A 湖畔全接驳位", "Loop A 大型TC停放", "Cranberry Lake 湖景", "Loop B 林间营位", "Quarry Pond 区域", "Loop A 全景", "Deception Pass 桥景", "Bowman Bay 海岸", "North Beach 沙滩", "森林步道", "日落全景"],
+    captions: ["鸟瞰 Deception Pass 大桥，桥下碧蓝海水涌动，群岛与针叶林环绕", "从桥上南端向北眺望，绿色栏杆旁车辆驶过，海峡两侧峭壁森林", "从桥上俯瞰海峡中的 Strawberry Island，海水碧蓝", "Bowman Bay 碧绿海水与砾石滩，岸边森林与停车场", "从 Rosario Head 俯瞰 Bowman Bay，海湾静谧，远山连绵", "North Beach 步道，穿行于高大的针叶林与苔藓岩石间", "Rosario Beach 附近的岩石海岸，日落余晖下的礁石与黑沙滩", "林间苔藓覆盖的岩石山脊，周围是茂密的针叶林（徒步道旁景）", "Cranberry Lake 附近约 850 年树龄的古道格拉斯冷杉，虬曲的枝干", "露营者在黄色帐篷门口抱着狗狗合影", "有人在 Cranberry Lake 上划黄色皮划艇，岸边是茂密针叶林"],
   },
   // 2. Millersylvania
   2: {
     photos: [
-      "/manus-storage/millersylvania_campsite_tall_trees_5f77f118.jpg",
-      "/manus-storage/millersylvania_forest_54e5a1e1.jpg",
-      "/manus-storage/millersylvania_rv_site_f5331f87.jpg",
-      "/manus-storage/millersylvania_map_1945a770.jpg",
-      "/manus-storage/EnJpoftfMRTCONgv_cb371cc0.jpg",
-      "/manus-storage/zhUwhDnIsQJaXBwM_6082910d.jpg",
-      "/manus-storage/XABHyksoqOQnjjWh_ee914f9e.jpg",
-      "/manus-storage/XRKYkthrFvCdzNqM_0d3256ba.jpg"
+      "/camping-guide/images/camp-2/01.jpg",
+      "/camping-guide/images/camp-2/02.jpg",
+      "/camping-guide/images/camp-2/03.jpg",
+      "/camping-guide/images/camp-2/04.jpg",
+      "/camping-guide/images/camp-2/05.jpg",
+      "/camping-guide/images/camp-2/06.jpg",
+      "/camping-guide/images/camp-2/07.jpg",
+      "/camping-guide/images/camp-2/08.jpg"
     ],
-    map: "/manus-storage/map_millersylvania_map_c811bbad.jpg",
-    captions: ["古木环绕的营位", "参天道格拉斯冷杉", "RV营位（水电）", "营地全景", "Deep Lake 湖畔", "林间步道", "RV Loop 入口", "古木林荫"],
+    captions: ["巨木环绕的野餐区，石质小屋与野餐桌", "林间木栅栏小径，两侧高大针叶林", "高大雪松林下的湖畔野餐区，野餐桌散落林间草地", "两棵树干交缠合生的苔藓古树", "冬季薄雾中的湖面，两只白鸟掠过，背景是密林", "一群人走在冬季的木板步道上（First Day 徒步）", "刻着公园名字的原木入口牌（Millersylvania State Park）", "高大的雪松仰视，晨光穿过枝叶"],
   },
   // 3. Alder Lake
   3: {
     photos: [
-      "/manus-storage/alder_lake_campsite_114cace5.jpg",
-      "/manus-storage/alder_lake_main_campground_af89afc3.jpg",
-      "/manus-storage/alder_lake_mt_rainier_view_11c5d2bc.jpg",
-      "/manus-storage/bPIvqeqlUfkPdRxn_dab076ad.png",
-      "/manus-storage/QbRDdZnjXgMEpRpL_9ef5bc8b.jpg",
-      "/manus-storage/WMsrieeciCOdSzxz_b2da1aee.jpg",
-      "/manus-storage/fZcyTjviIRfXiYDv_3a716200.jpg"
+      "/camping-guide/images/camp-3/01.jpg",
+      "/camping-guide/images/camp-3/02.jpg",
+      "/camping-guide/images/camp-3/03.jpg",
+      "/camping-guide/images/camp-3/04.jpg",
+      "/camping-guide/images/camp-3/05.jpg",
+      "/camping-guide/images/camp-3/06.jpg",
+      "/camping-guide/images/camp-3/07.jpg"
     ],
-    map: "/manus-storage/map_alder_lake_map_90c58ef8.jpg",
-    captions: ["Sunny Beach 全接驳位", "主营地区域", "远眺Mt. Rainier", "湖畔日落", "Rocky Point 区域", "Alder Lake 全景", "林间营位"],
+    captions: ["营地全景，宽阔的房车位、铺装环路、树木环绕", "从公路看低水位的 Alder Lake 上游盆地，湖中露出大量树桩", "Rocky Point 船艇下水处的公告牌，标注船员规则与安全事项", "营地环路入口，柏油路穿过针叶林，路边有营地标识牌", "秋季低水位时的湖盆全景，泥滩上散布树桩，远山环绕", "沙滩区，人们在湖边草地休憩，碧绿湖水与对岸森林", "道格拉斯冷杉枝条特写，针叶浓绿"],
   },
   // 4. Cougar Rock
   4: {
     photos: [
-      "/manus-storage/cougar_rock_a001_5d67216f.jpg",
-      "/manus-storage/cougar_rock_b005_3e70caab.jpg",
-      "/manus-storage/cougar_rock_b029_1b6d813c.jpg",
-      "/manus-storage/cougar_rock_new1_768924aa.jpg",
-      "/manus-storage/cougar_rock_new2_696bd6d7.jpg",
-      "/manus-storage/cougar_rock_new3_366308b9.jpg",
-      "/manus-storage/cougar_rock_new4_19a1d3cf.jpg",
-      "/manus-storage/cougar_rock_new5_3f78b548.jpg",
-      "/manus-storage/QOBgWqFANsVEzyll_bf990d4a.jpg",
-      "/manus-storage/NHRJtxijNebGKEhE_5e5731e4.jpg",
-      "/manus-storage/mzKgbyNEZWfKicMm_d9426df3.jpg"
+      "/camping-guide/images/camp-4/01.jpg",
+      "/camping-guide/images/camp-4/02.jpg",
+      "/camping-guide/images/camp-4/03.jpg",
+      "/camping-guide/images/camp-4/04.jpg",
+      "/camping-guide/images/camp-4/05.jpg",
+      "/camping-guide/images/camp-4/06.jpg",
+      "/camping-guide/images/camp-4/07.jpg",
+      "/camping-guide/images/camp-4/08.jpg",
+      "/camping-guide/images/camp-4/09.jpg",
+      "/camping-guide/images/camp-4/10.jpg",
+      "/camping-guide/images/camp-4/11.jpg"
     ],
-    map: "/manus-storage/map_cougar_rock_map_c95cb11f.jpg",
-    captions: ["A Loop 入口", "B Loop Site 005", "B Loop Site 029", "B Loop Site 033", "B Loop Site 035", "C Loop Site 001", "D Loop Site 001 河畔", "D Loop Site 006 推荐位", "E Loop Site 030", "Cougar Rock 全景", "Paradise 步道入口"],
+    captions: ["C-20 营位高出地面的帐篷平台，林间空地", "C-2 营位的无障碍标识牌，下方挂着预订单", "A 环的男女厕所小屋，水泥步道通往洗手间", "B 环的洗手间小屋，门前有石砌饮水台和取水设施", "露天剧场，原木座位面向木质表演台，周围是密林", "木质无障碍栈桥穿过古老的针叶林", "D 环的男女洗手间，背后是悬崖山峰与密林", "无障碍停车场，标有轮椅车位，旁边是林间野餐区", "林间碎石空地上的两张野餐桌，背后是茂密针叶林", "营地入口的橙色警示牌：露营自担风险，提示山洪、泥石流等地质灾害", "NPS 志愿者与两名小朋友击掌互动，小朋友手里拿着 Junior Ranger 活动手册"],
   },
   // 5. Lake Wenatchee
   5: {
     photos: [
-      "/manus-storage/lake_wenatchee_001_098ac26b.jpg",
-      "/manus-storage/lake_wenatchee_010_e88ee06e.jpg",
-      "/manus-storage/lake_wenatchee_020_dba7ec26.jpg",
-      "/manus-storage/lake_wenatchee_new1_e0dfbbc5.jpg",
-      "/manus-storage/lake_wenatchee_new2_584f3cb3.jpg",
-      "/manus-storage/IcRjhRqDeZXrPFRm_84cf9318.jpg",
-      "/manus-storage/mfbcrueRwKmWkGzS_901db1c7.jpg",
-      "/manus-storage/AVDbJzulGmNjOxat_02b9e064.jpg",
-      "/manus-storage/QdLhNXSvPaaTGaiZ_c6c0354e.jpg"
+      "/camping-guide/images/camp-5/01.jpg",
+      "/camping-guide/images/camp-5/02.jpg",
+      "/camping-guide/images/camp-5/03.jpg",
+      "/camping-guide/images/camp-5/04.jpg",
+      "/camping-guide/images/camp-5/05.jpg",
+      "/camping-guide/images/camp-5/06.jpg",
+      "/camping-guide/images/camp-5/07.jpg",
+      "/camping-guide/images/camp-5/08.jpg",
+      "/camping-guide/images/camp-5/09.jpg"
     ],
-    map: "/manus-storage/map_lake_wenatchee_map_4b8e1b13.jpg",
-    captions: ["South Park 湖畔位", "South Park 水电位", "North Park 河畔", "South Park 全景", "营地道路", "North Park 深处", "湖畔日落", "Wenatchee River", "山景全景"],
+    captions: ["公园入口欢迎牌（Lake Wenatchee State Park Welcome）", "山峰在平静湖面上倒影，前景是水中灌木", "一艘游艇停在平静如镜的湖面，山与森林倒影清晰", "湖水中一截枯木根，倒影如画，背后是茂密针叶林", "一只金黄色的黄松花栗鼠站在湖畔石块上", "夏季南岸沙滩，游人嬉水，碧蓝湖水与远山森林", "清晨湖岸，薄雾中的山峦倒影，岸边岩石嶙峋", "云朵与山峰倒影在平静湖中（HDR 风格）", "冬季雪后的湖岸，暖阳映照在冰雪覆盖的岩石与湖面上"],
   },
   // 6. Ohanapecosh
   6: {
     photos: [
-      "/manus-storage/ohanapecosh_photo1_20a0e8f5.jpg",
-      "/manus-storage/ohanapecosh_photo2_b086375a.jpg",
-      "/manus-storage/ohanapecosh_photo3_e8d122e5.jpg", "/manus-storage/camp_6_photo_4_9c547782.jpg"],
-    map: "/manus-storage/map_ohanapecosh_map_f3d2a522.jpg",
-    captions: ["A Loop 河畔古木营位", "溪流旁的营位", "Grove of the Patriarchs 步道", "Ohanapecosh河翠绿清澈的河水"],
+      "/camping-guide/images/camp-6/01.jpg",
+      "/camping-guide/images/camp-6/02.jpg",
+      "/camping-guide/images/camp-6/03.jpg",
+      "/camping-guide/images/camp-6/04.jpg",
+      "/camping-guide/images/camp-6/05.jpg"
+    ],
+    captions: ["湍急的 Ohanapecosh River，碧绿河水穿过密林，两岸山峦", "林间营地，帐篷与露营者，巨树遮荫", "Grove of the Patriarchs 的苔藓木质步道，穿行在巨型针叶林中", "沿柏油环路的营位，野餐桌与原木座位", "D 环的无障碍洗手间，水泥步道通向门口"],
   },
   // 7. Fairholme
   7: {
     photos: [
-      "/manus-storage/fairholme_001_7c353045.jpg",
-      "/manus-storage/fairholme_010_da4b3a6f.jpg",
-      "/manus-storage/fairholme_020_f9f58060.jpg",
-      "/manus-storage/fairholme_new1_f27e20bf.jpeg",
-      "/manus-storage/fairholme_new2_2ae8386e.jpg",
-      "/manus-storage/fairholme_new3_dbc4f815.jpg",
-      "/manus-storage/UlNftVrbLQmYfmSI_f40511e1.jpg",
-      "/manus-storage/itNkmWbKvDpieYBa_1faa3d88.jpg",
-      "/manus-storage/nPsfsjVUQnwUXdNd_d9d849d0.jpeg"
+      "/camping-guide/images/camp-7/01.jpg",
+      "/camping-guide/images/camp-7/02.jpg",
+      "/camping-guide/images/camp-7/03.jpg",
+      "/camping-guide/images/camp-7/04.jpg",
+      "/camping-guide/images/camp-7/05.jpg",
+      "/camping-guide/images/camp-7/06.jpg",
+      "/camping-guide/images/camp-7/07.jpg",
+      "/camping-guide/images/camp-7/08.jpg",
+      "/camping-guide/images/camp-7/09.jpg"
     ],
-    map: "/manus-storage/map_fairholme_map_7983f464.jpg",
-    captions: ["湖畔第一排 Site 1", "Site 10 湖景", "Site 20 林间", "内侧 Site 60", "Site 70", "Site 80", "营地实景", "周边风光", "营位细节"],
+    captions: ["黑白历史照片：1950 年代 Lake Crescent 的帆船与码头", "Fairholm 的木质码头，游人站在码头尽头，湖对岸是陡峭山林", "从岸边看 Lake Crescent 的木质码头与远山林", "清澈见底的湖水，浅水处可见砾石", "日落时分的湖面，两岸山峦剪影", "Spruce Railroad Trail 旁的枯木桩，湖水碧蓝", "Lake Crescent Lodge 的码头与皮艇，远山连绵", "木质步道桥伸向湖心，对岸是陡峭山林", "全景：碧蓝清澈的湖水，群山环绕，岸边小路"],
   },
   // 8. Lake Chelan
   8: {
     photos: [
-      "/manus-storage/lake_chelan_photo1_8c59d77c.jpg",
-      "/manus-storage/lake_chelan_photo2_11c04ce7.jpg",
-      "/manus-storage/lake_chelan_photo3_a7b11af1.jpg",
-      "/manus-storage/lake_chelan_new1_9d984653.jpg",
-      "/manus-storage/lake_chelan_new2_74f1aa47.jpg",
-      "/manus-storage/lake_chelan_new3_7a01414e.jpg",
-      "/manus-storage/MBQKLLuqIkiQRsqp_bbf40e1f.jpg",
-      "/manus-storage/UwzPtVpvRHhoyfyq_d06b902c.jpg",
-      "/manus-storage/OcfBIzjluuUHdyzT_428af4e4.jpg",
-      "/manus-storage/DnyNkamSTuyrMCZE_c29f1a45.jpeg"
+      "/camping-guide/images/camp-8/01.jpg",
+      "/camping-guide/images/camp-8/02.jpg",
+      "/camping-guide/images/camp-8/03.jpg",
+      "/camping-guide/images/camp-8/04.jpg",
+      "/camping-guide/images/camp-8/05.jpg",
+      "/camping-guide/images/camp-8/06.jpg",
+      "/camping-guide/images/camp-8/07.jpg",
+      "/camping-guide/images/camp-8/08.jpg",
+      "/camping-guide/images/camp-8/09.jpg",
+      "/camping-guide/images/camp-8/10.jpg"
     ],
-    map: "/manus-storage/map_lake_chelan_map_167913f8.jpg",
-    captions: ["Lakeside 全接驳位", "湖畔营位全景", "Lake Chelan 湖景", "Upper Loop", "游泳区域", "日落湖景", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["草地上栖息的几匹马，背后是森林", "雪山湖泊全景，碧绿湖水与森林雪山", "沼泽草甸上的小木屋，湖水倒影，远山环绕", "蓝天下的冷杉枝与球果特写", "远眺 Lake Chelan，湖对岸山地、湖上漂木", "车窗前公路边的 Lake Chelan，湖畔社区与远山（日落时分）", "悬崖边的跳水者，湖上小船与峭壁", "从步道俯瞰 Lake Chelan，深蓝湖水与山峦", "冬季的 Manson 果园山坡，积雪覆盖的湖畔果园与房屋", "阳光洒在湖面，码头剪影与远山倒影"],
   },
   // 9. Pacific Beach
   9: {
     photos: [
-      "/manus-storage/pacific_beach_001_85c6dab4.jpg",
-      "/manus-storage/pacific_beach_003_006d5fd9.jpg",
-      "/manus-storage/pacific_beach_005_af31f326.jpg",
-      "/manus-storage/pacific_beach_010_6a562b23.jpg",
-      "/manus-storage/pacific_beach_020_1f50eab2.jpg",
-      "/manus-storage/pacific_beach_036_956bed1e.jpg",
-      "/manus-storage/klbUGbzsJFjUFpyH_3f328cf4.jpg",
-      "/manus-storage/xOfqBxKtLRPoVqvP_80b8a286.jpg",
-      "/manus-storage/hIyDXMXwmJMehEXw_8561ad86.jpg",
-      "/manus-storage/LqWvLItBZZgZQVku_8a2584b8.jpg"
+      "/camping-guide/images/camp-9/01.jpg",
+      "/camping-guide/images/camp-9/02.jpg",
+      "/camping-guide/images/camp-9/03.jpg",
+      "/camping-guide/images/camp-9/04.jpg",
+      "/camping-guide/images/camp-9/05.jpg",
+      "/camping-guide/images/camp-9/06.jpg",
+      "/camping-guide/images/camp-9/07.jpg",
+      "/camping-guide/images/camp-9/08.jpg",
+      "/camping-guide/images/camp-9/09.jpg",
+      "/camping-guide/images/camp-9/10.jpg"
     ],
-    map: "/manus-storage/map_pacific_beach_map_c2700ba8.jpg",
-    captions: ["海景第一排 Site 1", "Site 3 全接驳", "Site 5 海景", "第二排营位", "Site 20", "Site 36 尾部", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["Pacific Beach 宽阔沙滩全景，海天一色", "Pacific Beach 小镇的海滨街区，两旁是度假小屋", "沙丘后的湿地草甸与水洼", "薄雾中的海滩，游人在远处漫步", "沙滩上的漂流木堆，远处是海岸松林", "一条小溪蜿蜒穿过沙滩汇入大海", "沙滩与沙丘草甸，远处松林绵延", "退潮后的宽阔沙滩，游人在海边休憩", "沙滩上潮汐留下的细腻纹路", "沙滩上的一枚海饼干（sand dollar）"],
   },
   // 10. Salt Creek
   10: {
     photos: [
-      "/manus-storage/salt_creek_bluff_overview_68f35c4c.jpg",
-      "/manus-storage/salt_creek_bluff_rv_b32cb1ae.jpg",
-      "/manus-storage/salt_creek_bluff_trailer_a89016ff.jpg",
-      "/manus-storage/salt_creek_campsite_ca5b2a94.jpg",
-      "/manus-storage/salt_creek_coastline_4b3343b0.jpg",
-      "/manus-storage/salt_creek_site_with_rv_02577e39.jpg"
+      "/camping-guide/images/camp-10/01.jpg",
+      "/camping-guide/images/camp-10/02.jpg",
+      "/camping-guide/images/camp-10/03.jpg",
+      "/camping-guide/images/camp-10/04.jpg",
+      "/camping-guide/images/camp-10/05.jpg",
+      "/camping-guide/images/camp-10/06.jpg"
     ],
-    map: "/manus-storage/map_salt_creek_map_2210fc6c.jpg",
-    captions: ["Bluff Sites 海景全景", "Bluff 区RV营位", "Bluff 区Trailer", "Forest Sites 林间", "海岸线风光", "RV营位实景"],
+    captions: ["二战时期海岸炮台内部，炮座遗迹犹存", "从碉堡射击口向外望，远处是森林", "从岸边眺望海中的礁石小岛，松树林立", "透过林间看礁石岛，海水碧绿", "暮色中的胡安·德富卡海峡，对岸山影朦胧", "礁石小岛全景，顶部松树茂密"],
   },
   // 11. Kalaloch
   11: {
     photos: [
-      "/manus-storage/kalaloch_a001_03946db8.jpg",
-      "/manus-storage/kalaloch_a010_358e4804.jpg",
-      "/manus-storage/kalaloch_a029_f103811c.jpg",
-      "/manus-storage/kalaloch_new1_492de482.webp",
-      "/manus-storage/kalaloch_new2_4b75584f.webp",
-      "/manus-storage/kalaloch_new3_58121902.jpg",
-      "/manus-storage/AWJUEQIZHhCswCJW_0e4b07aa.jpg",
-      "/manus-storage/zpmrInySHqMeLFvP_b0a06656.jpg",
-      "/manus-storage/JHSYxwsflXlRnzAK_96374144.jpg"
+      "/camping-guide/images/camp-11/01.jpg",
+      "/camping-guide/images/camp-11/02.jpg",
+      "/camping-guide/images/camp-11/03.jpg",
+      "/camping-guide/images/camp-11/04.jpg",
+      "/camping-guide/images/camp-11/05.jpg",
+      "/camping-guide/images/camp-11/06.jpg",
+      "/camping-guide/images/camp-11/07.jpg",
+      "/camping-guide/images/camp-11/08.jpg",
+      "/camping-guide/images/camp-11/09.jpg"
     ],
-    map: "/manus-storage/map_kalaloch_map_70686c2d.png",
-    captions: ["A Loop Site 1 海崖", "A Loop Site 10", "A Loop Site 29", "B Loop Site 1", "C Loop", "D Loop Site 13", "海崖全景", "漂流木海滩", "Bluff 步道"],
+    captions: ["林间的营位，参天古木环绕", "营地环路，车辆停在林间营位旁", "面朝大海的房车营位，海风吹拂的松树", "营地野餐桌旁的露营者与小狗", "海滩观景步道，游人眺望太平洋", "布满漂流木的 Kalaloch 海滩", "峭壁下的漂流木滩，远处海岸线绵延", "日落时分的海面，远方隐约可见灯塔", "沙滩上巨大的漂流木树根"],
   },
   // 12. Astoria KOA
   12: {
     photos: [
-      "/manus-storage/astoria_koa_photo1_34ccb609.jpg",
-      "/manus-storage/astoria_koa_photo2_0b82a1dd.jpg",
-      "/manus-storage/astoria_koa_photo3_55b2dc8a.jpg", "/manus-storage/camp_12_photo_4_f2cd4605.jpg"],
-    map: "/manus-storage/map_astoria_koa_map_1b411579.jpg",
-    captions: ["Deluxe Pull-through 位", "泳池和水滑梯", "营地设施全景", "俄勒冈州阿斯托利亚/沃伦顿/海滨KOA度假村的室外游泳池，孩子们在水中玩耍。"],
+      "/camping-guide/images/camp-12/01.jpg",
+      "/camping-guide/images/camp-12/02.jpg",
+      "/camping-guide/images/camp-12/03.jpg",
+      "/camping-guide/images/camp-12/04.jpg",
+      "/camping-guide/images/camp-12/05.jpg"
+    ],
+    captions: ["小木屋前，一家人在烧烤聚餐", "主楼与 KOA 标识，门前停着房车", "林间的小木屋住宿区", "原木主楼入口，门前摆着摇椅", "营地里的蹦蹦枕和迷你高尔夫，孩子们在玩耍"],
   },
   // 13. South Beach
   13: {
     photos: [
-      "/manus-storage/south_beach_photo1_5038699d.jpg",
-      "/manus-storage/south_beach_photo2_6a986de7.jpeg",
-      "/manus-storage/south_beach_photo3_751265b5.jpg",
-      "/manus-storage/south_beach_photo4_b801dae7.jpg",
-      "/manus-storage/VVvJztakIIvLncRs_e51331f6.jpg",
-      "/manus-storage/lXkBontDZTzaDNFr_64b30279.jpg",
-      "/manus-storage/qhclEOwlwUOqgMlp_7cbdc9af.jpg",
-      "/manus-storage/UWKXBmzgvFPpDCJD_47336ab7.jpg",
-      "/manus-storage/frEOBRFIzFhGaGBa_724b5b91.png"
+      "/camping-guide/images/camp-13/01.jpg",
+      "/camping-guide/images/camp-13/02.jpg",
+      "/camping-guide/images/camp-13/03.jpg",
+      "/camping-guide/images/camp-13/04.jpg",
+      "/camping-guide/images/camp-13/05.jpg",
+      "/camping-guide/images/camp-13/06.jpg",
+      "/camping-guide/images/camp-13/07.jpg",
+      "/camping-guide/images/camp-13/08.jpg",
+      "/camping-guide/images/camp-13/09.jpg"
     ],
-    map: "/manus-storage/map_south_beach_map_3c2ccf2e.jpg",
-    captions: ["海滩通道", "漂流木海岸", "营位实景", "太平洋全景", "营地实景", "周边风光", "营位细节", "步道入口", "设施全景"],
+    captions: ["晨雾中的海滨野餐区，远处松林朦胧", "沿着海边步道散步的游人", "面朝大海的野餐桌，一只乌鸦飞过", "警示牌：注意离岸流，漂流木危险", "从观景点俯瞰 South Beach 海滩", "沙滩上堆积的漂流木", "观鲸解说牌，介绍灰鲸迁徙", "被海水漂白的漂流木特写", "鹅卵石滩与漂流木，远处是岬角"],
   },
   // 14. Fort Stevens
   14: {
     photos: [
-      "/manus-storage/fort_stevens_photo1_1dc5e673.jpg",
-      "/manus-storage/fort_stevens_photo2_2d936aca.jpg",
-      "/manus-storage/fort_stevens_photo3_2663dc4d.jpg",
-      "/manus-storage/fort_stevens_new1_ecd6a011.jpg",
-      "/manus-storage/fort_stevens_new2_29f65367.jpg",
-      "/manus-storage/VUQzskmggOKwojZQ_44678da2.jpg",
-      "/manus-storage/YEbsWnrtKyeyOwuy_0def43a1.jpg",
-      "/manus-storage/YFqtMKunpvrqIWdf_5d8af195.jpg",
-      "/manus-storage/mqvyPBcTswepazIj_c6f09b9a.jpg"
+      "/camping-guide/images/camp-14/01.jpg",
+      "/camping-guide/images/camp-14/02.jpg",
+      "/camping-guide/images/camp-14/03.jpg",
+      "/camping-guide/images/camp-14/04.jpg",
+      "/camping-guide/images/camp-14/05.jpg",
+      "/camping-guide/images/camp-14/06.jpg",
+      "/camping-guide/images/camp-14/07.jpg",
+      "/camping-guide/images/camp-14/08.jpg",
+      "/camping-guide/images/camp-14/09.jpg"
     ],
-    map: "/manus-storage/map_fort_stevens_map_7d1acc9e.jpg",
-    captions: ["Loop D 全接驳位", "Peter Iredale 沉船", "自行车道", "Loop E 营位", "Coffenbury Lake", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["游人在 Peter Iredale 沉船旁看日落", "Peter Iredale 沉船残骸特写", "晚霞中的沉船与海滩", "林间的房车营位", "房车营位，遮阳篷下放着露营椅", "历史军事炮台遗址", "二战时期的混凝土营房建筑", "Coffenbury Lake 湖畔的野餐桌", "Coffenbury Lake 湖面倒映着松林"],
   },
   // 15. Beverly Beach
   15: {
     photos: [
-      "/manus-storage/beverly_beach_photo1_3c55533b.jpg",
-      "/manus-storage/beverly_beach_photo2_544ede3b.jpg",
-      "/manus-storage/beverly_beach_photo3_c0caf593.jpg",
-      "/manus-storage/beverly_beach_photo4_7635b80a.jpg"
+      "/camping-guide/images/camp-15/01.jpg",
+      "/camping-guide/images/camp-15/02.jpg",
+      "/camping-guide/images/camp-15/03.jpg",
+      "/camping-guide/images/camp-15/04.jpg",
+      "/camping-guide/images/camp-15/05.jpg"
     ],
-    map: "/manus-storage/map_beverly_beach_map_99a8d914.jpg",
-    captions: ["Loop C 全接驳位", "海滩隧道入口", "Spencer Creek", "营地全景"],
+    captions: ["幽静的林间营位", "Spencer Creek 上的小桥，桥后是房车营区", "Beverly Beach 海滩与远处的岬角", "穿行于蕨类与古木间的林间步道", "从山坡俯瞰大海，野花盛开"],
   },
   // 16. Cape Disappointment
   16: {
     photos: [
-      "/manus-storage/cape_disappointment_001_ef0193a8.jpg",
-      "/manus-storage/cape_disappointment_010_9e1fd57c.jpg",
-      "/manus-storage/cape_disappointment_050_ba47e0ff.jpg",
-      "/manus-storage/cape_disappointment_100_1bb2dee3.jpg",
-      "/manus-storage/cape_disappointment_150_66ebd2fd.jpg",
-      "/manus-storage/cape_disappointment_193_e6d85af0.jpg",
-      "/manus-storage/PbAymmqAHTNlEtAB_9dc69d3d.jpg",
-      "/manus-storage/hweskIUgwchETGdi_1ab7c850.jpeg",
-      "/manus-storage/lqzZtjMgCJfMWzJq_1e3e8e69.jpg",
-      "/manus-storage/LnPPFoMxgfiksuVH_1daf55d1.jpg"
+      "/camping-guide/images/camp-16/01.jpg",
+      "/camping-guide/images/camp-16/02.jpg",
+      "/camping-guide/images/camp-16/03.jpg",
+      "/camping-guide/images/camp-16/04.jpg",
+      "/camping-guide/images/camp-16/05.jpg",
+      "/camping-guide/images/camp-16/06.jpg",
+      "/camping-guide/images/camp-16/07.jpg",
+      "/camping-guide/images/camp-16/08.jpg",
+      "/camping-guide/images/camp-16/09.jpg",
+      "/camping-guide/images/camp-16/10.jpg"
     ],
-    map: "/manus-storage/map_cape_disappointment_map_07f50279.jpg",
-    captions: ["Loop A Site 1 全接驳", "Loop A Site 10", "Loop B 林间", "Loop C 海景", "Loop C 深处", "Loop D 帐篷区", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["海岬峭壁与汹涌的海浪", "Cape Disappointment 灯塔特写，黑色条纹塔身", "日落时分的 North Head 灯塔", "通往海边的林间小径", "North Head 灯塔，红顶白塔", "仰视 Cape Disappointment 灯塔", "灯塔侧面，塔身斑驳", "礁石海岸与远处的海岬", "Cape Disappointment 灯塔塔身特写", "俯瞰公园内的森林山谷"],
   },
   // 17. Trillium Lake
   17: {
     photos: [
-      "/manus-storage/trillium_lake_photo1_fe84e115.jpg",
-      "/manus-storage/trillium_lake_photo2_ab54a9f8.jpg",
-      "/manus-storage/trillium_lake_photo3_8c3706b2.jpg",
-      "/manus-storage/lPBhnXfPWYgZkHrM_21456f6e.jpg",
-      "/manus-storage/SYqVrCYYykkairkW_eb6cbbbc.jpg",
-      "/manus-storage/VmqTUxChLRDGktqw_c1bb6d76.jpeg",
-      "/manus-storage/sCSzwFZqUbHTMObr_0f3a468d.jpg"
+      "/camping-guide/images/camp-17/01.jpg",
+      "/camping-guide/images/camp-17/02.jpg",
+      "/camping-guide/images/camp-17/03.jpg",
+      "/camping-guide/images/camp-17/04.jpg",
+      "/camping-guide/images/camp-17/05.jpg",
+      "/camping-guide/images/camp-17/06.jpg",
+      "/camping-guide/images/camp-17/07.jpg"
     ],
-    map: "/manus-storage/map_trillium_lake_map_4f4062e7.jpg",
-    captions: ["Mt. Hood 湖面倒影", "湖畔营位", "环湖步道", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["清晨薄雾中 Mt. Hood 倒映在平静湖面，湖畔岩石点缀", "湖畔针叶林环绕，远眺 Mt. Hood，游客在岸边休憩", "日落时 Mt. Hood 染上晚霞，湖面波光粼粼", "环湖步道木栈道鸟瞰，穿过湿地通往湖畔", "湖上泛舟垂钓，背景是茂密的针叶林", "冬季冰封的湖面与远方的 Mt. Hood", "Mt. Hood 完美倒映在平静湖面，皮划艇点缀其中"],
   },
   // 18. Mora
   18: {
     photos: [
-      "/manus-storage/mora_photo1_fe57745a.webp",
-      "/manus-storage/mora_photo2_ec0fc4f5.jpg",
-      "/manus-storage/mora_photo3_a8324de5.jpg",
-      "/manus-storage/mora_photo4_4667ef25.jpg",
-      "/manus-storage/mora_photo5_e8991a45.jpg",
-      "/manus-storage/KJneQHoHFtSbdCrk_0b7272cb.jpg",
-      "/manus-storage/JIoyJsikGVFElPfl_b0f0b033.jpg",
-      "/manus-storage/cOHdcxOKDKmjocXo_ab518a75.jpg",
-      "/manus-storage/cnoswHSHPqdYQKhd_e98313c9.jpeg"
+      "/camping-guide/images/camp-18/01.jpg",
+      "/camping-guide/images/camp-18/02.jpg",
+      "/camping-guide/images/camp-18/03.jpg",
+      "/camping-guide/images/camp-18/04.jpg",
+      "/camping-guide/images/camp-18/05.jpg",
+      "/camping-guide/images/camp-18/06.jpg",
+      "/camping-guide/images/camp-18/07.jpg",
+      "/camping-guide/images/camp-18/08.jpg",
+      "/camping-guide/images/camp-18/09.jpg"
     ],
-    map: "/manus-storage/map_mora_map_c4399de3.png",
-    captions: ["A Loop 雨林营位", "Rialto Beach 漂流木", "海蚀柱", "雨林步道", "河畔营位", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["清晨的 Rialto Beach：阳光洒在 James Island 海蚀柱上", "Rialto Beach 沙滩上的漂流木与远方海蚀柱", "Rialto Beach 沙滩与拍岸海浪", "布满青苔的礁石与漂流木", "雾气笼罩的 Rialto Beach 海滩与岬角", "Rialto Beach 日落，海蚀柱剪影", "仰望海蚀柱峭壁，顶部孤树迎风", "Dahdayla Rock 海蚀柱近景", "Quillayute River 平静河面倒映森林"],
   },
   // 19. Little Crater Lake
   19: {
-    map: "/manus-storage/map_little_crater_lake_aa40ef7e.jpg",
     photos: [
-      "/manus-storage/little_crater_lake_photo1_f0fb7ec7.jpg",
-      "/manus-storage/little_crater_lake_photo2_cb98da0d.jpg",
-      "/manus-storage/little_crater_lake_photo3_1eb5b8ad.jpg",
-      "/manus-storage/ACggXiKtVQsbKDbE_a519de53.jpg",
-      "/manus-storage/LrOgvaHPiuLlBSuy_15cb765a.jpg",
-      "/manus-storage/glwuubkyleUkzqMl_46486f47.jpg",
+      "/camping-guide/images/camp-19/01.jpg",
+      "/camping-guide/images/camp-19/02.jpg",
+      "/camping-guide/images/camp-19/03.jpg",
+      "/camping-guide/images/camp-19/04.jpg",
+      "/camping-guide/images/camp-19/05.jpg",
+      "/camping-guide/images/camp-19/06.jpg"
     ],
-    captions: ["水晶清澈的泉水池", "PCT步道入口", "原始森林营位", "营地实景", "周边风光", "营位细节"],
+    captions: ["水晶般清澈的碧蓝泉水倒映针叶林，枯木横卧水面", "清澈见底的泉水中，沉没的枯木清晰可见", "高大针叶林倒映在碧绿的湖面上", "湖畔枯树与碧蓝泉水，岸边绿草丛生", "深邃蓝色泉水下，沉木根系清晰可见", "湖面倒映云杉林，水下枯木影影绰绰"],
   },
   // 20. Tumalo
   20: {
     photos: [
-      "/manus-storage/tumalo_photo1_ee06ae45.jpg",
-      "/manus-storage/tumalo_photo2_f5833334.jpg",
-      "/manus-storage/tumalo_photo3_81bc9e26.jpg",
-      "/manus-storage/OEiSoMLIaHStYPiZ_99aa0685.jpg",
-      "/manus-storage/UyFTdJDgypMRlLWI_33bb136f.jpg",
-      "/manus-storage/RPYaRzvIHZoCAnZT_9254dbfd.jpg",
-      "/manus-storage/zyyUlZieZEkYZMSq_4d61dbaf.jpg"
+      "/camping-guide/images/camp-20/01.jpg",
+      "/camping-guide/images/camp-20/02.jpg",
+      "/camping-guide/images/camp-20/03.jpg",
+      "/camping-guide/images/camp-20/04.jpg",
+      "/camping-guide/images/camp-20/05.jpg",
+      "/camping-guide/images/camp-20/06.jpg",
+      "/camping-guide/images/camp-20/07.jpg"
     ],
-    map: "/manus-storage/map_tumalo_map_25cb913f.jpg",
-    captions: ["Loop C 全接驳位", "Deschutes River", "营地游乐场", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["Tumalo State Park 营地入口", "日用区：Deschutes River 河畔草坪与野餐桌", "Deschutes River 流经公园，玄武岩峭壁与松树", "指向 Tumalo 的州立公园路标", "Deschutes River 蜿蜒穿过草甸（Bend 以北）", "Deschutes River 河畔，松树与波光", "Bend 市区段的 Deschutes River 激流"],
   },
   // 21. Cape Lookout
   21: {
     photos: [
-      "/manus-storage/cape_lookout_photo1_3176172c.jpg",
-      "/manus-storage/cape_lookout_photo2_52f07080.jpg",
-      "/manus-storage/cape_lookout_photo3_c97ec60f.jpg",
-      "/manus-storage/tSSJhQFlSJjAlOqT_a65b7842.jpg",
-      "/manus-storage/xXxBlsXggvgcIXmu_2620e228.jpg",
-      "/manus-storage/vFqGNZPemMZNlVkU_d117c69b.jpg",
-      "/manus-storage/uOHyrqSBiTRzvYNx_a2f4a6cc.jpg"
+      "/camping-guide/images/camp-21/01.jpg",
+      "/camping-guide/images/camp-21/02.jpg",
+      "/camping-guide/images/camp-21/03.jpg",
+      "/camping-guide/images/camp-21/04.jpg",
+      "/camping-guide/images/camp-21/05.jpg",
+      "/camping-guide/images/camp-21/06.jpg",
+      "/camping-guide/images/camp-21/07.jpg"
     ],
-    map: "/manus-storage/map_cape_lookout_map_8a2cb24c.jpg",
-    captions: ["C Loop 全接驳位", "海滩步道", "太平洋全景", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["Cape Lookout State Park 日用区海滩", "流经日用区的小溪", "日用区小溪上的木桥", "Cape Lookout 岬角峭壁", "Cape Lookout 岬角与海滩", "悬崖边的 Cape Lookout 岬角", "从岬角俯瞰蜿蜒的海滩与太平洋"],
   },
   // 22. Farewell Bend
   22: {
-    map: "/manus-storage/farewell_bend_map_c4cd61a1.webp",
     photos: [
-      "/manus-storage/farewell_bend_photo1_d506008e.jpg",
-      "/manus-storage/farewell_bend_photo2_f3042605.jpeg",
-      "/manus-storage/farewell_bend_photo3_4b568193.jpg",
-      "/manus-storage/jPwdauThSqRNVKzL_f15f94b3.jpg",
-      "/manus-storage/hlmbvJoRmBTuXkUD_d017d02d.jpeg",
-      "/manus-storage/OFYfQSFbeLYWWaYW_41e8fd26.jpg",
-      "/manus-storage/ZFsKjLJgEEDqziPZ_a7d7b81c.png",
+      "/camping-guide/images/camp-22/01.jpg",
+      "/camping-guide/images/camp-22/02.jpg",
+      "/camping-guide/images/camp-22/03.jpg",
+      "/camping-guide/images/camp-22/04.jpg",
+      "/camping-guide/images/camp-22/05.jpg",
+      "/camping-guide/images/camp-22/06.jpg",
+      "/camping-guide/images/camp-22/07.jpg"
     ],
-    captions: ["Rogue River 河畔营位", "天然游泳区", "林间营位", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["Union Creek 附近的 Rogue River 上游激流", "Rogue River Gorge 上游，白水奔腾", "Rogue River 河谷，皮划艇顺流而下", "Rogue River 峡谷俯瞰", "Natural Bridge 步道旁，Rogue River 白水穿过熔岩峡谷", "National Creek 瀑布", "Rogue 国家野生与风景河流标识牌"],
   },
   // 23. Crater Lake Mazama
   23: {
     photos: [
-      "/manus-storage/crater_lake_mazama_photo1_6acde40e.jpg",
-      "/manus-storage/crater_lake_mazama_photo2_08b8d224.jpg",
-      "/manus-storage/crater_lake_mazama_photo3_735f9df4.jpg",
-      "/manus-storage/crater_lake_mazama_photo4_d851c33e.jpg",
-      "/manus-storage/crater_lake_mazama_photo5_6358eb61.jpg",
-      "/manus-storage/YZDPDsAYaJHRsMWv_09f4b6c6.jpg",
-      "/manus-storage/OFYngRawgtOpeNvT_c4a19581.jpg",
-      "/manus-storage/gqXFHZoKfECnemvV_2060d7c9.png",
-      "/manus-storage/xAqQXiWwlnliCIPe_28ffe2c4.jpg"
+      "/camping-guide/images/camp-23/01.jpg",
+      "/camping-guide/images/camp-23/02.jpg",
+      "/camping-guide/images/camp-23/03.jpg",
+      "/camping-guide/images/camp-23/04.jpg",
+      "/camping-guide/images/camp-23/05.jpg",
+      "/camping-guide/images/camp-23/06.jpg",
+      "/camping-guide/images/camp-23/07.jpg",
+      "/camping-guide/images/camp-23/08.jpg",
+      "/camping-guide/images/camp-23/09.jpg"
     ],
-    map: "/manus-storage/map_crater_lake_mazama_map_1336e7b4.jpg",
-    captions: ["Crater Lake 全景", "F Loop 有电营位", "Rim Drive 观景点", "Wizard Island", "Mazama Village 营地", "营地实景", "周边风光", "营位细节", "步道入口"],
+    captions: ["火山口湖历史黑白全景，远眺巫师岛", "火山口湖全景：深蓝湖水环绕巫师岛", "巫师岛倒映在平静的湖面上", "湖畔步道俯瞰巫师岛与深蓝湖水", "从湖畔高处俯瞰巫师岛", "松树间眺望巫师岛与火山口湖", "针叶林间眺望巫师岛", "巫师岛近景，前景是残雪覆盖的岩石", "湖畔游客静坐欣赏火山口湖（历史照片）"],
   },
   // 24. Pacific Shores (not recommended for TC)
   24: {
-    map: "/manus-storage/map_pacific_shores_30bffc14.jpg",
-    photos: ["/manus-storage/pacific_shores_resort_97b8255b.jpg", "/manus-storage/camp_24_photo_4_2570fc6b.jpg", "/manus-storage/camp_24_photo_5_af041889.jpg", "/manus-storage/camp_24_photo_6_f104d026.jpg"],
-    captions: ["度假村海景全景", "停靠在太平洋海岸房车度假村的房车，背景是美丽的建筑和草坪。", "度假村会所与精致园林", "海岸线灯塔与蔚蓝海景"],
+    photos: [
+      "/camping-guide/images/camp-24/01.jpg",
+      "/camping-guide/images/camp-24/02.jpg",
+      "/camping-guide/images/camp-24/03.jpg",
+      "/camping-guide/images/camp-24/04.jpg",
+      "/camping-guide/images/camp-24/05.jpg"
+    ],
+    captions: ["度假村接待中心，门前绣球花盛开", "度假村会所与入口门禁", "阳光洒落的林间步道与野餐桌", "房车停靠在园林环绕的营位（164 号营位）", "透过松林远眺亚奎纳角灯塔与蔚蓝太平洋"],
   },
   // 25. Fort Worden
   25: {
-    photos: ["/manus-storage/camp_25_photo_1_35d442de.jpg", "/manus-storage/camp_25_photo_2_6c2cc1b9.jpg", "/manus-storage/camp_25_photo_3_858e7e23.jpg", "/manus-storage/camp_25_photo_4_50a19f57.jpg"],
-    captions: ["林间营位", "草地营位", "房车营地", "华盛顿州汤森港沃登堡州立公园的威尔逊角灯塔，背景是壮丽的雪山。"],
-    map: "/manus-storage/map_camp_25_913ddb92.png",
+    photos: [
+      "/camping-guide/images/camp-25/01.jpg",
+      "/camping-guide/images/camp-25/02.jpg",
+      "/camping-guide/images/camp-25/03.jpg",
+      "/camping-guide/images/camp-25/04.jpg",
+      "/camping-guide/images/camp-25/05.jpg"
+    ],
+    captions: ["指挥官官邸博物馆（历史建筑）", "修复后的斯托达德炮台（Amos Stoddard 炮台）", "东门附近观景台俯瞰阿德默勒尔蒂湾，海面帆船点点", "苦樱桃林中的林间步道", "红砖亚历山大城堡与马德罗纳树，海湾为背景"],
   },
   // 26. Grayland Beach
   26: {
-    photos: ["/manus-storage/camp_26_photo_1_34b136b2.jpg", "/manus-storage/camp_26_photo_2_be4465dd.jpg", "/manus-storage/camp_26_photo_3_85261e6c.jpg", "/manus-storage/camp_26_photo_4_71e957d5.jpg"],
-    captions: ["林间蒙古包营位", "海岸线航拍全景", "海滩绝美日落", "华盛顿州格雷兰海滩州立公园的蒙古包住宿设施"],
-    map: "/manus-storage/map_camp_26_d6d6cf4e.png",
+    photos: [
+      "/camping-guide/images/camp-26/01.jpg",
+      "/camping-guide/images/camp-26/02.jpg",
+      "/camping-guide/images/camp-26/03.jpg",
+      "/camping-guide/images/camp-26/04.jpg",
+      "/camping-guide/images/camp-26/05.jpg"
+    ],
+    captions: ["林间蒙古包营位，配野餐桌与篝火圈", "蒙古包内部：双层木床、绿色沙发床与圆形天窗", "皮卡拖着 Airstream 房车停靠在林间营位", "海滩步道上的长椅面朝大海，云隙透出彩虹", "黄昏时分四人在海滩上挖蛤蜊，海鸥飞过"],
   },
   // 27. Wenatchee Confluence
   27: {
-    photos: ["/manus-storage/camp_27_photo_1_32db2828.jpg", "/manus-storage/camp_27_photo_2_428b29da.jpg", "/manus-storage/camp_27_photo_3_d5d04f5a.jpg", "/manus-storage/camp_27_photo_4_afcf38d1.jpg"],
-    captions: ["营地草坪与房车", "树下房车营位", "湖畔野餐区", "韦纳奇汇流州立公园的露营地，设有野餐桌和帐篷"],
-    map: "/manus-storage/map_camp_27_2b88825e.png",
+    photos: [
+      "/camping-guide/images/camp-27/01.jpg",
+      "/camping-guide/images/camp-27/02.jpg",
+      "/camping-guide/images/camp-27/03.jpg",
+      "/camping-guide/images/camp-27/04.jpg",
+      "/camping-guide/images/camp-27/05.jpg"
+    ],
+    captions: ["宽阔草坪上的房车营位，远处是干旱山丘", "湖畔沙滩与长椅，绿草坪向水边延伸", "河畔野餐桌，远眺河流与对岸山丘", "骑行者在园内铺装步道上骑行", "女孩在文纳奇河步行桥上滑滑板，铁桥与山丘为背景"],
   },
   // 28. Fort Flagler
   28: {
-    photos: ["/manus-storage/camp_28_photo_1_2dd0cd83.webp", "/manus-storage/camp_28_photo_2_5b5869c1.jpg", "/manus-storage/camp_28_photo_3_1f412297.jpg", "/manus-storage/camp_28_photo_4_38cca85b.jpg"],
-    captions: ["林间营位", "海湾码头", "海滨草地", "华盛顿州弗拉格勒堡州立公园的宁静海滩和码头景观"],
-    map: "/manus-storage/map_camp_28_60a903ac.png",
+    photos: [
+      "/camping-guide/images/camp-28/01.jpg",
+      "/camping-guide/images/camp-28/02.jpg",
+      "/camping-guide/images/camp-28/03.jpg",
+      "/camping-guide/images/camp-28/04.jpg",
+      "/camping-guide/images/camp-28/05.jpg"
+    ],
+    captions: ["沙滩与漂流木，房车营地近在咫尺", "参天古木环绕的林间营位与野餐桌", "炮台走廊：Battery Row 沿线的混凝土工事与旧炮架", "幽深的林间步道，两侧蕨类与苔藓", "滑翔伞在海崖上空飞舞，历史建筑与海湾为背景"],
   },
   // 29. Hoh Rain Forest
   29: {
-    photos: ["/manus-storage/camp_29_photo_1_accb585a.jpg", "/manus-storage/camp_29_photo_2_a3f6676e.jpg", "/manus-storage/camp_29_photo_3_a5da5957.jpg", "/manus-storage/camp_29_photo_4_54b2b4ac.jpg"],
-    captions: ["林间营位", "森林房车营地", "草地帐篷营位", "奥林匹克国家公园霍河雨林露营地，周围环绕着长满青苔的树木。"],
-    map: "/manus-storage/map_camp_29_f98d93d2.jpg",
+    photos: [
+      "/camping-guide/images/camp-29/01.jpg",
+      "/camping-guide/images/camp-29/02.jpg",
+      "/camping-guide/images/camp-29/03.jpg",
+      "/camping-guide/images/camp-29/04.jpg",
+      "/camping-guide/images/camp-29/05.jpg"
+    ],
+    captions: ["霍河雨林营地内的房车营位，配野餐桌与露营椅", "营地林间空地的露营椅休憩区", "游客牵着狗狗漫步在营地步道上", "雨林中高大的西部铁杉与盘根错节的树根", "霍河雨林枫树林（Maple Grove）的参天大叶枫"],
   },
   // 30. Moran State Park
   30: {
-    photos: ["/manus-storage/camp_30_photo_1_341f078c.jpg", "/manus-storage/camp_30_photo_2_0a35be02.jpg", "/manus-storage/camp_30_photo_3_85ca8b8e.jpg", "/manus-storage/camp_30_photo_4_e02353ba.jpg"],
-    captions: ["湖畔林间营地", "湖面泛舟与码头", "山顶俯瞰海湾美景", "莫兰州立公园宪法山观景台的岛屿和水域美景。"],
-    map: "/manus-storage/map_camp_30_388b39e5.png",
+    photos: [
+      "/camping-guide/images/camp-30/01.jpg",
+      "/camping-guide/images/camp-30/02.jpg",
+      "/camping-guide/images/camp-30/03.jpg",
+      "/camping-guide/images/camp-30/04.jpg",
+      "/camping-guide/images/camp-30/05.jpg"
+    ],
+    captions: ["中途营地（Midway Campground）紧邻下水坡道的滨水营位", "南端营地（Southend Campground）8号湖畔营位", "两人在卡斯卡德湖上划皮划艇", "宪法山观景塔远眺克拉克岛与卢米岛", "宪法山观景塔俯瞰卢米岛及周边水道"],
   },
   // 31. South Beach OR
   31: {
-    photos: ["/manus-storage/camp_31_photo_1_4a016c75.jpg", "/manus-storage/camp_31_photo_2_ca1ae0ae.jpg", "/manus-storage/camp_31_photo_3_8249609f.jpg", "/manus-storage/camp_31_photo_4_1030adf7.jpg"],
-    captions: ["南海滩沙滩", "林间步道", "营地入口", "俄勒冈州纽波特南海滩州立公园的壮丽海岸线景观"],
-    map: "/manus-storage/map_camp_31_2edc4e97.png",
+    photos: [
+      "/camping-guide/images/camp-31/01.jpg",
+      "/camping-guide/images/camp-31/02.jpg",
+      "/camping-guide/images/camp-31/03.jpg",
+      "/camping-guide/images/camp-31/04.jpg",
+      "/camping-guide/images/camp-31/05.jpg"
+    ],
+    captions: ["穿过海岸林地的库珀岭自然步道", "营地入口处的登记办公室", "园内宁静的池塘", "园内“哥伦比亚”蒙古包住宿", "停在营地林间的露营厢式车"],
   },
   // 32. Nehalem Bay
   32: {
-    photos: ["/manus-storage/camp_32_photo_1_9b6f6e79.jpg", "/manus-storage/camp_32_photo_2_1859b52c.jpg", "/manus-storage/camp_32_photo_3_b7f1c83a.jpg", "/manus-storage/camp_32_photo_4_9fd5e9db.jpg"],
-    captions: ["草地帐篷营位", "海湾步道风景", "沙丘海滩风光", "Nehalem湾全景与彩虹"],
-    map: "/manus-storage/map_camp_32_e51eb8c5.png",
+    photos: [
+      "/camping-guide/images/camp-32/01.jpg",
+      "/camping-guide/images/camp-32/02.jpg",
+      "/camping-guide/images/camp-32/03.jpg",
+      "/camping-guide/images/camp-32/04.jpg",
+      "/camping-guide/images/camp-32/05.jpg"
+    ],
+    captions: ["Nehalem湾与内哈勒姆河入海口全景", "面向太平洋的沙丘海滩", "退潮时宽阔的海滩与远山", "两名游客在海滩上骑马", "园内的蒙古包住宿"],
   },
   // 33. Honeyman
   33: {
-    photos: ["/manus-storage/camp_33_photo_1_b521a545.jpg", "/manus-storage/camp_33_photo_2_3477d04b.jpg", "/manus-storage/camp_33_photo_3_04b99be9.jpg", "/manus-storage/camp_33_photo_4_66b76725.jpg"],
-    captions: ["湖畔码头与沙丘", "林间露营地", "森林蒙古包", "Honeyman州立公园Cleawox湖和沙丘的风景"],
-    map: "/manus-storage/map_camp_33_8a3fa288.png",
+    photos: [
+      "/camping-guide/images/camp-33/01.jpg",
+      "/camping-guide/images/camp-33/02.jpg",
+      "/camping-guide/images/camp-33/03.jpg",
+      "/camping-guide/images/camp-33/04.jpg",
+      "/camping-guide/images/camp-33/05.jpg"
+    ],
+    captions: ["Cleawox 湖上的钓鱼码头，远眺湖畔沙丘", "林间露营营位", "林中蒙古包（yurt）", "Cleawox 湖与 Honeyman 公园全景", "营地内的林间道路"],
   },
   // 34. Silver Falls
   34: {
-    photos: ["/manus-storage/camp_34_photo_1_dd585966.jpg", "/manus-storage/camp_34_photo_2_4d0e89ea.jpg", "/manus-storage/camp_34_photo_3_dae45dd2.jpg", "/manus-storage/camp_34_photo_4_daf8e05e.jpg"],
-    captions: ["壮丽瀑布景观", "林间房车营地", "森林帐篷营位", "俄勒冈州银瀑布州立公园的南瀑布和步道"],
-    map: "/manus-storage/map_camp_34_f24d27d2.png",
+    photos: [
+      "/camping-guide/images/camp-34/01.jpg",
+      "/camping-guide/images/camp-34/02.jpg",
+      "/camping-guide/images/camp-34/03.jpg",
+      "/camping-guide/images/camp-34/04.jpg",
+      "/camping-guide/images/camp-34/05.jpg"
+    ],
+    captions: ["南瀑布（South Falls），公园最受欢迎的瀑布", "南瀑布（South Falls）的另一视角", "十瀑步道（Trail of Ten Falls）沿线的 Silver Creek 溪流", "营地内的林间徒步道", "流经营地的 Silver Creek 溪流"],
   },
   // 35. Wallowa Lake
   35: {
-    photos: ["/manus-storage/camp_35_photo_1_9ac99bb8.jpg", "/manus-storage/camp_35_photo_2_ab66be82.jpg", "/manus-storage/camp_35_photo_3_45378b95.jpg", "/manus-storage/camp_35_photo_4_bddec261.jpg"],
-    captions: ["湖泊山景", "林间营位", "湖畔雪山", "从瓦洛厄湖州立公园营地看到的湖泊和雪山美景"],
-    map: "/manus-storage/map_camp_35_4517251f.png",
+    photos: [
+      "/camping-guide/images/camp-35/01.jpg",
+      "/camping-guide/images/camp-35/02.jpg",
+      "/camping-guide/images/camp-35/03.jpg",
+      "/camping-guide/images/camp-35/04.jpg",
+      "/camping-guide/images/camp-35/05.jpg"
+    ],
+    captions: ["瓦洛厄湖湖景，远眺群山", "瓦洛厄湖畔风光", "瓦洛厄湖码头停靠的船只", "公园日间游憩区", "木屋（yurt）旁漫步的鹿"],
   },
   // 36. Detroit Lake
   36: {
-    photos: ["/manus-storage/camp_36_photo_1_04d2b57b.jpg", "/manus-storage/camp_36_photo_2_51667a78.jpg", "/manus-storage/camp_36_photo_3_1d34d4f7.jpg", "/manus-storage/camp_36_photo_4_c2304934.jpg"],
-    captions: ["湖畔露营烧烤", "林间营地篝火", "湖泊沙滩风景", "底特律湖州立游乐区营地，展示了房车露营的设置和休闲的氛围。"],
-    map: "/manus-storage/map_camp_36_d4194e14.png",
+    photos: [
+      "/camping-guide/images/camp-36/01.jpg",
+      "/camping-guide/images/camp-36/02.jpg",
+      "/camping-guide/images/camp-36/03.jpg",
+      "/camping-guide/images/camp-36/04.jpg",
+      "/camping-guide/images/camp-36/05.jpg"
+    ],
+    captions: ["底特律湖鸟瞰（2015 年 8 月）", "底特律湖码头", "底特律湖宁静的湖面", "冬日雪中的底特律湖", "Blowout Arm 湖湾的瀑布（仅乘船可达）"],
   },
   // 37. Sol Duc
   37: {
-    photos: ["/manus-storage/camp_37_photo_1_a27d0379.jpg", "/manus-storage/camp_37_photo_2_a66f2d7e.jpg", "/manus-storage/camp_37_photo_3_40dde2f0.jpg", "/manus-storage/camp_37_photo_4_da9abde2.jpg"],
-    captions: ["林间营位", "温泉度假村", "森林野餐区", "奥林匹克国家公园内的索尔达克瀑布（Sol Duc Falls）。"],
-    map: "/manus-storage/map_camp_37_75bb9269.png",
+    photos: [
+      "/camping-guide/images/camp-37/01.jpg",
+      "/camping-guide/images/camp-37/02.jpg",
+      "/camping-guide/images/camp-37/03.jpg",
+      "/camping-guide/images/camp-37/04.jpg",
+      "/camping-guide/images/camp-37/05.jpg"
+    ],
+    captions: ["索尔达克瀑布（Sol Duc Falls）的另一视角", "原始森林中的露营营地（NPS 实拍）", "森林中的 Sol Duc 营地", "温泉度假村的木屋与秋千", "索尔达克温泉（Sol Duc Springs）"],
   },
   // 38. Harris Beach
   38: {
-    photos: ["/manus-storage/camp_38_photo_1_11c86f9d.jpg", "/manus-storage/camp_38_photo_2_df2006a0.jpg", "/manus-storage/camp_38_photo_3_f75bee0b.jpg", "/manus-storage/camp_38_photo_4_8baee8a6.jpg"],
-    captions: ["林间帐篷营位", "林间房车营位", "海滩礁石风光", "哈里斯海滩州立公园的日出，可以看到著名的山羊岛（Goat Island）和海蚀柱。"],
-    map: "/manus-storage/map_camp_38_5a4d2d47.png",
+    photos: [
+      "/camping-guide/images/camp-38/01.jpg",
+      "/camping-guide/images/camp-38/02.jpg",
+      "/camping-guide/images/camp-38/03.jpg",
+      "/camping-guide/images/camp-38/04.jpg",
+      "/camping-guide/images/camp-38/05.jpg"
+    ],
+    captions: ["哈里斯海滩的日出", "海蚀柱与山羊岛（Goat Island）", "海滩上的海蚀柱群", "在 Rogue 蒙古包（yurt）露营", "清晨的哈里斯海滩"],
   },
   // 39. Colonial Creek
   39: {
-    photos: ["/manus-storage/camp_39_photo_1_51074da3.jpg", "/manus-storage/camp_39_photo_2_b0b765cc.jpg", "/manus-storage/camp_39_photo_3_0c423716.jpg", "/manus-storage/camp_39_photo_4_7d76e6d8.jpg"],
-    captions: ["营地湖景", "湖畔野餐桌", "湖面栈道", "从Colonial Creek South露营地看到的Diablo湖美景"],
-    map: "/manus-storage/map_camp_39_839e1439.jpg",
+    photos: [
+      "/camping-guide/images/camp-39/01.jpg",
+      "/camping-guide/images/camp-39/02.jpg",
+      "/camping-guide/images/camp-39/03.jpg",
+      "/camping-guide/images/camp-39/04.jpg",
+      "/camping-guide/images/camp-39/05.jpg"
+    ],
+    captions: ["Diablo Lake 观景点远眺湖泊与群山", "从 20 号州道旁的 Diablo Lake 观景点看湖泊", "Diablo 湖与群山", "Diablo 湖湖面", "Colonial Peak 与 Diablo 湖的 Thunder Arm"],
   },
   // 40. Lincoln Rock
   40: {
-    photos: ["/manus-storage/camp_40_photo_1_1166d0d1.jpg", "/manus-storage/camp_40_photo_2_5ce06ec0.jpg", "/manus-storage/camp_40_photo_3_f8f874f4.jpg", "/manus-storage/camp_40_photo_4_d42c0ae6.jpg"],
-    captions: ["营地湖景", "林间营位", "营地游乐场", "林肯岩州立公园的湖景，展示了哥伦比亚河的宁静水面和远处的山丘。"],
-    map: "/manus-storage/map_camp_40_966e51ab.png",
+    photos: [
+      "/camping-guide/images/camp-40/01.jpg",
+      "/camping-guide/images/camp-40/02.jpg",
+      "/camping-guide/images/camp-40/03.jpg",
+      "/camping-guide/images/camp-40/04.jpg",
+      "/camping-guide/images/camp-40/05.jpg"
+    ],
+    captions: ["隔着哥伦比亚河眺望林肯岩", "冬日的公园与哥伦比亚河，远处可见 Turtle Rock", "冬日雪中的林肯岩州立公园", "Entiat 湖（哥伦比亚河水库）全景", "Entiat 湖中的 Turtle Rock 岛（公园附近）"],
   },
   // 41. Fort Casey
   41: {
-    photos: ["/manus-storage/camp_41_photo_1_230ea416.jpg", "/manus-storage/camp_41_photo_2_660d1dcd.jpg", "/manus-storage/camp_41_photo_3_8343a8a6.jpg", "/manus-storage/camp_41_photo_4_e802a530.jpg"],
-    captions: ["海滨营地全景", "海滩房车营地", "历史炮台建筑", "华盛顿州惠德贝岛凯西堡州立公园的沃思炮台（Battery Worth）升起的右侧火炮。"],
-    map: "/manus-storage/map_camp_41_dff35f1e.png",
+    photos: [
+      "/camping-guide/images/camp-41/01.jpg",
+      "/camping-guide/images/camp-41/02.jpg",
+      "/camping-guide/images/camp-41/03.jpg",
+      "/camping-guide/images/camp-41/04.jpg",
+      "/camping-guide/images/camp-41/05.jpg"
+    ],
+    captions: ["沃思炮台（Battery Worth）升起的左侧火炮（10 英寸隐显炮）", "Trevor 炮台（Battery Trevor）", "海军角灯塔（Admiralty Head Light）", "从海崖眺望奥林匹克山脉的日落", "沃思炮台 10 英寸隐显炮特写"],
   },
   // 42. Fort Ebey
   42: {
-    photos: ["/manus-storage/camp_42_photo_1_1817a8af.jpg", "/manus-storage/camp_42_photo_2_4fa7e1fe.jpg", "/manus-storage/camp_42_photo_3_db9bf911.jpg", "/manus-storage/camp_42_photo_4_1ad3442b.jpg"],
-    captions: ["海滩风景", "军事炮台遗址", "林间步道", "惠德比岛福特·埃贝州立公园海滩上空的戏剧性阴云"],
-    map: "/manus-storage/map_camp_42_0d6a1d4d.png",
+    photos: [
+      "/camping-guide/images/camp-42/01.jpg",
+      "/camping-guide/images/camp-42/02.jpg",
+      "/camping-guide/images/camp-42/03.jpg",
+      "/camping-guide/images/camp-42/04.jpg",
+      "/camping-guide/images/camp-42/05.jpg"
+    ],
+    captions: ["被常春藤覆盖的1942年混凝土炮台遗址", "林间小径穿过茂密的针叶林，倒木上长满青苔", "布满睡莲的池塘（庞迪拉湖），四周森林环绕", "身穿潜水衣的冲浪者在海浪上驰骋", "海崖草坪上看日落，阳光洒在海峡上"],
   },
   // 43. Larrabee
   43: {
-    photos: ["/manus-storage/camp_43_photo_1_f64e97a7.jpg", "/manus-storage/camp_43_photo_2_44c7ee40.jpg", "/manus-storage/camp_43_photo_3_4f7ae3ce.jpg", "/manus-storage/camp_43_photo_4_a382ece0.jpg"],
-    captions: ["林间营位", "海湾风景", "海滩日落", "华盛顿州拉拉比州立公园的岩石海岸线和萨米什湾风景"],
-    map: "/manus-storage/map_camp_43_5a100b3b.png",
+    photos: [
+      "/camping-guide/images/camp-43/01.jpg",
+      "/camping-guide/images/camp-43/02.jpg",
+      "/camping-guide/images/camp-43/03.jpg",
+      "/camping-guide/images/camp-43/04.jpg",
+      "/camping-guide/images/camp-43/05.jpg"
+    ],
+    captions: ["林间原始营位，野餐桌掩映在绿树之中", "海浪拍打着雕刻般的礁石与漂流木", "从观景点眺望普吉特湾与圣胡安群岛的日落（1970年代档案照片）", "林间草坪上的历史露天剧场（乐队壳）", "岩石海岸线与萨米什湾风景"],
   },
   // 44. Steamboat Rock
   44: {
-    photos: ["/manus-storage/camp_44_photo_1_3cde74bd.jpg", "/manus-storage/camp_44_photo_2_bbb4db67.jpg", "/manus-storage/camp_44_photo_3_3ec3daf0.jpg", "/manus-storage/camp_44_photo_4_bd9fda29.jpg"],
-    captions: ["湖畔营地全景", "营地与湖泊风光", "湖畔沙滩与营地", "华盛顿州汽船岩州立公园，从班克斯湖上看到的壮丽岩层景观。"],
-    map: "/manus-storage/map_camp_44_cb5edf75.png",
+    photos: [
+      "/camping-guide/images/camp-44/01.jpg",
+      "/camping-guide/images/camp-44/02.jpg",
+      "/camping-guide/images/camp-44/03.jpg",
+      "/camping-guide/images/camp-44/04.jpg",
+      "/camping-guide/images/camp-44/05.jpg"
+    ],
+    captions: ["湖畔营地全景，峡谷峭壁为背景", "班克斯湖与远处的汽船岩", "湖畔沙滩游泳区", "船下水坡道与玄武岩峭壁", "湖边垂钓"],
   },
   // 45. Bullards Beach
   45: {
-    photos: ["/manus-storage/camp_45_photo_1_a0e8d40b.jpg", "/manus-storage/camp_45_photo_2_fa167ec4.jpg", "/manus-storage/camp_45_photo_3_d190e23c.jpg", "/manus-storage/camp_45_photo_4_766623f3.jpg"],
-    captions: ["海滩风景", "房车营位", "营地全景", "俄勒冈州班登布拉兹海滩州立公园的科基尔河灯塔日落美景"],
-    map: "/manus-storage/map_camp_45_93ce5ef5.png",
+    photos: [
+      "/camping-guide/images/camp-45/01.jpg",
+      "/camping-guide/images/camp-45/02.jpg",
+      "/camping-guide/images/camp-45/03.jpg",
+      "/camping-guide/images/camp-45/04.jpg",
+      "/camping-guide/images/camp-45/05.jpg"
+    ],
+    captions: ["海岸沙滩风景，海浪与沙丘", "库基尔河灯塔（1896年）与解说牌", "松林中的营地入口", "防波堤上的灯塔与漂流木", "灯塔与海岸风光，沙丘草丛前景"],
   },
   // 46. Champoeg
   46: {
-    photos: ["/manus-storage/camp_46_photo_1_0b749168.jpg", "/manus-storage/camp_46_photo_2_e9cc383b.jpg", "/manus-storage/camp_46_photo_3_6af8d85c.jpg", "/manus-storage/camp_46_photo_4_40067fa3.jpg"],
-    captions: ["林间营位", "营地篝火", "草坪营位", "俄勒冈州尚波伊州立遗产区的先驱纪念馆"],
-    map: "/manus-storage/map_camp_46_bec50d42.png",
+    photos: [
+      "/camping-guide/images/camp-46/01.jpg",
+      "/camping-guide/images/camp-46/02.jpg",
+      "/camping-guide/images/camp-46/03.jpg",
+      "/camping-guide/images/camp-46/04.jpg",
+      "/camping-guide/images/camp-46/05.jpg"
+    ],
+    captions: ["林间小木屋住宿区", "十九世纪木谷仓历史建筑", "高大的雪松林", "林间小径", "1901年纪念碑与先锋纪念馆"],
   },
   // 47. Sunset Bay
   47: {
-    photos: ["/manus-storage/camp_47_photo_1_d1d8aaac.jpg", "/manus-storage/camp_47_photo_2_308d1cf0.jpg", "/manus-storage/camp_47_photo_3_774e474f.jpg", "/manus-storage/camp_47_photo_4_9bf3fd25.jpg"],
-    captions: ["海湾沙滩风景", "营地入口及林间道路", "林间露营位及帐篷", "日落湾州立公园受保护的海湾，周围环绕着海崖和砂岩悬崖。"],
-    map: "/manus-storage/map_camp_47_3332de4a.png",
+    photos: [
+      "/camping-guide/images/camp-47/01.jpg",
+      "/camping-guide/images/camp-47/02.jpg",
+      "/camping-guide/images/camp-47/03.jpg",
+      "/camping-guide/images/camp-47/04.jpg",
+      "/camping-guide/images/camp-47/05.jpg"
+    ],
+    captions: ["海滩边悬崖下的皮划艇与海湾", "退潮后的沙滩与森林覆盖的悬崖", "海湾沙滩、漂流木与悬崖倒影", "潮池礁石与背后的森林悬崖", "潮池奇石与海岸悬崖群"],
   },
   // 48. Cove Palisades
   48: {
-    photos: ["/manus-storage/camp_48_photo_1_8cd4db06.jpg", "/manus-storage/camp_48_photo_2_cbca821b.jpg", "/manus-storage/camp_48_photo_3_f45070ba.jpg", "/manus-storage/camp_48_photo_4_57b4d68e.jpg"],
-    captions: ["房车营地与野餐区", "林间帐篷营位", "湖畔野餐区与峡谷风光", "从半岛上的Tam-a-lau步道向北眺望比利奇努克湖，可以看到岛屿研究自然区和下方的海湾栅栏州立公园设施。"],
-    map: "/manus-storage/map_camp_48_571aece4.png",
+    photos: [
+      "/camping-guide/images/camp-48/01.jpg",
+      "/camping-guide/images/camp-48/02.jpg",
+      "/camping-guide/images/camp-48/03.jpg",
+      "/camping-guide/images/camp-48/04.jpg",
+      "/camping-guide/images/camp-48/05.jpg"
+    ],
+    captions: ["公园峡谷与毕利奇诺克湖全景", "毕利奇诺克湖峡谷鸟瞰", "Crooked River 日间使用区湖面码头", "湖景与远处的喀斯喀特雪山", "悬崖湖湾边的野花与湖景"],
   },
   // 49. La Pine
   49: {
-    photos: ["/manus-storage/camp_49_photo_1_401e2ebf.jpg", "/manus-storage/camp_49_photo_2_6d25fac3.jpg", "/manus-storage/camp_49_photo_3_46b50517.jpg", "/manus-storage/camp_49_photo_4_f1e8c2bb.jpg"],
-    captions: ["营地河流风光", "房车营位", "林间帐篷营位", "俄勒冈州拉派恩州立公园内有500年历史的\"大树\"（美国黄松）"],
-    map: "/manus-storage/map_camp_49_e9ddb871.png",
+    photos: [
+      "/camping-guide/images/camp-49/01.jpg",
+      "/camping-guide/images/camp-49/02.jpg",
+      "/camping-guide/images/camp-49/03.jpg",
+      "/camping-guide/images/camp-49/04.jpg",
+      "/camping-guide/images/camp-49/05.jpg"
+    ],
+    captions: ["松林间蜿蜒的得舒特河", "松林环绕的河湾", "平静的河面与松林倒影", "河弯与白色断崖", "阴天里的松林与河景"],
   },
   // 50. Rathtrevor Beach
   50: {
-    photos: ["/manus-storage/rathtrevor_beach_hero_b471b8a3.jpg", "/manus-storage/rathtrevor_low_tide_c48138dc.jpg", "/manus-storage/rathtrevor_campsite_c46409b9.jpg", "/manus-storage/rathtrevor_beach2_918db20d.jpg", "/manus-storage/rathtrevor_rv_forest_6300e702.jpg"],
-    captions: ["退潮时绵延一公里的沙滩", "退潮全景与远山", "林间营位", "海滩与树木", "森林中的RV营位"],
-    map: "/manus-storage/rathtrevor_map_c92472c7.png",
+    photos: [
+      "/camping-guide/images/camp-50/01.jpg",
+      "/camping-guide/images/camp-50/02.jpg",
+      "/camping-guide/images/camp-50/03.jpg",
+      "/camping-guide/images/camp-50/04.jpg",
+      "/camping-guide/images/camp-50/05.jpg"
+    ],
+    captions: ["退潮时绵延一公里的沙滩，潮水退去露出广阔滩涂", "退潮全景与远山，海峡对岸山峦起伏", "高大冷杉林间的帐篷营位", "海滩与树木，海岸线旁的冷杉林与漂流木", "森林中的RV营位，冷杉林中的房车与野餐桌"],
   },
   // 51. Lightning Lake (Manning Park)
   51: {
-    photos: ["/manus-storage/lightning_lake_hero_74eaf803.webp", "/manus-storage/lightning_lake_kayak_050121e6.webp", "/manus-storage/lightning_lake_campsite_ac26a314.jpeg", "/manus-storage/lightning_lake_reflection_4a74918c.jpg", "/manus-storage/lightning_lake_frontcountry_dbb44e2c.jpg"],
-    captions: ["闪电湖与群山倒影", "湖上皮划艇", "林间营位与游乐场", "湖面倒影", "营地全景"],
-    map: "/manus-storage/lightning_lake_map_9aebf297.png",
+    photos: [
+      "/camping-guide/images/camp-51/01.jpg",
+      "/camping-guide/images/camp-51/02.jpg",
+      "/camping-guide/images/camp-51/03.jpg",
+      "/camping-guide/images/camp-51/04.jpg",
+      "/camping-guide/images/camp-51/05.jpg"
+    ],
+    captions: ["闪电湖与群山倒影，湖面如镜倒映云雾山峦", "湖上泛舟，远处是闪电湖彩虹桥", "林间房车营位", "湖畔独木舟，群山与冷杉林环绕", "曼宁公园群山全景"],
   },
   // 52. Cultus Lake
   52: {
-    photos: ["/manus-storage/cultus_lake_hero_d8fa675e.jpg", "/manus-storage/cultus_lake_campsite_105489d1.jpg", "/manus-storage/cultus_lake_mountain_6df189f5.jpeg", "/manus-storage/cultus_lake_warm_water_7d4d85ae.jpg", "/manus-storage/cultus_lake_beach_3616a772.jpg"],
-    captions: ["湖畔沙滩与山景", "林间RV营位", "湖水与群山", "温暖清澈的湖水", "湖畔休闲"],
-    map: "/manus-storage/cultus_lake_map_617111b7.jpg",
+    photos: [
+      "/camping-guide/images/camp-52/01.jpg",
+      "/camping-guide/images/camp-52/02.jpg",
+      "/camping-guide/images/camp-52/03.jpg",
+      "/camping-guide/images/camp-52/04.jpg",
+      "/camping-guide/images/camp-52/05.jpg"
+    ],
+    captions: ["湖畔沙滩、泳场浮标与码头，雪山为背景", "夜晚的林间营地，帐篷灯火", "湖水与群山", "湖上皮划艇，水面波光粼粼", "湖畔休闲：沙滩与人群聚集的码头"],
   },
   // 53. Golden Ears (Alouette)
   53: {
-    photos: ["/manus-storage/golden_ears_hero_246b57dd.jpg", "/manus-storage/golden_ears_camping_c5c5456e.jpg", "/manus-storage/golden_ears_alouette_ed9a2704.jpg", "/manus-storage/golden_ears_beach_c82e83d4.jpg", "/manus-storage/golden_ears_lake_a7c298c0.jpg"],
-    captions: ["阿卢埃特湖全景", "湖畔露营", "营地与湖景", "湖畔沙滩", "湖边野餐区"],
-    map: "/manus-storage/golden_ears_map_6d038b16.jpg",
+    photos: [
+      "/camping-guide/images/camp-53/01.jpg",
+      "/camping-guide/images/camp-53/02.jpg",
+      "/camping-guide/images/camp-53/03.jpg",
+      "/camping-guide/images/camp-53/04.jpg",
+      "/camping-guide/images/camp-53/05.jpg"
+    ],
+    captions: ["日出时分的阿卢特湖与群山", "林间帐篷营位，苔藓森林环绕", "湖畔砾石沙滩与群山", "泛舟阿卢特湖", "金耳山雪峰全景"],
   },
 };

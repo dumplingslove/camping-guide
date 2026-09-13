@@ -1,0 +1,75 @@
+{
+ "id": 14,
+ "name": "Fort Stevens State Park",
+ "card": "images/camp-14/card.jpg",
+ "card_caption": "日落时分的 Peter Iredale 沉船剪影",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Peter%20Iredale%20shipwreck%20at%20sunset.jpg",
+ "card_author": "Rick Obst",
+ "card_license": "CC BY 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-14/01.jpg",
+   "caption": "游人在 Peter Iredale 沉船旁看日落",
+   "source": "https://commons.wikimedia.org/wiki/File:1906%20Peter%20Iredale%20shipwreck%20in%20Fort%20Stevens%20State%20Park.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-14/02.jpg",
+   "caption": "Peter Iredale 沉船残骸特写",
+   "source": "https://commons.wikimedia.org/wiki/File:Bow%20of%20the%20Peter%20Iredale%20shipwreck%20in%20Fort%20Stevens%20State%20Park.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-14/03.jpg",
+   "caption": "晚霞中的沉船与海滩",
+   "source": "https://commons.wikimedia.org/wiki/File:July%202019%20sunset%20by%20the%20Peter%20Iredale%20shipwreck.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-14/04.jpg",
+   "caption": "林间的房车营位",
+   "source": "https://commons.wikimedia.org/wiki/File:Fort%20Stevens%20State%20Park%20%2849190555748%29.jpg",
+   "author": "runarut",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-14/05.jpg",
+   "caption": "房车营位，遮阳篷下放着露营椅",
+   "source": "https://commons.wikimedia.org/wiki/File:Fort%20Stevens%20State%20Park%20%2849191055171%29.jpg",
+   "author": "runarut",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-14/06.jpg",
+   "caption": "历史军事炮台遗址",
+   "source": "https://commons.wikimedia.org/wiki/File:Battery%20Russell%20at%20Fort%20Stevens%20State%20Park%2011.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-14/07.jpg",
+   "caption": "二战时期的混凝土营房建筑",
+   "source": "https://commons.wikimedia.org/wiki/File:Bunker%20at%20Battery%20Russell%20in%20Fort%20Stevens%20State%20Park.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-14/08.jpg",
+   "caption": "Coffenbury Lake 湖畔的野餐桌",
+   "source": "https://commons.wikimedia.org/wiki/File:Coffenbury%20Lake%20day%20use%20area%20in%20Fort%20Stevens%20State%20Park.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "images/camp-14/09.jpg",
+   "caption": "Coffenbury Lake 湖面倒映着松林",
+   "source": "https://commons.wikimedia.org/wiki/File:Morning%20reflections%20at%20Coffenbury%20Lake.jpg",
+   "author": "Rick Obst",
+   "license": "CC BY 4.0"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

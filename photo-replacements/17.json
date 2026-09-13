@@ -1,0 +1,60 @@
+{
+ "id": 17,
+ "name": "Trillium Lake",
+ "card": "images/camp-17/card.jpg",
+ "card_caption": "Mt. Hood 倒映在 Trillium Lake 湖面",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3AOregon_Mount_Hood_from_Trillium_Lake_2024.jpg",
+ "card_author": "Kevin Crosby",
+ "card_license": "CC BY-SA 2.0",
+ "gallery": [
+  {
+   "file": "images/camp-17/01.jpg",
+   "caption": "清晨薄雾中 Mt. Hood 倒映在平静湖面，湖畔岩石点缀",
+   "source": "https://commons.wikimedia.org/wiki/File%3ATrillium_Lake_%26_Mt_Hood_Reflections%2C_Mt_Hood_National_Forest_%2822824962304%29.jpg",
+   "author": "U.S. Forest Service- Pacific Northwest Region",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-17/02.jpg",
+   "caption": "湖畔针叶林环绕，远眺 Mt. Hood，游客在岸边休憩",
+   "source": "https://commons.wikimedia.org/wiki/File%3ATrillium_Lake_and_Mount_Hood.jpg",
+   "author": "Oregon Department of Fish & Wildlife",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-17/03.jpg",
+   "caption": "日落时 Mt. Hood 染上晚霞，湖面波光粼粼",
+   "source": "https://commons.wikimedia.org/wiki/File%3AMt._Hood_and_Trillium_Lake.jpg",
+   "author": "Spinner789",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-17/04.jpg",
+   "caption": "环湖步道木栈道鸟瞰，穿过湿地通往湖畔",
+   "source": "https://commons.wikimedia.org/wiki/File%3AMt._Hood_National_Forest_GAOA_Trillum_Lake_Boardwalk-11_%2854266141923%29.jpg",
+   "author": "U.S. Forest Service- Pacific Northwest Region",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-17/05.jpg",
+   "caption": "湖上泛舟垂钓，背景是茂密的针叶林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ABoating_Trillium_Lake_Mt_Hood_NF_%2836294276906%29.jpg",
+   "author": "U.S. Forest Service- Pacific Northwest Region",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-17/06.jpg",
+   "caption": "冬季冰封的湖面与远方的 Mt. Hood",
+   "source": "https://commons.wikimedia.org/wiki/File%3ATrillium_Lake_in_winter.jpg",
+   "author": "Diesputniks",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-17/07.jpg",
+   "caption": "Mt. Hood 完美倒映在平静湖面，皮划艇点缀其中",
+   "source": "https://commons.wikimedia.org/wiki/File%3ATrillium_Lake_Oregon_%2837520351656%29.jpg",
+   "author": "Bill Reynolds from Lake Oswego, Oregon",
+   "license": "CC BY 2.0"
+  }
+ ]
+}

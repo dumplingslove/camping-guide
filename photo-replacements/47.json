@@ -1,0 +1,45 @@
+{
+ "id": 47,
+ "name": "Sunset Bay State Park Campground",
+ "card": "images/camp-47/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Scene_in_Sunset_Bay_State_Park,_Oregon.jpg",
+ "card_author": "RickObst",
+ "card_license": "CC BY-SA 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-47/01.jpg",
+   "caption": "海滩边悬崖下的皮划艇与海湾",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_01.jpg"
+  },
+  {
+   "file": "images/camp-47/02.jpg",
+   "caption": "退潮后的沙滩与森林覆盖的悬崖",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_03.jpg"
+  },
+  {
+   "file": "images/camp-47/03.jpg",
+   "caption": "海湾沙滩、漂流木与悬崖倒影",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_05.jpg"
+  },
+  {
+   "file": "images/camp-47/04.jpg",
+   "caption": "潮池礁石与背后的森林悬崖",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_08.jpg"
+  },
+  {
+   "file": "images/camp-47/05.jpg",
+   "caption": "潮池奇石与海岸悬崖群",
+   "author": "RickObst",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_11.jpg"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "id": 7,
+ "name": "Fairholme Campground",
+ "card": "images/camp-7/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3AResort%20and%20campground%20at%20west%20end%20of%20Crescent%20Lake%20%2829458920490%29.jpg",
+ "card_author": "Robert Ashworth from Bellingham, WA., USA",
+ "card_license": "CC BY 2.0",
+ "gallery": [
+  {
+   "file": "images/camp-7/01.jpg",
+   "caption": "黑白历史照片：1950 年代 Lake Crescent 的帆船与码头",
+   "source": "https://commons.wikimedia.org/wiki/File%3AWest%20of%20Lake%20Crescent%20at%20Fairholm%20Campground.%20Looking%20E.%20Note%20Highway%20101%20faintly%20visible%20to%20right%20as%20it%20hugs%20shoreline.%20-%20Olympic%20National%20Park%20Road%20System%2C%20Port%20Angeles%2C%20Clallam%20County%20HAER%20WA-166-6.tif",
+   "author": "",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-7/02.jpg",
+   "caption": "Fairholm 的木质码头，游人站在码头尽头，湖对岸是陡峭山林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACrescent%20Lake%20%28Olympic%20Peninsula%29%2001.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-7/03.jpg",
+   "caption": "从岸边看 Lake Crescent 的木质码头与远山林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACrescent%20Lake%20%28Olympic%20Peninsula%29%20pano%2001.jpg",
+   "author": "Joe Mabel",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-7/04.jpg",
+   "caption": "清澈见底的湖水，浅水处可见砾石",
+   "source": "https://commons.wikimedia.org/wiki/File%3AClear%20water%205511.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-7/05.jpg",
+   "caption": "日落时分的湖面，两岸山峦剪影",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Crescent%20Lake.jpg",
+   "author": "Anastacia12182",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-7/06.jpg",
+   "caption": "Spruce Railroad Trail 旁的枯木桩，湖水碧蓝",
+   "source": "https://commons.wikimedia.org/wiki/File%3AAlong%20Spruce%20Trail%20%2829757503775%29.jpg",
+   "author": "Robert Ashworth from Bellingham, WA., USA",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-7/07.jpg",
+   "caption": "Lake Crescent Lodge 的码头与皮艇，远山连绵",
+   "source": "https://commons.wikimedia.org/wiki/File%3ADock%20Lake%20Crescent%20NPS%20Photo%20%2817117135938%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-7/08.jpg",
+   "caption": "木质步道桥伸向湖心，对岸是陡峭山林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Crescent%2003.JPG",
+   "author": "Miguel Hermoso Cuesta",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-7/09.jpg",
+   "caption": "全景：碧蓝清澈的湖水，群山环绕，岸边小路",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Crescent%20Olympic%2010.jpg",
+   "author": "Miguel Hermoso Cuesta",
+   "license": "CC BY-SA 4.0"
+  }
+ ]
+}

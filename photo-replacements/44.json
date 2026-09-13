@@ -1,0 +1,45 @@
+{
+ "card": "images/camp-44/card.jpg",
+ "gallery": [
+  {
+   "author": "Washington State Parks",
+   "caption": "湖畔营地全景，峡谷峭壁为背景",
+   "file": "images/camp-44/01.jpg",
+   "license": "官网实拍",
+   "source": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park"
+  },
+  {
+   "author": "Washington State Parks",
+   "caption": "班克斯湖与远处的汽船岩",
+   "file": "images/camp-44/02.jpg",
+   "license": "官网实拍",
+   "source": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park"
+  },
+  {
+   "author": "Washington State Parks",
+   "caption": "湖畔沙滩游泳区",
+   "file": "images/camp-44/03.jpg",
+   "license": "官网实拍",
+   "source": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park"
+  },
+  {
+   "author": "Washington State Parks",
+   "caption": "船下水坡道与玄武岩峭壁",
+   "file": "images/camp-44/04.jpg",
+   "license": "官网实拍",
+   "source": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park"
+  },
+  {
+   "author": "Washington State Parks",
+   "caption": "湖边垂钓",
+   "file": "images/camp-44/05.jpg",
+   "license": "官网实拍",
+   "source": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park"
+  }
+ ],
+ "id": 44,
+ "name": "Steamboat Rock State Park",
+ "card_source": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park",
+ "card_author": "Washington State Parks",
+ "card_license": "官网实拍"
+}

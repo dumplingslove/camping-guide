@@ -1,0 +1,75 @@
+{
+ "id": 13,
+ "name": "South Beach Campground",
+ "card": "images/camp-13/card.jpg",
+ "card_caption": "South Beach 的海浪拍打着鹅卵石滩",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Waves%20kalaloch%20south%20beach%20campground%20coast%20tides%20spring%20d%20archuleta%20march%202015%20%2817125637818%29.jpg",
+ "card_author": "Olympic National Park",
+ "card_license": "Public domain",
+ "gallery": [
+  {
+   "file": "images/camp-13/01.jpg",
+   "caption": "晨雾中的海滨野餐区，远处松林朦胧",
+   "source": "https://commons.wikimedia.org/wiki/File:Campsites%20picnic%20tables%20south%20beach%20campground%20camping%20c%20bubar%20march%2005%202015%20%2822348976354%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-13/02.jpg",
+   "caption": "沿着海边步道散步的游人",
+   "source": "https://commons.wikimedia.org/wiki/File:Sign%20visitor%20walking%20beach%20access%20south%20beach%20campground%20c%20bubar%20march%2005%202015%20%2817371926315%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-13/03.jpg",
+   "caption": "面朝大海的野餐桌，一只乌鸦飞过",
+   "source": "https://commons.wikimedia.org/wiki/File:Crow%20flying%20south%20beach%20picnic%20table%20coast%20birds%20wildlife%20c%20bubar%20march%2005%202015%20%2817128027468%29.jpg",
+   "author": "Olympic National Park",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-13/04.jpg",
+   "caption": "警示牌：注意离岸流，漂流木危险",
+   "source": "https://commons.wikimedia.org/wiki/File:South%20Beach%20-%20Olympic%20National%20Park%20-%20Washington%20State%20%289783847751%29.jpg",
+   "author": "Doug Kerr",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-13/05.jpg",
+   "caption": "从观景点俯瞰 South Beach 海滩",
+   "source": "https://commons.wikimedia.org/wiki/File:South_Beach_-_Olympic_National_Park_-_Washington_State_(9783850092).jpg",
+   "author": "Doug Kerr",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-13/06.jpg",
+   "caption": "沙滩上堆积的漂流木",
+   "source": "https://commons.wikimedia.org/wiki/File:South%20Beach%20-%20Olympic%20National%20Park%20-%20Washington%20State%20%289783857452%29.jpg",
+   "author": "Doug Kerr",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-13/07.jpg",
+   "caption": "观鲸解说牌，介绍灰鲸迁徙",
+   "source": "https://commons.wikimedia.org/wiki/File:South%20Beach%20-%20Olympic%20National%20Park%20-%20Washington%20State%20%289784043334%29.jpg",
+   "author": "Doug Kerr",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "images/camp-13/08.jpg",
+   "caption": "被海水漂白的漂流木特写",
+   "source": "https://commons.wikimedia.org/wiki/File:South%20Beach%20Olympic%20June%202018%20001.jpg",
+   "author": "King of Hearts",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-13/09.jpg",
+   "caption": "鹅卵石滩与漂流木，远处是岬角",
+   "source": "https://commons.wikimedia.org/wiki/File:South%20Beach%20Olympic%20June%202018%20002.jpg",
+   "author": "King of Hearts",
+   "license": "CC BY-SA 4.0"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

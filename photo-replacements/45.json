@@ -1,0 +1,45 @@
+{
+ "card": "images/camp-45/card.jpg",
+ "gallery": [
+  {
+   "author": "Visitor7",
+   "caption": "海岸沙滩风景，海浪与沙丘",
+   "file": "images/camp-45/01.jpg",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bullards_Beach_State_Park.jpg"
+  },
+  {
+   "author": "Visitor7",
+   "caption": "库基尔河灯塔（1896年）与解说牌",
+   "file": "images/camp-45/02.jpg",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Coquille_River_Lighthouse-3.jpg"
+  },
+  {
+   "author": "Visitor7",
+   "caption": "松林中的营地入口",
+   "file": "images/camp-45/03.jpg",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bullards_Beach_State_Park-3.jpg"
+  },
+  {
+   "author": "Visitor7",
+   "caption": "防波堤上的灯塔与漂流木",
+   "file": "images/camp-45/04.jpg",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bullards_Beach_State_Park-2.jpg"
+  },
+  {
+   "author": "Visitor7",
+   "caption": "灯塔与海岸风光，沙丘草丛前景",
+   "file": "images/camp-45/05.jpg",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Coquille_River_Lighthouse-10.jpg"
+  }
+ ],
+ "id": 45,
+ "name": "Bullards Beach State Park",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Bullards_Beach_State_Park.jpg",
+ "card_author": "Visitor7",
+ "card_license": "CC BY-SA 3.0"
+}

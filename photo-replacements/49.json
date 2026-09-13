@@ -1,0 +1,45 @@
+{
+ "id": 49,
+ "name": "LaPine State Park",
+ "card": "images/camp-49/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Big_tree_in_La_Pine_State_Park.jpg",
+ "card_author": "Inklein",
+ "card_license": "CC BY-SA 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-49/01.jpg",
+   "caption": "松林间蜿蜒的得舒特河",
+   "author": "Another Believer",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:La_Pine_State_Park,_Oregon.jpg"
+  },
+  {
+   "file": "images/camp-49/02.jpg",
+   "caption": "松林环绕的河湾",
+   "author": "Another Believer",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:La_Pine_State_Park,_2011.jpg"
+  },
+  {
+   "file": "images/camp-49/03.jpg",
+   "caption": "平静的河面与松林倒影",
+   "author": "Gary Halvorson",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Deschutes_River_at_La_Pine_State_Park_-_DPLA_-_2421411932180b4c25cb2f786cf69bca.jpg"
+  },
+  {
+   "file": "images/camp-49/04.jpg",
+   "caption": "河弯与白色断崖",
+   "author": "Gary Halvorson",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Deschutes_River_at_La_Pine_State_Park_-_DPLA_-_3990787e21b22633c62bcd5a6553c5fb.jpg"
+  },
+  {
+   "file": "images/camp-49/05.jpg",
+   "caption": "阴天里的松林与河景",
+   "author": "Bonnie Moreland",
+   "license": "公有领域",
+   "source": "https://commons.wikimedia.org/wiki/File:La_Pine_State_Park,_Oregon_-_Flickr_-_Bonnie_Moreland_(free_images).jpg"
+  }
+ ]
+}

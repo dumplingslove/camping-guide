@@ -1,0 +1,45 @@
+{
+  "card": "images/camp-25/card.jpg",
+  "gallery": [
+    {
+      "author": "Washington State Parks",
+      "caption": "指挥官官邸博物馆（历史建筑）",
+      "file": "images/camp-25/01.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "修复后的斯托达德炮台（Amos Stoddard 炮台）",
+      "file": "images/camp-25/02.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "东门附近观景台俯瞰阿德默勒尔蒂湾，海面帆船点点",
+      "file": "images/camp-25/03.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "苦樱桃林中的林间步道",
+      "file": "images/camp-25/04.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "红砖亚历山大城堡与马德罗纳树，海湾为背景",
+      "file": "images/camp-25/05.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park"
+    }
+  ],
+  "id": 25,
+  "name": "Fort Worden Historical State Park",
+  "card_source": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+  "card_author": "Washington State Parks",
+  "card_license": "官网图片，版权归 Washington State Parks 所有"
+}

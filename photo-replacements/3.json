@@ -1,0 +1,59 @@
+{
+ "id": 3,
+ "name": "Alder Lake Park",
+ "card": "images/camp-3/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3AAlder%20lake%209158.jpg",
+ "card_author": "Chris Light",
+ "card_license": "CC BY-SA 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-3/01.jpg",
+   "caption": "营地全景，宽阔的房车位、铺装环路、树木环绕",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACampground%20panorama%20%28Alder%20Lake%20Pk%29.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-3/02.jpg",
+   "caption": "从公路看低水位的 Alder Lake 上游盆地，湖中露出大量树桩",
+   "source": "https://commons.wikimedia.org/wiki/File%3ASunny%20Beach%20Point%206495.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-3/03.jpg",
+   "caption": "Rocky Point 船艇下水处的公告牌，标注船员规则与安全事项",
+   "source": "https://commons.wikimedia.org/wiki/File%3ARocky%20Point%208049.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-3/04.jpg",
+   "caption": "营地环路入口，柏油路穿过针叶林，路边有营地标识牌",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALoop%20roads%206428.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-3/05.jpg",
+   "caption": "秋季低水位时的湖盆全景，泥滩上散布树桩，远山环绕",
+   "source": "https://commons.wikimedia.org/wiki/File%3ABasin%20panorama%208054.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-3/06.jpg",
+   "caption": "沙滩区，人们在湖边草地休憩，碧绿湖水与对岸森林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ABeach%20area%206426.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-3/07.jpg",
+   "caption": "道格拉斯冷杉枝条特写，针叶浓绿",
+   "source": "https://commons.wikimedia.org/wiki/File%3ADouglas%20Fir%206457.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  }
+ ]
+}

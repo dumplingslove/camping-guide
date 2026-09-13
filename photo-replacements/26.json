@@ -1,0 +1,45 @@
+{
+  "card": "images/camp-26/card.jpg",
+  "gallery": [
+    {
+      "author": "Washington State Parks",
+      "caption": "林间蒙古包营位，配野餐桌与篝火圈",
+      "file": "images/camp-26/01.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "蒙古包内部：双层木床、绿色沙发床与圆形天窗",
+      "file": "images/camp-26/02.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "皮卡拖着 Airstream 房车停靠在林间营位",
+      "file": "images/camp-26/03.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "海滩步道上的长椅面朝大海，云隙透出彩虹",
+      "file": "images/camp-26/04.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "黄昏时分四人在海滩上挖蛤蜊，海鸥飞过",
+      "file": "images/camp-26/05.jpg",
+      "license": "官网图片，版权归 Washington State Parks 所有",
+      "source": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park"
+    }
+  ],
+  "id": 26,
+  "name": "Grayland Beach State Park",
+  "card_source": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park",
+  "card_author": "Washington State Parks",
+  "card_license": "官网图片，版权归 Washington State Parks 所有"
+}

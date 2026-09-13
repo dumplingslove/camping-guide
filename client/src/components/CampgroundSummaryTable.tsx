@@ -141,7 +141,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
 
         {/* Table */}
         {expanded && (
-          <div className="border-t border-border">
+          <div className="border-t border-border overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow className="bg-muted/30">

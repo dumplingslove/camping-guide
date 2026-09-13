@@ -315,7 +315,7 @@ export default function Itinerary() {
               "手电筒/头灯",
               "保暖衣物（夜间降温）",
             ].map((item) => (
-              <label key={item} className="flex items-center gap-2 p-2 rounded-lg hover:bg-secondary cursor-pointer">
+              <label key={item} className="flex items-center gap-2 px-2 py-3 sm:py-2 rounded-lg hover:bg-secondary cursor-pointer">
                 <input type="checkbox" className="rounded border-border text-pine focus:ring-pine" />
                 <span>{item}</span>
               </label>

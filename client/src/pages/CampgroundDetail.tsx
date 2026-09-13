@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "wouter";
 import { campgrounds } from "@/data/campgrounds";
 import { campgroundPhotos } from "@/data/photos";
@@ -33,6 +33,9 @@ function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: num
 function PhotoGallery({ photos, captions }: { photos: string[]; captions?: string[] }) {
   const [current, setCurrent] = useState(0);
   const [lightbox, setLightbox] = useState(false);
+  const touchStartX = useRef<number | null>(null);
+
+  const goTo = (i: number) => setCurrent(((i % photos.length) + photos.length) % photos.length);
 
   if (photos.length === 0) return null;
 
@@ -44,7 +47,17 @@ function PhotoGallery({ photos, captions }: { photos: string[]; captions?: strin
           营地实景照片
           <span className="text-sm font-mono font-normal text-muted-foreground">({photos.length}张)</span>
         </h2>
-        <div className="relative rounded-lg overflow-hidden bg-muted aspect-[16/10] mb-3 cursor-pointer" onClick={() => setLightbox(true)}>
+        <div
+          className="relative rounded-lg overflow-hidden bg-muted aspect-[16/10] mb-3 cursor-pointer touch-pan-y"
+          onClick={() => setLightbox(true)}
+          onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+          onTouchEnd={(e) => {
+            if (touchStartX.current === null) return;
+            const dx = e.changedTouches[0].clientX - touchStartX.current;
+            if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+            touchStartX.current = null;
+          }}
+        >
           <img
             src={photos[current]}
             alt={captions?.[current] || `营地照片 ${current + 1}`}
@@ -54,13 +67,13 @@ function PhotoGallery({ photos, captions }: { photos: string[]; captions?: strin
             <>
               <button
                 onClick={(e) => { e.stopPropagation(); setCurrent((c) => (c - 1 + photos.length) % photos.length); }}
-                className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-8 sm:h-8 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
               >
                 <ChevronLeft size={18} />
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); setCurrent((c) => (c + 1) % photos.length); }}
-                className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-8 sm:h-8 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
               >
                 <ChevronRight size={18} />
               </button>
@@ -96,7 +109,7 @@ function PhotoGallery({ photos, captions }: { photos: string[]; captions?: strin
       {/* Lightbox */}
       {lightbox && (
         <div className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center" onClick={() => setLightbox(false)}>
-          <button className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
+          <button className="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
             <X size={20} />
           </button>
           <img
@@ -143,7 +156,7 @@ function CampgroundMapImage({ mapUrl, name }: { mapUrl: string; name: string }) 
       </div>
       {expanded && (
         <div className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4" onClick={() => setExpanded(false)}>
-          <button className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
+          <button className="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20">
             <X size={20} />
           </button>
           <img src={mapUrl} alt={`${name} 营地地图`} className="max-w-[95vw] max-h-[90vh] object-contain" onClick={(e) => e.stopPropagation()} />
@@ -339,7 +352,7 @@ function UserNotes({ campId, campName }: { campId: number; campName: string }) {
           placeholder="记录心得、下次要带的东西..."
           className="flex-1 px-3 py-2 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30"
         />
-        <button onClick={addNote} className="px-3 py-2 bg-pine text-white rounded-lg text-sm hover:bg-pine-light transition-colors">
+        <button onClick={addNote} className="px-4 py-3 sm:px-3 sm:py-2 bg-pine text-white rounded-lg text-sm hover:bg-pine-light transition-colors">
           <Save size={14} />
         </button>
       </div>
@@ -459,7 +472,7 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
           </div>
         </div>
       ) : (
-        <button onClick={() => setShowForm(true)} className="w-full py-2 border border-dashed border-border rounded-lg text-sm text-muted-foreground hover:text-pine hover:border-pine transition-colors">
+        <button onClick={() => setShowForm(true)} className="w-full py-3 sm:py-2 border border-dashed border-border rounded-lg text-sm text-muted-foreground hover:text-pine hover:border-pine transition-colors">
           + 添加去过记录
         </button>
       )}
@@ -506,14 +519,14 @@ export default function CampgroundDetail() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => toggleFavorite(campground.id)}
-              className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${favorited ? "bg-sunset/10 text-sunset" : "bg-secondary text-muted-foreground hover:text-sunset hover:bg-sunset/10"}`}
+              className={`w-11 h-11 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all ${favorited ? "bg-sunset/10 text-sunset" : "bg-secondary text-muted-foreground hover:text-sunset hover:bg-sunset/10"}`}
               title={favorited ? "取消收藏" : "收藏"}
             >
               <Heart size={16} className={favorited ? "fill-current" : ""} />
             </button>
             <button
               onClick={() => inCompare ? removeFromCompare(campground.id) : addToCompare(campground.id)}
-              className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${inCompare ? "bg-lake/10 text-lake" : "bg-secondary text-muted-foreground hover:text-lake hover:bg-lake/10"}`}
+              className={`w-11 h-11 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all ${inCompare ? "bg-lake/10 text-lake" : "bg-secondary text-muted-foreground hover:text-lake hover:bg-lake/10"}`}
               title={inCompare ? "从比较中移除" : "加入比较"}
             >
               <GitCompareArrows size={16} />
@@ -655,7 +668,7 @@ export default function CampgroundDetail() {
                   href={campground.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-pine text-white rounded-lg hover:bg-pine-light transition-colors text-sm font-medium"
+                  className="inline-flex items-center gap-1.5 px-4 py-3 sm:py-2 bg-pine text-white rounded-lg hover:bg-pine-light transition-colors text-sm font-medium"
                 >
                   <ExternalLink size={14} />
                   去预订
@@ -665,7 +678,7 @@ export default function CampgroundDetail() {
                     href={campground.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 bg-white border border-border text-foreground rounded-lg hover:bg-muted/50 transition-colors text-sm font-medium"
+                    className="inline-flex items-center gap-1.5 px-4 py-3 sm:py-2 bg-white border border-border text-foreground rounded-lg hover:bg-muted/50 transition-colors text-sm font-medium"
                   >
                     <Navigation size={14} className="text-pine" />
                     导航到营地入口
@@ -861,7 +874,7 @@ export default function CampgroundDetail() {
                   href={campground.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-pine text-white rounded-lg hover:bg-pine-light transition-colors text-sm font-medium"
+                  className="inline-flex items-center gap-1.5 px-4 py-3 sm:py-2 bg-pine text-white rounded-lg hover:bg-pine-light transition-colors text-sm font-medium"
                 >
                   <ExternalLink size={14} />
                   去 {campground.bookingSystem} 预订
@@ -994,7 +1007,7 @@ export default function CampgroundDetail() {
             href={campground.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-4 py-2 bg-pine text-white rounded-lg hover:bg-pine-light transition-colors text-sm font-medium"
+            className="inline-flex items-center gap-1.5 px-4 py-3 sm:py-2 bg-pine text-white rounded-lg hover:bg-pine-light transition-colors text-sm font-medium"
           >
             <ExternalLink size={14} />
             预订此营地

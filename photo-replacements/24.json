@@ -1,0 +1,45 @@
+{
+  "card": "images/camp-24/card.jpg",
+  "gallery": [
+    {
+      "author": "Pacific Shores Motorcoach Resort 官网",
+      "caption": "度假村接待中心，门前绣球花盛开",
+      "file": "images/camp-24/01.jpg",
+      "license": "官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有",
+      "source": "https://psmcr.com/"
+    },
+    {
+      "author": "Pacific Shores Motorcoach Resort 官网",
+      "caption": "度假村会所与入口门禁",
+      "file": "images/camp-24/02.jpg",
+      "license": "官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有",
+      "source": "https://psmcr.com/"
+    },
+    {
+      "author": "Pacific Shores Motorcoach Resort 官网",
+      "caption": "阳光洒落的林间步道与野餐桌",
+      "file": "images/camp-24/03.jpg",
+      "license": "官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有",
+      "source": "https://psmcr.com/"
+    },
+    {
+      "author": "Roverpass 用户上传",
+      "caption": "房车停靠在园林环绕的营位（164 号营位）",
+      "file": "images/camp-24/04.jpg",
+      "license": "Roverpass 页面展示图片，版权归上传者所有",
+      "source": "http://roverpass.com/c/pacific-shores-motorcoach-resort-formerly-outdoor-resorts-newport-or/"
+    },
+    {
+      "author": "Pacific Shores Motorcoach Resort 官网",
+      "caption": "透过松林远眺亚奎纳角灯塔与蔚蓝太平洋",
+      "file": "images/camp-24/05.jpg",
+      "license": "官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有",
+      "source": "https://psmcr.com/"
+    }
+  ],
+  "id": 24,
+  "name": "Pacific Shores Motorcoach Resort",
+  "card_source": "https://psmcr.com/",
+  "card_author": "Pacific Shores Motorcoach Resort 官网",
+  "card_license": "官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有"
+}

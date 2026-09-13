@@ -1,0 +1,71 @@
+9/card.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%20State%20Park.jpg | Jess Wood | CC BY 2.0 | 太平洋海滩州立公园的海滩与海浪全景
+9/01.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%20Washington%20beach%20panorama.JPG | Resoru | Public domain | 太平洋海滩全景，海滩、远山与云层
+9/02.jpg | https://commons.wikimedia.org/wiki/File:PacificBeachWA2018.jpg | Ken Gallager | CC BY-SA 4.0 | 海滩上的漂流木与翻涌的海浪
+9/03.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20beach%20meadow%2001.jpg | Joe Mabel | CC BY-SA 4.0 | 海滩边的草甸、沙地与小溪
+9/04.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20light%20mist%20on%20the%20beach.jpg | Joe Mabel | CC BY-SA 4.0 | 薄雾笼罩下的宁静海滩
+9/05.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20driftwood%20structure%20on%20the%20beach.jpg | Joe Mabel | CC BY-SA 4.0 | 海滩上用漂流木搭成的构筑物
+9/06.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20small%20stream%20appropaches%20the%20ocean.jpg | Joe Mabel | CC BY-SA 4.0 | 一条小溪蜿蜒汇入太平洋
+9/07.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20looking%20north%20on%20the%20beach%20slightly%20north%20of%20town.jpg | Joe Mabel | CC BY-SA 4.0 | 小镇以北朝北方向望去的海滩
+9/08.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20looking%20roughly%20south.jpg | Joe Mabel | CC BY-SA 4.0 | 朝南方向望去的开阔海滩
+9/09.jpg | https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20patterns%20in%20the%20sand.jpg | Joe Mabel | CC BY-SA 4.0 | 沙滩上风吹出的波纹纹理
+9/10.jpg | https://commons.wikimedia.org/wiki/File:Sand%20dollar%2C%20Pacific%20Beach%2C%20Washington%2001.jpg | Joe Mabel | CC BY-SA 4.0 | 沙滩上的一枚沙钱（海胆壳）
+10/card.jpg | https://commons.wikimedia.org/wiki/File:Beach%20combing%205549.jpg | Chris Light | CC BY-SA 4.0 | 退潮时在海滩上赶海的人们
+10/01.jpg | https://commons.wikimedia.org/wiki/File:Anchors%205539.jpg | Chris Light | CC BY-SA 4.0 | 岸边陈列的旧船锚
+10/02.jpg | https://commons.wikimedia.org/wiki/File:Gun%20area%205533.jpg | Chris Light | CC BY-SA 4.0 | 二战时期的海岸炮台遗址
+10/03.jpg | https://commons.wikimedia.org/wiki/File:Crescent%20Bay%205547.jpg | Chris Light | CC BY-SA 4.0 | 新月湾的弧形海滩与海水
+10/04.jpg | https://commons.wikimedia.org/wiki/File:SALTCREEKSEASTACK1.JPG | Anastacia12182 | CC BY-SA 3.0 | 近岸的一座海蚀柱
+10/05.jpg | https://commons.wikimedia.org/wiki/File:Saltcreeksunset.JPG | Anastacia12182 | CC BY-SA 3.0 | 日落时分海天一色的海面
+10/06.jpg | https://commons.wikimedia.org/wiki/File:Little%20Shipwrecked%20Islands%20%2846760539384%29.jpg | Los Paseos | CC BY-SA 2.0 | 礁石小岛与拍岸的浪花
+11/card.jpg | https://commons.wikimedia.org/wiki/File:Kalaloch%20Beach%20Olympic%20June%202018%20009.jpg | King of Hearts | CC BY-SA 4.0 | 卡拉洛克海滩、海蚀柱与海浪
+11/01.jpg | https://commons.wikimedia.org/wiki/File:Campsite%203434.jpg | Chris Light | CC BY-SA 4.0 | 林间的露营营位一角
+11/02.jpg | https://commons.wikimedia.org/wiki/File:Campsite%203440.jpg | Chris Light | CC BY-SA 4.0 | 营地内的露营营位
+11/03.jpg | https://commons.wikimedia.org/wiki/File:Trailer%20rv%20kalaloch%20campground%20beach%20camping%20c%20bubar%20march%2005%202015%20%2817371870725%29.jpg | Olympic National Park | Public domain | 营地中停放的拖挂式房车
+11/04.jpg | https://commons.wikimedia.org/wiki/File:Visitor%20dog%20campsite%20kalaloch%20campground%20camping%20c%20bubar%20march%2005%202015%20%2817186004039%29.jpg | Olympic National Park | Public domain | 带狗露营者的营位
+11/05.jpg | https://commons.wikimedia.org/wiki/File:Visitor%20walking%20trail%20beach%20access%20kalaloch%20campground%20coast%20c%20bubar%20march%2005%202015%20%2817164730597%29.jpg | Olympic National Park | Public domain | 穿过林地通往海滩的步道
+11/06.jpg | https://commons.wikimedia.org/wiki/File:Large%20driftwood%20beach%20logs%20kalaloch%20campground%20beach%20d%20archuleta%20march%2005%202015%20%2817106797547%29.jpg | Olympic National Park | Public domain | 海滩上巨大的漂流木
+11/07.jpg | https://commons.wikimedia.org/wiki/File:Beach%201%2C%20Kalaloch%20Beach%2C%20Washington%2003.jpg | Joe Mabel | CC BY-SA 4.0 | 1号海滩的海岸风光
+11/08.jpg | https://commons.wikimedia.org/wiki/File:Destruction%20Island%20from%20Beach%204%2C%20Kalaloch%20Beach%2C%20Washington%2001.jpg | Joe Mabel | CC BY-SA 4.0 | 从4号海滩远眺德斯特拉克申岛
+11/09.jpg | https://commons.wikimedia.org/wiki/File:Big%20driftwood%20at%20Beach%202%2C%20Kalaloch%20Beach%2C%20Washington%2001.jpg | Joe Mabel | CC BY-SA 4.0 | 2号海滩上巨大的漂流木
+12/card.jpg | https://koa.com/campgrounds/astoria/ | KOA（Astoria/Warrenton/Seaside KOA） | 版权所有，未获自由复用许可 | KOA主楼与停车场的航拍
+12/01.jpg | https://koa.com/campgrounds/astoria/ | KOA（Astoria/Warrenton/Seaside KOA） | 版权所有，未获自由复用许可 | 小木屋前家庭聚会、篝火与遮阳伞
+12/02.jpg | https://koa.com/campgrounds/astoria/ | KOA（Astoria/Warrenton/Seaside KOA） | 版权所有，未获自由复用许可 | 黄昏时分的KOA招牌与主楼
+12/03.jpg | https://koa.com/campgrounds/astoria/ | KOA（Astoria/Warrenton/Seaside KOA） | 版权所有，未获自由复用许可 | 质朴的小木屋与停放的汽车
+12/04.jpg | https://koa.com/campgrounds/astoria/ | KOA（Astoria/Warrenton/Seaside KOA） | 版权所有，未获自由复用许可 | 原木登记处门前的摇椅
+12/05.jpg | https://koa.com/content/campgrounds/astoria/photos/7fabbe59-a2f1-4b76-ae01-2c6bb3cd2a69photo14619373-13b7-4599-8348-36f837d176d1.jpg | KOA（Astoria/Warrenton/Seaside KOA） | 版权所有，未获自由复用许可 | 跳床、迷你高尔夫游乐区的航拍
+13/card.jpg | https://commons.wikimedia.org/wiki/File:Waves%20kalaloch%20south%20beach%20campground%20coast%20tides%20spring%20d%20archuleta%20march%202015%20%2817125637818%29.jpg | Olympic National Park | Public domain | 海浪拍打南海滩营地的海岸
+13/01.jpg | https://commons.wikimedia.org/wiki/File:Campsites%20picnic%20tables%20south%20beach%20campground%20camping%20c%20bubar%20march%2005%202015%20%2822348976354%29.jpg | Olympic National Park | Public domain | 营地内的野餐桌与营位
+13/02.jpg | https://commons.wikimedia.org/wiki/File:Sign%20visitor%20walking%20beach%20access%20south%20beach%20campground%20c%20bubar%20march%2005%202015%20%2817371926315%29.jpg | Olympic National Park | Public domain | 通往海滩通道的指示牌
+13/03.jpg | https://commons.wikimedia.org/wiki/File:Crow%20flying%20south%20beach%20picnic%20table%20coast%20birds%20wildlife%20c%20bubar%20march%2005%202015%20%2817128027468%29.jpg | Olympic National Park | Public domain | 野餐桌上空飞翔的乌鸦
+13/04.jpg | https://commons.wikimedia.org/wiki/File:South%20Beach%20-%20Olympic%20National%20Park%20-%20Washington%20State%20%289783847751%29.jpg | Doug Kerr | CC BY-SA 2.0 | 南海滩的海岸与海浪
+13/05.jpg | https://commons.wikimedia.org/wiki/File:South_Beach_-_Olympic_National_Park_-_Washington_State_(9783850092).jpg | Doug Kerr | CC BY-SA 2.0 | 南海滩的沙滩与远山
+13/06.jpg | https://commons.wikimedia.org/wiki/File:South%20Beach%20-%20Olympic%20National%20Park%20-%20Washington%20State%20%289783857452%29.jpg | Doug Kerr | CC BY-SA 2.0 | 南海滩海岸线的礁石与海浪
+13/07.jpg | https://commons.wikimedia.org/wiki/File:South%20Beach%20-%20Olympic%20National%20Park%20-%20Washington%20State%20%289784043334%29.jpg | Doug Kerr | CC BY-SA 2.0 | 南海滩的开阔沙滩
+13/08.jpg | https://commons.wikimedia.org/wiki/File:South%20Beach%20Olympic%20June%202018%20001.jpg | King of Hearts | CC BY-SA 4.0 | 南海滩的海滩与海蚀景观
+13/09.jpg | https://commons.wikimedia.org/wiki/File:South%20Beach%20Olympic%20June%202018%20002.jpg | King of Hearts | CC BY-SA 4.0 | 南海滩海滩上的漂流木与海浪
+14/card.jpg | https://commons.wikimedia.org/wiki/File:Peter%20Iredale%20shipwreck%20at%20sunset.jpg | Rick Obst | CC BY 4.0 | 日落时分的彼得·艾尔代尔号沉船
+14/01.jpg | https://commons.wikimedia.org/wiki/File:1906%20Peter%20Iredale%20shipwreck%20in%20Fort%20Stevens%20State%20Park.jpg | Rick Obst | CC BY 4.0 | 彼得·艾尔代尔号沉船残骸全景
+14/02.jpg | https://commons.wikimedia.org/wiki/File:Bow%20of%20the%20Peter%20Iredale%20shipwreck%20in%20Fort%20Stevens%20State%20Park.jpg | Rick Obst | CC BY 4.0 | 沉船的船头残骸近景
+14/03.jpg | https://commons.wikimedia.org/wiki/File:July%202019%20sunset%20by%20the%20Peter%20Iredale%20shipwreck.jpg | Rick Obst | CC BY 4.0 | 2019年7月日落下的沉船
+14/04.jpg | https://commons.wikimedia.org/wiki/File:Fort%20Stevens%20State%20Park%20%2849190555748%29.jpg | runarut | CC BY 2.0 | 州立公园内的景致
+14/05.jpg | https://commons.wikimedia.org/wiki/File:Fort%20Stevens%20State%20Park%20%2849191055171%29.jpg | runarut | CC BY 2.0 | 州立公园内的林地景致
+14/06.jpg | https://commons.wikimedia.org/wiki/File:Battery%20Russell%20at%20Fort%20Stevens%20State%20Park%2011.jpg | Rick Obst | CC BY 4.0 | 拉塞尔炮台的环形炮位
+14/07.jpg | https://commons.wikimedia.org/wiki/File:Bunker%20at%20Battery%20Russell%20in%20Fort%20Stevens%20State%20Park.jpg | Rick Obst | CC BY 4.0 | 拉塞尔炮台的混凝土碉堡建筑
+14/08.jpg | https://commons.wikimedia.org/wiki/File:Coffenbury%20Lake%20day%20use%20area%20in%20Fort%20Stevens%20State%20Park.jpg | Rick Obst | CC BY 4.0 | 科芬伯里湖的日间休闲区
+14/09.jpg | https://commons.wikimedia.org/wiki/File:Morning%20reflections%20at%20Coffenbury%20Lake.jpg | Rick Obst | CC BY 4.0 | 清晨科芬伯里湖的平静倒影
+15/card.jpg | https://commons.wikimedia.org/wiki/File:Beverly%20beach%20state%20park.jpg | Finetooth | CC BY-SA 3.0 | 贝弗利海滩州立公园的海滩
+15/01.jpg | https://commons.wikimedia.org/wiki/File:Beverly%20Beach%20State%20Park%20Campsite.jpg | Rick Obst | CC BY 2.0 | 林间的露营营位
+15/02.jpg | https://commons.wikimedia.org/wiki/File:Footbridge_Over_Spencer_Creek_in_Beverly_Beach_State_Park.jpg | Rick Obst | CC BY 2.0 | 斯潘塞溪上的人行木桥
+15/03.jpg | https://commons.wikimedia.org/wiki/File:Driftwood%20in%20Spencer%20Creek%20at%20Beverly%20Beach%20State%20Park.jpg | Rick Obst | CC BY 2.0 | 斯潘塞溪中的漂流木
+15/04.jpg | https://commons.wikimedia.org/wiki/File:Walking%20the%20dog%20trail%20at%20Beverly%20Beach%20State%20Park.jpg | Rick Obst | CC BY 2.0 | 携犬漫步的林间小径
+15/05.jpg | https://commons.wikimedia.org/wiki/File:Beverly_Beach_and_the_Pacific_Ocean_at_Sunrise.jpg | Rick Obst | CC BY 2.0 | 日出时分的海滩与太平洋
+16/card.jpg | https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20and%20Cape%20Disappointment%20Light.jpg | Adbar | CC BY-SA 3.0 | 迪斯阿波因特灯塔与哥伦比亚河口
+16/01.jpg | https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20State%20Park.jpg | Mattsjc | CC BY-SA 4.0 | 海岸悬崖、草坡与拍岸海浪
+16/02.jpg | https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20Lighthouse%20%26%20outbuilding.jpg | Chris Light | CC BY-SA 4.0 | 迪斯阿波因特灯塔与附属建筑
+16/03.jpg | https://commons.wikimedia.org/wiki/File:North%20Head%20Lighthouse%20at%20Cape%20Disappointment.jpg | Mattsjc | CC BY-SA 4.0 | 日落时分的北角灯塔
+16/04.jpg | https://commons.wikimedia.org/wiki/File:Trail%20to%20North%20Head%20Light%2C%202011.JPG | Another Believer | CC BY-SA 3.0 | 穿过林地通往北角灯塔的步道
+16/05.jpg | https://commons.wikimedia.org/wiki/File:North%20Head%20Light%2C%20bench%2C%202011.JPG | Another Believer | CC BY-SA 3.0 | 北角灯塔前的观景长椅
+16/06.jpg | https://commons.wikimedia.org/wiki/File:2022-02-13%2C%20Cape%20Disappointment%20Lighhouse%2C%2002.jpg | trekkyandy | CC BY-SA 2.0 | 迪斯阿波因特灯塔塔身近景
+16/07.jpg | https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20Lighthouse%20%2814788544998%29.jpg | Jonathan Miske | CC BY-SA 2.0 | 仰拍的迪斯阿波因特灯塔
+16/08.jpg | https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20State%20Park%20with%20Lighthouse.jpg | Teufelhunde86 | CC BY 4.0 | 州立公园内远眺灯塔
+16/09.jpg | https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20Lighthouse%20WA.jpg | Colleen Taugher | CC BY 2.0 | 迪斯阿波因特灯塔仰拍近景
+16/10.jpg | https://commons.wikimedia.org/wiki/File:Cape_Disappointment_State_Park_-_Ilwaco,_Washington_-_51740006441.jpg | Dougtone | CC BY-SA 2.0 | 州立公园的海岸礁石与海浪

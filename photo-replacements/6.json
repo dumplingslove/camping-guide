@@ -1,0 +1,45 @@
+{
+ "id": 6,
+ "name": "Ohanapecosh Campground",
+ "card": "images/camp-6/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3AOhanapecosh%20Campground%20Site%20D21%20%2891f1f687-82bb-42c7-ae87-996a8249c59a%29.JPG",
+ "card_author": "NPS Photo",
+ "card_license": "Public domain",
+ "gallery": [
+  {
+   "file": "images/camp-6/01.jpg",
+   "caption": "湍急的 Ohanapecosh River，碧绿河水穿过密林，两岸山峦",
+   "source": "https://commons.wikimedia.org/wiki/File%3AOhanapecosh%202018-05-23%20%2841426636415%29.jpg",
+   "author": "Mount Rainier National Park from Ashford, WA, United States",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-6/02.jpg",
+   "caption": "林间营地，帐篷与露营者，巨树遮荫",
+   "source": "https://commons.wikimedia.org/wiki/File%3ASeveral%20tents%20set%20up%20in%20campsites.%2091981.%20slide%20%2882d55a3f717444ac85554b3c573f3814%29.jpg",
+   "author": "Loren Lane (MORA)",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-6/03.jpg",
+   "caption": "Grove of the Patriarchs 的苔藓木质步道，穿行在巨型针叶林中",
+   "source": "https://commons.wikimedia.org/wiki/File%3AThe%20beginning%20of%20the%20Hot%20Springs%20Trail%20at%20Loop%20B%20in%20the%20Ohanapecosh%20Campground%20%28844fc655-d1a9-48e0-acc3-4c8837daac30%29.jpg",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-6/04.jpg",
+   "caption": "沿柏油环路的营位，野餐桌与原木座位",
+   "source": "https://commons.wikimedia.org/wiki/File%3AOhanapecosh%202018-05-23%20%2842327958341%29.jpg",
+   "author": "Mount Rainier National Park from Ashford, WA, United States",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "images/camp-6/05.jpg",
+   "caption": "D 环的无障碍洗手间，水泥步道通向门口",
+   "source": "https://commons.wikimedia.org/wiki/File%3AThe%20accessible%20restrooms%20in%20the%20D%20Loop%20of%20Ohanapecosh%20Campground%20%28b7f29d38-01f2-4847-89ff-f0916f9609d2%29.JPG",
+   "author": "NPS Photo",
+   "license": "Public domain"
+  }
+ ]
+}

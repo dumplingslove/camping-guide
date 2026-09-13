@@ -1,0 +1,54 @@
+{
+ "id": 10,
+ "name": "Salt Creek Recreation Area",
+ "card": "images/camp-10/card.jpg",
+ "card_caption": "Tongue Point 潮池，退潮时游人在礁石间探索",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Beach%20combing%205549.jpg",
+ "card_author": "Chris Light",
+ "card_license": "CC BY-SA 4.0",
+ "gallery": [
+  {
+   "file": "images/camp-10/01.jpg",
+   "caption": "二战时期海岸炮台内部，炮座遗迹犹存",
+   "source": "https://commons.wikimedia.org/wiki/File:Anchors%205539.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-10/02.jpg",
+   "caption": "从碉堡射击口向外望，远处是森林",
+   "source": "https://commons.wikimedia.org/wiki/File:Gun%20area%205533.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-10/03.jpg",
+   "caption": "从岸边眺望海中的礁石小岛，松树林立",
+   "source": "https://commons.wikimedia.org/wiki/File:Crescent%20Bay%205547.jpg",
+   "author": "Chris Light",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "images/camp-10/04.jpg",
+   "caption": "透过林间看礁石岛，海水碧绿",
+   "source": "https://commons.wikimedia.org/wiki/File:SALTCREEKSEASTACK1.JPG",
+   "author": "Anastacia12182",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-10/05.jpg",
+   "caption": "暮色中的胡安·德富卡海峡，对岸山影朦胧",
+   "source": "https://commons.wikimedia.org/wiki/File:Saltcreeksunset.JPG",
+   "author": "Anastacia12182",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-10/06.jpg",
+   "caption": "礁石小岛全景，顶部松树茂密",
+   "source": "https://commons.wikimedia.org/wiki/File:Little%20Shipwrecked%20Islands%20%2846760539384%29.jpg",
+   "author": "Los Paseos",
+   "license": "CC BY-SA 2.0"
+  }
+ ],
+ "verified": "worker 按官网/官方图库来源页验证选图；已逐张目检确认为该营地实拍（含 Peter Iredale 沉船、Cape Disappointment/North Head 灯塔、Salt Creek 炮台与潮池等地标）"
+}

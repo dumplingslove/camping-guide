@@ -1,0 +1,45 @@
+{
+ "card": "images/camp-46/card.jpg",
+ "gallery": [
+  {
+   "author": "Rick Obst",
+   "caption": "林间小木屋住宿区",
+   "file": "images/camp-46/01.jpg",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cabin_1_at_Champoeg_State_Heritage_Area.jpg"
+  },
+  {
+   "author": "Rick Obst",
+   "caption": "十九世纪木谷仓历史建筑",
+   "file": "images/camp-46/02.jpg",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Nineteenth_century_barn_in_Champoeg_State_Heritage_Area.jpg"
+  },
+  {
+   "author": "Rick Obst",
+   "caption": "高大的雪松林",
+   "file": "images/camp-46/03.jpg",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Large_cedars_in_Champoeg_State_Heritage_Area.jpg"
+  },
+  {
+   "author": "Rick Obst",
+   "caption": "林间小径",
+   "file": "images/camp-46/04.jpg",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Narrow_trail_in_Champoeg_State_Heritage_Area.jpg"
+  },
+  {
+   "author": "Rick Obst",
+   "caption": "1901年纪念碑与先锋纪念馆",
+   "file": "images/camp-46/05.jpg",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:1901_monument_at_Champoeg_State_Heritage_Area.jpg"
+  }
+ ],
+ "id": 46,
+ "name": "Champoeg State Heritage Area",
+ "card_source": "https://commons.wikimedia.org/wiki/File:Champoeg_State_Heritage_Area_visitors_center_and_heirloom_kitchen_garden.jpg",
+ "card_author": "Rick Obst",
+ "card_license": "CC BY 2.0"
+}

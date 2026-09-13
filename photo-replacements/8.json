@@ -1,0 +1,80 @@
+{
+ "id": 8,
+ "name": "Lake Chelan State Park",
+ "card": "images/camp-8/card.jpg",
+ "card_source": "https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%20National%20Recreation%20Area%20LACH8156.jpg",
+ "card_author": "National Park Service Digital Image Archives",
+ "card_license": "Public domain",
+ "gallery": [
+  {
+   "file": "images/camp-8/01.jpg",
+   "caption": "草地上栖息的几匹马，背后是森林",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%20National%20Recreation%20Area%20LACH7098.jpg",
+   "author": "National Park Service Digital Image Archives",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-8/02.jpg",
+   "caption": "雪山湖泊全景，碧绿湖水与森林雪山",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%20National%20Recreation%20Area%20LACH8159.jpg",
+   "author": "National Park Service Digital Image Archives",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-8/03.jpg",
+   "caption": "沼泽草甸上的小木屋，湖水倒影，远山环绕",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%20National%20Recreation%20Area%20LACH8163.jpg",
+   "author": "National Park Service Digital Image Archives",
+   "license": "Public domain"
+  },
+  {
+   "file": "images/camp-8/04.jpg",
+   "caption": "蓝天下的冷杉枝与球果特写",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%2C%20Washington%20State%2C%20August%202008.jpg",
+   "author": "Mournlight",
+   "license": "CC BY 3.0"
+  },
+  {
+   "file": "images/camp-8/05.jpg",
+   "caption": "远眺 Lake Chelan，湖对岸山地、湖上漂木",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%202.jpg",
+   "author": "Lethargilistic",
+   "license": "CC0"
+  },
+  {
+   "file": "images/camp-8/06.jpg",
+   "caption": "车窗前公路边的 Lake Chelan，湖畔社区与远山（日落时分）",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20chelan%20sunset.jpg",
+   "author": "Pfly",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-8/07.jpg",
+   "caption": "悬崖边的跳水者，湖上小船与峭壁",
+   "source": "https://commons.wikimedia.org/wiki/File%3ACliff%20Jumping-July%2009-LK%20Chelan%20-%20panoramio.jpg",
+   "author": "Mr.B",
+   "license": "CC BY 3.0"
+  },
+  {
+   "file": "images/camp-8/08.jpg",
+   "caption": "从步道俯瞰 Lake Chelan，深蓝湖水与山峦",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALakeChelanLakeShoreTrail.jpg",
+   "author": "Omarcheeseboro (talk)",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "images/camp-8/09.jpg",
+   "caption": "冬季的 Manson 果园山坡，积雪覆盖的湖畔果园与房屋",
+   "source": "https://commons.wikimedia.org/wiki/File%3AManson%20orchards%20from%20south%20shore%20Lake%20Chelan.jpg",
+   "author": "Themerganser",
+   "license": "CC BY 3.0"
+  },
+  {
+   "file": "images/camp-8/10.jpg",
+   "caption": "阳光洒在湖面，码头剪影与远山倒影",
+   "source": "https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%20Old%20Mill%20Park%20at%20Manson%202.jpg",
+   "author": "Thayne Tuason",
+   "license": "CC BY-SA 4.0"
+  }
+ ]
+}
