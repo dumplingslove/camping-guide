@@ -139,9 +139,9 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
           {expanded ? <ChevronUp size={18} className="text-muted-foreground" /> : <ChevronDown size={18} className="text-muted-foreground" />}
         </button>
 
-        {/* Table */}
+        {/* Table (desktop) */}
         {expanded && (
-          <div className="border-t border-border overflow-x-auto">
+          <div className="border-t border-border overflow-x-auto hidden md:block">
             <Table>
               <TableHeader>
                 <TableRow className="bg-muted/30">
@@ -252,6 +252,84 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
                 })}
               </TableBody>
             </Table>
+          </div>
+        )}
+
+        {/* Cards (mobile) */}
+        {expanded && (
+          <div className="md:hidden border-t border-border px-3 py-3 space-y-2 bg-muted/20">
+            <div className="flex items-center justify-between px-1 pb-1">
+              <span className="text-xs text-muted-foreground">{sorted.length} 个营地</span>
+              <label className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                排序
+                <select
+                  value={`${sortField}:${sortDir}`}
+                  onChange={(e) => {
+                    const [f, d] = e.target.value.split(":");
+                    setSortField(f as SortField);
+                    setSortDir(d as SortDir);
+                  }}
+                  className="text-xs border border-border rounded-md px-1.5 py-1 bg-white text-foreground"
+                >
+                  <option value="driveTime:asc">车程 ↑</option>
+                  <option value="driveTime:desc">车程 ↓</option>
+                  <option value="kidRating:desc">娃可玩 ↓</option>
+                  <option value="sceneryRating:desc">风景 ↓</option>
+                  <option value="tcRating:desc">TC ↓</option>
+                  <option value="nameCn:asc">名称 A-Z</option>
+                  <option value="state:asc">州 A-Z</option>
+                </select>
+              </label>
+            </div>
+            {sorted.map((camp) => {
+              const visited = visitedMap[camp.id];
+              return (
+                <Link key={camp.id} href={`/campground/${camp.id}`}>
+                  <div className={`bg-white rounded-lg border border-border p-3 active:bg-muted/40 ${visited ? "border-l-4 border-l-emerald-400" : ""}`}>
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="min-w-0">
+                        <div className="font-medium text-sm leading-snug flex items-center gap-1.5">
+                          {visited && <CheckCircle2 size={13} className="text-emerald-500 shrink-0" />}
+                          <span className="truncate">{camp.nameCn}</span>
+                        </div>
+                        <div className="text-[10px] text-muted-foreground font-mono truncate mt-0.5">{camp.name}</div>
+                      </div>
+                      <div className="flex items-center gap-1.5 shrink-0">
+                        <span className="text-[10px] font-mono text-muted-foreground">{camp.state}</span>
+                        <span className="text-xs font-mono font-semibold text-pine">{camp.driveTimeLabel}</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-x-3 gap-y-1 mt-2 flex-wrap text-[11px] text-muted-foreground">
+                      <span className="flex items-center gap-1 whitespace-nowrap">风景 <MiniStars rating={camp.sceneryRating} /></span>
+                      <span className="flex items-center gap-1 whitespace-nowrap">娃 <MiniStars rating={camp.kidRating} /></span>
+                      <span className="flex items-center gap-1 whitespace-nowrap">TC <MiniStars rating={camp.tcRating} /></span>
+                    </div>
+                    <div className="flex items-center gap-1.5 mt-1.5 flex-wrap">
+                      {camp.tier && (
+                        <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded-full border whitespace-nowrap ${tierColor(camp.tier)}`}>
+                          {camp.tier}
+                        </span>
+                      )}
+                      {camp.closureInfo && (
+                        <span className="inline-flex items-center gap-0.5 text-[10px] text-red-600 bg-red-50 px-1.5 py-0.5 rounded-full whitespace-nowrap">
+                          <Ban size={8} />关闭
+                        </span>
+                      )}
+                      {camp.warning && !camp.closureInfo && (
+                        <span className="inline-flex items-center gap-0.5 text-[10px] text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded-full whitespace-nowrap">
+                          <AlertTriangle size={8} />注意
+                        </span>
+                      )}
+                      {visited && (
+                        <span className="text-[10px] text-emerald-700 whitespace-nowrap">
+                          去过{visited.count > 1 ? ` ${visited.count}次` : ""}{visited.lastVisit ? ` · ${visited.lastVisit}` : ""}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         )}
       </div>
