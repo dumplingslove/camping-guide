@@ -23,13 +23,11 @@ export default function SharedNote() {
         setLoading(false);
         return;
       }
-      const { data, error } = await supabase
-        .from("shared_notes")
-        .select("campground_name, note_text, note_date, created_at")
-        .eq("token", token)
-        .maybeSingle();
-      if (!error && data) {
-        setSnapshot(data as SharedSnapshot);
+      const { data, error } = await supabase.rpc("get_shared_note", {
+        p_token: token,
+      });
+      if (!error && data && data.length > 0) {
+        setSnapshot(data[0] as SharedSnapshot);
         setValid(true);
       }
       setLoading(false);
