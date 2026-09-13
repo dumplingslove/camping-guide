@@ -495,3 +495,50 @@
 - `images/camp-53/03.jpg` — Forceofnature (CC BY 3.0) — https://commons.wikimedia.org/wiki/File:Alouette_Lake.jpg
 - `images/camp-53/04.jpg` — Allie Sea (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Canoeing_on_Alouette_Lake.jpg
 - `images/camp-53/05.jpg` — The Cosmonaut (CC BY-SA 2.5 ca) — https://commons.wikimedia.org/wiki/File:Golden_Ears_seen_from_the_Viewpoint_Beach.jpg
+
+## 34. Silver Falls State Park
+- `images/camp-34/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/silver-falls-state-park/
+- `images/camp-34/site-02.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/silver-falls-state-park/
+
+## 35. Wallowa Lake State Park
+- `images/camp-35/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/wallowa-lake-state-park/
+- `images/camp-35/site-02.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/blog/campground-reviews-adventures/camping-along-the-oregon-trail/
+
+## 36. Detroit Lake State Recreation Area
+- `images/camp-36/site-01.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html
+- `images/camp-36/site-02.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html
+
+## 37. Sol Duc Hot Springs Resort Campground
+- `images/camp-37/site-01.jpg` — recreation.gov, Site 057 (Public domain) — https://www.recreation.gov/camping/campsites/98604
+- `images/camp-37/site-02.jpg` — recreation.gov, Site 016 (Public domain) — https://www.recreation.gov/camping/campsites/98591
+- `images/camp-37/site-03.jpg` — recreation.gov, Site 071 (Public domain) — https://www.recreation.gov/camping/campsites/98639
+
+## 38. Harris Beach State Park Campground
+- `images/camp-38/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/harris-beach-state-park/
+- `images/camp-38/site-02.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/or_coast/harris_beach_sp.html
+- `images/camp-38/site-03.jpg` — Oregon State Parks (© Oregon State Parks) — https://stateparks.oregon.gov/index.cfm?do=main.loadImage&Image=Harris+Beach+State+Park%5CA27_long111824.JPG
+
+## 39. Colonial Creek South Campground
+- `images/camp-39/site-01.jpg` — recreation.gov, Site 100 (Public domain) — https://www.recreation.gov/camping/campsites/101372
+- `images/camp-39/site-02.jpg` — recreation.gov, Site 111 (Public domain) — https://www.recreation.gov/camping/campsites/101494
+
+## 40. Lincoln Rock State Park
+- `images/camp-40/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/near/ardenvoir
+- `images/camp-40/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/places/70344/photos/1031710803
+
+## 41. Fort Casey Historical State Park
+- `images/camp-41/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/near/la-conner/with/glamping
+- `images/camp-41/site-02.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/washington-fort-casey-state-park/review/14719
+
+## 42. Fort Ebey State Park Campground
+- `images/camp-42/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/washington-fort-ebey-state-park
+- `images/camp-42/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.campendium.com/us/coupeville-wa/camping-rv/fort-ebey-state-park-coupeville-wa--8
+
+## 43. Larrabee State Park Campground
+- `images/camp-43/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/wa/larrabee-state-park/
+- `images/camp-43/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground
+- `images/camp-43/site-03.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground
+
+## 位置地图（静态地图图片）
+
+- `images/maps/camp-<编号>-z11.png`（营地周边，53张）、`images/maps/camp-<编号>-z15.png`（营位近景，53张）、`images/maps/region-z7.png`（区域总览）—— 底图瓦片 © OpenStreetMap contributors（ODbL 许可），每张图右下角已内嵌署名。来源 https://www.openstreetmap.org/copyright

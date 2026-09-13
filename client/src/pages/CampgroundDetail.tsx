@@ -178,15 +178,10 @@ function InteractiveMap({ campId, campName }: { campId: number; campName: string
       </h2>
       <div className="rounded-lg overflow-hidden border border-border h-[300px]">
         <MapView
-          onMapReady={(map) => {
-            const marker = new google.maps.Marker({
-              position: { lat: coords.lat, lng: coords.lng },
-              map,
-              title: campName,
-            });
-            map.setCenter({ lat: coords.lat, lng: coords.lng });
-            map.setZoom(10);
-          }}
+          src={`/camping-guide/images/maps/camp-${campId}-z11.png`}
+          href={`https://www.google.com/maps/search/?api=1&query=${coords.lat},${coords.lng}`}
+          title={`${campName} 位置地图（点击在地图 App 中打开）`}
+          className="h-[300px]"
         />
       </div>
       <div className="mt-3 flex gap-2">

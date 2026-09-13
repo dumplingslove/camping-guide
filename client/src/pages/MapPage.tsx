@@ -1,20 +1,20 @@
-import { useState, useRef, useCallback, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { campgrounds, driveTimeRanges, CampgroundTier } from "@/data/campgrounds";
-import { campgroundCoords, REDMOND_COORDS } from "@/data/coordinates";
+import { campgroundCoords } from "@/data/coordinates";
 import { MapView } from "@/components/Map";
-import { Clock, MapPin, Filter, X, ArrowLeft, Ban, List } from "lucide-react";
+import { Clock, MapPin, Filter, X, ArrowLeft, Ban, List, Navigation } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 
-// Tier color mapping for map pins
+// Tier color mapping
 const tierPinColors: Record<CampgroundTier, string> = {
-  "顶级热门": "#dc2626",    // red-600
-  "明显热门": "#ea580c",    // orange-600
-  "区域家庭优选": "#16a34a", // green-600
-  "商业度假型": "#7c3aed",  // purple-600
-  "2026受限": "#d97706",    // amber-600
-  "不适配": "#6b7280",      // gray-500
+  "顶级热门": "#dc2626",
+  "明显热门": "#ea580c",
+  "区域家庭优选": "#16a34a",
+  "商业度假型": "#7c3aed",
+  "2026受限": "#d97706",
+  "不适配": "#6b7280",
 };
 
 const tierBadgeClasses: Record<CampgroundTier, string> = {
@@ -26,30 +26,11 @@ const tierBadgeClasses: Record<CampgroundTier, string> = {
   "不适配": "bg-gray-50 text-gray-500 border-gray-200",
 };
 
-function createPinElement(tier: CampgroundTier, isClosed: boolean): HTMLElement {
-  const div = document.createElement("div");
-  const color = isClosed ? "#991b1b" : tierPinColors[tier] || "#6b7280";
-  div.innerHTML = `
-    <div style="
-      width: 28px; height: 28px; 
-      background: ${color}; 
-      border: 2px solid white; 
-      border-radius: 50%; 
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer;
-      transition: transform 0.15s ease-out;
-    " class="map-pin">
-      ${isClosed ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>' : '<svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>'}
-    </div>
-  `;
-  return div;
+function googleMapsUrl(lat: number, lng: number, label: string) {
+  return `https://www.google.com/maps/search/?api=1&query=${lat},${lng}&q=${encodeURIComponent(label)}`;
 }
 
 export default function MapPage() {
-  const mapRef = useRef<google.maps.Map | null>(null);
-  const markersRef = useRef<google.maps.marker.AdvancedMarkerElement[]>([]);
-  const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
   const [selectedTier, setSelectedTier] = useState<CampgroundTier | "all">("all");
   const [selectedDriveTime, setSelectedDriveTime] = useState<string | null>(null);
   const [selectedState, setSelectedState] = useState<"all" | "WA" | "OR" | "BC">("all");
@@ -78,104 +59,6 @@ export default function MapPage() {
     }));
   }, []);
 
-  const updateMarkers = useCallback((map: google.maps.Map) => {
-    // Clear existing markers
-    markersRef.current.forEach(m => m.map = null);
-    markersRef.current = [];
-
-    // Close any open info window
-    if (infoWindowRef.current) {
-      infoWindowRef.current.close();
-    }
-
-    // Create info window if not exists
-    if (!infoWindowRef.current) {
-      infoWindowRef.current = new google.maps.InfoWindow();
-    }
-
-    // Add markers for filtered campgrounds
-    filteredCampgrounds.forEach((camp) => {
-      const coords = campgroundCoords[camp.id];
-      if (!coords) return;
-
-      const isClosed = !!camp.closureInfo;
-      const tier = camp.tier || "不适配";
-      const pinElement = createPinElement(tier, isClosed);
-
-      const marker = new google.maps.marker.AdvancedMarkerElement({
-        map,
-        position: { lat: coords.lat, lng: coords.lng },
-        title: camp.nameCn,
-        content: pinElement,
-      });
-
-      marker.addListener("click", () => {
-        const tierBadge = camp.tier ? `<span style="font-size:10px;padding:2px 6px;border-radius:9999px;background:${tierPinColors[camp.tier]}22;color:${tierPinColors[camp.tier]};font-weight:500;">${camp.tier}</span>` : "";
-        const closureBanner = isClosed ? `<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:6px;padding:6px 8px;margin-top:6px;"><span style="font-size:11px;color:#991b1b;font-weight:500;">⚠️ 关闭中 · 预计重开: ${camp.closureInfo!.expectedReopen}</span></div>` : "";
-        
-        const content = `
-          <div style="min-width:220px;max-width:280px;font-family:system-ui,-apple-system,sans-serif;">
-            <div style="position:relative;height:100px;overflow:hidden;border-radius:8px 8px 0 0;margin:-8px -8px 8px -8px;">
-              <img src="${camp.image}" style="width:100%;height:100%;object-fit:cover;" />
-              <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.6));padding:8px;">
-                <span style="color:white;font-size:11px;font-family:monospace;">${camp.driveTimeLabel} · ${camp.state}</span>
-              </div>
-            </div>
-            <div style="padding:0 4px 4px;">
-              <h3 style="font-size:15px;font-weight:700;margin:0 0 2px;">${camp.nameCn}</h3>
-              <p style="font-size:11px;color:#666;margin:0 0 4px;font-family:monospace;">${camp.name}</p>
-              <div style="display:flex;align-items:center;gap:4px;margin-bottom:4px;">
-                ${tierBadge}
-                <span style="font-size:11px;color:#666;">⭐${camp.sceneryRating}/5 风景 · 👶${camp.kidRating}/5 娃可玩</span>
-              </div>
-              ${closureBanner}
-              <a href="/campground/${camp.id}" style="display:block;margin-top:8px;text-align:center;background:#1a4d2e;color:white;padding:6px 12px;border-radius:6px;font-size:12px;text-decoration:none;font-weight:500;">查看详情 →</a>
-            </div>
-          </div>
-        `;
-
-        infoWindowRef.current!.setContent(content);
-        infoWindowRef.current!.open(map, marker);
-      });
-
-      markersRef.current.push(marker);
-    });
-
-    // Add Redmond home marker
-    const homePin = document.createElement("div");
-    homePin.innerHTML = `
-      <div style="
-        width: 32px; height: 32px; 
-        background: #1a4d2e; 
-        border: 3px solid white; 
-        border-radius: 50%; 
-        box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-        display: flex; align-items: center; justify-content: center;
-      ">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      </div>
-    `;
-    const homeMarker = new google.maps.marker.AdvancedMarkerElement({
-      map,
-      position: { lat: REDMOND_COORDS.lat, lng: REDMOND_COORDS.lng },
-      title: "家 · Redmond, WA",
-      content: homePin,
-    });
-    markersRef.current.push(homeMarker);
-  }, [filteredCampgrounds]);
-
-  const handleMapReady = useCallback((map: google.maps.Map) => {
-    mapRef.current = map;
-    updateMarkers(map);
-  }, [updateMarkers]);
-
-  // Update markers when filters change (via useEffect)
-  useEffect(() => {
-    if (mapRef.current) {
-      updateMarkers(mapRef.current);
-    }
-  }, [updateMarkers]);
-
   const clearFilters = () => {
     setSelectedTier("all");
     setSelectedDriveTime(null);
@@ -201,10 +84,6 @@ export default function MapPage() {
               <span className="text-[10px] text-muted-foreground ml-auto font-mono">{opt.count}</span>
             </div>
           ))}
-          <div className="flex items-center gap-2 mt-1 pt-1 border-t border-border/50">
-            <div className="w-3.5 h-3.5 rounded-full border-2 border-white shadow-sm bg-pine" />
-            <span className="text-xs text-foreground">家 (Redmond)</span>
-          </div>
         </div>
       </div>
 
@@ -371,27 +250,89 @@ export default function MapPage() {
           )}
         </AnimatePresence>
 
-        {/* Map */}
-        <div className="flex-1 relative">
-          <MapView
-            className="w-full h-full"
-            initialCenter={{ lat: 46.5, lng: -122.5 }}
-            initialZoom={7}
-            onMapReady={handleMapReady}
-          />
-          {/* Empty state overlay */}
-          {filteredCampgrounds.length === 0 && (
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg text-center pointer-events-auto">
+        {/* Map + browse pane */}
+        <div className="flex-1 relative overflow-y-auto">
+          {/* Region overview map (bundled static image, tap to open interactive map) */}
+          <div className="h-56 md:h-64 border-b border-border">
+            <MapView
+              src="/camping-guide/images/maps/region-z7.png"
+              href="https://www.google.com/maps/@46.8,-122.2,7z"
+              title="华盛顿州与俄勒冈州营地区域地图（点击在地图 App 中打开）"
+              className="h-full"
+            />
+          </div>
+
+          <div className="p-4 md:p-6 max-w-5xl mx-auto">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="font-display font-bold text-foreground">
+                筛选结果 <span className="text-sm font-mono text-muted-foreground">({filteredCampgrounds.length})</span>
+              </h2>
+              <p className="text-[11px] text-muted-foreground">点"导航"在地图 App 中打开该营地</p>
+            </div>
+
+            {filteredCampgrounds.length === 0 ? (
+              <div className="bg-white rounded-xl p-8 shadow-sm text-center">
                 <MapPin size={32} className="mx-auto text-muted-foreground/40 mb-2" />
                 <p className="text-sm text-muted-foreground">没有匹配的营地</p>
                 <button onClick={clearFilters} className="mt-2 text-xs text-pine hover:underline">清除筛选</button>
               </div>
-            </div>
-          )}
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {filteredCampgrounds.map((camp) => {
+                  const coords = campgroundCoords[camp.id];
+                  return (
+                    <div key={camp.id} className="bg-white rounded-xl border border-border overflow-hidden shadow-sm">
+                      <Link href={`/campground/${camp.id}`} className="block">
+                        <div className="relative h-28">
+                          <img src={camp.image} alt={camp.nameCn} className="w-full h-full object-cover" loading="lazy" />
+                          <div className="absolute top-2 left-2">
+                            {camp.tier && (
+                              <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium ${tierBadgeClasses[camp.tier]}`}>
+                                {camp.tier}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </Link>
+                      <div className="p-3">
+                        <Link href={`/campground/${camp.id}`}>
+                          <h3 className="text-sm font-bold text-foreground truncate hover:text-pine">{camp.nameCn}</h3>
+                        </Link>
+                        <p className="text-[11px] text-muted-foreground font-mono mt-0.5">
+                          {camp.driveTimeLabel} · {camp.state} · ⭐{camp.sceneryRating}/5
+                        </p>
+                        {camp.closureInfo && (
+                          <p className="text-[11px] text-red-700 mt-1">⚠️ 关闭中 · 预计重开: {camp.closureInfo.expectedReopen}</p>
+                        )}
+                        <div className="flex gap-2 mt-2">
+                          <Link
+                            href={`/campground/${camp.id}`}
+                            className="flex-1 text-center text-xs font-medium px-3 py-2.5 rounded-lg bg-pine text-white hover:bg-pine/90"
+                          >
+                            查看详情
+                          </Link>
+                          {coords && (
+                            <a
+                              href={googleMapsUrl(coords.lat, coords.lng, camp.nameCn)}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex-1 inline-flex items-center justify-center gap-1 text-xs font-medium px-3 py-2.5 rounded-lg bg-pine/10 text-pine hover:bg-pine/20"
+                            >
+                              <Navigation size={12} />
+                              导航
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
 
           {/* Mobile bottom bar - opens drawer */}
-          <div className="md:hidden absolute bottom-0 left-0 right-0 safe-area-bottom">
+          <div className="md:hidden sticky bottom-0 safe-area-bottom">
             <button
               onClick={() => setMobileDrawerOpen(true)}
               className="w-full bg-white/95 backdrop-blur-md border-t border-border px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"

@@ -1,177 +1,50 @@
 /**
- * GOOGLE MAPS FRONTEND INTEGRATION - ESSENTIAL GUIDE
+ * MapView — 营地位置地图（本地静态图，点击在地图 App 中打开交互版）。
  *
- * USAGE FROM PARENT COMPONENT:
- * ======
+ * 为什么不用 Google Maps JS API / 嵌入 iframe：
+ * 1. JS API 需要走后端代理签发 key，GitHub Pages 是纯静态托管，没有后端，
+ *    脚本永远加载失败，页面上表现为"地图加载中"无限转圈。
+ * 2. keyless 的 maps.google.com 嵌入 iframe 在部分网络/浏览器下会被拦截，
+ *    且无法在构建/验收环境里截图验证——用户已经因为"地图都看不到"投诉过。
  *
- * const mapRef = useRef<google.maps.Map | null>(null);
- *
- * <MapView
- *   initialCenter={{ lat: 40.7128, lng: -74.0060 }}
- *   initialZoom={15}
- *   onMapReady={(map) => {
- *     mapRef.current = map; // Store to control map from parent anytime, google map itself is in charge of the re-rendering, not react state.
- * </MapView>
- *
- * ======
- * Available Libraries and Core Features:
- * -------------------------------
- * 📍 MARKER (from `marker` library)
- * - Attaches to map using { map, position }
- * new google.maps.marker.AdvancedMarkerElement({
- *   map,
- *   position: { lat: 37.7749, lng: -122.4194 },
- *   title: "San Francisco",
- * });
- *
- * -------------------------------
- * 🏢 PLACES (from `places` library)
- * - Does not attach directly to map; use data with your map manually.
- * const place = new google.maps.places.Place({ id: PLACE_ID });
- * await place.fetchFields({ fields: ["displayName", "location"] });
- * map.setCenter(place.location);
- * new google.maps.marker.AdvancedMarkerElement({ map, position: place.location });
- *
- * -------------------------------
- * 🧭 GEOCODER (from `geocoding` library)
- * - Standalone service; manually apply results to map.
- * const geocoder = new google.maps.Geocoder();
- * geocoder.geocode({ address: "New York" }, (results, status) => {
- *   if (status === "OK" && results[0]) {
- *     map.setCenter(results[0].geometry.location);
- *     new google.maps.marker.AdvancedMarkerElement({
- *       map,
- *       position: results[0].geometry.location,
- *     });
- *   }
- * });
- *
- * -------------------------------
- * 📐 GEOMETRY (from `geometry` library)
- * - Pure utility functions; not attached to map.
- * const dist = google.maps.geometry.spherical.computeDistanceBetween(p1, p2);
- *
- * -------------------------------
- * 🛣️ ROUTES (from `routes` library)
- * - Combines DirectionsService (standalone) + DirectionsRenderer (map-attached)
- * const directionsService = new google.maps.DirectionsService();
- * const directionsRenderer = new google.maps.DirectionsRenderer({ map });
- * directionsService.route(
- *   { origin, destination, travelMode: "DRIVING" },
- *   (res, status) => status === "OK" && directionsRenderer.setDirections(res)
- * );
- *
- * -------------------------------
- * 🌦️ MAP LAYERS (attach directly to map)
- * - new google.maps.TrafficLayer().setMap(map);
- * - new google.maps.TransitLayer().setMap(map);
- * - new google.maps.BicyclingLayer().setMap(map);
- *
- * -------------------------------
- * ✅ SUMMARY
- * - “map-attached” → AdvancedMarkerElement, DirectionsRenderer, Layers.
- * - “standalone” → Geocoder, DirectionsService, DistanceMatrixService, ElevationService.
- * - “data-only” → Place, Geometry utilities.
+ * 现在的方案：构建时用 OpenStreetMap 瓦片拼成带图钉的静态地图，打进仓库；
+ * 页面上 100% 能显示、可截图验证；点击图片则在 Google 地图（手机上是地图 App）
+ * 里打开可交互版本。两全。
  */
 
-/// <reference types="@types/google.maps" />
-
-import { useRef, useEffect, useState } from "react";
-import { usePersistFn } from "@/hooks/usePersistFn";
 import { cn } from "@/lib/utils";
-
-declare global {
-  interface Window {
-    google?: typeof google;
-  }
-}
-
-const API_KEY = import.meta.env.VITE_FRONTEND_FORGE_API_KEY;
-const FORGE_BASE_URL =
-  import.meta.env.VITE_FRONTEND_FORGE_API_URL ||
-  "https://forge.butterfly-effect.dev";
-const MAPS_PROXY_URL = `${FORGE_BASE_URL}/v1/maps/proxy`;
-
-let _mapsLoadPromise: Promise<unknown> | null = null;
-
-function loadMapScript() {
-  // If already loaded, resolve immediately
-  if (window.google?.maps) {
-    return Promise.resolve(null);
-  }
-  // If currently loading, return the existing promise
-  if (_mapsLoadPromise) {
-    return _mapsLoadPromise;
-  }
-  _mapsLoadPromise = new Promise(resolve => {
-    const script = document.createElement("script");
-    script.src = `${MAPS_PROXY_URL}/maps/api/js?key=${API_KEY}&v=weekly&libraries=marker,places,geocoding,geometry`;
-    script.async = true;
-    script.crossOrigin = "anonymous";
-    script.onload = () => {
-      resolve(null);
-      script.remove(); // Clean up immediately
-    };
-    script.onerror = () => {
-      console.error("Failed to load Google Maps script");
-      _mapsLoadPromise = null; // Allow retry on failure
-    };
-    document.head.appendChild(script);
-  });
-  return _mapsLoadPromise;
-}
+import { ExternalLink } from "lucide-react";
 
 interface MapViewProps {
   className?: string;
-  initialCenter?: google.maps.LatLngLiteral;
-  initialZoom?: number;
-  onMapReady?: (map: google.maps.Map) => void;
+  /** 本地静态地图图片，如 "/camping-guide/images/maps/camp-14-z11.png" */
+  src: string;
+  /** 点击图片后打开的交互地图链接（Google Maps） */
+  href: string;
+  title?: string;
 }
 
-export function MapView({
-  className,
-  initialCenter = { lat: 37.7749, lng: -122.4194 },
-  initialZoom = 12,
-  onMapReady,
-}: MapViewProps) {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<google.maps.Map | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  const init = usePersistFn(async () => {
-    await loadMapScript();
-    if (!mapContainer.current) {
-      console.error("Map container not found");
-      return;
-    }
-    map.current = new window.google.maps.Map(mapContainer.current, {
-      zoom: initialZoom,
-      center: initialCenter,
-      mapTypeControl: true,
-      fullscreenControl: true,
-      zoomControl: true,
-      streetViewControl: true,
-      mapId: "DEMO_MAP_ID",
-    });
-    setIsLoading(false);
-    if (onMapReady) {
-      onMapReady(map.current);
-    }
-  });
-
-  useEffect(() => {
-    init();
-  }, [init]);
-
+export function MapView({ className, src, href, title }: MapViewProps) {
   return (
-    <div className={cn("w-full h-[500px] relative", className)}>
-      <div ref={mapContainer} className="w-full h-full" />
-      {isLoading && (
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-muted/80 backdrop-blur-sm rounded-lg">
-          <div className="w-8 h-8 border-3 border-pine/30 border-t-pine rounded-full animate-spin mb-3" />
-          <p className="text-sm text-muted-foreground font-medium">地图加载中...</p>
-        </div>
-      )}
+    <div className={cn("w-full h-[500px] relative group", className)}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={title ?? "在地图中打开"}
+        className="block w-full h-full"
+      >
+        <img
+          src={src}
+          alt={title ?? "营地位置地图"}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <span className="absolute bottom-2 right-2 inline-flex items-center gap-1 px-2 py-1 rounded-md bg-black/55 text-white text-[11px] font-medium backdrop-blur-sm opacity-90 group-active:opacity-100">
+          <ExternalLink size={12} />
+          在地图 App 中打开
+        </span>
+      </a>
     </div>
   );
 }

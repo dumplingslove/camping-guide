@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { MapView } from "@/components/Map";
 import { getInsightsForCampground } from "@/data/reviewInsightsData";
 import { getReviewsForCampground, type Review } from "@/data/reviewsData";
@@ -17,7 +17,6 @@ export function SiteMapSection({ campgroundId, campgroundName, lat, lng }: SiteM
   const [siteReviews, setSiteReviews] = useState<Review[]>([]);
   const [loadingReviews, setLoadingReviews] = useState(false);
   const [showReviews, setShowReviews] = useState(false);
-  const mapRef = useRef<google.maps.Map | null>(null);
 
   if (!insights || !lat || !lng) return null;
   if (insights.recommendedSites.length === 0 && insights.avoidSites.length === 0) return null;
@@ -39,23 +38,6 @@ export function SiteMapSection({ campgroundId, campgroundName, lat, lng }: SiteM
     setLoadingReviews(false);
   };
 
-  const handleMapReady = (map: google.maps.Map) => {
-    mapRef.current = map;
-    
-    // Place a single marker at the campground center - no fake site markers
-    const pinElement = document.createElement("div");
-    pinElement.className = "flex items-center justify-center w-10 h-10 rounded-full bg-pine border-2 border-white shadow-lg text-white";
-    pinElement.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`;
-    pinElement.title = campgroundName;
-
-    new google.maps.marker.AdvancedMarkerElement({
-      map,
-      position: { lat, lng },
-      content: pinElement,
-      title: campgroundName,
-    });
-  };
-
   return (
     <section className="mt-8">
       <h2 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
@@ -70,9 +52,9 @@ export function SiteMapSection({ campgroundId, campgroundName, lat, lng }: SiteM
       <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
         <MapView
           className="h-[280px]"
-          initialCenter={{ lat, lng }}
-          initialZoom={15}
-          onMapReady={handleMapReady}
+          src={`/camping-guide/images/maps/camp-${campgroundId}-z15.png`}
+          href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`}
+          title={`${campgroundName} 营位位置地图（点击在地图 App 中打开）`}
         />
       </div>
       <p className="text-[10px] text-muted-foreground mt-1.5 italic">
