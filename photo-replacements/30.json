@@ -1,1 +1,67 @@
-{"card":"images/camp-30/card.jpg","card_author":"Islander61","card_caption":"宪法山顶俯瞰圣胡安群岛与海湾全景","card_license":"CC BY-SA 4.0","card_source":"https://commons.wikimedia.org/wiki/File:View_from_mount_constitution_in_Moran_state_park_at_orcas_island,_Canada.jpg","gallery":[{"author":"My Backyard and Beyond","caption":"中途营地（Midway Campground）紧邻下水坡道的滨水营位","file":"images/camp-30/01.jpg","license":"© 未声明许可（版权存疑）","source":"https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/"},{"author":"My Backyard and Beyond","caption":"南端营地（Southend Campground）8号湖畔营位","file":"images/camp-30/02.jpg","license":"© 未声明许可（版权存疑）","source":"https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/"},{"author":"My Backyard and Beyond","caption":"两人在卡斯卡德湖上划皮划艇","file":"images/camp-30/03.jpg","license":"© 未声明许可（版权存疑）","source":"https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/"},{"author":"Joe Mabel","caption":"宪法山观景塔远眺克拉克岛与卢米岛","file":"images/camp-30/04.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Moran_-_Mt._Constitution_toward_Clark_Island.jpg"},{"author":"Joe Mabel","caption":"宪法山观景塔俯瞰卢米岛及周边水道","file":"images/camp-30/05.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Moran_-_Mt._Constitution_toward_Lummi_Island.jpg"}],"id":30,"name":"Moran State Park"}
+{
+  "card": "images/camp-30/card.jpg",
+  "card_author": "Islander61",
+  "card_caption": "宪法山顶俯瞰圣胡安群岛与海湾全景",
+  "card_license": "CC BY-SA 4.0",
+  "card_source": "https://commons.wikimedia.org/wiki/File:View_from_mount_constitution_in_Moran_state_park_at_orcas_island,_Canada.jpg",
+  "gallery": [
+    {
+      "author": "My Backyard and Beyond",
+      "caption": "中途营地（Midway Campground）紧邻下水坡道的滨水营位",
+      "file": "images/camp-30/01.jpg",
+      "license": "© 未声明许可（版权存疑）",
+      "source": "https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/"
+    },
+    {
+      "author": "My Backyard and Beyond",
+      "caption": "南端营地（Southend Campground）8号湖畔营位",
+      "file": "images/camp-30/02.jpg",
+      "license": "© 未声明许可（版权存疑）",
+      "source": "https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/"
+    },
+    {
+      "author": "My Backyard and Beyond",
+      "caption": "两人在卡斯卡德湖上划皮划艇",
+      "file": "images/camp-30/03.jpg",
+      "license": "© 未声明许可（版权存疑）",
+      "source": "https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/"
+    },
+    {
+      "author": "Joe Mabel",
+      "caption": "宪法山观景塔远眺克拉克岛与卢米岛",
+      "file": "images/camp-30/04.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Moran_-_Mt._Constitution_toward_Clark_Island.jpg"
+    },
+    {
+      "author": "Joe Mabel",
+      "caption": "宪法山观景塔俯瞰卢米岛及周边水道",
+      "file": "images/camp-30/05.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Moran_-_Mt._Constitution_toward_Lummi_Island.jpg"
+    },
+    {
+      "file": "images/camp-30/site-01.jpg",
+      "caption": "Midway 营地湖畔营位：野餐桌、火圈与 Cascade 湖景",
+      "source": "https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/",
+      "author": "My Backyard and Beyond（博主）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-30/site-02.jpg",
+      "caption": "Midway 营地林地帐篷营位",
+      "source": "https://www.thedyrt.com（照片标注为 Moran State Park Midway Campground）",
+      "author": "未注明（The Dyrt 用户照片）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-30/site-03.jpg",
+      "caption": "Midway 营地 46 号营位：帐篷、野餐桌与火圈",
+      "source": "https://www.outdoorfam.ca/2023/07/20/camping-at-moran-state-park-on-orcas-island/",
+      "author": "Outdoor Family（博主）",
+      "license": "未注明"
+    }
+  ],
+  "id": 30,
+  "name": "Moran State Park"
+}

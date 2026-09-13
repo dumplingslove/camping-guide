@@ -1,1 +1,56 @@
-{"card":"images/camp-36/card.jpg","gallery":[{"author":"Twelvizm","caption":"底特律湖鸟瞰（2015 年 8 月）","file":"images/camp-36/01.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Detroit_Lake_August_2015.jpg"},{"author":"John2165","caption":"底特律湖码头","file":"images/camp-36/02.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Detroit_Lake_marina.JPG"},{"author":"Teacherjourney","caption":"底特律湖宁静的湖面","file":"images/camp-36/03.jpg","license":"CC0","source":"https://commons.wikimedia.org/wiki/File:Detroit_Lake.jpg"},{"author":"Bonnie","caption":"冬日雪中的底特律湖","file":"images/camp-36/04.jpg","license":"CC0","source":"https://commons.wikimedia.org/wiki/File:Detroit_Lake,_Oregon_(32035674490).JPG"},{"author":"John2165","caption":"Blowout Arm 湖湾的瀑布（仅乘船可达）","file":"images/camp-36/05.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Detroit_Lake_banner.jpg"}],"id":36,"name":"Detroit Lake State Recreation Area"}
+{
+  "card": "images/camp-36/card.jpg",
+  "gallery": [
+    {
+      "author": "Twelvizm",
+      "caption": "底特律湖鸟瞰（2015 年 8 月）",
+      "file": "images/camp-36/01.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Detroit_Lake_August_2015.jpg"
+    },
+    {
+      "author": "John2165",
+      "caption": "底特律湖码头",
+      "file": "images/camp-36/02.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Detroit_Lake_marina.JPG"
+    },
+    {
+      "author": "Teacherjourney",
+      "caption": "底特律湖宁静的湖面",
+      "file": "images/camp-36/03.jpg",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Detroit_Lake.jpg"
+    },
+    {
+      "author": "Bonnie",
+      "caption": "冬日雪中的底特律湖",
+      "file": "images/camp-36/04.jpg",
+      "license": "CC0",
+      "source": "https://commons.wikimedia.org/wiki/File:Detroit_Lake,_Oregon_(32035674490).JPG"
+    },
+    {
+      "author": "John2165",
+      "caption": "Blowout Arm 湖湾的瀑布（仅乘船可达）",
+      "file": "images/camp-36/05.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Detroit_Lake_banner.jpg"
+    },
+    {
+      "file": "images/camp-36/site-01.jpg",
+      "caption": "林间房车营位：皮卡拖挂着房车，原始森林环绕",
+      "source": "https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html",
+      "author": "oregonsbestcamping.com",
+      "license": "© oregonsbestcamping.com"
+    },
+    {
+      "file": "images/camp-36/site-02.jpg",
+      "caption": "林间营位：野餐桌+帐篷垫+火圈，碎石地面",
+      "source": "https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html",
+      "author": "oregonsbestcamping.com",
+      "license": "© oregonsbestcamping.com"
+    }
+  ],
+  "id": 36,
+  "name": "Detroit Lake State Recreation Area"
+}

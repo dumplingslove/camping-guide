@@ -1,1 +1,56 @@
-{"card":"images/camp-41/card.jpg","gallery":[{"author":"Tagooty","caption":"沃思炮台（Battery Worth）升起的左侧火炮（10 英寸隐显炮）","file":"images/camp-41/01.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Left_Gun_Raised_Battery_Worth_Ft_Casey_WA_Mar23_A7R_03944.jpg"},{"author":"mikelehen","caption":"Trevor 炮台（Battery Trevor）","file":"images/camp-41/02.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Fort_Casey_batterytrevor.jpg"},{"author":"Ricardo Martins","caption":"海军角灯塔（Admiralty Head Light）","file":"images/camp-41/03.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Admiralty_Head_Light_-_Whidbey_Island_WA.jpg"},{"author":"Robert Ashworth","caption":"从海崖眺望奥林匹克山脉的日落","file":"images/camp-41/04.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Sunset_over_the_Olympic_Mountains_as_seen_from_bluffs_at_Fort_Casey_State_Park_on_Whidbey_Island._(33202774284).jpg"},{"author":"Tagooty","caption":"沃思炮台 10 英寸隐显炮特写","file":"images/camp-41/05.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Gun_Close_Battery_Worth_Ft_Casey_Whidbey_Mar23_A7R_03926.jpg"}],"id":41,"name":"Fort Casey Historical State Park"}
+{
+  "card": "images/camp-41/card.jpg",
+  "gallery": [
+    {
+      "author": "Tagooty",
+      "caption": "沃思炮台（Battery Worth）升起的左侧火炮（10 英寸隐显炮）",
+      "file": "images/camp-41/01.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Left_Gun_Raised_Battery_Worth_Ft_Casey_WA_Mar23_A7R_03944.jpg"
+    },
+    {
+      "author": "mikelehen",
+      "caption": "Trevor 炮台（Battery Trevor）",
+      "file": "images/camp-41/02.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fort_Casey_batterytrevor.jpg"
+    },
+    {
+      "author": "Ricardo Martins",
+      "caption": "海军角灯塔（Admiralty Head Light）",
+      "file": "images/camp-41/03.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Head_Light_-_Whidbey_Island_WA.jpg"
+    },
+    {
+      "author": "Robert Ashworth",
+      "caption": "从海崖眺望奥林匹克山脉的日落",
+      "file": "images/camp-41/04.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunset_over_the_Olympic_Mountains_as_seen_from_bluffs_at_Fort_Casey_State_Park_on_Whidbey_Island._(33202774284).jpg"
+    },
+    {
+      "author": "Tagooty",
+      "caption": "沃思炮台 10 英寸隐显炮特写",
+      "file": "images/camp-41/05.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Gun_Close_Battery_Worth_Ft_Casey_Whidbey_Mar23_A7R_03926.jpg"
+    },
+    {
+      "file": "images/camp-41/site-01.jpg",
+      "caption": "营地俯瞰：滨水房车环，碎石营位一字排开，间距清晰",
+      "source": "https://thedyrt.com/camping/washington/near/la-conner/with/glamping",
+      "author": "TheDyrt 营友实拍",
+      "license": "© TheDyrt 用户"
+    },
+    {
+      "file": "images/camp-41/site-02.jpg",
+      "caption": "滨水营位：房车+野餐桌+折叠椅+火圈，远眺渡轮码头",
+      "source": "https://thedyrt.com/camping/washington/washington-fort-casey-state-park/review/14719",
+      "author": "TheDyrt 营友实拍",
+      "license": "© TheDyrt 用户"
+    }
+  ],
+  "id": 41,
+  "name": "Fort Casey Historical State Park"
+}

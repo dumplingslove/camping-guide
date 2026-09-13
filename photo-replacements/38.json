@@ -1,1 +1,63 @@
-{"card":"images/camp-38/card.jpg","gallery":[{"author":"Rick Obst","caption":"哈里斯海滩的日出","file":"images/camp-38/01.jpg","license":"CC BY 4.0","source":"https://commons.wikimedia.org/wiki/File:Sunrise_at_Harris_Beach_State_Park.jpg"},{"author":"Rick Obst","caption":"海蚀柱与山羊岛（Goat Island）","file":"images/camp-38/02.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Sea_stacks_and_Goat_Island_at_Harris_Beach_State_Park.jpg"},{"author":"Rick Obst","caption":"海滩上的海蚀柱群","file":"images/camp-38/03.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Sea_Stacks_at_Harris_Beach_State_Park_near_Brookings,_Oregon.jpg"},{"author":"Rick Obst","caption":"在 Rogue 蒙古包（yurt）露营","file":"images/camp-38/04.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Camping_in_Rogue_Yurt_at_Harris_Beach_State_Park.jpg"},{"author":"Rick Obst","caption":"清晨的哈里斯海滩","file":"images/camp-38/05.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Morning_on_the_beach_at_Harris_Beach_State_Park.jpg"}],"id":38,"name":"Harris Beach State Park Campground"}
+{
+  "card": "images/camp-38/card.jpg",
+  "gallery": [
+    {
+      "author": "Rick Obst",
+      "caption": "哈里斯海滩的日出",
+      "file": "images/camp-38/01.jpg",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunrise_at_Harris_Beach_State_Park.jpg"
+    },
+    {
+      "author": "Rick Obst",
+      "caption": "海蚀柱与山羊岛（Goat Island）",
+      "file": "images/camp-38/02.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sea_stacks_and_Goat_Island_at_Harris_Beach_State_Park.jpg"
+    },
+    {
+      "author": "Rick Obst",
+      "caption": "海滩上的海蚀柱群",
+      "file": "images/camp-38/03.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sea_Stacks_at_Harris_Beach_State_Park_near_Brookings,_Oregon.jpg"
+    },
+    {
+      "author": "Rick Obst",
+      "caption": "在 Rogue 蒙古包（yurt）露营",
+      "file": "images/camp-38/04.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Camping_in_Rogue_Yurt_at_Harris_Beach_State_Park.jpg"
+    },
+    {
+      "author": "Rick Obst",
+      "caption": "清晨的哈里斯海滩",
+      "file": "images/camp-38/05.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Morning_on_the_beach_at_Harris_Beach_State_Park.jpg"
+    },
+    {
+      "file": "images/camp-38/site-01.jpg",
+      "caption": "A35营位：地面漆有营位编号，铺装贯通式车位，野餐桌+火圈",
+      "source": "https://www.campsitephotos.com/campground/or/harris-beach-state-park/",
+      "author": "CampsitePhotos.com",
+      "license": "© CampsitePhotos.com"
+    },
+    {
+      "file": "images/camp-38/site-02.jpg",
+      "caption": "碎石房车营位：拖挂房车+皮卡，野餐桌+火圈",
+      "source": "https://www.oregonsbestcamping.com/or_coast/harris_beach_sp.html",
+      "author": "oregonsbestcamping.com",
+      "license": "© oregonsbestcamping.com"
+    },
+    {
+      "file": "images/camp-38/site-03.jpg",
+      "caption": "官网A27营位：野餐桌+火圈，草地铺装车位",
+      "source": "https://stateparks.oregon.gov/index.cfm?do=main.loadImage&Image=Harris+Beach+State+Park%5CA27_long111824.JPG",
+      "author": "Oregon State Parks",
+      "license": "© Oregon State Parks"
+    }
+  ],
+  "id": 38,
+  "name": "Harris Beach State Park Campground"
+}

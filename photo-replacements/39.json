@@ -1,1 +1,56 @@
-{"card":"images/camp-39/card.jpg","gallery":[{"author":"Tiffany Von Arnim","caption":"Diablo Lake 观景点远眺湖泊与群山","file":"images/camp-39/01.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Diablo_Lake_Overlook.jpg"},{"author":"Joe Mabel","caption":"从 20 号州道旁的 Diablo Lake 观景点看湖泊","file":"images/camp-39/02.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Diablo_Lake_01.jpg"},{"author":"Jennifer C.","caption":"Diablo 湖与群山","file":"images/camp-39/03.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Diablo_Lake,_Washington_(27433492554).jpg"},{"author":"Robert Ashworth","caption":"Diablo 湖湖面","file":"images/camp-39/04.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Diablo_Lake_(36662414120).jpg"},{"author":"Ron Clausen","caption":"Colonial Peak 与 Diablo 湖的 Thunder Arm","file":"images/camp-39/05.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Colonial_Peak_and_Diablo_Lake.jpg"}],"id":39,"name":"Colonial Creek South Campground"}
+{
+  "card": "images/camp-39/card.jpg",
+  "gallery": [
+    {
+      "author": "Tiffany Von Arnim",
+      "caption": "Diablo Lake 观景点远眺湖泊与群山",
+      "file": "images/camp-39/01.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diablo_Lake_Overlook.jpg"
+    },
+    {
+      "author": "Joe Mabel",
+      "caption": "从 20 号州道旁的 Diablo Lake 观景点看湖泊",
+      "file": "images/camp-39/02.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diablo_Lake_01.jpg"
+    },
+    {
+      "author": "Jennifer C.",
+      "caption": "Diablo 湖与群山",
+      "file": "images/camp-39/03.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diablo_Lake,_Washington_(27433492554).jpg"
+    },
+    {
+      "author": "Robert Ashworth",
+      "caption": "Diablo 湖湖面",
+      "file": "images/camp-39/04.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Diablo_Lake_(36662414120).jpg"
+    },
+    {
+      "author": "Ron Clausen",
+      "caption": "Colonial Peak 与 Diablo 湖的 Thunder Arm",
+      "file": "images/camp-39/05.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Colonial_Peak_and_Diablo_Lake.jpg"
+    },
+    {
+      "file": "images/camp-39/site-01.jpg",
+      "caption": "100号营位：营位桩+野餐桌+火圈+帐篷垫，针叶林中",
+      "source": "https://www.recreation.gov/camping/campsites/101372",
+      "author": "recreation.gov",
+      "license": "Public domain（联邦营地设施照片）"
+    },
+    {
+      "file": "images/camp-39/site-02.jpg",
+      "caption": "111号营位：野餐桌+带烤架的火圈+防熊储物箱",
+      "source": "https://www.recreation.gov/camping/campsites/101494",
+      "author": "recreation.gov",
+      "license": "Public domain（联邦营地设施照片）"
+    }
+  ],
+  "id": 39,
+  "name": "Colonial Creek South Campground"
+}

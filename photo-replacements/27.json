@@ -35,6 +35,27 @@
       "file": "images/camp-27/05.jpg",
       "license": "官网图片，版权归 Washington State Parks 所有",
       "source": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park"
+    },
+    {
+      "file": "images/camp-27/site-01.jpg",
+      "caption": "营地房车营位",
+      "source": "https://www.campsitephotos.com/campground/wa/wenatchee-confluence-state-park/",
+      "author": "未注明（CampsitePhotos 营地页面照片）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-27/site-02.jpg",
+      "caption": "草地上的折叠房车营位",
+      "source": "https://www.thedyrt.com（照片标注为 Wenatchee Confluence State Park）",
+      "author": "未注明（The Dyrt 用户照片）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-27/site-03.jpg",
+      "caption": "河畔房车营位：野餐桌、草坪与河景",
+      "source": "https://www.campendium.com/wenatchee-confluence-state-park",
+      "author": "未注明（Campendium 用户照片）",
+      "license": "未注明"
     }
   ],
   "id": 27,

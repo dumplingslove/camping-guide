@@ -1,6 +1,6 @@
 # 图片来源署名（Image Credits）
 
-本站营地图片来自以下公开来源，按 CC / 公有领域等许可使用，特此署名。
+本站营地图片来自以下公开来源，特此署名。标注 CC / 公有领域的图片按相应许可使用；标注"版权所有"的营位实拍图（来自 CampsitePhotos、KOA、TheDyrt、Roadtrippers、博客及 Flickr 用户）仅作来源标注展示，版权归原作者/来源所有。
 
 ## 1. Deception Pass State Park
 - 代表图 `images/camp-1/card.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ADeception%20Pass%20toward%20dusk%2001.jpg
@@ -15,6 +15,9 @@
 - `images/camp-1/09.jpg` — Shantham11 (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3AAncient%20Douglas%20fir%20tree%20at%20Deception%20pass%20state%20park.jpg
 - `images/camp-1/10.jpg` — Rechelle Schimke (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3AMom%20and%20Baby%20Tor%20at%20Tent.jpg
 - `images/camp-1/11.jpg` — Walter Siegmund (talk) (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File%3AKayak%205729.JPG
+- `images/camp-1/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/deception-pass-state-park/
+- `images/camp-1/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/deception-pass-state-park/
+- `images/camp-1/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/deception-pass-state-park/
 
 ## 2. Millersylvania State Park
 - 代表图 `images/camp-2/card.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3AMillersylvania%20State%20Park%2001.jpg
@@ -26,6 +29,9 @@
 - `images/camp-2/06.jpg` — Phil Venditti (CC BY 2.0) — https://commons.wikimedia.org/wiki/File%3A2023--1%20January--%22First%20Day%22%20hike%20in%20MIllersylvania%20State%20Park%20Washington.jpg
 - `images/camp-2/07.jpg` — Chris Light (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3APk%20Entrance%208761.jpg
 - `images/camp-2/08.jpg` — Chris Light (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ASunrise%208627.jpg
+- `images/camp-2/site-01.jpg` — TheDyrt.com (All rights reserved) — https://thedyrt.com/camping/washington/washington-millersylvania-state-park/gallery
+- `images/camp-2/site-02.jpg` — TheDyrt.com (All rights reserved) — https://thedyrt.com/camping/washington/washington-millersylvania-state-park/gallery
+- `images/camp-2/site-03.jpg` — TheDyrt.com (All rights reserved) — https://thedyrt.com/camping/washington/washington-millersylvania-state-park/gallery
 
 ## 3. Alder Lake Park
 - 代表图 `images/camp-3/card.jpg` — Chris Light (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3AAlder%20lake%209158.jpg
@@ -36,6 +42,9 @@
 - `images/camp-3/05.jpg` — Chris Light (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ABasin%20panorama%208054.jpg
 - `images/camp-3/06.jpg` — Chris Light (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ABeach%20area%206426.jpg
 - `images/camp-3/07.jpg` — Chris Light (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ADouglas%20Fir%206457.jpg
+- `images/camp-3/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/alder-lake-park-main/
+- `images/camp-3/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/alder-lake-park-main/
+- `images/camp-3/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/alder-lake-park-main/
 
 ## 4. Cougar Rock Campground
 - 代表图 `images/camp-4/card.jpg` — NPS Photo (Public domain) — https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Campground%20Site%20C-20%20%2874d89b80-3ce1-48e9-89bc-9711ac2c2c20%29.jpg
@@ -50,6 +59,9 @@
 - `images/camp-4/09.jpg` — NPS Photo (Public domain) — https://commons.wikimedia.org/wiki/File%3ACougar%20Rock%20Accessible%20Picnic%20Tables%20%2896695c83-fa35-4fe7-bc54-3dc5ccd93d1e%29.jpg
 - `images/camp-4/10.jpg` — Steve Redman (MORA) (Public domain) — https://commons.wikimedia.org/wiki/File%3ASign%20%28adb674792c9648d39500d4134c97b301%29.JPG
 - `images/camp-4/11.jpg` — Mount Rainier National Park from Ashford, WA, United States (CC BY 2.0) — https://commons.wikimedia.org/wiki/File%3ASwearing%20in%20Jr.%20Rangers%20%2816893709180%29.jpg
+- `images/camp-4/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/cougar-rock/
+- `images/camp-4/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/cougar-rock/
+- `images/camp-4/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/cougar-rock/
 
 ## 5. Lake Wenatchee State Park
 - 代表图 `images/camp-5/card.jpg` — Core of the Elements (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File%3ALakewenatchee.jpg
@@ -62,6 +74,9 @@
 - `images/camp-5/07.jpg` — Cindy Shebley (CC BY 2.0) — https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20Early%20Morning%20Sunrise%20%2851490290586%29.jpg
 - `images/camp-5/08.jpg` — Bala (CC BY 2.0) — https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20WA.jpg
 - `images/camp-5/09.jpg` — Anubhav Saxena anubhav (CC0) — https://commons.wikimedia.org/wiki/File%3ALake%20Wenatchee%20%28Unsplash%29.jpg
+- `images/camp-5/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/lake-wenatchee-state-park/
+- `images/camp-5/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/lake-wenatchee-state-park/
+- `images/camp-5/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/lake-wenatchee-state-park/
 
 ## 6. Ohanapecosh Campground
 - 代表图 `images/camp-6/card.jpg` — NPS Photo (Public domain) — https://commons.wikimedia.org/wiki/File%3AOhanapecosh%20Campground%20Site%20D21%20%2891f1f687-82bb-42c7-ae87-996a8249c59a%29.JPG
@@ -70,6 +85,9 @@
 - `images/camp-6/03.jpg` — NPS Photo (Public domain) — https://commons.wikimedia.org/wiki/File%3AThe%20beginning%20of%20the%20Hot%20Springs%20Trail%20at%20Loop%20B%20in%20the%20Ohanapecosh%20Campground%20%28844fc655-d1a9-48e0-acc3-4c8837daac30%29.jpg
 - `images/camp-6/04.jpg` — Mount Rainier National Park from Ashford, WA, United States (CC BY 2.0) — https://commons.wikimedia.org/wiki/File%3AOhanapecosh%202018-05-23%20%2842327958341%29.jpg
 - `images/camp-6/05.jpg` — NPS Photo (Public domain) — https://commons.wikimedia.org/wiki/File%3AThe%20accessible%20restrooms%20in%20the%20D%20Loop%20of%20Ohanapecosh%20Campground%20%28b7f29d38-01f2-4847-89ff-f0916f9609d2%29.JPG
+- `images/camp-6/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/ohanapecosh/
+- `images/camp-6/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/ohanapecosh/
+- `images/camp-6/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/ohanapecosh/
 
 ## 7. Fairholme Campground
 - 代表图 `images/camp-7/card.jpg` — Robert Ashworth from Bellingham, WA., USA (CC BY 2.0) — https://commons.wikimedia.org/wiki/File%3AResort%20and%20campground%20at%20west%20end%20of%20Crescent%20Lake%20%2829458920490%29.jpg
@@ -82,6 +100,9 @@
 - `images/camp-7/07.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File%3ADock%20Lake%20Crescent%20NPS%20Photo%20%2817117135938%29.jpg
 - `images/camp-7/08.jpg` — Miguel Hermoso Cuesta (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ALake%20Crescent%2003.JPG
 - `images/camp-7/09.jpg` — Miguel Hermoso Cuesta (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ALake%20Crescent%20Olympic%2010.jpg
+- `images/camp-7/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/fairholme/
+- `images/camp-7/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/fairholme/
+- `images/camp-7/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/fairholme/
 
 ## 8. Lake Chelan State Park
 - 代表图 `images/camp-8/card.jpg` — National Park Service Digital Image Archives (Public domain) — https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%20National%20Recreation%20Area%20LACH8156.jpg
@@ -95,6 +116,9 @@
 - `images/camp-8/08.jpg` — Omarcheeseboro (talk) (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File%3ALakeChelanLakeShoreTrail.jpg
 - `images/camp-8/09.jpg` — Themerganser (CC BY 3.0) — https://commons.wikimedia.org/wiki/File%3AManson%20orchards%20from%20south%20shore%20Lake%20Chelan.jpg
 - `images/camp-8/10.jpg` — Thayne Tuason (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ALake%20Chelan%20Old%20Mill%20Park%20at%20Manson%202.jpg
+- `images/camp-8/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/lake-chelan-state-park/
+- `images/camp-8/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/lake-chelan-state-park/
+- `images/camp-8/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/lake-chelan-state-park/
 
 ## 9. Pacific Beach State Park
 - 代表图 `images/camp-9/card.jpg` — Jess Wood (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Pacific%20Beach%20State%20Park.jpg
@@ -108,6 +132,9 @@
 - `images/camp-9/08.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20looking%20roughly%20south.jpg
 - `images/camp-9/09.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Pacific%20Beach%2C%20Washington%2C%20patterns%20in%20the%20sand.jpg
 - `images/camp-9/10.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Sand%20dollar%2C%20Pacific%20Beach%2C%20Washington%2001.jpg
+- `images/camp-9/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/pacific-beach-state-park/
+- `images/camp-9/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/pacific-beach-state-park/
+- `images/camp-9/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/pacific-beach-state-park/
 
 ## 10. Salt Creek Recreation Area
 - 代表图 `images/camp-10/card.jpg` — Chris Light (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Beach%20combing%205549.jpg
@@ -117,6 +144,9 @@
 - `images/camp-10/04.jpg` — Anastacia12182 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:SALTCREEKSEASTACK1.JPG
 - `images/camp-10/05.jpg` — Anastacia12182 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Saltcreeksunset.JPG
 - `images/camp-10/06.jpg` — Los Paseos (CC BY-SA 2.0) — https://commons.wikimedia.org/wiki/File:Little%20Shipwrecked%20Islands%20%2846760539384%29.jpg
+- `images/camp-10/site-01.jpg` — TheDyrt.com (All rights reserved) — https://thedyrt.com/camping/washington/salt-creek-recreation-area/gallery
+- `images/camp-10/site-02.jpg` — Campendium 用户 (All rights reserved) — https://www.campendium.com/salt-creek-recreation-area
+- `images/camp-10/site-03.jpg` — Campendium 用户 (All rights reserved) — https://www.campendium.com/salt-creek-recreation-area
 
 ## 11. Kalaloch Campground
 - 代表图 `images/camp-11/card.jpg` — King of Hearts (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Kalaloch%20Beach%20Olympic%20June%202018%20009.jpg
@@ -129,6 +159,9 @@
 - `images/camp-11/07.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Beach%201%2C%20Kalaloch%20Beach%2C%20Washington%2003.jpg
 - `images/camp-11/08.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Destruction%20Island%20from%20Beach%204%2C%20Kalaloch%20Beach%2C%20Washington%2001.jpg
 - `images/camp-11/09.jpg` — Joe Mabel (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Big%20driftwood%20at%20Beach%202%2C%20Kalaloch%20Beach%2C%20Washington%2001.jpg
+- `images/camp-11/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/kalaloch/
+- `images/camp-11/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/kalaloch/
+- `images/camp-11/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/kalaloch/
 
 ## 12. Astoria/Warrenton/Seaside KOA Resort
 - 代表图 `images/camp-12/card.jpg` — KOA（Astoria/Warrenton/Seaside KOA） (版权所有，未获自由复用许可) — https://koa.com/campgrounds/astoria/
@@ -137,6 +170,9 @@
 - `images/camp-12/03.jpg` — KOA（Astoria/Warrenton/Seaside KOA） (版权所有，未获自由复用许可) — https://koa.com/campgrounds/astoria/
 - `images/camp-12/04.jpg` — KOA（Astoria/Warrenton/Seaside KOA） (版权所有，未获自由复用许可) — https://koa.com/campgrounds/astoria/
 - `images/camp-12/05.jpg` — KOA（Astoria/Warrenton/Seaside KOA） (版权所有，未获自由复用许可) — https://koa.com/content/campgrounds/astoria/photos/7fabbe59-a2f1-4b76-ae01-2c6bb3cd2a69photo14619373-13b7-4599-8348-36f837d176d1.jpg
+- `images/camp-12/site-01.jpg` — KOA（Astoria/Warrenton/Seaside KOA） (版权所有，未获自由复用许可) — https://koa.com/campgrounds/astoria/reserve/
+- `images/camp-12/site-02.jpg` — KOA（Astoria/Warrenton/Seaside KOA） (版权所有，未获自由复用许可) — https://koa.com/campgrounds/astoria/reserve/
+- `images/camp-12/site-03.jpg` — KOA（Astoria/Warrenton/Seaside KOA） (版权所有，未获自由复用许可) — https://koa.com/campgrounds/astoria/
 
 ## 13. South Beach Campground
 - 代表图 `images/camp-13/card.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File:Waves%20kalaloch%20south%20beach%20campground%20coast%20tides%20spring%20d%20archuleta%20march%202015%20%2817125637818%29.jpg
@@ -149,6 +185,9 @@
 - `images/camp-13/07.jpg` — Doug Kerr (CC BY-SA 2.0) — https://commons.wikimedia.org/wiki/File:South%20Beach%20-%20Olympic%20National%20Park%20-%20Washington%20State%20%289784043334%29.jpg
 - `images/camp-13/08.jpg` — King of Hearts (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:South%20Beach%20Olympic%20June%202018%20001.jpg
 - `images/camp-13/09.jpg` — King of Hearts (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:South%20Beach%20Olympic%20June%202018%20002.jpg
+- `images/camp-13/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/south-beach-state-park/
+- `images/camp-13/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/south-beach-state-park/
+- `images/camp-13/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/south-beach-state-park/
 
 ## 14. Fort Stevens State Park
 - 代表图 `images/camp-14/card.jpg` — Rick Obst (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Peter%20Iredale%20shipwreck%20at%20sunset.jpg
@@ -161,6 +200,9 @@
 - `images/camp-14/07.jpg` — Rick Obst (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Bunker%20at%20Battery%20Russell%20in%20Fort%20Stevens%20State%20Park.jpg
 - `images/camp-14/08.jpg` — Rick Obst (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Coffenbury%20Lake%20day%20use%20area%20in%20Fort%20Stevens%20State%20Park.jpg
 - `images/camp-14/09.jpg` — Rick Obst (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Morning%20reflections%20at%20Coffenbury%20Lake.jpg
+- `images/camp-14/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/fort-stevens-state-park/
+- `images/camp-14/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/fort-stevens-state-park/
+- `images/camp-14/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/fort-stevens-state-park/
 
 ## 15. Beverly Beach State Park
 - 代表图 `images/camp-15/card.jpg` — Finetooth (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Beverly%20beach%20state%20park.jpg
@@ -169,6 +211,9 @@
 - `images/camp-15/03.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Driftwood%20in%20Spencer%20Creek%20at%20Beverly%20Beach%20State%20Park.jpg
 - `images/camp-15/04.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Walking%20the%20dog%20trail%20at%20Beverly%20Beach%20State%20Park.jpg
 - `images/camp-15/05.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Beverly_Beach_and_the_Pacific_Ocean_at_Sunrise.jpg
+- `images/camp-15/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/beverly-beach-state-park/photos/beverly-beach-h014
+- `images/camp-15/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/beverly-beach-state-park/photos/beverly-beach-f019
+- `images/camp-15/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/beverly-beach-state-park/photos/beverly-beach-b001
 
 ## 16. Cape Disappointment State Park
 - 代表图 `images/camp-16/card.jpg` — Adbar (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20and%20Cape%20Disappointment%20Light.jpg
@@ -182,6 +227,9 @@
 - `images/camp-16/08.jpg` — Teufelhunde86 (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20State%20Park%20with%20Lighthouse.jpg
 - `images/camp-16/09.jpg` — Colleen Taugher (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Cape%20Disappointment%20Lighthouse%20WA.jpg
 - `images/camp-16/10.jpg` — Dougtone (CC BY-SA 2.0) — https://commons.wikimedia.org/wiki/File:Cape_Disappointment_State_Park_-_Ilwaco,_Washington_-_51740006441.jpg
+- `images/camp-16/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/wa/cape-disappointment-state-park/
+- `images/camp-16/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/wa/cape-disappointment-state-park/
+- `images/camp-16/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/wa/cape-disappointment-state-park/
 
 ## 17. Trillium Lake
 - 代表图 `images/camp-17/card.jpg` — Kevin Crosby (CC BY-SA 2.0) — https://commons.wikimedia.org/wiki/File%3AOregon_Mount_Hood_from_Trillium_Lake_2024.jpg
@@ -192,6 +240,9 @@
 - `images/camp-17/05.jpg` — U.S. Forest Service- Pacific Northwest Region (Public domain) — https://commons.wikimedia.org/wiki/File%3ABoating_Trillium_Lake_Mt_Hood_NF_%2836294276906%29.jpg
 - `images/camp-17/06.jpg` — Diesputniks (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File%3ATrillium_Lake_in_winter.jpg
 - `images/camp-17/07.jpg` — Bill Reynolds from Lake Oswego, Oregon (CC BY 2.0) — https://commons.wikimedia.org/wiki/File%3ATrillium_Lake_Oregon_%2837520351656%29.jpg
+- `images/camp-17/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/trillium-lake/
+- `images/camp-17/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/trillium-lake/
+- `images/camp-17/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/trillium-lake/
 
 ## 18. Mora Campground
 - 代表图 `images/camp-18/card.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File:Tent%20camping%20mora%20campground%20campsite%20coast%20d%20archuleta%20march%2006%202015%20%2817185640829%29.jpg
@@ -204,6 +255,9 @@
 - `images/camp-18/07.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File:Close%20rock%20tree%20sky%20Rialto%20beach%20cbubar%202015%20%2822681783428%29.jpg
 - `images/camp-18/08.jpg` — Ron Clausen (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Dahdayla%20Rock.jpg
 - `images/camp-18/09.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File:Green%20quillayute%20river%20summer%20calm%20reflections%20d%20archuleta%202015%20%2823104417456%29.jpg
+- `images/camp-18/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/wa/mora/
+- `images/camp-18/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/wa/mora/
+- `images/camp-18/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/wa/mora/
 
 ## 19. Little Crater Lake
 - 代表图 `images/camp-19/card.jpg` — Geoff Parsons (CC BY-SA 2.0) — https://commons.wikimedia.org/wiki/File%3ALittle_Crater_lake_2016.jpg
@@ -213,6 +267,9 @@
 - `images/camp-19/04.jpg` — Gary Halvorson, Oregon State Archives (CC BY 4.0) — https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_4dc73e0d1fb085e5c6f62d61f97d421c.jpg
 - `images/camp-19/05.jpg` — Gary Halvorson, Oregon State Archives (CC BY 4.0) — https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_50c76e86669106cc84e2f5586e04de89.jpg
 - `images/camp-19/06.jpg` — Gary Halvorson, Oregon State Archives (CC BY 4.0) — https://commons.wikimedia.org/wiki/File%3ALittle_Crater_Lake_-_DPLA_-_5d3bc0a2e6e650bfd46e2fc6370f7410.jpg
+- `images/camp-19/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/little-crater-lake/
+- `images/camp-19/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/little-crater-lake/
+- `images/camp-19/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/little-crater-lake/
 
 ## 20. Tumalo State Park
 - 代表图 `images/camp-20/card.jpg` — Oregon State Parks (官网图片（Oregon State Parks）) — https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=34
@@ -223,6 +280,9 @@
 - `images/camp-20/05.jpg` — Robert Ashworth from Bellingham, WA., USA (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Deschutes%20River%20north%20of%20Bend%20%287967319474%29.jpg
 - `images/camp-20/06.jpg` — Robert Ashworth from Bellingham, WA., USA (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Deschutes%20River%20in%20Bend%2C%20Oregon%20%287967057022%29.jpg
 - `images/camp-20/07.jpg` — Trougnouf (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Bend%2C%20OR%20%28DSC%200063%29.jpg
+- `images/camp-20/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/tumalo-state-park/
+- `images/camp-20/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/tumalo-state-park/
+- `images/camp-20/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/tumalo-state-park/
 
 ## 21. Cape Lookout State Park
 - 代表图 `images/camp-21/card.jpg` — Gary Halvorson, Oregon State Archives (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Cape%20Lookout%20State%20Park%20-%20DPLA%20-%208d69130dfadc5a04ad3eb46f63c2e93b.jpg
@@ -233,6 +293,9 @@
 - `images/camp-21/05.jpg` — WireLizard (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Cape%20Lookout%205.jpg
 - `images/camp-21/06.jpg` — S. Rae from Scotland, UK (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Cape%20Lookout%20%287081069737%29.jpg
 - `images/camp-21/07.jpg` — Dougtone (CC BY-SA 2.0) — https://commons.wikimedia.org/wiki/File:Cape%20Lookout%20State%20Park%20-%20Oregon%20-%2010092776824.jpg
+- `images/camp-21/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/cape-lookout-state-park/
+- `images/camp-21/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/cape-lookout-state-park/
+- `images/camp-21/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/cape-lookout-state-park/
 
 ## 22. Farewell Bend Campground
 - 代表图 `images/camp-22/card.jpg` — Markgorzynski (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Crater%20Lake%20Fairwell%20Bend.jpg
@@ -243,6 +306,9 @@
 - `images/camp-22/05.jpg` — A. E. Crane, U.S. Department of Transportation (Public domain) — https://commons.wikimedia.org/wiki/File:Rogue-Umpqua%20Scenic%20Byway%20-%20Looking%20Down%20the%20River%20at%20Natural%20Bridge%20-%20NARA%20-%207721339.jpg
 - `images/camp-22/06.jpg` — BobJGalindo (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:National%20Creek%20Falls%2C%20Douglas%20Co%2C%20OR.jpg
 - `images/camp-22/07.jpg` — Bureau of Land Management Oregon and Washington from Portland, America (Public domain) — https://commons.wikimedia.org/wiki/File:Rogue%20National%20Wild%20and%20Scenic%20River%20%2834446242450%29.jpg
+- `images/camp-22/site-01.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/farewell-bend/
+- `images/camp-22/site-02.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/farewell-bend/
+- `images/camp-22/site-03.jpg` — CampsitePhotos.com (版权所有，未获自由复用许可) — https://www.campsitephotos.com/campground/or/farewell-bend/
 
 ## 23. Crater Lake Mazama Village
 - 代表图 `images/camp-23/card.jpg` — Trougnouf (Benoit Brummer) (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Crater%20Lake%2C%20OR%20%28DSC%200020%29.jpg
@@ -255,6 +321,9 @@
 - `images/camp-23/07.jpg` — Vulturesong (CC0) — https://commons.wikimedia.org/wiki/File:Crater%20Lake%20National%20Park%20-%20HCP%20-%20October%2013%2C%202022%20-%20020.jpg
 - `images/camp-23/08.jpg` — King of Hearts (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Crater%20Lake%20October%202019%20015.jpg
 - `images/camp-23/09.jpg` — NPS staff (Public domain) — https://commons.wikimedia.org/wiki/File:Landscape%20Views%20at%20Crater%20Lake%20National%20Park%2C%20Oregon%20%280771cc31-b155-423c-89de-29effe8006ef%29.jpg
+- `images/camp-23/site-01.jpg` — 未注明（Recreation.gov 用户上传照片） (未注明) — https://www.Recreation.gov/camping/campsites/10337007
+- `images/camp-23/site-02.jpg` — 未注明（Recreation.gov 用户上传照片） (未注明) — https://www.Recreation.gov/camping/campsites/10337013
+- `images/camp-23/site-03.jpg` — 未注明（Recreation.gov 用户上传照片） (未注明) — https://www.Recreation.gov/camping/campsites/10337024
 
 ## 24. Pacific Shores Motorcoach Resort
 - 代表图 `images/camp-24/card.jpg` — Pacific Shores Motorcoach Resort 官网 (官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有) — https://psmcr.com/
@@ -263,6 +332,9 @@
 - `images/camp-24/03.jpg` — Pacific Shores Motorcoach Resort 官网 (官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有) — https://psmcr.com/
 - `images/camp-24/04.jpg` — Roverpass 用户上传 (Roverpass 页面展示图片，版权归上传者所有) — http://roverpass.com/c/pacific-shores-motorcoach-resort-formerly-outdoor-resorts-newport-or/
 - `images/camp-24/05.jpg` — Pacific Shores Motorcoach Resort 官网 (官网自有图片，版权归 Pacific Shores Motorcoach Resort 所有) — https://psmcr.com/
+- `images/camp-24/site-01.jpg` — 未注明（roverpass 营地页面照片） (未注明) — http://roverpass.com/c/pacific-shores-motorcoach-resort-formerly-outdoor-resorts-newport-or/
+- `images/camp-24/site-02.jpg` — 未注明（roverpass 营地页面照片） (未注明) — http://roverpass.com/c/pacific-shores-motorcoach-resort-formerly-outdoor-resorts-newport-or/
+- `images/camp-24/site-03.jpg` — 未注明（roverpass 营地页面照片） (未注明) — http://roverpass.com/c/pacific-shores-motorcoach-resort-formerly-outdoor-resorts-newport-or/
 
 ## 25. Fort Worden Historical State Park
 - 代表图 `images/camp-25/card.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park
@@ -271,6 +343,9 @@
 - `images/camp-25/03.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park
 - `images/camp-25/04.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park
 - `images/camp-25/05.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park
+- `images/camp-25/site-01.jpg` — 未注明（Google 用户照片） (未注明) — https://campsite-usa.com/campsite/fort-worden-state-park-beach-campground
+- `images/camp-25/site-02.jpg` — 未注明 (未注明) — https://picmasa.com/explore/fort-worden-camping
+- `images/camp-25/site-03.jpg` — 未注明（TravelGumbo 博主照片） (未注明) — https://www.travelgumbo.com/fort-worden-historical-state-park-port-townsend-wa/
 
 ## 26. Grayland Beach State Park
 - 代表图 `images/camp-26/card.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park
@@ -279,6 +354,9 @@
 - `images/camp-26/03.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park
 - `images/camp-26/04.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park
 - `images/camp-26/05.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park
+- `images/camp-26/site-01.jpg` — 未注明 (未注明) — https://houseofhighways.com/usa/west/washington/grayland-beach-state-park
+- `images/camp-26/site-02.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 Grayland Beach State Park）
+- `images/camp-26/site-03.jpg` — Washington State Parks (未注明) — https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park/grayland-beach-yurts
 
 ## 27. Wenatchee Confluence State Park
 - 代表图 `images/camp-27/card.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park
@@ -287,6 +365,9 @@
 - `images/camp-27/03.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park
 - `images/camp-27/04.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park
 - `images/camp-27/05.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park
+- `images/camp-27/site-01.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/wa/wenatchee-confluence-state-park/
+- `images/camp-27/site-02.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 Wenatchee Confluence State Park）
+- `images/camp-27/site-03.jpg` — 未注明（Campendium 用户照片） (未注明) — https://www.campendium.com/wenatchee-confluence-state-park
 
 ## 28. Fort Flagler Historical State Park
 - 代表图 `images/camp-28/card.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park
@@ -295,6 +376,8 @@
 - `images/camp-28/03.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park
 - `images/camp-28/04.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park
 - `images/camp-28/05.jpg` — Washington State Parks (官网图片，版权归 Washington State Parks 所有) — https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park
+- `images/camp-28/site-01.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 Fort Flagler State Park）
+- `images/camp-28/site-02.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 Fort Flagler State Park）
 
 ## 29. Hoh Rain Forest Campground
 - 代表图 `images/camp-29/card.jpg` — Hackfish (CC BY-SA 2.5) — https://commons.wikimedia.org/wiki/File:Hoh_Hall_of_Mosses_20060901.jpg
@@ -303,6 +386,9 @@
 - `images/camp-29/03.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File:Visitor_walking_happy_dog_leash_hoh_campground_camping_pets_d_archuleta_march_05_2015_(16751947833).jpg
 - `images/camp-29/04.jpg` — Goldom (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Hoh_rain_forest_trees.jpg
 - `images/camp-29/05.jpg` — Doug Dolde (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:BIG_LEAF_MAPLES_HOH.jpg
+- `images/camp-29/site-01.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/wa/hoh-rainforest/
+- `images/camp-29/site-02.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/wa/hoh-rainforest/
+- `images/camp-29/site-03.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/wa/hoh-rainforest/
 
 ## 30. Moran State Park
 - 代表图 `images/camp-30/card.jpg` — Islander61 (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:View_from_mount_constitution_in_Moran_state_park_at_orcas_island,_Canada.jpg
@@ -311,6 +397,9 @@
 - `images/camp-30/03.jpg` — My Backyard and Beyond (© 未声明许可（版权存疑）) — https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/
 - `images/camp-30/04.jpg` — Joe Mabel (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Moran_-_Mt._Constitution_toward_Clark_Island.jpg
 - `images/camp-30/05.jpg` — Joe Mabel (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Moran_-_Mt._Constitution_toward_Lummi_Island.jpg
+- `images/camp-30/site-01.jpg` — My Backyard and Beyond（博主） (未注明) — https://mybackyardandbeyond.com/midway-campground-moran-state-park-2/
+- `images/camp-30/site-02.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 Moran State Park Midway Campground）
+- `images/camp-30/site-03.jpg` — Outdoor Family（博主） (未注明) — https://www.outdoorfam.ca/2023/07/20/camping-at-moran-state-park-on-orcas-island/
 
 ## 31. South Beach State Park
 - 代表图 `images/camp-31/card.jpg` — Oregon Discovery (© 未声明许可（版权存疑，图片带水印）) — https://oregondiscovery.com/south-beach-state-park
@@ -319,6 +408,9 @@
 - `images/camp-31/03.jpg` — Finetooth (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:South_beach_state_park_pond.jpg
 - `images/camp-31/04.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Columbia_Yurt_in_South_Beach_State_Park_near_Newport,_Oregon.jpg
 - `images/camp-31/05.jpg` — Rick Obst (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Mercedes_van_camping_in_South_Beach_State_Park,_Oregon.jpg
+- `images/camp-31/site-01.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/or/south-beach-state-park/
+- `images/camp-31/site-02.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 South Beach State Park）
+- `images/camp-31/site-03.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 South Beach State Park）
 
 ## 32. Nehalem Bay State Park
 - 代表图 `images/camp-32/card.jpg` — Visitor7 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Nehalem_Bay_State_Park.jpg
@@ -327,6 +419,9 @@
 - `images/camp-32/03.jpg` — Gary Halvorson, Oregon State Archives (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Nehalem_Bay_State_Park_-_DPLA_-_234e2bfc65415917d04a37191699dad0.jpg
 - `images/camp-32/04.jpg` — Gary Halvorson, Oregon State Archives (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Nehalem_Bay_State_Park_-_DPLA_-_537ad7d68d1d482b1d33a3950c153b9e.jpg
 - `images/camp-32/05.jpg` — Llywrch (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Yurt_at_Nehalem_Bay_Park.jpg
+- `images/camp-32/site-01.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/or/nehalem-bay-state-park/
+- `images/camp-32/site-02.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/or/nehalem-bay-state-park/
+- `images/camp-32/site-03.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/or/nehalem-bay-state-park/
 
 ## 33. Jessie M. Honeyman Memorial State Park
 - 代表图 `images/camp-33/card.jpg` —  () — 
@@ -335,6 +430,9 @@
 - `images/camp-33/03.jpg` — Only in Oregon (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Honeyman_State_Park_Yurt.jpg
 - `images/camp-33/04.jpg` — Adbar (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Honeyman_Memorial_State_Park_and_Cleawox_Lake.JPG
 - `images/camp-33/05.jpg` — Only in Oregon (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Campground_Road_in_Honeyman_State_Park.jpg
+- `images/camp-33/site-01.jpg` — 未注明（CampsitePhotos 营地页面照片） (未注明) — https://www.campsitephotos.com/campground/or/jessie-m-honeyman-memorial-state-park/
+- `images/camp-33/site-02.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 Jessie M. Honeyman Memorial State Park）
+- `images/camp-33/site-03.jpg` — 未注明（The Dyrt 用户照片） (未注明) — https://www.thedyrt.com（照片标注为 Jessie M. Honeyman Memorial State Park）
 
 ## 34. Silver Falls State Park
 - 代表图 `images/camp-34/card.jpg` —  () — 
@@ -343,6 +441,8 @@
 - `images/camp-34/03.jpg` — RickObst (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Beautiful_Silver_Creek_flows_through_Silver_Falls_State_Park_toward_the_Trail_of_Ten_Waterfalls.jpg
 - `images/camp-34/04.jpg` — RickObst (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Hiking_trail_in_the_Silver_Falls_State_Park_Campground.jpg
 - `images/camp-34/05.jpg` — RickObst (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Silver_Creek_in_the_Silver_Falls_State_Park_Campground.jpg
+- `images/camp-34/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/silver-falls-state-park/
+- `images/camp-34/site-02.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/silver-falls-state-park/
 
 ## 35. Wallowa Lake State Park
 - 代表图 `images/camp-35/card.jpg` —  () — 
@@ -351,6 +451,8 @@
 - `images/camp-35/03.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Boats_Parked_at_Wallowa_Lake_Marina_(37576988630).jpg
 - `images/camp-35/04.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Wallowa_Lake_State_Park_Day_Use_Area_(37575399680).jpg
 - `images/camp-35/05.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Deer_Walking_By_Wooden_Yurts_in_Wallowa_Lake_State_Park,_Oregon_(37785983276).jpg
+- `images/camp-35/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/wallowa-lake-state-park/
+- `images/camp-35/site-02.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/blog/campground-reviews-adventures/camping-along-the-oregon-trail/
 
 ## 36. Detroit Lake State Recreation Area
 - 代表图 `images/camp-36/card.jpg` —  () — 
@@ -359,6 +461,8 @@
 - `images/camp-36/03.jpg` — Teacherjourney (CC0) — https://commons.wikimedia.org/wiki/File:Detroit_Lake.jpg
 - `images/camp-36/04.jpg` — Bonnie (CC0) — https://commons.wikimedia.org/wiki/File:Detroit_Lake,_Oregon_(32035674490).JPG
 - `images/camp-36/05.jpg` — John2165 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Detroit_Lake_banner.jpg
+- `images/camp-36/site-01.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html
+- `images/camp-36/site-02.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html
 
 ## 37. Sol Duc Hot Springs Resort Campground
 - 代表图 `images/camp-37/card.jpg` —  () — 
@@ -367,6 +471,9 @@
 - `images/camp-37/03.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File:Forest_sol_duc_campground_scenic_r_mckenna_march_2015_edited-1_(17313664141).jpg
 - `images/camp-37/04.jpg` — Olympic National Park (Public domain) — https://commons.wikimedia.org/wiki/File:Sol_Duc_resort_cabin_swing_people_visitors_c_bubar_march_05_2015_(17184187648).jpg
 - `images/camp-37/05.jpg` — Sualkdd (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Sol_Duc_Springs_-_panoramio.jpg
+- `images/camp-37/site-01.jpg` — recreation.gov (Public domain（联邦营地设施照片）) — https://www.recreation.gov/camping/campsites/98604
+- `images/camp-37/site-02.jpg` — recreation.gov (Public domain（联邦营地设施照片）) — https://www.recreation.gov/camping/campsites/98591
+- `images/camp-37/site-03.jpg` — recreation.gov (Public domain（联邦营地设施照片）) — https://www.recreation.gov/camping/campsites/98639
 
 ## 38. Harris Beach State Park Campground
 - 代表图 `images/camp-38/card.jpg` —  () — 
@@ -375,6 +482,9 @@
 - `images/camp-38/03.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Sea_Stacks_at_Harris_Beach_State_Park_near_Brookings,_Oregon.jpg
 - `images/camp-38/04.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Camping_in_Rogue_Yurt_at_Harris_Beach_State_Park.jpg
 - `images/camp-38/05.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Morning_on_the_beach_at_Harris_Beach_State_Park.jpg
+- `images/camp-38/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/harris-beach-state-park/
+- `images/camp-38/site-02.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/or_coast/harris_beach_sp.html
+- `images/camp-38/site-03.jpg` — Oregon State Parks (© Oregon State Parks) — https://stateparks.oregon.gov/index.cfm?do=main.loadImage&Image=Harris+Beach+State+Park%5CA27_long111824.JPG
 
 ## 39. Colonial Creek South Campground
 - 代表图 `images/camp-39/card.jpg` —  () — 
@@ -383,6 +493,8 @@
 - `images/camp-39/03.jpg` — Jennifer C. (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Diablo_Lake,_Washington_(27433492554).jpg
 - `images/camp-39/04.jpg` — Robert Ashworth (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Diablo_Lake_(36662414120).jpg
 - `images/camp-39/05.jpg` — Ron Clausen (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Colonial_Peak_and_Diablo_Lake.jpg
+- `images/camp-39/site-01.jpg` — recreation.gov (Public domain（联邦营地设施照片）) — https://www.recreation.gov/camping/campsites/101372
+- `images/camp-39/site-02.jpg` — recreation.gov (Public domain（联邦营地设施照片）) — https://www.recreation.gov/camping/campsites/101494
 
 ## 40. Lincoln Rock State Park
 - 代表图 `images/camp-40/card.jpg` —  () — 
@@ -391,6 +503,8 @@
 - `images/camp-40/03.jpg` — Thayne Tuason (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Lincoln_Rock_State_Park_in_Winter.jpg
 - `images/camp-40/04.jpg` — Codedelectron (Public domain) — https://commons.wikimedia.org/wiki/File:Lake_entiat_pano.jpg
 - `images/camp-40/05.jpg` — MattHucke (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Turtle_Rock_Island_WA.jpg
+- `images/camp-40/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/near/ardenvoir
+- `images/camp-40/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/places/70344/photos/1031710803
 
 ## 41. Fort Casey Historical State Park
 - 代表图 `images/camp-41/card.jpg` —  () — 
@@ -399,6 +513,8 @@
 - `images/camp-41/03.jpg` — Ricardo Martins (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Admiralty_Head_Light_-_Whidbey_Island_WA.jpg
 - `images/camp-41/04.jpg` — Robert Ashworth (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Sunset_over_the_Olympic_Mountains_as_seen_from_bluffs_at_Fort_Casey_State_Park_on_Whidbey_Island._(33202774284).jpg
 - `images/camp-41/05.jpg` — Tagooty (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Gun_Close_Battery_Worth_Ft_Casey_Whidbey_Mar23_A7R_03926.jpg
+- `images/camp-41/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/near/la-conner/with/glamping
+- `images/camp-41/site-02.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/washington-fort-casey-state-park/review/14719
 
 ## 42. Fort Ebey State Park Campground
 - 代表图 `images/camp-42/card.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park
@@ -407,6 +523,8 @@
 - `images/camp-42/03.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park
 - `images/camp-42/04.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park
 - `images/camp-42/05.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park
+- `images/camp-42/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/washington-fort-ebey-state-park
+- `images/camp-42/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.campendium.com/us/coupeville-wa/camping-rv/fort-ebey-state-park-coupeville-wa--8
 
 ## 43. Larrabee State Park Campground
 - 代表图 `images/camp-43/card.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/larrabee-state-park
@@ -415,6 +533,9 @@
 - `images/camp-43/03.jpg` — Doug Wilson (Public domain) — https://commons.wikimedia.org/wiki/File:PUGET_SOUND_AND_THE_SAN_JUAN_ISLANDS_AT_SUNSET,_SEEN_FROM_OVERLOOK_AT_LARRABEE_STATE_PARK_-_NARA_-_552335.jpg
 - `images/camp-43/04.jpg` — Joe Mabel (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Amphitheater,_Larrabee_State_Park,_Washington_(state).jpg
 - `images/camp-43/05.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/larrabee-state-park
+- `images/camp-43/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/wa/larrabee-state-park/
+- `images/camp-43/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground
+- `images/camp-43/site-03.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground
 
 ## 44. Steamboat Rock State Park
 - 代表图 `images/camp-44/card.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park
@@ -423,6 +544,8 @@
 - `images/camp-44/03.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park
 - `images/camp-44/04.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park
 - `images/camp-44/05.jpg` — Washington State Parks (官网实拍) — https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park
+- `images/camp-44/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/steamboat-rock-state-park/
+- `images/camp-44/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/wa/steamboat-rock-state-park/
 
 ## 45. Bullards Beach State Park
 - 代表图 `images/camp-45/card.jpg` — Visitor7 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Bullards_Beach_State_Park.jpg
@@ -431,6 +554,9 @@
 - `images/camp-45/03.jpg` — Visitor7 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Bullards_Beach_State_Park-3.jpg
 - `images/camp-45/04.jpg` — Visitor7 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Bullards_Beach_State_Park-2.jpg
 - `images/camp-45/05.jpg` — Visitor7 (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Coquille_River_Lighthouse-10.jpg
+- `images/camp-45/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/bullards-beach-state-park/
+- `images/camp-45/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/bullards-beach-state-park/
+- `images/camp-45/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/bullards-beach-state-park/
 
 ## 46. Champoeg State Heritage Area
 - 代表图 `images/camp-46/card.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Champoeg_State_Heritage_Area_visitors_center_and_heirloom_kitchen_garden.jpg
@@ -439,6 +565,9 @@
 - `images/camp-46/03.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Large_cedars_in_Champoeg_State_Heritage_Area.jpg
 - `images/camp-46/04.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Narrow_trail_in_Champoeg_State_Heritage_Area.jpg
 - `images/camp-46/05.jpg` — Rick Obst (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:1901_monument_at_Champoeg_State_Heritage_Area.jpg
+- `images/camp-46/site-01.jpg` — The Dyrt（用户实拍） (用户上传照片（©，已标注来源）) — https://thedyrt.com/camping/oregon/champoeg-state-park
+- `images/camp-46/site-02.jpg` — The Dyrt（用户实拍） (用户上传照片（©，已标注来源）) — https://thedyrt.com/camping/oregon/champoeg-state-park
+- `images/camp-46/site-03.jpg` — Teardrop Trails (博客图片（©，已标注来源）) — https://teardrop-trails.com/champoeg.html
 
 ## 47. Sunset Bay State Park Campground
 - 代表图 `images/camp-47/card.jpg` — RickObst (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Scene_in_Sunset_Bay_State_Park,_Oregon.jpg
@@ -447,6 +576,9 @@
 - `images/camp-47/03.jpg` — RickObst (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_05.jpg
 - `images/camp-47/04.jpg` — RickObst (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_08.jpg
 - `images/camp-47/05.jpg` — RickObst (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Coos_County,_Oregon_11.jpg
+- `images/camp-47/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/sunset-bay-state-park/
+- `images/camp-47/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/sunset-bay-state-park/
+- `images/camp-47/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/sunset-bay-state-park/
 
 ## 48. The Cove Palisades State Park
 - 代表图 `images/camp-48/card.jpg` — Stuart Seeger (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Cove_Palisades.jpg
@@ -455,6 +587,9 @@
 - `images/camp-48/03.jpg` — Gary Halvorson (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook,_Cove_Palisades_State_Park,_Crooked_River_Day_Use_Area_-_DPLA_-_13cb50f694d0dc05627b5a3c397a9d8f.jpg
 - `images/camp-48/04.jpg` — icetsarina (CC0) — https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook,_Oregon_(35860948095).jpg
 - `images/camp-48/05.jpg` — Oregon Department of Transportation / Robin Marshburn (CC BY 2.0) — https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook_by_Robin_Marshburn_(8272124727).jpg
+- `images/camp-48/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/cove-palisades-state-park/
+- `images/camp-48/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/cove-palisades-state-park/
+- `images/camp-48/site-03.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/cove-palisades-state-park/
 
 ## 49. LaPine State Park
 - 代表图 `images/camp-49/card.jpg` — Inklein (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Big_tree_in_La_Pine_State_Park.jpg
@@ -463,6 +598,9 @@
 - `images/camp-49/03.jpg` — Gary Halvorson (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Deschutes_River_at_La_Pine_State_Park_-_DPLA_-_2421411932180b4c25cb2f786cf69bca.jpg
 - `images/camp-49/04.jpg` — Gary Halvorson (CC BY 4.0) — https://commons.wikimedia.org/wiki/File:Deschutes_River_at_La_Pine_State_Park_-_DPLA_-_3990787e21b22633c62bcd5a6553c5fb.jpg
 - `images/camp-49/05.jpg` — Bonnie Moreland (公有领域) — https://commons.wikimedia.org/wiki/File:La_Pine_State_Park,_Oregon_-_Flickr_-_Bonnie_Moreland_(free_images).jpg
+- `images/camp-49/site-01.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/lapine-state-park/
+- `images/camp-49/site-02.jpg` — CampsitePhotos.com (All rights reserved) — https://www.campsitephotos.com/campground/or/lapine-state-park/
+- `images/camp-49/site-03.jpg` — Bark Park Finder (博客图片（©，已标注来源）) — https://www.barkparkfinder.com/dog-friendly-places/la-pine-oregon-lapine-state-park-campground/
 
 ## 50. Rathtrevor Beach Provincial Park
 - 代表图 `images/camp-50/card.jpg` —  () — 
@@ -471,6 +609,8 @@
 - `images/camp-50/03.jpg` — Nina Out and About (博客图片（©，已标注来源）) — https://ninaoutandabout.ca/camping-vancouver-island/
 - `images/camp-50/04.jpg` — Kevstan (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Beach_at_Rathtrevor_Provincial_Park.JPG
 - `images/camp-50/05.jpg` — Iain Robert Reid（BC Parks 官网） (BC Parks 官网图片（摄影师署名）) — https://bcparks.ca/rathtrevor-beach-park/
+- `images/camp-50/site-01.jpg` — A Walk and a Lark (博客图片（©，已标注来源）) — https://www.awalkandalark.com/camping-at-rathtrevor-beach-provincial-park/
+- `images/camp-50/site-02.jpg` — A Walk and a Lark (博客图片（©，已标注来源）) — https://www.awalkandalark.com/camping-at-rathtrevor-beach-provincial-park/
 
 ## 51. Lightning Lake Campground (Manning Park, BC)
 - 代表图 `images/camp-51/card.jpg` —  () — 
@@ -479,6 +619,8 @@
 - `images/camp-51/03.jpg` — RVezy 房源页用户 (RVezy 页面图片（©，已标注来源）) — https://www.rvezy.com/rv-rentals/campground/2065c7c0-9ef8-461b-b61b-094c7319d800
 - `images/camp-51/04.jpg` — einstraus (CC BY-SA 2.0) — https://commons.wikimedia.org/wiki/File:Lightning_Lake_in_Manning_Park_(4829069973).jpg
 - `images/camp-51/05.jpg` — Migjohanson (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Lightning_lake_in_Manning_park_BC,_Canada.jpg
+- `images/camp-51/site-01.jpg` — RVezy（用户实拍） (用户上传照片（©，已标注来源）) — https://www.rvezy.com/rv-rentals/campground/2065c7c0-9ef8-461b-b61b-094c7319d800
+- `images/camp-51/site-02.jpg` — pkill (Flickr) (All rights reserved（已标注来源）) — https://www.flickr.com/photos/pkill/15216903976/
 
 ## 52. Cultus Lake Provincial Park
 - 代表图 `images/camp-52/card.jpg` —  () — 
@@ -487,6 +629,8 @@
 - `images/camp-52/03.jpg` — The High Fin Sperm Whale (CC BY-SA 3.0) — https://commons.wikimedia.org/wiki/File:Cultus_lake.JPG
 - `images/camp-52/04.jpg` — Preeteesh (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Cultus_Lake_Kayaking,_BC.png
 - `images/camp-52/05.jpg` — Kayoty (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Dock_on_Cultus_Lake.jpg
+- `images/camp-52/site-01.jpg` — Ruth and Dave (Flickr) (All rights reserved（已标注来源）) — https://www.flickr.com/photos/ruthanddave/21305178489/
+- `images/camp-52/site-02.jpg` — Ruth and Dave (Flickr) (All rights reserved（已标注来源）) — https://www.flickr.com/photos/ruthanddave/21642828872/
 
 ## 53. Golden Ears Provincial Park - Alouette Campground
 - 代表图 `images/camp-53/card.jpg` —  () — 
@@ -495,49 +639,8 @@
 - `images/camp-53/03.jpg` — Forceofnature (CC BY 3.0) — https://commons.wikimedia.org/wiki/File:Alouette_Lake.jpg
 - `images/camp-53/04.jpg` — Allie Sea (CC BY-SA 4.0) — https://commons.wikimedia.org/wiki/File:Canoeing_on_Alouette_Lake.jpg
 - `images/camp-53/05.jpg` — The Cosmonaut (CC BY-SA 2.5 ca) — https://commons.wikimedia.org/wiki/File:Golden_Ears_seen_from_the_Viewpoint_Beach.jpg
-
-## 34. Silver Falls State Park
-- `images/camp-34/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/silver-falls-state-park/
-- `images/camp-34/site-02.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/silver-falls-state-park/
-
-## 35. Wallowa Lake State Park
-- `images/camp-35/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/wallowa-lake-state-park/
-- `images/camp-35/site-02.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/blog/campground-reviews-adventures/camping-along-the-oregon-trail/
-
-## 36. Detroit Lake State Recreation Area
-- `images/camp-36/site-01.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html
-- `images/camp-36/site-02.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/willamette_nf/detroit_lake_sra.html
-
-## 37. Sol Duc Hot Springs Resort Campground
-- `images/camp-37/site-01.jpg` — recreation.gov, Site 057 (Public domain) — https://www.recreation.gov/camping/campsites/98604
-- `images/camp-37/site-02.jpg` — recreation.gov, Site 016 (Public domain) — https://www.recreation.gov/camping/campsites/98591
-- `images/camp-37/site-03.jpg` — recreation.gov, Site 071 (Public domain) — https://www.recreation.gov/camping/campsites/98639
-
-## 38. Harris Beach State Park Campground
-- `images/camp-38/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/or/harris-beach-state-park/
-- `images/camp-38/site-02.jpg` — oregonsbestcamping.com (© oregonsbestcamping.com) — https://www.oregonsbestcamping.com/or_coast/harris_beach_sp.html
-- `images/camp-38/site-03.jpg` — Oregon State Parks (© Oregon State Parks) — https://stateparks.oregon.gov/index.cfm?do=main.loadImage&Image=Harris+Beach+State+Park%5CA27_long111824.JPG
-
-## 39. Colonial Creek South Campground
-- `images/camp-39/site-01.jpg` — recreation.gov, Site 100 (Public domain) — https://www.recreation.gov/camping/campsites/101372
-- `images/camp-39/site-02.jpg` — recreation.gov, Site 111 (Public domain) — https://www.recreation.gov/camping/campsites/101494
-
-## 40. Lincoln Rock State Park
-- `images/camp-40/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/near/ardenvoir
-- `images/camp-40/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/places/70344/photos/1031710803
-
-## 41. Fort Casey Historical State Park
-- `images/camp-41/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/near/la-conner/with/glamping
-- `images/camp-41/site-02.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/washington-fort-casey-state-park/review/14719
-
-## 42. Fort Ebey State Park Campground
-- `images/camp-42/site-01.jpg` — TheDyrt 营友实拍 (© TheDyrt 用户) — https://thedyrt.com/camping/washington/washington-fort-ebey-state-park
-- `images/camp-42/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.campendium.com/us/coupeville-wa/camping-rv/fort-ebey-state-park-coupeville-wa--8
-
-## 43. Larrabee State Park Campground
-- `images/camp-43/site-01.jpg` — CampsitePhotos.com (© CampsitePhotos.com) — https://www.campsitephotos.com/campground/wa/larrabee-state-park/
-- `images/camp-43/site-02.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground
-- `images/camp-43/site-03.jpg` — Roadtrippers 用户 (© Roadtrippers 用户) — https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground
+- `images/camp-53/site-01.jpg` — A Walk and a Lark (博客图片（©，已标注来源）) — https://www.awalkandalark.com/camping-golden-ears-alouette/
+- `images/camp-53/site-02.jpg` — A Walk and a Lark (博客图片（©，已标注来源）) — https://www.awalkandalark.com/camping-golden-ears-alouette/
 
 ## 位置地图（静态地图图片）
 

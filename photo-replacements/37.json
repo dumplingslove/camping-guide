@@ -1,1 +1,63 @@
-{"card":"images/camp-37/card.jpg","gallery":[{"author":"Niagara66","caption":"索尔达克瀑布（Sol Duc Falls）的另一视角","file":"images/camp-37/01.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Olympic_National_Park,_Sol_Duc_Falls_02.jpg"},{"author":"Olympic National Park","caption":"原始森林中的露营营地（NPS 实拍）","file":"images/camp-37/02.jpg","license":"Public domain","source":"https://commons.wikimedia.org/wiki/File:Sol_duc_camping_campground_people_NPS_Photo_(22958314362).jpg"},{"author":"Olympic National Park","caption":"森林中的 Sol Duc 营地","file":"images/camp-37/03.jpg","license":"Public domain","source":"https://commons.wikimedia.org/wiki/File:Forest_sol_duc_campground_scenic_r_mckenna_march_2015_edited-1_(17313664141).jpg"},{"author":"Olympic National Park","caption":"温泉度假村的木屋与秋千","file":"images/camp-37/04.jpg","license":"Public domain","source":"https://commons.wikimedia.org/wiki/File:Sol_Duc_resort_cabin_swing_people_visitors_c_bubar_march_05_2015_(17184187648).jpg"},{"author":"Sualkdd","caption":"索尔达克温泉（Sol Duc Springs）","file":"images/camp-37/05.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Sol_Duc_Springs_-_panoramio.jpg"}],"id":37,"name":"Sol Duc Hot Springs Resort Campground"}
+{
+  "card": "images/camp-37/card.jpg",
+  "gallery": [
+    {
+      "author": "Niagara66",
+      "caption": "索尔达克瀑布（Sol Duc Falls）的另一视角",
+      "file": "images/camp-37/01.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Olympic_National_Park,_Sol_Duc_Falls_02.jpg"
+    },
+    {
+      "author": "Olympic National Park",
+      "caption": "原始森林中的露营营地（NPS 实拍）",
+      "file": "images/camp-37/02.jpg",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sol_duc_camping_campground_people_NPS_Photo_(22958314362).jpg"
+    },
+    {
+      "author": "Olympic National Park",
+      "caption": "森林中的 Sol Duc 营地",
+      "file": "images/camp-37/03.jpg",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Forest_sol_duc_campground_scenic_r_mckenna_march_2015_edited-1_(17313664141).jpg"
+    },
+    {
+      "author": "Olympic National Park",
+      "caption": "温泉度假村的木屋与秋千",
+      "file": "images/camp-37/04.jpg",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sol_Duc_resort_cabin_swing_people_visitors_c_bubar_march_05_2015_(17184187648).jpg"
+    },
+    {
+      "author": "Sualkdd",
+      "caption": "索尔达克温泉（Sol Duc Springs）",
+      "file": "images/camp-37/05.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sol_Duc_Springs_-_panoramio.jpg"
+    },
+    {
+      "file": "images/camp-37/site-01.jpg",
+      "caption": "57号营位：野餐桌+火圈+营位桩，右侧可停房车",
+      "source": "https://www.recreation.gov/camping/campsites/98604",
+      "author": "recreation.gov",
+      "license": "Public domain（联邦营地设施照片）"
+    },
+    {
+      "file": "images/camp-37/site-02.jpg",
+      "caption": "16号营位：野餐桌+带烤架的火圈，雨林巨木环绕",
+      "source": "https://www.recreation.gov/camping/campsites/98591",
+      "author": "recreation.gov",
+      "license": "Public domain（联邦营地设施照片）"
+    },
+    {
+      "file": "images/camp-37/site-03.jpg",
+      "caption": "71号营位：帐篷+折叠椅+野餐桌，原始森林环绕",
+      "source": "https://www.recreation.gov/camping/campsites/98639",
+      "author": "recreation.gov",
+      "license": "Public domain（联邦营地设施照片）"
+    }
+  ],
+  "id": 37,
+  "name": "Sol Duc Hot Springs Resort Campground"
+}

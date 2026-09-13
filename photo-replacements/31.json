@@ -1,1 +1,67 @@
-{"card":"images/camp-31/card.jpg","card_author":"Oregon Discovery","card_caption":"南海滩宽阔的沙滩、游人与海浪","card_license":"© 未声明许可（版权存疑，图片带水印）","card_source":"https://oregondiscovery.com/south-beach-state-park","gallery":[{"author":"Rick Obst","caption":"穿过海岸林地的库珀岭自然步道","file":"images/camp-31/01.jpg","license":"CC BY 4.0","source":"https://commons.wikimedia.org/wiki/File:Cooper_Ridge_trail_in_South_Beach_State_Park,_Oregon.jpg"},{"author":"Rick Obst","caption":"营地入口处的登记办公室","file":"images/camp-31/02.jpg","license":"CC BY 4.0","source":"https://commons.wikimedia.org/wiki/File:Check_in_office_at_South_Beach_State_Park_near_Newport,_Oregon.jpg"},{"author":"Finetooth","caption":"园内宁静的池塘","file":"images/camp-31/03.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:South_beach_state_park_pond.jpg"},{"author":"Rick Obst","caption":"园内“哥伦比亚”蒙古包住宿","file":"images/camp-31/04.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Columbia_Yurt_in_South_Beach_State_Park_near_Newport,_Oregon.jpg"},{"author":"Rick Obst","caption":"停在营地林间的露营厢式车","file":"images/camp-31/05.jpg","license":"CC BY 4.0","source":"https://commons.wikimedia.org/wiki/File:Mercedes_van_camping_in_South_Beach_State_Park,_Oregon.jpg"}],"id":31,"name":"South Beach State Park"}
+{
+  "card": "images/camp-31/card.jpg",
+  "card_author": "Oregon Discovery",
+  "card_caption": "南海滩宽阔的沙滩、游人与海浪",
+  "card_license": "© 未声明许可（版权存疑，图片带水印）",
+  "card_source": "https://oregondiscovery.com/south-beach-state-park",
+  "gallery": [
+    {
+      "author": "Rick Obst",
+      "caption": "穿过海岸林地的库珀岭自然步道",
+      "file": "images/camp-31/01.jpg",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cooper_Ridge_trail_in_South_Beach_State_Park,_Oregon.jpg"
+    },
+    {
+      "author": "Rick Obst",
+      "caption": "营地入口处的登记办公室",
+      "file": "images/camp-31/02.jpg",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Check_in_office_at_South_Beach_State_Park_near_Newport,_Oregon.jpg"
+    },
+    {
+      "author": "Finetooth",
+      "caption": "园内宁静的池塘",
+      "file": "images/camp-31/03.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:South_beach_state_park_pond.jpg"
+    },
+    {
+      "author": "Rick Obst",
+      "caption": "园内“哥伦比亚”蒙古包住宿",
+      "file": "images/camp-31/04.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Columbia_Yurt_in_South_Beach_State_Park_near_Newport,_Oregon.jpg"
+    },
+    {
+      "author": "Rick Obst",
+      "caption": "停在营地林间的露营厢式车",
+      "file": "images/camp-31/05.jpg",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mercedes_van_camping_in_South_Beach_State_Park,_Oregon.jpg"
+    },
+    {
+      "file": "images/camp-31/site-01.jpg",
+      "caption": "I013 营位",
+      "source": "https://www.campsitephotos.com/campground/or/south-beach-state-park/",
+      "author": "未注明（CampsitePhotos 营地页面照片）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-31/site-02.jpg",
+      "caption": "松林中的帐篷与房车营位",
+      "source": "https://www.thedyrt.com（照片标注为 South Beach State Park）",
+      "author": "未注明（The Dyrt 用户照片）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-31/site-03.jpg",
+      "caption": "林地营位：帐篷、野餐桌与营位标牌",
+      "source": "https://www.thedyrt.com（照片标注为 South Beach State Park）",
+      "author": "未注明（The Dyrt 用户照片）",
+      "license": "未注明"
+    }
+  ],
+  "id": 31,
+  "name": "South Beach State Park"
+}

@@ -1,45 +1,66 @@
 {
- "card": "images/camp-43/card.jpg",
- "gallery": [
-  {
-   "author": "Washington State Parks",
-   "caption": "林间原始营位，野餐桌掩映在绿树之中",
-   "file": "images/camp-43/01.jpg",
-   "license": "官网实拍",
-   "source": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park"
-  },
-  {
-   "author": "Cindy Shebley",
-   "caption": "海浪拍打着雕刻般的礁石与漂流木",
-   "file": "images/camp-43/02.jpg",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Waves_on_the_rocks_at_Larrabee_State_Park_Washington_(51604899703).jpg"
-  },
-  {
-   "author": "Doug Wilson",
-   "caption": "从观景点眺望普吉特湾与圣胡安群岛的日落（1970年代档案照片）",
-   "file": "images/camp-43/03.jpg",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:PUGET_SOUND_AND_THE_SAN_JUAN_ISLANDS_AT_SUNSET,_SEEN_FROM_OVERLOOK_AT_LARRABEE_STATE_PARK_-_NARA_-_552335.jpg"
-  },
-  {
-   "author": "Joe Mabel",
-   "caption": "林间草坪上的历史露天剧场（乐队壳）",
-   "file": "images/camp-43/04.jpg",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Amphitheater,_Larrabee_State_Park,_Washington_(state).jpg"
-  },
-  {
-   "author": "Washington State Parks",
-   "caption": "岩石海岸线与萨米什湾风景",
-   "file": "images/camp-43/05.jpg",
-   "license": "官网实拍",
-   "source": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park"
-  }
- ],
- "id": 43,
- "name": "Larrabee State Park Campground",
- "card_source": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
- "card_author": "Washington State Parks",
- "card_license": "官网实拍"
+  "card": "images/camp-43/card.jpg",
+  "gallery": [
+    {
+      "author": "Washington State Parks",
+      "caption": "林间原始营位，野餐桌掩映在绿树之中",
+      "file": "images/camp-43/01.jpg",
+      "license": "官网实拍",
+      "source": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park"
+    },
+    {
+      "author": "Cindy Shebley",
+      "caption": "海浪拍打着雕刻般的礁石与漂流木",
+      "file": "images/camp-43/02.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Waves_on_the_rocks_at_Larrabee_State_Park_Washington_(51604899703).jpg"
+    },
+    {
+      "author": "Doug Wilson",
+      "caption": "从观景点眺望普吉特湾与圣胡安群岛的日落（1970年代档案照片）",
+      "file": "images/camp-43/03.jpg",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:PUGET_SOUND_AND_THE_SAN_JUAN_ISLANDS_AT_SUNSET,_SEEN_FROM_OVERLOOK_AT_LARRABEE_STATE_PARK_-_NARA_-_552335.jpg"
+    },
+    {
+      "author": "Joe Mabel",
+      "caption": "林间草坪上的历史露天剧场（乐队壳）",
+      "file": "images/camp-43/04.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Amphitheater,_Larrabee_State_Park,_Washington_(state).jpg"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "岩石海岸线与萨米什湾风景",
+      "file": "images/camp-43/05.jpg",
+      "license": "官网实拍",
+      "source": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park"
+    },
+    {
+      "file": "images/camp-43/site-01.jpg",
+      "caption": "林间营位：水电桩+野餐桌+火圈，巨木环绕",
+      "source": "https://www.campsitephotos.com/campground/wa/larrabee-state-park/",
+      "author": "CampsitePhotos.com",
+      "license": "© CampsitePhotos.com"
+    },
+    {
+      "file": "images/camp-43/site-02.jpg",
+      "caption": "林间营位：野餐桌+巨石+火圈，碎石地面",
+      "source": "https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground",
+      "author": "Roadtrippers 用户",
+      "license": "© Roadtrippers 用户"
+    },
+    {
+      "file": "images/camp-43/site-03.jpg",
+      "caption": "7号营位：营位桩+草地贯通车位，两侧植被茂密",
+      "source": "https://maps.roadtrippers.com/us/wa/camping-rv/larrabee-state-park-campground",
+      "author": "Roadtrippers 用户",
+      "license": "© Roadtrippers 用户"
+    }
+  ],
+  "id": 43,
+  "name": "Larrabee State Park Campground",
+  "card_source": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
+  "card_author": "Washington State Parks",
+  "card_license": "官网实拍"
 }

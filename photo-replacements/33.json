@@ -1,1 +1,63 @@
-{"card":"images/camp-33/card.jpg","gallery":[{"author":"Only in Oregon","caption":"Cleawox 湖上的钓鱼码头，远眺湖畔沙丘","file":"images/camp-33/01.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Fishing_Dock_on_Cleawox_Lake_in_Honeyman_State_Park.jpg"},{"author":"Only in Oregon","caption":"林间露营营位","file":"images/camp-33/02.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Campsite_at_Honeyman_State_Park.jpg"},{"author":"Only in Oregon","caption":"林中蒙古包（yurt）","file":"images/camp-33/03.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Honeyman_State_Park_Yurt.jpg"},{"author":"Adbar","caption":"Cleawox 湖与 Honeyman 公园全景","file":"images/camp-33/04.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Honeyman_Memorial_State_Park_and_Cleawox_Lake.JPG"},{"author":"Only in Oregon","caption":"营地内的林间道路","file":"images/camp-33/05.jpg","license":"CC BY 2.0","source":"https://commons.wikimedia.org/wiki/File:Campground_Road_in_Honeyman_State_Park.jpg"}],"id":33,"name":"Jessie M. Honeyman Memorial State Park"}
+{
+  "card": "images/camp-33/card.jpg",
+  "gallery": [
+    {
+      "author": "Only in Oregon",
+      "caption": "Cleawox 湖上的钓鱼码头，远眺湖畔沙丘",
+      "file": "images/camp-33/01.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fishing_Dock_on_Cleawox_Lake_in_Honeyman_State_Park.jpg"
+    },
+    {
+      "author": "Only in Oregon",
+      "caption": "林间露营营位",
+      "file": "images/camp-33/02.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Campsite_at_Honeyman_State_Park.jpg"
+    },
+    {
+      "author": "Only in Oregon",
+      "caption": "林中蒙古包（yurt）",
+      "file": "images/camp-33/03.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Honeyman_State_Park_Yurt.jpg"
+    },
+    {
+      "author": "Adbar",
+      "caption": "Cleawox 湖与 Honeyman 公园全景",
+      "file": "images/camp-33/04.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Honeyman_Memorial_State_Park_and_Cleawox_Lake.JPG"
+    },
+    {
+      "author": "Only in Oregon",
+      "caption": "营地内的林间道路",
+      "file": "images/camp-33/05.jpg",
+      "license": "CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Campground_Road_in_Honeyman_State_Park.jpg"
+    },
+    {
+      "file": "images/camp-33/site-01.jpg",
+      "caption": "194 营位：林地中的铺装贯通车道与水电桩",
+      "source": "https://www.campsitephotos.com/campground/or/jessie-m-honeyman-memorial-state-park/",
+      "author": "未注明（CampsitePhotos 营地页面照片）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-33/site-02.jpg",
+      "caption": "林地营位：火圈、野餐桌与停车位",
+      "source": "https://www.thedyrt.com（照片标注为 Jessie M. Honeyman Memorial State Park）",
+      "author": "未注明（The Dyrt 用户照片）",
+      "license": "未注明"
+    },
+    {
+      "file": "images/camp-33/site-03.jpg",
+      "caption": "405 号营位：野餐桌与火圈",
+      "source": "https://www.thedyrt.com（照片标注为 Jessie M. Honeyman Memorial State Park）",
+      "author": "未注明（The Dyrt 用户照片）",
+      "license": "未注明"
+    }
+  ],
+  "id": 33,
+  "name": "Jessie M. Honeyman Memorial State Park"
+}

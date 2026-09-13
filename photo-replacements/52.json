@@ -1,1 +1,56 @@
-{"card":"images/camp-52/card.jpg","gallery":[{"author":"Juraj Tatár","caption":"湖畔沙滩、泳场浮标与码头，雪山为背景","file":"images/camp-52/01.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Cultus_Lk_-_panoramio.jpg"},{"author":"The High Fin Sperm Whale","caption":"夜晚的林间营地，帐篷灯火","file":"images/camp-52/02.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Cultus_Lake_campsite.JPG"},{"author":"The High Fin Sperm Whale","caption":"湖水与群山","file":"images/camp-52/03.jpg","license":"CC BY-SA 3.0","source":"https://commons.wikimedia.org/wiki/File:Cultus_lake.JPG"},{"author":"Preeteesh","caption":"湖上皮划艇，水面波光粼粼","file":"images/camp-52/04.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Cultus_Lake_Kayaking,_BC.png"},{"author":"Kayoty","caption":"湖畔休闲：沙滩与人群聚集的码头","file":"images/camp-52/05.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Dock_on_Cultus_Lake.jpg"}],"id":52,"name":"Cultus Lake Provincial Park"}
+{
+  "card": "images/camp-52/card.jpg",
+  "gallery": [
+    {
+      "author": "Juraj Tatár",
+      "caption": "湖畔沙滩、泳场浮标与码头，雪山为背景",
+      "file": "images/camp-52/01.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cultus_Lk_-_panoramio.jpg"
+    },
+    {
+      "author": "The High Fin Sperm Whale",
+      "caption": "夜晚的林间营地，帐篷灯火",
+      "file": "images/camp-52/02.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cultus_Lake_campsite.JPG"
+    },
+    {
+      "author": "The High Fin Sperm Whale",
+      "caption": "湖水与群山",
+      "file": "images/camp-52/03.jpg",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cultus_lake.JPG"
+    },
+    {
+      "author": "Preeteesh",
+      "caption": "湖上皮划艇，水面波光粼粼",
+      "file": "images/camp-52/04.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cultus_Lake_Kayaking,_BC.png"
+    },
+    {
+      "author": "Kayoty",
+      "caption": "湖畔休闲：沙滩与人群聚集的码头",
+      "file": "images/camp-52/05.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dock_on_Cultus_Lake.jpg"
+    },
+    {
+      "file": "images/camp-52/site-01.jpg",
+      "caption": "Clear Creek营地帐篷位，The North Face帐篷扎在苔藓古树林间，车辆停靠营位旁",
+      "source": "https://www.flickr.com/photos/ruthanddave/21305178489/",
+      "author": "Ruth and Dave (Flickr)",
+      "license": "All rights reserved（已标注来源）"
+    },
+    {
+      "file": "images/camp-52/site-02.jpg",
+      "caption": "营位火圈燃起篝火，林间营位地面为沙土碎石",
+      "source": "https://www.flickr.com/photos/ruthanddave/21642828872/",
+      "author": "Ruth and Dave (Flickr)",
+      "license": "All rights reserved（已标注来源）"
+    }
+  ],
+  "id": 52,
+  "name": "Cultus Lake Provincial Park"
+}

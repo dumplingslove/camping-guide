@@ -1,1 +1,56 @@
-{"card":"images/camp-51/card.jpg","gallery":[{"author":"Piqsels 免费图库","caption":"闪电湖与群山倒影，湖面如镜倒映云雾山峦","file":"images/camp-51/01.jpg","license":"Piqsels 免费使用","source":"https://www.piqsels.com（图名 manning-park-canada-lightning-lake-campground-amphitheatre-mirror）"},{"author":"Jonhall","caption":"湖上泛舟，远处是闪电湖彩虹桥","file":"images/camp-51/02.jpg","license":"CC BY 3.0","source":"https://commons.wikimedia.org/wiki/File:Lightning_Lake_Canoe.jpg"},{"author":"RVezy 房源页用户","caption":"林间房车营位","file":"images/camp-51/03.jpg","license":"RVezy 页面图片（©，已标注来源）","source":"https://www.rvezy.com/rv-rentals/campground/2065c7c0-9ef8-461b-b61b-094c7319d800"},{"author":"einstraus","caption":"湖畔独木舟，群山与冷杉林环绕","file":"images/camp-51/04.jpg","license":"CC BY-SA 2.0","source":"https://commons.wikimedia.org/wiki/File:Lightning_Lake_in_Manning_Park_(4829069973).jpg"},{"author":"Migjohanson","caption":"曼宁公园群山全景","file":"images/camp-51/05.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Lightning_lake_in_Manning_park_BC,_Canada.jpg"}],"id":51,"name":"Lightning Lake Campground (Manning Park, BC)"}
+{
+ "card": "images/camp-51/card.jpg",
+ "gallery": [
+  {
+   "author": "Piqsels 免费图库",
+   "caption": "闪电湖与群山倒影，湖面如镜倒映云雾山峦",
+   "file": "images/camp-51/01.jpg",
+   "license": "Piqsels 免费使用",
+   "source": "https://www.piqsels.com（图名 manning-park-canada-lightning-lake-campground-amphitheatre-mirror）"
+  },
+  {
+   "author": "Jonhall",
+   "caption": "湖上泛舟，远处是闪电湖彩虹桥",
+   "file": "images/camp-51/02.jpg",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lightning_Lake_Canoe.jpg"
+  },
+  {
+   "author": "RVezy 房源页用户",
+   "caption": "林间房车营位",
+   "file": "images/camp-51/03.jpg",
+   "license": "RVezy 页面图片（©，已标注来源）",
+   "source": "https://www.rvezy.com/rv-rentals/campground/2065c7c0-9ef8-461b-b61b-094c7319d800"
+  },
+  {
+   "author": "einstraus",
+   "caption": "湖畔独木舟，群山与冷杉林环绕",
+   "file": "images/camp-51/04.jpg",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lightning_Lake_in_Manning_Park_(4829069973).jpg"
+  },
+  {
+   "author": "Migjohanson",
+   "caption": "曼宁公园群山全景",
+   "file": "images/camp-51/05.jpg",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lightning_lake_in_Manning_park_BC,_Canada.jpg"
+  },
+  {
+   "file": "images/camp-51/site-01.jpg",
+   "caption": "房车营位，拖挂房车展开遮阳篷，带野餐桌、露营椅与烤架，地面为沙土",
+   "source": "https://www.rvezy.com/rv-rentals/campground/2065c7c0-9ef8-461b-b61b-094c7319d800",
+   "author": "RVezy（用户实拍）",
+   "license": "用户上传照片（©，已标注来源）"
+  },
+  {
+   "file": "images/camp-51/site-02.jpg",
+   "caption": "营位火圈燃起篝火，露营者站在一旁，碎石营位地面，针叶林环绕",
+   "source": "https://www.flickr.com/photos/pkill/15216903976/",
+   "author": "pkill (Flickr)",
+   "license": "All rights reserved（已标注来源）"
+  }
+ ],
+ "id": 51,
+ "name": "Lightning Lake Campground (Manning Park, BC)"
+}

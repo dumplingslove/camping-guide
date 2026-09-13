@@ -1,45 +1,59 @@
 {
- "card": "images/camp-42/card.jpg",
- "gallery": [
-  {
-   "author": "Washington State Parks",
-   "caption": "被常春藤覆盖的1942年混凝土炮台遗址",
-   "file": "images/camp-42/01.jpg",
-   "license": "官网实拍",
-   "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
-  },
-  {
-   "author": "Washington State Parks",
-   "caption": "林间小径穿过茂密的针叶林，倒木上长满青苔",
-   "file": "images/camp-42/02.jpg",
-   "license": "官网实拍",
-   "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
-  },
-  {
-   "author": "Washington State Parks",
-   "caption": "布满睡莲的池塘（庞迪拉湖），四周森林环绕",
-   "file": "images/camp-42/03.jpg",
-   "license": "官网实拍",
-   "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
-  },
-  {
-   "author": "Washington State Parks",
-   "caption": "身穿潜水衣的冲浪者在海浪上驰骋",
-   "file": "images/camp-42/04.jpg",
-   "license": "官网实拍",
-   "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
-  },
-  {
-   "author": "Washington State Parks",
-   "caption": "海崖草坪上看日落，阳光洒在海峡上",
-   "file": "images/camp-42/05.jpg",
-   "license": "官网实拍",
-   "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
-  }
- ],
- "id": 42,
- "name": "Fort Ebey State Park Campground",
- "card_source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
- "card_author": "Washington State Parks",
- "card_license": "官网实拍"
+  "card": "images/camp-42/card.jpg",
+  "gallery": [
+    {
+      "author": "Washington State Parks",
+      "caption": "被常春藤覆盖的1942年混凝土炮台遗址",
+      "file": "images/camp-42/01.jpg",
+      "license": "官网实拍",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "林间小径穿过茂密的针叶林，倒木上长满青苔",
+      "file": "images/camp-42/02.jpg",
+      "license": "官网实拍",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "布满睡莲的池塘（庞迪拉湖），四周森林环绕",
+      "file": "images/camp-42/03.jpg",
+      "license": "官网实拍",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "身穿潜水衣的冲浪者在海浪上驰骋",
+      "file": "images/camp-42/04.jpg",
+      "license": "官网实拍",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
+    },
+    {
+      "author": "Washington State Parks",
+      "caption": "海崖草坪上看日落，阳光洒在海峡上",
+      "file": "images/camp-42/05.jpg",
+      "license": "官网实拍",
+      "source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park"
+    },
+    {
+      "file": "images/camp-42/site-01.jpg",
+      "caption": "林间帐篷营位：两顶帐篷+野餐桌+折叠椅+火圈，针叶土质地面",
+      "source": "https://thedyrt.com/camping/washington/washington-fort-ebey-state-park",
+      "author": "TheDyrt 营友实拍",
+      "license": "© TheDyrt 用户"
+    },
+    {
+      "file": "images/camp-42/site-02.jpg",
+      "caption": "林间房车营位：拖挂房车展开遮阳篷，碎石地面，植被隔离",
+      "source": "https://maps.campendium.com/us/coupeville-wa/camping-rv/fort-ebey-state-park-coupeville-wa--8",
+      "author": "Roadtrippers 用户",
+      "license": "© Roadtrippers 用户"
+    }
+  ],
+  "id": 42,
+  "name": "Fort Ebey State Park Campground",
+  "card_source": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
+  "card_author": "Washington State Parks",
+  "card_license": "官网实拍"
 }

@@ -30,12 +30,13 @@ function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: num
   );
 }
 
-function PhotoGallery({ photos, captions }: { photos: string[]; captions?: string[] }) {
+function PhotoGallery({ photos, captions, siteCount = 0 }: { photos: string[]; captions?: string[]; siteCount?: number }) {
   const [current, setCurrent] = useState(0);
   const [lightbox, setLightbox] = useState(false);
   const touchStartX = useRef<number | null>(null);
 
   const goTo = (i: number) => setCurrent(((i % photos.length) + photos.length) % photos.length);
+  const isSitePhoto = (i: number) => i >= 1 && i <= siteCount;
 
   if (photos.length === 0) return null;
 
@@ -79,6 +80,11 @@ function PhotoGallery({ photos, captions }: { photos: string[]; captions?: strin
               </button>
             </>
           )}
+          {isSitePhoto(current) && (
+            <div className="absolute top-3 left-3 bg-pine/90 text-white text-xs font-medium px-2.5 py-1 rounded-full">
+              营位实景
+            </div>
+          )}
           <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
             {photos.map((_, i) => (
               <button
@@ -93,14 +99,19 @@ function PhotoGallery({ photos, captions }: { photos: string[]; captions?: strin
           <p className="text-sm text-muted-foreground text-center">{captions[current]}</p>
         )}
         {/* Thumbnails */}
-        <div className="grid grid-cols-6 gap-2 mt-3">
+        <div className="grid grid-cols-4 sm:grid-cols-6 gap-2 mt-3">
           {photos.map((p, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`aspect-square rounded-md overflow-hidden border-2 transition-all ${i === current ? "border-pine" : "border-transparent opacity-70 hover:opacity-100"}`}
+              className={`relative aspect-square rounded-md overflow-hidden border-2 transition-all ${i === current ? "border-pine" : "border-transparent opacity-70 hover:opacity-100"}`}
             >
               <img src={p} alt="" className="w-full h-full object-cover" />
+              {isSitePhoto(i) && (
+                <span className="absolute bottom-0.5 left-0.5 bg-pine/90 text-white text-[10px] leading-none px-1.5 py-0.5 rounded">
+                  营位
+                </span>
+              )}
             </button>
           ))}
         </div>
@@ -938,8 +949,13 @@ export default function CampgroundDetail() {
           {photoData && photoData.photos.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.26 }}>
               <PhotoGallery
-                photos={[campground.image, ...photoData.photos]}
-                captions={[campground.nameCn + " 全景", ...(photoData.captions || [])]}
+                photos={[campground.image, ...photoData.photos.filter((p) => p.includes("/site-")), ...photoData.photos.filter((p) => !p.includes("/site-"))]}
+                captions={[
+                  campground.nameCn + " 全景",
+                  ...(photoData.captions || []).filter((_, i) => photoData.photos[i]?.includes("/site-")),
+                  ...(photoData.captions || []).filter((_, i) => !photoData.photos[i]?.includes("/site-")),
+                ]}
+                siteCount={photoData.photos.filter((p) => p.includes("/site-")).length}
               />
             </motion.div>
           )}

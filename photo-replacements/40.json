@@ -1,1 +1,56 @@
-{"card":"images/camp-40/card.jpg","gallery":[{"author":"MattHucke","caption":"隔着哥伦比亚河眺望林肯岩","file":"images/camp-40/01.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Lincoln_Rock_State_Park.jpg"},{"author":"Thayne Tuason","caption":"冬日的公园与哥伦比亚河，远处可见 Turtle Rock","file":"images/camp-40/02.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Lincoln_Rock_State_Park,_Columbia_River_in_Winter.jpg"},{"author":"Thayne Tuason","caption":"冬日雪中的林肯岩州立公园","file":"images/camp-40/03.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Lincoln_Rock_State_Park_in_Winter.jpg"},{"author":"Codedelectron","caption":"Entiat 湖（哥伦比亚河水库）全景","file":"images/camp-40/04.jpg","license":"Public domain","source":"https://commons.wikimedia.org/wiki/File:Lake_entiat_pano.jpg"},{"author":"MattHucke","caption":"Entiat 湖中的 Turtle Rock 岛（公园附近）","file":"images/camp-40/05.jpg","license":"CC BY-SA 4.0","source":"https://commons.wikimedia.org/wiki/File:Turtle_Rock_Island_WA.jpg"}],"id":40,"name":"Lincoln Rock State Park"}
+{
+  "card": "images/camp-40/card.jpg",
+  "gallery": [
+    {
+      "author": "MattHucke",
+      "caption": "隔着哥伦比亚河眺望林肯岩",
+      "file": "images/camp-40/01.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lincoln_Rock_State_Park.jpg"
+    },
+    {
+      "author": "Thayne Tuason",
+      "caption": "冬日的公园与哥伦比亚河，远处可见 Turtle Rock",
+      "file": "images/camp-40/02.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lincoln_Rock_State_Park,_Columbia_River_in_Winter.jpg"
+    },
+    {
+      "author": "Thayne Tuason",
+      "caption": "冬日雪中的林肯岩州立公园",
+      "file": "images/camp-40/03.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lincoln_Rock_State_Park_in_Winter.jpg"
+    },
+    {
+      "author": "Codedelectron",
+      "caption": "Entiat 湖（哥伦比亚河水库）全景",
+      "file": "images/camp-40/04.jpg",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_entiat_pano.jpg"
+    },
+    {
+      "author": "MattHucke",
+      "caption": "Entiat 湖中的 Turtle Rock 岛（公园附近）",
+      "file": "images/camp-40/05.jpg",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Turtle_Rock_Island_WA.jpg"
+    },
+    {
+      "file": "images/camp-40/site-01.jpg",
+      "caption": "40号铺装房车贯通位：水电桩+野餐桌+火圈，草坪营地",
+      "source": "https://thedyrt.com/camping/washington/near/ardenvoir",
+      "author": "TheDyrt 营友实拍",
+      "license": "© TheDyrt 用户"
+    },
+    {
+      "file": "images/camp-40/site-02.jpg",
+      "caption": "营地环路旁房车位：野餐桌+火圈，草地开阔、营位间距大",
+      "source": "https://maps.roadtrippers.com/places/70344/photos/1031710803",
+      "author": "Roadtrippers 用户",
+      "license": "© Roadtrippers 用户"
+    }
+  ],
+  "id": 40,
+  "name": "Lincoln Rock State Park"
+}
