@@ -694,7 +694,24 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
-          {/* 1. Area Ratings - MOST IMPORTANT */}
+          {/* 1. Photo Gallery - right below intro */}
+          {photoData && photoData.photos.length > 0 && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
+              className="bg-white rounded-xl border border-border p-5"
+            >
+              <PhotoGallery
+                photos={[campground.image, ...photoData.photos.filter((p) => p.includes("/site-")), ...photoData.photos.filter((p) => !p.includes("/site-"))]}
+                captions={[
+                  campground.nameCn + " 全景",
+                  ...(photoData.captions || []).filter((_, i) => photoData.photos[i]?.includes("/site-")),
+                  ...(photoData.captions || []).filter((_, i) => !photoData.photos[i]?.includes("/site-")),
+                ]}
+                siteCount={photoData.photos.filter((p) => p.includes("/site-")).length}
+              />
+            </motion.div>
+          )}
+
+          {/* 2. Area Ratings - MOST IMPORTANT */}
           {campground.areas.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
               className="bg-white rounded-xl border border-border p-5"
@@ -704,7 +721,8 @@ export default function CampgroundDetail() {
                 Area 评分与详解
                 <span className="text-xs font-mono font-normal text-muted-foreground">({campground.areas.length}个区域)</span>
               </h2>
-              <div className="overflow-x-auto">
+              {/* Desktop: table */}
+              <div className="hidden sm:block overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-border">
@@ -740,6 +758,43 @@ export default function CampgroundDetail() {
                     ))}
                   </tbody>
                 </table>
+              </div>
+              {/* Mobile: stacked cards, no horizontal scroll */}
+              <div className="sm:hidden space-y-3">
+                {campground.areas.map((area, i) => (
+                  <div key={i} className="rounded-lg border border-border/60 p-3 bg-muted/20">
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <span className="font-medium text-sm">{area.area}</span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full shrink-0 ${
+                        area.recommendation === "强烈推荐" ? "bg-pine/10 text-pine" :
+                        area.recommendation === "推荐" ? "bg-lake/10 text-lake" :
+                        area.recommendation === "避坑" || area.recommendation === "不推荐" ? "bg-sunset/10 text-sunset" :
+                        "bg-secondary text-muted-foreground"
+                      }`}>
+                        {area.recommendation}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
+                      {[
+                        { label: "综合", v: area.overall },
+                        { label: "风景", v: area.scenery },
+                        { label: "娃可玩", v: area.kidFriendly },
+                        { label: "TC适配", v: area.tcCompat },
+                      ].map((r) => (
+                        <div key={r.label} className="flex items-center justify-between text-xs">
+                          <span className="text-muted-foreground">{r.label}</span>
+                          <RatingStars rating={r.v} size={12} />
+                        </div>
+                      ))}
+                    </div>
+                    {area.hookups && (
+                      <div className="mt-2 pt-2 border-t border-border/40 text-xs text-muted-foreground">
+                        水电：{area.hookups}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
                 {/* Area Summaries below the table */}
                 {campground.areas.some(a => a.areaSummary) && (
                   <div className="mt-4 space-y-2">
@@ -765,7 +820,6 @@ export default function CampgroundDetail() {
                     ))}
                   </div>
                 )}
-              </div>
             </motion.div>
           )}
 
@@ -940,27 +994,12 @@ export default function CampgroundDetail() {
             <ReviewsSection campgroundId={campground.id} />
           </motion.div>
 
-          {/* 8. Season Calendar */}
+          {/* 9. Season Calendar */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.26 }}>
             <SeasonCalendar campId={campground.id} />
           </motion.div>
 
-          {/* 8. Photo Gallery */}
-          {photoData && photoData.photos.length > 0 && (
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.26 }}>
-              <PhotoGallery
-                photos={[campground.image, ...photoData.photos.filter((p) => p.includes("/site-")), ...photoData.photos.filter((p) => !p.includes("/site-"))]}
-                captions={[
-                  campground.nameCn + " 全景",
-                  ...(photoData.captions || []).filter((_, i) => photoData.photos[i]?.includes("/site-")),
-                  ...(photoData.captions || []).filter((_, i) => !photoData.photos[i]?.includes("/site-")),
-                ]}
-                siteCount={photoData.photos.filter((p) => p.includes("/site-")).length}
-              />
-            </motion.div>
-          )}
-
-          {/* 9. Campground Map Image */}
+          {/* 10. Campground Map Image */}
           {photoData?.map && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.28 }}>
               <CampgroundMapImage mapUrl={photoData.map} name={campground.nameCn} />

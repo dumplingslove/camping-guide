@@ -645,3 +645,260 @@
 ## 位置地图（静态地图图片）
 
 - `images/maps/camp-<编号>-z11.png`（营地周边，53张）、`images/maps/camp-<编号>-z15.png`（营位近景，53张）、`images/maps/region-z7.png`（区域总览）—— 底图瓦片 © OpenStreetMap contributors（ODbL 许可），每张图右下角已内嵌署名。来源 https://www.openstreetmap.org/copyright
+
+## 娃可玩项目配图（252 张本地实拍/精确匹配图）
+
+以下为各活动配图的来源署名，按活动名排序：
+
+- `act-001.jpg`（3英里海滩）— Miscellaneous contributor（CC0）— https://commons.wikimedia.org/wiki/File:Cape_Lookout_South_Beach.jpg
+- `act-002.jpg`（Admiralty Head Lighthouse）— Department of Commerce. Bureau of Lighthouses. 1913-7/1/1939（Public domain）— https://commons.wikimedia.org/wiki/File:WA_-_Admiralty_Head_-_DPLA_-_6a9dfa6077611398e2183efa543d494e.jpg
+- `act-003.jpg`（Alouette Lake 游泳/沙滩）— ROBERT ALEXANDER WILSON ra_wilsn（CC0）— https://commons.wikimedia.org/wiki/File:Hiker_standing_on_a_log_at_the_Alouette_Lake_near_Maple_Ridge,_British_Columbia_surrounded_by_mist_and_precipitation._Photo_by_Robert_Alexander_Wilson,_2017_(Unsplash).jpg
+- `act-005.jpg`（Annie Creek trail）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Annie_Creek_Canyon,_Crater_Lake_National_Park_-_DPLA_-_0d61223eb3976a19abdfdc2b04c9f9cb.jpg
+- `act-006.jpg`（Arch Rock观景）— Rick McCharles（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Arch_Rock_-_Boardman_State_Park,_Oregon.jpg
+- `act-008.jpg`（Astoria column at sunset）— Joe Mabel（CC BY 3.0）— https://commons.wikimedia.org/wiki/File:Astoria,_OR_from_Astoria_Column_at_sunset_01.jpg
+- `act-009.jpg`（Bandon Old Town）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Bandon,_Oregon_-_Old_Town_from_boardwalk_01.jpg
+- `act-010.jpg`（Banks Lake游泳）— No machine-readable author provided. Williamborg assumed (based on copyright claims).（Public domain）— https://commons.wikimedia.org/wiki/File:Grand-Coulee-Steamboat-RockPB110055.JPG
+- `act-011.jpg`（Beach 4 潮池）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Destruction_Island_and_rocks_off_Beach_4,_Kalaloch_Beach,_Washington_01.jpg
+- `act-012.jpg`（Bellingham市区）— Allyn（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Downtown-Bellingham-From-Western-Washington-University.jpg
+- `act-014.jpg`（Bench湖游泳）— Steve Redman (MORA)（Public domain）— https://commons.wikimedia.org/wiki/File:Mt_Rainier_reflecting_in_Bench_Lake._Early_September_2015._(50204798af164f1da1e9bf3e2546cfe9).JPG
+- `act-015.jpg`（Beverly Beach 海滩）— icetsarina from United States（CC0）— https://commons.wikimedia.org/wiki/File:Beverly_Beach,_Oregon_(36362093605).jpg
+- `act-016.jpg`（Big Tree步道）— Inklein（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Big_tree_in_La_Pine_State_Park.jpg
+- `act-017.jpg`（Boat Tour 游船）— Unknown authorUnknown author（Public domain）— https://commons.wikimedia.org/wiki/File:Visitors_surveying_the_lake_on_a_boat_tour_of_Crater_Lake,_Oregon,_circa_1915_(AL%2BCA_1738).jpg
+- `act-018.jpg`（Bowman Bay 潮池探索）— Cody Logan（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Bowman_Bay,_April_2010.jpg
+- `act-019.jpg`（Breitenbush Hot Springs）— Mark Allyn（Public domain）— https://commons.wikimedia.org/wiki/File:Breitenbush_lodge.jpg
+- `act-020.jpg`（Brookings Harbor）— Visitor7（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Brookings_Harbor_(Brookings,_Oregon).jpg
+- `act-021.jpg`（Campers Beach）— Dennis Sylvester Hurd from Minuwangoda, WP, Sri Lanka, Canada（CC0）— https://commons.wikimedia.org/wiki/File:BC%27s_Version_of_a_Crowded_Beach_(56495727).jpg
+- `act-022.jpg`（Cape Arago步道）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Cape_Arago_South_Trail,_Cape_Arago_State_Park_-_DPLA_-_9db9e3a14dd5c662dbc160fcc44c0203.jpg
+- `act-023.jpg`（Cape Disappointment Lighthouse）— Jonathan Miske（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Cape_Disappointment_Lighthouse_(14788544998).jpg
+- `act-024.jpg`（Cape Flattery & Makah Cultural & Research Center Museum）— Richie Diesterheft from Santa Barbara, CA, USA（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Welcome_Arch_at_Makah_Culture_Center_(27382911525).jpg
+- `act-025.jpg`（Cape Lookout Trail）— Miscellaneous contributor（CC0）— https://commons.wikimedia.org/wiki/File:Bench_on_South_Beach_Trail.jpg
+- `act-026.jpg`（Carter Falls徒步）— Steve Redman (MORA)（Public domain）— https://commons.wikimedia.org/wiki/File:Ancient_Nootka_Cypress_on_Carter_Falls_trail,_Mt_Rainier_(f2ce668658ec4d73bd16e8ec1e7bca59).jpg
+- `act-027.jpg`（Cascade Lake游泳）— stevevoght（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Cascade_Lake,_Moran_State_Park_2009.jpg
+- `act-028.jpg`（Castle Crest Wildflower Trail）— Historic American Buildings Survey（Public domain）— https://commons.wikimedia.org/wiki/File:View_from_Rim_Drive_between_Vidae_Ridge_and_Castle_Crest_wildflowers_trail._View_S._-_Crater_Lake_National_Park_Roads,_Klamath_Falls,_Klamath_County,_OR_HAER_OR-107-51.tif
+- `act-030.jpg`（Chief Joseph Mountain步道）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:Chief_Joseph_Mtn.jpg
+- `act-031.jpg`（Chuckanut Drive风景路）— Corbett, L.R（Public domain）— https://commons.wikimedia.org/wiki/File:Chuckanut_Drive,_ca._1915_-_DPLA_-_6f40111b137fd34ef73b94a453b495b0_(page_1).jpg
+- `act-032.jpg`（Cleawox Lake游泳）— George A. Grant（Public domain）— https://commons.wikimedia.org/wiki/File:CLEOWAX_LAKE_DUNES_-_NARA_-_520129.jpg
+- `act-033.jpg`（Coffenbury Lake 游泳）— Rick Obst（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Morning_at_Coffenbury_Lake_in_Fort_Stevens_State_Park.jpg
+- `act-034.jpg`（Comet Falls徒步）— Steve Redman (MORA)（Public domain）— https://commons.wikimedia.org/wiki/File:Comet_Falls_(a3198da6a93249d2bf0370efb27a8056).JPG
+- `act-036.jpg`（Coquille River Lighthouse）— Nickeyrc（Public domain）— https://commons.wikimedia.org/wiki/File:Bandon_Lighthouse.jpg
+- `act-037.jpg`（Coupeville小镇）— Blervis（CC0）— https://commons.wikimedia.org/wiki/File:Coupeville_WA_Waterfront.jpg
+- `act-038.jpg`（Cranberry Lake 浅水区嬉水）— Michaelhead99（CC0）— https://commons.wikimedia.org/wiki/File:Cranberry_Lake.jpg
+- `act-039.jpg`（Cranberry Lake 游泳/划船）— Unknown photographer (via DPLA)（Public domain）— https://commons.wikimedia.org/wiki/File:Cranberry_Lake,_Deception_Pass_State_Park,_Whidby_Island,_Wn.,_ca._1925_-_DPLA_-_f1dead27fc22edd63cd0cf99656ab875_(page_1).jpg
+- `act-040.jpg`（Crater Lake National Park）— Vulturesong（CC0）— https://commons.wikimedia.org/wiki/File:Crater_Lake_National_Park_-_HCP_-_October_13,_2022_-_008.jpg
+- `act-041.jpg`（Crater Lake Rim Drive）— Vulturesong（CC0）— https://commons.wikimedia.org/wiki/File:Crater_Lake_National_Park_-_HCP_-_October_13,_2022_-_151.jpg
+- `act-042.jpg`（Crater Lake 一日游）— Vulturesong（CC0）— https://commons.wikimedia.org/wiki/File:Crater_Lake_National_Park_-_HCP_-_October_03,_2022_-_01_-_Wizard_Island.jpg
+- `act-044.jpg`（Cultus Lake Waterpark）— The High Fin Sperm Whale（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Cultus_Lake_Waterpark_panorama.jpg
+- `act-045.jpg`（Cultus Lake 游泳）— Kayoty（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Cultus_Lake,_British_Columbia.jpg
+- `act-047.jpg`（Deep Lake 游泳）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Millersylvania_State_Park_12.jpg
+- `act-048.jpg`（Deschutes River 戏水）— mypubliclands（Public domain）— https://commons.wikimedia.org/wiki/File:Deschutes_Wild_and_Scenic_River,_Oregon_(36486232822).jpg
+- `act-049.jpg`（Deschutes River游泳）— mypubliclands（Public domain）— https://commons.wikimedia.org/wiki/File:Deschutes_Wild_and_Scenic_River,_Oregon_(36486231832).jpg
+- `act-050.jpg`（Deschutes河漂流）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:Rafting_the_Deschutes_River,_Deschutes_National_Forest_(36338475635).jpg
+- `act-051.jpg`（Diablo Lake观景台）— Sergei Akulich sakulich（CC0）— https://commons.wikimedia.org/wiki/File:Diablo_Lake,_United_States_(Unsplash_ZNkvxIPPVeE).jpg
+- `act-052.jpg`（Dry Falls观景）— Marvin D. Boland（Public domain）— https://commons.wikimedia.org/wiki/File:Dry_Falls,_Washington,_ca_1918_(WASTATE_781).jpeg
+- `act-053.jpg`（Ebey's Landing步道）— Blervis（CC0）— https://commons.wikimedia.org/wiki/File:Ebey%27s_Landing_Fall_2024.jpg
+- `act-054.jpg`（Evening Ranger Programs）— LassenNPS（Public domain）— https://commons.wikimedia.org/wiki/File:Amphitheater_Talk_(19877364913).jpg
+- `act-055.jpg`（Face Rock观景）— Adam Meek（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Face_Rock,_Bandon,_OR.jpg
+- `act-056.jpg`（Florence Old Town）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Florence_Waterfront,_Siuslaw_Bay_-_DPLA_-_485fcd0b1908fef104821bd5cf2f0b15.jpg
+- `act-057.jpg`（Fort Canby (Washington side)）— Unknown authorUnknown author or not provided（Public domain）— https://commons.wikimedia.org/wiki/File:First_installations,_Fort_Canby,_Washington_-_NARA_-_299656.jpg
+- `act-058.jpg`（Fragrance Lake步道）— J Brew（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Fragrance_Lake.jpg
+- `act-059.jpg`（Frosty Mountain 徒步（高级））— Andrew Plowright（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Frosty_Mountain.jpg
+- `act-061.jpg`（Gold Creek 步道）— ~riley（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Gold_Creek,_Golden_Ears_Provincial_Park_03.JPG
+- `act-062.jpg`（Gorge Creek Falls）— Jeff Gunn from Atlanta, USA（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Gorge_Creek_Falls_(2013-07-04).jpg
+- `act-063.jpg`（Grove of the Patriarchs）— Ian Poellet (User:Werewombat)（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Grove_of_the_Patriarchs_Trail_bridge_-_Mount_Rainier_NP_Washington.jpg
+- `act-064.jpg`（Hall of Mosses步道）— Reddit user PKThundr7（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Hall_of_Mosses,_Hoh_Rainforest,_Olympic_National_Park,_Washington_(2015).jpg
+- `act-065.jpg`（Harbor Seals 观赏）— Mrkoww（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Harbor_Seal_(Phoca_Vitulina)_in_Puget_Sound_Washington.jpg
+- `act-066.jpg`（Harris Beach潮池探索）— Rick Obst（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Goat_Island_at_dawn_from_Harris_Beach_State_Park_(31422068098).jpg
+- `act-067.jpg`（Hatfield Marine Science Center）— U.S. Environmental Protection Agency（Public domain）— https://commons.wikimedia.org/wiki/File:Hatfield_Marine_Science_Center,_EPA_aerial.jpg
+- `act-068.jpg`（High Desert Museum）— Another Believer（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:High_Desert_Museum,_Oregon_(2013)_-_40.JPG
+- `act-069.jpg`（Hoh Rain Forest）— Doug Kerr from Albany, NY, United States（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Hoh_Rainforest_-_Olympic_National_Park_-_Washington_State_(9779983602).jpg
+- `act-070.jpg`（Hoh Rainforest）— Olympic National Park（Public domain）— https://commons.wikimedia.org/wiki/File:Hoh_Rainforest,_mossy_log_tree_NPS_Photo_(16680304244).jpg
+- `act-071.jpg`（Hoh River观鱼）— NPS photo（Public domain）— https://commons.wikimedia.org/wiki/File:Salmon_Spawn_in_the_Hoh_River_(4231676d-1dd8-b71b-0bf5-65708fb9eb39).jpg
+- `act-072.jpg`（Hole-in-the-Wall）— Olympic National Park（Public domain）— https://commons.wikimedia.org/wiki/File:Rialto_beach_hole_in_the_wall_39_(23104362626).jpg
+- `act-073.jpg`（Hot Springs 遗址）— NPS Photo（Public domain）— https://commons.wikimedia.org/wiki/File:The_Ohanapecosh_Hot_Springs_trail_takes_you_by_several_hot_springs_in_the_southeast_area_of_Mount_Rainier_National_Park_(0d31da57-bb10-459e-93f5-ace9c478f155).JPEG
+- `act-074.jpg`（Hurricane Ridge）— Olympic National Park（Public domain）— https://commons.wikimedia.org/wiki/File:Ranger_Greg_snowshoeing_winter_Hurrican_ridge_(16751177303).jpg
+- `act-076.jpg`（Junior Ranger Program）— ShenandoahNPS（Public domain）— https://commons.wikimedia.org/wiki/File:2018_Night_Sky_Festival-_Junior_Ranger_Program_(30873219228).jpg
+- `act-077.jpg`（Kalaloch Beach 漂流木）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Big_driftwood_at_Beach_2,_Kalaloch_Beach,_Washington_01.jpg
+- `act-078.jpg`（LaPush and Second Beach）— ThomasLendt（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Küste_beim_Second_Beach_von_La_Push.jpg
+- `act-079.jpg`（Lady of the Lake 游船）— Joe Mabel（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Chelan,_WA_-_Lady_of_the_Lake_wheelhouse.jpg
+- `act-081.jpg`（Lake Chelan 游泳）— NPS Staff（Public domain）— https://commons.wikimedia.org/wiki/File:Jumping_into_the_lake_(bd5c559d930345f584468db45ce05f59).jpg
+- `act-082.jpg`（Lake Crescent）— Kashyap Hosdurga（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Lake_Crescent_(2).jpg
+- `act-083.jpg`（Lake Crescent 游泳）— Unknown author（Public domain）— https://commons.wikimedia.org/wiki/File:Swimmers_at_the_beach_at_Lake_Crescent_Tavern,_Lake_Crescent_(WASTATE_1499).jpeg
+- `act-085.jpg`（Lake Quinault）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:3358_Quinault_Lake_(22133702014).jpg
+- `act-087.jpg`（Leavenworth 小镇）— Lesbardd（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Leavenworth01LB.jpg
+- `act-088.jpg`（Leavenworth小镇）— Todd Petit from East Wenatchee, WA, USA（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Leavenworth_-_The_Bavarian_Village_-_Flowers.jpg
+- `act-089.jpg`（Lewis & Clark 解说中心）— Another Believer（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Cape_Disappointment,_Lewis_and_Clark_Interpretive_Center,_Dec._2011.JPG
+- `act-091.jpg`（Lightning Lake 环湖步道）— einstraus from Vancouver, Canada（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Lightning_Lake_in_Manning_Park_(4829069973).jpg
+- `act-092.jpg`（Little Crater Lake 观赏）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Little_Crater_Lake_-_DPLA_-_d29f07e4cadd45804fd9503d8079293e.jpg
+- `act-094.jpg`（Lower Falls 短徒步）— ~riley（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Lower_Falls_Trail-Gold_Creek,_Golden_Ears_Provincial_Park_116.JPG
+- `act-095.jpg`（Manning Park Resort 活动）— Robert Ashworth from Bellingham, WA., USA（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Manning_Park_lodge_(1701644041).jpg
+- `act-096.jpg`（Manzanita小镇）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Manzanita_-_DPLA_-_1afe0517980294fd747a1818a2bb1257.jpg
+- `act-097.jpg`（Marymere Falls Trail）— Zandcee（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:MarymereFalls_May2013.JPG
+- `act-098.jpg`（Mount Storm King）— Kms5333（CC BY 3.0）— https://commons.wikimedia.org/wiki/File:MountStormKingWA.JPG
+- `act-100.jpg`（Mt. Constitution观景塔）— Morgan Borman（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Orcas_Island,_Mt._Constitution,_CCC_Stone_Tower,_September_2012.jpg
+- `act-101.jpg`（Mt. Hood 倒影摄影）— AlexAH（CC BY 3.0）— https://commons.wikimedia.org/wiki/File:Mount_Hood_in_Trillium_Lake.jpg
+- `act-103.jpg`（Newberry Volcanic Monument）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Cascade_Mountains,_Paulina_Road,_Newberry_National_Volcanic_Monument_-_DPLA_-_008a01ac8797464299ff1f80a2310161.jpg
+- `act-104.jpg`（Newport Bayfront）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Bayfront,_Newport_-_DPLA_-_108b3f4941c4d1bdaede0e816127327a.jpg
+- `act-105.jpg`（Newport 海鲜）— Saxophlute (talk)（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Yaquina_Bay_Red_Rock_Crab.JPG
+- `act-106.jpg`（Newport周边景点）— Sandy Horvath-Dori from Grand Junction, CO, USA（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Harbor_Newport_Oregon_(6676573747).jpg
+- `act-107.jpg`（Nisqually River 观察）— Mark Yasuda（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:2022_Nisqually_River.jpg
+- `act-108.jpg`（North Beach 沙滩玩沙）— Joe Mabel（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Deception_Pass_19.jpg
+- `act-109.jpg`（North Cascades Visitor Center）— Joe Mabel（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:North_Cascades_National_Park_Visitor_Center_01.jpg
+- `act-110.jpg`（North Head Lighthouse）— Bruce Tuten（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:North_Head_Lighthouse,_Washington+.jpg
+- `act-111.jpg`（North Head Lighthouse徒步）— Another Believer（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Trail_to_North_Head_Light,_2011.JPG
+- `act-112.jpg`（Nye Beach海滩）— Joe Mabel (on Flickr as Joe Mabel from Seattle, US)（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Newport_Beach,_OR_-_Nye_Beach_02_(19310014554).jpg
+- `act-114.jpg`（Olympic Discovery Trail）— Robert Ashworth from Bellingham, WA., USA（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:A_segment_of_Olympic_Discovery_Trail_by_Port_Townsed_(15263376202).jpg
+- `act-115.jpg`（Opal Creek步道）— U.S. Fish and Wildlife Service（Public domain）— https://commons.wikimedia.org/wiki/File:Opal_Creek_-_DPLA_-_d564ea955ff07fc03c99ecba0b4a17f7.jpg
+- `act-116.jpg`（Orcas Island小镇）— Joe Mabel（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Eastsound_WA_-_harbor_view_01.jpg
+- `act-117.jpg`（Oregon Coast Aquarium）— Matt Kieffer（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Oregon_Coast_Aquarium%2C_Newport_%282369796332%29.jpg
+- `act-118.jpg`（Pacific Crest Trail）— Bureau of Land Management Oregon and Washington（Public domain）— https://commons.wikimedia.org/wiki/File:BLM_and_the_Pacific_Crest_Trail_Oregon_%2816792844060%29.jpg
+- `act-119.jpg`（Pacific Crest Trail (PCT)）— Gary Halvorson, Oregon State Archives（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Pacific_Crest_Trail%2C_Little_Crater_Lake%2C_Cascade_Mountains_-_DPLA_-_f2e293cd905bb0f67d614aa4ed1e39b7.jpg
+- `act-120.jpg`（Paradise 野花步道）— Mount Rainier NPS（Public domain）— https://commons.wikimedia.org/wiki/File:Paradise_Wildflowers_%2853046019806%29.jpg
+- `act-121.jpg`（Parksville海滨小镇）— Cosmic6811（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Parksville_Rathtrevor_Beach.jpg
+- `act-122.jpg`（Peter Iredale 沉船）— Rick Obst（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Peter_Iredale_Shipwreck_in_Fort_Stevens_State_Park.jpg
+- `act-123.jpg`（Pinnacles Trail）— National Park Service（Public domain）— https://commons.wikimedia.org/wiki/File:The_Pinnacles%2C_Crater_Lake_National_Park.jpg
+- `act-124.jpg`（Point Wilson Lighthouse）— Krystal Hamlin（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Point_Wilson_Lighthouse_%2845109818005%29.jpg
+- `act-125.jpg`（Port Townsend小镇）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Port_Townsend%2C_WA_-_looking_northeast_from_Union_Pier_to_waterfront_buildings_01.jpg
+- `act-127.jpg`（Rialto Beach）— Roller Coaster Philosophy（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Rialto_Beach_-_54019846500.jpg
+- `act-128.jpg`（Rogue River Trail）— BLM Oregon & Washington（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Rogue_River_Trail_-_51234005761.jpg
+- `act-130.jpg`（Roosevelt Elk观赏）— DeVos Max（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Roosevelt_elk_bull_in_Hoh_Rainforest_2022-05-30.jpg
+- `act-131.jpg`（Rosario Head 步道）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Atop_Rosario_Head_01.jpg
+- `act-132.jpg`（Ruby Beach）— Jeffhollett（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Ruby_Beach_at_Olympic_National_Park_in_Washington_1.jpg
+- `act-134.jpg`（Samuel H. Boardman走廊）— Dougtone（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Samuel_H._Boardman_State_Scenic_Corridor_-_Oregon_-_7405365820.jpg
+- `act-135.jpg`（Seaside 海滩）— M.O. Stevens（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Seaside%2C_Oregon_-_beach_and_swing.JPG
+- `act-136.jpg`（Shore Acres State Park）— Finetooth（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Garden_at_Shore_Acres_State_Park.jpg
+- `act-137.jpg`（Silver Falls Loop）— Pfly（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Ohanapecosh_River-Silver_Falls-close.jpg
+- `act-138.jpg`（Silver Falls Trail）— Steven Pavlov（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Silver_Falls_Loop_Trail_%282021-09-04%29_060732PM.jpg
+- `act-139.jpg`（Ski Bowl）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:279_Winter_skiers_Ski_Bowl_on_Mt_Hood_Nat%27l_Forest_1960%27s_%2836042414862%29.jpg
+- `act-141.jpg`（Smith Rock）— Laura Alier（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Smith_Rock_State_Park_99395.jpg
+- `act-142.jpg`（Sol Duc Falls步道）— Sea Cow（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Sol_Duc_Falls_2022.jpg
+- `act-143.jpg`（Sol Duc Hot Springs）— Asahel Curtis（Public domain）— https://commons.wikimedia.org/wiki/File:Sol_Duc_Hot_Springs_resort_%28CURTIS_349%29.jpeg
+- `act-144.jpg`（Sol Duc Hot Springs温泉池）— Robert Ashworth（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Large_hot_spring_resort_%2829458937070%29.jpg
+- `act-145.jpg`（Sol Duc Springs/Falls）— Kimon Berlin（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Sol_Duc_Falls_3.jpg
+- `act-146.jpg`（South Beach 海滩）— Doug Kerr（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:South_Beach_-_Olympic_National_Park_-_Washington_State_%289783850092%29.jpg
+- `act-147.jpg`（South Falls）— KanaArima（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:South_Falls_19.jpg
+- `act-149.jpg`（Spruce Nature Trail）— Roller Coaster Philosophy（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Hoh_Rain_Forest_-_54019454206.jpg
+- `act-150.jpg`（Steamboat Rock步道）— Miranda.Kopetzky（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Steamboat_Rock_State_Park%2C_1981_01.jpg
+- `act-151.jpg`（Sunriver Resort）— ryan harvey（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Sunriver_Lodge.jpg
+- `act-152.jpg`（Sunset Bay海滩）— Finetooth（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Sunset_Bay_State_Park_in_Oregon.jpg
+- `act-155.jpg`（The Island步道）— Ian Poellet（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Cove_Palisades_SP_Oregon_2002.03.31.jpg
+- `act-157.jpg`（Tillamook）— EncMstr（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Tillamook_creamery_exterior_P2548.jpeg
+- `act-158.jpg`（Timberline Lodge）— Chris Light（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Timberline_Lodge_7902.jpg
+- `act-160.jpg`（Tongue Point 潮池）— Anastacia12182（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Tonguepoint.JPG
+- `act-162.jpg`（Trail of Ten Falls）— Little Mountain 5（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Middle_North_Falls_Panorama.jpg
+- `act-163.jpg`（Tree of Life）— Sven-the-Green（CC0）— https://commons.wikimedia.org/wiki/File:Tree_of_Life_on_Kalaloch_Beach_in_Olympic_National_Park.jpg
+- `act-164.jpg`（Union Creek Resort/Store）— Ian Poellet（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Guest_cabins_-_Union_Creek_Oregon.jpg
+- `act-165.jpg`（Upper Rogue River Trail）— PGHolbrook（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Upper_Rogue_River_Near_Union_Creek_OR.JPG
+- `act-167.jpg`（WWII bunkers (二战地堡)）— Bigfathairymarmot（Public domain）— https://commons.wikimedia.org/wiki/File:Camphaydenbigbunker.JPG
+- `act-168.jpg`（WWII炮台遗址）— Joe Mabel（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Fort_Ebey_Park_04.jpg
+- `act-169.jpg`（Waikiki Beach）— Steven Pavlov（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:2022-07-30%2C_Cape_Disappointment_Lighthouse_from_Waikiki_Beach%2C_04.jpg
+- `act-170.jpg`（Wallowa Lake Tramway缆车）— Finetooth（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Wallowa_Lake_Tramway.jpg
+- `act-171.jpg`（Watchman Overlook）— Ian Poellet（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Watchman_Overlook_from_Watchman_Trail_-_Crater_Lake_NP_Oregon.jpg
+- `act-172.jpg`（Wenatchee River 漂流）— Thayne Tuason（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Kayaking_the_Wenatchee_River_near_Leavenworth%2C_Washington_07-31-2017_1.jpg
+- `act-174.jpg`（Westport Lighthouse）— Steven Pavlov（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:2023-05-27%2C_Grays_Harbor_Lighthouse%2C_004.jpg
+- `act-175.jpg`（Westport观鲸）— Merrill Gosho, NOAA（Public domain）— https://commons.wikimedia.org/wiki/File:Gray_whale_Merrill_Gosho_NOAA2_crop.jpg
+- `act-176.jpg`（Wildcat Cove海滩）— Doug Wilson（Public domain）— https://commons.wikimedia.org/wiki/File:BEACH_AT_LARRABEE_STATE_PARK_ON_NORTHERN_PUGET_SOUND_-_NARA_-_552341.jpg
+- `act-177.jpg`（Willamette River步道）— Rick Obst（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Narrow_trail_in_Champoeg_State_Heritage_Area.jpg
+- `act-178.jpg`（Woahink Lake划船）— Only in Oregon（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Boat_dock_on_Woahink_Lake.jpg
+- `act-179.jpg`（Yaquina Bay Lighthouse）— Rickymouser45（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Yaquina_Bay_Lighthouse%2C_2022.jpg
+- `act-180.jpg`（二战碉堡探索）— Chris Light（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Number_1_Gun_5524.jpg
+- `act-181.jpg`（儿童游乐场）— Mertbiol（CC0）— https://commons.wikimedia.org/wiki/File:Children%27s_playground%2C_Frimley_Lodge_Park%2C_Surrey_01.jpg
+- `act-183.jpg`（划皮划艇和摩托艇）— David Ansley（CC BY 2.5）— https://commons.wikimedia.org/wiki/File:Stehekin_Chelan.JPG
+- `act-184.jpg`（划船/水上运动）— Oregon Department of Fish & Wildlife（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:0161_Detroit_Lake_Swart_ODFW_%287461955882%29.jpg
+- `act-185.jpg`（划船/皮划艇/桨板）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:Boating_Trillium_Lake_Mt_Hood_NF_%2836294276906%29.jpg
+- `act-186.jpg`（划船/皮划艇/独木舟/水上摩托）— HappinessWithout（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Man_kayaking_on_a_lake.jpg
+- `act-188.jpg`（加热泳池）— Andie712b（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:French_Lick_Resort_Casino_2009_-_Outdoor_pool.jpg
+- `act-189.jpg`（历史博物馆）— Rick Obst（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Heirloom_garden_and_visitors_center_at_Champoeg_State_Heritage_Area.jpg
+- `act-190.jpg`（历史大炮和炮台）— Articseahorse（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Fort_Casey_2.jpg
+- `act-191.jpg`（历史炮台探索）— Photo by Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Fort_Flagler_-_Battery_Wansboro_01.jpg
+- `act-192.jpg`（参观刘易斯和克拉克国家历史公园）— Kingofthedead（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:2018-01-14_Fort_Clatsop_-08.jpg
+- `act-193.jpg`（反射湖景点）— Vulturesong（CC0）— https://commons.wikimedia.org/wiki/File:Mount_Rainier_-_HCP_-_October_17%2C_2022_-_045_-_Reflection_Lake.jpg
+- `act-194.jpg`（古木步道）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Millersylvania_State_Park_02.jpg
+- `act-195.jpg`（哥伦比亚河游泳）— David Falconer（Public domain）— https://commons.wikimedia.org/wiki/File:SWIMMING_IS_GOOD_AT_THE_CONFLUENCE_OF_THE_WILLAMETTE_AND_COLUMBIA_RIVERS_-_NARA_-_548113.jpg
+- `act-196.jpg`（天堂徒步）— Joe Mabel.（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Mount_Rainier_-_Paradise_Meadow_in_July_01.jpg
+- `act-197.jpg`（家庭游泳）— NPS photo（Public domain）— https://commons.wikimedia.org/wiki/File:Children_from_nearby_communities_and_campgrounds_enjoy_swimming_in_a_cove_on_Lake_Roosevelt_at_Clover_Leaf_Beach%2C_taken_by_%28be54acdb-d9c0-4124-86ab-58f1a308051f%29.jpg
+- `act-198.jpg`（山地自行车）— mypubliclands（Public domain）— https://commons.wikimedia.org/wiki/File:Mountain_of_the_Rogue_Trail_System_in_Oregon_%2820318218984%29.jpg
+- `act-199.jpg`（度假村泳池和热水浴缸）— kevint3141 from Kitchener, Canada（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Activities_%285297579375%29.jpg
+- `act-200.jpg`（徒步前往Mt. Hood方向）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:20210715-FS-Mt_Hood-_Above_Timberline_Lodge_near_Pacific_Crest_Trail_trail_access.jpg
+- `act-201.jpg`（悬崖步道）— NorthwestNative（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:View_from_the_bluff_at_Ebey%E2%80%99s_Landing_National_Historic_Reserve.jpg
+- `act-202.jpg`（悬崖跳水和游泳）— Martin Cathrae（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Leap%21.jpg
+- `act-203.jpg`（挖蛤蜊）— Gene Daniels（Public domain）— https://commons.wikimedia.org/wiki/File:A_RESIDENT_OF_THE_QUINAULT_INDIAN_RESERVATION_DIGS_FOR_RAZOR_CLAMS_ON_QUINAULT_BEACH._THE_CLAMS_ARE_SOLD_COMMERCIALLY..._-_NARA_-_545080.jpg
+- `act-204.jpg`（放风筝）— M&A（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Child_flying_a_kite_on_the_beach_at_sunset.jpg
+- `act-205.jpg`（散步/徒步）— Steven Pavlov（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:2023-05-20%2C_Bridal_Veil_Falls_Trail_%28Snohomish_County%2C_Washington%29%2C_004.jpg
+- `act-206.jpg`（日落观赏）— USFWS Pacific（Public domain）— https://commons.wikimedia.org/wiki/File:Rialto_Beach_sunset_%2853676352325%29.jpg
+- `act-207.jpg`（桥景徒步（Deception Pass Bridge））— Joe Mabel（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Deception_Pass_Bridge%2C_looking_south_on_east_walkway_of_south_span_01.jpg
+- `act-208.jpg`（森林巨木探索）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:Opal_Creek_Old_Growth_with_Young_Trees%2C_Willamette_National_Forest_%2823934629855%29.jpg
+- `act-209.jpg`（森林步道）— NPS Photo（Public domain）— https://commons.wikimedia.org/wiki/File:Boardwalk_on_Rain_Forest_Nature_Trail_%2857f57280-35a8-4750-88a2-3d7651d441b3%29.JPG
+- `act-210.jpg`（森林步道漫步）— Avolphoto（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:A_walking_path_in_pine_forest_taken_during_sprint.jpg
+- `act-211.jpg`（步道徒步）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:Hiking_Timberline_Trail%2C_Pacific_Crest_Trail%2C_Mt_Hood_National_Forest_%2836169868832%29.jpg
+- `act-212.jpg`（水上滑梯）— Colleen Pence from San Antonio, TX, USA（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Aquatica_San_Antonio_water_slide_splash_pool.jpg
+- `act-213.jpg`（沙丘滑沙）— Diego Delso（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Sandboarding_en_el_valle_de_la_Muerte%2C_Chile%2C_2016-02-05%2C_DD_29.JPG
+- `act-214.jpg`（沙丘越野车）— Gene Daniels（Public domain）— https://commons.wikimedia.org/wiki/File:DUNE_BUGGY_IN_NATIONAL_RECREATION_PARK._GRASS_HAS_BEEN_PLANTED_TO_STABILIZE_THE_DUNES_-_NARA_-_545098.jpg
+- `act-215.jpg`（沙滩和岛屿）— Anastacia12182（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Saltcreekseastack.JPG
+- `act-216.jpg`（沙滩城堡）— nick hoke（CC BY 3.0）— https://commons.wikimedia.org/wiki/File:Beach_Sandcastle_-_panoramio.jpg
+- `act-218.jpg`（海滩探索）— Photo by Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Fort_Flagler_-_looking_south_from_beach_01.jpg
+- `act-219.jpg`（海滩放风筝）— Gareth James（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Kite-flying_on_Ogmore-by-Sea_beach_%28geograph_3260676%29.jpg
+- `act-220.jpg`（海滩步行）— Jeff Buck（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:A_stroll_on_the_Beach_-_geograph.org.uk_-_6322295.jpg
+- `act-221.jpg`（海滩活动）— Hillebrand Steve, U.S. Fish and Wildlife Service（Public domain）— https://commons.wikimedia.org/wiki/File:People_enjoying_a_day_at_the_beach_and_playing_with_ball.jpg
+- `act-222.jpg`（海滩漫步）— RickObst（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Couple_walking_hand-in-hand_on_the_beach.jpg
+- `act-223.jpg`（海滩漫步与放松）— Maciej Serafinowicz maciejserafinowicz（CC0）— https://commons.wikimedia.org/wiki/File:Women_Sunbathing_on_Beach_%28Unsplash%29.jpg
+- `act-224.jpg`（海滩玩沙）— Barelyhere（CC0）— https://commons.wikimedia.org/wiki/File:Children_playing_at_the_beach.JPG
+- `act-225.jpg`（海滩骑马）— Mike Baird（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Two_equestrian_riders%2C_girls_on_horseback%2C_in_low_tide_reflections_on_serene_Morro_Strand_State_Beach.jpg
+- `act-226.jpg`（海狮观赏）— Rhododendrites（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:California_sea_lion_in_La_Jolla_%2870568%29.jpg
+- `act-227.jpg`（温泉步道 (Hot Springs Trail)）— NPS Photo（Public domain）— https://commons.wikimedia.org/wiki/File:The_Ohanapecosh_Hot_Springs_trail_takes_you_by_several_hot_springs_in_the_southeast_area_of_Mount_Rainier_National_Park_%280d31da57-bb10-459e-93f5-ace9c478f155%29.JPEG
+- `act-228.jpg`（游乐场）— Asturio Cantabrio（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Fukiage_Park_Fujisan_Suberidai_ac_%281%29.jpg
+- `act-229.jpg`（游乐场玩耍）— Nwaeke Daniel (Danzisky)（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:School_children_happily_playing_in_playground.jpg
+- `act-230.jpg`（游泳池）— Bernard Gagnon（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Swimming_pool_at_Hotel_Terra_Barichara.jpg
+- `act-231.jpg`（游览Leavenworth后散步）— Roc0ast3r（CC0）— https://commons.wikimedia.org/wiki/File:Main_street_in_Leavenworth%2C_Washington_%282023-06-18%29.jpg
+- `act-232.jpg`（湖上活动）— Olympic National Park（Public domain）— https://commons.wikimedia.org/wiki/File:Lake_crescent_canoe_paddling_calm_cbubar_2015_(24055925389).jpg
+- `act-233.jpg`（湖区活动）— vastateparksstaff（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Lifeguard_and_family_swimming_at_beach_at_Douthat_State_Park_lake_%2828251889295%29.jpg
+- `act-234.jpg`（湖岸环线步道）— Bill Reynolds（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Trillium_Lake_Oregon_%2837520351656%29.jpg
+- `act-235.jpg`（湖边游泳）— IvanStojmirov（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Swimers_at_a_beach_on_Lake_Ohrid.jpg
+- `act-236.jpg`（湖边野餐/涉水）— Bob Collowan（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Diablo_Lake_%28Washington_State%29.jpg
+- `act-237.jpg`（溪流步道）— Famartin（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:2013-05-12_15_09_39_Stream_along_the_MacEvoy_Trail_in_Ramapo_Mountain_State_Forest_in_New_Jersey.jpg
+- `act-238.jpg`（滑翔伞观赏）— Medium69 (William Crochot)（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Parapente_-_151.jpg
+- `act-239.jpg`（漂流木探索）— Michal Klajban（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Driftwood_on_the_beach_north_of_Kaikoura%2C_Canterbury%2C_New_Zealand_02.jpg
+- `act-240.jpg`（潮池探索）— The Cosmonaut（CC BY-SA 2.5 ca）— https://commons.wikimedia.org/wiki/File:Tide_pool_-_Cape_Enrage.jpg
+- `act-241.jpg`（潮池生物观察）— Brocken Inaglory（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Sea_anemone_and_starfished_in_tide_pool.jpg
+- `act-242.jpg`（潮间带探索）— JOHN LLOYD（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Tide_Pool_%282622155259%29.jpg
+- `act-243.jpg`（瀑布步道）— Niall Kearney（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:The_Clamp_Hole_waterfall_on_the_River_Barrow%2C_Glenbarrow_trail._10.jpg
+- `act-244.jpg`（炮台地堡探索）— Washington Our Home（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Battery_Kinzie_at_Fort_Worden.jpg
+- `act-245.jpg`（独木舟/皮划艇）— NPS/Jim Peaco（Public domain）— https://commons.wikimedia.org/wiki/File:Canoes_beached_along_shore_of_Southeast_Arm_of_Yellowstone_Lake_at_campsite_6A1_%28a0a2512a-7cab-4b4c-8d6b-47f55daa221e%29.jpg
+- `act-246.jpg`（独木舟/皮划艇租赁）— Damian Gadal（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Kayak_Rental_%284502724280%29.jpg
+- `act-247.jpg`（环岛自行车道）— Calum Rogers（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Cyclists_riding_on_the_Red_Squirrel_Trail%2C_travelling_west_-_geograph.org.uk_-_7032310.jpg
+- `act-248.jpg`（皮划艇/SUP）— Ruth Hartnup（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Stand-up_paddleboarder_on_Alpha_Lake_%2841094874160%29.jpg
+- `act-249.jpg`（看大桥上的船只通过）— PinchyCC（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Looking_east_from_the_Deception_Pass_Bridge_as_a_boat_drives_by.jpg
+- `act-250.jpg`（码头步道）— Roger Cornfoot（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:Boardwalk%2C_Southend_pier_-_geograph.org.uk_-_2472051.jpg
+- `act-251.jpg`（碟片高尔夫）— Steve Ganz（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Disc_golfer_and_basket.jpg
+- `act-252.jpg`（租船游湖）— Lyntha Scott Eiler（Public domain）— https://commons.wikimedia.org/wiki/File:MOTORBOATING_ON_LAKE_POWELL_-_NARA_-_544142.jpg
+- `act-253.jpg`（自行车道）— Green Lane Project credit Adam Coppola Photography（Public domain）— https://commons.wikimedia.org/wiki/File:Rail-and-trail_paved_path_seattle_longtail_cargo_bike_family.jpg
+- `act-254.jpg`（自行车道网络）— U.S. Forest Service- Pacific Northwest Region（Public domain）— https://commons.wikimedia.org/wiki/File:Mountain_biking_forest_road_Mt_Hood_National_Forest_%2836376814113%29.jpg
+- `act-255.jpg`（自行车道骑行）— Joe Mabel（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Sammamish_River_Trail_-_cyclist_near_SR_202_-_SR_522_interchange.jpg
+- `act-256.jpg`（营地活动）— Forest Service - Northern Region（Public domain）— https://commons.wikimedia.org/wiki/File:A_tent%2C_bear_food_box_and_campfire_ring_in_a_campsite_3W6A3665_%2853056105180%29.jpg
+- `act-257.jpg`（蛤蜊挖掘）— Invertzoo（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Clam_digging%2C_Cape_Cod.JPG
+- `act-258.jpg`（观察野生动物）— Giles Laurent（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:014_Wild_Red_Deer_Switzerland_Photo_by_Giles_Laurent.jpg
+- `act-259.jpg`（观星）— Benh LIEU SONG (Flickr)（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Gazing_at_the_Milky_Way_Morvan_2019-08-31.jpg
+- `act-260.jpg`（观看烟花）— Jalfyn Benging（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Colourful_Fireworks_Expanding_Across_the_Night_Sky.jpg
+- `act-261.jpg`（观赏大坝）— Steven Pavlov（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Alder_Dam_%282020-02-29%29%2C_01.jpg
+- `act-262.jpg`（观鲸）— Mike Baird（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Orca%2C_Killer_Whale%2C_breaching_-_Morro_Bay%2C_CA_May_8%2C_2014_Orcinus_orca.jpg
+- `act-263.jpg`（观鲸（灰鲸迁徙））— Omar David Sandoval Sida（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Eschrichtius_robustus_mother_and_calf_in_Puerto_Chale%2C_Baja_California_Sur%2C_Mexico.jpg
+- `act-264.jpg`（观鸟）— Jackson Elizabeth, U.S. Fish and Wildlife Service（Public domain）— https://commons.wikimedia.org/wiki/File:Birdwatchers_taking_a_closer_look_through_their_binoculars.jpg
+- `act-265.jpg`（观鸟（Brant鹅））— Needsmoreritalin（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Atlantic_Brant_Fly-By_Wiki.png
+- `act-266.jpg`（访问Tumalo镇）— Kingofthedead（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:2017-07-12_Tumalo_03.jpg
+- `act-267.jpg`（购物）— Mattsjc（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Olympia_Farmers_Market_01.jpg
+- `act-268.jpg`（蹦蹦枕）— Phil Whitehouse（CC BY 2.0）— https://commons.wikimedia.org/wiki/File:Jumping_Pillow_%283099052199%29.jpg
+- `act-269.jpg`（迷你高尔夫）— David Dugan（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:15-21-202%2C_miniature_golf_-_panoramio.jpg
+- `act-270.jpg`（迷你高尔夫/Go-Kart）— Jaireeodell（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Go-kart_course.jpg
+- `act-271.jpg`（退潮沙滩探索）— Jebulon（CC0）— https://commons.wikimedia.org/wiki/File:Beach_Arromanches_Calvados_low_tide.jpg
+- `act-272.jpg`（逛老本德(Old Bend)）— UpdateNerd（CC0）— https://commons.wikimedia.org/wiki/File:Downtown_Bend_-_view_of_Pilot_Butte.jpg
+- `act-273.jpg`（野花草甸观赏）— Rosser1954（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:The_Wildflower_Meadow%2C_Gibson_Street%2C_Glasgow_University%2C_Scotland.jpg
+- `act-274.jpg`（野餐）— John Lucas（CC BY-SA 2.0）— https://commons.wikimedia.org/wiki/File:A_family_picnic_at_Lepe_-_geograph.org.uk_-_7599986.jpg
+- `act-275.jpg`（野餐和草地游戏）— Artaxerxes（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Cornhole_players_Main_Street_downtown_St._Johnsbury_VT_June_2019.jpg
+- `act-276.jpg`（钓鱼）— Vanja Kovac（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Enjoying_fishing_at_sunrise.jpg
+- `act-277.jpg`（钓鱼码头）— Olga Ernst（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Fishing_Pier%2C_Jacksonville_Beach_%28Florida%29.jpg
+- `act-278.jpg`（雨林步道）— NPS Photo（Public domain）— https://commons.wikimedia.org/wiki/File:Carbon_River_Rainforest_Nature_Trail_Waysides_%2870bd8018-453b-492f-a116-915b95423245%29.JPG
+- `act-279.jpg`（顺道游览雷尼尔山）— Bob Collowan（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Mount_Rainier_behind_the_flowering_meadows_of_Paradise_Park_%2818_August_2012%29.jpg
+- `act-280.jpg`（飞盘高尔夫）— kallerna（CC BY-SA 3.0）— https://commons.wikimedia.org/wiki/File:Disc_golf_Yyteri.jpg
+- `act-281.jpg`（餐厅和超市）— MatthewHoobin（CC0）— https://commons.wikimedia.org/wiki/File:Produce_section_in_Lotte_Plaza_Market%2C_Tampa%2C_Florida%2C_on_15_January_2025_%2801%29.jpg
+- `act-282.jpg`（驾车前往Sunrise和Paradise）— Caleb Riston（CC0）— https://commons.wikimedia.org/wiki/File:Rainier20200906.jpg
+- `act-283.jpg`（骑行去沉船遗址）— Rick Obst（CC BY 4.0）— https://commons.wikimedia.org/wiki/File:Bow_of_the_Peter_Iredale_shipwreck_in_Fort_Stevens_State_Park.jpg
+- `act-284.jpg`（骑行步道）— Mtn-graphic（CC BY-SA 4.0）— https://commons.wikimedia.org/wiki/File:Two_riders_on_the_Kal-Haven_Trail_facing_east.jpg
