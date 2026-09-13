@@ -1,9 +1,9 @@
 import { useAuth } from "@/_core/hooks/useAuth";
-import { trpc } from "@/lib/trpc";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { supabase, supabaseConfigured } from "@/lib/supabase";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 export interface VisitedEntry {
-  id?: number; // DB id, undefined for localStorage entries
+  id?: number | string; // DB id, undefined for localStorage entries
   campgroundId: number;
   startDate: string;
   endDate?: string | null;
@@ -11,224 +11,61 @@ export interface VisitedEntry {
   notes?: string | null;
 }
 
-/**
- * Hook that manages visited records.
- * - Logged-in users: data stored in database, syncs across devices
- * - Not logged in: falls back to localStorage
- */
-export function useVisited() {
-  const { user, isAuthenticated, loading: authLoading } = useAuth();
+const VISITED_PREFIX = "camp_visited_";
+const VISITED_GLOBAL = "camp_visited_global";
+const MIGRATED_KEY = "supabase_visited_migrated";
 
-  // DB-backed data for logged-in users
-  const dbQuery = trpc.visited.list.useQuery(undefined, {
-    enabled: isAuthenticated,
-    refetchOnWindowFocus: true,
-  });
-
-  const addMutation = trpc.visited.add.useMutation({
-    onSuccess: () => dbQuery.refetch(),
-  });
-  const deleteMutation = trpc.visited.delete.useMutation({
-    onSuccess: () => dbQuery.refetch(),
-  });
-
-  const bulkImportMutation = trpc.visited.bulkImport.useMutation({
-    onSuccess: () => dbQuery.refetch(),
-  });
-
-  // Auto-migrate localStorage visited data to DB on first login
-  useEffect(() => {
-    if (!isAuthenticated) return;
-    if (dbQuery.isLoading) return;
-
-    const MIGRATED_KEY = "camp_visited_migrated";
-    if (localStorage.getItem(MIGRATED_KEY)) return;
-
-    // Collect all localStorage visited entries
-    const entries: { campgroundId: number; startDate: string; endDate?: string | null; sites: string; notes?: string | null }[] = [];
-    for (let i = 0; i < localStorage.length; i++) {
-      const key = localStorage.key(i);
-      if (key && key.startsWith("camp_visited_") && key !== "camp_visited_global") {
-        const campId = parseInt(key.replace("camp_visited_", ""), 10);
-        if (isNaN(campId)) continue;
-        try {
-          const stored = JSON.parse(localStorage.getItem(key) || "[]");
-          for (const entry of stored) {
-            entries.push({
-              campgroundId: campId,
-              startDate: entry.date || entry.startDate || "",
-              endDate: entry.endDate || null,
-              sites: entry.sites || "",
-              notes: entry.notes || null,
-            });
-          }
-        } catch {}
-      }
-    }
-
-    if (entries.length > 0) {
-      bulkImportMutation.mutate(
-        { records: entries },
-        {
-          onSuccess: () => {
-            localStorage.setItem(MIGRATED_KEY, "true");
-            // Clean up localStorage visited entries
-            const keysToRemove: string[] = [];
-            for (let i = 0; i < localStorage.length; i++) {
-              const key = localStorage.key(i);
-              if (key && (key.startsWith("camp_visited_") || key === "camp_visited_global")) {
-                keysToRemove.push(key);
-              }
-            }
-            keysToRemove.forEach(k => localStorage.removeItem(k));
-          },
-        }
-      );
-    } else {
-      localStorage.setItem(MIGRATED_KEY, "true");
-    }
-  }, [isAuthenticated, dbQuery.isLoading]);
-
-  // localStorage fallback for non-logged-in users
-  const [localVisits, setLocalVisits] = useState<VisitedEntry[]>([]);
-
-  useEffect(() => {
-    if (isAuthenticated) return;
-    // Load all localStorage visited entries
-    try {
-      const entries: VisitedEntry[] = [];
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (key && key.startsWith("camp_visited_") && key !== "camp_visited_global") {
-          const campId = parseInt(key.replace("camp_visited_", ""), 10);
-          if (isNaN(campId)) continue;
-          const stored = JSON.parse(localStorage.getItem(key) || "[]");
-          for (const entry of stored) {
-            entries.push({
-              campgroundId: campId,
-              startDate: entry.date,
-              endDate: entry.endDate || null,
-              sites: entry.sites || "",
-              notes: entry.notes || null,
-            });
-          }
-        }
-      }
-      setLocalVisits(entries);
-    } catch {}
-  }, [isAuthenticated]);
-
-  // Unified visits list
-  const visits: VisitedEntry[] = useMemo(() => {
-    if (isAuthenticated && dbQuery.data) {
-      return dbQuery.data.map((r) => ({
-        id: r.id,
-        campgroundId: r.campgroundId,
-        startDate: r.startDate,
-        endDate: r.endDate,
-        sites: r.sites,
-        notes: r.notes,
-      }));
-    }
-    return localVisits;
-  }, [isAuthenticated, dbQuery.data, localVisits]);
-
-  // Get visits for a specific campground
-  const getVisitsForCampground = useCallback(
-    (campgroundId: number) => {
-      return visits.filter((v) => v.campgroundId === campgroundId);
-    },
-    [visits]
-  );
-
-  // Add a visit
-  const addVisit = useCallback(
-    async (entry: Omit<VisitedEntry, "id">) => {
-      if (isAuthenticated) {
-        await addMutation.mutateAsync({
-          campgroundId: entry.campgroundId,
-          startDate: entry.startDate,
-          endDate: entry.endDate || undefined,
-          sites: entry.sites,
-          notes: entry.notes || undefined,
-        });
-      } else {
-        // localStorage fallback
-        const storageKey = `camp_visited_${entry.campgroundId}`;
-        const existing = JSON.parse(localStorage.getItem(storageKey) || "[]");
-        const newEntry = {
-          date: entry.startDate,
-          endDate: entry.endDate || undefined,
-          sites: entry.sites,
-          notes: entry.notes || "",
-        };
-        const updated = [newEntry, ...existing];
-        localStorage.setItem(storageKey, JSON.stringify(updated));
-        // Update global
-        updateLocalGlobal(entry.campgroundId, updated);
-        setLocalVisits((prev) => [{ ...entry }, ...prev]);
-      }
-    },
-    [isAuthenticated, addMutation]
-  );
-
-  // Delete a visit
-  const deleteVisit = useCallback(
-    async (entry: VisitedEntry, index?: number) => {
-      if (isAuthenticated && entry.id) {
-        await deleteMutation.mutateAsync({ id: entry.id });
-      } else {
-        // localStorage fallback
-        const storageKey = `camp_visited_${entry.campgroundId}`;
-        const existing = JSON.parse(localStorage.getItem(storageKey) || "[]");
-        if (index !== undefined) {
-          existing.splice(index, 1);
-        } else {
-          // Find by date match
-          const idx = existing.findIndex(
-            (e: any) => e.date === entry.startDate && e.sites === entry.sites
-          );
-          if (idx >= 0) existing.splice(idx, 1);
-        }
-        localStorage.setItem(storageKey, JSON.stringify(existing));
-        updateLocalGlobal(entry.campgroundId, existing);
-        setLocalVisits((prev) =>
-          prev.filter(
-            (v) =>
-              !(
-                v.campgroundId === entry.campgroundId &&
-                v.startDate === entry.startDate &&
-                v.sites === entry.sites
-              )
-          )
-        );
-      }
-    },
-    [isAuthenticated, deleteMutation]
-  );
-
-  const loading = authLoading || (isAuthenticated && dbQuery.isLoading);
-
-  return {
-    visits,
-    loading,
-    isAuthenticated,
-    getVisitsForCampground,
-    addVisit,
-    deleteVisit,
-    refetch: dbQuery.refetch,
-  };
+interface LocalVisitRaw {
+  date?: string;
+  startDate?: string;
+  endDate?: string | null;
+  sites?: string;
+  notes?: string | null;
 }
 
-function updateLocalGlobal(campgroundId: number, entries: any[]) {
+function readLocalEntries(): VisitedEntry[] {
+  const entries: VisitedEntry[] = [];
   try {
-    const globalKey = "camp_visited_global";
-    const global = JSON.parse(localStorage.getItem(globalKey) || "{}");
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key || !key.startsWith(VISITED_PREFIX) || key === VISITED_GLOBAL) continue;
+      const campId = parseInt(key.replace(VISITED_PREFIX, ""), 10);
+      if (isNaN(campId)) continue;
+      const stored = JSON.parse(localStorage.getItem(key) || "[]") as LocalVisitRaw[];
+      for (const entry of stored) {
+        entries.push({
+          campgroundId: campId,
+          startDate: entry.date || entry.startDate || "",
+          endDate: entry.endDate || null,
+          sites: entry.sites || "",
+          notes: entry.notes || null,
+        });
+      }
+    }
+  } catch {}
+  return entries;
+}
+
+function clearLocalEntries() {
+  try {
+    const keysToRemove: string[] = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && (key.startsWith(VISITED_PREFIX) || key === VISITED_GLOBAL)) {
+        keysToRemove.push(key);
+      }
+    }
+    keysToRemove.forEach((k) => localStorage.removeItem(k));
+  } catch {}
+}
+
+function updateLocalGlobal(campgroundId: number, entries: LocalVisitRaw[]) {
+  try {
+    const global = JSON.parse(localStorage.getItem(VISITED_GLOBAL) || "{}");
     if (entries.length > 0) {
       const last = entries[0];
-      const dateDisplay = last.endDate
-        ? `${last.date} ~ ${last.endDate}`
-        : last.date;
+      const date = last.date || last.startDate || "";
+      const dateDisplay = last.endDate ? `${date} ~ ${last.endDate}` : date;
       global[campgroundId] = {
         count: entries.length,
         lastVisit: dateDisplay,
@@ -237,6 +74,188 @@ function updateLocalGlobal(campgroundId: number, entries: any[]) {
     } else {
       delete global[campgroundId];
     }
-    localStorage.setItem(globalKey, JSON.stringify(global));
+    localStorage.setItem(VISITED_GLOBAL, JSON.stringify(global));
   } catch {}
+}
+
+/**
+ * Visited records ("去过打卡").
+ * - Logged in (Supabase configured): stored in the visited_records table, syncs across devices.
+ * - Not logged in: falls back to localStorage.
+ */
+export function useVisited() {
+  const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const [cloudVisits, setCloudVisits] = useState<VisitedEntry[]>([]);
+  const [localVisits, setLocalVisits] = useState<VisitedEntry[]>([]);
+  const [loading, setLoading] = useState(true);
+  const migratingRef = useRef(false);
+
+  const cloudEnabled = supabaseConfigured && !!supabase && isAuthenticated && !!user;
+
+  const loadCloud = useCallback(async () => {
+    if (!supabase || !user) return;
+    const { data, error } = await supabase
+      .from("visited_records")
+      .select("id, campground_id, start_date, end_date, sites, notes")
+      .order("start_date", { ascending: false });
+    if (error) {
+      console.warn("加载去过记录失败", error.message);
+      return;
+    }
+    setCloudVisits(
+      (data || []).map((r: any) => ({
+        id: r.id,
+        campgroundId: r.campground_id,
+        startDate: r.start_date,
+        endDate: r.end_date,
+        sites: r.sites || "",
+        notes: r.notes,
+      }))
+    );
+  }, [user]);
+
+  // Initial load: local always; cloud when logged in (plus one-time migration)
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      setLoading(true);
+      setLocalVisits(readLocalEntries());
+      if (cloudEnabled && supabase && user && !migratingRef.current) {
+        migratingRef.current = true;
+        try {
+          if (!localStorage.getItem(MIGRATED_KEY)) {
+            const local = readLocalEntries().filter((e) => e.startDate);
+            if (local.length > 0) {
+              const rows = local.map((e) => ({
+                user_id: user.id,
+                campground_id: e.campgroundId,
+                start_date: e.startDate,
+                end_date: e.endDate || null,
+                sites: e.sites || "",
+                notes: e.notes || null,
+              }));
+              const { error } = await supabase
+                .from("visited_records")
+                .upsert(rows, { onConflict: "user_id,campground_id,start_date,sites" });
+              if (!error) {
+                localStorage.setItem(MIGRATED_KEY, "true");
+                clearLocalEntries();
+                if (!cancelled) setLocalVisits([]);
+              } else {
+                console.warn("去过记录迁移失败", error.message);
+              }
+            } else {
+              localStorage.setItem(MIGRATED_KEY, "true");
+            }
+          }
+          if (!cancelled) await loadCloud();
+        } finally {
+          migratingRef.current = false;
+        }
+      }
+      if (!cancelled) setLoading(false);
+    })();
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cloudEnabled]);
+
+  const visits: VisitedEntry[] = useMemo(
+    () => (cloudEnabled ? cloudVisits : localVisits),
+    [cloudEnabled, cloudVisits, localVisits]
+  );
+
+  const getVisitsForCampground = useCallback(
+    (campgroundId: number) => visits.filter((v) => v.campgroundId === campgroundId),
+    [visits]
+  );
+
+  const addVisit = useCallback(
+    async (entry: Omit<VisitedEntry, "id">) => {
+      if (cloudEnabled && supabase && user) {
+        const { error } = await supabase.from("visited_records").insert({
+          user_id: user.id,
+          campground_id: entry.campgroundId,
+          start_date: entry.startDate,
+          end_date: entry.endDate || null,
+          sites: entry.sites || "",
+          notes: entry.notes || null,
+        });
+        if (error) throw new Error(error.message);
+        await loadCloud();
+        return;
+      }
+      // localStorage fallback
+      const storageKey = `${VISITED_PREFIX}${entry.campgroundId}`;
+      const existing = JSON.parse(localStorage.getItem(storageKey) || "[]") as LocalVisitRaw[];
+      const newEntry: LocalVisitRaw = {
+        date: entry.startDate,
+        endDate: entry.endDate || undefined,
+        sites: entry.sites,
+        notes: entry.notes || "",
+      };
+      const updated = [newEntry, ...existing];
+      localStorage.setItem(storageKey, JSON.stringify(updated));
+      updateLocalGlobal(entry.campgroundId, updated);
+      setLocalVisits((prev) => [{ ...entry }, ...prev]);
+    },
+    [cloudEnabled, user, loadCloud]
+  );
+
+  const deleteVisit = useCallback(
+    async (entry: VisitedEntry, index?: number) => {
+      if (cloudEnabled && supabase && entry.id !== undefined) {
+        const { error } = await supabase
+          .from("visited_records")
+          .delete()
+          .eq("id", entry.id);
+        if (error) throw new Error(error.message);
+        await loadCloud();
+        return;
+      }
+      // localStorage fallback
+      const storageKey = `${VISITED_PREFIX}${entry.campgroundId}`;
+      const existing = JSON.parse(localStorage.getItem(storageKey) || "[]") as LocalVisitRaw[];
+      if (index !== undefined) {
+        existing.splice(index, 1);
+      } else {
+        const idx = existing.findIndex(
+          (e) => (e.date || e.startDate) === entry.startDate && (e.sites || "") === entry.sites
+        );
+        if (idx >= 0) existing.splice(idx, 1);
+      }
+      localStorage.setItem(storageKey, JSON.stringify(existing));
+      updateLocalGlobal(entry.campgroundId, existing);
+      setLocalVisits((prev) =>
+        prev.filter(
+          (v) =>
+            !(
+              v.campgroundId === entry.campgroundId &&
+              v.startDate === entry.startDate &&
+              v.sites === entry.sites
+            )
+        )
+      );
+    },
+    [cloudEnabled, loadCloud]
+  );
+
+  const refetch = useCallback(async () => {
+    if (cloudEnabled) {
+      await loadCloud();
+    } else {
+      setLocalVisits(readLocalEntries());
+    }
+  }, [cloudEnabled, loadCloud]);
+
+  return {
+    visits,
+    loading: authLoading || loading,
+    isAuthenticated,
+    getVisitsForCampground,
+    addVisit,
+    deleteVisit,
+    refetch,
+  };
 }

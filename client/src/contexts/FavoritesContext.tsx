@@ -1,6 +1,6 @@
-import { createContext, useContext, useState, useEffect, useCallback, useMemo, type ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, useCallback, useMemo, useRef, type ReactNode } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
-import { trpc } from "@/lib/trpc";
+import { supabase, supabaseConfigured } from "@/lib/supabase";
 
 interface FavoritesContextType {
   favorites: number[];
@@ -18,7 +18,7 @@ const FavoritesContext = createContext<FavoritesContextType | null>(null);
 
 const FAVORITES_KEY = "camping-guide-favorites";
 const COMPARE_KEY = "camping-guide-compare";
-const MIGRATED_KEY = "camping-guide-favorites-migrated";
+const MIGRATED_KEY = "supabase_favorites_migrated";
 
 function loadFromStorage(key: string): number[] {
   try {
@@ -30,58 +30,76 @@ function loadFromStorage(key: string): number[] {
 }
 
 export function FavoritesProvider({ children }: { children: ReactNode }) {
-  const { isAuthenticated, loading: authLoading } = useAuth();
+  const { user, isAuthenticated, loading: authLoading } = useAuth();
   const [compareList, setCompareList] = useState<number[]>(() => loadFromStorage(COMPARE_KEY));
   const [localFavorites, setLocalFavorites] = useState<number[]>(() => loadFromStorage(FAVORITES_KEY));
+  const [cloudFavorites, setCloudFavorites] = useState<number[]>([]);
+  const [cloudLoading, setCloudLoading] = useState(false);
+  const migratingRef = useRef(false);
 
-  // DB query for favorites (only when authenticated)
-  const dbQuery = trpc.favorites.list.useQuery(undefined, {
-    enabled: isAuthenticated,
-    retry: false,
-    refetchOnWindowFocus: false,
-  });
+  const cloudEnabled = supabaseConfigured && !!supabase && isAuthenticated && !!user;
 
-  const toggleMutation = trpc.favorites.toggle.useMutation({
-    onSuccess: () => dbQuery.refetch(),
-  });
-
-  const bulkImportMutation = trpc.favorites.bulkImport.useMutation({
-    onSuccess: () => dbQuery.refetch(),
-  });
-
-  // Auto-migrate localStorage favorites to DB on first login
-  useEffect(() => {
-    if (!isAuthenticated) return;
-    if (dbQuery.isLoading) return;
-    
-    const alreadyMigrated = localStorage.getItem(MIGRATED_KEY);
-    if (alreadyMigrated) return;
-
-    const localFavs = loadFromStorage(FAVORITES_KEY);
-    if (localFavs.length > 0) {
-      bulkImportMutation.mutate(
-        { campgroundIds: localFavs },
-        {
-          onSuccess: () => {
-            localStorage.setItem(MIGRATED_KEY, "true");
-            // Clear localStorage favorites after successful migration
-            localStorage.removeItem(FAVORITES_KEY);
-            setLocalFavorites([]);
-          },
-        }
-      );
-    } else {
-      localStorage.setItem(MIGRATED_KEY, "true");
+  const loadCloud = useCallback(async () => {
+    if (!supabase || !user) return;
+    setCloudLoading(true);
+    try {
+      const { data, error } = await supabase
+        .from("favorites")
+        .select("campground_id");
+      if (error) {
+        console.warn("加载收藏失败", error.message);
+        return;
+      }
+      setCloudFavorites((data || []).map((r: any) => r.campground_id as number));
+    } finally {
+      setCloudLoading(false);
     }
-  }, [isAuthenticated, dbQuery.isLoading]);
+  }, [user]);
+
+  // Initial load + one-time migration of localStorage favorites
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      if (!cloudEnabled || !supabase || !user || migratingRef.current) return;
+      migratingRef.current = true;
+      try {
+        if (!localStorage.getItem(MIGRATED_KEY)) {
+          const localFavs = loadFromStorage(FAVORITES_KEY);
+          if (localFavs.length > 0) {
+            const rows = localFavs.map((campgroundId) => ({
+              user_id: user.id,
+              campground_id: campgroundId,
+            }));
+            const { error } = await supabase
+              .from("favorites")
+              .upsert(rows, { onConflict: "user_id,campground_id" });
+            if (!error) {
+              localStorage.setItem(MIGRATED_KEY, "true");
+              localStorage.removeItem(FAVORITES_KEY);
+              if (!cancelled) setLocalFavorites([]);
+            } else {
+              console.warn("收藏迁移失败", error.message);
+            }
+          } else {
+            localStorage.setItem(MIGRATED_KEY, "true");
+          }
+        }
+        if (!cancelled) await loadCloud();
+      } finally {
+        migratingRef.current = false;
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cloudEnabled]);
 
   // Unified favorites list
   const favorites = useMemo(() => {
-    if (isAuthenticated && dbQuery.data) {
-      return dbQuery.data;
-    }
+    if (cloudEnabled) return cloudFavorites;
     return localFavorites;
-  }, [isAuthenticated, dbQuery.data, localFavorites]);
+  }, [cloudEnabled, cloudFavorites, localFavorites]);
 
   // Persist compare list to localStorage
   useEffect(() => {
@@ -90,22 +108,44 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
 
   // Persist local favorites to localStorage (only when not authenticated)
   useEffect(() => {
-    if (!isAuthenticated) {
+    if (!cloudEnabled) {
       localStorage.setItem(FAVORITES_KEY, JSON.stringify(localFavorites));
     }
-  }, [localFavorites, isAuthenticated]);
+  }, [localFavorites, cloudEnabled]);
 
   const toggleFavorite = useCallback(
     (id: number) => {
-      if (isAuthenticated) {
-        toggleMutation.mutate({ campgroundId: id });
+      if (cloudEnabled && supabase && user) {
+        (async () => {
+          if (cloudFavorites.includes(id)) {
+            const { error } = await supabase
+              .from("favorites")
+              .delete()
+              .eq("user_id", user.id)
+              .eq("campground_id", id);
+            if (error) {
+              console.warn("取消收藏失败", error.message);
+              return;
+            }
+            setCloudFavorites((prev) => prev.filter((x) => x !== id));
+          } else {
+            const { error } = await supabase
+              .from("favorites")
+              .upsert({ user_id: user.id, campground_id: id }, { onConflict: "user_id,campground_id" });
+            if (error) {
+              console.warn("收藏失败", error.message);
+              return;
+            }
+            setCloudFavorites((prev) => (prev.includes(id) ? prev : [...prev, id]));
+          }
+        })();
       } else {
         setLocalFavorites((prev) =>
           prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
         );
       }
     },
-    [isAuthenticated, toggleMutation]
+    [cloudEnabled, user, cloudFavorites]
   );
 
   const isFavorite = useCallback(
@@ -132,7 +172,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
 
   const clearCompare = useCallback(() => setCompareList([]), []);
 
-  const loading = authLoading || (isAuthenticated && dbQuery.isLoading);
+  const loading = authLoading || (cloudEnabled && cloudLoading);
 
   return (
     <FavoritesContext.Provider

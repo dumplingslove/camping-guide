@@ -13,7 +13,9 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 import { InsightsPanel } from "@/components/InsightsPanel";
 import { SiteMapSection } from "@/components/SiteMapSection";
 import { ReviewTrendChart } from "@/components/ReviewTrendChart";
-import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle, Ban } from "lucide-react";
+import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle, Ban, Share2, Link2, Link2Off } from "lucide-react";
+import { toast } from "sonner";
+import { useCampNotes } from "@/hooks/useCampNotes";
 import { motion } from "framer-motion";
 
 function RatingStars({ rating, max = 5, size = 16 }: { rating: number; max?: number; size?: number }) {
@@ -310,37 +312,70 @@ function SeasonCalendar({ campId }: { campId: number }) {
   );
 }
 
-interface NoteEntry {
-  id: string;
-  text: string;
-  date: string;
-}
-
 function UserNotes({ campId, campName }: { campId: number; campName: string }) {
-  const storageKey = `camp_notes_${campId}`;
-  const [notes, setNotes] = useState<NoteEntry[]>([]);
+  const { notes, loading, isAuthenticated, addNote, deleteNote, shareNote, unshareNote, sharedMap, noteKeyOf, copyToClipboard } = useCampNotes(campId, campName);
   const [newNote, setNewNote] = useState("");
+  const [busyKey, setBusyKey] = useState<string | null>(null);
 
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem(storageKey);
-      if (stored) setNotes(JSON.parse(stored));
-    } catch {}
-  }, [storageKey]);
-
-  const saveNotes = (updated: NoteEntry[]) => {
-    setNotes(updated);
-    localStorage.setItem(storageKey, JSON.stringify(updated));
-  };
-
-  const addNote = () => {
+  const handleAdd = async () => {
     if (!newNote.trim()) return;
-    const entry: NoteEntry = { id: Date.now().toString(), text: newNote.trim(), date: new Date().toLocaleDateString("zh-CN") };
-    saveNotes([entry, ...notes]);
-    setNewNote("");
+    try {
+      await addNote(newNote);
+      setNewNote("");
+    } catch (e: any) {
+      toast.error(e?.message || "保存失败");
+    }
   };
 
-  const deleteNote = (id: string) => saveNotes(notes.filter((n) => n.id !== id));
+  const handleDelete = async (id: string | number) => {
+    try {
+      await deleteNote(id);
+    } catch (e: any) {
+      toast.error(e?.message || "删除失败");
+    }
+  };
+
+  const handleShare = async (note: { id: string | number; text: string; date: string }) => {
+    if (!isAuthenticated) {
+      toast.info("登录后才能分享笔记，分享链接会同步到云端");
+      return;
+    }
+    const key = noteKeyOf(note);
+    setBusyKey(key);
+    try {
+      await shareNote(note);
+      toast.success("分享链接已复制");
+    } catch (e: any) {
+      toast.error(e?.message || "分享失败");
+    } finally {
+      setBusyKey(null);
+    }
+  };
+
+  const handleCopyShared = async (note: { id: string | number; text: string; date: string }) => {
+    const key = noteKeyOf(note);
+    const token = sharedMap[key];
+    if (!token) return;
+    try {
+      await copyToClipboard(`${window.location.origin}${import.meta.env.BASE_URL}shared/${token}`);
+      toast.success("分享链接已复制");
+    } catch {
+      toast.error("复制失败");
+    }
+  };
+
+  const handleUnshare = async (note: { id: string | number; text: string; date: string }) => {
+    const key = noteKeyOf(note);
+    setBusyKey(key);
+    try {
+      await unshareNote(note);
+      toast.success("已取消分享");
+    } catch (e: any) {
+      toast.error(e?.message || "取消分享失败");
+    } finally {
+      setBusyKey(null);
+    }
+  };
 
   return (
     <div className="bg-white rounded-xl border border-border p-5">
@@ -348,33 +383,75 @@ function UserNotes({ campId, campName }: { campId: number; campName: string }) {
         <StickyNote size={18} className="text-sand" />
         家庭笔记
         <span className="text-sm font-normal text-muted-foreground">({notes.length}条)</span>
+        {!isAuthenticated && (
+          <span className="text-xs font-normal text-muted-foreground">· 仅保存在本机，登录后可云端同步</span>
+        )}
       </h2>
       <div className="flex gap-2 mb-4">
         <input
           type="text"
           value={newNote}
           onChange={(e) => setNewNote(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && addNote()}
+          onKeyDown={(e) => e.key === "Enter" && handleAdd()}
           placeholder="记录心得、下次要带的东西..."
           className="flex-1 px-3 py-2 rounded-lg border border-border text-sm focus:outline-none focus:ring-2 focus:ring-pine/30"
         />
-        <button onClick={addNote} className="px-4 py-3 sm:px-3 sm:py-2 bg-pine text-white rounded-lg text-sm hover:bg-pine-light transition-colors">
+        <button onClick={handleAdd} className="px-4 py-3 sm:px-3 sm:py-2 bg-pine text-white rounded-lg text-sm hover:bg-pine-light transition-colors">
           <Save size={14} />
         </button>
       </div>
-      {notes.length > 0 && (
+      {loading ? (
+        <p className="text-sm text-muted-foreground">加载中...</p>
+      ) : notes.length > 0 && (
         <div className="space-y-2 max-h-48 overflow-y-auto">
-          {notes.map((note) => (
-            <div key={note.id} className="flex items-start gap-2 p-2 rounded-lg bg-muted/50 text-sm">
-              <div className="flex-1">
-                <p>{note.text}</p>
-                <span className="text-[10px] text-muted-foreground">{note.date}</span>
+          {notes.map((note) => {
+            const key = noteKeyOf(note);
+            const token = sharedMap[key];
+            const busy = busyKey === key;
+            return (
+              <div key={key} className="flex items-start gap-2 p-2 rounded-lg bg-muted/50 text-sm">
+                <div className="flex-1">
+                  <p>{note.text}</p>
+                  <span className="text-[10px] text-muted-foreground">{note.date}</span>
+                  {token && (
+                    <span className="ml-2 text-[10px] text-lake">已分享</span>
+                  )}
+                </div>
+                {token ? (
+                  <>
+                    <button
+                      onClick={() => handleCopyShared(note)}
+                      disabled={busy}
+                      title="复制分享链接"
+                      className="flex items-center gap-1 text-[11px] text-lake hover:text-pine transition-colors disabled:opacity-50"
+                    >
+                      <Link2 size={12} />复制链接
+                    </button>
+                    <button
+                      onClick={() => handleUnshare(note)}
+                      disabled={busy}
+                      title="取消分享"
+                      className="text-muted-foreground hover:text-sunset transition-colors disabled:opacity-50"
+                    >
+                      <Link2Off size={12} />
+                    </button>
+                  </>
+                ) : (
+                  <button
+                    onClick={() => handleShare(note)}
+                    disabled={busy}
+                    title={isAuthenticated ? "生成分享链接" : "登录后分享"}
+                    className="text-muted-foreground hover:text-pine transition-colors disabled:opacity-50"
+                  >
+                    <Share2 size={12} />
+                  </button>
+                )}
+                <button onClick={() => handleDelete(note.id)} className="text-muted-foreground hover:text-sunset transition-colors">
+                  <Trash2 size={12} />
+                </button>
               </div>
-              <button onClick={() => deleteNote(note.id)} className="text-muted-foreground hover:text-sunset transition-colors">
-                <Trash2 size={12} />
-              </button>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>

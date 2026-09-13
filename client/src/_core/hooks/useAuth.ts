@@ -1,6 +1,6 @@
-import { trpc } from "@/lib/trpc";
-import { TRPCClientError } from "@trpc/client";
-import { useCallback, useEffect, useMemo } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import type { User, AuthError } from "@supabase/supabase-js";
+import { supabase, supabaseConfigured, appBaseUrl } from "@/lib/supabase";
 
 type UseAuthOptions = {
   redirectOnUnauthenticated?: boolean;
@@ -10,74 +10,79 @@ type UseAuthOptions = {
 export function useAuth(options?: UseAuthOptions) {
   const { redirectOnUnauthenticated = false, redirectPath = "/login" } =
     options ?? {};
-  const utils = trpc.useUtils();
 
-  const meQuery = trpc.auth.me.useQuery(undefined, {
-    retry: false,
-    refetchOnWindowFocus: false,
-  });
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<AuthError | null>(null);
 
-  const logoutMutation = trpc.auth.logout.useMutation({
-    onSuccess: () => {
-      utils.auth.me.setData(undefined, null);
-    },
-  });
+  useEffect(() => {
+    if (!supabaseConfigured || !supabase) {
+      setLoading(false);
+      return;
+    }
+    let mounted = true;
+    supabase.auth.getSession().then(({ data, error: err }) => {
+      if (!mounted) return;
+      if (err) setError(err);
+      setUser(data.session?.user ?? null);
+      setLoading(false);
+    });
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => {
+      mounted = false;
+      listener.subscription.unsubscribe();
+    };
+  }, []);
+
+  const sendMagicLink = useCallback(async (email: string): Promise<void> => {
+    if (!supabaseConfigured || !supabase) {
+      throw new Error("云同步尚未启用");
+    }
+    const { error: err } = await supabase.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: appBaseUrl() },
+    });
+    if (err) throw err;
+  }, []);
 
   const logout = useCallback(async () => {
-    try {
-      await logoutMutation.mutateAsync();
-    } catch (error: unknown) {
-      if (
-        error instanceof TRPCClientError &&
-        error.data?.code === "UNAUTHORIZED"
-      ) {
-        return;
-      }
-      throw error;
-    } finally {
-      utils.auth.me.setData(undefined, null);
-      await utils.auth.me.invalidate();
-    }
-  }, [logoutMutation, utils]);
+    if (!supabaseConfigured || !supabase) return;
+    await supabase.auth.signOut();
+    setUser(null);
+  }, []);
 
-  const state = useMemo(() => {
-    localStorage.setItem(
-      "manus-runtime-user-info",
-      JSON.stringify(meQuery.data)
-    );
-    return {
-      user: meQuery.data ?? null,
-      loading: meQuery.isLoading || logoutMutation.isPending,
-      error: meQuery.error ?? logoutMutation.error ?? null,
-      isAuthenticated: Boolean(meQuery.data),
-    };
-  }, [
-    meQuery.data,
-    meQuery.error,
-    meQuery.isLoading,
-    logoutMutation.error,
-    logoutMutation.isPending,
-  ]);
+  const refresh = useCallback(async () => {
+    if (!supabaseConfigured || !supabase) return;
+    const { data } = await supabase.auth.getSession();
+    setUser(data.session?.user ?? null);
+  }, []);
+
+  const state = useMemo(
+    () => ({
+      user,
+      loading,
+      error,
+      isAuthenticated: Boolean(user),
+    }),
+    [user, loading, error]
+  );
 
   useEffect(() => {
     if (!redirectOnUnauthenticated) return;
-    if (meQuery.isLoading || logoutMutation.isPending) return;
+    if (loading) return;
     if (state.user) return;
     if (typeof window === "undefined") return;
     if (window.location.pathname === redirectPath) return;
 
-    window.location.href = redirectPath
-  }, [
-    redirectOnUnauthenticated,
-    redirectPath,
-    logoutMutation.isPending,
-    meQuery.isLoading,
-    state.user,
-  ]);
+    window.location.href = redirectPath;
+  }, [redirectOnUnauthenticated, redirectPath, loading, state.user]);
 
   return {
     ...state,
-    refresh: () => meQuery.refetch(),
+    refresh,
     logout,
+    sendMagicLink,
   };
 }

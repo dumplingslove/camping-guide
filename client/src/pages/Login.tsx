@@ -1,45 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Lock, Mail, AlertCircle } from "lucide-react";
+import { Mail, AlertCircle, CheckCircle2, CloudOff } from "lucide-react";
+import { useAuth } from "@/_core/hooks/useAuth";
+import { supabaseConfigured } from "@/lib/supabase";
 
 export default function Login() {
   const [, setLocation] = useLocation();
+  const { isAuthenticated, loading: authLoading, sendMagicLink } = useAuth();
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
+
+  useEffect(() => {
+    if (!authLoading && isAuthenticated) {
+      setLocation("/");
+    }
+  }, [authLoading, isAuthenticated, setLocation]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
-    if (!email || !password) {
-      setError("请填写邮箱和密码");
+    if (!email.trim()) {
+      setError("请输入邮箱");
       return;
     }
-
     setLoading(true);
     try {
-      const resp = await fetch("/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify({ email, password }),
-      });
-
-      const data = await resp.json();
-
-      if (!resp.ok) {
-        setError(data.error || "登录失败");
-        return;
-      }
-
-      // Redirect to home after successful login
-      window.location.href = "/";
+      await sendMagicLink(email.trim());
+      setSent(true);
     } catch (err: any) {
-      setError("网络错误，请稍后重试");
+      setError(err?.message || "发送失败，请稍后重试");
     } finally {
       setLoading(false);
     }
@@ -60,71 +54,76 @@ export default function Login() {
               营地指南
             </span>
           </div>
-          <p className="text-sm text-muted-foreground">管理员登录</p>
+          <p className="text-sm text-muted-foreground">登录后云端同步笔记、打卡与收藏</p>
         </div>
 
-        {/* Login Form */}
-        <form
-          onSubmit={handleSubmit}
-          className="bg-white rounded-xl border border-border p-6 shadow-sm space-y-4"
-        >
-          {error && (
-            <div className="flex items-center gap-2 p-3 rounded-lg bg-red-50 text-red-700 text-sm">
-              <AlertCircle size={16} />
-              <span>{error}</span>
-            </div>
-          )}
-
-          <div className="space-y-2">
-            <Label htmlFor="email" className="text-sm font-medium">
-              邮箱
-            </Label>
-            <div className="relative">
-              <Mail
-                size={16}
-                className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
-              />
-              <Input
-                id="email"
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="pl-9"
-                autoComplete="email"
-              />
-            </div>
+        {!supabaseConfigured ? (
+          <div className="bg-white rounded-xl border border-border p-6 shadow-sm text-center">
+            <CloudOff size={28} className="mx-auto text-muted-foreground mb-3" />
+            <p className="font-medium">云同步尚未启用</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              你的笔记和打卡记录会保存在本机浏览器中，登录功能暂不可用。
+            </p>
           </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="password" className="text-sm font-medium">
-              密码
-            </Label>
-            <div className="relative">
-              <Lock
-                size={16}
-                className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
-              />
-              <Input
-                id="password"
-                type="password"
-                placeholder="••••••••"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="pl-9"
-                autoComplete="current-password"
-              />
-            </div>
+        ) : sent ? (
+          <div className="bg-white rounded-xl border border-border p-6 shadow-sm text-center">
+            <CheckCircle2 size={28} className="mx-auto text-emerald-500 mb-3" />
+            <p className="font-medium">已发送，请去邮箱点击登录链接</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              链接发往 {email}，点击后自动登录并回到本站。
+            </p>
+            <button
+              onClick={() => setSent(false)}
+              className="text-sm text-lake hover:text-pine transition-colors mt-4"
+            >
+              换个邮箱
+            </button>
           </div>
-
-          <Button
-            type="submit"
-            className="w-full bg-pine hover:bg-pine/90"
-            disabled={loading}
+        ) : (
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white rounded-xl border border-border p-6 shadow-sm space-y-4"
           >
-            {loading ? "登录中..." : "登录"}
-          </Button>
-        </form>
+            {error && (
+              <div className="flex items-center gap-2 p-3 rounded-lg bg-red-50 text-red-700 text-sm">
+                <AlertCircle size={16} />
+                <span>{error}</span>
+              </div>
+            )}
+
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-sm font-medium">
+                邮箱
+              </Label>
+              <div className="relative">
+                <Mail
+                  size={16}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+                />
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="your@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="pl-9"
+                  autoComplete="email"
+                />
+              </div>
+              <p className="text-xs text-muted-foreground">
+                无需密码，输入邮箱后我们会发一封登录链接给你。
+              </p>
+            </div>
+
+            <Button
+              type="submit"
+              className="w-full bg-pine hover:bg-pine/90"
+              disabled={loading}
+            >
+              {loading ? "发送中..." : "发送登录链接"}
+            </Button>
+          </form>
+        )}
 
         {/* Back to home */}
         <div className="text-center mt-4">

@@ -186,10 +186,10 @@ export default function Home() {
               <button
                 onClick={() => logout()}
                 className="flex items-center gap-1.5 px-2 sm:px-3 py-3 sm:py-1.5 rounded-lg text-sm text-muted-foreground hover:text-red-600 hover:bg-red-50 transition-colors"
-                title={user?.name || "用户"}
+                title={user?.email || "用户"}
               >
                 <span className="w-6 h-6 rounded-full bg-pine/10 flex items-center justify-center text-[10px] font-bold text-pine">
-                  {(user?.name || "U")[0]}
+                  {(user?.email || "U")[0]}
                 </span>
                 <span className="hidden sm:inline text-xs">注销</span>
               </button>

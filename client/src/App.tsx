@@ -14,6 +14,7 @@ import AdminReviews from "./pages/AdminReviews";
 import MapPage from "./pages/MapPage";
 import Stats from "./pages/Stats";
 import Login from "./pages/Login";
+import SharedNote from "./pages/SharedNote";
 function AppRouter() {
   // make sure to consider if you need authentication for certain routes
   // base="/camping-guide" because the site is served from the GitHub Pages project subpath
@@ -29,6 +30,7 @@ function AppRouter() {
       <Route path="/stats" component={Stats} />
       <Route path="/admin/reviews" component={AdminReviews} />
       <Route path="/login" component={Login} />
+      <Route path="/shared/:token" component={SharedNote} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
