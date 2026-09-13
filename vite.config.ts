@@ -153,6 +153,8 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
+  // Deployed to GitHub Pages project site: https://dumplingslove.github.io/camping-guide/
+  base: "/camping-guide/",
   plugins,
   resolve: {
     alias: {
