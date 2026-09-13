@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { User, AuthError } from "@supabase/supabase-js";
 import { supabase, supabaseConfigured, appBaseUrl } from "@/lib/supabase";
+import { upsertMyProfile } from "@/lib/profiles";
 
 type UseAuthOptions = {
   redirectOnUnauthenticated?: boolean;
@@ -24,11 +25,15 @@ export function useAuth(options?: UseAuthOptions) {
     supabase.auth.getSession().then(({ data, error: err }) => {
       if (!mounted) return;
       if (err) setError(err);
-      setUser(data.session?.user ?? null);
+      const u = data.session?.user ?? null;
+      setUser(u);
+      if (u && supabase) upsertMyProfile(supabase, u);
       setLoading(false);
     });
     const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
+      const u = session?.user ?? null;
+      setUser(u);
+      if (u && supabase) upsertMyProfile(supabase, u);
     });
     return () => {
       mounted = false;

@@ -413,11 +413,14 @@ function UserNotes({ campId, campName }: { campId: number; campName: string }) {
                 <div className="flex-1">
                   <p>{note.text}</p>
                   <span className="text-[10px] text-muted-foreground">{note.date}</span>
+                  {note.ownerName && (
+                    <span className="ml-2 text-[10px] font-mono text-lake bg-lake/10 px-1.5 py-0.5 rounded">{note.ownerName}</span>
+                  )}
                   {token && (
                     <span className="ml-2 text-[10px] text-lake">已分享</span>
                   )}
                 </div>
-                {token ? (
+                {note.isMine !== false && (token ? (
                   <>
                     <button
                       onClick={() => handleCopyShared(note)}
@@ -445,10 +448,12 @@ function UserNotes({ campId, campName }: { campId: number; campName: string }) {
                   >
                     <Share2 size={12} />
                   </button>
+                ))}
+                {note.isMine !== false && (
+                  <button onClick={() => handleDelete(note.id)} className="text-muted-foreground hover:text-sunset transition-colors">
+                    <Trash2 size={12} />
+                  </button>
                 )}
-                <button onClick={() => handleDelete(note.id)} className="text-muted-foreground hover:text-sunset transition-colors">
-                  <Trash2 size={12} />
-                </button>
               </div>
             );
           })}
@@ -522,12 +527,15 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
                     </span>
                   )}
                   {v.sites && <span className="text-xs font-mono bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded">Site: {v.sites}</span>}
+                  {v.ownerName && <span className="text-[10px] font-mono bg-lake/10 text-lake px-1.5 py-0.5 rounded">{v.ownerName}</span>}
                 </div>
                 {v.notes && <p className="text-xs text-muted-foreground mt-1">{v.notes}</p>}
               </div>
-              <button onClick={() => handleRemoveVisit(v, i)} className="text-muted-foreground hover:text-sunset text-xs">
-                <Trash2 size={12} />
-              </button>
+              {v.isMine !== false && (
+                <button onClick={() => handleRemoveVisit(v, i)} className="text-muted-foreground hover:text-sunset text-xs">
+                  <Trash2 size={12} />
+                </button>
+              )}
             </div>
           ))}
         </div>

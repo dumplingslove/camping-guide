@@ -1,5 +1,6 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { supabase, supabaseConfigured } from "@/lib/supabase";
+import { fetchProfileMap } from "@/lib/profiles";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 export interface VisitedEntry {
@@ -9,6 +10,9 @@ export interface VisitedEntry {
   endDate?: string | null;
   sites: string;
   notes?: string | null;
+  userId?: string; // cloud owner; undefined for local entries
+  ownerName?: string; // display name of the owner (both allowlisted accounts see each other)
+  isMine?: boolean; // false => written by the other account (read-only for me)
 }
 
 const VISITED_PREFIX = "camp_visited_";
@@ -96,21 +100,30 @@ export function useVisited() {
     if (!supabase || !user) return;
     const { data, error } = await supabase
       .from("visited_records")
-      .select("id, campground_id, start_date, end_date, sites, notes")
+      .select("id, campground_id, start_date, end_date, sites, notes, user_id")
       .order("start_date", { ascending: false });
     if (error) {
       console.warn("加载去过记录失败", error.message);
       return;
     }
+    // Both allowlisted accounts (darancai / nckuang123) see each other's rows;
+    // label them so it's clear who wrote what.
+    const profileMap = await fetchProfileMap(supabase);
     setCloudVisits(
-      (data || []).map((r: any) => ({
-        id: r.id,
-        campgroundId: r.campground_id,
-        startDate: r.start_date,
-        endDate: r.end_date,
-        sites: r.sites || "",
-        notes: r.notes,
-      }))
+      (data || []).map((r: any) => {
+        const mine = r.user_id === user.id;
+        return {
+          id: r.id,
+          campgroundId: r.campground_id,
+          startDate: r.start_date,
+          endDate: r.end_date,
+          sites: r.sites || "",
+          notes: r.notes,
+          userId: r.user_id,
+          isMine: mine,
+          ownerName: mine ? undefined : profileMap.get(r.user_id) || "家人",
+        };
+      })
     );
   }, [user]);
 

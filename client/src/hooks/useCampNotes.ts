@@ -1,11 +1,15 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { supabase, supabaseConfigured, appBaseUrl } from "@/lib/supabase";
+import { fetchProfileMap } from "@/lib/profiles";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 export interface NoteEntry {
   id: string | number;
   text: string;
   date: string;
+  userId?: string; // cloud owner; undefined for local entries
+  ownerName?: string; // display name of the owner (both allowlisted accounts see each other)
+  isMine?: boolean; // false => written by the other account (read-only for me)
 }
 
 const NOTES_PREFIX = "camp_notes_";
@@ -68,15 +72,28 @@ export function useCampNotes(campId: number, campName: string) {
     if (!supabase || !user) return;
     const { data, error } = await supabase
       .from("camp_notes")
-      .select("id, text, date")
+      .select("id, text, date, user_id")
       .eq("campground_id", campId)
       .order("created_at", { ascending: false });
     if (error) {
       console.warn("加载家庭笔记失败", error.message);
       return;
     }
+    // Both allowlisted accounts (darancai / nckuang123) see each other's notes;
+    // label them so it's clear who wrote what.
+    const profileMap = await fetchProfileMap(supabase);
     setCloudNotes(
-      (data || []).map((r: any) => ({ id: r.id, text: r.text, date: r.date }))
+      (data || []).map((r: any) => {
+        const mine = r.user_id === user.id;
+        return {
+          id: r.id,
+          text: r.text,
+          date: r.date,
+          userId: r.user_id,
+          isMine: mine,
+          ownerName: mine ? undefined : profileMap.get(r.user_id) || "家人",
+        };
+      })
     );
   }, [user, campId]);
 
