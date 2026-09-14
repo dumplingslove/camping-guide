@@ -825,14 +825,14 @@ export default function CampgroundDetail() {
                   <tbody>
                     {campground.areas.map((area, i) => (
                       <tr key={i} className={area.areaSummary ? "border-b-0" : "border-b border-border/50 last:border-0"}>
-                        <td className="py-2.5 px-3 font-medium">{area.area}</td>
+                        <td className="py-2.5 px-3 font-medium whitespace-nowrap">{area.area}</td>
                         <td className="py-2.5 px-3 text-center"><RatingStars rating={area.overall} size={12} /></td>
                         <td className="py-2.5 px-3 text-center"><RatingStars rating={area.scenery} size={12} /></td>
                         <td className="py-2.5 px-3 text-center"><RatingStars rating={area.kidFriendly} size={12} /></td>
                         <td className="py-2.5 px-3 text-center"><RatingStars rating={area.tcCompat} size={12} /></td>
-                        <td className="py-2.5 px-3 text-muted-foreground">{area.hookups}</td>
+                        <td className="py-2.5 px-3 text-muted-foreground whitespace-nowrap">{area.hookups}</td>
                         <td className="py-2.5 px-3">
-                          <span className={`text-xs px-2 py-0.5 rounded-full ${
+                          <span className={`text-xs px-2 py-0.5 rounded-full whitespace-nowrap ${
                             area.recommendation === "强烈推荐" ? "bg-pine/10 text-pine" :
                             area.recommendation === "推荐" ? "bg-lake/10 text-lake" :
                             area.recommendation === "避坑" || area.recommendation === "不推荐" ? "bg-sunset/10 text-sunset" :
@@ -851,8 +851,8 @@ export default function CampgroundDetail() {
                 {campground.areas.map((area, i) => (
                   <div key={i} className="rounded-lg border border-border/60 p-3 bg-muted/20">
                     <div className="flex items-center justify-between gap-2 mb-2">
-                      <span className="font-medium text-sm">{area.area}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full shrink-0 ${
+                      <span className="font-medium text-sm leading-snug">{area.area}</span>
+                      <span className={`text-xs px-2 py-0.5 rounded-full shrink-0 whitespace-nowrap ${
                         area.recommendation === "强烈推荐" ? "bg-pine/10 text-pine" :
                         area.recommendation === "推荐" ? "bg-lake/10 text-lake" :
                         area.recommendation === "避坑" || area.recommendation === "不推荐" ? "bg-sunset/10 text-sunset" :
@@ -886,9 +886,9 @@ export default function CampgroundDetail() {
                 {campground.areas.some(a => a.areaSummary) && (
                   <div className="mt-4 space-y-2">
                     {campground.areas.filter(a => a.areaSummary).map((area, i) => (
-                      <div key={i} className="flex items-start gap-2 p-2.5 rounded-lg bg-muted/40 border border-border/30">
-                        <div className="flex items-center gap-1.5 shrink-0 mt-0.5">
-                          <span className="text-xs font-mono font-medium text-pine bg-pine/10 px-2 py-0.5 rounded">{area.area}</span>
+                      <div key={i} className="p-2.5 rounded-lg bg-muted/40 border border-border/30">
+                        <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
+                          <span className="text-xs font-mono font-medium text-pine bg-pine/10 px-2 py-0.5 rounded whitespace-nowrap">{area.area}</span>
                           {area.entranceUrl && (
                             <a
                               href={area.entranceUrl}
