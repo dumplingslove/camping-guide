@@ -1001,6 +1001,14 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
+          {/* 8. 营位选择：编号地图 + 评论推荐/避坑 */}
+          {hasSiteSection && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.25 }}
+              className="bg-white rounded-xl border border-border p-5"
+            >
+              <SiteMapSection campgroundId={campground.id} campgroundName={campground.name} />
+            </motion.div>
+          )}
           {/* 4. Vacancy Analysis - NEW */}
           {campground.vacancyAnalysis && campground.vacancyAnalysis.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.18 }}
@@ -1042,14 +1050,6 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
-          {/* 8. 营位选择：编号地图 + 评论推荐/避坑 */}
-          {hasSiteSection && (
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.25 }}
-              className="bg-white rounded-xl border border-border p-5"
-            >
-              <SiteMapSection campgroundId={campground.id} campgroundName={campground.name} />
-            </motion.div>
-          )}
           </>)}
           {activeTab === "photos" && (<>
           {/* 1. Photo Gallery */}
