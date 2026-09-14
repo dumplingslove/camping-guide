@@ -232,7 +232,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1, ease: [0.23, 1, 0.32, 1] }}
             className="mt-4 text-lg md:text-xl text-white/90 max-w-2xl font-body"
           >
-            53个精选营地 · 专为带娃家庭与Truck Camper打造 · 从Redmond出发1.5-7.5小时
+            56个精选营地 · 专为带娃家庭与Truck Camper打造 · 从Redmond出发1.5-7.5小时
           </motion.p>
           {/* Search Bar */}
           <motion.div
