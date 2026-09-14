@@ -37,8 +37,8 @@ export default function Home() {
           el.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }, 100);
-      // Clean up the URL
-      window.history.replaceState({}, "", "/");
+      // Clean up the URL (keep the app base path so the router still matches)
+      window.history.replaceState({}, "", import.meta.env.BASE_URL);
     }
   }, [searchString]);
 
