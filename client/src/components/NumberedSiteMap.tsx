@@ -4,6 +4,8 @@ import { getSiteMap } from "@/data/siteMaps";
 interface NumberedSiteMapProps {
   campgroundId: number;
   campgroundName: string;
+  /** 在合并区块内渲染：无外层卡片，顶部带分隔线与次级标题 */
+  bare?: boolean;
 }
 
 /**
@@ -12,17 +14,12 @@ interface NumberedSiteMapProps {
  * - interactive: 官方在线预订选位图（外链）
  * - 无：不渲染
  */
-export function NumberedSiteMap({ campgroundId, campgroundName }: NumberedSiteMapProps) {
+export function NumberedSiteMap({ campgroundId, campgroundName, bare }: NumberedSiteMapProps) {
   const info = getSiteMap(campgroundId);
   if (!info) return null;
 
-  return (
-    <div className="bg-white rounded-xl border border-border p-5">
-      <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
-        <MapIcon size={18} className="text-pine" />
-        营位编号地图
-      </h2>
-
+  const content = (
+    <>
       {info.kind === "static" ? (
         <>
           <a
@@ -85,6 +82,28 @@ export function NumberedSiteMap({ campgroundId, campgroundName }: NumberedSiteMa
           </a>
         </>
       )}
+    </>
+  );
+
+  if (bare) {
+    return (
+      <div className="mt-6 pt-5 border-t border-border">
+        <h3 className="font-display text-base font-bold text-foreground flex items-center gap-2 mb-3">
+          <MapIcon size={16} className="text-pine" />
+          营位编号地图
+        </h3>
+        {content}
+      </div>
+    );
+  }
+
+  return (
+    <div className="bg-white rounded-xl border border-border p-5">
+      <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
+        <MapIcon size={18} className="text-pine" />
+        营位编号地图
+      </h2>
+      {content}
     </div>
   );
 }

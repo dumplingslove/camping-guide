@@ -45,12 +45,13 @@ function PhotoGallery({ photos, captions, siteCount = 0 }: { photos: string[]; c
 
   return (
     <>
-      <div className="bg-white rounded-xl border border-border p-5">
-        <h2 className="font-display text-xl font-bold text-foreground flex items-center gap-2 mb-4">
-          <Camera size={18} className="text-pine" />
-          营地实景照片
-          <span className="text-sm font-mono font-normal text-muted-foreground">({photos.length}张)</span>
+      <div className="flex items-center gap-2 mb-4">
+        <Camera size={18} className="text-pine" />
+        <h2 className="font-display text-xl font-bold text-foreground">
+          营地实景与营位地图
         </h2>
+        <span className="text-sm font-mono font-normal text-muted-foreground">({photos.length}张)</span>
+      </div>
         <div
           className="relative rounded-lg overflow-hidden bg-muted aspect-[16/10] mb-3 cursor-pointer touch-pan-y"
           onClick={() => setLightbox(true)}
@@ -118,7 +119,6 @@ function PhotoGallery({ photos, captions, siteCount = 0 }: { photos: string[]; c
             </button>
           ))}
         </div>
-      </div>
 
       {/* Lightbox */}
       {lightbox && (
@@ -780,7 +780,7 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
-          {/* 1. Photo Gallery - right below intro */}
+          {/* 1. Photo Gallery + Numbered Site Map (consolidated) */}
           {photoData && photoData.photos.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
               className="bg-white rounded-xl border border-border p-5"
@@ -794,6 +794,7 @@ export default function CampgroundDetail() {
                 ]}
                 siteCount={photoData.photos.filter((p) => p.includes("/site-")).length}
               />
+              <NumberedSiteMap bare campgroundId={campground.id} campgroundName={campground.nameCn} />
             </motion.div>
           )}
 
@@ -1095,11 +1096,6 @@ export default function CampgroundDetail() {
           {/* 10. Interactive Google Map */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.3 }}>
             <InteractiveMap campId={campground.id} campName={campground.name} />
-          </motion.div>
-
-          {/* 10b. Numbered site map (official campground site map) */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.31 }}>
-            <NumberedSiteMap campgroundId={campground.id} campgroundName={campground.nameCn} />
           </motion.div>
 
           {/* 11. Weather */}
