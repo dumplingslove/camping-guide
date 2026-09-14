@@ -87,7 +87,7 @@ export function NumberedSiteMap({ campgroundId, campgroundName, bare }: Numbered
 
   if (bare) {
     return (
-      <div className="mt-6 pt-5 border-t border-border">
+      <div>
         <h3 className="font-display text-base font-bold text-foreground flex items-center gap-2 mb-3">
           <MapIcon size={16} className="text-pine" />
           营位编号地图

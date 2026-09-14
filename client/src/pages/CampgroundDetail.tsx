@@ -12,7 +12,8 @@ import { ActivityCard } from "@/components/ActivityCard";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { InsightsPanel } from "@/components/InsightsPanel";
 import { SiteMapSection } from "@/components/SiteMapSection";
-import { NumberedSiteMap } from "@/components/NumberedSiteMap";
+import { getSiteMap } from "@/data/siteMaps";
+import { getInsightsForCampground } from "@/data/reviewInsightsData";
 import { ReviewTrendChart } from "@/components/ReviewTrendChart";
 import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle, Ban, Share2, Link2, Link2Off } from "lucide-react";
 import { toast } from "sonner";
@@ -48,7 +49,7 @@ function PhotoGallery({ photos, captions, siteCount = 0 }: { photos: string[]; c
       <div className="flex items-center gap-2 mb-4">
         <Camera size={18} className="text-pine" />
         <h2 className="font-display text-xl font-bold text-foreground">
-          营地实景与营位地图
+          营地实景
         </h2>
         <span className="text-sm font-mono font-normal text-muted-foreground">({photos.length}张)</span>
       </div>
@@ -578,9 +579,27 @@ export default function CampgroundDetail() {
   const photoData = campgroundPhotos[Number(params.id)];
   const { toggleFavorite, isFavorite, addToCompare, isInCompare, removeFromCompare } = useFavorites();
 
+  // Detail page tabs: organize the long page into sections
+  const [activeTab, setActiveTab] = useState("overview");
+  const tabBarRef = useRef<HTMLDivElement>(null);
+  const switchTab = (id: string) => {
+    setActiveTab(id);
+    requestAnimationFrame(() => {
+      const el = tabBarRef.current;
+      if (el) {
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 64, behavior: "smooth" });
+      }
+    });
+  };
+
   // Scroll to top when entering detail page or switching campground
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, [params.id]);
+
+  // Reset to overview tab when switching campground
+  useEffect(() => {
+    setActiveTab("overview");
   }, [params.id]);
 
   if (!campground) {
@@ -598,6 +617,23 @@ export default function CampgroundDetail() {
 
   const favorited = isFavorite(campground.id);
   const inCompare = isInCompare(campground.id);
+
+  // Whether the "营位选择" card has anything to show (numbered map and/or review-based site lists)
+  const siteInsights = getInsightsForCampground(campground.id);
+  const hasSiteSection =
+    !!getSiteMap(campground.id) ||
+    (!!siteInsights && (siteInsights.recommendedSites.length > 0 || siteInsights.avoidSites.length > 0));
+
+  const tabs = [
+    { id: "overview", label: "概览", icon: Info, show: true },
+    { id: "sites", label: "营位选择", icon: MapPin, show: true },
+    { id: "photos", label: "实景照片", icon: Camera, show: !!(photoData && photoData.photos.length > 0) },
+    { id: "booking", label: "预订攻略", icon: Calendar, show: true },
+    { id: "kids", label: "娃可玩", icon: Baby, show: campground.activities.length > 0 },
+    { id: "reviews", label: "评价", icon: Star, show: true },
+    { id: "location", label: "位置天气", icon: Cloud, show: true },
+    { id: "mine", label: "我的记录", icon: StickyNote, show: true },
+  ].filter((t) => t.show);
 
   return (
     <div className="min-h-screen topo-bg">
@@ -713,9 +749,29 @@ export default function CampgroundDetail() {
           </motion.div>
         )}
 
+        {/* === TAB NAVIGATION === */}
+        <div ref={tabBarRef} className="sticky top-14 z-40 bg-paper/95 backdrop-blur-md border border-border rounded-xl mb-6 shadow-sm">
+          <div className="flex gap-1 overflow-x-auto px-2 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {tabs.map((t) => (
+              <button
+                key={t.id}
+                onClick={() => switchTab(t.id)}
+                className={`flex items-center gap-1.5 px-3.5 py-2.5 sm:py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors shrink-0 ${
+                  activeTab === t.id
+                    ? "bg-pine text-white shadow-sm"
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                }`}
+              >
+                <t.icon size={15} />
+                {t.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* === IMPORTANT INFO FIRST === */}
         <div className="space-y-6">
-
+          {activeTab === "overview" && (<>
           {/* 0. Description & Popularity */}
           {campground.description && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.11 }}
@@ -780,24 +836,59 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
-          {/* 1. Photo Gallery + Numbered Site Map (consolidated) */}
-          {photoData && photoData.photos.length > 0 && (
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
-              className="bg-white rounded-xl border border-border p-5"
-            >
-              <PhotoGallery
-                photos={[campground.image, ...photoData.photos.filter((p) => p.includes("/site-")), ...photoData.photos.filter((p) => !p.includes("/site-"))]}
-                captions={[
-                  campground.nameCn + " 全景",
-                  ...(photoData.captions || []).filter((_, i) => photoData.photos[i]?.includes("/site-")),
-                  ...(photoData.captions || []).filter((_, i) => !photoData.photos[i]?.includes("/site-")),
-                ]}
-                siteCount={photoData.photos.filter((p) => p.includes("/site-")).length}
-              />
-              <NumberedSiteMap bare campgroundId={campground.id} campgroundName={campground.nameCn} />
-            </motion.div>
-          )}
+          {/* 2. Recommendations & Tips */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.14 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
+          >
+            <div className="bg-pine/5 rounded-xl border border-pine/20 p-5">
+              <h3 className="font-display font-bold text-pine mb-2 flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-pine/10 flex items-center justify-center text-xs">✓</span>
+                推荐营位
+              </h3>
+              <p className="text-sm text-foreground leading-relaxed">{campground.recommendedSites}</p>
+            </div>
+            <div className="bg-sunset/5 rounded-xl border border-sunset/20 p-5">
+              <h3 className="font-display font-bold text-sunset mb-2 flex items-center gap-2">
+                <span className="w-6 h-6 rounded-full bg-sunset/10 flex items-center justify-center text-xs">✗</span>
+                避坑
+              </h3>
+              <p className="text-sm text-foreground leading-relaxed">{campground.avoid}</p>
+            </div>
+          </motion.div>
 
+          {/* 3. TC Notes */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.16 }}
+            className="bg-sand-light/30 rounded-xl border border-sand/30 p-5"
+          >
+            <h3 className="font-display font-bold text-foreground mb-2 flex items-center gap-2">
+              <Truck size={18} className="text-sand" />
+              Truck Camper 适配说明
+            </h3>
+            <p className="text-sm text-foreground leading-relaxed">{campground.tcNotes}</p>
+            {campground.state === "BC" && (
+              <div className="mt-4 p-3 bg-amber-50/80 border border-amber-200/60 rounded-lg">
+                <p className="text-xs font-semibold text-amber-800 mb-1.5">🇨🇦 BC过境提示</p>
+                <ul className="text-xs text-amber-900/80 space-y-1 list-disc list-inside">
+                  <li>护照/NEXUS卡必带，儿童也需护照</li>
+                  <li>禁止携带柴火过境（加拿大严格禁止外来木材，当地购买或用营地提供的）</li>
+                  <li>食物限制：禁止携带鲜肉/水果/蔬菜过境，罐头和包装食品OK</li>
+                  <li>建议周日-周四过境避开周末高峰，Peace Arch和Pacific Highway口岸最常用</li>
+                  <li>加油：BC省油价显著高于WA，建议过境前加满</li>
+                </ul>
+              </div>
+            )}
+          </motion.div>
+
+          {/* Features Tags */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.38 }}
+            className="flex flex-wrap gap-2"
+          >
+            {campground.features.map((f) => (
+              <span key={f} className="px-3 py-1.5 rounded-full text-sm bg-white border border-border text-foreground">{f}</span>
+            ))}
+          </motion.div>
+          </>)}
+          {activeTab === "sites" && (<>
           {/* 2. Area Ratings - MOST IMPORTANT */}
           {campground.areas.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
@@ -910,49 +1001,6 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
-          {/* 2. Recommendations & Tips */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.14 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-4"
-          >
-            <div className="bg-pine/5 rounded-xl border border-pine/20 p-5">
-              <h3 className="font-display font-bold text-pine mb-2 flex items-center gap-2">
-                <span className="w-6 h-6 rounded-full bg-pine/10 flex items-center justify-center text-xs">✓</span>
-                推荐营位
-              </h3>
-              <p className="text-sm text-foreground leading-relaxed">{campground.recommendedSites}</p>
-            </div>
-            <div className="bg-sunset/5 rounded-xl border border-sunset/20 p-5">
-              <h3 className="font-display font-bold text-sunset mb-2 flex items-center gap-2">
-                <span className="w-6 h-6 rounded-full bg-sunset/10 flex items-center justify-center text-xs">✗</span>
-                避坑
-              </h3>
-              <p className="text-sm text-foreground leading-relaxed">{campground.avoid}</p>
-            </div>
-          </motion.div>
-
-          {/* 3. TC Notes */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.16 }}
-            className="bg-sand-light/30 rounded-xl border border-sand/30 p-5"
-          >
-            <h3 className="font-display font-bold text-foreground mb-2 flex items-center gap-2">
-              <Truck size={18} className="text-sand" />
-              Truck Camper 适配说明
-            </h3>
-            <p className="text-sm text-foreground leading-relaxed">{campground.tcNotes}</p>
-            {campground.state === "BC" && (
-              <div className="mt-4 p-3 bg-amber-50/80 border border-amber-200/60 rounded-lg">
-                <p className="text-xs font-semibold text-amber-800 mb-1.5">🇨🇦 BC过境提示</p>
-                <ul className="text-xs text-amber-900/80 space-y-1 list-disc list-inside">
-                  <li>护照/NEXUS卡必带，儿童也需护照</li>
-                  <li>禁止携带柴火过境（加拿大严格禁止外来木材，当地购买或用营地提供的）</li>
-                  <li>食物限制：禁止携带鲜肉/水果/蔬菜过境，罐头和包装食品OK</li>
-                  <li>建议周日-周四过境避开周末高峰，Peace Arch和Pacific Highway口岸最常用</li>
-                  <li>加油：BC省油价显著高于WA，建议过境前加满</li>
-                </ul>
-              </div>
-            )}
-          </motion.div>
-
           {/* 4. Vacancy Analysis - NEW */}
           {campground.vacancyAnalysis && campground.vacancyAnalysis.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.18 }}
@@ -994,6 +1042,34 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
+          {/* 8. 营位选择：编号地图 + 评论推荐/避坑 */}
+          {hasSiteSection && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.25 }}
+              className="bg-white rounded-xl border border-border p-5"
+            >
+              <SiteMapSection campgroundId={campground.id} campgroundName={campground.name} />
+            </motion.div>
+          )}
+          </>)}
+          {activeTab === "photos" && (<>
+          {/* 1. Photo Gallery */}
+          {photoData && photoData.photos.length > 0 && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.12 }}
+              className="bg-white rounded-xl border border-border p-5"
+            >
+              <PhotoGallery
+                photos={[campground.image, ...photoData.photos.filter((p) => p.includes("/site-")), ...photoData.photos.filter((p) => !p.includes("/site-"))]}
+                captions={[
+                  campground.nameCn + " 全景",
+                  ...(photoData.captions || []).filter((_, i) => photoData.photos[i]?.includes("/site-")),
+                  ...(photoData.captions || []).filter((_, i) => !photoData.photos[i]?.includes("/site-")),
+                ]}
+                siteCount={photoData.photos.filter((p) => p.includes("/site-")).length}
+              />
+            </motion.div>
+          )}
+          </>)}
+          {activeTab === "booking" && (<>
           {/* 5. Booking Windows - NEW */}
           {campground.bookingWindows && campground.bookingWindows.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.2 }}
@@ -1030,6 +1106,12 @@ export default function CampgroundDetail() {
             </motion.div>
           )}
 
+          {/* 9. Season Calendar */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.26 }}>
+            <SeasonCalendar campId={campground.id} />
+          </motion.div>
+          </>)}
+          {activeTab === "kids" && (<>
           {/* 6. Activities */}
           {campground.activities.length > 0 && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.22 }}
@@ -1055,7 +1137,8 @@ export default function CampgroundDetail() {
               </div>
             </motion.div>
           )}
-
+          </>)}
+          {activeTab === "reviews" && (<>
           {/* 7. Review Insights */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.23 }}
             className="bg-white rounded-xl border border-border p-5"
@@ -1063,29 +1146,19 @@ export default function CampgroundDetail() {
             <InsightsPanel campgroundId={campground.id} />
           </motion.div>
 
-          {/* 8. Site Map Annotations */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.25 }}
-            className="bg-white rounded-xl border border-border p-5"
-          >
-            <SiteMapSection campgroundId={campground.id} campgroundName={campground.name} lat={campground.lat} lng={campground.lng} />
-          </motion.div>
-
           {/* 9. Review Trend Chart */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.25 }}>
             <ReviewTrendChart campgroundId={campground.id} />
           </motion.div>
+
           {/* 10. User Reviews */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.26 }}
             className="bg-white rounded-xl border border-border p-5"
           >
             <ReviewsSection campgroundId={campground.id} />
           </motion.div>
-
-          {/* 9. Season Calendar */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.26 }}>
-            <SeasonCalendar campId={campground.id} />
-          </motion.div>
-
+          </>)}
+          {activeTab === "location" && (<>
           {/* 10. Campground Map Image */}
           {photoData?.map && (
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.28 }}>
@@ -1102,7 +1175,8 @@ export default function CampgroundDetail() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.32 }}>
             <WeatherWidget campId={campground.id} />
           </motion.div>
-
+          </>)}
+          {activeTab === "mine" && (<>
           {/* 12. User Notes */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.34 }}>
             <UserNotes campId={campground.id} campName={campground.nameCn} />
@@ -1112,15 +1186,8 @@ export default function CampgroundDetail() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.36 }}>
             <VisitedMarker campId={campground.id} campName={campground.nameCn} />
           </motion.div>
+          </>)}
 
-          {/* Features Tags */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.38 }}
-            className="flex flex-wrap gap-2"
-          >
-            {campground.features.map((f) => (
-              <span key={f} className="px-3 py-1.5 rounded-full text-sm bg-white border border-border text-foreground">{f}</span>
-            ))}
-          </motion.div>
         </div>
       </div>
 
