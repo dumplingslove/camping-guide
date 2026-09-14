@@ -750,7 +750,7 @@ export default function CampgroundDetail() {
         )}
 
         {/* === TAB NAVIGATION === */}
-        <div ref={tabBarRef} className="sticky top-14 z-40 bg-paper/95 backdrop-blur-md border border-border rounded-xl mb-6 shadow-sm">
+        <div ref={tabBarRef} className="sticky top-14 z-40 bg-paper/95 backdrop-blur-md border border-border rounded-xl mb-6 shadow-sm relative">
           <div className="flex gap-1 overflow-x-auto px-2 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {tabs.map((t) => (
               <button
@@ -767,6 +767,8 @@ export default function CampgroundDetail() {
               </button>
             ))}
           </div>
+          {/* scroll hint: fades the right edge to show the bar scrolls */}
+          <div className="pointer-events-none absolute inset-y-2 right-1 w-8 bg-gradient-to-l from-paper to-transparent rounded-r-xl" />
         </div>
 
         {/* === IMPORTANT INFO FIRST === */}
