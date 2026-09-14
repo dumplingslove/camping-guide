@@ -2,6 +2,7 @@
   "campgroundName": "Colonial Creek South",
   "totalReviewsOnPlatform": 288,
   "source": "google_maps",
+  "googleRating": 4.6,
   "reviews": [
     {
       "author": "Eva Boots",
@@ -72,7 +73,122 @@
       "helpfulVotes": 0,
       "source": "google_maps",
       "area": ""
+    },
+    {
+      "author": "alexander f",
+      "rating": 5,
+      "text": "I needed a site for the night before a weeklong backpacking trip but kind of forgot to plan that part. I was able to get a last minute site right on the lake, ~100ft walk from parking and it was just ...",
+      "date": "2026-07-23",
+      "siteNumber": "072",
+      "loop": "Colonial Creek South Campground",
+      "stayStart": "7/15/26",
+      "stayEnd": "7/16/26",
+      "source": "recreation_gov",
+      "sourceUrl": "https://recreation.gov/camping/campsites/101498"
+    },
+    {
+      "author": "Priscila A",
+      "rating": 5,
+      "text": "Great as always !!",
+      "date": "2022-06-19",
+      "siteNumber": "072",
+      "loop": "Colonial Creek South Campground",
+      "stayStart": "6/10/22",
+      "stayEnd": "6/11/22",
+      "source": "recreation_gov",
+      "sourceUrl": "https://recreation.gov/camping/campsites/101498"
+    },
+    {
+      "author": "Joan B",
+      "rating": 5,
+      "text": "We camped in a tent area only. Quiet, clean with bear boxes and a picnic table at each site. Family friendly trailhead and more challenging hikes start right at the campground.",
+      "date": "2021-09-10",
+      "siteNumber": "072",
+      "loop": "Colonial Creek South Campground",
+      "stayStart": "9/1/21",
+      "stayEnd": "9/3/21",
+      "source": "recreation_gov",
+      "sourceUrl": "https://recreation.gov/camping/campsites/101498"
+    },
+    {
+      "author": "Matt Y",
+      "rating": 5,
+      "text": "Wonderful experience! 148 was a decent but small campsite. It was very relaxing here! Hope to return!",
+      "date": "2025-08-04",
+      "siteNumber": "148",
+      "loop": "Colonial Creek South Campground",
+      "stayStart": "7/31/25",
+      "stayEnd": "8/3/25",
+      "source": "recreation_gov",
+      "sourceUrl": "https://recreation.gov/camping/campsites/101410"
+    },
+    {
+      "author": "Carol P",
+      "rating": 4,
+      "text": "Site was great and bathroom was clean and stocked with toilet paper and soap. Thunder creek trail is lovely and shady along the creek with the trailhead in the campground.",
+      "date": "2023-07-07",
+      "siteNumber": "148",
+      "loop": "Colonial Creek South Campground",
+      "stayStart": "6/28/23",
+      "stayEnd": "6/30/23",
+      "source": "recreation_gov",
+      "sourceUrl": "https://recreation.gov/camping/campsites/101410"
+    },
+    {
+      "author": "Jacob K",
+      "rating": 5,
+      "text": "Beautiful view, great location. A very memorable camping trip. Wish we could of had a camp fire but we came during the fire restrictions.",
+      "date": "2026-07-30",
+      "siteNumber": "143",
+      "loop": "Colonial Creek South Campground",
+      "stayStart": "7/22/26",
+      "stayEnd": "7/23/26",
+      "source": "recreation_gov",
+      "sourceUrl": "https://recreation.gov/camping/campsites/101416"
+    },
+    {
+      "author": "K O.",
+      "rating": 5,
+      "title": "Fun N. Cascades Spot",
+      "text": "Beautiful site! Try to get a reservation if you can, this campground can get really busy! Nice tent pads, and food storage lockers which is great. Like others mentioned, lots of winding trails nearby and the lake is amazing!",
+      "date": "2021-06-02",
+      "siteNumber": "164",
+      "source": "thedyrt",
+      "sourceUrl": "https://thedyrt.com/camping/washington/washington-colonial-creek"
+    },
+    {
+      "author": "Shane D.",
+      "rating": 5,
+      "title": "Fantastic",
+      "text": "pet friendly (on 6' leash), quiet, shaded. Clean bathrooms, but no showers. Fire ring, table, and bear proof cabinets at each site. surrounded by forest and on Diablo Lake! water is cold, but stunningly beautiful. some really nice hikes",
+      "date": "2018-06-08",
+      "source": "thedyrt",
+      "sourceUrl": "https://thedyrt.com/camping/washington/washington-colonial-creek"
+    },
+    {
+      "author": "Kylee A.",
+      "rating": 5,
+      "text": "Get there early on a summer weekend. We arrived to the campsite Saturday around 11AM ($10/night). Each site had its own table and fire pit - ours was tucked into a nice private spot. Some of the sites had bear lockers and there were bathrooms nearby with running water and large trash bins throughout.",
+      "date": "07.09.16",
+      "source": "thedyrt",
+      "sourceUrl": "https://thedyrt.com/camping/washington/washington-colonial-creek"
+    },
+    {
+      "author": "Al F",
+      "rating": 4,
+      "title": "Wonderful mountain setting, beautiful lake, noisy traffic",
+      "text": "Colonial Creek Campground is situated on the North Cascades Highway, on Diablo Lake. It is a wonderful mountain setting, along with the blue waters of the lake. Unfortunately, too many cars and large trucks rumble through at all hours of the day and night, making this a fairly noisy location, particularly given the setting. Most of the sites are good. It would pay to make an early reservation or get here early to get a more-coveted lakeside campsite. If you can, bring a kayak or a canoe, as this is a wonderful lake for exploring. In particular, we liked paddling across the lake, then up the narrow gorge leading toward the Ross Lake dam.",
+      "date": "2018-08-15",
+      "source": "tripadvisor",
+      "sourceUrl": "https://www.tripadvisor.ie/ShowUserReviews-g143046-d218861-r704371568-Colonial_Creek_Campground_Stehekin_Valley_Trail-North_Cascades_National_Park_Wash.html"
+    },
+    {
+      "author": "Sepehr Z.",
+      "rating": 5,
+      "text": "A very beautiful place, calm, and gem place to camp. This camp ground has a long trail to enjoy between the woods and water. If you have plan to stay, just heads up, no internet and phone reception and might you meet bear!",
+      "date": "未显示",
+      "source": "wanderlog",
+      "sourceUrl": "https://wanderlog.com/place/details/325094"
     }
-  ],
-  "googleRating": 4.6
+  ]
 }

@@ -30,7 +30,7 @@ export function ReviewTrendChart({ campgroundId }: ReviewTrendChartProps) {
     if (!reviewData || reviewData.reviews.length === 0) return [];
 
     // Group reviews by month
-    const byMonth = new Map<string, { count: number; totalRating: number }>();
+    const byMonth = new Map<string, { count: number; totalRating: number; ratedCount: number }>();
 
     for (const review of reviewData.reviews) {
       if (!review.date) continue;
@@ -38,9 +38,12 @@ export function ReviewTrendChart({ campgroundId }: ReviewTrendChartProps) {
       const month = review.date.substring(0, 7);
       if (!/^\d{4}-\d{2}$/.test(month)) continue;
 
-      const existing = byMonth.get(month) || { count: 0, totalRating: 0 };
+      const existing = byMonth.get(month) || { count: 0, totalRating: 0, ratedCount: 0 };
       existing.count += 1;
-      existing.totalRating += review.rating;
+      if (typeof review.rating === "number" && review.rating >= 1 && review.rating <= 5) {
+        existing.totalRating += review.rating;
+        existing.ratedCount += 1;
+      }
       byMonth.set(month, existing);
     }
 
@@ -49,7 +52,7 @@ export function ReviewTrendChart({ campgroundId }: ReviewTrendChartProps) {
       .sort(([a], [b]) => a.localeCompare(b));
 
     let cumulative = 0;
-    const data: MonthlyData[] = sorted.map(([month, { count, totalRating }]) => {
+    const data: MonthlyData[] = sorted.map(([month, { count, totalRating, ratedCount }]) => {
       cumulative += count;
       const [year, m] = month.split("-");
       const label = `${year.slice(2)}'${m}`;
@@ -57,7 +60,7 @@ export function ReviewTrendChart({ campgroundId }: ReviewTrendChartProps) {
         month,
         label,
         count,
-        avgRating: Math.round((totalRating / count) * 10) / 10,
+        avgRating: ratedCount > 0 ? Math.round((totalRating / ratedCount) * 10) / 10 : 0,
         cumulative,
       };
     });
@@ -70,9 +73,16 @@ export function ReviewTrendChart({ campgroundId }: ReviewTrendChartProps) {
     return null; // Don't show chart if insufficient data
   }
 
-  const overallAvg = (
-    reviewData.reviews.reduce((sum, r) => sum + r.rating, 0) / reviewData.reviews.length
-  ).toFixed(1);
+  const ratedForAvg = reviewData.reviews.filter(
+    (r) => typeof r.rating === "number" && r.rating >= 1 && r.rating <= 5
+  );
+  const overallAvg =
+    ratedForAvg.length > 0
+      ? (
+          ratedForAvg.reduce((sum, r) => sum + (r.rating as number), 0) /
+          ratedForAvg.length
+        ).toFixed(1)
+      : "—";
 
   const recentAvg = monthlyData.length >= 3
     ? (monthlyData.slice(-3).reduce((sum, d) => sum + d.avgRating * d.count, 0) /

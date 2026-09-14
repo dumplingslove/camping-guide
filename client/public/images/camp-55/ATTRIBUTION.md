@@ -21,3 +21,18 @@ facility ID 234501），逐张目视验核为该营地真实营位照片（野�
 USFS 官网页：https://www.fs.usda.gov/r06/mbs/recreation/middle-fork-campground
 
 下载日期：2026-09-13。原图为 webp，已转为 JPEG（quality 88），内容无修改。
+
+## 新增：全貌与附近景点（11–16.jpg，2026-09-14）
+
+以下 6 张来自 Wikimedia Commons，均为 CC 许可，标题/分类与所标注地点精确对应，已逐张目视验核。
+
+| 文件 | 内容 | 图片来源 URL | 来源页面 | 摄影者 | 许可 |
+|------|------|--------------|----------|--------|------|
+| 11.jpg | 中叉河河段全貌：急流与原始林河岸 | https://upload.wikimedia.org/wikipedia/commons/e/e1/2022-07-19%2C_Middle_Fork_Snoqualmie_River%2C_01.jpg | https://commons.wikimedia.org/wiki/File:2022-07-19,_Middle_Fork_Snoqualmie_River,_01.jpg | Steven Pa (Senapa) | CC BY-SA 4.0 |
+| 12.jpg | 中叉河流域全景（从 Big Snow Mountain 山顶眺望） | https://upload.wikimedia.org/wikipedia/commons/b/bf/Panorama_for_the_Middle_Fork_Snoqualmie_River_drainage.jpeg | https://commons.wikimedia.org/wiki/File:Panorama_for_the_Middle_Fork_Snoqualmie_River_drainage.jpeg | Generalissima | CC BY 2.0 |
+| 13.jpg | Taylor River 河段（从 Snoqualmie Lake / Taylor River Trail 眺望）；原图为 PNG，已转为 JPEG（quality 92），内容无修改 | https://upload.wikimedia.org/wikipedia/commons/3/3f/Taylor_River%2C_King_County%2C_Washington.png | https://commons.wikimedia.org/wiki/File:Taylor_River,_King_County,_Washington.png | Generalissima | CC BY 4.0 |
+| 14.jpg | Mount Garfield（加菲尔德山）与 Middle Fork Snoqualmie River | https://upload.wikimedia.org/wikipedia/commons/9/9b/Mount_Garfield_and_Middle_Fork_Snoqualmie_River.jpg | https://commons.wikimedia.org/wiki/File:Mount_Garfield_and_Middle_Fork_Snoqualmie_River.jpg | Ron Clausen | CC BY-SA 4.0 |
+| 15.jpg | The Pulpit（讲坛岩）与 Middle Fork Snoqualmie River | https://upload.wikimedia.org/wikipedia/commons/9/94/The_Pulpit_and_Middle_Fork_Snoqualmie_River.jpg | https://commons.wikimedia.org/wiki/File:The_Pulpit_and_Middle_Fork_Snoqualmie_River.jpg | Ron Clausen | CC BY-SA 4.0 |
+| 16.jpg | Snoqualmie Falls（斯诺夸尔米瀑布） | https://upload.wikimedia.org/wikipedia/commons/1/1a/Snoqualmie_Falls%2C_Snoqualmie%2C_United_States_%28Unsplash%29.jpg | https://commons.wikimedia.org/wiki/File:Snoqualmie_Falls,_Snoqualmie,_United_States_(Unsplash).jpg | Michael Brunk | CC0 1.0 |
+
+署名要求：使用 11/14/15.jpg 时需署名并以相同方式共享（CC BY-SA 4.0）；12.jpg 署名（CC BY 2.0）；13.jpg 署名（CC BY 4.0）；16.jpg 为公有领域（CC0），无需署名。

@@ -4,7 +4,7 @@
 
 export interface Review {
   author: string;
-  rating: number;
+  rating: number | null;
   text: string;
   date: string;
   siteNumber: string;

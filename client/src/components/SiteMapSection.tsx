@@ -113,11 +113,15 @@ export function SiteMapSection({ campgroundId, campgroundName, lat, lng }: SiteM
                       <div className="flex items-center gap-2 mb-1">
                         <span className="font-medium text-gray-800">{review.author}</span>
                         <div className="flex items-center gap-0.5">
-                          {Array.from({ length: review.rating }).map((_, j) => (
-                            <Star key={j} className="w-3 h-3 fill-amber-400 text-amber-400" />
-                          ))}
+                          {typeof review.rating === "number" && review.rating >= 1 ? (
+                            Array.from({ length: review.rating }).map((_, j) => (
+                              <Star key={j} className="w-3 h-3 fill-amber-400 text-amber-400" />
+                            ))
+                          ) : (
+                            <span className="text-gray-400">平台未显示星级</span>
+                          )}
                         </div>
-                        <span className="text-gray-400">{review.date}</span>
+                        <span className="text-gray-400">{review.date || "日期不详"}</span>
                       </div>
                       <p className="text-gray-600 line-clamp-3">{review.text}</p>
                     </div>

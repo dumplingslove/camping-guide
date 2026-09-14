@@ -22,3 +22,16 @@
 
 设施主页：https://www.recreation.gov/camping/campgrounds/232064
 USFS 官方页：http://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/kachess-campground
+
+## 新增 6 张（11–16.jpg）——营地全貌与附近著名景点
+
+以下 6 张照片为 Wikimedia Commons 公开图库照片（非 recreation.gov 营位实拍），全部逐张目检确认主体与标注地点一致：
+
+| 文件 | 内容 | 摄影者 | 许可 | 来源页面 |
+|------|------|--------|------|----------|
+| 11.jpg | Kachess Lake 湖岸：低水位时露出砾石湖滩，针叶林山坡与远处雪峰 | Ricardo Martins（2006-05-27 拍摄） | CC BY | https://commons.wikimedia.org/wiki/File:Kachess_Lake_(192351699).jpg |
+| 12.jpg | Kachess Lake 湖畔：湛蓝湖水、一棵小树立于水中，林木湖岸与远山 | Steven Pavlov（2009-07-11 拍摄） | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kachess_Lake_(Washington).jpg |
+| 13.jpg | 航拍 Kachess Lake 南端全貌：湖泊卧于喀斯喀特群山之间，原始针叶林环绕 | Joe Mabel（2013-08-04 拍摄） | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Aerial_-_south_tip_of_Kachess_Lake_from_SW_01_-_white_balanced_(9794082285).jpg |
+| 14.jpg | Gold Creek Pond：平静湖面、原始针叶林、远处雪山——Snoqualmie Pass 附近著名环湖步道景点 | U.S. Forest Service - Pacific Northwest Region（2013-06-05 拍摄） | 公有领域（PD US USDA FS） | https://commons.wikimedia.org/wiki/File:Gold_Creek_Pond,_Mt._Baker_Snoqualmie_National_Forest_(31270775494).jpg |
+| 15.jpg | Franklin Falls 瀑布：瀑布自岩壁倾泻，I-90 高架桥横跨其上，徒步者在潭边驻足 | Steven Pavlov（2022-08-01 拍摄） | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:2022-08-01,_Franklin_Falls_(King_County,_Washington),_001.jpg |
+| 16.jpg | Lake Easton 州立公园：日落时分的湖上浮动码头，波光粼粼 | GNRY09（2008-07 拍摄） | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Lake_Easton_State_Park.JPG |

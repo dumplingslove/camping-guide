@@ -818,9 +818,15 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/camping-guide/images/camp-54/07.jpg",
       "/camping-guide/images/camp-54/08.jpg",
       "/camping-guide/images/camp-54/09.jpg",
-      "/camping-guide/images/camp-54/10.jpg"
+      "/camping-guide/images/camp-54/10.jpg",
+      "/camping-guide/images/camp-54/11.jpg",
+      "/camping-guide/images/camp-54/12.jpg",
+      "/camping-guide/images/camp-54/13.jpg",
+      "/camping-guide/images/camp-54/14.jpg",
+      "/camping-guide/images/camp-54/15.jpg",
+      "/camping-guide/images/camp-54/16.jpg"
     ],
-    captions: ["Beargrass 环区 37 号营位实拍：林间营位、野餐桌与篝火圈", "Gale Creek 环区 8 号营位实拍，可见 8 号营位牌", "Beargrass 环区 25 号双人营位实拍，可见 25 DOUBLE 营位牌", "Gale Creek 环区 20 号营位实拍，可见 20 号营位牌", "Beargrass 环区 41 号双人营位实拍", "Gale Creek 环区 9 号双人营位实拍", "Beargrass 环区 38 号营位实拍", "Beargrass 环区 34 号营位实拍（2023年实住营位）", "Beargrass 环区 29 号双人营位实拍", "Gale Creek 环区 6 号营位实拍"],
+    captions: ["Beargrass 环区 37 号营位实拍：林间营位、野餐桌与篝火圈", "Gale Creek 环区 8 号营位实拍，可见 8 号营位牌", "Beargrass 环区 25 号双人营位实拍，可见 25 DOUBLE 营位牌", "Gale Creek 环区 20 号营位实拍，可见 20 号营位牌", "Beargrass 环区 41 号双人营位实拍", "Gale Creek 环区 9 号双人营位实拍", "Beargrass 环区 38 号营位实拍", "Beargrass 环区 34 号营位实拍（2023年实住营位）", "Beargrass 环区 29 号双人营位实拍", "Gale Creek 环区 6 号营位实拍", "Kachess Lake 湖岸：低水位时露出砾石湖滩，针叶林山坡与远处雪峰（Ricardo Martins / CC BY）", "Kachess Lake 湖畔：湛蓝湖水、一棵小树立于水中，林木湖岸与远山（Steven Pavlov / CC BY-SA 3.0）", "航拍 Kachess Lake 南端全貌：湖泊卧于喀斯喀特群山之间，原始针叶林环绕（Joe Mabel / CC BY-SA 3.0）", "Gold Creek Pond：平静湖面、原始针叶林、远处雪山——Snoqualmie Pass 附近著名环湖步道景点（U.S. Forest Service / 公有领域）", "Franklin Falls 瀑布：瀑布自岩壁倾泻，I-90 高架桥横跨其上，徒步者在潭边驻足（Steven Pavlov / CC BY-SA 4.0）", "Lake Easton 州立公园：日落时分的湖上浮动码头，波光粼粼（GNRY09 / CC BY-SA 3.0）"],
   },
   // 55. Middle Fork Campground
   55: {
@@ -834,9 +840,22 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/camping-guide/images/camp-55/07.jpg",
       "/camping-guide/images/camp-55/08.jpg",
       "/camping-guide/images/camp-55/09.jpg",
-      "/camping-guide/images/camp-55/10.jpg"
+      "/camping-guide/images/camp-55/10.jpg",
+      "/camping-guide/images/camp-55/11.jpg",
+      "/camping-guide/images/camp-55/12.jpg",
+      "/camping-guide/images/camp-55/13.jpg",
+      "/camping-guide/images/camp-55/14.jpg",
+      "/camping-guide/images/camp-55/15.jpg",
+      "/camping-guide/images/camp-55/16.jpg",
     ],
-    captions: ["30 号营位：野餐桌、烤架、篝火圈与食物储物柜", "23 号营位：野餐桌、篝火圈、储物柜，高大冷杉环绕", "4 号双人营位：两张野餐桌与储物柜", "16 号营位：野餐桌、烤架、储物柜、密林环抱", "10 号营位：野餐桌、篝火圈、食物储物柜", "3 号团体营位：多张野餐桌、篝火圈与巨石", "7 号营位：野餐桌、储物柜、高大针叶林", "21 号营位：林间帐篷垫", "11 号营位：林间帐篷垫", "34 号营位：野餐桌、烤架、篝火圈、储物柜"],
+    captions: ["30 号营位：野餐桌、烤架、篝火圈与食物储物柜", "23 号营位：野餐桌、篝火圈、储物柜，高大冷杉环绕", "4 号双人营位：两张野餐桌与储物柜", "16 号营位：野餐桌、烤架、储物柜、密林环抱", "10 号营位：野餐桌、篝火圈、食物储物柜", "3 号团体营位：多张野餐桌、篝火圈与巨石", "7 号营位：野餐桌、储物柜、高大针叶林", "21 号营位：林间帐篷垫", "11 号营位：林间帐篷垫", "34 号营位：野餐桌、烤架、篝火圈、储物柜",
+      "中叉河河段近景：河水在礁石间翻起白浪，两岸高大的原始针叶林密布，枝叶垂入画面",
+      "从 Big Snow Mountain 山顶俯瞰中叉河流域全景：群峰连绵，原始森林覆盖整个河谷",
+      "Taylor River 河段：白浪翻涌的急流穿过巨石与针叶林（从 Snoqualmie Lake / Taylor River 步道眺望）",
+      "中叉河畔远眺加菲尔德山（Mount Garfield）：锯齿状主峰高耸，山脚针叶林环绕",
+      "中叉河畔远眺讲坛岩（The Pulpit）一带群山，河水平缓，林木葱郁",
+      "斯诺夸尔米瀑布（Snoqualmie Falls）：82 米落差的瀑布倾泻入深潭，水雾弥漫，崖壁青苔密布（距营地约35英里，顺路可游）",
+],
   },
   // 56. Coho Campground
   56: {
@@ -850,8 +869,21 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/camping-guide/images/camp-56/07.jpg",
       "/camping-guide/images/camp-56/08.jpg",
       "/camping-guide/images/camp-56/09.jpg",
-      "/camping-guide/images/camp-56/10.jpg"
+      "/camping-guide/images/camp-56/10.jpg",
+      "/camping-guide/images/camp-56/11.jpg",
+      "/camping-guide/images/camp-56/12.jpg",
+      "/camping-guide/images/camp-56/13.jpg",
+      "/camping-guide/images/camp-56/14.jpg",
+      "/camping-guide/images/camp-56/15.jpg",
+      "/camping-guide/images/camp-56/16.jpg"
     ],
-    captions: ["Yurt 57 蒙古包外观：绿色帆布圆顶、高架平台、观湖木甲板", "营地入口标识牌 Welcome to Coho Campground", "Wynoochee Lake 湖景", "Yurt 57 内部：沙发床、桌椅、木格栅墙", "Yurt 57 内部：双层床", "Yurt 57 观湖木甲板视角", "环湖步道口与 Working Forest 解说牌", "营地日用野餐区", "湖岸船坡道与停车区", "湖岸线景观"],
+    captions: ["Yurt 57 蒙古包外观：绿色帆布圆顶、高架平台、观湖木甲板", "营地入口标识牌 Welcome to Coho Campground", "Wynoochee Lake 湖景", "Yurt 57 内部：沙发床、桌椅、木格栅墙", "Yurt 57 内部：双层床", "Yurt 57 观湖木甲板视角", "环湖步道口与 Working Forest 解说牌", "营地日用野餐区", "湖岸船坡道与停车区", "湖岸线景观",
+      "Wynoochee 大坝正面：混凝土坝体与泄洪闸门，高大针叶林环绕，远山为背景",
+      "鸟瞰 Wynoochee 大坝与水库（历史黑白航拍）：大坝横卧水库南端，群山与密林环抱",
+      "从湖面一侧看 Wynoochee 大坝：坝体横跨湖面，背后是茂密的针叶林山坡",
+      "Wynoochee Lake 湖面北望：群山与白云倒映水中，湖畔针叶林环绕",
+      "Maidenhair Falls 瀑布：水流穿过横卧的倒木倾泻而下，两岸是苔藓密林",
+      "Wynoochee 大坝上方的指定游泳区：浮标围出泳区，远处是大坝与针叶林",
+],
   },
 };

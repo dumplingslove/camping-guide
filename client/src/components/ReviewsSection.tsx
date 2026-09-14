@@ -6,7 +6,12 @@ interface ReviewsSectionProps {
   campgroundId: number;
 }
 
-function StarRating({ rating }: { rating: number }) {
+function StarRating({ rating }: { rating: number | null | undefined }) {
+  if (rating == null || !(rating >= 1 && rating <= 5)) {
+    return (
+      <span className="text-xs text-gray-400">平台未显示星级</span>
+    );
+  }
   return (
     <div className="flex items-center gap-0.5">
       {[1, 2, 3, 4, 5].map((star) => (
@@ -103,7 +108,7 @@ function ReviewCard({ review, keyword }: { review: Review; keyword: string }) {
           </div>
           <div>
             <p className="text-sm font-medium text-gray-900">{review.author}</p>
-            <p className="text-xs text-gray-500">{review.date}</p>
+            <p className="text-xs text-gray-500">{review.date || "日期不详"}</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -263,7 +268,7 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
         reviews.sort((a, b) => b.helpfulVotes - a.helpfulVotes);
         break;
       case "rating":
-        reviews.sort((a, b) => b.rating - a.rating);
+        reviews.sort((a, b) => (b.rating ?? -1) - (a.rating ?? -1));
         break;
     }
 
@@ -275,13 +280,20 @@ export function ReviewsSection({ campgroundId }: ReviewsSectionProps) {
   // Rating distribution
   const ratingDist = [0, 0, 0, 0, 0];
   campReviews.reviews.forEach((r) => {
-    if (r.rating >= 1 && r.rating <= 5) ratingDist[r.rating - 1]++;
+    if (typeof r.rating === "number" && r.rating >= 1 && r.rating <= 5)
+      ratingDist[r.rating - 1]++;
   });
 
-  const avgRating = (
-    campReviews.reviews.reduce((acc, r) => acc + r.rating, 0) /
-    campReviews.reviews.length
-  ).toFixed(1);
+  const ratedReviews = campReviews.reviews.filter(
+    (r) => typeof r.rating === "number" && r.rating >= 1 && r.rating <= 5
+  );
+  const avgRating =
+    ratedReviews.length > 0
+      ? (
+          ratedReviews.reduce((acc, r) => acc + (r.rating as number), 0) /
+          ratedReviews.length
+        ).toFixed(1)
+      : "—";
 
   // Common keyword suggestions based on review content
   const keywordSuggestions = ["noise", "shower", "clean", "quiet", "view", "shade", "privacy", "kids", "trail", "river", "lake"];

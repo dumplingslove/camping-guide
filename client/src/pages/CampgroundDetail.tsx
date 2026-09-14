@@ -273,7 +273,7 @@ function WeatherWidget({ campId }: { campId: number }) {
 }
 
 function SeasonCalendar({ campId }: { campId: number }) {
-  const season = seasonData[campId];
+  const season = seasonData.find((s) => s.campgroundId === campId);
   if (!season) return null;
 
   const ratingColors = [
