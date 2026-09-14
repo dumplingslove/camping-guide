@@ -12,6 +12,7 @@ import { ActivityCard } from "@/components/ActivityCard";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { InsightsPanel } from "@/components/InsightsPanel";
 import { SiteMapSection } from "@/components/SiteMapSection";
+import { NumberedSiteMap } from "@/components/NumberedSiteMap";
 import { ReviewTrendChart } from "@/components/ReviewTrendChart";
 import { ArrowLeft, Clock, MapPin, Star, TreePine, Baby, Truck, ExternalLink, AlertTriangle, ChevronLeft, ChevronRight, Camera, X, Heart, GitCompareArrows, Cloud, Thermometer, Wind, Droplets, Navigation, CalendarDays, StickyNote, Save, Trash2, CheckCircle2, Calendar, TrendingUp, TrendingDown, Info, Bookmark, Map as MapIcon, Flame, Users, MessageCircle, Ban, Share2, Link2, Link2Off } from "lucide-react";
 import { toast } from "sonner";
@@ -1094,6 +1095,11 @@ export default function CampgroundDetail() {
           {/* 10. Interactive Google Map */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.3 }}>
             <InteractiveMap campId={campground.id} campName={campground.name} />
+          </motion.div>
+
+          {/* 10b. Numbered site map (official campground site map) */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.31 }}>
+            <NumberedSiteMap campgroundId={campground.id} campgroundName={campground.nameCn} />
           </motion.div>
 
           {/* 11. Weather */}
