@@ -582,9 +582,34 @@ export default function CampgroundDetail() {
   // Detail page tabs: organize the long page into sections
   const [activeTab, setActiveTab] = useState("overview");
   const tabBarRef = useRef<HTMLDivElement>(null);
+  const tabScrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollTabsL, setCanScrollTabsL] = useState(false);
+  const [canScrollTabsR, setCanScrollTabsR] = useState(false);
+  const updateScrollArrows = () => {
+    const el = tabScrollRef.current;
+    if (!el) return;
+    setCanScrollTabsL(el.scrollLeft > 8);
+    setCanScrollTabsR(el.scrollLeft + el.clientWidth < el.scrollWidth - 8);
+  };
+  useEffect(() => {
+    updateScrollArrows();
+    window.addEventListener("resize", updateScrollArrows);
+    return () => window.removeEventListener("resize", updateScrollArrows);
+  }, [params.id]);
   const switchTab = (id: string) => {
     setActiveTab(id);
     requestAnimationFrame(() => {
+      // Keep the active tab button visible inside the horizontal strip
+      const scroller = tabScrollRef.current;
+      const btn = scroller?.querySelector<HTMLElement>(`[data-tab="${id}"]`);
+      if (btn && scroller) {
+        const b = btn.getBoundingClientRect();
+        const s = scroller.getBoundingClientRect();
+        scroller.scrollTo({
+          left: scroller.scrollLeft + (b.left - s.left) - s.width / 2 + b.width / 2,
+          behavior: "smooth",
+        });
+      }
       const el = tabBarRef.current;
       if (el) {
         window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 64, behavior: "smooth" });
@@ -751,10 +776,15 @@ export default function CampgroundDetail() {
 
         {/* === TAB NAVIGATION === */}
         <div ref={tabBarRef} className="sticky top-14 z-40 bg-paper/95 backdrop-blur-md border border-border rounded-xl mb-6 shadow-sm relative">
-          <div className="flex gap-1 overflow-x-auto px-2 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div
+            ref={tabScrollRef}
+            onScroll={updateScrollArrows}
+            className="flex gap-1 overflow-x-auto px-2 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
             {tabs.map((t) => (
               <button
                 key={t.id}
+                data-tab={t.id}
                 onClick={() => switchTab(t.id)}
                 className={`flex items-center gap-1.5 px-3.5 py-2.5 sm:py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors shrink-0 ${
                   activeTab === t.id
@@ -767,8 +797,24 @@ export default function CampgroundDetail() {
               </button>
             ))}
           </div>
-          {/* scroll hint: fades the right edge to show the bar scrolls */}
-          <div className="pointer-events-none absolute inset-y-2 right-1 w-8 bg-gradient-to-l from-paper to-transparent rounded-r-xl" />
+          {canScrollTabsL && (
+            <button
+              aria-label="向左滑查看更多分类"
+              onClick={() => tabScrollRef.current?.scrollBy({ left: -200, behavior: "smooth" })}
+              className="absolute left-1 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 shadow-md border border-border flex items-center justify-center text-foreground"
+            >
+              <ChevronLeft size={18} />
+            </button>
+          )}
+          {canScrollTabsR && (
+            <button
+              aria-label="向右滑查看更多分类"
+              onClick={() => tabScrollRef.current?.scrollBy({ left: 200, behavior: "smooth" })}
+              className="absolute right-1 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 shadow-md border border-border flex items-center justify-center text-foreground"
+            >
+              <ChevronRight size={18} />
+            </button>
+          )}
         </div>
 
         {/* === IMPORTANT INFO FIRST === */}
