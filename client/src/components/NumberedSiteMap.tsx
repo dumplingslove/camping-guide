@@ -50,7 +50,7 @@ export function NumberedSiteMap({ campgroundId, campgroundName, bare }: Numbered
               className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-pine/10 text-pine rounded-lg hover:bg-pine/20 transition-colors text-sm"
             >
               <ExternalLink size={14} />
-              查看完整大图（PDF）
+              查看完整大图
             </a>
             <a
               href={info.sourceUrl}
