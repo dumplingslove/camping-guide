@@ -52,3 +52,58 @@
 ## 未采用/留空（2026-09-14）
 - Wenatchee River划船（camp 27）：唯一候选为 Commons 冬季半结冰河面图（无船、无划船动作），与"皮划艇/SUP"活动主题不符，宁缺毋滥，留空。
 - Quarry Pond 观鸟 / Salt Pub / James Pond / Takelma Gorge / Lover's Lane步道 / Giant Douglas-fir Trail：未找到确切地点图，留空。
+
+## act-305.jpg（2026-09-14 追加，主 agent 亲眼核验）
+- 活动键：Lake Wenatchee 游泳（camp 5 Lake Wenatchee State Park）
+- 内容：Lake Wenatchee 平静湖面倒映群山与云层，湖畔针叶林（地点实景；画面中无泳客，说明不得声称有游泳人物）
+- 摄影者：Bala（Flickr 用户）
+- 许可：CC BY 2.0（经 Commons API 实查确认）
+- 来源页面：https://commons.wikimedia.org/wiki/File:Lake_Wenatchee_WA.jpg
+- 媒体直链：https://upload.wikimedia.org/wikipedia/commons/8/84/Lake_Wenatchee_WA.jpg
+
+## act-306.jpg（2026-09-14 追加，主 agent 亲眼核验）
+- 活动键：Wenatchee River划船（camp 27 Wenatchee Confluence State Park）
+- 内容：第一人称视角，橙色皮划艇船头行驶在 Wenatchee River 夏季河面，两岸青山（地点+动作双精确）
+- 摄影者：Thayne Tuason（ThayneT）
+- 许可：CC BY-SA 4.0（经 Commons API 实查确认）
+- 来源页面：https://commons.wikimedia.org/wiki/File:Kayaking_the_Wenatchee_River_near_Leavenworth,_Washington_07-31-2017_1.jpg
+- 媒体直链：https://upload.wikimedia.org/wikipedia/commons/3/39/Kayaking_the_Wenatchee_River_near_Leavenworth%2C_Washington_07-31-2017_1.jpg
+
+## act-307.jpg（2026-09-14 追加，主 agent 亲眼核验）
+- 活动键：Lake Billy Chinook游泳（camp 48 The Cove Palisades State Park）
+- 内容：Lake Billy Chinook 水库峡谷地貌，碧蓝水面与荒漠台地，前景岩石与鼠尾草（地点实景；画面中无泳客，说明不得声称有游泳人物）
+- 摄影者：Gary Halvorson, Oregon State Archives
+- 许可：Attribution（Oregon State Archives 免费使用，需署名 "Gary Halvorson, Oregon State Archives"；经 Commons API 实查确认）
+- 来源页面：https://commons.wikimedia.org/wiki/File:Lake_Billy_Chinook_(Jefferson_County,_Oregon_scenic_images)_(jefDB1439).jpg
+- 媒体直链：https://upload.wikimedia.org/wikipedia/commons/3/35/Lake_Billy_Chinook_%28Jefferson_County%2C_Oregon_scenic_images%29_%28jefDB1439%29.jpg
+
+## act-308.jpg（2026-09-14 追加，主 agent 亲眼核验）
+- 活动键：Lightning Lake 游泳/浅水玩耍（camp 51 Lightning Lake Campground, Manning Park）
+- 内容：Lightning Lake 蓝色湖面一叶独木舟，远处拱形木桥上有人群，湖畔茂密针叶林（地点精确；有水上游憩但无游泳动作，说明须诚实）
+- 摄影者：Jonhall
+- 许可：CC BY 3.0（经 Commons API 实查确认）
+- 来源页面：https://commons.wikimedia.org/wiki/File:Lightning_Lake_Canoe.jpg
+- 媒体直链：https://upload.wikimedia.org/wikipedia/commons/3/32/Lightning_Lake_Canoe.jpg
+
+## 未采用（2026-09-14，主 agent 亲眼核验后驳回）
+- 海洋科学中心（camp 25 Fort Worden）：候选 Hatfield Marine Science Center 图实为俄勒冈 Newport 的机构，而该活动指 Port Townsend Marine Science Center（mapUrl 明确指向 Port Townsend），地点错误，不可代用，继续留空待找 Port Townsend 实图。
+- 划船/皮划艇（camp 54 Kachess）：候选 kachess2.jpg 与仓库现有 act-300.jpg 像素级完全相同（diff=0.0），属重复文件，且无船，驳回。
+- 湖边垂钓（camp 54 Kachess）：候选 kachess1.jpg 无垂钓者；camp 54 已有 act-299/300 两张 Kachess Lake 地点图，第三张纯地点图不构成精确匹配，宁缺毋滥，驳回。
+
+## act-309.jpg（2026-09-14 追加，主 agent 亲眼核验）
+- 活动键：Taylor River 半英里解说环路（camp 55 Middle Fork Campground；子agent 曾误标 camp 42，已纠正）
+- 内容：Taylor River 湍急溪流穿过林间巨石，水花翻涌；摄于 Snoqualmie Lake/Taylor River 步道沿线（地点实景；画面中无步道本身，说明不得声称拍到解说牌/步道）
+- 摄影者：Wilderness Journeys Resonance
+- 许可：CC BY 4.0（经 Commons API 实查确认；文件描述页："View of the Taylor River from Snoqualmie Lake/Taylor River Trail, 2026"）
+- 来源页面：https://commons.wikimedia.org/wiki/File:Taylor_River,_King_County,_Washington.png
+- 媒体直链：https://upload.wikimedia.org/wikipedia/commons/3/3f/Taylor_River%2C_King_County%2C_Washington.png
+
+## act-310.jpg（2026-09-14 追加，主 agent 亲眼核验）
+- 活动键：海洋科学中心（camp 25 Fort Worden Historical State Park；即 Port Townsend Marine Science Center）
+- 内容：从水面望向 Fort Worden 岸线：白色历史营房（Enlisted Men's Barracks 225，海洋科学中心所在建筑）与木质栈桥，岸边秋林，远山隐现（地点精确）
+- 摄影者：Chris Light
+- 许可：CC BY-SA 4.0（经 Commons API 实查确认；文件描述页明确："Port Townsend Marine Science Center, Enlisted Men's Barracks (225) and Bliss Vista cottage at Fort Worden"）
+- 注意：文件名 "Fort Worden 1900.jpg" 具误导性，实为 2024-10-27 拍摄的现代照片；归因以文件描述页为准
+- 来源页面：https://commons.wikimedia.org/wiki/File:Fort_Worden_1900.jpg
+- 媒体直链：https://upload.wikimedia.org/wikipedia/commons/3/3d/Fort_Worden_1900.jpg
+- 本图替代此前误用的 Hatfield Marine Science Center（Newport, OR）候选——两地不同城市不可代用
