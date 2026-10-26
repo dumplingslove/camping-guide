@@ -4,7 +4,7 @@ import { Link, useSearch } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { useVisited } from "@/hooks/useVisited";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, User, LayoutGrid, Info } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, User, LayoutGrid, Info, Check } from "lucide-react";
 import { CampgroundSummaryTable } from "@/components/CampgroundSummaryTable";
 import { CampgroundDetailContent } from "@/pages/CampgroundDetail";
 import { motion, AnimatePresence } from "framer-motion";
@@ -20,6 +20,117 @@ function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
         />
       ))}
     </span>
+  );
+}
+
+function CampPicker({
+  camps,
+  value,
+  onSelect,
+  visitedMap,
+}: {
+  camps: typeof campgrounds;
+  value: number;
+  onSelect: (id: number) => void;
+  visitedMap: Record<string, { count: number; lastVisit: string; lastSites: string }>;
+}) {
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const current = camps.find((c) => c.id === value);
+  const list = query
+    ? camps.filter(
+        (c) => c.nameCn.includes(query) || c.name.toLowerCase().includes(query.toLowerCase())
+      )
+    : camps;
+
+  const close = () => {
+    setOpen(false);
+    setQuery("");
+  };
+
+  return (
+    <div className="relative flex-1 min-w-0">
+      <button
+        onClick={() => (open ? close() : setOpen(true))}
+        className="w-full flex items-center justify-between gap-2 border border-border rounded-lg px-3 py-2.5 bg-white text-left focus:outline-none focus:ring-2 focus:ring-pine/30"
+      >
+        <span className="min-w-0 truncate text-sm text-foreground">
+          <span className="font-medium">{current?.nameCn}</span>
+          <span className="text-muted-foreground">
+            {" "}· {current?.state} · {current?.driveTimeLabel}
+          </span>
+        </span>
+        <ChevronDown
+          size={16}
+          className={`shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`}
+        />
+      </button>
+      {open && (
+        <>
+          <div className="fixed inset-0 z-30" onClick={close} />
+          <div className="absolute left-0 right-0 top-full mt-2 z-40 bg-white rounded-xl border border-border shadow-xl overflow-hidden">
+            <div className="flex items-center gap-2 px-3 py-2 border-b border-border bg-paper/60">
+              <Search size={15} className="text-muted-foreground shrink-0" />
+              <input
+                autoFocus
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="搜索营地名…"
+                className="flex-1 min-w-0 bg-transparent text-sm py-1.5 focus:outline-none placeholder:text-muted-foreground"
+              />
+              <button
+                onClick={close}
+                className="w-9 h-9 shrink-0 rounded-full flex items-center justify-center text-muted-foreground hover:bg-muted active:bg-muted"
+                title="关闭"
+              >
+                <X size={17} />
+              </button>
+            </div>
+            <div className="max-h-[52vh] overflow-y-auto overscroll-contain py-1">
+              {list.map((c) => {
+                const selected = c.id === value;
+                const visited = visitedMap[c.id];
+                return (
+                  <button
+                    key={c.id}
+                    onClick={() => {
+                      onSelect(c.id);
+                      close();
+                    }}
+                    className={`w-full flex items-center gap-2 px-3 py-2.5 text-left transition-colors ${
+                      selected ? "bg-pine/5" : "hover:bg-muted/50 active:bg-muted"
+                    }`}
+                  >
+                    <span className="flex-1 min-w-0">
+                      <span
+                        className={`block truncate text-sm ${
+                          selected ? "font-semibold text-pine" : "text-foreground"
+                        }`}
+                      >
+                        {c.nameCn}
+                      </span>
+                      <span className="block truncate text-[11px] text-muted-foreground font-mono">
+                        {c.name} · {c.state} · {c.driveTimeLabel}
+                      </span>
+                    </span>
+                    {visited && (
+                      <span className="shrink-0 inline-flex items-center gap-0.5 text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-1.5 py-0.5">
+                        <CheckCircle2 size={10} />
+                        去过{visited.count > 1 ? `${visited.count}次` : ""}
+                      </span>
+                    )}
+                    {selected && <Check size={16} className="shrink-0 text-pine" />}
+                  </button>
+                );
+              })}
+              {list.length === 0 && (
+                <p className="px-3 py-6 text-center text-sm text-muted-foreground">没有匹配的营地</p>
+              )}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
   );
 }
 
@@ -724,17 +835,7 @@ export default function Home() {
               >
                 <ChevronLeft size={18} />
               </button>
-              <select
-                value={detailCampId}
-                onChange={(e) => openDetail(Number(e.target.value))}
-                className="flex-1 min-w-0 border border-border rounded-lg px-3 py-2.5 bg-white text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-pine/30"
-              >
-                {campgrounds.map((c) => (
-                  <option key={c.id} value={c.id}>
-                    {c.nameCn} · {c.state} · {c.driveTimeLabel}
-                  </option>
-                ))}
-              </select>
+              <CampPicker camps={campgrounds} value={detailCampId} onSelect={openDetail} visitedMap={visitedMap} />
               <button
                 onClick={() => {
                   const i = campgrounds.findIndex((c) => c.id === detailCampId);
