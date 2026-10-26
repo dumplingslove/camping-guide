@@ -573,10 +573,17 @@ function VisitedMarker({ campId, campName }: { campId: number; campName: string 
   );
 }
 
-export default function CampgroundDetail() {
-  const params = useParams<{ id: string }>();
-  const campground = campgrounds.find((c) => c.id === Number(params.id));
-  const photoData = campgroundPhotos[Number(params.id)];
+export function CampgroundDetailContent({
+  campId,
+  embedded = false,
+  onBack,
+}: {
+  campId: number;
+  embedded?: boolean;
+  onBack?: () => void;
+}) {
+  const campground = campgrounds.find((c) => c.id === campId);
+  const photoData = campgroundPhotos[campId];
   const { toggleFavorite, isFavorite, addToCompare, isInCompare, removeFromCompare } = useFavorites();
 
   // Detail page tabs: organize the long page into sections
@@ -595,7 +602,7 @@ export default function CampgroundDetail() {
     updateScrollArrows();
     window.addEventListener("resize", updateScrollArrows);
     return () => window.removeEventListener("resize", updateScrollArrows);
-  }, [params.id]);
+  }, [campId]);
   const switchTab = (id: string) => {
     setActiveTab(id);
     requestAnimationFrame(() => {
@@ -612,7 +619,7 @@ export default function CampgroundDetail() {
       }
       const el = tabBarRef.current;
       if (el) {
-        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 64, behavior: "smooth" });
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - (embedded ? 118 : 64), behavior: "smooth" });
       }
     });
   };
@@ -620,12 +627,12 @@ export default function CampgroundDetail() {
   // Scroll to top when entering detail page or switching campground
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [params.id]);
+  }, [campId]);
 
   // Reset to overview tab when switching campground
   useEffect(() => {
     setActiveTab("overview");
-  }, [params.id]);
+  }, [campId]);
 
   if (!campground) {
     return (
@@ -663,12 +670,19 @@ export default function CampgroundDetail() {
   return (
     <div className="min-h-screen topo-bg">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-border">
+      <header className={`${embedded ? "" : "sticky top-0 z-50"} bg-paper/90 backdrop-blur-md border-b border-border`}>
         <div className="container flex items-center justify-between h-14">
-          <Link href="/?scrollTo=table" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-            <ArrowLeft size={16} />
-            <span>返回列表</span>
-          </Link>
+          {embedded && onBack ? (
+            <button onClick={onBack} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <ArrowLeft size={16} />
+              <span>返回总览</span>
+            </button>
+          ) : (
+            <Link href="/?scrollTo=table" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <ArrowLeft size={16} />
+              <span>返回列表</span>
+            </Link>
+          )}
           <div className="flex items-center gap-2">
             <button
               onClick={() => toggleFavorite(campground.id)}
@@ -1268,4 +1282,9 @@ export default function CampgroundDetail() {
       </footer>
     </div>
   );
+}
+
+export default function CampgroundDetail() {
+  const params = useParams<{ id: string }>();
+  return <CampgroundDetailContent campId={Number(params.id)} />;
 }

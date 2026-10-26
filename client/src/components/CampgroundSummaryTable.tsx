@@ -56,7 +56,16 @@ function tierColor(tier?: CampgroundTier): string {
   }
 }
 
-export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlobal }) {
+export function CampgroundSummaryTable({
+  visitedMap,
+  camps,
+  onSelectCamp,
+}: {
+  visitedMap: VisitedGlobal;
+  camps?: Campground[];
+  onSelectCamp?: (id: number) => void;
+}) {
+  const list = camps ?? campgrounds;
   const [expanded, setExpanded] = useState(true);
   const [sortField, setSortField] = useState<SortField>("driveTime");
   const [sortDir, setSortDir] = useState<SortDir>("asc");
@@ -71,7 +80,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
   };
 
   const sorted = useMemo(() => {
-    const arr = [...campgrounds];
+    const arr = [...list];
     arr.sort((a, b) => {
       let cmp = 0;
       switch (sortField) {
@@ -93,7 +102,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
       return sortDir === "asc" ? cmp : -cmp;
     });
     return arr;
-  }, [sortField, sortDir, visitedMap]);
+  }, [sortField, sortDir, visitedMap, list]);
 
   const visitedCount = Object.keys(visitedMap).length;
 
@@ -128,7 +137,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
               营地总表
             </h2>
             <span className="text-xs font-mono text-muted-foreground bg-secondary px-2 py-0.5 rounded-full">
-              {campgrounds.length}个营地
+              {list.length}个营地
             </span>
             {visitedCount > 0 && (
               <span className="text-xs font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
@@ -139,8 +148,15 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
           {expanded ? <ChevronUp size={18} className="text-muted-foreground" /> : <ChevronDown size={18} className="text-muted-foreground" />}
         </button>
 
+        {/* Empty state (e.g. visited filter matches nothing) */}
+        {expanded && list.length === 0 && (
+          <div className="border-t border-border py-10 text-center text-sm text-muted-foreground">
+            没有符合条件的营地
+          </div>
+        )}
+
         {/* Table (desktop) */}
-        {expanded && (
+        {expanded && list.length > 0 && (
           <div className="border-t border-border overflow-x-auto hidden md:block">
             <Table>
               <TableHeader>
@@ -176,10 +192,17 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
                       </TableCell>
                       {/* Name */}
                       <TableCell>
-                        <Link href={`/campground/${camp.id}`} className="hover:text-pine transition-colors">
-                          <span className="font-medium text-sm">{camp.nameCn}</span>
-                          <span className="block text-[10px] text-muted-foreground font-mono leading-tight">{camp.name}</span>
-                        </Link>
+                        {onSelectCamp ? (
+                          <button onClick={() => onSelectCamp(camp.id)} className="text-left hover:text-pine transition-colors">
+                            <span className="font-medium text-sm">{camp.nameCn}</span>
+                            <span className="block text-[10px] text-muted-foreground font-mono leading-tight">{camp.name}</span>
+                          </button>
+                        ) : (
+                          <Link href={`/campground/${camp.id}`} className="hover:text-pine transition-colors">
+                            <span className="font-medium text-sm">{camp.nameCn}</span>
+                            <span className="block text-[10px] text-muted-foreground font-mono leading-tight">{camp.name}</span>
+                          </Link>
+                        )}
                       </TableCell>
                       {/* State */}
                       <TableCell>
@@ -256,7 +279,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
         )}
 
         {/* Cards (mobile) */}
-        {expanded && (
+        {expanded && list.length > 0 && (
           <div className="md:hidden border-t border-border px-3 py-3 space-y-2 bg-muted/20">
             <div className="flex items-center justify-between px-1 pb-1">
               <span className="text-xs text-muted-foreground">{sorted.length} 个营地</span>
@@ -283,8 +306,7 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
             </div>
             {sorted.map((camp) => {
               const visited = visitedMap[camp.id];
-              return (
-                <Link key={camp.id} href={`/campground/${camp.id}`}>
+              const cardInner = (
                   <div className={`bg-white rounded-lg border border-border p-3 active:bg-muted/40 ${visited ? "border-l-4 border-l-emerald-400" : ""}`}>
                     <div className="flex items-start justify-between gap-2">
                       <div className="min-w-0">
@@ -327,6 +349,14 @@ export function CampgroundSummaryTable({ visitedMap }: { visitedMap: VisitedGlob
                       )}
                     </div>
                   </div>
+              );
+              return onSelectCamp ? (
+                <div key={camp.id} onClick={() => onSelectCamp(camp.id)} className="cursor-pointer">
+                  {cardInner}
+                </div>
+              ) : (
+                <Link key={camp.id} href={`/campground/${camp.id}`}>
+                  {cardInner}
                 </Link>
               );
             })}

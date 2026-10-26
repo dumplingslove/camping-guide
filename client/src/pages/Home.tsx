@@ -4,8 +4,9 @@ import { Link, useSearch } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { useVisited } from "@/hooks/useVisited";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown, User } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, User, LayoutGrid, Info } from "lucide-react";
 import { CampgroundSummaryTable } from "@/components/CampgroundSummaryTable";
+import { CampgroundDetailContent } from "@/pages/CampgroundDetail";
 import { motion, AnimatePresence } from "framer-motion";
 
 function RatingStars({ rating, max = 5 }: { rating: number; max?: number }) {
@@ -27,10 +28,39 @@ export default function Home() {
   // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
   let { user, loading, error, isAuthenticated, logout } = useAuth();
 
+  // Main tabs: 总览 (overview table + visited filter) / 搜索 (search + filters + cards) / 详情 (camp detail)
+  type HomeTab = "overview" | "search" | "detail";
+  const [activeTab, setActiveTab] = useState<HomeTab>(() => {
+    const t = new URLSearchParams(window.location.search).get("tab");
+    return t === "search" || t === "detail" ? t : "overview";
+  });
+  const [visitedFilter, setVisitedFilter] = useState<"all" | "visited" | "unvisited">("all");
+  const [detailCampId, setDetailCampId] = useState<number>(() => {
+    const saved = Number(localStorage.getItem("camp_last_detail_id"));
+    return campgrounds.some((c) => c.id === saved) ? saved : campgrounds[0].id;
+  });
+
+  const switchTab = (tab: HomeTab) => {
+    setActiveTab(tab);
+    const url = new URL(window.location.href);
+    url.searchParams.set("tab", tab);
+    url.searchParams.delete("scrollTo");
+    window.history.replaceState({}, "", url.toString());
+  };
+
+  const openDetail = (id: number) => {
+    setDetailCampId(id);
+    try {
+      localStorage.setItem("camp_last_detail_id", String(id));
+    } catch {}
+    switchTab("detail");
+  };
+
   // Scroll to summary table when returning from detail page
   const searchString = useSearch();
   useEffect(() => {
     if (searchString.includes("scrollTo=table")) {
+      setActiveTab("overview");
       setTimeout(() => {
         const el = document.getElementById("summary-table");
         if (el) {
@@ -72,6 +102,13 @@ export default function Home() {
     }
     return result;
   }, [allVisits]);
+
+  const visitedCount = Object.keys(visitedMap).length;
+  const overviewCamps = useMemo(() => {
+    if (visitedFilter === "visited") return campgrounds.filter((c) => visitedMap[c.id]);
+    if (visitedFilter === "unvisited") return campgrounds.filter((c) => !visitedMap[c.id]);
+    return campgrounds;
+  }, [visitedFilter, visitedMap]);
 
   const filtered = useMemo(() => {
     return campgrounds.filter((c) => {
@@ -207,6 +244,37 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Main tabs: 总览 / 搜索 / 详情 */}
+      <div className="sticky top-16 z-40 bg-paper/95 backdrop-blur-md border-b border-border">
+        <div className="container flex items-center gap-1.5 py-2">
+          {([
+            { id: "overview", label: "总览", icon: LayoutGrid },
+            { id: "search", label: "搜索", icon: Search },
+            { id: "detail", label: "详情", icon: Info },
+          ] as const).map((t) => (
+            <button
+              key={t.id}
+              onClick={() => switchTab(t.id)}
+              className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                activeTab === t.id
+                  ? "bg-pine text-white"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted/60"
+              }`}
+            >
+              <t.icon size={16} />
+              {t.label}
+              {t.id === "detail" && (
+                <span className={`hidden sm:inline text-xs font-normal max-w-28 truncate ${activeTab === t.id ? "text-white/80" : "text-muted-foreground/70"}`}>
+                  {campgrounds.find((c) => c.id === detailCampId)?.nameCn}
+                </span>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {activeTab === "search" && (
+      <>
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
@@ -421,10 +489,46 @@ export default function Home() {
           </AnimatePresence>
         </div>
       </section>
+      </>
+      )}
 
-      {/* Summary Table */}
-      <CampgroundSummaryTable visitedMap={visitedMap} />
+      {/* 总览 tab: visited filter + summary table */}
+      {activeTab === "overview" && (
+        <>
+          <section className="container pt-6">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-sm font-medium text-foreground flex items-center gap-1.5">
+                <CheckCircle2 size={15} className="text-emerald-600" />
+                去过筛选
+              </span>
+              {([
+                { value: "all", label: `全部 ${campgrounds.length}` },
+                { value: "visited", label: `去过 ${visitedCount}` },
+                { value: "unvisited", label: `没去过 ${campgrounds.length - visitedCount}` },
+              ] as const).map((opt) => (
+                <button
+                  key={opt.value}
+                  onClick={() => setVisitedFilter(opt.value)}
+                  className={`px-3 py-2 rounded-full text-xs font-medium transition-all border ${
+                    visitedFilter === opt.value
+                      ? "bg-pine text-white border-pine"
+                      : "bg-white border-border text-muted-foreground hover:border-pine/40 hover:text-foreground"
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+              <span className="text-xs text-muted-foreground ml-1">点营地名或卡片进详情</span>
+            </div>
+          </section>
+          <div className="pt-4">
+            <CampgroundSummaryTable visitedMap={visitedMap} camps={overviewCamps} onSelectCamp={openDetail} />
+          </div>
+        </>
+      )}
 
+      {activeTab === "search" && (
+      <>
       {/* Campground Grid */}
       <section className="container pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -437,7 +541,7 @@ export default function Home() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.25, delay: Math.min(index * 0.02, 0.3), ease: [0.23, 1, 0.32, 1] }}
               >
-                <Link href={`/campground/${camp.id}`}>
+                <div onClick={() => openDetail(camp.id)} className="cursor-pointer">
                   <article className="group bg-white rounded-xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
                     {/* Image */}
                     <div className="relative h-48 overflow-hidden">
@@ -583,7 +687,7 @@ export default function Home() {
                       )}
                     </div>
                   </article>
-                </Link>
+                </div>
               </motion.div>
             ))}
           </AnimatePresence>
@@ -602,6 +706,50 @@ export default function Home() {
           </div>
         )}
       </section>
+      </>
+      )}
+
+      {/* 详情 tab: camp selector + embedded detail */}
+      {activeTab === "detail" && (
+        <div>
+          <section className="container pt-5">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => {
+                  const i = campgrounds.findIndex((c) => c.id === detailCampId);
+                  openDetail(campgrounds[(i - 1 + campgrounds.length) % campgrounds.length].id);
+                }}
+                className="w-10 h-10 shrink-0 rounded-lg border border-border bg-white flex items-center justify-center text-muted-foreground hover:text-pine hover:border-pine/40 transition-colors"
+                title="上一个营地"
+              >
+                <ChevronLeft size={18} />
+              </button>
+              <select
+                value={detailCampId}
+                onChange={(e) => openDetail(Number(e.target.value))}
+                className="flex-1 min-w-0 border border-border rounded-lg px-3 py-2.5 bg-white text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-pine/30"
+              >
+                {campgrounds.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.nameCn} · {c.state} · {c.driveTimeLabel}
+                  </option>
+                ))}
+              </select>
+              <button
+                onClick={() => {
+                  const i = campgrounds.findIndex((c) => c.id === detailCampId);
+                  openDetail(campgrounds[(i + 1) % campgrounds.length].id);
+                }}
+                className="w-10 h-10 shrink-0 rounded-lg border border-border bg-white flex items-center justify-center text-muted-foreground hover:text-pine hover:border-pine/40 transition-colors"
+                title="下一个营地"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </div>
+          </section>
+          <CampgroundDetailContent campId={detailCampId} embedded onBack={() => switchTab("overview")} />
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="border-t border-border bg-white/50 backdrop-blur-sm">
