@@ -4,8 +4,9 @@ import { Link, useSearch } from "wouter";
 import { campgrounds, driveTimeRanges, featureOptions, CampgroundTier } from "@/data/campgrounds";
 import { useFavorites } from "@/contexts/FavoritesContext";
 import { useVisited } from "@/hooks/useVisited";
-import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, User, LayoutGrid, Info, Check } from "lucide-react";
+import { Search, MapPin, Clock, TreePine, Baby, Truck, Star, AlertTriangle, X, Filter, Heart, GitCompareArrows, FileText, CheckCircle2, Flame, Ban, Map, BarChart3, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, User, LayoutGrid, Info, Check, Calendar } from "lucide-react";
 import { CampgroundSummaryTable } from "@/components/CampgroundSummaryTable";
+import { BookingCalendar } from "@/components/BookingCalendar";
 import { CampgroundDetailContent } from "@/pages/CampgroundDetail";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -139,11 +140,11 @@ export default function Home() {
   // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
   let { user, loading, error, isAuthenticated, logout } = useAuth();
 
-  // Main tabs: 总览 (overview table + visited filter) / 搜索 (search + filters + cards) / 详情 (camp detail)
-  type HomeTab = "overview" | "search" | "detail";
+  // Main tabs: 总览 (overview table + visited filter) / 搜索 (search + filters + cards) / 详情 (camp detail) / 2027 预订 (booking calendar)
+  type HomeTab = "overview" | "search" | "detail" | "booking";
   const [activeTab, setActiveTab] = useState<HomeTab>(() => {
     const t = new URLSearchParams(window.location.search).get("tab");
-    return t === "search" || t === "detail" ? t : "overview";
+    return t === "search" || t === "detail" || t === "booking" ? t : "overview";
   });
   const [visitedFilter, setVisitedFilter] = useState<"all" | "visited" | "unvisited">("all");
   const [detailCampId, setDetailCampId] = useState<number>(() => {
@@ -355,13 +356,14 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Main tabs: 总览 / 搜索 / 详情 */}
+      {/* Main tabs: 总览 / 搜索 / 详情 / 2027 预订 */}
       <div className="sticky top-16 z-40 bg-paper/95 backdrop-blur-md border-b border-border">
         <div className="container flex items-center gap-1.5 py-2">
           {([
             { id: "overview", label: "总览", icon: LayoutGrid },
             { id: "search", label: "搜索", icon: Search },
             { id: "detail", label: "详情", icon: Info },
+            { id: "booking", label: "2027 预订", icon: Calendar },
           ] as const).map((t) => (
             <button
               key={t.id}
@@ -850,6 +852,11 @@ export default function Home() {
           </section>
           <CampgroundDetailContent campId={detailCampId} embedded onBack={() => switchTab("overview")} />
         </div>
+      )}
+
+      {/* 2027 预订 tab: weekend booking calendar */}
+      {activeTab === "booking" && (
+        <BookingCalendar onOpenDetail={openDetail} />
       )}
 
       {/* Footer */}
