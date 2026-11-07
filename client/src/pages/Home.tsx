@@ -358,7 +358,7 @@ export default function Home() {
 
       {/* Main tabs: 总览 / 搜索 / 详情 / 2027 预订 */}
       <div className="sticky top-16 z-40 bg-paper/95 backdrop-blur-md border-b border-border">
-        <div className="container flex items-center gap-1.5 py-2">
+        <div className="container flex items-center gap-1.5 py-2 overflow-x-auto flex-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {([
             { id: "overview", label: "总览", icon: LayoutGrid },
             { id: "search", label: "搜索", icon: Search },
@@ -368,7 +368,7 @@ export default function Home() {
             <button
               key={t.id}
               onClick={() => switchTab(t.id)}
-              className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              className={`flex shrink-0 whitespace-nowrap items-center gap-1.5 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 activeTab === t.id
                   ? "bg-pine text-white"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted/60"

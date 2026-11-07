@@ -89,45 +89,85 @@ export default function FloatingActions() {
   }
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        right: 18,
-        bottom: 18,
-        zIndex: 9000,
-        display: "flex",
-        flexDirection: "column",
-        gap: 12,
-      }}
-    >
-      <button
-        type="button"
-        style={btnStyle}
-        title={user ? `已登录：${user.email}（点击去登录页）` : "登录（邮箱链接 / 粘贴链接）"}
-        aria-label="登录"
-        onClick={() => setLocation("/login")}
+    <>
+      {/* 手机端底部操作条占位：让页面内容能滚动到操作条上方，不被盖住 */}
+      <div className="h-16 md:hidden" aria-hidden />
+      {/* 桌面端：右下角三颗圆钮（原样） */}
+      <div
+        className="hidden md:flex"
+        style={{
+          position: "fixed",
+          right: 18,
+          bottom: 18,
+          zIndex: 9000,
+          flexDirection: "column",
+          gap: 12,
+        }}
       >
-        {user ? "✅" : "🔒"}
-      </button>
-      <button
-        type="button"
-        style={{ ...btnStyle, opacity: refreshing ? 0.55 : 1 }}
-        title="强制刷新：清缓存并重新加载最新版本"
-        aria-label="强制刷新"
-        onClick={forceRefresh}
-        disabled={refreshing}
+        <button
+          type="button"
+          style={btnStyle}
+          title={user ? `已登录：${user.email}（点击去登录页）` : "登录（邮箱链接 / 粘贴链接）"}
+          aria-label="登录"
+          onClick={() => setLocation("/login")}
+        >
+          {user ? "✅" : "🔒"}
+        </button>
+        <button
+          type="button"
+          style={{ ...btnStyle, opacity: refreshing ? 0.55 : 1 }}
+          title="强制刷新：清缓存并重新加载最新版本"
+          aria-label="强制刷新"
+          onClick={forceRefresh}
+          disabled={refreshing}
+        >
+          {refreshing ? "⏳" : "🔄"}
+        </button>
+        <button
+          type="button"
+          style={btnStyle}
+          title="复制本站链接"
+          aria-label="分享链接"
+          onClick={share}
+        >
+          {copied ? "✅" : "🔗"}
+        </button>
+      </div>
+      {/* 手机端：底部一排三个小按钮（登录 / 刷新 / 分享），不再用悬浮圆钮盖内容 */}
+      <div
+        className="md:hidden fixed bottom-0 left-0 right-0 z-[9000] flex bg-[#16213e]/95 backdrop-blur border-t border-[#667eea]/40"
+        style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       >
-        {refreshing ? "⏳" : "🔄"}
-      </button>
-      <button
-        type="button"
-        style={btnStyle}
-        title="复制本站链接"
-        aria-label="分享链接"
-        onClick={share}
-      >
-        {copied ? "✅" : "🔗"}
-      </button>
-    </div>
+        <button
+          type="button"
+          className="flex-1 py-2.5 text-[#8f9bff] flex flex-col items-center gap-0.5 text-sm"
+          aria-label="登录"
+          onClick={() => setLocation("/login")}
+        >
+          <span>{user ? "✅" : "🔒"}</span>
+          <span className="text-[11px]">{user ? "已登录" : "登录"}</span>
+        </button>
+        <button
+          type="button"
+          className="flex-1 py-2.5 text-[#8f9bff] flex flex-col items-center gap-0.5 text-sm"
+          aria-label="强制刷新"
+          onClick={forceRefresh}
+          disabled={refreshing}
+          style={{ opacity: refreshing ? 0.55 : 1 }}
+        >
+          <span>{refreshing ? "⏳" : "🔄"}</span>
+          <span className="text-[11px]">刷新</span>
+        </button>
+        <button
+          type="button"
+          className="flex-1 py-2.5 text-[#8f9bff] flex flex-col items-center gap-0.5 text-sm"
+          aria-label="分享链接"
+          onClick={share}
+        >
+          <span>{copied ? "✅" : "🔗"}</span>
+          <span className="text-[11px]">分享</span>
+        </button>
+      </div>
+    </>
   );
 }
