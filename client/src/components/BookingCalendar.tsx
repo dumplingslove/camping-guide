@@ -291,22 +291,22 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                           {w.nights === 2 ? "周五出发，住两晚" : "周六去，住 1 晚"}
                         </span>
                         {w.quality === "star" && (
-                          <span className="ml-1 rounded-full bg-amber-100 text-amber-800 px-2 py-0.5 text-xs font-medium">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-amber-100 text-amber-800 px-2 py-0.5 text-xs font-medium">
                             ⭐ 特别好
                           </span>
                         )}
                         {w.quality === "good" && (
-                          <span className="ml-1 rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 text-xs">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-emerald-50 text-emerald-700 px-2 py-0.5 text-xs">
                             位置不错
                           </span>
                         )}
                         {w.scarcity === "hot" && (
-                          <span className="ml-1 rounded-full bg-red-50 text-red-700 px-2 py-0.5 text-xs">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-red-50 text-red-700 px-2 py-0.5 text-xs">
                             🔥 抢手
                           </span>
                         )}
                         {w.status === "booked" && (
-                          <span className="ml-1 rounded-full bg-sky-100 text-sky-800 px-2 py-0.5 text-xs font-medium">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-sky-100 text-sky-800 px-2 py-0.5 text-xs font-medium">
                             已订{w.confirmation ? ` · ${w.confirmation}` : ""}
                           </span>
                         )}
@@ -395,22 +395,22 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                         {s.pad && <span className="text-muted-foreground"> · {s.pad}</span>}
                         <span className="text-muted-foreground"> · ${s.fee}/晚</span>
                         {s.quality === "star" && (
-                          <span className="ml-1 rounded-full bg-amber-100 text-amber-800 px-2 py-0.5 text-xs font-medium">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-amber-100 text-amber-800 px-2 py-0.5 text-xs font-medium">
                             ⭐ 特别好{s.qualityNote ? ` · ${s.qualityNote}` : ""}
                           </span>
                         )}
                         {s.quality === "good" && (
-                          <span className="ml-1 rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 text-xs">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-emerald-50 text-emerald-700 px-2 py-0.5 text-xs">
                             位置不错{s.qualityNote ? ` · ${s.qualityNote}` : ""}
                           </span>
                         )}
                         {s.status === "booked" && (
-                          <span className="ml-1 rounded-full bg-sky-100 text-sky-800 px-2 py-0.5 text-xs font-medium">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-sky-100 text-sky-800 px-2 py-0.5 text-xs font-medium">
                             已订{s.confirmation ? ` · ${s.confirmation}` : ""}
                           </span>
                         )}
                         {s.status === "held" && (
-                          <span className="ml-1 rounded-full bg-muted text-muted-foreground px-2 py-0.5 text-xs">
+                          <span className="ml-1 rounded-full whitespace-nowrap bg-muted text-muted-foreground px-2 py-0.5 text-xs">
                             先放着
                           </span>
                         )}
