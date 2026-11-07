@@ -252,6 +252,27 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
   },
 ];
 
+/** 华盛顿州立公园八九月周末：270 天窗口还没开，标开放日，到日子现查 */
+export type UpcomingWeekend = {
+  /** 入住日，周六，YYYY-MM-DD */
+  arrival: string;
+  label: string;
+  /** 放号窗口开放日 YYYY-MM-DD */
+  opensOn: string;
+  opensLabel: string;
+};
+
+export const UPCOMING_WEEKENDS: UpcomingWeekend[] = [
+  { arrival: "2027-08-07", label: "8月7日周六", opensOn: "2026-11-10", opensLabel: "11月10日" },
+  { arrival: "2027-08-14", label: "8月14日周六", opensOn: "2026-11-17", opensLabel: "11月17日" },
+  { arrival: "2027-08-21", label: "8月21日周六", opensOn: "2026-11-24", opensLabel: "11月24日" },
+  { arrival: "2027-08-28", label: "8月28日周六", opensOn: "2026-12-01", opensLabel: "12月1日" },
+  { arrival: "2027-09-04", label: "9月4日周六", opensOn: "2026-12-08", opensLabel: "12月8日" },
+  { arrival: "2027-09-11", label: "9月11日周六", opensOn: "2026-12-15", opensLabel: "12月15日" },
+  { arrival: "2027-09-18", label: "9月18日周六", opensOn: "2026-12-22", opensLabel: "12月22日" },
+  { arrival: "2027-09-25", label: "9月25日周六", opensOn: "2026-12-29", opensLabel: "12月29日" },
+];
+
 /** 还在盯着的营地：窗口未开，或该周末订满等退订 */
 export type WatchingPark = {
   campId: number;
@@ -286,6 +307,86 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 34,
     reason: "俄勒冈 6 个月窗口未开",
     checkNote: "6 月档期 2026-12-01 起滚动开放，7 月档期约 2027-01-01 起",
+  },
+  {
+    campId: 38,
+    reason: "俄勒冈 6 个月窗口未开",
+    checkNote: "6 月档期 2026-12-01 起滚动开放，7 月档期约 2027-01-01 起",
+  },
+  {
+    campId: 46,
+    reason: "俄勒冈 6 个月窗口未开",
+    checkNote: "6 月档期 2026-12-01 起滚动开放，7 月档期约 2027-01-01 起",
+  },
+  {
+    campId: 29,
+    reason: "Recreation.gov 270 天窗口已开，待现查",
+    checkNote: "6 月 19 日档期 2026-09-22 已开，7 月 24 日档期 2026-10-27 已开；8 月 7 日档期 11 月 10 日开",
+  },
+  {
+    campId: 4,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "6 月档期 2026-12-21 起、7 月 2027-01-04 起、8 月 2027-02-08 起、9 月 2027-03-08 起滚动开放，每天太平洋时间早 7 点放票",
+  },
+  {
+    campId: 11,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "A/B Loop 180 天窗口未开（C/D 提前 2 周、E/F 提前 4 天）；6 月档期 2026-12-21 起滚动开放",
+  },
+  {
+    campId: 17,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "6 月档期 2026-12-21 起、7 月 2027-01-04 起、8 月 2027-02-08 起、9 月 2027-03-08 起滚动开放，每天太平洋时间早 7 点放票",
+  },
+  {
+    campId: 18,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "6 月档期 2026-12-21 起、7 月 2027-01-04 起、8 月 2027-02-08 起、9 月 2027-03-08 起滚动开放，每天太平洋时间早 7 点放票",
+  },
+  {
+    campId: 23,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "6 月档期 2026-12-21 起、7 月 2027-01-04 起、8 月 2027-02-08 起、9 月 2027-03-08 起滚动开放，每天太平洋时间早 7 点放票",
+  },
+  {
+    campId: 37,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "6 月档期 2026-12-21 起、7 月 2027-01-04 起、8 月 2027-02-08 起、9 月 2027-03-08 起滚动开放，每天太平洋时间早 7 点放票",
+  },
+  {
+    campId: 39,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "6 月档期 2026-12-21 起、7 月 2027-01-04 起、8 月 2027-02-08 起、9 月 2027-03-08 起滚动开放，每天太平洋时间早 7 点放票",
+  },
+  {
+    campId: 7,
+    reason: "Recreation.gov 180 天窗口未开",
+    checkNote: "Loop B 180 天窗口未开（Loop A 提前 4 天、Loop C 提前 14 天）；6 月档期 2026-12-21 起滚动开放",
+  },
+  {
+    campId: 50,
+    reason: "BC Parks 60 天窗口未开",
+    checkNote: "6 月档期 2027-04-20 起、7 月 2027-05-04 起、8 月 2027-06-08 起、9 月 2027-07-06 起滚动开放",
+  },
+  {
+    campId: 51,
+    reason: "BC Parks 60 天窗口未开",
+    checkNote: "6 月档期 2027-04-20 起、7 月 2027-05-04 起、8 月 2027-06-08 起、9 月 2027-07-06 起滚动开放",
+  },
+  {
+    campId: 52,
+    reason: "BC Parks 60 天窗口未开",
+    checkNote: "6 月档期 2027-04-20 起、7 月 2027-05-04 起、8 月 2027-06-08 起、9 月 2027-07-06 起滚动开放",
+  },
+  {
+    campId: 53,
+    reason: "BC Parks 60 天窗口未开",
+    checkNote: "6 月档期 2027-04-20 起、7 月 2027-05-04 起、8 月 2027-06-08 起、9 月 2027-07-06 起滚动开放",
+  },
+  {
+    campId: 10,
+    reason: "14 天滚动窗口，临行才放号",
+    checkNote: "提前 14 天滚动放号，夏季周末临行前两周再查",
   },
   {
     campId: 26,

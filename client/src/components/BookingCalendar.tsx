@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { campgrounds } from "@/data/campgrounds";
 import {
   BOOKING_WEEKENDS,
+  UPCOMING_WEEKENDS,
   WATCHING_PARKS,
   CHECKED_WA_CAMP_IDS,
   BOOKING_CHECKED_AT,
@@ -56,6 +57,14 @@ function MonthGrid({
     }
     return m;
   }, [year, month]);
+  const upcomingByDay = useMemo(() => {
+    const m = new Map<number, (typeof UPCOMING_WEEKENDS)[number]>();
+    for (const w of UPCOMING_WEEKENDS) {
+      const d = new Date(`${w.arrival}T00:00:00`);
+      if (d.getFullYear() === year && d.getMonth() === month) m.set(d.getDate(), w);
+    }
+    return m;
+  }, [year, month]);
 
   const cells: (number | null)[] = [];
   for (let i = 0; i < firstDay; i++) cells.push(null);
@@ -75,6 +84,27 @@ function MonthGrid({
         {cells.map((d, i) => {
           if (d === null) return <div key={`b${i}`} />;
           const w = byDay.get(d);
+          const u = upcomingByDay.get(d);
+          if (u) {
+            const isSelU = selected === u.arrival;
+            return (
+              <button
+                key={d}
+                onClick={() => onSelect(u.arrival)}
+                className={`h-11 rounded-lg flex flex-col items-center justify-center text-sm font-medium transition-colors ${
+                  isSelU
+                    ? "bg-amber-500 text-white"
+                    : "bg-amber-50 text-amber-800 hover:bg-amber-100 border border-amber-200"
+                }`}
+                title={`${u.label} · 放号窗口 ${u.opensLabel} 开放`}
+              >
+                <span>{d}</span>
+                <span className={`text-[10px] leading-none ${isSelU ? "text-white/80" : "text-amber-600"}`}>
+                  未开
+                </span>
+              </button>
+            );
+          }
           if (!w) {
             return (
               <div
@@ -140,6 +170,7 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
   }, [user?.id]);
 
   const weekend = BOOKING_WEEKENDS.find((w) => w.arrival === selected) ?? BOOKING_WEEKENDS[0];
+  const upcoming = UPCOMING_WEEKENDS.find((w) => w.arrival === selected);
   const noSiteCampIds = CHECKED_WA_CAMP_IDS.filter(
     (id) => !weekend.parks.some((p) => p.campId === id),
   );
@@ -205,6 +236,10 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
           订位费；取消时 $8 不退，再按持有时长扣当晚房费的 5–50%。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+          不同系统放号窗口不一样：华盛顿州立公园提前 270 天，国家公园走 Recreation.gov 多为提前
+          180 天（霍雨林 270 天），俄勒冈 6 个月，BC 省立公园 60 天，盐溪 14 天。八九月和还没开的系统都在下面标着开放日，到日子就去查。
+        </p>
+        <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
           点 <span className="font-medium text-foreground">“帮我订”</span> 就是把订位请求发给小美：
           登录状态下请求会直接存到云端，小美看到后找你确认登录和付款再下单；未登录时请求只存本机并复制好发给你，粘贴发给小美同样有效。下单前每单费用会再跟你确认一遍。
         </p>
@@ -219,9 +254,19 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
       <section className="grid gap-3 md:grid-cols-2">
         <MonthGrid year={2027} month={5} selected={selected} onSelect={setSelected} />
         <MonthGrid year={2027} month={6} selected={selected} onSelect={setSelected} />
+        <MonthGrid year={2027} month={7} selected={selected} onSelect={setSelected} />
+        <MonthGrid year={2027} month={8} selected={selected} onSelect={setSelected} />
       </section>
 
       {/* 选中周末的可订营地 */}
+      {upcoming ? (
+        <section className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+          <h3 className="text-base font-semibold">{upcoming.label} → 周日 · 放号窗口还没开</h3>
+          <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+            华盛顿州立公园提前 270 天放号，这个周末 {upcoming.opensLabel} 开放，到日子现查空位填上；盯盘任务会按开放日去查。
+          </p>
+        </section>
+      ) : (
       <section>
         <h3 className="text-base font-semibold mb-3">
           {weekend.label} → 周日 · 可订营地 {weekend.parks.length} 个
@@ -275,6 +320,7 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
           </p>
         )}
       </section>
+      )}
 
       {/* 盯盘中 */}
       <section className="rounded-xl border border-border bg-white p-4">
