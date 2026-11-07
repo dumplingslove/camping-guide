@@ -238,11 +238,10 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
           不同系统放号窗口不一样：华盛顿州立公园提前 270 天，国家公园走 Recreation.gov 多为提前
-          180 天（霍雨林 270 天），俄勒冈 6 个月，BC 省立公园 60 天，盐溪 14 天。八九月和还没开的系统都在下面标着开放日，到日子就去查。
+          180 天（霍雨林 270 天），俄勒冈 6 个月，BC 省立公园 3 个月滚动（每天早 7 点放票），盐溪每年 1 月 1 日开放当年预订。八九月和还没开的系统都在下面标着开放日，到日子就去查。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-          ⭐ 特别好 = 站内研究点名推荐的营位；“位置不错”= 所在分区评分 4–5
-          分；没标的 = 位置一般或数据待核实。营位好坏正在从头逐项复核，标错的会改。
+          ⭐ 特别好 = 复核证实的点名推荐营位（只剩韦纳奇湖北营地水电位 4 处）；“位置不错”= 复核确认方向的分区；没标的 = 位置一般或接驳待逐号核对。56 个营地已从头复核一遍，旧研究里“全接驳”等写法大面积是错的，已按复核结论重标。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
           点 <span className="font-medium text-foreground">“帮我订”</span> 就是把订位请求发给小美：
@@ -265,9 +264,8 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
         ) : (
           <>
             <p className="text-sm text-muted-foreground mt-1">
-              计划 {SUMMER_PLAN_2027.trips} 个周末 · 立刻订 {SUMMER_PLAN_2027.bookNow} 处 ·
-              先放着 {SUMMER_PLAN_2027.hold} 处 · 全订下来约 $
-              {SUMMER_PLAN_2027.totalEstimate}
+              计划 {SUMMER_PLAN_2027.trips} 个周末 · 立刻订 {SUMMER_PLAN_2027.bookNow} 处（合计约
+              ${SUMMER_PLAN_2027.totalEstimate}） · 先放着 {SUMMER_PLAN_2027.hold} 处
             </p>
             <div className="mt-3 space-y-2">
               {SUMMER_PLAN_2027.weekends.map((w) => {
@@ -288,7 +286,8 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                         </span>
                         <span className="text-muted-foreground">
                           {" "}
-                          · {w.site} · ${w.fee}/晚 · {drive} ·{" "}
+                          · {w.site} ·{" "}
+                          {w.fee === null ? "房费待查" : `$${w.fee}/晚`} · {drive} ·{" "}
                           {w.nights === 2 ? "周五出发，住两晚" : "周六去，住 1 晚"}
                         </span>
                         {w.quality === "star" && (
@@ -313,7 +312,9 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                         )}
                       </div>
                       {w.status !== "booked" &&
-                        (target ? (
+                        (w.site === "待查" ? (
+                          <span className="shrink-0 text-xs text-muted-foreground">待现查</span>
+                        ) : target ? (
                           <button
                             onClick={() => book(w.campId, target)}
                             className="shrink-0 px-3 py-1.5 rounded-lg bg-pine text-white text-sm font-medium hover:opacity-90 transition-opacity"

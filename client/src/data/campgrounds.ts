@@ -134,7 +134,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统，每天早7点放票" },
     ],
-    recommendedSites: "Forest Loop: Site 50, 52, 54（靠近步道+全接驳+平坦+树荫好）；Quarry Pond: Site 210, 215（安静内侧+全接驳）；Lower Loop A（宽敞Pull-Through，适合大车）",
+    recommendedSites: "Forest Loop: Site 50、52、54（水电部分接驳 50A、背入 30–35 英尺、林间树荫好；全园无排污接驳）；Quarry Pond 302–361 号段内选水电位；Lower Loop A 多为无接驳标准位、路窄，不宜大车；Bowman Bay 最幽静，279 号被评论点名最佳",
     avoid: "Quarry Pond（靠近公路噪音大）、Lower Loop B（排水不良+Split-level地势不平）",
     tcNotes: "Forest Loop 78个营位，水电+25-30ft营位+平坦。无绝对禁区，但预订时注意个别营位限制在20ft以内",
     image: "/camping-guide/images/camp-1/card.jpg",
@@ -347,7 +347,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统。South CG 限制25ft以内，North CG有42个水电位" },
     ],
-    recommendedSites: "North CG: 水电位（湖景+30/50A全接驳+近沙滩+Pull-through可达40ft）",
+    recommendedSites: "North CG：选 42 个水电部分接驳位（20/30/50A、Pull-Through 可达 40 英尺、无排污）；湖景与沙滩是南园的卖点，北园在林间、距湖约 1/4 英里",
     avoid: "South CG 无水电且限制25ft以内，设施基础",
     tcNotes: "North CG 42个水电位(30/50A)，Pull-through可达40ft，完美适配TC。South CG限制25ft以内，F-150 TC(约22ft)可进但无hookup",
     image: "/camping-guide/images/camp-5/card.jpg",
@@ -514,7 +514,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "WA State Parks 系统" },
     ],
-    recommendedSites: "North RV Section全接驳营位（TC首选，30A电力，近boat launch）",
+    recommendedSites: "Trailer Loop 1–35 号：全园仅 17 个全接驳 + 18 个水电位，订前逐号核对接驳与电流；房车限长 30 英尺；湖畔步行位 65、88、89 号被评论点名",
     avoid: "Terraced Lakefront不适合TC（步行式阶梯营位，无法停车）",
     tcNotes: "仅North RV Section的17个全接驳营位适合TC，30A电力，沥青停车垫可容纳大型车辆",
     image: "/camping-guide/images/camp-8/card.jpg",
@@ -614,7 +614,7 @@ export const campgrounds: Campground[] = [
       { area: "Forest Sites (Non-Utility)", whyVacant: "无电+无海景+位置在树林中，知名度低，取消率较高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 14, advanceLabel: "提前14天", notes: "Clallam County Parks 系统，滚动放票" },
+      { area: "All Sites", advanceDays: 0, advanceLabel: "每年1月1日开放当年预订", notes: "Clallam County CampLife 系统，每年 1 月 1 日开放当年 2 月 1 日–10 月 31 日预订；可订位 16–39、50–68、71–73 号，其余先到先得" },
     ],
     recommendedSites: "Site 1-20（最近潮池+海景+平坦）",
     avoid: "Site 70+（远离海岸+无设施+无景观）",
@@ -1394,7 +1394,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
-    recommendedSites: "Upper Loop: Site 1-20（全接驳+近游乐场+平坦宽敞）",
+    recommendedSites: "Beach Campground 1–50 号为全接驳（平坦宽敞、多数有海景）；Upper Forest 51–80 号为水电部分接驳（林间私密）",
     avoid: "Lower Loop靠近道路的营位（噪音+无接驳）",
     tcNotes: "全接驳营位，适合TC，共80个营位",
     image: "/camping-guide/images/camp-25/card.jpg",
@@ -1442,7 +1442,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
-    recommendedSites: "Full Hookup: 靠近海滩步道入口的营位（步行最短到海滩）",
+    recommendedSites: "全园 60 全接驳 + 38 水电位；无接驳类型×环路对应表，订位时在预订页逐号核对，勿按‘近海滩步道入口’选号；50 多个位 11/1–4/15 有季节性积水",
     avoid: "Standard Loop最外圈（风大+无遮挡+远离卫生间）",
     tcNotes: "全接驳营位，适合TC，共100个营位",
     image: "/camping-guide/images/camp-26/card.jpg",
@@ -1490,7 +1490,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
-    recommendedSites: "Full Hookup: Site 30-40（靠近河边+自行车道入口+树荫较好）",
+    recommendedSites: "全园 60 位：52 全接驳 + 8 标准位，订前在预订页逐号核对；近河边与 Apple Capital Loop Trail 步道；30 号为管理员位、不可预订",
     avoid: "Standard区（夏季太热+无遮荫+无水电）",
     tcNotes: "全接驳营位，适合TC，共59个营位",
     image: "/camping-guide/images/camp-27/card.jpg",
@@ -1538,7 +1538,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
-    recommendedSites: "Upper Campground: Site 30-40（树荫好+靠近步道+全接驳）",
+    recommendedSites: "Upper Campground 1–47 号全部无接驳、林间遮荫私密、近步道，适合帐篷/25 英尺以下小车；Lower Campground 48–116 号 55 个全接驳 + 14 个标准，全年开放、临海滩，房车首选",
     avoid: "Beach Campground最外侧（风极大+无遮挡）",
     tcNotes: "水电营位，适合TC，共116个营位",
     image: "/camping-guide/images/camp-28/card.jpg",
@@ -1640,7 +1640,7 @@ export const campgrounds: Campground[] = [
     bookingWindows: [
       { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "washington.goingtocamp.com" },
     ],
-    recommendedSites: "Midway: 靠近Cascade Lake的营位（步行最短到游泳区+全接驳）",
+    recommendedSites: "Southend 1–17 号：全园最抢手湖畔区，几乎全部临湖、最贴游泳区，须提前抢；Midway 18–66 号（49 位，无接驳），12 个湖畔位近船坞；Northend 67–118 号（52 位，无接驳），林间私密；全园无接驳",
     avoid: "South End最远端（离湖远+离卫生间远）",
     tcNotes: "无接驳，TC需自给自足，共124个营位",
     image: "/camping-guide/images/camp-30/card.jpg",
@@ -2334,7 +2334,7 @@ export const campgrounds: Campground[] = [
       { area: "Sage Camp Loop (Utility)", whyVacant: "—", whyHard: "华州东部最热门水上活动营地，夏季极其抢手" },
       { area: "Dune/Bay Camp Loop", whyVacant: "无接驳+夏季酷热（40°C+），帐篷客常取消", whyHard: "—" }
     ],
-    recommendedSites: "Full Hookup: 靠近湖边和船坞的营位（水上活动最方便+全接驳）",
+    recommendedSites: "Cove 环近码头、Bay 外圈临水，水上活动最方便；以全接驳为主，订前逐号核对；Sage 11 号被点名最受欢迎",
     avoid: "Standard区最远端（离湖远+夏季酷热无遮荫+无水电）",
     tcNotes: "宽敞的RV营位，有Full Hookup。地形开阔平坦，非常适合大型TC。",
     lat: 47.86,
@@ -2608,7 +2608,7 @@ export const campgrounds: Campground[] = [
     description: "拉斯特雷弗海滩省立公园是温哥华岛最受欢迎的家庭露营地之一，拥有长达2公里的沙滩和适合幼儿的浅水区。营地被高大的花旗松环绕，提供超过250个营地，设施完善，非常适合家庭度假。退潮时，海滩会延伸近一公里，是孩子们玩沙和探索潮池的理想场所。",
     reviewCount: "TripAdvisor: 4.7★ (955条评价), Google Maps: 4.7★ (约3000条评价)",
     bookingWindows: [
-      { area: "All Sites", advanceDays: 60, advanceLabel: "提前2个月", notes: "BC Parks Discover Camping系统，提前2个月开放预订" },
+      { area: "All Sites", advanceDays: 90, advanceLabel: "提前3个月", notes: "BC Parks 订位系统，3 个月滚动窗口、每天太平洋时间早 7 点放票" },
     ],
     image: "/camping-guide/images/camp-50/card.jpg",
     bookingSystem: "BC Parks (Discover Camping)",
@@ -2661,7 +2661,7 @@ export const campgrounds: Campground[] = [
     description: "闪电湖营地位于曼宁省立公园内，被群山环抱，风景如画。营地分为大环线和小环线，提供宽敞的营地，非常适合家庭和卡车露营车。这里有淋浴和冲水马桶等便利设施，是探索公园步道和湖泊的绝佳大本营。",
     reviewCount: "TripAdvisor: 4.3★ (22条评价)",
     bookingWindows: [
-      { area: "All Sites", advanceDays: 60, advanceLabel: "提前2个月", notes: "BC Parks Discover Camping系统，提前2个月开放预订" },
+      { area: "All Sites", advanceDays: 90, advanceLabel: "提前3个月", notes: "BC Parks 订位系统，3 个月滚动窗口、每天太平洋时间早 7 点放票" },
     ],
     image: "/camping-guide/images/camp-51/card.jpg",
     bookingSystem: "BC Parks (Discover Camping)",
@@ -2712,7 +2712,7 @@ export const campgrounds: Campground[] = [
     description: "卡尔特斯湖省立公园（Cultus Lake Provincial Park）是低陆平原最受欢迎的目的地之一，拥有温暖的淡水湖和风景秀丽的森林山脉。公园提供四个营地、大型日间野餐和划船区，以及丰富的钓鱼、滑水、风帆冲浪和徒步旅行机会。距离温哥华仅一个半小时车程，非常适合家庭周末度假。",
     reviewCount: "Google Maps: (4000条评价), TripAdvisor: 4.1★ (57条评价)",
     bookingWindows: [
-      { area: "All Sites", advanceDays: 60, advanceLabel: "提前2个月", notes: "BC Parks Discover Camping系统，提前2个月开放预订" },
+      { area: "All Sites", advanceDays: 90, advanceLabel: "提前3个月", notes: "BC Parks 订位系统，3 个月滚动窗口、每天太平洋时间早 7 点放票" },
     ],
     image: "/camping-guide/images/camp-52/card.jpg",
     bookingSystem: "BC Parks (Discover Camping)",
@@ -2767,7 +2767,7 @@ export const campgrounds: Campground[] = [
     description: "阿卢埃特营地位于金穗省立公园内，被茂密的森林环绕，紧邻美丽的阿卢埃特湖。这里非常适合有幼儿的家庭，提供平缓的步道、沙滩和安全的游乐环境。营地设施完善，是体验BC省自然风光的绝佳选择。",
     reviewCount: "Google Maps: 4.7★ (4632条评价)",
     bookingWindows: [
-      { area: "All Sites", advanceDays: 60, advanceLabel: "提前2个月", notes: "BC Parks Discover Camping系统，提前2个月开放预订" },
+      { area: "All Sites", advanceDays: 90, advanceLabel: "提前3个月", notes: "BC Parks 订位系统，3 个月滚动窗口、每天太平洋时间早 7 点放票" },
     ],
     image: "/camping-guide/images/camp-53/card.jpg",
     bookingSystem: "BC Parks (Discover Camping)",
