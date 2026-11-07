@@ -44,7 +44,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       { campId: 26, sites: [{ site: "1、2、11号", hookup: "全接驳", fee: 56 }] },
       { campId: 27, sites: [{ site: "39、40号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Loop 2 河边区·接驳须逐号核对" }, { site: "41–46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "近河边·接驳须逐号核对" }] },
       { campId: 1, sites: [{ site: "Quarry Pond 306号", hookup: "水电", fee: 46 }] },
-      { campId: 5, sites: [{ site: "130号", hookup: "水电", pad: "54×14英尺 pull-through", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" }] },
+      { campId: 5, sites: [{ site: "130号", hookup: "水电", pad: "54×14英尺 pull-through", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污", status: "booked", confirmation: "IWWA27-3600548B1" }] },
       { campId: 8, sites: [{ site: "West Loop 77、78号", hookup: "无接驳", fee: 37 }] },
       {
         campId: 28,
@@ -191,7 +191,8 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 5,
         sites: [
-          { site: "106、109号", hookup: "水电 pull-through", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
+          { site: "106号", hookup: "水电 pull-through", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污", status: "booked", confirmation: "IWWA27-3600662B1" },
+          { site: "109号", hookup: "水电 pull-through", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
           { site: "139、184、196号", hookup: "水电", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
           { site: "20多个位", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" },
         ],

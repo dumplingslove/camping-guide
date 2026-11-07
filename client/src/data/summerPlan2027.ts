@@ -76,6 +76,8 @@ export const SUMMER_PLAN_2027: SummerPlan2027 = {
       qualityNote: "北营地水电位·部分接驳无排污",
       reason: "开季第一站：A 级秒光营地的北营地水电位（部分接驳无排污），1:53；不抢就没了",
       verdict: "book_now",
+      status: "booked",
+      confirmation: "IWWA27-3600548B1",
     },
     {
       arrival: "2027-06-26",
@@ -121,7 +123,7 @@ export const SUMMER_PLAN_2027: SummerPlan2027 = {
       arrival: "2027-07-17",
       campId: 5,
       campName: "韦纳奇湖",
-      site: "106、109号",
+      site: "106号",
       fee: 46,
       driveMinutes: 113,
       nights: 1,
@@ -130,6 +132,8 @@ export const SUMMER_PLAN_2027: SummerPlan2027 = {
       qualityNote: "北营地水电位·部分接驳无排污",
       reason: "A 级秒光营地的北营地水电 pull-through 位，1:53；韦纳奇湖第二去，隔一个月",
       verdict: "book_now",
+      status: "booked",
+      confirmation: "IWWA27-3600662B1",
     },
     {
       arrival: "2027-07-24",
