@@ -14,6 +14,9 @@ export type BookingSite = {
   /** 位置好坏：star = 站内研究点名推荐；good = 所在分区评分 4–5 分；不填 = 一般或数据待核实 */
   quality?: "star" | "good";
   qualityNote?: string;
+  /** 订位状态：booked = 已订（confirmation 为确认号）；held = 先放着等用户看；不填 = 可订 */
+  status?: "booked" | "held";
+  confirmation?: string;
 };
 
 export type WeekendParks = {

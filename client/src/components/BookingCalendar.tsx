@@ -10,6 +10,7 @@ import {
   type BookingSite,
   type BookingWeekend,
 } from "@/data/booking2027";
+import { SUMMER_PLAN_2027 } from "@/data/summerPlan2027";
 import { supabase, supabaseConfigured } from "@/lib/supabase";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Calendar, Bell, CheckCircle2, MapPin } from "lucide-react";
@@ -254,6 +255,89 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
         )}
       </section>
 
+      {/* 2027 夏天总计划（主面：日程 + 推荐 + 订了什么） */}
+      <section className="rounded-xl border border-border bg-white p-4">
+        <h3 className="text-lg font-semibold">🗓️ 我的 2027 夏天计划</h3>
+        {!SUMMER_PLAN_2027.ready ? (
+          <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+            {SUMMER_PLAN_2027.note}
+          </p>
+        ) : (
+          <>
+            <p className="text-sm text-muted-foreground mt-1">
+              计划 {SUMMER_PLAN_2027.trips} 个周末 · 立刻订 {SUMMER_PLAN_2027.bookNow} 处 ·
+              先放着 {SUMMER_PLAN_2027.hold} 处 · 全订下来约 $
+              {SUMMER_PLAN_2027.totalEstimate}
+            </p>
+            <div className="mt-3 space-y-2">
+              {SUMMER_PLAN_2027.weekends.map((w) => {
+                const [, m, d] = w.arrival.split("-");
+                const drive =
+                  w.driveMinutes >= 60
+                    ? `约 ${(w.driveMinutes / 60).toFixed(1).replace(/\.0$/, "")} 小时车程`
+                    : `约 ${w.driveMinutes} 分钟车程`;
+                const target = BOOKING_WEEKENDS.find((x) => x.arrival === w.arrival)
+                  ?.parks.find((p) => p.campId === w.campId)
+                  ?.sites.find((s) => s.site === w.site);
+                return (
+                  <div key={w.arrival} className="rounded-lg bg-muted/40 px-3 py-2.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="text-sm">
+                        <span className="font-medium">
+                          {parseInt(m)} 月 {parseInt(d)} 日 · {w.campName}
+                        </span>
+                        <span className="text-muted-foreground">
+                          {" "}
+                          · {w.site} · ${w.fee}/晚 · {drive} ·{" "}
+                          {w.nights === 2 ? "周五出发，住两晚" : "周六去，住 1 晚"}
+                        </span>
+                        {w.quality === "star" && (
+                          <span className="ml-1 rounded-full bg-amber-100 text-amber-800 px-2 py-0.5 text-xs font-medium">
+                            ⭐ 特别好
+                          </span>
+                        )}
+                        {w.quality === "good" && (
+                          <span className="ml-1 rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 text-xs">
+                            位置不错
+                          </span>
+                        )}
+                        {w.scarcity === "hot" && (
+                          <span className="ml-1 rounded-full bg-red-50 text-red-700 px-2 py-0.5 text-xs">
+                            🔥 抢手
+                          </span>
+                        )}
+                        {w.status === "booked" && (
+                          <span className="ml-1 rounded-full bg-sky-100 text-sky-800 px-2 py-0.5 text-xs font-medium">
+                            已订{w.confirmation ? ` · ${w.confirmation}` : ""}
+                          </span>
+                        )}
+                      </div>
+                      {w.status !== "booked" &&
+                        (target ? (
+                          <button
+                            onClick={() => book(w.campId, target)}
+                            className="shrink-0 px-3 py-1.5 rounded-lg bg-pine text-white text-sm font-medium hover:opacity-90 transition-opacity"
+                          >
+                            帮我订
+                          </button>
+                        ) : (
+                          <span className="shrink-0 text-xs text-muted-foreground">窗口还没开</span>
+                        ))}
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1">{w.reason}</p>
+                  </div>
+                );
+              })}
+            </div>
+            {SUMMER_PLAN_2027.note && (
+              <p className="text-xs text-muted-foreground mt-3 leading-relaxed">
+                {SUMMER_PLAN_2027.note}
+              </p>
+            )}
+          </>
+        )}
+      </section>
+
       {/* 日历 */}
       <section className="grid gap-3 md:grid-cols-2">
         <MonthGrid year={2027} month={5} selected={selected} onSelect={setSelected} />
@@ -319,13 +403,27 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                             位置不错{s.qualityNote ? ` · ${s.qualityNote}` : ""}
                           </span>
                         )}
+                        {s.status === "booked" && (
+                          <span className="ml-1 rounded-full bg-sky-100 text-sky-800 px-2 py-0.5 text-xs font-medium">
+                            已订{s.confirmation ? ` · ${s.confirmation}` : ""}
+                          </span>
+                        )}
+                        {s.status === "held" && (
+                          <span className="ml-1 rounded-full bg-muted text-muted-foreground px-2 py-0.5 text-xs">
+                            先放着
+                          </span>
+                        )}
                       </div>
-                      <button
-                        onClick={() => book(p.campId, s)}
-                        className="shrink-0 px-3 py-1.5 rounded-lg bg-pine text-white text-sm font-medium hover:opacity-90 transition-opacity"
-                      >
-                        帮我订
-                      </button>
+                      {s.status === "booked" ? (
+                        <span className="shrink-0 text-sm text-sky-700 font-medium">已订 ✓</span>
+                      ) : (
+                        <button
+                          onClick={() => book(p.campId, s)}
+                          className="shrink-0 px-3 py-1.5 rounded-lg bg-pine text-white text-sm font-medium hover:opacity-90 transition-opacity"
+                        >
+                          帮我订
+                        </button>
+                      )}
                     </div>
                   ))}
                 </div>
