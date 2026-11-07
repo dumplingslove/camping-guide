@@ -11,6 +11,9 @@ export type BookingSite = {
   pad?: string;
   /** 当晚房费（美元，不含 $8 订位费） */
   fee: number;
+  /** 位置好坏：star = 站内研究点名推荐；good = 所在分区评分 4–5 分；不填 = 一般或数据待核实 */
+  quality?: "star" | "good";
+  qualityNote?: string;
 };
 
 export type WeekendParks = {
@@ -35,24 +38,24 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-06-19",
     label: "6月19日周六",
     parks: [
-      { campId: 26, sites: [{ site: "1、2、11号", hookup: "全接驳", fee: 56 }] },
-      { campId: 27, sites: [{ site: "39、40、41–46号", hookup: "无接驳", fee: 37 }] },
+      { campId: 26, sites: [{ site: "1、2、11号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "全接驳环·4分推荐区" }] },
+      { campId: 27, sites: [{ site: "39、40号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "30–40号河边推荐段" }, { site: "41–46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "全接驳环·5分强烈推荐区" }] },
       { campId: 1, sites: [{ site: "Quarry Pond 306号", hookup: "水电", fee: 46 }] },
-      { campId: 5, sites: [{ site: "130号", hookup: "水电", pad: "54×14英尺 pull-through", fee: 51 }] },
+      { campId: 5, sites: [{ site: "130号", hookup: "水电", pad: "54×14英尺 pull-through", fee: 51, quality: "star", qualityNote: "北营地水电位·站内推荐" }] },
       { campId: 8, sites: [{ site: "West Loop 77、78号", hookup: "无接驳", fee: 37 }] },
       {
         campId: 28,
         sites: [
-          { site: "Lower 65号", hookup: "全接驳 pull-through", fee: 56 },
-          { site: "Upper 4号", hookup: "无接驳", fee: 43 },
-          { site: "Upper 16号 / Lower 69号", hookup: "无接驳", fee: 31 },
+          { site: "Lower 65号", hookup: "全接驳 pull-through", fee: 56, quality: "good", qualityNote: "下环·4分推荐区" },
+          { site: "Upper 4号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "上环·4分推荐区" },
+          { site: "Upper 16号 / Lower 69号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "上环·4分推荐区" },
         ],
       },
       {
         campId: 30,
         sites: [
-          { site: "Midway 31、33号", hookup: "无接驳", fee: 37 },
-          { site: "Northend 77号", hookup: "无接驳", fee: 43 },
+          { site: "Midway 31、33号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
+          { site: "Northend 77号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "North End·4分推荐区" },
         ],
       },
     ],
@@ -64,34 +67,34 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 26,
         sites: [
-          { site: "47号", hookup: "全接驳", fee: 56 },
+          { site: "47号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "全接驳环·4分推荐区" },
           { site: "Left Beach 81、92号", hookup: "水电", fee: 51 },
         ],
       },
       { campId: 1, sites: [{ site: "Quarry Pond 302号", hookup: "水电", fee: 46 }] },
-      { campId: 25, sites: [{ site: "Upper Forest 59号", hookup: "水电", fee: 46 }] },
-      { campId: 5, sites: [{ site: "18个无接驳位（含181号）", hookup: "无接驳", fee: 37 }] },
+      { campId: 25, sites: [{ site: "Upper Forest 59号", hookup: "水电", fee: 46, quality: "good", qualityNote: "上环·5分强烈推荐区" }] },
+      { campId: 5, sites: [{ site: "18个无接驳位（含181号）", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" }] },
       { campId: 8, sites: [{ site: "West Loop 77号", hookup: "无接驳", fee: 37 }] },
       {
         campId: 28,
         sites: [
-          { site: "Upper 30、33、35、38号", hookup: "无接驳", fee: 37 },
-          { site: "Upper 39号", hookup: "无接驳", fee: 31 },
-          { site: "Lower 95号", hookup: "全接驳 pull-through", fee: 51 },
+          { site: "Upper 30、33、35、38号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "Upper 30–40号推荐段" },
+          { site: "Upper 39号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "上环·4分推荐区" },
+          { site: "Lower 95号", hookup: "全接驳 pull-through", fee: 51, quality: "good", qualityNote: "下环·4分推荐区" },
         ],
       },
       {
         campId: 44,
         sites: [
-          { site: "Dune Loop 98号", hookup: "全接驳", fee: 56 },
-          { site: "Cove Loop 64号", hookup: "全接驳", pad: "70×12英尺", fee: 56 },
+          { site: "Dune Loop 98号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "Dune环·4分推荐区" },
+          { site: "Cove Loop 64号", hookup: "全接驳", pad: "70×12英尺", fee: 56, quality: "good", qualityNote: "Cove环·4分推荐区" },
         ],
       },
       {
         campId: 30,
         sites: [
-          { site: "Midway 33号", hookup: "无接驳", fee: 37 },
-          { site: "Northend 83号", hookup: "无接驳", fee: 31 },
+          { site: "Midway 33号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
+          { site: "Northend 83号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "North End·4分推荐区" },
         ],
       },
     ],
@@ -100,21 +103,21 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-03",
     label: "7月3日周六",
     parks: [
-      { campId: 27, sites: [{ site: "39、44号", hookup: "无接驳", fee: 37 }] },
+      { campId: 27, sites: [{ site: "39号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "30–40号河边推荐段" }, { site: "44号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "全接驳环·5分强烈推荐区" }] },
       { campId: 1, sites: [{ site: "Quarry Pond 312、315、323号", hookup: "水电", fee: 46 }] },
-      { campId: 5, sites: [{ site: "9个无接驳位", hookup: "无接驳", fee: 37 }] },
+      { campId: 5, sites: [{ site: "9个无接驳位", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" }] },
       {
         campId: 28,
         sites: [
-          { site: "Upper 31、34、38号", hookup: "无接驳", fee: 37 },
-          { site: "Upper 41号", hookup: "无接驳", fee: 37 },
+          { site: "Upper 31、34、38号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "Upper 30–40号推荐段" },
+          { site: "Upper 41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·4分推荐区" },
         ],
       },
       {
         campId: 30,
         sites: [
-          { site: "Midway 36号", hookup: "无接驳", pad: "49×11英尺", fee: 37 },
-          { site: "Midway 63号", hookup: "无接驳 pull-through", fee: 43 },
+          { site: "Midway 36号", hookup: "无接驳", pad: "49×11英尺", fee: 37, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
+          { site: "Midway 63号", hookup: "无接驳 pull-through", fee: 43, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
         ],
       },
     ],
@@ -123,15 +126,15 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-10",
     label: "7月10日周六",
     parks: [
-      { campId: 26, sites: [{ site: "54号", hookup: "全接驳", fee: 56 }] },
+      { campId: 26, sites: [{ site: "54号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "全接驳环·4分推荐区" }] },
       { campId: 8, sites: [{ site: "West Loop 77号", hookup: "无接驳", fee: 37 }] },
       {
         campId: 27,
         sites: [
-          { site: "39号", hookup: "无接驳", fee: 37 },
-          { site: "2号", hookup: "全接驳", fee: 56 },
-          { site: "4、6、22、59号", hookup: "全接驳", fee: 51 },
-          { site: "41–46号", hookup: "无接驳", fee: 37 },
+          { site: "39号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "30–40号河边推荐段" },
+          { site: "2号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "全接驳环·5分强烈推荐区" },
+          { site: "4、6、22号", hookup: "全接驳", fee: 51, quality: "good", qualityNote: "全接驳环·5分强烈推荐区" }, { site: "59号", hookup: "全接驳", fee: 51 },
+          { site: "41–46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "全接驳环·5分强烈推荐区" },
         ],
       },
       {
@@ -142,23 +145,23 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 5,
         sites: [
-          { site: "178、180号", hookup: "水电 pull-through", fee: 51 },
-          { site: "40多个位（含181号）", hookup: "无接驳", fee: 37 },
+          { site: "178、180号", hookup: "水电 pull-through", fee: 51, quality: "star", qualityNote: "北营地水电位·站内推荐" },
+          { site: "40多个位（含181号）", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" },
         ],
       },
       {
         campId: 28,
         sites: [
-          { site: "Upper 31、34、38号", hookup: "无接驳", fee: 37 },
-          { site: "Upper 39号", hookup: "无接驳", fee: 31 },
-          { site: "Upper 41号", hookup: "无接驳", fee: 37 },
+          { site: "Upper 31、34、38号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "Upper 30–40号推荐段" },
+          { site: "Upper 39号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "上环·4分推荐区" },
+          { site: "Upper 41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·4分推荐区" },
         ],
       },
       {
         campId: 30,
         sites: [
-          { site: "Midway 32、64号", hookup: "无接驳", fee: 37 },
-          { site: "Northend 86号", hookup: "无接驳 pull-through", pad: "进出很陡，订前请与公园确认", fee: 37 },
+          { site: "Midway 32、64号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
+          { site: "Northend 86号", hookup: "无接驳 pull-through", pad: "进出很陡，订前请与公园确认", fee: 37, quality: "good", qualityNote: "North End·4分推荐区" },
         ],
       },
     ],
@@ -167,41 +170,41 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-17",
     label: "7月17日周六",
     parks: [
-      { campId: 26, sites: [{ site: "24号", hookup: "全接驳", fee: 56 }] },
+      { campId: 26, sites: [{ site: "24号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "全接驳环·4分推荐区" }] },
       {
         campId: 27,
         sites: [
-          { site: "34号", hookup: "全接驳", fee: 51 },
-          { site: "39、41、43、45、46号", hookup: "无接驳", fee: 37 },
+          { site: "34号", hookup: "全接驳", fee: 51, quality: "star", qualityNote: "30–40号河边推荐段" },
+          { site: "39号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "30–40号河边推荐段" }, { site: "41、43、45、46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "全接驳环·5分强烈推荐区" },
         ],
       },
       {
         campId: 1,
         sites: [
-          { site: "Forest Loop 70号", hookup: "水电", fee: 51 },
+          { site: "Forest Loop 70号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Forest Loop·5分强烈推荐区" },
           { site: "Quarry Pond 302号", hookup: "水电", fee: 46 },
         ],
       },
       {
         campId: 5,
         sites: [
-          { site: "106、109号", hookup: "水电 pull-through", fee: 46 },
-          { site: "139、184、196号", hookup: "水电", fee: 46 },
-          { site: "20多个位", hookup: "无接驳", fee: 37 },
+          { site: "106、109号", hookup: "水电 pull-through", fee: 46, quality: "star", qualityNote: "北营地水电位·站内推荐" },
+          { site: "139、184、196号", hookup: "水电", fee: 46, quality: "star", qualityNote: "北营地水电位·站内推荐" },
+          { site: "20多个位", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" },
         ],
       },
       {
         campId: 28,
         sites: [
-          { site: "Upper 31、38号", hookup: "无接驳", fee: 37 },
-          { site: "Upper 43号", hookup: "无接驳 pull-through", fee: 43 },
+          { site: "Upper 31、38号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "Upper 30–40号推荐段" },
+          { site: "Upper 43号", hookup: "无接驳 pull-through", fee: 43, quality: "good", qualityNote: "上环·4分推荐区" },
         ],
       },
       {
         campId: 30,
         sites: [
-          { site: "Midway 32、33号", hookup: "无接驳", fee: 37 },
-          { site: "Northend 86号", hookup: "无接驳", fee: 37 },
+          { site: "Midway 32、33号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
+          { site: "Northend 86号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "North End·4分推荐区" },
         ],
       },
     ],
@@ -213,39 +216,39 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 26,
         sites: [
-          { site: "4、6号", hookup: "全接驳", fee: 56 },
+          { site: "4、6号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "全接驳环·4分推荐区" },
           { site: "Left Beach 106号", hookup: "无接驳", fee: 43 },
         ],
       },
       {
         campId: 27,
         sites: [
-          { site: "39、40、41–46号", hookup: "无接驳", fee: 37 },
+          { site: "39、40号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "30–40号河边推荐段" }, { site: "41–46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "全接驳环·5分强烈推荐区" },
           { site: "59号", hookup: "全接驳", fee: 51 },
         ],
       },
       {
         campId: 1,
         sites: [
-          { site: "Forest Loop 58号", hookup: "水电", fee: 51 },
+          { site: "Forest Loop 58号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Forest Loop·5分强烈推荐区" },
           { site: "Quarry Pond 308号", hookup: "水电", fee: 46 },
         ],
       },
-      { campId: 5, sites: [{ site: "10多个无接驳位", hookup: "无接驳", fee: 37 }] },
+      { campId: 5, sites: [{ site: "10多个无接驳位", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" }] },
       {
         campId: 28,
         sites: [
-          { site: "Upper 30、31、33、34号", hookup: "无接驳", fee: 37 },
-          { site: "Upper 39号", hookup: "无接驳", fee: 31 },
-          { site: "Upper 41号", hookup: "无接驳", fee: 37 },
+          { site: "Upper 30、31、33、34号", hookup: "无接驳", fee: 37, quality: "star", qualityNote: "Upper 30–40号推荐段" },
+          { site: "Upper 39号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "上环·4分推荐区" },
+          { site: "Upper 41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·4分推荐区" },
         ],
       },
       {
         campId: 30,
         sites: [
-          { site: "Midway 32、33号", hookup: "无接驳", fee: 37 },
-          { site: "Midway 44号", hookup: "无接驳", pad: "26×11英尺，刚够", fee: 31 },
-          { site: "Northend 83号", hookup: "无接驳", fee: 31 },
+          { site: "Midway 32、33号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
+          { site: "Midway 44号", hookup: "无接驳", pad: "26×11英尺，刚够", fee: 31, quality: "good", qualityNote: "Midway·5分强烈推荐区" },
+          { site: "Northend 83号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "North End·4分推荐区" },
         ],
       },
     ],

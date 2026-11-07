@@ -240,6 +240,10 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
           180 天（霍雨林 270 天），俄勒冈 6 个月，BC 省立公园 60 天，盐溪 14 天。八九月和还没开的系统都在下面标着开放日，到日子就去查。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+          ⭐ 特别好 = 站内研究点名推荐的营位；“位置不错”= 所在分区评分 4–5
+          分；没标的 = 位置一般或数据待核实。营位好坏正在从头逐项复核，标错的会改。
+        </p>
+        <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
           点 <span className="font-medium text-foreground">“帮我订”</span> 就是把订位请求发给小美：
           登录状态下请求会直接存到云端，小美看到后找你确认登录和付款再下单；未登录时请求只存本机并复制好发给你，粘贴发给小美同样有效。下单前每单费用会再跟你确认一遍。
         </p>
@@ -289,7 +293,13 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                   </button>
                 </div>
                 <div className="mt-3 space-y-2">
-                  {p.sites.map((s, i) => (
+                  {[...p.sites]
+                    .sort(
+                      (a, b) =>
+                        (a.quality === "star" ? 0 : a.quality === "good" ? 1 : 2) -
+                        (b.quality === "star" ? 0 : b.quality === "good" ? 1 : 2),
+                    )
+                    .map((s, i) => (
                     <div
                       key={i}
                       className="flex items-center justify-between gap-2 rounded-lg bg-muted/40 px-3 py-2"
@@ -299,6 +309,16 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                         <span className="text-muted-foreground"> · {s.hookup}</span>
                         {s.pad && <span className="text-muted-foreground"> · {s.pad}</span>}
                         <span className="text-muted-foreground"> · ${s.fee}/晚</span>
+                        {s.quality === "star" && (
+                          <span className="ml-1 rounded-full bg-amber-100 text-amber-800 px-2 py-0.5 text-xs font-medium">
+                            ⭐ 特别好{s.qualityNote ? ` · ${s.qualityNote}` : ""}
+                          </span>
+                        )}
+                        {s.quality === "good" && (
+                          <span className="ml-1 rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 text-xs">
+                            位置不错{s.qualityNote ? ` · ${s.qualityNote}` : ""}
+                          </span>
+                        )}
                       </div>
                       <button
                         onClick={() => book(p.campId, s)}
