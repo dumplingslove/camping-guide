@@ -1,4 +1,4 @@
-// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica）。
+// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov）。
 // 口径：周六去、周日回、住 1 晚；Truck camper（F-150 + 滑入式 camper，约 20 英尺），不筛接驳、能停车即可；ADA 专用位不计。
 // 空位会随订退变化，下单前以订位系统实时结果为准。
 
@@ -33,7 +33,7 @@ export type BookingWeekend = {
   parks: WeekendParks[];
 };
 
-export const BOOKING_CHECKED_AT = "2026-11-01";
+export const BOOKING_CHECKED_AT = "2026-11-07";
 export const BOOKING_RESERVATION_FEE = 8;
 
 export const BOOKING_WEEKENDS: BookingWeekend[] = [
@@ -123,6 +123,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Midway 63号", hookup: "无接驳 pull-through", fee: 43 },
         ],
       },
+      { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
     ],
   },
   {
@@ -167,6 +168,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Northend 86号", hookup: "无接驳 pull-through", pad: "进出很陡，订前请与公园确认", fee: 37, quality: "good", qualityNote: "Northend·林间私密区" },
         ],
       },
+      { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
     ],
   },
   {
@@ -211,6 +213,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Northend 86号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Northend·林间私密区" },
         ],
       },
+      { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
     ],
   },
   {
@@ -255,6 +258,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Northend 83号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "Northend·林间私密区" },
         ],
       },
+      { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
     ],
   },
 ];
@@ -327,8 +331,8 @@ export const WATCHING_PARKS: WatchingPark[] = [
   },
   {
     campId: 29,
-    reason: "Recreation.gov 270 天窗口已开，待现查",
-    checkNote: "6 月 19 日档期 2026-09-22 已开，7 月 24 日档期 2026-10-27 已开；8 月 7 日档期 11 月 10 日开",
+    reason: "Recreation.gov 分批放票，标准位未开",
+    checkNote: "2026-11-07 已查：2027 预订季 6月26日–9月7日；A 环提前 6 个月、C 环 2 周、B 环 4 天放票（非 270 天）。6/19 不在预订季内、先到先得不可网订；7/3、7/10、7/17、7/24 标准位全部未开放，仅团体营位 2/3 号可订（$48/晚）。A 环放票日：7/3→2027-01-03、7/10→01-10、7/17→01-17、7/24→01-24（07:00 PST）；计划 08-13 两晚行程 A 环约 2027-02-13 开",
   },
   {
     campId: 4,
