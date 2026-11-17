@@ -1,4 +1,4 @@
-// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp）。
+// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp；2026-11-17 现查华盛顿州 8/14 周六 goingtocamp）。
 // 口径：周六去、周日回、住 1 晚；Truck camper（F-150 + 滑入式 camper，约 20 英尺），不筛接驳、能停车即可；ADA 专用位不计。
 // 空位会随订退变化，下单前以订位系统实时结果为准。
 
@@ -33,7 +33,7 @@ export type BookingWeekend = {
   parks: WeekendParks[];
 };
 
-export const BOOKING_CHECKED_AT = "2026-11-10";
+export const BOOKING_CHECKED_AT = "2026-11-17";
 export const BOOKING_RESERVATION_FEE = 8;
 
 export const BOOKING_WEEKENDS: BookingWeekend[] = [
@@ -324,6 +324,28 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       },
     ],
   },
+  {
+    arrival: "2027-08-14",
+    label: "8月14日周六",
+    parks: [
+      {
+        campId: 1,
+        sites: [
+          { site: "Forest Loop 1、21号", hookup: "水电", pad: "1号 31×10英尺 Back In；21号 65×10英尺 pull-through", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
+          { site: "Quarry Pond 302、303号", hookup: "水电", pad: "47×10英尺 Back In；302号系统仅列帐篷/Van-Camper，订前请与公园确认", fee: 46 },
+        ],
+      },
+      {
+        campId: 5,
+        sites: [
+          { site: "104、130、154、182、189、192号", hookup: "水电 pull-through", pad: "54×14英尺", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
+          { site: "101、141、184、187号", hookup: "水电 pull-through", pad: "54×14英尺", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
+          { site: "105、107、108、110、112、114、115、117、119、121、122、123、125、127、129、131、132、134、136、138、140、142、148、151、153、155、157、159、160、162、163、164、166、167、175、179、181、185、186、188、190、193、195、197号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" },
+          { site: "143、145、147、171、173号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "北营地五星区·经济型" },
+        ],
+      },
+    ],
+  },
 ];
 
 /** 华盛顿州立公园八九月周末：270 天窗口还没开，标开放日，到日子现查 */
@@ -337,7 +359,6 @@ export type UpcomingWeekend = {
 };
 
 export const UPCOMING_WEEKENDS: UpcomingWeekend[] = [
-  { arrival: "2027-08-14", label: "8月14日周六", opensOn: "2026-11-17", opensLabel: "11月17日" },
   { arrival: "2027-08-21", label: "8月21日周六", opensOn: "2026-11-24", opensLabel: "11月24日" },
   { arrival: "2027-08-28", label: "8月28日周六", opensOn: "2026-12-01", opensLabel: "12月1日" },
   { arrival: "2027-09-04", label: "9月4日周六", opensOn: "2026-12-08", opensLabel: "12月8日" },
@@ -465,31 +486,43 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 26,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-07-03"],
+    soldOutWeekends: ["2027-07-03", "2027-08-14"],
   },
   {
     campId: 25,
     reason: "多数周末无普通位，盯退订",
     checkNote: "6月26日有位；其余周末仅剩 ADA 位或订满",
-    soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-07"],
+    soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14"],
   },
   {
     campId: 8,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-07-03", "2027-07-17", "2027-07-24", "2027-08-07"],
+    soldOutWeekends: ["2027-07-03", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14"],
   },
   {
     campId: 44,
     reason: "多数周末仅剩 ADA 位，盯退订",
     checkNote: "6月26日有位；其余周末无普通位",
-    soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24"],
+    soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-14"],
   },
   {
     campId: 27,
     reason: "该周末无普通位，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-06-26"],
+    soldOutWeekends: ["2027-06-26", "2027-08-14"],
+  },
+  {
+    campId: 28,
+    reason: "该周末订满，盯退订",
+    checkNote: "有退订会报",
+    soldOutWeekends: ["2027-08-14"],
+  },
+  {
+    campId: 30,
+    reason: "该周末订满，盯退订",
+    checkNote: "有退订会报",
+    soldOutWeekends: ["2027-08-14"],
   },
 ];
 
