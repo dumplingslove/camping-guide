@@ -241,7 +241,7 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
           180 天（霍雨林 270 天），俄勒冈 6 个月，BC 省立公园 3 个月滚动（每天早 7 点放票），盐溪每年 1 月 1 日开放当年预订。八九月和还没开的系统都在下面标着开放日，到日子就去查。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-          ⭐ 特别好 = 复核证实的点名推荐营位（只剩韦纳奇湖北营地水电位 4 处）；“位置不错”= 复核确认方向的分区；没标的 = 位置一般或接驳待逐号核对。56 个营地已从头复核一遍，旧研究里“全接驳”等写法大面积是错的，已按复核结论重标。
+          ⭐ 特别好 = 复核证实的点名推荐营位（只剩韦纳奇湖北营地水电位 6 处）；“位置不错”= 复核确认方向的分区；没标的 = 位置一般或接驳待逐号核对。56 个营地已从头复核一遍，旧研究里“全接驳”等写法大面积是错的，已按复核结论重标。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
           点 <span className="font-medium text-foreground">“帮我订”</span> 就是把订位请求发给小美：
