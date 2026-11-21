@@ -1,4 +1,4 @@
-// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp；2026-11-17 现查华盛顿州 8/14 周六 goingtocamp）。
+// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp；2026-11-17 现查华盛顿州 8/14 周六 goingtocamp；2026-11-20 复查华盛顿州 6/26、7/3、7/10、7/24、8/14 周六 goingtocamp）。
 // 口径：周六去、周日回、住 1 晚；Truck camper（F-150 + 滑入式 camper，约 20 英尺），不筛接驳、能停车即可；ADA 专用位不计。
 // 空位会随订退变化，下单前以订位系统实时结果为准。
 
@@ -33,7 +33,7 @@ export type BookingWeekend = {
   parks: WeekendParks[];
 };
 
-export const BOOKING_CHECKED_AT = "2026-11-17";
+export const BOOKING_CHECKED_AT = "2026-11-20";
 export const BOOKING_RESERVATION_FEE = 8;
 
 export const BOOKING_WEEKENDS: BookingWeekend[] = [
@@ -71,21 +71,13 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         campId: 26,
         sites: [
           { site: "47号", hookup: "全接驳", fee: 56 },
-          { site: "Left Beach 81、92号", hookup: "水电", fee: 51 },
         ],
       },
       { campId: 1, sites: [{ site: "Quarry Pond 302号", hookup: "水电", fee: 46 }] },
       { campId: 25, sites: [{ site: "Upper Forest 59号", hookup: "水电", fee: 46, quality: "good", qualityNote: "Upper Forest·水电部分接驳林间区" }] },
-      { campId: 5, sites: [{ site: "18个无接驳位（含181号）", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" }] },
+      { campId: 5, sites: [{ site: "108号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区" }] },
       { campId: 8, sites: [{ site: "West Loop 77号", hookup: "无接驳", fee: 37 }] },
-      {
-        campId: 28,
-        sites: [
-          { site: "Upper 30、33、35、38号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
-          { site: "Upper 39号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "上环·林间无接驳区" },
-          { site: "Lower 95号", hookup: "全接驳 pull-through", fee: 51, quality: "good", qualityNote: "下环·全接驳临海区" },
-        ],
-      },
+      { campId: 28, sites: [{ site: "Upper 30号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" }] },
       {
         campId: 44,
         sites: [
@@ -106,16 +98,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-03",
     label: "7月3日周六",
     parks: [
-      { campId: 27, sites: [{ site: "39号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Loop 2 河边区·接驳须逐号核对" }, { site: "44号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "近河边·接驳须逐号核对" }] },
-      { campId: 1, sites: [{ site: "Quarry Pond 312、315、323号", hookup: "水电", fee: 46 }] },
       { campId: 5, sites: [{ site: "9个无接驳位", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" }] },
-      {
-        campId: 28,
-        sites: [
-          { site: "Upper 31、34、38号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
-          { site: "Upper 41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·林间无接驳区" },
-        ],
-      },
       {
         campId: 30,
         sites: [
@@ -130,28 +113,11 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-10",
     label: "7月10日周六",
     parks: [
-      { campId: 26, sites: [{ site: "54号", hookup: "全接驳", fee: 56 }] },
       { campId: 8, sites: [{ site: "West Loop 77号", hookup: "无接驳", fee: 37 }] },
-      {
-        campId: 27,
-        sites: [
-          { site: "39号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Loop 2 河边区·接驳须逐号核对" },
-          { site: "2号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "近河边·接驳须逐号核对" },
-          { site: "4、6、22号", hookup: "全接驳", fee: 51, quality: "good", qualityNote: "近河边·接驳须逐号核对" }, { site: "59号", hookup: "全接驳", fee: 51 },
-          { site: "41–46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "近河边·接驳须逐号核对" },
-        ],
-      },
       {
         campId: 1,
         sites: [{ site: "Quarry Pond 305号", hookup: "水电 pull-through", fee: 46 }],
         more: "另有多个 Quarry 位",
-      },
-      {
-        campId: 5,
-        sites: [
-          { site: "178、180号", hookup: "水电 pull-through", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
-          { site: "40多个位（含181号）", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" },
-        ],
       },
       {
         campId: 28,
@@ -235,22 +201,6 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         ],
       },
       {
-        campId: 1,
-        sites: [
-          { site: "Forest Loop 58号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
-          { site: "Quarry Pond 308号", hookup: "水电", fee: 46 },
-        ],
-      },
-      { campId: 5, sites: [{ site: "10多个无接驳位", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" }] },
-      {
-        campId: 28,
-        sites: [
-          { site: "Upper 30、31、33、34号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
-          { site: "Upper 39号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "上环·林间无接驳区" },
-          { site: "Upper 41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·林间无接驳区" },
-        ],
-      },
-      {
         campId: 30,
         sites: [
           { site: "Midway 32、33号", hookup: "无接驳", fee: 37 },
@@ -328,22 +278,6 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-08-14",
     label: "8月14日周六",
     parks: [
-      {
-        campId: 1,
-        sites: [
-          { site: "Forest Loop 1、21号", hookup: "水电", pad: "1号 31×10英尺 Back In；21号 65×10英尺 pull-through", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
-          { site: "Quarry Pond 302、303号", hookup: "水电", pad: "47×10英尺 Back In；302号系统仅列帐篷/Van-Camper，订前请与公园确认", fee: 46 },
-        ],
-      },
-      {
-        campId: 5,
-        sites: [
-          { site: "104、130、154、182、189、192号", hookup: "水电 pull-through", pad: "54×14英尺", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
-          { site: "101、141、184、187号", hookup: "水电 pull-through", pad: "54×14英尺", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
-          { site: "105、107、108、110、112、114、115、117、119、121、122、123、125、127、129、131、132、134、136、138、140、142、148、151、153、155、157、159、160、162、163、164、166、167、175、179、181、185、186、188、190、193、195、197号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" },
-          { site: "143、145、147、171、173号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "北营地五星区·经济型" },
-        ],
-      },
     ],
   },
 ];
@@ -486,7 +420,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 26,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-07-03", "2027-08-14"],
+    soldOutWeekends: ["2027-07-03", "2027-07-10", "2027-08-14"],
   },
   {
     campId: 25,
@@ -510,19 +444,31 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 27,
     reason: "该周末无普通位，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-06-26", "2027-08-14"],
+    soldOutWeekends: ["2027-06-26", "2027-07-03", "2027-07-10", "2027-08-14"],
   },
   {
     campId: 28,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-08-14"],
+    soldOutWeekends: ["2027-07-03", "2027-07-24", "2027-08-14"],
   },
   {
     campId: 30,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
     soldOutWeekends: ["2027-08-14"],
+  },
+  {
+    campId: 1,
+    reason: "该周末订满，盯退订",
+    checkNote: "有退订会报",
+    soldOutWeekends: ["2027-07-03", "2027-07-24", "2027-08-14"],
+  },
+  {
+    campId: 5,
+    reason: "该周末订满，盯退订",
+    checkNote: "有退订会报",
+    soldOutWeekends: ["2027-07-10", "2027-07-24", "2027-08-14"],
   },
 ];
 
