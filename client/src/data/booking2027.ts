@@ -102,8 +102,14 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 30,
         sites: [
-          { site: "Midway 36号", hookup: "无接驳", pad: "49×11英尺", fee: 37 },
-          { site: "Midway 63号", hookup: "无接驳 pull-through", fee: 43 },
+          { site: "Midway 54B号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "Midway·近 Cascade Lake 游泳区" },
+          { site: "Northend 87号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Northend·林间私密区" },
+        ],
+      },
+      {
+        campId: 25,
+        sites: [
+          { site: "Beach Campground 19、20、23、26、27、28、30、33、35、40、41、42、45号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "Beach Campground·全接驳多数有海景" },
         ],
       },
       { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
@@ -113,25 +119,17 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-10",
     label: "7月10日周六",
     parks: [
-      { campId: 8, sites: [{ site: "West Loop 77号", hookup: "无接驳", fee: 37 }] },
       {
         campId: 1,
-        sites: [{ site: "Quarry Pond 305号", hookup: "水电 pull-through", fee: 46 }],
-        more: "另有多个 Quarry 位",
+        sites: [{ site: "Quarry Pond 305、306、310、312、319、321、325、331、335号", hookup: "水电", fee: 46 }],
       },
       {
         campId: 28,
         sites: [
-          { site: "Upper 31、34、38号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
-          { site: "Upper 39号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "上环·林间无接驳区" },
-          { site: "Upper 41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·林间无接驳区" },
-        ],
-      },
-      {
-        campId: 30,
-        sites: [
-          { site: "Midway 32、64号", hookup: "无接驳", fee: 37 },
-          { site: "Northend 86号", hookup: "无接驳 pull-through", pad: "进出很陡，订前请与公园确认", fee: 37, quality: "good", qualityNote: "Northend·林间私密区" },
+          { site: "Lower 81号", hookup: "全接驳", fee: 51, quality: "good", qualityNote: "下环·全接驳临海区" },
+          { site: "Upper 34号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
+          { site: "Upper 42号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
+          { site: "Upper 44号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
         ],
       },
       { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
@@ -186,28 +184,6 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-24",
     label: "7月24日周六",
     parks: [
-      {
-        campId: 26,
-        sites: [
-          { site: "4、6号", hookup: "全接驳", fee: 56 },
-          { site: "Left Beach 106号", hookup: "无接驳", fee: 43 },
-        ],
-      },
-      {
-        campId: 27,
-        sites: [
-          { site: "39、40号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Loop 2 河边区·接驳须逐号核对" }, { site: "41–46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "近河边·接驳须逐号核对" },
-          { site: "59号", hookup: "全接驳", fee: 51 },
-        ],
-      },
-      {
-        campId: 30,
-        sites: [
-          { site: "Midway 32、33号", hookup: "无接驳", fee: 37 },
-          { site: "Midway 44号", hookup: "无接驳", pad: "26×11英尺，刚够", fee: 31 },
-          { site: "Northend 83号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "Northend·林间私密区" },
-        ],
-      },
       { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
     ],
   },
@@ -420,19 +396,19 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 26,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-07-03", "2027-07-10", "2027-08-14"],
+    soldOutWeekends: ["2027-07-03", "2027-07-10", "2027-07-24", "2027-08-14"],
   },
   {
     campId: 25,
     reason: "多数周末无普通位，盯退订",
-    checkNote: "6月26日有位；其余周末仅剩 ADA 位或订满",
-    soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14"],
+    checkNote: "6月26日有位；7月3日 Beach Campground 13 个全接驳位；其余周末仅剩 ADA 位或订满",
+    soldOutWeekends: ["2027-06-19", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14"],
   },
   {
     campId: 8,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-07-03", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14"],
+    soldOutWeekends: ["2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14"],
   },
   {
     campId: 44,
@@ -444,7 +420,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 27,
     reason: "该周末无普通位，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-06-26", "2027-07-03", "2027-07-10", "2027-08-14"],
+    soldOutWeekends: ["2027-06-26", "2027-07-03", "2027-07-10", "2027-07-24", "2027-08-14"],
   },
   {
     campId: 28,
@@ -456,7 +432,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 30,
     reason: "该周末订满，盯退订",
     checkNote: "有退订会报",
-    soldOutWeekends: ["2027-08-14"],
+    soldOutWeekends: ["2027-07-10", "2027-07-24", "2027-08-14"],
   },
   {
     campId: 1,
