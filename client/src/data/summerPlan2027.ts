@@ -48,7 +48,7 @@ export type SummerPlan2027 = {
   bookNow: number;
   /** 先放着几处 */
   hold: number;
-  /** 立刻订合计约多少钱（房费 + 每单 $8 订位费；仅 bookNow 的 2 处） */
+  /** 立刻订合计约多少钱（房费 + 每单 $8 订位费；仅 bookNow 的 3 处） */
   totalEstimate: number;
   /** 日程（按日期排，只含要去的周末） */
   weekends: PlanWeekend[];
@@ -59,9 +59,9 @@ export type SummerPlan2027 = {
 export const SUMMER_PLAN_2027: SummerPlan2027 = {
   ready: true,
   trips: 9,
-  bookNow: 2,
-  hold: 7,
-  totalEstimate: 113,
+  bookNow: 3,
+  hold: 6,
+  totalEstimate: 167,
   weekends: [
     {
       arrival: "2027-06-19",
@@ -81,17 +81,15 @@ export const SUMMER_PLAN_2027: SummerPlan2027 = {
     },
     {
       arrival: "2027-06-26",
-      campId: 28,
-      campName: "弗拉格勒堡",
-      site: "Upper 30、33、35、38号",
-      fee: 37,
-      driveMinutes: 130,
+      campId: 1,
+      campName: "骗子桥",
+      site: "Quarry Pond 302号",
+      fee: 46,
+      driveMinutes: 90,
       nights: 1,
-      scarcity: "normal",
-      quality: "good",
-      qualityNote: "Upper 林间区·无接驳树荫好",
-      reason: "历史炮台+海滩，轮渡2小时；B 档几天内订满，站上看后点帮我订",
-      verdict: "hold",
+      scarcity: "hot",
+      reason: "原定弗拉格勒堡已改去骗子桥：华州访问量第一的热门园，Quarry Pond 水电位 6/26 全园只剩这一席",
+      verdict: "book_now",
     },
     {
       arrival: "2027-07-03",
@@ -192,5 +190,5 @@ export const SUMMER_PLAN_2027: SummerPlan2027 = {
       verdict: "hold",
     },
   ],
-  note: "9 个周末：6 处已有空位、3 处待开窗现查（霍雨林 08-13、史蒂文斯堡 08-28、卡尔特斯湖 09-11）。立刻订的只有韦纳奇湖两处（A 级秒光，合计约 $113）；其余先放着等你看。不去的周末：07-31（替补：骗子桥）、08-07、08-21、09-04、09-18、09-25。",
+  note: "9 个周末：已订 2 处（6/19 韦纳奇湖 130 号、7/17 韦纳奇湖 106 号）；6/26 目标已改去骗子桥 Quarry Pond 302 号（水电，$46，全园只剩这一席，待付款确认）；目标园已订满 3 个周末（7/3 汇流、7/10 格雷兰、7/24 弗拉格勒堡），等退订或换园；其余 3 处待开窗现查（霍雨林 08-13、史蒂文斯堡 08-28、卡尔特斯湖 09-11）。立刻订的 3 处合计约 $167（含每单 $8 订位费）；其余先放着等你看。不去的周末：07-31（替补：骗子桥）、08-07、08-21、09-04、09-18、09-25。",
 };

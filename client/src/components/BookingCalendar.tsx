@@ -274,7 +274,8 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                   w.driveMinutes >= 60
                     ? `约 ${(w.driveMinutes / 60).toFixed(1).replace(/\.0$/, "")} 小时车程`
                     : `约 ${w.driveMinutes} 分钟车程`;
-                const target = BOOKING_WEEKENDS.find((x) => x.arrival === w.arrival)
+                const weekendData = BOOKING_WEEKENDS.find((x) => x.arrival === w.arrival);
+                const target = weekendData
                   ?.parks.find((p) => p.campId === w.campId)
                   ?.sites.find((s) => s.site === w.site);
                 return (
@@ -321,6 +322,8 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
                           >
                             帮我订
                           </button>
+                        ) : weekendData ? (
+                          <span className="shrink-0 text-xs text-muted-foreground">已订满，盯退订</span>
                         ) : (
                           <span className="shrink-0 text-xs text-muted-foreground">窗口还没开</span>
                         ))}
