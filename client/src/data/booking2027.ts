@@ -1,4 +1,4 @@
-// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp；2026-11-17 现查华盛顿州 8/14 周六 goingtocamp；2026-11-20 复查华盛顿州 6/26、7/3、7/10、7/24、8/14 周六 goingtocamp；2026-11-21 复查华盛顿州 6/19–8/14 全部周六 goingtocamp 与 Hoh Recreation.gov）。2026-11-21 扩围：每日扫描覆盖从 30 个营地扩至 54 个（新增华盛顿州立公园 2/9/16/40/41/42/43、联邦 6/19/22/54/55/56、俄勒冈 15/20/21/35/36/45/47/48/49、Tacoma Power 3、KOA 12；南海滩 13 先到先得与太平洋海岸房车度假村 24 不适配不进扫描）。窗口口径二次核实（2026-11-21）：华盛顿州立公园 9 个自然月、联邦 6 个自然月、俄勒冈 6 个自然月滚动，均按自然月到日（旧 270 天/180 天/按月整批口径已纠正）。
+// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp；2026-11-17 现查华盛顿州 8/14 周六 goingtocamp；2026-11-20 复查华盛顿州 6/26、7/3、7/10、7/24、8/14 周六 goingtocamp；2026-11-21 复查华盛顿州 6/19–8/14 全部周六 goingtocamp 与 Hoh Recreation.gov；同日补查 8/21 周六（16 园）与新园首查（2/9/16/40/41/42/43、桤木湖 3、KOA 12））。2026-11-21 扩围：每日扫描覆盖从 30 个营地扩至 54 个（新增华盛顿州立公园 2/9/16/40/41/42/43、联邦 6/19/22/54/55/56、俄勒冈 15/20/21/35/36/45/47/48/49、Tacoma Power 3、KOA 12；南海滩 13 先到先得与太平洋海岸房车度假村 24 不适配不进扫描）。窗口口径二次核实（2026-11-21）：华盛顿州立公园 9 个自然月、联邦 6 个自然月、俄勒冈 6 个自然月滚动，均按自然月到日（旧 270 天/180 天/按月整批口径已纠正）。
 // 口径：周六去、周日回、住 1 晚；Truck camper（F-150 + 滑入式 camper，约 20 英尺），不筛接驳、能停车即可；ADA 专用位不计。
 // 空位会随订退变化，下单前以订位系统实时结果为准。
 
@@ -62,6 +62,69 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Northend 96号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Northend·林间私密区" },
         ],
       },
+      {
+        campId: 9,
+        sites: [
+          { site: "Loop A 10、11、14号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop A 15、16号", hookup: "水电", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop B 38号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46 },
+          { site: "Loop B 42、43、62号", hookup: "水电", fee: 46 },
+          { site: "Loop B 58号", hookup: "无接驳", fee: 37 },
+        ],
+      },
+      {
+        campId: 16,
+        sites: [
+          { site: "Loop B 95号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "B区·部分接驳" },
+          { site: "Loop C 131、133、153号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 },
+        ],
+      },
+      {
+        campId: 42,
+        sites: [
+          { site: "20号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "主环" },
+          { site: "27号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 37, quality: "good", qualityNote: "主环" },
+        ],
+      },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、20、22、25、31、32、33、34号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "49号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "标准位" },
+          { site: "53、54、55、56、57、58、59、60、61、62号", hookup: "全接驳", fee: 46 },
+          { site: "64号", hookup: "全接驳", fee: 51 },
+          { site: "68、69号", hookup: "全接驳", fee: 56 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "3、8、13、14、15、36、38、40号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "东营地" },
+          { site: "19、21、22、24、26号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
+          { site: "42、43、44、75、78号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "西营地" },
+          { site: "45、46、47、49、50、51、70、72号", hookup: "水电", fee: 51, quality: "good", qualityNote: "西营地" },
+          { site: "301、302、303、304、311、312、313、314、315、316、317、319、320、322、323、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、409、410、411、412、413、417、418、420、421、422、423、424号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 铺装（100区）", hookup: "全接驳", fee: 100, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A（300区）", hookup: "全接驳", fee: 102, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 铺装（100区）", hookup: "全接驳", pad: "仅剩3席", fee: 108, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 高级（200区）", hookup: "全接驳", pad: "仅剩3席", fee: 124, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 高级（200区）", hookup: "全接驳", fee: 131, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", fee: 150, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A 豪华庭院", hookup: "全接驳", pad: "仅剩1席", fee: 144, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 121, quality: "good", qualityNote: "标准全接驳位" },
+        ],
+      },
     ],
   },
   {
@@ -81,6 +144,73 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Midway 47、54B号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "Midway·近 Cascade Lake 游泳区" },
           { site: "Northend 89号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Northend·林间私密区" },
           { site: "Northend 92号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Northend·林间私密区" },
+        ],
+      },
+      { campId: 2, sites: [{ site: "220、226号", hookup: "水电", fee: 46, quality: "good", qualityNote: "RV环·水电位" }] },
+      {
+        campId: 9,
+        sites: [
+          { site: "Loop A 5、14号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop A 15号", hookup: "水电", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop B 58号", hookup: "无接驳", fee: 37 },
+          { site: "Loop B 61号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46 },
+          { site: "Loop B 62号", hookup: "水电", fee: 46 },
+        ],
+      },
+      {
+        campId: 16,
+        sites: [
+          { site: "Loop B 74、75号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "B区·部分接驳" },
+          { site: "Loop B 76号", hookup: "水电", fee: 51, quality: "good", qualityNote: "B区·部分接驳" },
+          { site: "Loop C 142号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 },
+        ],
+      },
+      { campId: 40, sites: [{ site: "Loop C 92号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "C环·水电位" }] },
+      {
+        campId: 42,
+        sites: [
+          { site: "5、32、37、47号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "主环" },
+          { site: "25、31号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 37, quality: "good", qualityNote: "主环" },
+        ],
+      },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、20、22、24、25、34号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "42号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "标准位" },
+          { site: "53、54、55、56、57、58、59、60、61、62号", hookup: "全接驳", fee: 46 },
+          { site: "64号", hookup: "全接驳", fee: 51 },
+          { site: "67号", hookup: "全接驳", fee: 56 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "5、9、12、36号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "东营地" },
+          { site: "19、21、22、23、24、25、26、28、29号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
+          { site: "42、43、44、78号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "西营地" },
+          { site: "45、46、49、50、70、72号", hookup: "水电", fee: 51, quality: "good", qualityNote: "西营地" },
+          { site: "301、302、303、304、305、306、307、311、312、313、314、315、316、317、319、320、322、323、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、409、410、411、412、413、417、418、420、421、422、423、424、425号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 铺装（100区）", hookup: "全接驳", pad: "仅剩3席", fee: 100, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A（300区）", hookup: "全接驳", fee: 102, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A（300区）", hookup: "全接驳", pad: "仅剩1席", fee: 109, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 铺装（100区）", hookup: "全接驳", pad: "仅剩1席", fee: 113, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 高级（200区）", hookup: "全接驳", fee: 124, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 高级（200区）", hookup: "全接驳", fee: 131, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", pad: "仅剩1席", fee: 153, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 167, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 174, quality: "good", qualityNote: "高级位·带庭院" },
         ],
       },
     ],
@@ -103,6 +233,29 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Beach Campground 23、26、28、30、33、35、40、45号", hookup: "全接驳", fee: 51, quality: "good", qualityNote: "Beach Campground·全接驳多数有海景" },
         ],
       },
+      { campId: 42, sites: [{ site: "22号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 37, quality: "good", qualityNote: "主环" }] },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、20、22、24、25、31、34、35号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "42、49号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "标准位" },
+          { site: "53、54、55、56、57、58、59、60、61号", hookup: "全接驳", fee: 46 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "301、302、303、304、305、306、307、312、313、314、315、319、320、322、323、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、410、411、412、413、417、418、420、421、422、423、424号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 99, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+        ],
+      },
     ],
   },
   {
@@ -120,6 +273,60 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Upper 34号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
           { site: "Upper 42号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
           { site: "Upper 44号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Upper 林间区·无接驳树荫好" },
+        ],
+      },
+      {
+        campId: 2,
+        sites: [
+          { site: "220、226、248号", hookup: "水电", fee: 46, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "223号", hookup: "水电", fee: 41, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "230号", hookup: "水电", pad: "Pull-thru", fee: 51, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "231、232号", hookup: "水电", fee: 51, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "237号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46, quality: "good", qualityNote: "RV环·水电位" },
+        ],
+      },
+      {
+        campId: 9,
+        sites: [
+          { site: "Loop A 10、13、14号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop A 15、16号", hookup: "水电", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop B 38、39号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46 },
+        ],
+      },
+      { campId: 16, sites: [{ site: "Loop B 69、93、94号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "B区·部分接驳" }] },
+      {
+        campId: 40,
+        sites: [
+          { site: "Loop A 8、21、25、26号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 },
+          { site: "Loop B 42号", hookup: "全接驳", fee: 51, quality: "good", qualityNote: "B环·全接驳" },
+          { site: "Loop C 70、79、80、81、86号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "C环·水电位" },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "5、6、7、12、33、35、36、37号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "东营地" },
+          { site: "21、22、23、24、25、27号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
+          { site: "42、43、44、69、74、78号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "西营地" },
+          { site: "45、46、51、70、72号", hookup: "水电", fee: 51, quality: "good", qualityNote: "西营地" },
+          { site: "303、304、306、316、322、323、324号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、410、411、412、413、417、418、420、421、422、423、424、425号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 铺装（100区）", hookup: "全接驳", fee: 100, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A（300区）", hookup: "全接驳", fee: 102, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 铺装（100区）", hookup: "全接驳", fee: 108, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 高级（200区）", hookup: "全接驳", pad: "仅剩2席", fee: 124, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", fee: 150, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A 豪华庭院", hookup: "全接驳", pad: "仅剩1席", fee: 144, quality: "good", qualityNote: "高级位·带庭院" },
         ],
       },
     ],
@@ -167,6 +374,63 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         ],
       },
       { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
+      { campId: 2, sites: [{ site: "232号", hookup: "水电", fee: 51, quality: "good", qualityNote: "RV环·水电位" }] },
+      { campId: 9, sites: [{ site: "Loop A 15号", hookup: "水电", fee: 51, quality: "good", qualityNote: "临海水电位" }] },
+      { campId: 16, sites: [{ site: "Loop C 161号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 }] },
+      {
+        campId: 40,
+        sites: [
+          { site: "Loop A 8、21号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 },
+          { site: "Loop A 10号", hookup: "无接驳", fee: 43 },
+          { site: "Loop C 70、71、73号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "C环·水电位" },
+        ],
+      },
+      {
+        campId: 42,
+        sites: [
+          { site: "5、20号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "主环" },
+          { site: "21、23、31、50号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 37, quality: "good", qualityNote: "主环" },
+        ],
+      },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、20、22、24、25、30、31、32、33号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "54、56、57、58、59号", hookup: "全接驳", fee: 46 },
+          { site: "68号", hookup: "全接驳", fee: 56 },
+          { site: "72、73号", hookup: "全接驳", fee: 56 },
+          { site: "76号", hookup: "全接驳", fee: 51 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "7、40号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "东营地" },
+          { site: "21、22、24、28号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
+          { site: "42、44号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "西营地" },
+          { site: "46、50号", hookup: "水电", fee: 51, quality: "good", qualityNote: "西营地" },
+          { site: "317号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、409、410、411、412、413、417、418、420、421、422、423、424号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 铺装（100区）", hookup: "全接驳", pad: "仅剩3席", fee: 100, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A（300区）", hookup: "全接驳", fee: 102, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 铺装（100区）", hookup: "全接驳", fee: 108, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 高级（200区）", hookup: "全接驳", fee: 124, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 高级（200区）", hookup: "全接驳", fee: 131, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", fee: 150, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A 豪华庭院", hookup: "全接驳", pad: "仅剩1席", fee: 144, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 121, quality: "good", qualityNote: "标准全接驳位" },
+        ],
+      },
     ],
   },
   {
@@ -192,6 +456,67 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       },
       { campId: 30, sites: [{ site: "Midway 64号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Midway·近 Cascade Lake 游泳区" }] },
       { campId: 29, sites: [{ site: "团体营位 2/3号（16人/8帐）", hookup: "无接驳", pad: "平行入位·限20英尺", fee: 48 }] },
+      {
+        campId: 2,
+        sites: [
+          { site: "216、221号", hookup: "水电", fee: 46, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "223号", hookup: "水电", fee: 41, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "224号", hookup: "水电", fee: 51, quality: "good", qualityNote: "RV环·水电位" },
+        ],
+      },
+      {
+        campId: 9,
+        sites: [
+          { site: "Loop A 14号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop A 15号", hookup: "水电", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop B 38号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46 },
+          { site: "Loop B 43号", hookup: "水电", fee: 46 },
+          { site: "Loop B 58号", hookup: "无接驳", fee: 37 },
+          { site: "Loop B 59、60号", hookup: "水电", fee: 51 },
+        ],
+      },
+      { campId: 16, sites: [{ site: "Loop C 124、126、127、159、161、177、179、180号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 }] },
+      { campId: 40, sites: [{ site: "Loop A 18号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 }] },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、22、25、34、35号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "42、49号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "标准位" },
+          { site: "53、54、55、56、57、58、59、60、62号", hookup: "全接驳", fee: 46 },
+          { site: "67、69号", hookup: "全接驳", fee: 56 },
+          { site: "74、76号", hookup: "全接驳", fee: 51 },
+          { site: "77号", hookup: "全接驳", pad: "房费以系统实时价为准", fee: 51 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "10、13、14、36、38、39、40号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "东营地" },
+          { site: "24、26号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
+          { site: "71、75号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "西营地" },
+          { site: "301、302、303、304、305、306、307、312、313、314、315、316、317、319、320、322、323、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、409、410、411、412、413、417、418、420、421、422、423号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 铺装（100区）", hookup: "全接驳", fee: 100, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A（300区）", hookup: "全接驳", fee: 102, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 铺装（100区）", hookup: "全接驳", fee: 108, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 高级（200区）", hookup: "全接驳", fee: 124, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 高级（200区）", hookup: "全接驳", fee: 131, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", fee: 150, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A 豪华庭院", hookup: "全接驳", pad: "仅剩1席", fee: 144, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 167, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 174, quality: "good", qualityNote: "高级位·带庭院" },
+        ],
+      },
     ],
   },
   {
@@ -246,6 +571,75 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         campId: 44,
         sites: [
           { site: "Sage Loop 312号", hookup: "无接驳", pad: "30×20英尺", fee: 43 },
+        ],
+      },
+      {
+        campId: 2,
+        sites: [
+          { site: "220、225号", hookup: "水电", fee: 46, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "222号", hookup: "水电", fee: 41, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "230、231、233号", hookup: "水电", fee: 51, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "241、242号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46, quality: "good", qualityNote: "RV环·水电位" },
+        ],
+      },
+      { campId: 9, sites: [{ site: "Loop A 14号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "临海水电位" }] },
+      {
+        campId: 40,
+        sites: [
+          { site: "Loop A 1、7号", hookup: "无接驳", fee: 37 },
+          { site: "Loop A 14、26号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 },
+          { site: "Loop B 37、46号", hookup: "全接驳", pad: "房费以系统实时价为准", fee: 56, quality: "good", qualityNote: "B环·全接驳" },
+          { site: "Loop B 42号", hookup: "全接驳", fee: 51, quality: "good", qualityNote: "B环·全接驳" },
+          { site: "Loop C 75号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "C环·水电位" },
+        ],
+      },
+      { campId: 41, sites: [{ site: "6、30号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46, quality: "good", qualityNote: "主营地" }] },
+      {
+        campId: 42,
+        sites: [
+          { site: "5、20、32、35、37、41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "主环" },
+          { site: "8号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "主环" },
+          { site: "19、23、25、27、31、50号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 37, quality: "good", qualityNote: "主环" },
+        ],
+      },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、22、24、25、31、32、33、35号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "42、49号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "标准位" },
+          { site: "52、53、54、55、56、57、58、59、60、61号", hookup: "全接驳", fee: 46 },
+          { site: "64、66号", hookup: "全接驳", fee: 51 },
+          { site: "71号", hookup: "全接驳", pad: "房费以系统实时价为准", fee: 51 },
+          { site: "72号", hookup: "全接驳", fee: 56 },
+          { site: "76号", hookup: "全接驳", fee: 51 },
+          { site: "77号", hookup: "全接驳", pad: "房费以系统实时价为准", fee: 51 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "1、35号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "东营地" },
+          { site: "21、22号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
+          { site: "74号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "西营地" },
+          { site: "70号", hookup: "水电", fee: 51, quality: "good", qualityNote: "西营地" },
+          { site: "301、302、303、304、305、306、307、311、312、313、314、315、316、317、319、320、322、323、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、409、410、411、412、413、417、418、420、421、422、423、424、425号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 铺装（100区）", hookup: "全接驳", pad: "仅剩2席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A（300区）", hookup: "全接驳", fee: 102, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 铺装（100区）", hookup: "全接驳", pad: "仅剩3席", fee: 108, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 高级（200区）", hookup: "全接驳", pad: "仅剩2席", fee: 131, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", fee: 150, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 128, quality: "good", qualityNote: "标准全接驳位" },
         ],
       },
     ],
@@ -303,6 +697,213 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Dune Loop 322号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Dune环·近游乐场家庭区" },
         ],
       },
+      {
+        campId: 9,
+        sites: [
+          { site: "Loop A 4、6、9、10、13号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop A 15号", hookup: "水电", fee: 51, quality: "good", qualityNote: "临海水电位" },
+        ],
+      },
+      {
+        campId: 40,
+        sites: [
+          { site: "Loop A 20、21、24号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 43 },
+          { site: "Loop B 29、30号", hookup: "全接驳", pad: "房费以系统实时价为准", fee: 56, quality: "good", qualityNote: "B环·全接驳" },
+          { site: "Loop C 61、62、64、67、68、70、72、74、77、80、82、83、84、85、86、92、93、94号", hookup: "水电", pad: "房费以系统实时价为准", fee: 51, quality: "good", qualityNote: "C环·水电位" },
+        ],
+      },
+      { campId: 41, sites: [{ site: "2号", hookup: "水电", pad: "房费以系统实时价为准", fee: 46, quality: "good", qualityNote: "主营地" }] },
+      {
+        campId: 42,
+        sites: [
+          { site: "5、20、35、37、47、48号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "主环" },
+          { site: "8、15、17号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "主环" },
+          { site: "19、23、50号", hookup: "无接驳", pad: "房费以系统实时价为准", fee: 37, quality: "good", qualityNote: "主环" },
+        ],
+      },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、20、22、24、25、30、31、34、35号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "42、49号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "标准位" },
+          { site: "52、53、54、55、56、57、58、59、60、61、62号", hookup: "全接驳", fee: 46 },
+          { site: "64号", hookup: "全接驳", fee: 51 },
+          { site: "76号", hookup: "全接驳", fee: 51 },
+          { site: "77号", hookup: "全接驳", pad: "房费以系统实时价为准", fee: 51 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "301、302、303、304、305、306、307、311、312、313、314、315、316、317、319、320、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、409、410、411、412、413、417、418、420、421、422、423、424、425号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 铺装（100区）", hookup: "全接驳", pad: "仅剩3席", fee: 100, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 铺装（100区）", hookup: "全接驳", pad: "仅剩1席", fee: 113, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 高级（200区）", hookup: "全接驳", fee: 124, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 高级（200区）", hookup: "全接驳", pad: "仅剩1席", fee: 136, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", fee: 150, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 167, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 狗围栏", hookup: "全接驳", pad: "仅剩1席", fee: 121, quality: "good", qualityNote: "标准全接驳位" },
+        ],
+      },
+    ],
+  },
+  {
+    arrival: "2027-08-21",
+    label: "8月21日周六",
+    parks: [
+      {
+        campId: 26,
+        sites: [
+          { site: "1、2、6、29、39、41、45、47号", hookup: "全接驳", fee: 56 },
+          { site: "Left Beach 102号", hookup: "水电", fee: 51 },
+          { site: "Left Beach 106号", hookup: "无接驳", fee: 43 },
+        ],
+      },
+      {
+        campId: 27,
+        sites: [
+          { site: "2、3、23、25、33、35、37、51、52、56、58号", hookup: "全接驳", fee: 56 },
+          { site: "4、6、9、10、18、21、22、24、27、29、31、36、38、50、53、57、59号", hookup: "全接驳", fee: 51 },
+          { site: "39、40、41、42、43、44、45、46号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Loop 2 河边区·接驳须逐号核对" },
+        ],
+      },
+      {
+        campId: 1,
+        sites: [
+          { site: "Forest Loop 35、36号", hookup: "水电", pad: "双营位，需同订", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
+          { site: "Forest Loop 71号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
+          { site: "Lower Loop B 221号", hookup: "无接驳", fee: 37 },
+          { site: "Quarry Pond 302、303、304、305、306、307、308、310、312、313、314、317、318、319、321、322、324、325、326、327、331、336、354、358、359号", hookup: "水电", pad: "305号 pull-through；326、327号双营位，需同订", fee: 46 },
+          { site: "Quarry Pond 316号", hookup: "水电", fee: 51 },
+          { site: "Quarry Pond 343号", hookup: "无接驳", fee: 37 },
+        ],
+      },
+      {
+        campId: 5,
+        sites: [
+          { site: "101、106、109、113、139、141、144、187、194号", hookup: "水电", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
+          { site: "111、120、128、130、189、192、196号", hookup: "水电", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
+          { site: "105、107、108、110、112、114、115、117、119、121、122、123、125、127、129、131、132、134、136、138、140、142、148、151、153、155、157、159、160、162、163、164、166、167、175、177、179、181、188、190、191、193、195、197号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" },
+          { site: "143、145、147、171、173号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "北营地五星区·经济型" },
+        ],
+      },
+      { campId: 8, sites: [{ site: "Trailer Loop 33号", hookup: "水电", fee: 51 }] },
+      {
+        campId: 28,
+        sites: [
+          { site: "Lower 74号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "下环·临海区" },
+          { site: "Upper 19、34、35号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·林间无接驳区" },
+          { site: "Upper 29、42、43、44号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "上环·林间无接驳区" },
+        ],
+      },
+      {
+        campId: 30,
+        sites: [
+          { site: "Midway 36号", hookup: "无接驳", pad: "仅列帐篷/Van-Camper，订前请与公园确认", fee: 37, quality: "good", qualityNote: "Midway·近 Cascade Lake 游泳区" },
+          { site: "Midway 39、64号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Midway·近 Cascade Lake 游泳区" },
+          { site: "Midway 54B号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "Midway·近 Cascade Lake 游泳区" },
+          { site: "Northend 94号", hookup: "无接驳", pad: "仅列帐篷/Van-Camper，订前请与公园确认", fee: 43, quality: "good", qualityNote: "Northend·林间私密区" },
+          { site: "Northend 108、114号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Northend·林间私密区" },
+          { site: "Northend 118号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "Northend·林间私密区" },
+        ],
+      },
+      {
+        campId: 44,
+        sites: [
+          { site: "Sage Loop 10号", hookup: "全接驳", fee: 56 },
+          { site: "Sage Loop 305、306、307、308、309、310号", hookup: "无接驳", fee: 43 },
+          { site: "Dune Loop 318、319、320、321、326号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "Dune环·近游乐场家庭区" },
+        ],
+      },
+      {
+        campId: 2,
+        sites: [
+          { site: "207、213、214、215、216、218、220、221、225、226、227号", hookup: "水电", fee: 46, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "212、222、223号", hookup: "水电", fee: 41, quality: "good", qualityNote: "RV环·水电位" },
+          { site: "224、231、232、233、234、245号", hookup: "水电", fee: 51, quality: "good", qualityNote: "RV环·水电位" },
+        ],
+      },
+      {
+        campId: 9,
+        sites: [
+          { site: "Loop A 15、16号", hookup: "水电", fee: 51, quality: "good", qualityNote: "临海水电位" },
+          { site: "Loop B 19、28、59、60、63号", hookup: "水电", fee: 51 },
+          { site: "Loop B 35、36、40、41、42、43、62号", hookup: "水电", fee: 46 },
+          { site: "Loop B 58号", hookup: "无接驳", fee: 37 },
+        ],
+      },
+      {
+        campId: 16,
+        sites: [
+          { site: "Loop B 76号", hookup: "水电", fee: 51, quality: "good", qualityNote: "B区·部分接驳" },
+          { site: "Loop C 122、125、154号", hookup: "无接驳", fee: 43 },
+        ],
+      },
+      {
+        campId: 40,
+        sites: [
+          { site: "Loop A 1、7号", hookup: "无接驳", fee: 37 },
+          { site: "Loop A 6、9、10、11、13、16号", hookup: "无接驳", fee: 43 },
+          { site: "Loop B 34、42号", hookup: "全接驳", fee: 51, quality: "good", qualityNote: "B环·全接驳" },
+          { site: "Loop B 41、43、47、49号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "B环·全接驳" },
+          { site: "Loop C 88、90号", hookup: "水电", fee: 51, quality: "good", qualityNote: "C环·水电位" },
+        ],
+      },
+      {
+        campId: 42,
+        sites: [
+          { site: "24号", hookup: "水电", fee: 51, quality: "good", qualityNote: "主环" },
+          { site: "6、8、15、16、17、18、33、36、38、39、40、43号", hookup: "无接驳", fee: 43, quality: "good", qualityNote: "主环" },
+          { site: "5、19、20、32、34、35、37、41、47、48号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "主环" },
+        ],
+      },
+      {
+        campId: 43,
+        sites: [
+          { site: "18、20、22、24、25、35号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "标准位" },
+          { site: "42、49号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "标准位" },
+          { site: "52、53、54、55、56、57、58、59、60号", hookup: "全接驳", fee: 46 },
+          { site: "64、66、70、74、76号", hookup: "全接驳", fee: 51 },
+          { site: "67、68、69、72、73号", hookup: "全接驳", fee: 56 },
+        ],
+      },
+      {
+        campId: 3,
+        sites: [
+          { site: "5、6、7、8、9、10、11、12、13、15号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "东营地" },
+          { site: "21、22号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
+          { site: "43、44、71、73、74、75、77、78号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "西营地" },
+          { site: "46、47、49、50、52、70、72号", hookup: "水电", fee: 51, quality: "good", qualityNote: "西营地" },
+          { site: "301、302、303、304、305、306、307、311、312、313、314、315、316、317、319、320、322、323、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
+          { site: "401、404、408、409、410、411、412、413、417、418、420、421、422、423、424、425号", hookup: "水电", fee: 51 },
+        ],
+      },
+      {
+        campId: 12,
+        sites: [
+          { site: "Back In 30A（400环）", hookup: "全接驳", fee: 96, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A（300区）", hookup: "全接驳", pad: "仅剩2席", fee: 105, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 30A 铺装（100区）", hookup: "全接驳", fee: 104, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Pull Thru 50/30A 铺装（100区）", hookup: "全接驳", fee: 111, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 30A 高级（200区）", hookup: "全接驳", pad: "仅剩2席", fee: 124, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A（400环）", hookup: "全接驳", pad: "仅剩1席", fee: 103, quality: "good", qualityNote: "标准全接驳位" },
+          { site: "Back In 50/30A 高级（200区）", hookup: "全接驳", pad: "仅剩3席", fee: 131, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 30A 豪华庭院", hookup: "全接驳", pad: "仅剩2席", fee: 153, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Pull Thru 50/30A 豪华庭院", hookup: "全接驳", fee: 157, quality: "good", qualityNote: "高级位·带庭院" },
+          { site: "Back In 50/30A 豪华庭院", hookup: "全接驳", pad: "仅剩1席", fee: 144, quality: "good", qualityNote: "高级位·带庭院" },
+        ],
+      },
     ],
   },
 ];
@@ -318,7 +919,6 @@ export type UpcomingWeekend = {
 };
 
 export const UPCOMING_WEEKENDS: UpcomingWeekend[] = [
-  { arrival: "2027-08-21", label: "8月21日周六", opensOn: "2026-11-21", opensLabel: "11月21日" },
   { arrival: "2027-08-28", label: "8月28日周六", opensOn: "2026-11-28", opensLabel: "11月28日" },
   { arrival: "2027-09-04", label: "9月4日周六", opensOn: "2026-12-04", opensLabel: "12月4日" },
   { arrival: "2027-09-11", label: "9月11日周六", opensOn: "2026-12-11", opensLabel: "12月11日" },
@@ -520,47 +1120,54 @@ export const WATCHING_PARKS: WatchingPark[] = [
   {
     campId: 2,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "6/19→2026-09-19、6/26→09-26、7/3→10-03、7/10→10-10、7/17→10-17、7/24→10-24、8/7→11-07、8/14→11-14 已开；8/21→11-21、8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25",
+    checkNote: "2026-11-21 首查：6/26、7/10、7/17、7/24、8/7、8/21 有位；6/19、7/3、8/14 订满",
+    soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-08-14"],
   },
   {
     campId: 9,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "6/19→2026-09-19、6/26→09-26、7/3→10-03、7/10→10-10、7/17→10-17、7/24→10-24、8/7→11-07、8/14→11-14 已开；8/21→11-21、8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25",
+    checkNote: "2026-11-21 首查：8 个周末均有位；仅 7/3 订满",
+    soldOutWeekends: ["2027-07-03"],
   },
   {
     campId: 16,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "6/19→2026-09-19、6/26→09-26、7/3→10-03、7/10→10-10、7/17→10-17、7/24→10-24、8/7→11-07、8/14→11-14 已开；8/21→11-21、8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25；2025.9–2026 夏翻新关闭，2027 年按正常开放处理，下轮现查核对",
+    checkNote: "2026-11-21 首查：6/19、6/26、7/10、7/17、7/24、8/21 有位；7/3、8/7、8/14 订满；A 区 7–10、21–25、101–110 号 2027 春夏须 2027-04-01 7:00 起订，D 区不可订；北防波堤 2027-01-01–2029-11-30 关闭",
+    soldOutWeekends: ["2027-07-03", "2027-08-07", "2027-08-14"],
   },
   {
     campId: 40,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "6/19→2026-09-19、6/26→09-26、7/3→10-03、7/10→10-10、7/17→10-17、7/24→10-24、8/7→11-07、8/14→11-14 已开；8/21→11-21、8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25",
+    checkNote: "2026-11-21 首查：6/26、7/10、7/17、7/24、8/7、8/14、8/21 有位；6/19、7/3 订满",
+    soldOutWeekends: ["2027-06-19", "2027-07-03"],
   },
   {
     campId: 41,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "6/19→2026-09-19、6/26→09-26、7/3→10-03、7/10→10-10、7/17→10-17、7/24→10-24、8/7→11-07、8/14→11-14 已开；8/21→11-21、8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25",
+    checkNote: "2026-11-21 首查：仅 8/7、8/14 有位；其余 7 个周末订满",
+    soldOutWeekends: ["2027-06-19", "2027-06-26", "2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-21"],
   },
   {
     campId: 42,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "6/19→2026-09-19、6/26→09-26、7/3→10-03、7/10→10-10、7/17→10-17、7/24→10-24、8/7→11-07、8/14→11-14 已开；8/21→11-21、8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25",
+    checkNote: "2026-11-21 首查：6/19、6/26、7/3、7/17、8/7、8/14、8/21 有位；7/10、7/24 订满",
+    soldOutWeekends: ["2027-07-10", "2027-07-24"],
   },
   {
     campId: 43,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "6/19→2026-09-19、6/26→09-26、7/3→10-03、7/10→10-10、7/17→10-17、7/24→10-24、8/7→11-07、8/14→11-14 已开；8/21→11-21、8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25",
+    checkNote: "2026-11-21 首查：8 个周末均有位；仅 7/10 订满",
+    soldOutWeekends: ["2027-07-10"],
   },
   {
     campId: 3,
     reason: "Tacoma Power 9 个月窗口已开，在盯盘范围",
-    checkNote: "5/15–9/15 档期提前 9 个月可订（官网口径）；6/19–8/21 周六窗口已开，8/28→11-28、9/4→12-04、9/11→12-11、9/18→12-18、9/25→12-25",
+    checkNote: "2026-11-21 首查：9 个周末均有位（东/西营地、Elk Plain、Rocky Point）；7/3、8/14 东/西营地无位但 Elk Plain 与 Rocky Point 有位；旺季全接驳 $56、水电 $51，另收 $8 网上订位费",
   },
   {
     campId: 12,
     reason: "KOA 年度放号已开，在盯盘范围",
-    checkNote: "KOA 分批放号、哥伦布日后次年全年开放，2027 年夏季档期已可订（下轮现查以官网实时结果为准）",
+    checkNote: "2026-11-21 首查：9 个周末均有全接驳 RV 位（10–14 类可选，$96 起；7/3 仅剩 2 类）；KOA 按类型分位，具体营位号须 +$30 选位；KOA Rewards 结账 9 折另计",
   },
   {
     campId: 26,
@@ -572,7 +1179,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
     campId: 25,
     reason: "多数周末无普通位，盯退订",
     checkNote: "6月26日 Beach Campground 23 个全接驳位；7月3日 Beach Campground 8 个全接驳位；其余周末仅剩 ADA 位或订满",
-    soldOutWeekends: ["2027-06-19", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14"],
+    soldOutWeekends: ["2027-06-19", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-07", "2027-08-14", "2027-08-21"],
   },
   {
     campId: 8,
@@ -619,4 +1226,4 @@ export const WATCHING_PARKS: WatchingPark[] = [
 ];
 
 /** 本次现查覆盖过的华盛顿州营地 id（用于算“这周没位”） */
-export const CHECKED_WA_CAMP_IDS = [26, 27, 1, 5, 8, 28, 30, 44, 25];
+export const CHECKED_WA_CAMP_IDS = [26, 27, 1, 5, 8, 28, 30, 44, 25, 2, 9, 16, 40, 41, 42, 43];
