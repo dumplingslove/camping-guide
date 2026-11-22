@@ -318,21 +318,6 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     ],
     captions: ["清晨的 Rialto Beach：阳光洒在 James Island 海蚀柱上", "Rialto Beach 沙滩上的漂流木与远方海蚀柱", "Rialto Beach 沙滩与拍岸海浪", "布满青苔的礁石与漂流木", "雾气笼罩的 Rialto Beach 海滩与岬角", "Rialto Beach 日落，海蚀柱剪影", "仰望海蚀柱峭壁，顶部孤树迎风", "Dahdayla Rock 海蚀柱近景", "Quillayute River 平静河面倒映森林", "B环35号营位：野餐桌、火圈，雨林苔藓草地", "C环53号营位：野餐桌、火圈，古老大树环绕", "E环82号营位：野餐桌、火圈，雨林深处碎石营面"],
   },
-  // 19. Little Crater Lake
-  19: {
-    photos: [
-      "/camping-guide/images/camp-19/01.jpg",
-      "/camping-guide/images/camp-19/02.jpg",
-      "/camping-guide/images/camp-19/03.jpg",
-      "/camping-guide/images/camp-19/04.jpg",
-      "/camping-guide/images/camp-19/05.jpg",
-      "/camping-guide/images/camp-19/06.jpg",
-      "/camping-guide/images/camp-19/site-01.jpg",
-      "/camping-guide/images/camp-19/site-02.jpg",
-      "/camping-guide/images/camp-19/site-03.jpg"
-    ],
-    captions: ["水晶般清澈的碧蓝泉水倒映针叶林，枯木横卧水面", "清澈见底的泉水中，沉没的枯木清晰可见", "高大针叶林倒映在碧绿的湖面上", "湖畔枯树与碧蓝泉水，岸边绿草丛生", "深邃蓝色泉水下，沉木根系清晰可见", "湖面倒映云杉林，水下枯木影影绰绰", "3号营位：野餐桌、带烤架火圈，松针地面针叶林", "7号营位：野餐桌、火圈，林下开阔扎营面", "11号营位：野餐桌、火圈，大树环绕的松针营面"],
-  },
   // 20. Tumalo
   20: {
     photos: [
@@ -364,22 +349,6 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/camping-guide/images/camp-21/site-03.jpg"
     ],
     captions: ["Cape Lookout State Park 日用区海滩", "流经日用区的小溪", "日用区小溪上的木桥", "Cape Lookout 岬角峭壁", "Cape Lookout 岬角与海滩", "悬崖边的 Cape Lookout 岬角", "从岬角俯瞰蜿蜒的海滩与太平洋", "A45营位：野餐桌、火圈，碎石车位，高大针叶林", "B环营位B15：铺装车位、野餐桌、烤架，沙丘草丛环绕", "B20营位：野餐桌、火圈，铺装车位，开阔林地草地"],
-  },
-  // 22. Farewell Bend
-  22: {
-    photos: [
-      "/camping-guide/images/camp-22/01.jpg",
-      "/camping-guide/images/camp-22/02.jpg",
-      "/camping-guide/images/camp-22/03.jpg",
-      "/camping-guide/images/camp-22/04.jpg",
-      "/camping-guide/images/camp-22/05.jpg",
-      "/camping-guide/images/camp-22/06.jpg",
-      "/camping-guide/images/camp-22/07.jpg",
-      "/camping-guide/images/camp-22/site-01.jpg",
-      "/camping-guide/images/camp-22/site-02.jpg",
-      "/camping-guide/images/camp-22/site-03.jpg"
-    ],
-    captions: ["Union Creek 附近的 Rogue River 上游激流", "Rogue River Gorge 上游，白水奔腾", "Rogue River 河谷，皮划艇顺流而下", "Rogue River 峡谷俯瞰", "Natural Bridge 步道旁，Rogue River 白水穿过熔岩峡谷", "National Creek 瀑布", "Rogue 国家野生与风景河流标识牌", "10号房车营位：两辆房车停靠，铺装车位，针叶林", "25号营位：铺装通道、野餐桌，林间碎石地面", "40号营位：铺装车位、野餐桌、火圈，高大针叶林"],
   },
   // 23. Crater Lake Mazama
   23: {
@@ -551,19 +520,6 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     ],
     captions: ["南瀑布（South Falls），公园最受欢迎的瀑布", "南瀑布（South Falls）的另一视角", "十瀑步道（Trail of Ten Falls）沿线的 Silver Creek 溪流", "营地内的林间徒步道", "流经营地的 Silver Creek 溪流", "林间营位实拍：SUV旁搭起帐篷，有野餐桌和火圈，地面为碎石土", "铺装营位通道，远处可见野餐桌和火圈，营位间距开阔、植被茂密"],
   },
-  // 35. Wallowa Lake
-  35: {
-    photos: [
-      "/camping-guide/images/camp-35/01.jpg",
-      "/camping-guide/images/camp-35/02.jpg",
-      "/camping-guide/images/camp-35/03.jpg",
-      "/camping-guide/images/camp-35/04.jpg",
-      "/camping-guide/images/camp-35/05.jpg",
-      "/camping-guide/images/camp-35/site-01.jpg",
-      "/camping-guide/images/camp-35/site-02.jpg"
-    ],
-    captions: ["瓦洛厄湖湖景，远眺群山", "瓦洛厄湖畔风光", "瓦洛厄湖码头停靠的船只", "公园日间游憩区", "木屋（yurt）旁漫步的鹿", "B20营位：地面漆有营位编号，野餐桌+火圈，草地铺装车位", "E04营位：铺装垫位，野餐桌+火圈，旁有垃圾桶，松林环绕"],
-  },
   // 36. Detroit Lake
   36: {
     photos: [
@@ -684,20 +640,6 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     ],
     captions: ["湖畔营地全景，峡谷峭壁为背景", "班克斯湖与远处的汽船岩", "湖畔沙滩游泳区", "船下水坡道与玄武岩峭壁", "湖边垂钓", "Sage环31号营位，铺装房车位带水电桩与野餐桌，高大杨树环绕", "Dune环325号营位，帐篷位带火圈、野餐桌与水龙头，草地开阔"],
   },
-  // 45. Bullards Beach
-  45: {
-    photos: [
-      "/camping-guide/images/camp-45/01.jpg",
-      "/camping-guide/images/camp-45/02.jpg",
-      "/camping-guide/images/camp-45/03.jpg",
-      "/camping-guide/images/camp-45/04.jpg",
-      "/camping-guide/images/camp-45/05.jpg",
-      "/camping-guide/images/camp-45/site-01.jpg",
-      "/camping-guide/images/camp-45/site-02.jpg",
-      "/camping-guide/images/camp-45/site-03.jpg"
-    ],
-    captions: ["海岸沙滩风景，海浪与沙丘", "库基尔河灯塔（1896年）与解说牌", "松林中的营地入口", "防波堤上的灯塔与漂流木", "灯塔与海岸风光，沙丘草丛前景", "B环45号营位，铺装房车位带野餐桌与火圈，高大针叶林环绕", "B环51号营位，铺装房车位带水电桩、野餐桌，树木环绕", "B环47号营位，铺装车位带火圈、野餐桌与水电桩，林木茂密"],
-  },
   // 46. Champoeg
   46: {
     photos: [
@@ -712,20 +654,6 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
     ],
     captions: ["林间小木屋住宿区", "十九世纪木谷仓历史建筑", "高大的雪松林", "林间小径", "1901年纪念碑与先锋纪念馆", "林间营位，水滴拖挂房车驻扎，带野餐桌与火圈，草地开阔", "林间营位带水电桩、火圈与野餐桌，地面为草地加碎石", "35号营位，水滴拖挂房车驻扎，营位带野餐桌，林间草地"],
   },
-  // 47. Sunset Bay
-  47: {
-    photos: [
-      "/camping-guide/images/camp-47/01.jpg",
-      "/camping-guide/images/camp-47/02.jpg",
-      "/camping-guide/images/camp-47/03.jpg",
-      "/camping-guide/images/camp-47/04.jpg",
-      "/camping-guide/images/camp-47/05.jpg",
-      "/camping-guide/images/camp-47/site-01.jpg",
-      "/camping-guide/images/camp-47/site-02.jpg",
-      "/camping-guide/images/camp-47/site-03.jpg"
-    ],
-    captions: ["海滩边悬崖下的皮划艇与海湾", "退潮后的沙滩与森林覆盖的悬崖", "海湾沙滩、漂流木与悬崖倒影", "潮池礁石与背后的森林悬崖", "潮池奇石与海岸悬崖群", "B环25号帐篷营位，高大云杉林中，带野餐桌与营位桩，地面沙土碎石", "C环1号帐篷营位，帐篷已搭起，带野餐桌、火圈与停车位，蕨类灌木环绕", "D环28号营位，铺装停车位带野餐桌、火圈，临近洗手间建筑"],
-  },
   // 48. Cove Palisades
   48: {
     photos: [
@@ -739,20 +667,6 @@ export const campgroundPhotos: Record<number, CampgroundPhotos> = {
       "/camping-guide/images/camp-48/site-03.jpg"
     ],
     captions: ["公园峡谷与毕利奇诺克湖全景", "毕利奇诺克湖峡谷鸟瞰", "Crooked River 日间使用区湖面码头", "湖景与远处的喀斯喀特雪山", "悬崖湖湾边的野花与湖景", "Deschutes营地B环48号营位，铺装车位带野餐桌、火圈，松树与玄武岩", "Deschutes营地C环10号营位，铺装贯通车位带水电桩、双野餐桌，峡谷崖壁为背景", "Deschutes营地B环60号营位，松树林中野餐桌与火圈，沙土地面带巨石"],
-  },
-  // 49. La Pine
-  49: {
-    photos: [
-      "/camping-guide/images/camp-49/01.jpg",
-      "/camping-guide/images/camp-49/02.jpg",
-      "/camping-guide/images/camp-49/03.jpg",
-      "/camping-guide/images/camp-49/04.jpg",
-      "/camping-guide/images/camp-49/05.jpg",
-      "/camping-guide/images/camp-49/site-01.jpg",
-      "/camping-guide/images/camp-49/site-02.jpg",
-      "/camping-guide/images/camp-49/site-03.jpg"
-    ],
-    captions: ["松林间蜿蜒的得舒特河", "松林环绕的河湾", "平静的河面与松林倒影", "河弯与白色断崖", "阴天里的松林与河景", "林间房车营位，五轮拖挂驻扎，带野餐桌与露营椅，高大黄松环绕", "铺装营位带野餐桌、火圈与水电桩，黄松林立，沙土地面", "黄昏松林营位，带野餐桌、火圈与水电桩，地面为沙土针叶"],
   },
   // 50. Rathtrevor Beach
   50: {

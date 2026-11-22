@@ -25,10 +25,8 @@ export const campgroundCoords: Record<number, CampgroundCoords> = {
   16: { lat: 46.2880, lng: -124.0550 }, // Cape Disappointment
   17: { lat: 45.2680, lng: -121.7380 }, // Trillium Lake
   18: { lat: 47.9230, lng: -124.6120 }, // Mora
-  19: { lat: 45.1480, lng: -121.7440 }, // Little Crater Lake
   20: { lat: 44.1280, lng: -121.3330 }, // Tumalo
   21: { lat: 45.3530, lng: -123.9720 }, // Cape Lookout
-  22: { lat: 42.6550, lng: -122.6780 }, // Farewell Bend
   23: { lat: 42.8660, lng: -122.1680 }, // Crater Lake Mazama
   24: { lat: 44.7530, lng: -124.0620 }, // Pacific Shores
   25: { lat: 48.1340, lng: -122.7640 }, // Fort Worden
@@ -41,7 +39,6 @@ export const campgroundCoords: Record<number, CampgroundCoords> = {
   32: { lat: 45.6950, lng: -123.9380 }, // Nehalem Bay
   33: { lat: 43.8770, lng: -124.1170 }, // Honeyman
   34: { lat: 44.8770, lng: -122.6540 }, // Silver Falls
-  35: { lat: 45.3260, lng: -117.2120 }, // Wallowa Lake
   36: { lat: 44.7190, lng: -122.1530 }, // Detroit Lake
   37: { lat: 47.9550, lng: -123.8600 }, // Sol Duc
   38: { lat: 42.0600, lng: -124.3100 }, // Harris Beach
@@ -51,11 +48,8 @@ export const campgroundCoords: Record<number, CampgroundCoords> = {
   42: { lat: 48.2300, lng: -122.7600 }, // Fort Ebey
   43: { lat: 48.6550, lng: -122.4900 }, // Larrabee
   44: { lat: 47.8600, lng: -119.1200 }, // Steamboat Rock
-  45: { lat: 43.1200, lng: -124.4100 }, // Bullards Beach
   46: { lat: 45.2500, lng: -122.7700 }, // Champoeg
-  47: { lat: 43.3400, lng: -124.3700 }, // Sunset Bay
   48: { lat: 44.5500, lng: -121.2700 }, // Cove Palisades
-  49: { lat: 43.7200, lng: -121.5100 }, // La Pine
   50: { lat: 49.3200, lng: -124.3100 }, // Rathtrevor Beach
   51: { lat: 49.0600, lng: -120.8200 }, // Lightning Lake (Manning Park)
   52: { lat: 49.0600, lng: -121.9800 }, // Cultus Lake
