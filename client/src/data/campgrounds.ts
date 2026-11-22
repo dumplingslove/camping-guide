@@ -424,7 +424,7 @@ export const campgrounds: Campground[] = [
     name: "Fairholme Campground",
     nameCn: "费尔霍姆营地",
     tagline: "新月湖畔的宁静避世之所",
-    description: "Fairholme 露营地是一个大型营区，拥有84个营位，位于Lake Crescent湖畔的一片原始林中，四周被陡峭的山峰环绕 (Source: recreation.gov)。营地设有步行可到的湖滨营位和若干可驾车到达的营位，可观赏湖景，设施包括营火圈、野餐桌和冲水厕所 (Source: recreation.gov)。它是奥林匹克国家公园最受欢迎的地区之一，便于划船、划桨（如皮划艇）等水上活动，并能轻松抵达附近的徒步小径 (Source: recreation.gov)。 【2026-11-21 更新】Recreation.gov 2026 年 7–9 月新评价 6 条：12 号湖边营位位置无敌、59 号地面太硬打不进帐篷钉（带沙袋或找石头）、商店关门早、营位近厕所地面硬实。2026 年 8 月 RV LIFE 评价：湖很美，全营地无手机信号、无 WiFi（Starlink 也不行），路边白天吵、夜里安静，$50。 小红书合集帖（虾图周末去哪玩儿，日期未核实）：把 Fairholme 列入西雅图周边 10 大车露营地、适合拍大片。https://www.xiaohongshu.com/explore/6a3b03de000000000e021800 小红书实住推荐（莫名其妙he小酒，日期未核实）：湖边营位零距离湖景、位置大平整；帖子提到的具体湖景号位未核实（Recreation.gov 写全园 84 位、NPS 写 88 位，口径未统一），暂不列号位。https://www.xiaohongshu.com/explore/69fd627700000000230170f9",
+    description: "Fairholme 露营地是一个大型营区，拥有84个营位，位于Lake Crescent湖畔的一片原始林中，四周被陡峭的山峰环绕 (Source: recreation.gov)。营地设有步行可到的湖滨营位和若干可驾车到达的营位，可观赏湖景，设施包括营火圈、野餐桌和冲水厕所 (Source: recreation.gov)。它是奥林匹克国家公园最受欢迎的地区之一，便于划船、划桨（如皮划艇）等水上活动，并能轻松抵达附近的徒步小径 (Source: recreation.gov)。 【2026-11-21 更新】Recreation.gov 2026 年 7–9 月新评价 6 条：12 号湖边营位位置无敌、59 号地面太硬打不进帐篷钉（带沙袋或找石头）、商店关门早、营位近厕所地面硬实。2026 年 8 月 RV LIFE 评价：湖很美，全营地无手机信号、无 WiFi（Starlink 也不行），路边白天吵、夜里安静，$50。 小红书合集帖（虾图周末去哪玩儿，日期未核实）：把 Fairholme 列入西雅图周边 10 大车露营地、适合拍大片。https://www.xiaohongshu.com/explore/6a3b03de000000000e021800 小红书实住推荐（莫名其妙he小酒，日期未核实）：湖边营位零距离湖景、位置大平整；已核实（Recreation.gov 活库，2026-11-21）：83–90 号位全是步行湖边位，帖子说的零距离湖景属实；全园共 84 位（编号 1–46、53–90，47–52 为空号），其中 6 个管理位（40、42、45、64、74、75）不可订，实际可订 78 个；NPS 页写的 88 位是旧数（该页仍是 2026 年日期）。https://www.xiaohongshu.com/explore/69fd627700000000230170f9",
     tier: "明显热门",
     popularityLevel: "高（节假日和夏季周末很快就满。评论称在先到先得时段，周四上午中段前到达还有较大机会拿到营位，但周六到达则没有。）",
     reviewCount: "TheDyrt: 4.5★ (54 条评价), Google Maps: 4.5★ (392 条评价), Outdoorithm: 4.08★ (483 条评价)",
@@ -437,7 +437,7 @@ export const campgrounds: Campground[] = [
     region: "Olympic NP",
     type: "national",
     features: ["新月湖", "温泉", "雨林", "钓鱼"],
-    bookingUrl: "https://www.recreation.gov/camping/campgrounds/251851",
+    bookingUrl: "https://www.recreation.gov/camping/campgrounds/259084",
     bookingSystem: "Recreation.gov",
     season: "5月-9月",
     activities: [
