@@ -451,14 +451,14 @@ export const campgrounds: Campground[] = [
       { name: "湖上活动", ageRange: "任何年龄", distance: "附近", details: "可以在湖边玩桨板、游泳和划船 (来源: Sofia B., Maria M.)" },
     ],
     areas: [
-      { area: "Lakeside Sites (1-30)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "费尔霍姆营地的湖景营位（1–30）约有30个紧邻Lake Crescent湖岸的营位，坐落在古林和苔藓覆盖的湖畔，能直接享受清澈湖景并靠近步道与下水点。该区无水电设施，适合喜欢湖边帐篷或小型房车、划艇、垂钓与家庭休闲露营的露营者，建议自备水和基本装备。" },
-      { area: "Forest Sites (31-87)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "费尔霍姆营地林地营位（营位31–87，约57个）分布在浓密树林中，树荫充足、私密性较好，地面多为自然土壤与落叶覆盖，氛围安静。营区无水电供应、设施较为简朴，适合喜欢林间帐篷或自给式小型房车的露营者，不适合需要固定电力或更多便利设施的车宿客人；总体条件一般（3/5）。" },
+      { area: "步行湖边位（70–90，可订 19 个）", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "步行湖边位（70–90 号）共 21 个，紧邻 Lake Crescent 湖岸，零距离湖景；其中 74、75 号为管理位不可订，可订 19 个。需步行搬装备才能进营位，全园无水电接驳，适合喜欢湖边帐篷、划艇、垂钓与家庭休闲的露营者，建议自备水和基本装备。" },
+      { area: "标准位（1–69，可订 59 个）", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "标准位（1–69 号）共 63 个号位（47–52 为空号不存在），分布在湖畔林间，可驾车到达；其中 40、42、45、64 号为管理位不可订，39 号仅限帐篷，其余 58 个为无电标准位，可订 59 个。16 号为无障碍位。营区无水电供应、设施较为简朴，适合喜欢林间帐篷或自给式小型房车的露营者，不适合需要固定电力或更多便利设施的车宿客人；总体条件一般（3/5）。" },
     ],
     vacancyAnalysis: [
-      { area: "Lakeside Sites", whyVacant: "—", whyHard: "奥林匹克国家公园内最容易达到的湖边营地。取消费仅$10但无人愿意放弃Lake Crescent的体验"},
-      { area: "Lakeside Sites", whyVacant: "入口坡陡，大型车辆订了发现进不去会取消。取消率相对高", whyHard: "—"},
-      { area: "Forest Sites", whyVacant: "提前2周才放票，知名度低，竞争相对小", whyHard: "—"},
-      { area: "Forest Sites (Walk-in)", whyVacant: "需要徒步搬装备，很多人不愿意。天气变化取消率高", whyHard: "—" },
+      { area: "步行湖边位（70–90）", whyVacant: "—", whyHard: "奥林匹克国家公园内最容易达到的湖边营地。取消费仅$10但无人愿意放弃Lake Crescent的体验"},
+      { area: "步行湖边位（70–90）", whyVacant: "入口坡陡，大型车辆订了发现进不去会取消。取消率相对高", whyHard: "—"},
+      { area: "标准位（1–69）", whyVacant: "提前2周才放票，知名度低，竞争相对小", whyHard: "—"},
+      { area: "步行湖边位（70–90）", whyVacant: "需要徒步搬装备，很多人不愿意。天气变化取消率高", whyHard: "—" },
     ],
     bookingWindows: [
       { area: "Loop A", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 滚动放票" },
