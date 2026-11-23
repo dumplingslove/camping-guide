@@ -2240,7 +2240,7 @@ export const campgrounds: Campground[] = [
     kidRating: 4,
     tcRating: 4,
     tier: "区域家庭优选",
-    popularityLevel: "高（俄勒冈最受欢迎的州立公园营地之一，Google 4.7★超2600条评价，TripAdvisor Travellers' Choice；夏季周末爆满，需提前180天抢位。来源：Google Maps、TripAdvisor）",
+    popularityLevel: "高（俄勒冈最受欢迎的州立公园营地之一，Google 4.7★超2600条评价，TripAdvisor Travellers' Choice；夏季周末爆满，需提前6个月抢位。来源：Google Maps、TripAdvisor）",
 
     type: "state",
     season: "A 环 4/1–10/31；B 环全年开放",
