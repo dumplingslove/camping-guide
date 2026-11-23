@@ -1,4 +1,4 @@
-// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp；2026-11-17 现查华盛顿州 8/14 周六 goingtocamp；2026-11-20 复查华盛顿州 6/26、7/3、7/10、7/24、8/14 周六 goingtocamp；2026-11-21 复查华盛顿州 6/19–8/14 全部周六 goingtocamp 与 Hoh Recreation.gov；同日补查 8/21 周六（16 园）与新园首查（2/9/16/40/41/42/43、桤木湖 3、KOA 12））。2026-11-21 扩围：每日扫描覆盖从 30 个营地扩至 54 个（新增华盛顿州立公园 2/9/16/40/41/42/43、联邦 6/19/22/54/55/56、俄勒冈 15/20/21/35/36/45/47/48/49、Tacoma Power 3、KOA 12；南海滩 13 先到先得与太平洋海岸房车度假村 24 不适配不进扫描）。2026-11-21 删 6 个（19 Little Crater Lake、22 Farewell Bend、35 瓦洛厄湖、45 布拉兹海滩、47 日落湾、49 拉派恩），扫描覆盖 54→48 个。窗口口径二次核实（2026-11-21）：华盛顿州立公园 9 个自然月、联邦 6 个自然月、俄勒冈 6 个自然月滚动，均按自然月到日（旧 270 天/180 天/按月整批口径已纠正）。2026-11-22 复查：华盛顿州 16 园 9 周末、Mazama 7/3–9/25 首查、Kachess 5/22 新放、Hoh 团体位、KOA；Alder Lake 本轮未查。
+// 2027 年夏季周末营位现查数据（2026-11-01 现查，华盛顿州 goingtocamp / 俄勒冈 ReserveAmerica；2026-11-07 现查霍雨林 Recreation.gov；2026-11-10 现查华盛顿州 8/7 周六 goingtocamp；2026-11-17 现查华盛顿州 8/14 周六 goingtocamp；2026-11-20 复查华盛顿州 6/26、7/3、7/10、7/24、8/14 周六 goingtocamp；2026-11-21 复查华盛顿州 6/19–8/14 全部周六 goingtocamp 与 Hoh Recreation.gov；同日补查 8/21 周六（16 园）与新园首查（2/9/16/40/41/42/43、桤木湖 3、KOA 12））。2026-11-21 扩围：每日扫描覆盖从 30 个营地扩至 54 个（新增华盛顿州立公园 2/9/16/40/41/42/43、联邦 6/19/22/54/55/56、俄勒冈 15/20/21/35/36/45/47/48/49、Tacoma Power 3、KOA 12；南海滩 13 先到先得与太平洋海岸房车度假村 24 不适配不进扫描）。2026-11-21 删 6 个（19 Little Crater Lake、22 Farewell Bend、35 瓦洛厄湖、45 布拉兹海滩、47 日落湾、49 拉派恩），扫描覆盖 54→48 个。窗口口径二次核实（2026-11-21）：华盛顿州立公园 9 个自然月、联邦 6 个自然月、俄勒冈 6 个自然月滚动，均按自然月到日（旧 270 天/180 天/按月整批口径已纠正）。2026-11-22 复查：华盛顿州 16 园 9 周末、Mazama 7/3–9/25 首查、Kachess 5/22 新放、Hoh 团体位、KOA；Alder Lake 本轮未查。2026-11-23 复查：华盛顿州 16 园 9 周末、Mazama、Kachess 5/23、Hoh 团体位、KOA、Alder Lake 首查；Fort Worden 关闭升级与 Fort Stevens 南环核实。
 // 口径：周六去、周日回、住 1 晚；Truck camper（F-150 + 滑入式 camper，约 20 英尺），不筛接驳、能停车即可；ADA 专用位不计。
 // 空位会随订退变化，下单前以订位系统实时结果为准。
 
@@ -33,7 +33,7 @@ export type BookingWeekend = {
   parks: WeekendParks[];
 };
 
-export const BOOKING_CHECKED_AT = "2026-11-22";
+export const BOOKING_CHECKED_AT = "2026-11-23";
 export const BOOKING_RESERVATION_FEE = 8;
 
 export const BOOKING_WEEKENDS: BookingWeekend[] = [
@@ -52,7 +52,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 1,
         sites: [
-          { site: "Quarry Pond 306、308–310、312、315、320、323、328、329、334、337、340、342、347、359号", hookup: "水电", fee: 46 },
+          { site: "Quarry Pond 306、308–310、312、315、320、323、328、329、334、337、340、342、359号", hookup: "水电", fee: 46 },
           { site: "Quarry Pond 343号", hookup: "无接驳", fee: 37 },
         ],
       },
@@ -61,7 +61,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         sites: [
           { site: "130号", hookup: "水电", pad: "54×14英尺 pull-through", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污", status: "booked", confirmation: "IWWA27-3600548B1" },
           { site: "138、150、175、188、197号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" },
-          { site: "139号", hookup: "水电", fee: 46, qualityNote: "北营地水电位·部分接驳无排污" },
+          { site: "139号", hookup: "水电", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
           { site: "173号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "北营地五星区·经济型" },
           { site: "南营地 2–7、24、49–51、58、59、61、62、66、69–72、81、85、88、89、91、93、97、98、100号", hookup: "无接驳", fee: 37, qualityNote: "南营地·无接驳标准位" },
         ],
@@ -157,7 +157,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 1,
         sites: [
-          { site: "Quarry Pond 302–306、308–312、314、315、317、319–321、323、325、328、330、336、339、341、342、346、347、349、350、358–360号", hookup: "水电", fee: 46 },
+          { site: "Quarry Pond 302–306、308–314、315、317、319–321、323、325、328、330、336、339、341、342、346、347、349、350、358–360号", hookup: "水电", fee: 46 },
           { site: "Quarry Pond 316号", hookup: "水电", fee: 51 },
           { site: "Quarry Pond 343号", hookup: "无接驳", fee: 37 },
         ],
@@ -171,7 +171,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Upper Forest 59号", hookup: "水电", fee: 46, qualityNote: "Upper Forest·水电位" },
         ],
       },
-      { campId: 5, sites: [{ site: "108、110、112、114、115、136、138、188号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区" }] },
+      { campId: 5, sites: [{ site: "110、114、115、136、138、188号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区" }] },
       {
         campId: 28,
         sites: [
@@ -254,7 +254,6 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     arrival: "2027-07-03",
     label: "7月3日周六",
     parks: [
-      { campId: 5, sites: [{ site: "188号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" }] },
       { campId: 28, sites: [{ site: "Upper 1、6、9、13、18、20、21、26、28、41号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "上环·林间无接驳区" }] },
       {
         campId: 30,
@@ -277,6 +276,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 3,
         sites: [
+          { site: "34号", hookup: "水电", fee: 51, quality: "good", qualityNote: "东营地" },
           { site: "301、302、303、304、305、306、307、312、313、314、315、319、320、322、323、324、325号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Elk Plain" },
           { site: "401、404、410、411、412、413、417、418、420、421、422、423、424号", hookup: "水电", fee: 51 },
         ],
@@ -297,7 +297,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
     parks: [
       { campId: 26, sites: [{ site: "54号", hookup: "全接驳", fee: 56 }] },
       { campId: 27, sites: [{ site: "2号", hookup: "全接驳", fee: 56, quality: "good", qualityNote: "近河边·接驳须逐号核对" }] },
-      { campId: 1, sites: [{ site: "Quarry Pond 305、309–312、315、319–321、323、325、329–331、334、335、337、338、342号", hookup: "水电", fee: 46 }] },
+      { campId: 1, sites: [{ site: "Quarry Pond 305、309、310、312、315、319–321、323、325、329、330、334、335、337、338、342号", hookup: "水电", fee: 46 }] },
       {
         campId: 5,
         sites: [
@@ -504,7 +504,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         campId: 1,
         sites: [
           { site: "Forest Loop 58号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
-          { site: "Quarry Pond 308–311、315、320、329、330、332、338、340、342、345、354、357、361号", hookup: "水电", fee: 46 },
+          { site: "Quarry Pond 308–311、315、320、329、330、338、340、342、345、357、361号", hookup: "水电", fee: 46 },
           { site: "Quarry Pond 343号", hookup: "无接驳", fee: 37 },
         ],
       },
@@ -512,7 +512,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         campId: 5,
         sites: [
           { site: "102、105、107、108、114、115、119、121、122、131、132、136、138、142、148、149、153、155、157、159、162–164、166、167、175、177、179、183、185、186、190、191、193、195号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "南北营地均为4–5分推荐区" },
-          { site: "143、145、147、171、173号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "南北营地均为4–5分推荐区" },
+          { site: "143、147、171、173号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "南北营地均为4–5分推荐区" },
           { site: "南营地 2、4–7、35、45号", hookup: "无接驳", fee: 37, qualityNote: "南营地·无接驳标准位" },
         ],
       },
@@ -854,7 +854,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
           { site: "Forest Loop 24、71号", hookup: "水电", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
           { site: "Forest Loop 35、36号", hookup: "水电", pad: "双营位，需同订", fee: 51, quality: "good", qualityNote: "Forest Loop·5分环（水电部分接驳）" },
           { site: "Lower Loop B 221号", hookup: "无接驳", fee: 37 },
-          { site: "Quarry Pond 302–315、317–332、334、336–338、340–342、345–347、354、358、359号", hookup: "水电", pad: "305号 pull-through；326、327号双营位，需同订", fee: 46 },
+          { site: "Quarry Pond 302、304–315、317–332、334、336–338、340–342、345–347、354、358、359号", hookup: "水电", pad: "305号 pull-through；326、327号双营位，需同订", fee: 46 },
           { site: "Quarry Pond 316号", hookup: "水电", fee: 51 },
           { site: "Quarry Pond 343号", hookup: "无接驳", fee: 37 },
         ],
@@ -864,7 +864,7 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
         sites: [
           { site: "101、106、109、113、139、141、144、194号", hookup: "水电", fee: 46, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
           { site: "102、105、107、108、110、112、114、115、117、119、121–123、125、127、129、131、132、134、136、138、140、142、148、149、151、153、155、157、159、160、162–164、166、167、169、175、177、179、181、188、190、191、193、195、197号", hookup: "无接驳", fee: 37, quality: "good", qualityNote: "北营地五星区（含181号）" },
-          { site: "111、120、189、192、196号", hookup: "水电", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
+          { site: "120、189、192、196号", hookup: "水电", fee: 51, quality: "star", qualityNote: "北营地水电位·部分接驳无排污" },
           { site: "143、145、147、171、173号", hookup: "无接驳", fee: 31, quality: "good", qualityNote: "北营地五星区·经济型" },
           { site: "南营地 1–12、15、16、19、21、25–27、29–42、44、45、47–50、53–79、81–97、100号", hookup: "无接驳", fee: 37, qualityNote: "南营地·无接驳标准位" },
         ],
@@ -872,7 +872,6 @@ export const BOOKING_WEEKENDS: BookingWeekend[] = [
       {
         campId: 8,
         sites: [
-          { site: "Trailer Loop 33号", hookup: "水电", fee: 51 },
           { site: "West Loop 77、86、102、132号", hookup: "无接驳", fee: 37 },
         ],
       },
@@ -1009,7 +1008,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
   {
     campId: 14,
     reason: "俄勒冈 6 个月窗口未开",
-    checkNote: "6 个月滚动（自然月到日，每日早 6 点上线）：6/19→2026-12-19、7/3→2027-01-03、8/7→2027-02-07、9/4→2027-03-04 起滚动开放",
+    checkNote: "2026-11-23 ReserveAmerica 活查：南环 L/M/N/O 在窗口内可订（2027-05-22–23 大批位“Book now”，无关闭警报；承包商“已完工”说法得支撑）；6/19–8/21 尚未放号（6/19 → 12-19）；6 个月滚动（自然月到日，每日早 6 点上线）：6/19→2026-12-19、7/3→2027-01-03、8/7→2027-02-07、9/4→2027-03-04 起滚动开放",
   },
   {
     campId: 31,
@@ -1069,7 +1068,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
   {
     campId: 29,
     reason: "Recreation.gov 分批放票，标准位未开",
-    checkNote: "2026-11-22 复查：2027 预订季 6月26日–9月7日；A 环提前 6 个月、C 环 2 周、B 环 4 天放票（非 270 天）。6/19 不在预订季内、先到先得不可网订；标准位首次放号 2026-12-26 07:00 起（至 2027-06-26）；团体营位 2/3 号（$48/晚）2026-11-22 现查：7/3、7/10 已订满，7/17、7/24 可订。A 环放票日：7/3→2027-01-03、7/10→01-10、7/17→01-17、7/24→01-24（07:00 PST）；计划 08-13 两晚行程 A 环约 2027-02-13 开",
+    checkNote: "2026-11-23 复查：团体营位 2/3 号（$48/晚）7/3、7/10 已订满，7/17、7/24 可订，与站上一致；2027 预订季 6月26日–9月7日；A 环提前 6 个月、C 环 2 周、B 环 4 天放票（非 270 天）。6/19 不在预订季内、先到先得不可网订；标准位首次放号 2026-12-26 07:00 起（至 2027-06-26）；A 环放票日：7/3→2027-01-03、7/10→01-10、7/17→01-17、7/24→01-24（07:00 PST）；计划 08-13 两晚行程 A 环约 2027-02-13 开",
     soldOutWeekends: ["2027-07-03", "2027-07-10"],
   },
   {
@@ -1095,7 +1094,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
   {
     campId: 23,
     reason: "Recreation.gov 12 个月滚动已开，7/1–9/27 可订",
-    checkNote: "12 个月滚动（Recreation.gov Seasons and Fees 页，2026-11-22 核实；原“6 个月滚动”有误）；2027-07-01–09-27 已放出、现查 RV 可订 59–94 位/周六（8/28 88、9/4 82、9/11 76、9/18 87、9/25 94）；6/1–7/1 先到先得；季末 9/27；电位 17 个（B10、C5、C27、C28、F15–F18、F20、F21、F23–F29），水电全接驳 4 个（B10、C5、C27、C28）；费率 RV 无接驳 $40、电位 $55/$65",
+    checkNote: "12 个月滚动（Recreation.gov Seasons and Fees 页，2026-11-22 核实；原“6 个月滚动”有误）；2027 季 2027-07-01–09-27（2026-11-23 官方季表核实：6/1 开季先到先得、7/1 起可订、9/27 闭季）；7/3–8/21 现查 RV 可订 59–94 位/周六（8/28 88、9/4 82、9/11 76、9/18 87、9/25 94，2026-11-23 计数复核无变化）；6/1–7/1 先到先得；电位 17 个（B10、C5、C27、C28、F15–F18、F20、F21、F23–F29），水电全接驳 4 个（B10、C5、C27、C28）；费率 RV 无接驳 $40、电位 $55/$65（另有一说 $38，疑为帐篷位价，RV 行保持 $40）",
   },
   {
     campId: 37,
@@ -1120,7 +1119,7 @@ export const WATCHING_PARKS: WatchingPark[] = [
   {
     campId: 54,
     reason: "Recreation.gov 6 个月滚动放票中，5 月档期已开",
-    checkNote: "季 2027-05-21–09-18；5/21、5/22 已放出（各 102 个可订位、11 个已订），5/23 将于 11/23 07:00 放出；6 月档期仍 2026-12-19 起滚动；9/25 季外",
+    checkNote: "季 2027-05-21–09-18；2026-11-23 复查：5/23 已放出（107 个位，多出的 020、126、128、131、147；团体 A 位可订），5/24 将于 2026-11-24 07:00 放出；5/21、5/22 已放出（各 102 个可订位、11 个已订）；6 月档期仍 2026-12-19 起滚动；9/25 季外",
   },
   {
     campId: 55,
@@ -1160,108 +1159,108 @@ export const WATCHING_PARKS: WatchingPark[] = [
   {
     campId: 2,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：6/26、7/10、7/17、7/24、8/7、8/21 有位；6/19、7/3、8/14 订满",
+    checkNote: "2026-11-23 复查：6/26、7/10、7/17、7/24、8/7、8/21 有位；6/19、7/3、8/14 订满；补做逐号核对（2026-11-23 晚）：200–248 环 9 周末逐号 0 差异（7/3 仅 ADA 229 号有位，不计）",
     soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-08-14"],
   },
   {
     campId: 9,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：9 个周末均有位（7/3 Loop B 44–47 号为新增）；8/7 仅 Loop A 14 号",
+    checkNote: "2026-11-23 复查：与站上一致；7/3 仅 Loop B、8/7 仅 Loop A，其余周末 A、B 环均有位",
     soldOutWeekends: [],
   },
   {
     campId: 16,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：6/19、6/26、7/10、7/17、7/24、8/21 有位；7/3、8/7、8/14 订满；A 区 7–10、21–25、101–110 号 2027 春夏须 2027-04-01 7:00 起订，D 区不可订；北防波堤 2027-01-01–2029-11-30 关闭",
+    checkNote: "2026-11-23 复查：与站上一致；6/19、6/26、7/10、7/17、7/24、8/21 有位；7/3、8/7、8/14 订满；A 区 7–10、21–25、101–110 号 2027 春夏须 2027-04-01 7:00 起订，D 区不可订；北防波堤 2027-01-01–2029-11-30 关闭",
     soldOutWeekends: ["2027-07-03", "2027-08-07", "2027-08-14"],
   },
   {
     campId: 40,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：6/26、7/10、7/17、7/24、8/7、8/14、8/21 有位；6/19、7/3 订满",
+    checkNote: "2026-11-23 复查：与站上一致；6/26、7/10、7/17、7/24、8/7、8/14、8/21 有位；6/19、7/3 订满",
     soldOutWeekends: ["2027-06-19", "2027-07-03"],
   },
   {
     campId: 41,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：仅 8/7、8/14 有位；其余 7 个周末 Non-Reservable（按订满处理）",
+    checkNote: "2026-11-23 复查：与站上一致；仅 8/7、8/14 有位；其余 7 个周末 Non-Reservable（按订满处理）",
     soldOutWeekends: ["2027-06-19", "2027-06-26", "2027-07-03", "2027-07-10", "2027-07-17", "2027-07-24", "2027-08-21"],
   },
   {
     campId: 42,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：9 个周末均有位（7/10 5、47 号、7/24 5、21、22 号为新增）",
+    checkNote: "2026-11-23 复查：与站上一致；9 个周末均有位",
     soldOutWeekends: [],
   },
   {
     campId: 43,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：9 个周末均有位（7/10 15 个为新增）",
+    checkNote: "2026-11-23 复查：与站上一致；9 个周末均有位",
     soldOutWeekends: [],
   },
   {
     campId: 3,
     reason: "Tacoma Power 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-21 首查：9 个周末均有位（东/西营地、Elk Plain、Rocky Point）；7/3、8/14 东/西营地无位但 Elk Plain 与 Rocky Point 有位；旺季全接驳 $56、水电 $51，另收 $8 网上订位费",
+    checkNote: "2026-11-23 首查完成：9 个周末均有位（东/西营地、Elk Plain、Rocky Point）；7/3 新增东营地 34 号（退订位，水电 $51）；旺季全接驳 $56、水电 $51，另收 $8 网上订位费；未解决：Elk Plain 7/17（live 不可订 vs 站上 317 号）、East/West 8/14 环级号数未核实",
   },
   {
     campId: 12,
     reason: "KOA 年度放号已开，在盯盘范围",
-    checkNote: "2026-11-21 首查：9 个周末均有全接驳 RV 位（10–14 类可选，$96 起；7/3 仅剩 2 类）；KOA 按类型分位，具体营位号须 +$30 选位；KOA Rewards 结账 9 折另计；2026-11-22 复查：8/14 高级位 $136（基线 $131），其余与基线一致；8/21 完全一致",
+    checkNote: "2026-11-21 首查：9 个周末均有全接驳 RV 位（10–14 类可选，$96 起；7/3 仅剩 2 类）；KOA 按类型分位，具体营位号须 +$30 选位；KOA Rewards 结账 9 折另计；2026-11-23 复查：7 个周末与站上完全一致",
   },
   {
     campId: 26,
     reason: "该周末订满，盯退订",
-    checkNote: "2026-11-22 复查：7/10 54 号有位（基线记订满，已补）；7/3 订满；其余周末有位",
+    checkNote: "2026-11-23 复查：与站上一致；7/3 订满；其余周末有位（1–60 环 7/3 外均有位；Left Beach 6/19、6/26、7/10、7/24、8/7、8/21 有位；Right Beach 9 周均无位）",
     soldOutWeekends: ["2027-07-03"],
   },
   {
     campId: 25,
     reason: "多数周末无普通位，盯退订",
-    checkNote: "2026-11-22 复查：Beach Campground 6/19 11 个、6/26 23 个、7/3 7 个、7/10 18 个、7/17 23 个、7/24 8 个有位；8/7、8/14、8/21 订满；其余周末仅剩 ADA 位或订满",
+    checkNote: "2026-11-23 复查：官方警报（parks.wa.gov，2026-11-20 发布、至 2028-06-30）：海滩营地 1–50 号 2027-08-01 起关闭至 2028 年夏季；“18–50 号 2027-03-01 关闭”传闻不实，6–7 月仍可订；8/7、8/14、8/21 无位系关闭所致；Beach Campground 6/19 11 个、6/26 23 个、7/3 7 个、7/10 18 个、7/17 23 个、7/24 8 个有位（2026-11-22 计数，本轮未变）",
     soldOutWeekends: ["2027-08-07", "2027-08-14", "2027-08-21"],
   },
   {
     campId: 8,
     reason: "该周末订满，盯退订",
-    checkNote: "2026-11-22 复查：West Loop 6/26、7/10 各 77 号，8/14 8 个、8/21 4 个；Trailer 8/21 33 号；Beach Loop 9 周全满；其余周末订满",
+    checkNote: "2026-11-23 复查：West Loop 6/26、7/10 各 77 号，8/14 8 个、8/21 4 个；Trailer 33 号（8/21）已被订走；Beach Loop 9 周全满；其余周末订满；未解决：West 7/17、8/7 与 Trailer 8/7 环级号数未核实",
     soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-07-17", "2027-07-24", "2027-08-07"],
   },
   {
     campId: 44,
     reason: "多数周末仅剩 ADA 位，盯退订",
-    checkNote: "2026-11-22 复查：6/26 Dune 98 号；7/10 Dune 110 号；7/17 Sage 3、6、304 号 + Bay 143 号；8/7 Sage 312 号；8/14 Dune 322 号 + Sage 4 个；8/21 Dune 3 个 + Sage 6 个；6/19、7/3、7/24 无普通位",
+    checkNote: "2026-11-23 复查：环级与站上大体一致；7/24 全满；未解决：Dune 6/19、7/3（现查环级有位、站上记无普通位，可能仅 ADA/帐篷位，未逐号核实）",
     soldOutWeekends: ["2027-06-19", "2027-07-03", "2027-07-24"],
   },
   {
     campId: 27,
     reason: "该周末无普通位，盯退订",
-    checkNote: "2026-11-22 复查：7/10 2 号有位（基线记订满，已补）；6/26 仅剩 ADA 位、7/3 订满",
+    checkNote: "2026-11-23 复查：7/3 订满；其余 8 个周末环级显示有位；站上号数未逐号核实（现查为 1 Tent 口径，剩余位可能仅 ADA/帐篷位）；未解决：6/26 环级号数未核实",
     soldOutWeekends: ["2027-06-26", "2027-07-03"],
   },
   {
     campId: 28,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：Upper 9 个周末均有位（7/3 10 个、7/24 13 个为新增）；Lower 7/3、7/24、8/7、8/14 订满",
+    checkNote: "2026-11-23 复查：与站上一致；Upper 9 个周末均有位；Lower 6/19、6/26、7/10、7/17、8/21 有位，7/3、7/24、8/7、8/14 订满",
     soldOutWeekends: [],
   },
   {
     campId: 30,
     reason: "该周末订满，盯退订",
-    checkNote: "2026-11-22 复查：7/10 订满；8/14 Northend 无位、Midway 补 43 号",
+    checkNote: "2026-11-23 复查：环级与站上大体一致；未解决：Midway 7/10、Northend 8/14（现查环级有位、站上记无位，可能仅 ADA/帐篷位，未逐号核实）",
     soldOutWeekends: ["2027-07-10"],
   },
   {
     campId: 1,
     reason: "该周末订满，盯退订",
-    checkNote: "2026-11-22 复查：除 7/3 外 8 个周末均有位；7/3 订满",
+    checkNote: "2026-11-23 复查：除 7/3 外 8 个周末均有位；7/3 订满；自 11-22 被订走 Quarry 347（6/19）、311/331（7/10）、332/354（7/24）；补做逐号核对（2026-11-23 晚）：6/26 补 313 号、8/21 删 303 号（现查无位）；338 号（7/10、7/24、8/7、8/14、8/21）与 361 号（7/24）现查日历格未出现、疑为 ADA 位，保留待核",
     soldOutWeekends: ["2027-07-03"],
   },
   {
     campId: 5,
     reason: "华盛顿州立公园 9 个月窗口已开，在盯盘范围",
-    checkNote: "2026-11-22 复查：9 个周末均有位；7/10 北营地 47 个、南营地 11 个（基线记订满，已补）；6/19 130 号、7/17 106 号已订",
-    soldOutWeekends: [],
+    checkNote: "2026-11-23 复查：8 个周末有位；7/3 订满（北营地 0 非 ADA 位、南营地无位）；6/19 130 号、7/17 106 号已订；自 11-22 被订走 North 108/112（6/26）、145（7/24）、188（7/3）；补做逐号核对（2026-11-23 晚）：8/21 删 111 号（现查无位）；6/19 139 号补标 star（现查水电位）",
+    soldOutWeekends: ["2027-07-03"],
   },
 ];
 
