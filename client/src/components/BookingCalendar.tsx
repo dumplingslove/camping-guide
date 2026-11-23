@@ -165,8 +165,62 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
     if (!error && data) setCloudReqs(data);
   };
 
+  // 登录后把之前未登录时只存本机的请求补写上云（按营地+入住日+营位去重，不重复写）
+  const syncLocalToCloud = async () => {
+    if (!supabase || !user) return;
+    let stored: LocalRequest[] = [];
+    try {
+      stored = JSON.parse(localStorage.getItem(LOCAL_KEY) ?? "[]");
+    } catch {
+      return;
+    }
+    if (stored.length === 0) return;
+    const { data } = await supabase
+      .from("booking_requests")
+      .select("campground_id, arrival, site")
+      .order("created_at", { ascending: false })
+      .limit(50);
+    const keyOf = (campId: number, arrival: string, site: string) => `${campId}|${arrival}|${site}`;
+    const cloudKeys = new Set((data ?? []).map((r: any) => keyOf(r.campground_id, r.arrival, r.site)));
+    const pending = stored.filter((r) => !cloudKeys.has(keyOf(r.campId, r.arrival, r.site)));
+    if (pending.length === 0) {
+      // 全部已在云端：清掉本机副本，避免重复显示
+      setLocalReqs([]);
+      try {
+        localStorage.removeItem(LOCAL_KEY);
+      } catch {}
+      return;
+    }
+    const synced: LocalRequest[] = [];
+    for (const r of pending) {
+      const { error } = await supabase.from("booking_requests").insert({
+        user_id: user.id,
+        campground_id: r.campId,
+        campground_name: r.campName,
+        arrival: r.arrival,
+        nights: 1,
+        site: r.site,
+        hookup: r.hookup,
+        nightly_fee: r.fee,
+        status: "pending",
+      });
+      if (!error) synced.push(r);
+    }
+    if (synced.length > 0) {
+      const rest = stored.filter((r) => !synced.includes(r));
+      setLocalReqs(rest);
+      try {
+        if (rest.length === 0) localStorage.removeItem(LOCAL_KEY);
+        else localStorage.setItem(LOCAL_KEY, JSON.stringify(rest));
+      } catch {}
+      await loadCloud();
+      setNotice(`已把你之前未登录时留的 ${synced.length} 条订位请求同步到云端，小美能看到了。`);
+    }
+  };
+
   useEffect(() => {
     loadCloud();
+    syncLocalToCloud();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.id]);
 
@@ -181,21 +235,7 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
     const text =
       `请帮我订营地：${cn}${en ? `（${en}）` : ""}，入住 ${weekend.label}（${weekend.arrival}，周六住1晚），` +
       `营位 ${site.site}（${site.hookup}），房费 $${site.fee}/晚 + $${BOOKING_RESERVATION_FEE} 订位费。`;
-    const local: LocalRequest = {
-      campId,
-      campName: cn,
-      arrival: weekend.arrival,
-      site: site.site,
-      hookup: site.hookup,
-      fee: site.fee,
-      createdAt: new Date().toISOString(),
-    };
-    const next = [local, ...localReqs];
-    setLocalReqs(next);
-    try {
-      localStorage.setItem(LOCAL_KEY, JSON.stringify(next));
-    } catch {}
-
+    // 登录状态下只写云端、不写本机，避免同一请求在“我的预订请求”里出现两次
     if (cloudEnabled && supabase && user) {
       const { error } = await supabase.from("booking_requests").insert({
         user_id: user.id,
@@ -209,6 +249,21 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
         status: "pending",
       });
       if (error) {
+        // 云端写失败才回退到本机
+        const local: LocalRequest = {
+          campId,
+          campName: cn,
+          arrival: weekend.arrival,
+          site: site.site,
+          hookup: site.hookup,
+          fee: site.fee,
+          createdAt: new Date().toISOString(),
+        };
+        const next = [local, ...localReqs];
+        setLocalReqs(next);
+        try {
+          localStorage.setItem(LOCAL_KEY, JSON.stringify(next));
+        } catch {}
         setNotice(`云端记录失败（${error.message}），已只存本机。请把这段发给小美：${text}`);
         return;
       }
@@ -237,15 +292,14 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
           订位费；取消时 $8 不退，再按持有时长扣当晚房费的 5–50%。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-          不同系统放号窗口不一样：华盛顿州立公园提前 270 天，国家公园走 Recreation.gov 多为提前
-          180 天（霍雨林 270 天），俄勒冈 6 个月，BC 省立公园 3 个月滚动（每天早 7 点放票），盐溪每年 1 月 1 日开放当年预订。八九月和还没开的系统都在下面标着开放日，到日子就去查。
+          不同系统放号窗口不一样：华盛顿州立公园提前 9 个自然月，联邦国家公园走 Recreation.gov 多为提前 6 个自然月（霍雨林按环分批：A 环 6 个月、C 环 2 周、B 环 4 天；卡拉洛奇、莫拉、费尔霍姆也分批），俄勒冈 6 个自然月滚动，BC 省立公园 3 个月滚动（每天早 7 点放票），盐溪每年 1 月 1 日开放当年预订。八九月和还没开的系统都在下面标着开放日，到日子就去查。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
-          ⭐ 特别好 = 复核证实的点名推荐营位（只剩韦纳奇湖北营地水电位 8 处）；“位置不错”= 复核确认方向的分区；没标的 = 位置一般或接驳待逐号核对。56 个营地已从头复核一遍，旧研究里“全接驳”等写法大面积是错的，已按复核结论重标。
+          ⭐ 特别好 = 复核证实的点名推荐营位（只剩韦纳奇湖北营地水电位 8 处）；“位置不错”= 复核确认方向的分区；没标的 = 位置一般或接驳待逐号核对。50 个营地已从头复核一遍，旧研究里“全接驳”等写法大面积是错的，已按复核结论重标。
         </p>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
           点 <span className="font-medium text-foreground">“帮我订”</span> 就是把订位请求发给小美：
-          登录状态下请求会直接存到云端，小美看到后找你确认登录和付款再下单；未登录时请求只存本机并复制好发给你，粘贴发给小美同样有效。下单前每单费用会再跟你确认一遍。
+          登录状态下请求会直接存到云端，小美看到后找你确认登录和付款再下单；未登录时请求只存本机并复制好发给你，粘贴发给小美同样有效，登录后之前只存本机的请求会自动同步上云。下单前每单费用会再跟你确认一遍。
         </p>
         {notice && (
           <div className="mt-3 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm p-3">
@@ -355,7 +409,7 @@ export function BookingCalendar({ onOpenDetail }: { onOpenDetail: (id: number) =
         <section className="rounded-xl border border-amber-200 bg-amber-50 p-4">
           <h3 className="text-base font-semibold">{upcoming.label} → 周日 · 放号窗口还没开</h3>
           <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-            华盛顿州立公园提前 270 天放号，这个周末 {upcoming.opensLabel} 开放，到日子现查空位填上；盯盘任务会按开放日去查。
+            华盛顿州立公园提前 9 个自然月放号，这个周末 {upcoming.opensLabel} 开放，到日子现查空位填上；盯盘任务会按开放日去查。
           </p>
         </section>
       ) : (

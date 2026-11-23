@@ -41,8 +41,11 @@ jobs:
         run: pnpm exec vite build
 
       - name: SPA fallback for client-side routing
+        # 404.html 不再是 index.html 的原样复制：深链直达时 GitHub Pages 返回 404 状态。
+        # 改用 spa-github-pages 的跳转页（scripts/spa-404.html）：把 /campground/7 改写成
+        # /?/campground/7 跳回首页，由 index.html 里的还原脚本恢复路径，最终落在 200 页面。
         run: |
-          cp dist/public/index.html dist/public/404.html
+          cp scripts/spa-404.html dist/public/404.html
           touch dist/public/.nojekyll
 
       - name: Upload Pages artifact

@@ -269,7 +269,7 @@ export const campgrounds: Campground[] = [
     region: "Mt. Rainier NP",
     type: "national",
     features: ["雪山", "野花", "溪流", "Ranger活动"],
-    bookingUrl: "https://www.recreation.gov/camping/campgrounds/232463",
+    bookingUrl: "https://www.recreation.gov/camping/campgrounds/232466",
     bookingSystem: "Recreation.gov",
     season: "5月底-10月",
     activities: [
@@ -457,13 +457,13 @@ export const campgrounds: Campground[] = [
     vacancyAnalysis: [
       { area: "步行湖边位（70–90）", whyVacant: "—", whyHard: "奥林匹克国家公园内最容易达到的湖边营地。取消费仅$10但无人愿意放弃Lake Crescent的体验"},
       { area: "步行湖边位（70–90）", whyVacant: "入口坡陡，大型车辆订了发现进不去会取消。取消率相对高", whyHard: "—"},
-      { area: "标准位（1–69）", whyVacant: "提前2周才放票，知名度低，竞争相对小", whyHard: "—"},
+      { area: "标准位（1–69）", whyVacant: "分批放票（6 个月/2 周/4 天三档；2027 年环对应关系待官方公布），知名度低，竞争相对小", whyHard: "—"},
       { area: "步行湖边位（70–90）", whyVacant: "需要徒步搬装备，很多人不愿意。天气变化取消率高", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "Loop A", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 滚动放票" },
-      { area: "Loop B", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
-      { area: "Loop C", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov" },
+      { area: "6 个月档", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 分批放票；2027 年环对应关系待官方公布，首次现查以 Seasons and Fees 页为准" },
+      { area: "2 周档", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov 分批放票；2027 年环对应关系待官方公布，首次现查以 Seasons and Fees 页为准" },
+      { area: "4 天档", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 分批放票；2027 年环对应关系待官方公布，首次现查以 Seasons and Fees 页为准" },
     ],
     recommendedSites: "Site 1-15（直面新月湖+日落方向）（评论验证：85: 紧邻湖畔风景极佳, 53: 宽敞可停两车和多顶帐篷, 27: 适合小型房车，有蕨类植物和树木，私密性好, 88: 平坦且风景极佳, 29: 很好的驶入式营位，空间大且有隐私, 90: 紧邻湖边，空间大可容纳两顶4人帐篷）",
     avoid: "Site 60+（离湖远+靠近公路噪音）",
@@ -633,7 +633,7 @@ export const campgrounds: Campground[] = [
     name: "Kalaloch Campground",
     nameCn: "卡拉洛奇营地",
     tagline: "太平洋悬崖上的原始海岸营地",
-    description: "Kalaloch露营地是一个大型营区，拥有170个营位，坐落在毗邻太平洋的高悬崖上的宁静海岸林中。虽然大多数营位并不直接位于海滩，但有几个可以俯瞰海面，营区内也可直接通往海滩。它是奥林匹克国家公园最受游客欢迎的区域之一，以壮丽的日落、潮池和观赏海洋野生动物而闻名。 (Source: Recreation.gov and NPS.gov) 【2026-11-21 更新】TheDyrt 2026 年 11 月最新评价：A–C 环已季末关闭，营位积水严重，唯一饮用水只在 RV 加水站；B 环 004 号位宽敞、步行到海滩、AT&T 有信号、近 Ruby Beach；D9 号位近厕所，淡季先到先得没问题。9 月下旬至 2027 年 5 月中为先到先得。 小红书行程总结（小臭臭要香香，2026-06-30）：奥林匹克 7 日露营 Day 5 住 Kalaloch，当天去 Tree of Life 与 Ruby Beach。https://www.xiaohongshu.com/explore/6a4472030000000021018d4b 小红书实住帖（中年出走的竹若成林，2026-07-21）：D 区靠马路的营位清晨会被车声吵醒；卫生间有热水洗手、无淋浴；夏天夜里偏凉要带外套；旺季靠设置取消提醒（Alert）捡漏。https://www.xiaohongshu.com/explore/6a5efc23000000001101be21 【2026-11-22 更新】官方 2027 预约季：5/18-9/21，分批放票（A/B 环 6 个月、C/D 环 2 周、E/F 环 4 天）；A/D/E 环海边部分营位因侵蚀永久关闭；2026 年 9 月下旬至 2027 年 5 月中先到先得。https://www.recreation.gov/camping/campgrounds/232464 小红书实住帖 4 篇（2026-06-07）：快乐的小考拉（07-06，B19 住一晚丢手机求失物招领，夜里超级冷又潮、海浪声大）https://www.xiaohongshu.com/explore/6a4c50fc000000000e038400；叶呱呱（06-18，A12 帐篷 + 部队火锅，Beach 4 潮汐池看海星海葵）https://www.xiaohongshu.com/explore/6a34c95b0000000017009212；Postcards from Echo（06-22，周中抢到一天，晴天极美）https://www.xiaohongshu.com/explore/6a387fdb000000000d00bc00；日东月西雅图（06-28，B 环很小只容一顶中型帐篷，ranger 不查国家公园通行证，厕所没肥皂不能洗澡，夜里 40 多度但伴着海浪睡得好）https://www.xiaohongshu.com/explore/6a41b75b000000000d00bc00",
+    description: "Kalaloch露营地是一个大型营区，拥有160个营位（Recreation.gov 官方 Facilities 原文：160 campsites，含 1 个团体位与 4 个无障碍位；NPS 页 170 为旧数），坐落在毗邻太平洋的高悬崖上的宁静海岸林中。虽然大多数营位并不直接位于海滩，但有几个可以俯瞰海面，营区内也可直接通往海滩。它是奥林匹克国家公园最受游客欢迎的区域之一，以壮丽的日落、潮池和观赏海洋野生动物而闻名。 (Source: Recreation.gov and NPS.gov) 【2026-11-21 更新】TheDyrt 2026 年 11 月最新评价：A–C 环已季末关闭，营位积水严重，唯一饮用水只在 RV 加水站；B 环 004 号位宽敞、步行到海滩、AT&T 有信号、近 Ruby Beach；D9 号位近厕所，淡季先到先得没问题。9 月下旬至 2027 年 5 月中为先到先得。 小红书行程总结（小臭臭要香香，2026-06-30）：奥林匹克 7 日露营 Day 5 住 Kalaloch，当天去 Tree of Life 与 Ruby Beach。https://www.xiaohongshu.com/explore/6a4472030000000021018d4b 小红书实住帖（中年出走的竹若成林，2026-07-21）：D 区靠马路的营位清晨会被车声吵醒；卫生间有热水洗手、无淋浴；夏天夜里偏凉要带外套；旺季靠设置取消提醒（Alert）捡漏。https://www.xiaohongshu.com/explore/6a5efc23000000001101be21 【2026-11-22 更新】官方 2027 预约季：5/18-9/21，分批放票（A/B 环 6 个月、C/D 环 2 周、E/F 环 4 天）；A/D/E 环海边部分营位因侵蚀永久关闭；2026 年 9 月下旬至 2027 年 5 月中先到先得。https://www.recreation.gov/camping/campgrounds/232464 小红书实住帖 4 篇（2026-06-07）：快乐的小考拉（07-06，B19 住一晚丢手机求失物招领，夜里超级冷又潮、海浪声大）https://www.xiaohongshu.com/explore/6a4c50fc000000000e038400；叶呱呱（06-18，A12 帐篷 + 部队火锅，Beach 4 潮汐池看海星海葵）https://www.xiaohongshu.com/explore/6a34c95b0000000017009212；Postcards from Echo（06-22，周中抢到一天，晴天极美）https://www.xiaohongshu.com/explore/6a387fdb000000000d00bc00；日东月西雅图（06-28，B 环很小只容一顶中型帐篷，ranger 不查国家公园通行证，厕所没肥皂不能洗澡，夜里 40 多度但伴着海浪睡得好）https://www.xiaohongshu.com/explore/6a41b75b000000000d00bc00",
     tier: "顶级热门",
     popularityLevel: "极高（5月15日至9月20日必须预订，NPS官网表示'营位很快满员，整个夏季几乎全部订满'。海景营位尤其抢手，放出即秒光。）",
     reviewCount: "TheDyrt: 4.5★ (114 条评价), TripAdvisor: 4.5★ (140 条评价)",
@@ -659,8 +659,9 @@ export const campgrounds: Campground[] = [
       { name: "Lake Quinault", ageRange: "任何年龄", distance: "附近", details: "距离约35英里，有老式木屋和餐厅 (来源: Gary D.)" },
     ],
     areas: [
-      { area: "Bluff Sites (1-36)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "卡拉洛奇海崖营位（1–36，共36个营位）坐落在太平洋悬崖线上，可俯瞰广阔海面与漂流木沙滩，景色壮观但常有风雾。营区无水电，适合追求海景日落、海滩漫步与摄影的家庭、情侣或自给自足的帐篷/小型房车露营者，不适合需要电源或高度避风的人。" },
-      { area: "Interior Sites (37-170)", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "卡拉洛奇营地内侧营位（编号37–170，约134个营位）位于奥林匹克国家公园海岸线稍内侧的林间地带，树木遮蔽、避风但需要步行才能到达海滩，营地无水电设施。适合喜欢较安静、被森林包围的帐篷或自带简单设施的房车露营者；夏季热门时段可能较拥挤，整体推荐一般。" },
+      { area: "A/B 环（海崖）", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 4, hookups: "无", recommendation: "强烈推荐", areaSummary: "卡拉洛奇海崖环（A、B 环）坐落在太平洋悬崖线上，可俯瞰广阔海面与漂流木沙滩，景色壮观但常有风雾；A 环部分海崖营位因侵蚀永久关闭。提前 6 个月放票。营区无水电，适合追求海景日落、海滩漫步与摄影的家庭、情侣或自给自足的帐篷/小型房车露营者，不适合需要电源或高度避风的人。" },
+      { area: "C/D 环（林间）", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "卡拉洛奇 C、D 环位于海岸线稍内侧的林间地带，树木遮蔽、避风但需要步行才能到达海滩，营地无水电设施。提前 2 周放票。适合喜欢较安静、被森林包围的帐篷或自带简单设施的房车露营者；夏季热门时段可能较拥挤，整体推荐一般。" },
+      { area: "E/F 环（林间）", overall: 3, scenery: 3, kidFriendly: 3, tcCompat: 3, hookups: "无", recommendation: "一般", areaSummary: "卡拉洛奇 E、F 环位于林间内侧，位置较偏、营位少，提前 4 天放票，可碰运气捡漏。营地无水电设施，适合不介意最后时刻才定行程的露营者。" },
     ],
     vacancyAnalysis: [
       { area: "Bluff Sites (D Loop)", whyVacant: "—", whyHard: "最靠近dump station（位于D17-D18旁），TC/RV首选，悬崖海景。虽然仅提前2周放票，但因位置优越+dump station便利，放出即秒光" },
@@ -753,7 +754,7 @@ export const campgrounds: Campground[] = [
     region: "Olympic NP Coast",
     type: "national",
     features: ["海滩", "漂流木", "野性海岸", "徒步"],
-    bookingUrl: "https://www.recreation.gov/camping/campgrounds/247590",
+    bookingUrl: "https://www.nps.gov/olym/planyourvisit/camping.htm",
     bookingSystem: "先到先得 (First-Come-First-Served)",
     season: "5月-9月",
     activities: [
@@ -829,7 +830,7 @@ export const campgrounds: Campground[] = [
       { area: "G-H Loop (Standard)", whyVacant: "铺装车道有些倾斜，挑剔的人会取消", whyHard: "全接驳(水电污)，数量少" },
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "Oregon State Parks 系统" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统" },
     ],
     recommendedSites: "O Loop（最近Peter Iredale沉船+游乐场+水电+Pull-through）（评论验证：F235: 安静、平和、易于导航，有大型房车拉通车位，有电和水，附近有洗手间、火坑和野餐桌, F236: 相对私密，虽然不是完全平坦但可以使用）",
     avoid: "South Loops（施工关闭中）",
@@ -1046,7 +1047,9 @@ export const campgrounds: Campground[] = [
       { area: "Loop C/D", whyVacant: "位置居中，不靠河也不靠入口，偶有空位", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov。⚠️ Mora Road 2026年7月8日至10月15日关闭施工" },
+      { area: "A/B/E 环", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 分批放票" },
+      { area: "C 环", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov 分批放票" },
+      { area: "D 环", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 分批放票；9/25 季外先到先得" },
     ],
     recommendedSites: "Loop E（最宽敞+近Rialto Beach步道入口+安静）（评论验证：E84: 营地巨大，有河景，私密性极佳, A19: 非常私密，靠近厕所但听不到噪音，空间大且平坦, C43: 树木茂盛，感觉私密，配有野餐桌和火圈, A10: 实际空间比标称大，可停放23英尺房车, E89: 空间大，适合23英尺以上房车及额外车辆）",
     avoid: "Loop C/D（较窄+远离海滩+潮湿阴暗）",
@@ -1205,7 +1208,7 @@ export const campgrounds: Campground[] = [
       { area: "A-D Loop (No Hookup)", whyVacant: "团体专用，个人不可预订", whyHard: "—" },
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov" },
+      { area: "All Sites", advanceDays: 365, advanceLabel: "提前12个月", notes: "Recreation.gov 设施记录值 12 个月滚动；7–9 月档期已放出、现查余位；6/19、6/26 开季前只能先到先得、不可预订" },
     ],
     recommendedSites: "F Loop（唯一有电力+最宽敞营位+30A）（评论验证：G17: 宽敞隐蔽, G27: 宽敞干净, D30: 宽敞且无发电机噪音, F21: 非常大, F9: 靠近峡谷风景极佳，宽敞干净, D15: 宽敞，树木高大，靠近步道和商店）",
     avoid: "G Loop（团体专用）。开放时间极短（7月初-10月初）；夜间可降至冰点",
@@ -1496,7 +1499,9 @@ export const campgrounds: Campground[] = [
       { area: "Interior Sites (C Loop)", whyVacant: "最远离设施+最原始，偶有人提前离开", whyHard: "但旺季仍然很快被占" }
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "recreation.gov" },
+      { area: "A 环", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 分批放票；预订季 6/26–9/7" },
+      { area: "C 环", advanceDays: 14, advanceLabel: "提前2周", notes: "Recreation.gov 分批放票；预订季 6/26–9/7" },
+      { area: "B 环", advanceDays: 4, advanceLabel: "提前4天", notes: "Recreation.gov 分批放票；预订季 6/26–9/7" },
     ],
     recommendedSites: "A Loop: Site A1-A10（最靠近Hall of Mosses步道入口+树荫最好）",
     avoid: "C Loop最深处（离卫生间远+夜间较暗+路况差）",
@@ -1597,7 +1602,7 @@ export const campgrounds: Campground[] = [
       { area: "Electrical Only (B)", whyVacant: "数量多（170+位），非旺季周末有空位", whyHard: "旺季周末和假日仍满" }
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "A Loop: 靠近海滩步道的全接驳位（步行最短到海滩）",
     avoid: "B Loop最内侧（离海滩最远+靠近公路）",
@@ -1644,7 +1649,7 @@ export const campgrounds: Campground[] = [
       { area: "Electrical Hookup", whyVacant: "营位数量多（265个），非旺季相对容易预订", whyHard: "旺季周末和假日仍满" }
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "Site 1-50（靠近海滩步道+自行车道起点+树荫较好）",
     avoid: "Site 200+（离海滩最远+靠近马场有味道）",
@@ -1693,7 +1698,7 @@ export const campgrounds: Campground[] = [
       { area: "Electrical (A-E)", whyVacant: "数量多（280+位），非旺季有空位", whyHard: "旺季周末仍很快满" }
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "F Loop: 靠近Cleawox Lake的营位（步行最短到湖边+全接驳）",
     avoid: "A Loop最内侧（离湖和沙丘最远）",
@@ -1742,7 +1747,7 @@ export const campgrounds: Campground[] = [
       { area: "Electrical (B-C)", whyVacant: "偶有取消，尤其是雨季", whyHard: "但旺季仍很快被抢" }
     ],
     bookingWindows: [
-      { area: "All Sites", advanceDays: 270, advanceLabel: "提前9个月", notes: "oregonstateparks.reserveamerica.com" },
+      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "oregonstateparks.reserveamerica.com" },
     ],
     recommendedSites: "A Loop: Site 1-20（靠近South Falls步道入口+全接驳+树荫好）",
     avoid: "Tent区（不适合TC）",
@@ -1918,7 +1923,8 @@ export const campgrounds: Campground[] = [
     description: "Colonial Creek South Campground 位于北喀斯喀特国家公园的暗黑湖（Diablo Lake）畔，是一个被古老森林环绕的偏远但热闹的营地。营地提供多种露营方式，包括驾车露营和步行帐篷露营，游客可以方便地进入湖泊进行钓鱼、划船等水上活动，并可直接连接多条徒步小径（来源：National Park Service）。 【2026-11-21 更新】2026-09-04 TheDyrt 新评价：73 号位附近饮水站坏了。2026 年 6 月 RV LIFE 评价（补记）：北区 8 号位、湖景。北区 9 月 20–21 日淡季有免费露营记录。 【2026-11-22 更新】小红书实住帖（Lucky汪，2026-07-13，South 湖边位带娃）：tent pad 平整无大石、有 bear box、厕所干净；不能洗澡，fire ban 只能用气罐，没信号，夜最低 7 度。https://www.xiaohongshu.com/explore/6a55d811000000000c003000",
     reviewCount: "Google Maps: 4.6★ (288条评价)",
     bookingWindows: [
-      { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 系统，提前6个月滚动放票" },
+      { area: "#64–95、#116–164", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 分批放票" },
+      { area: "#96–113", advanceDays: 7, advanceLabel: "提前7天", notes: "Recreation.gov 分批放票" },
     ],
     image: "/camping-guide/images/camp-39/card.jpg",
     bookingSystem: "Recreation.gov",
@@ -1932,7 +1938,7 @@ export const campgrounds: Campground[] = [
     popularityLevel: "高 (北喀斯喀特国家公园核心营地，旺季需提前预订)",
 
     type: "national",
-    season: "5月中-10月中 (依雪况)",
+    season: "5月底–9月初（旺季；9/18、9/25 很可能已闭园，依雪况）",
     activities: [
       { name: "Diablo Lake观景台", ageRange: "任何年龄", distance: "开车5分钟", details: "绿松石色冰川湖，壮观全景", mapUrl: "https://www.google.com/maps/search/Diablo+Lake+Overlook+North+Cascades", googleRating: "4.8★ (1500条评价)" },
       { name: "Thunder Knob步道", ageRange: "3岁+", distance: "步行即达", details: "3.6英里往返，俯瞰Diablo Lake", mapUrl: "https://www.google.com/maps/search/Thunder+Knob+Trail+North+Cascades" },
@@ -1941,12 +1947,13 @@ export const campgrounds: Campground[] = [
       { name: "Gorge Creek Falls", ageRange: "任何年龄", distance: "开车10分钟", details: "从桥上俯瞰242英尺瀑布" }
     ],
     areas: [
-      { area: "Main Campground (64-130)", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "强烈推荐", areaSummary: "约68个营位，靠近Diablo Lake湖岸，被古老针叶林环绕。无接驳但风景绝佳。最长RV 35ft。" },
-      { area: "Upper Section (131-164, Seasonal)", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约42个营位，仅夏季开放，较远离湖边。" }
+      { area: "Main Campground（#64–95）", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "强烈推荐", areaSummary: "约32个营位，靠近Diablo Lake湖岸，被古老针叶林环绕。无接驳但风景绝佳。最长RV 35ft。提前6个月放票。" },
+      { area: "Main Campground（#96–113）", overall: 5, scenery: 5, kidFriendly: 4, tcCompat: 3, hookups: "无", recommendation: "强烈推荐", areaSummary: "约18个营位，与 #64–95 同在主营区、近湖岸林间；只提前7天放票，6个月档抢不到时还有一次机会。无接驳。最长RV 35ft。" },
+      { area: "Upper Section（#116–164）", overall: 3, scenery: 4, kidFriendly: 3, tcCompat: 2, hookups: "无", recommendation: "一般", areaSummary: "约49个营位，仅夏季开放，较远离湖边。提前6个月放票。" }
     ],
     vacancyAnalysis: [
-      { area: "Main Campground (64-130)", whyVacant: "—", whyHard: "North Cascades NP唯一大型营地，先到先得+可预订混合，旺季很快满" },
-      { area: "Main Campground", whyVacant: "仅夏季开放+离湖远，偶有空位", whyHard: "—" }
+      { area: "Main Campground（#64–95、#96–113）", whyVacant: "—", whyHard: "North Cascades NP唯一大型营地，先到先得+可预订混合，旺季很快满" },
+      { area: "Upper Section（#116–164）", whyVacant: "仅夏季开放+离湖远，偶有空位", whyHard: "—" }
     ],
     recommendedSites: "South Loop: 靠近湖边的营位（湖景+步道入口近）",
     avoid: "North Loop最深处（离湖远+离卫生间远）",
@@ -2226,7 +2233,7 @@ export const campgrounds: Campground[] = [
     ],
     image: "/camping-guide/images/camp-46/card.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/champoeg-state-heritage-area/r/campgroundDetails.do?contractCode=OR&parkId=402238",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/champoeg-state-heritage-area/r/campgroundDetails.do?contractCode=OR&parkId=405213",
     features: ["历史遗迹", "徒步", "自行车", "观鸟", "淋浴", "Full Hookup"],
     warning: "A 环每年 11/1–次年 3/31 关闭；拖车垃圾站因排水场问题关闭。",
     sceneryRating: 4,
@@ -2277,7 +2284,7 @@ export const campgrounds: Campground[] = [
     ],
     image: "/camping-guide/images/camp-48/card.jpg",
     bookingSystem: "Oregon State Parks (ReserveAmerica)",
-    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/the-cove-palisades-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402287",
+    bookingUrl: "https://oregonstateparks.reserveamerica.com/camping/cove-palisades-state-park/r/campgroundDetails.do?contractCode=OR&parkId=402446",
     features: ["湖泊", "峡谷", "钓鱼", "划船", "电接驳", "游乐场"],
     sceneryRating: 5,
     kidRating: 4,
@@ -2451,7 +2458,7 @@ export const campgrounds: Campground[] = [
     ],
     areas: [
       { area: "Delta Grove Campground (58 sites)", overall: 5, scenery: 4, kidFriendly: 5, tcCompat: 5, hookups: "E(2)", recommendation: "⭐ 首选", areaSummary: "湖边位置，有 2个供电营位。有Double Sites(6个)适合大家庭。最靠近湖水，很快就能走到沙滩。", entranceUrl: "https://www.google.com/maps/dir/?api=1&destination=49.056,-121.978" },
-      { area: "Maple Bay Campground (105 sites)", overall: 4, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "最大的营地，空间宽敞安静。靠湖侧营位位置不错。106个车辆可达营位。", entranceUrl: "https://www.google.com/maps/dir/?api=1&destination=49.062,-121.987" },
+      { area: "Maple Bay Campground (32 sites)", overall: 4, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "四营地中营位数最少（32 个，BC Parks 官方数据），空间宽敞安静。靠湖侧营位位置不错。", entranceUrl: "https://www.google.com/maps/dir/?api=1&destination=49.062,-121.987" },
       { area: "Entrance Bay Campground (52 sites)", overall: 4, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "推荐", areaSummary: "低位营位靠近湖边，高位营位离公路较近。有5个Double Sites适合大家庭。", entranceUrl: "https://www.google.com/maps/dir/?api=1&destination=49.053,-121.972" },
       { area: "Clear Creek Campground (82 sites)", overall: 3, scenery: 4, kidFriendly: 5, tcCompat: 4, hookups: "—", recommendation: "可选", areaSummary: "位置稍往内陆，离湖稍远。有2个Double Sites。通过Seven Sisters Trail可连接到Entrance Bay。", entranceUrl: "https://www.google.com/maps/dir/?api=1&destination=49.068,-121.992" }
     ],
@@ -2459,7 +2466,7 @@ export const campgrounds: Campground[] = [
       { area: "Delta Grove (58 sites)", whyVacant: "—", whyHard: "唯一有电接口的营地（仅 2个供电位），且靠湖边，极其抢手" },
       { area: "Entrance Bay (52 sites)", whyVacant: "周中偶有取消，肩季空位率较高", whyHard: "—" },
       { area: "Clear Creek (82 sites)", whyVacant: "位置稍往内陆，离湖稍远，取消率略高于Entrance Bay", whyHard: "—" },
-      { area: "Maple Bay (105 sites)", whyVacant: "最大的营地，总体空位最多，但夏季周末仍然秒光", whyHard: "—" },
+      { area: "Maple Bay (32 sites)", whyVacant: "—", whyHard: "营位数最少（32 个），夏季周末仍然秒光" },
     ],
     recommendedSites: "Delta Grove最佳（靠湖+有电），其次Entrance Bay低位营位离湖近。Maple Bay空间大且安静。Reddit推荐顺序: (1) Delta Grove, (2) Maple Bay, (3) Clear Creek。",
     avoid: "夏季周末非常拥挤，湖边日间使用区人满为患。Clear Creek高位营位离湖较远且靠近公路。",

@@ -18,6 +18,26 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="营地指南" />
     <link rel="apple-touch-icon" href="/camping-guide/icons/apple-touch-icon-180.png" />
+    <script>
+      // Single Page Apps for GitHub Pages (rafrex/spa-github-pages, MIT)
+      // 还原 404.html 编码进查询串的深链路径（/?/campground/7 -> /campground/7），
+      // 在应用启动前用 replaceState 恢复，wouter 才能按原路径路由。
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          var base = l.pathname.endsWith("/")
+            ? l.pathname.slice(0, -1)
+            : l.pathname;
+          window.history.replaceState(null, null, base + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
   </head>
 
   <body>

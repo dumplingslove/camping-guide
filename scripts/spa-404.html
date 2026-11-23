@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>太平洋西北亲子营地指南</title>
+    <script>
+      // Single Page Apps for GitHub Pages (rafrex/spa-github-pages, MIT)
+      // 404.html 只做一件事：把 /campground/7 这类深链改写成 /?/campground/7 再跳回首页，
+      // 由 index.html 里的还原脚本恢复成原路径；深链直达最终落在 200 页面。
+      // pathSegmentsToKeep = 1：保留 /camping-guide 这一段作为站点根。
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join("/") +
+          "/?/" +
+          l.pathname
+            .slice(1)
+            .split("/")
+            .slice(pathSegmentsToKeep)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (l.search
+            ? "&" + l.search.slice(1).replace(/&/g, "~and~")
+            : "") +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
