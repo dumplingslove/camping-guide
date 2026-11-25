@@ -312,7 +312,7 @@ export const campgrounds: Campground[] = [
     name: "Lake Wenatchee State Park",
     nameCn: "韦纳奇湖州立公园",
     tagline: "Cascade 山脉脚下的翡翠湖泊",
-    description: "温纳奇湖州立公园占地492英亩，沿由冰川补给的温纳奇湖和温纳奇河拥有12,623英尺的岸线（parks.wa.gov）。公园提供197个露营地，分布在北营地和南营地，面向被森林覆盖的山峦环抱、清澈湛蓝的湖泊，可开展游泳、皮划艇和骑马等活动（parks.wa.gov）。 【2026-11-21 更新】官方公告：船坡下层停车场与团体营地将于 2027-07-05 至 2028-06 关闭施工。小红书新帖（lettewu，2026-10-04，九月底实住）：设施比想象中完善，有洗澡间、热水、小卖部，当天可生火，湖边营位离湖极近。https://www.xiaohongshu.com/explore/6ac33ad10000000019025800",
+    description: "温纳奇湖州立公园占地492英亩，沿由冰川补给的温纳奇湖和温纳奇河拥有12,623英尺的岸线（parks.wa.gov）。公园提供197个露营地，分布在北营地和南营地，面向被森林覆盖的山峦环抱、清澈湛蓝的湖泊，可开展游泳、皮划艇和骑马等活动（parks.wa.gov）。 【2026-11-21 更新】官方公告：船坡下层停车场与团体营地将于 2027-07-05 至 2028-06 关闭施工。小红书新帖（lettewu，2026-10-04，九月底实住）：设施比想象中完善，有洗澡间、热水、小卖部，当天可生火，湖边营位离湖极近。https://www.xiaohongshu.com/explore/6ac33ad10000000019025800 【2026-11-25 更新】小红书观星帖（传说中的虾，2026-07-07，南营地）：23:30 左右星空震撼、偏东侧可见银河，西侧受日落影响太亮。https://www.xiaohongshu.com/explore/6a4d5668000000000d00bc00",
     tier: "顶级热门",
     popularityLevel: "高（必须预约营地。公园在旺季（尤其7、8月）很繁忙，夏季周末需提前数月预订，名额很快被抢光。）",
     reviewCount: "TheDyrt: 4.5★ (47 条评价), TripAdvisor: 4.7★ (55 条评价)",
@@ -356,7 +356,7 @@ export const campgrounds: Campground[] = [
     lat: 47.812,
     lng: -120.729,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=47.8095,-120.731",
-    lastUpdated: "2026-11-21",
+    lastUpdated: "2026-11-25",
   },
   {
     id: 6,
@@ -688,7 +688,7 @@ export const campgrounds: Campground[] = [
     name: "Astoria/Warrenton/Seaside KOA Resort",
     nameCn: "阿斯托里亚KOA度假营地",
     tagline: "设施豪华的家庭度假营地",
-    description: "阿斯托里亚 KOA 共有 311 个营位，全接驳可到 55 英尺（最长 pull-through 90 英尺），室内外两个泳池、迷你高尔夫、充气跳床、BMX 土坡道、游乐场、电影夜、营地商店和洗衣，卫生间干净（Source: TheDyrt, RV LIFE）。马路对面就是 Fort Stevens 州立公园（海滩、沉船残骸），Astoria 市区约 15 分钟，Seaside 和 Cannon Beach 都在半小时车程内。9 个里对 3 岁孩子最友好的一个；缺点是营位挤、贵（约 100–120 美元/晚）、夏天吵。 【2026-11-21 更新】KOA 官网 2026 年 11 月新评价：主干道柴油卡车昼夜噪音大；娱乐室游戏设施损坏（桌球毡大 L 形撕裂、桌上足球三条腿、无广告中的 bingo/卡拉 OK）；豪华木屋 #14 浴室发霉；乌鸦会翻露天垃圾袋；营地内看到麋鹿；大车进出困难、树枝低垂。2026 年 9 月评价：员工冲突、深夜噪音至 2 点、室外泳池夜间应上锁、营位丙烷罐被盗。WiFi 差是反复投诉。 【2026-11-22 更新】KOA 官网 2026-11-10 至 11-18 新评价（作者未显示）：正面为主——下雨天员工友善、第二次来还会再来、木屋干净安静、设施多服务好。昨日漏掉的 10-28 至 11-03 条：帐篷村地面不平、入口与火坑旁多绊倒隐患；度假村费与宠物费另收、成人觉得太贵；工作室木屋到处蜘蛛网、有腐烂、3 扇门都须换；号称有 WiFi 实际没有；有线电视差、网络须升级；木屋浴室门关不上锁不上、整间木屋倾斜。https://koa.com/campgrounds/astoria/reviews/?sortBy=DateUpdated 【2026-11-24 更新】KOA 官网 2026-11-21 两条新评价：“Great campground we return several times a year!”“Friendly and very efficient. The facilities were emaculate..squeaky clean restroom and shower.”https://koa.com/campgrounds/astoria/reviews/?sortBy=DateUpdated",
+    description: "阿斯托里亚 KOA 共有 311 个营位，全接驳可到 55 英尺（最长 pull-through 90 英尺），室内外两个泳池、迷你高尔夫、充气跳床、BMX 土坡道、游乐场、电影夜、营地商店和洗衣，卫生间干净（Source: TheDyrt, RV LIFE）。马路对面就是 Fort Stevens 州立公园（海滩、沉船残骸），Astoria 市区约 15 分钟，Seaside 和 Cannon Beach 都在半小时车程内。9 个里对 3 岁孩子最友好的一个；缺点是营位挤、贵（约 100–120 美元/晚）、夏天吵。 【2026-11-21 更新】KOA 官网 2026 年 11 月新评价：主干道柴油卡车昼夜噪音大；娱乐室游戏设施损坏（桌球毡大 L 形撕裂、桌上足球三条腿、无广告中的 bingo/卡拉 OK）；豪华木屋 #14 浴室发霉；乌鸦会翻露天垃圾袋；营地内看到麋鹿；大车进出困难、树枝低垂。2026 年 9 月评价：员工冲突、深夜噪音至 2 点、室外泳池夜间应上锁、营位丙烷罐被盗。WiFi 差是反复投诉。 【2026-11-22 更新】KOA 官网 2026-11-10 至 11-18 新评价（作者未显示）：正面为主——下雨天员工友善、第二次来还会再来、木屋干净安静、设施多服务好。昨日漏掉的 10-28 至 11-03 条：帐篷村地面不平、入口与火坑旁多绊倒隐患；度假村费与宠物费另收、成人觉得太贵；工作室木屋到处蜘蛛网、有腐烂、3 扇门都须换；号称有 WiFi 实际没有；有线电视差、网络须升级；木屋浴室门关不上锁不上、整间木屋倾斜。https://koa.com/campgrounds/astoria/reviews/?sortBy=DateUpdated 【2026-11-24 更新】KOA 官网 2026-11-21 两条新评价：“Great campground we return several times a year!”“Friendly and very efficient. The facilities were emaculate..squeaky clean restroom and shower.”https://koa.com/campgrounds/astoria/reviews/?sortBy=DateUpdated 【2026-11-25 更新】KOA 官网漏补评价 13 条（2026-10-19 至 11-03）：RV 页 11-03 成人觉得太贵、度假村费与宠物费另收，11-02 万圣节住两晚、明年还会再来；帐篷页 10-19/10-07 万圣节活动好评、9 月多为好评（最爱 KOA、步入式帐篷位干净友善），两条负面：9-13 原始帐篷位极贵、9-08 多处营位深夜派对持续到 23:00 后且无信号、WiFi 不通、联系不上员工；Google 10-24 Leann Ling 两次到访都很喜欢、10-20 Debbie Rider 林木美丽、洗手间一尘不染。https://koa.com/campgrounds/astoria/reviews/?sortBy=DateUpdated",
     tier: "商业度假型",
     popularityLevel: "高（夏季周末非常热闹。来源：TheDyrt、RV LIFE、Wanderlog、Tripadvisor）",
     reviewCount: "TheDyrt: 4.4★ (45 条评价), RV LIFE: 8.4/10 (212 条评价), Wanderlog: 4.3★, Tripadvisor: 3.7★ (232 条评价）",
@@ -734,7 +734,7 @@ export const campgrounds: Campground[] = [
     lat: 46.165,
     lng: -123.928,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=46.153,-123.928",
-    lastUpdated: "2026-11-24",
+    lastUpdated: "2026-11-25",
   },
   {
     id: 13,
@@ -1065,7 +1065,7 @@ export const campgrounds: Campground[] = [
     name: "Tumalo State Park",
     nameCn: "图马洛州立公园",
     tagline: "Bend 旁的沙漠绿洲河畔营地",
-    description: "图马洛州立公园位于 Bend 城外，是本德地区最火的州立公园营地，评论原话“extremely booked”，旺季必须提前抢。营地有 23 个全接驳位、54 个帐篷位、7 个 yurt，可停 50 英尺以下 RV，带暖气的独立淋浴间、干净厕所、户外洗碗池，设施口碑是全州一流；沿 Deschutes 河可玩水，本德市区 10 分钟，Smith Rock 与 Newberry 火山纪念区都在 1 小时内，还有 Junior Ranger 活动适合带孩子（来源：The Dyrt 4.4★、RV LIFE 9.0 分、Campendium）。 【2026-11-21 更新】2026-11-19 TheDyrt 新评价（Chad H.）：非常难订、公路噪音大，但离镇近。10 月淡季：当天可订、营位大面积空置，帐篷位无接驳也可停 RV/truck camper。旺季与淡季体验反差大。 【2026-11-22 更新】官方冬季闭环公告（2026-10-19 发布）：A 环、团体营、日间区、洗手间、A/B 团体野餐区冬季关闭；B/C 环仍开放。https://usstateparks.org/oregon/tumalo-state-park/ 【2026-11-23 更新】campsite.camp 3 星差评（Camper，2026-09-27）：紧邻 20 号公路，汽车卡车噪音与引擎制动声几乎不断；营位很密、几乎无隐私；厕所干净、有洗碗水槽。是已收录公路噪音短板的第三方独立佐证。https://www.campsite.camp/campsites/tumalo-state-park-campground/ly1vNMrDquiv0EJupGc9",
+    description: "图马洛州立公园位于 Bend 城外，是本德地区最火的州立公园营地，评论原话“extremely booked”，旺季必须提前抢。营地有 23 个全接驳位、54 个帐篷位、7 个 yurt，可停 50 英尺以下 RV，带暖气的独立淋浴间、干净厕所、户外洗碗池，设施口碑是全州一流；沿 Deschutes 河可玩水，本德市区 10 分钟，Smith Rock 与 Newberry 火山纪念区都在 1 小时内，还有 Junior Ranger 活动适合带孩子（来源：The Dyrt 4.4★、RV LIFE 9.0 分、Campendium）。 【2026-11-21 更新】2026-11-19 TheDyrt 新评价（Chad H.）：非常难订、公路噪音大，但离镇近。10 月淡季：当天可订、营位大面积空置，帐篷位无接驳也可停 RV/truck camper。旺季与淡季体验反差大。 【2026-11-22 更新】官方冬季闭环公告（2026-10-19 发布）：A 环、团体营、日间区、洗手间、A/B 团体野餐区冬季关闭；B/C 环仍开放。https://usstateparks.org/oregon/tumalo-state-park/ 【2026-11-23 更新】campsite.camp 3 星差评（Camper，2026-09-27）：紧邻 20 号公路，汽车卡车噪音与引擎制动声几乎不断；营位很密、几乎无隐私；厕所干净、有洗碗水槽。是已收录公路噪音短板的第三方独立佐证。https://www.campsite.camp/campsites/tumalo-state-park-campground/ly1vNMrDquiv0EJupGc9 【2026-11-25 更新】TripAdvisor《Not as nice as we expected》，Written 2026-09-27（作者未显示，8 月入住）：帐篷位参差、有的紧邻垃圾站与公路，清晨车噪；河边位好得多、值得订；工作人员友好、浴室干净。https://www.tripadvisor.ca/Attraction_Review-g51766-d1576336-Reviews-Tumalo_State_Park-Bend_Central_Oregon_Oregon.html",
     tier: "明显热门",
     popularityLevel: "高（本德地区最火的州立公园营地；评论原话“extremely booked”，旺季必须提前抢）",
     reviewCount: "The Dyrt 4.4★ (87 条评价), RV LIFE 9.0 分 (76 条评价), Campendium 各单项 4.6–4.9 分",
@@ -1107,7 +1107,7 @@ export const campgrounds: Campground[] = [
     lat: 44.129,
     lng: -121.368,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=44.128,-121.333",
-    lastUpdated: "2026-11-23",
+    lastUpdated: "2026-11-25",
   },
   {
     id: 21,
@@ -1618,7 +1618,7 @@ export const campgrounds: Campground[] = [
     name: "Nehalem Bay State Park",
     nameCn: "尼哈勒姆湾州立公园",
     tagline: "沙丘之间的海湾露营地，尽享海滩、钓蟹与骑马乐趣",
-    description: "Nehalem Bay State Park 位于沙丘半岛上，三面环水（太平洋、Nehalem Bay和Nehalem River）。公园设有265个水电营位，提供海滩通道、钓蟹码头、骑马步道和游乐场。是Oregon 2017年camper nights排名第3的营地。 【2026-11-21 更新】2026-10-10 TheDyrt 新评价（Leonard H.，B6 营位）：营位平整、浴室好、热水淋浴含在营费里；两处垃圾站扫码付 $10。2026-08-07 TheDyrt 评价（Christina F.）：与贝弗利海滩同样大、但氛围松弛得多，海滩就在沙丘外。",
+    description: "Nehalem Bay State Park 位于沙丘半岛上，三面环水（太平洋、Nehalem Bay和Nehalem River）。公园设有265个水电营位，提供海滩通道、钓蟹码头、骑马步道和游乐场。是Oregon 2017年camper nights排名第3的营地。 【2026-11-21 更新】2026-10-10 TheDyrt 新评价（Leonard H.，B6 营位）：营位平整、浴室好、热水淋浴含在营费里；两处垃圾站扫码付 $10。2026-08-07 TheDyrt 评价（Christina F.）：与贝弗利海滩同样大、但氛围松弛得多，海滩就在沙丘外。 【2026-11-25 更新】Manzanita 绕行提示纠正：OPRD 2025-11-03 警示（Classic Street 施工、走 Necarney City Road）仍滞留在订位系统规则 feed 里，但工程按市政府口径已于 2026 年 5 月底完工——不要再把它当作现行绕行指令，到园前核实。https://campobserver.com/facilities/oregon-parks-and-recreation-department-oregon-nehalem-bay-state-park",
     tier: "顶级热门",
     popularityLevel: "极高（Oregon 2017年camper nights排名第3；官方曾记录创纪录露营需求。来源：Statesman Journal/OPRD）",
     reviewCount: "4.7★ (2085 reviews)",
@@ -1658,7 +1658,7 @@ export const campgrounds: Campground[] = [
     lat: 45.685,
     lng: -123.9367,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=45.695,-123.938",
-    lastUpdated: "2026-11-21",
+    lastUpdated: "2026-11-25",
   },
   {
     id: 33,
@@ -1763,7 +1763,7 @@ export const campgrounds: Campground[] = [
     name: "Detroit Lake State Recreation Area",
     nameCn: "底特律湖州立休闲区",
     tagline: "喀斯喀特山脉湖畔营地，家庭钓鱼、划船和水上运动的理想度假胜地",
-    description: "底特律湖州立休闲区位于 Salem 以东 48 英里，是俄勒冈最热门的湖边营地之一，评论称“周末很忙”“订满是常态”。营地近 300 个营位（106 个全接驳、72 个电接驳、133 个帐篷位，最大 60 英尺，另有 6 个小木屋），免费热水淋浴、干净厕所、船坡道、码头、游乐场和园内小卖部，湖边可游泳、划船、钓鱼、皮划艇（来源：CampgroundViews 4.5★、RV LIFE 8.6–8.8 分、The Dyrt 4.0 分）。 【2026-11-21 更新】2026 年 9 月 TheDyrt 评价（F30 营位，Nick J.，2026-11-05）：淡季安静、水位低，部分营位只有 20 安培电。 【2026-11-22 更新】TripAdvisor 2026-03 差评（作者未显示，2026-03-05 发布）：3 月初营位被当作碎木作业场、满地木屑与泥坑，换营位要收费，火坑有垃圾。https://www.tripadvisor.ca/Attraction_Review-g51839-d145588-Reviews-Detroit_Lake_State_Recreation_Area-Detroit_Oregon.html 州公园官网秋季深放水公告：Detroit 水库深放水 2026-11-01 之后开始、12/31 之前，2027 年夏季行程不受影响。https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=65 【2026-11-23 更新】深放水新进展（2026-11-20）：第九巡回法院驳回叫停深放水的紧急动议，法律障碍已清；但截至 11 月 22 日 Corps 官网称深放水“has not begun”，将在 11 月底或 12 月初干燥天气窗口开始、开始时会公告；目标降至 1,425 英尺、保持两周，2027-02-01 前回填至正常冬季水位 1,450 英尺。2027 年夏季行程不受影响；11 月底–12 月到访会看到历史低水位与泥滩。https://www.statesmanjournal.com/story/tech/science/environment/2026/11/20/us-appeals-court-denies-detroit-lake-deep-drawdown-halt/92886935007/ https://santiamsilt.com/ 【2026-11-24 更新】深放水新进展：Salem 市议会 2026-11-23 一致通过延长深放水紧急状态至 2027-12-31；但截至 2026-11-24 深放水仍未开工，水位 1,455.02 英尺（2026-11-24 06:45 PST）。2027 年夏季行程不受影响。https://www.statesmanjournal.com/story/tech/science/environment/2026/11/23/salem-city-council-extends-detroit-drawdown-emergency-declaration/92927161007/",
+    description: "底特律湖州立休闲区位于 Salem 以东 48 英里，是俄勒冈最热门的湖边营地之一，评论称“周末很忙”“订满是常态”。营地近 300 个营位（106 个全接驳、72 个电接驳、133 个帐篷位，最大 60 英尺，另有 6 个小木屋），免费热水淋浴、干净厕所、船坡道、码头、游乐场和园内小卖部，湖边可游泳、划船、钓鱼、皮划艇（来源：CampgroundViews 4.5★、RV LIFE 8.6–8.8 分、The Dyrt 4.0 分）。 【2026-11-21 更新】2026 年 9 月 TheDyrt 评价（F30 营位，Nick J.，2026-11-05）：淡季安静、水位低，部分营位只有 20 安培电。 【2026-11-22 更新】TripAdvisor 2026-03 差评（作者未显示，2026-03-05 发布）：3 月初营位被当作碎木作业场、满地木屑与泥坑，换营位要收费，火坑有垃圾。https://www.tripadvisor.ca/Attraction_Review-g51839-d145588-Reviews-Detroit_Lake_State_Recreation_Area-Detroit_Oregon.html 州公园官网秋季深放水公告：Detroit 水库深放水 2026-11-01 之后开始、12/31 之前，2027 年夏季行程不受影响。https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=65 【2026-11-23 更新】深放水新进展（2026-11-20）：第九巡回法院驳回叫停深放水的紧急动议，法律障碍已清；但截至 11 月 22 日 Corps 官网称深放水“has not begun”，将在 11 月底或 12 月初干燥天气窗口开始、开始时会公告；目标降至 1,425 英尺、保持两周，2027-02-01 前回填至正常冬季水位 1,450 英尺。2027 年夏季行程不受影响；11 月底–12 月到访会看到历史低水位与泥滩。https://www.statesmanjournal.com/story/tech/science/environment/2026/11/20/us-appeals-court-denies-detroit-lake-deep-drawdown-halt/92886935007/ https://santiamsilt.com/ 【2026-11-24 更新】深放水新进展：Salem 市议会 2026-11-23 一致通过延长深放水紧急状态至 2027-12-31；但截至 2026-11-24 深放水仍未开工，水位 1,455.02 英尺（2026-11-24 06:45 PST）。2027 年夏季行程不受影响。https://www.statesmanjournal.com/story/tech/science/environment/2026/11/23/salem-city-council-extends-detroit-drawdown-emergency-declaration/92927161007/ 【2026-11-25 更新】深放水新进展：截至 2026-11-25 Corps 官网自述深放水仍未开工（“has not begun”）；水位 1,453.89 英尺（2026-11-25 06:45 PST），较昨日再降约 1.1 英尺，仍高于正常冬季水位 1,450 英尺。2027 年夏季行程不受影响。https://santiamsilt.com/ https://lakefullness.com/lakes/detroit-lake/",
     tier: "明显热门",
     popularityLevel: "高（俄勒冈最热门的湖边营地之一；评论称“周末很忙”“订满是常态”）",
     reviewCount: "CampgroundViews 4.5★ (1,183 条评价), RV LIFE 8.6–8.8 分 (26–27 条评价), The Dyrt 4.0★ (45 条评价)",
@@ -1805,7 +1805,7 @@ export const campgrounds: Campground[] = [
     lat: 44.7295,
     lng: -122.1765,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=44.719,-122.153",
-    lastUpdated: "2026-11-24",
+    lastUpdated: "2026-11-25",
   },
 
   {
@@ -1920,7 +1920,7 @@ export const campgrounds: Campground[] = [
     driveTime: 180,
     driveTimeLabel: "3h",
     tagline: "北喀斯喀特国家公园内的湖畔森林营地",
-    description: "Colonial Creek South Campground 位于北喀斯喀特国家公园的暗黑湖（Diablo Lake）畔，是一个被古老森林环绕的偏远但热闹的营地。营地提供多种露营方式，包括驾车露营和步行帐篷露营，游客可以方便地进入湖泊进行钓鱼、划船等水上活动，并可直接连接多条徒步小径（来源：National Park Service）。 【2026-11-21 更新】2026-09-04 TheDyrt 新评价：73 号位附近饮水站坏了。2026 年 6 月 RV LIFE 评价（补记）：北区 8 号位、湖景。北区 9 月 20–21 日淡季有免费露营记录。 【2026-11-22 更新】小红书实住帖（Lucky汪，2026-07-13，South 湖边位带娃）：tent pad 平整无大石、有 bear box、厕所干净；不能洗澡，fire ban 只能用气罐，没信号，夜最低 7 度。https://www.xiaohongshu.com/explore/6a55d811000000000c003000 【2026-11-23 更新】指南（alwayspacked.com，2026-11-17 核查）：Colonial Creek $24/晚，经 Recreation.gov 预订；南区少数步行帐篷位冬季免费开放、无水无服务。https://alwayspacked.com/2026/11/17/north-cascades-ross-lake-what-to-eat-nov17/",
+    description: "Colonial Creek South Campground 位于北喀斯喀特国家公园的暗黑湖（Diablo Lake）畔，是一个被古老森林环绕的偏远但热闹的营地。营地提供多种露营方式，包括驾车露营和步行帐篷露营，游客可以方便地进入湖泊进行钓鱼、划船等水上活动，并可直接连接多条徒步小径（来源：National Park Service）。 【2026-11-21 更新】2026-09-04 TheDyrt 新评价：73 号位附近饮水站坏了。2026 年 6 月 RV LIFE 评价（补记）：北区 8 号位、湖景。北区 9 月 20–21 日淡季有免费露营记录。 【2026-11-22 更新】小红书实住帖（Lucky汪，2026-07-13，South 湖边位带娃）：tent pad 平整无大石、有 bear box、厕所干净；不能洗澡，fire ban 只能用气罐，没信号，夜最低 7 度。https://www.xiaohongshu.com/explore/6a55d811000000000c003000 【2026-11-23 更新】指南（alwayspacked.com，2026-11-17 核查）：Colonial Creek $24/晚，经 Recreation.gov 预订；南区少数步行帐篷位冬季免费开放、无水无服务。https://alwayspacked.com/2026/11/17/north-cascades-ross-lake-what-to-eat-nov17/ 【2026-11-25 更新】Recreation.gov 南区页直读确认（2026-11-25）：旺季 late May–early September；#64–95 与 #116–164 提前 6 个月、#96–113 提前 7 天；步行位 #64–73 在 1 月–5 月下旬与 9 月初–12 月先到先得；93 个营位；饮用水、抽水马桶、垃圾回收、RV 倾倒站；无淋浴、无电 hookups。评分 4.451376（545 条）。https://www.recreation.gov/camping/campgrounds/255201",
     reviewCount: "Google Maps: 4.6★ (288条评价)",
     bookingWindows: [
       { area: "#64–95、#116–164", advanceDays: 180, advanceLabel: "提前6个月", notes: "Recreation.gov 分批放票" },
@@ -1961,7 +1961,7 @@ export const campgrounds: Campground[] = [
     lat: 48.69,
     lng: -121.094,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=48.69,-121.094",
-    lastUpdated: "2026-11-23",
+    lastUpdated: "2026-11-25",
   },
   {
     id: 40,
@@ -2226,7 +2226,7 @@ export const campgrounds: Campground[] = [
     driveTime: 258,
     driveTimeLabel: "4.25h",
     tagline: "历史与自然的完美结合",
-    description: "尚波格州立遗产区（Champoeg State Heritage Area）位于风景秀丽的威拉米特河畔，融合了历史、自然与休闲特色，曾是俄勒冈州早期拓荒者的定居点。营地提供房车全接驳车位、帐篷营地、蒙古包和木屋等多种住宿选择，并设有适合带宠物散步的步道和飞盘高尔夫球场（来源：Oregon State Parks）。 【2026-11-21 更新】A 环每年 11 月 1 日–次年 3 月 31 日关闭（4 月 1 日–10 月 31 日开放），B 环、蒙古包、小木屋全年开放（多源官方口径一致）。当前警示：拖车垃圾站因排水场问题关闭。 【2026-11-22 更新】TripAdvisor 2026-07 好评（Kim R.，5 星）：网上难找的帐篷营位信息——6 个帐篷位，停车近、遮荫多、营位大；淋浴免费干净，管理员友好。https://www.tripadvisor.ca/Attraction_Review-g51991-d294415-Reviews-Champoeg_State_Heritage_Park-Newberg_Oregon.html",
+    description: "尚波格州立遗产区（Champoeg State Heritage Area）位于风景秀丽的威拉米特河畔，融合了历史、自然与休闲特色，曾是俄勒冈州早期拓荒者的定居点。营地提供房车全接驳车位、帐篷营地、蒙古包和木屋等多种住宿选择，并设有适合带宠物散步的步道和飞盘高尔夫球场（来源：Oregon State Parks）。 【2026-11-21 更新】A 环每年 11 月 1 日–次年 3 月 31 日关闭（4 月 1 日–10 月 31 日开放），B 环、蒙古包、小木屋全年开放（多源官方口径一致）。当前警示：拖车垃圾站因排水场问题关闭。 【2026-11-22 更新】TripAdvisor 2026-07 好评（Kim R.，5 星）：网上难找的帐篷营位信息——6 个帐篷位，停车近、遮荫多、营位大；淋浴免费干净，管理员友好。https://www.tripadvisor.ca/Attraction_Review-g51991-d294415-Reviews-Champoeg_State_Heritage_Park-Newberg_Oregon.html 【2026-11-25 更新】TripAdvisor Kim R 条已确认为 kimrV3212KF，Written 2026-07-22（7 月实住，5 星；内容同 2026-11-22 更新）。https://www.tripadvisor.in/Attractions-g51991-Activities-Newberg_Oregon.html",
     reviewCount: "Google Maps: 4.7★ (2635条评价), The Dyrt: 4.5★ (69条评价)",
     bookingWindows: [
       { area: "All Sites", advanceDays: 180, advanceLabel: "提前6个月", notes: "Oregon State Parks 系统，每天早6点放票" },
@@ -2266,7 +2266,7 @@ export const campgrounds: Campground[] = [
     lat: 45.25,
     lng: -122.77,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=45.25,-122.77",
-    lastUpdated: "2026-11-22",
+    lastUpdated: "2026-11-25",
   },
   {
     id: 48,
@@ -2485,7 +2485,7 @@ export const campgrounds: Campground[] = [
     driveTime: 222,
     driveTimeLabel: "3.7h",
     tagline: "温哥华近郊最受欢迎的家庭湖畔营地",
-    description: "阿卢埃特营地位于金穗省立公园内，被茂密的森林环绕，紧邻美丽的阿卢埃特湖。这里非常适合有幼儿的家庭，提供平缓的步道、沙滩和安全的游乐环境。营地设施完善，是体验BC省自然风光的绝佳选择。 【2026-11-21 更新】小红书深读（清水微，2026-11-20）：冬季 Gold Creek 营地先到先得、$13/天、19:00 关园；夏天禁火、冬天终于可以烧篝火；只待一下午就回，不适合帐篷过夜（冷、地面潮湿）；柴火约 $10；园内没信号。https://www.xiaohongshu.com/explore/6b00b7ef000000002a01dbd7 官方信息：2027 年团体营地 3/1–11/30；旺季需日间通行证；熊出没区，须收好有味物品。",
+    description: "阿卢埃特营地位于金穗省立公园内，被茂密的森林环绕，紧邻美丽的阿卢埃特湖。这里非常适合有幼儿的家庭，提供平缓的步道、沙滩和安全的游乐环境。营地设施完善，是体验BC省自然风光的绝佳选择。 【2026-11-21 更新】小红书深读（清水微，2026-11-20）：冬季 Gold Creek 营地先到先得、$13/天、19:00 关园；夏天禁火、冬天终于可以烧篝火；只待一下午就回，不适合帐篷过夜（冷、地面潮湿）；柴火约 $10；园内没信号。https://www.xiaohongshu.com/explore/6b00b7ef000000002a01dbd7 官方信息：2027 年团体营地 3/1–11/30；旺季需日间通行证；熊出没区，须收好有味物品。 【2026-11-25 更新】官方细节（BC Parks Explorer，2026-11-25 直读）：Gold Creek 冬季有限服务 2026-10-16 至 2027-03-24；North Beach 53 位、旺季 $33.50/晚、肩季 $23/晚（按营区分开写：Alouette/Gold Creek $51，North Beach $33.50——$33.50 是 North Beach 的现行官方价，不是错价）；大门 10 月中–3 月 7:00–19:00。https://www.exploreparks.ca/parks/golden-ears-park",
     reviewCount: "Google Maps: 4.7★ (4632条评价)",
     bookingWindows: [
       { area: "All Sites", advanceDays: 90, advanceLabel: "提前3个月", notes: "BC Parks 订位系统，3 个月滚动窗口、每天太平洋时间早 7 点放票" },
@@ -2529,7 +2529,7 @@ export const campgrounds: Campground[] = [
     lat: 49.320787,
     lng: -122.4635053,
     googleMapsUrl: "https://www.google.com/maps/dir/?api=1&destination=49.32,-122.46",
-    lastUpdated: "2026-11-21",
+    lastUpdated: "2026-11-25",
   },
   {
     id: 54,
